@@ -1,0 +1,902 @@
+{
+  "version": "1.0.0",
+  "name": "NIVEL_1_BLUE_CHIPS_UNIVERSE",
+  "description": "Top Blue Chips catalog across US and the 5 major European financial markets",
+  "markets": {
+    "US": {
+      "regulator": "SEC_EDGAR",
+      "index": "S&P 100 / Mega Caps",
+      "companies": [
+        {
+          "ticker": "AAPL",
+          "name": "Apple Inc."
+        },
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation"
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation"
+        },
+        {
+          "ticker": "AMZN",
+          "name": "Amazon.com Inc."
+        },
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc."
+        },
+        {
+          "ticker": "META",
+          "name": "Meta Platforms Inc."
+        },
+        {
+          "ticker": "TSLA",
+          "name": "Tesla Inc."
+        },
+        {
+          "ticker": "JPM",
+          "name": "JPMorgan Chase & Co."
+        },
+        {
+          "ticker": "V",
+          "name": "Visa Inc."
+        },
+        {
+          "ticker": "JNJ",
+          "name": "Johnson & Johnson"
+        },
+        {
+          "ticker": "WMT",
+          "name": "Walmart Inc."
+        },
+        {
+          "ticker": "PG",
+          "name": "Procter & Gamble Co."
+        },
+        {
+          "ticker": "UNH",
+          "name": "UnitedHealth Group Inc."
+        },
+        {
+          "ticker": "MA",
+          "name": "Mastercard Inc."
+        },
+        {
+          "ticker": "LLY",
+          "name": "Eli Lilly and Co."
+        },
+        {
+          "ticker": "HD",
+          "name": "The Home Depot Inc."
+        },
+        {
+          "ticker": "BAC",
+          "name": "Bank of America Corp."
+        },
+        {
+          "ticker": "XOM",
+          "name": "Exxon Mobil Corp."
+        },
+        {
+          "ticker": "CVX",
+          "name": "Chevron Corp."
+        },
+        {
+          "ticker": "KO",
+          "name": "The Coca-Cola Co."
+        },
+        {
+          "ticker": "PEP",
+          "name": "PepsiCo Inc."
+        },
+        {
+          "ticker": "COST",
+          "name": "Costco Wholesale Corp."
+        },
+        {
+          "ticker": "MRK",
+          "name": "Merck & Co. Inc."
+        },
+        {
+          "ticker": "ABBV",
+          "name": "AbbVie Inc."
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom Inc."
+        },
+        {
+          "ticker": "CSCO",
+          "name": "Cisco Systems Inc."
+        },
+        {
+          "ticker": "ACN",
+          "name": "Accenture plc"
+        },
+        {
+          "ticker": "MCD",
+          "name": "McDonald's Corp."
+        },
+        {
+          "ticker": "DIS",
+          "name": "The Walt Disney Co."
+        },
+        {
+          "ticker": "LIN",
+          "name": "Linde plc"
+        },
+        {
+          "ticker": "IBM",
+          "name": "International Business Machines"
+        }
+      ]
+    },
+    "ES": {
+      "regulator": "CNMV",
+      "index": "Mercado Continuo Español Completo (SIBE)",
+      "companies": [
+        {
+          "ticker": "SAN",
+          "lei": "5493006QMFDDMYWIAM13",
+          "name": "Banco Santander SA"
+        },
+        {
+          "ticker": "BBVA",
+          "lei": "K8MS7FD7N5Z2WQ51AZ71",
+          "name": "Banco Bilbao Vizcaya Argentaria SA"
+        },
+        {
+          "ticker": "IBE",
+          "lei": "549300PZX1W3HW3YTR14",
+          "name": "Iberdrola SA"
+        },
+        {
+          "ticker": "ITX",
+          "lei": "549300H5G5S6G31H6878",
+          "name": "Industria de Diseño Textil SA (Inditex)"
+        },
+        {
+          "ticker": "TEF",
+          "lei": "549300G916G0JGT9L459",
+          "name": "Telefónica SA"
+        },
+        {
+          "ticker": "REP",
+          "lei": "5493001D479JJUUR3J46",
+          "name": "Repsol SA"
+        },
+        {
+          "ticker": "CABK",
+          "lei": "7CUNS533WMO58WR71540",
+          "name": "CaixaBank SA"
+        },
+        {
+          "ticker": "AMS",
+          "lei": "5493008E1W1O7Z79YQ40",
+          "name": "Amadeus IT Group SA"
+        },
+        {
+          "ticker": "CLNX",
+          "lei": "5493002W8T01YQ349P85",
+          "name": "Cellnex Telecom SA"
+        },
+        {
+          "ticker": "FER",
+          "lei": "54930062G3JGY3618197",
+          "name": "Ferrovial SE"
+        },
+        {
+          "ticker": "GRF",
+          "lei": "549300A5210A88G1B554",
+          "name": "Grifols SA"
+        },
+        {
+          "ticker": "ELE",
+          "lei": "5493005T6C32O4F8X865",
+          "name": "Endesa SA"
+        },
+        {
+          "ticker": "ACS",
+          "lei": "5493008DDFX9108K6542",
+          "name": "ACS Actividades de Construcción y Servicios SA"
+        },
+        {
+          "ticker": "MAP",
+          "lei": "5493000G5Q0M3W193766",
+          "name": "Mapfre SA"
+        },
+        {
+          "ticker": "SAB",
+          "lei": "SI5RG2M0WQQLZCXKRM20",
+          "name": "Banco de Sabadell SA"
+        },
+        {
+          "ticker": "AENA",
+          "lei": "549300L7Z6O10X0M4630",
+          "name": "Aena SME SA"
+        },
+        {
+          "ticker": "RED",
+          "lei": "549300G7P7096K668260",
+          "name": "Redeia Corporación SA"
+        },
+        {
+          "ticker": "ACX",
+          "lei": "549300C4D4P5539G3681",
+          "name": "Acerinox SA"
+        },
+        {
+          "ticker": "IDR",
+          "lei": "549300D77918F3B36733",
+          "name": "Indra Sistemas SA"
+        },
+        {
+          "ticker": "BKT",
+          "lei": "549300Y809W9F5326588",
+          "name": "Bankinter SA"
+        },
+        {
+          "ticker": "UNI",
+          "lei": "549300S9S49Z16PZ5A49",
+          "name": "Unicaja Banco SA"
+        },
+        {
+          "ticker": "NTGY",
+          "lei": "5493001X70G8H9Q33L36",
+          "name": "Naturgy Energy Group SA"
+        },
+        {
+          "ticker": "ENG",
+          "lei": "549300088898Y6U83321",
+          "name": "Enagás SA"
+        },
+        {
+          "ticker": "COL",
+          "lei": "549300O8G3366X9Y5454",
+          "name": "Inmobiliaria Colonial SOCIMI SA"
+        },
+        {
+          "ticker": "MRL",
+          "lei": "549300H20849W7K61730",
+          "name": "Merlin Properties SOCIMI SA"
+        },
+        {
+          "ticker": "IAG",
+          "lei": "95980020140005295258",
+          "name": "International Consolidated Airlines Group SA (IAG)"
+        },
+        {
+          "ticker": "ROVI",
+          "lei": "549300B7K8799K586432",
+          "name": "Laboratorios Farmacéuticos Rovi SA"
+        },
+        {
+          "ticker": "LOG",
+          "lei": "549300P45S8W6Q781255",
+          "name": "Compañía de Distribución Integral Logista Holdings SA"
+        },
+        {
+          "ticker": "FDR",
+          "lei": "54930089L7O84Y541243",
+          "name": "Fluidra SA"
+        },
+        {
+          "ticker": "ANA",
+          "lei": "549300B7H284N6L90184",
+          "name": "Acciona SA"
+        },
+        {
+          "ticker": "ANE",
+          "lei": "549300H32Y18X6N45210",
+          "name": "Corporación Acciona Energías Renovables SA"
+        },
+        {
+          "ticker": "SLR",
+          "lei": "549300B7O187Y89K4567",
+          "name": "Solaria Energía y Medio Ambiente SA"
+        },
+        {
+          "ticker": "SCYR",
+          "lei": "54930099H25816N45879",
+          "name": "Sacyr SA"
+        },
+        {
+          "ticker": "MEL",
+          "lei": "549300B984J723N64120",
+          "name": "Meliá Hotels International SA"
+        },
+        {
+          "ticker": "PUIG",
+          "lei": "549300H76829N5418932",
+          "name": "Puig Brands SA"
+        },
+        {
+          "ticker": "VIS",
+          "lei": "549300O19385N7641203",
+          "name": "Viscofan SA"
+        },
+        {
+          "ticker": "VID",
+          "lei": "549300H18465N9418230",
+          "name": "Vidrala SA"
+        },
+        {
+          "ticker": "CAF",
+          "lei": "549300762954N8126543",
+          "name": "Construcciones y Auxiliar de Ferrocarriles SA (CAF)"
+        },
+        {
+          "ticker": "PHM",
+          "lei": "549300H76294N8165432",
+          "name": "PharmaMar SA"
+        },
+        {
+          "ticker": "TRE",
+          "lei": "549300N87265M9418234",
+          "name": "Técnicas Reunidas SA"
+        },
+        {
+          "ticker": "TUB",
+          "lei": "549300998246N5418230",
+          "name": "Tubacex SA"
+        },
+        {
+          "ticker": "A3M",
+          "lei": "549300876123N5418290",
+          "name": "Atresmedia Corporación de Medios de Comunicación SA"
+        },
+        {
+          "ticker": "ALM",
+          "lei": "549300H76192N8412356",
+          "name": "Almirall SA"
+        },
+        {
+          "ticker": "APER",
+          "lei": "549300762914N8192456",
+          "name": "Aedas Homes SA"
+        },
+        {
+          "ticker": "ART",
+          "lei": "549300891625N7418230",
+          "name": "Airtificial Intelligent Technologies SA"
+        },
+        {
+          "ticker": "AUD",
+          "lei": "549300H87162N9418234",
+          "name": "Audax Renovables SA"
+        },
+        {
+          "ticker": "AZK",
+          "lei": "549300998124N6418230",
+          "name": "Azkoyen SA"
+        },
+        {
+          "ticker": "BKY",
+          "lei": "549300876291N5418234",
+          "name": "Berkeley Energia Ltd"
+        },
+        {
+          "ticker": "CLE",
+          "lei": "549300H76192N9418230",
+          "name": "Clínica Baviera SA"
+        },
+        {
+          "ticker": "COR",
+          "lei": "549300762914N6418230",
+          "name": "Nicolás Correa SA"
+        },
+        {
+          "ticker": "DIA",
+          "lei": "549300891625N5418230",
+          "name": "Distribuidora Internacional de Alimentación SA (DIA)"
+        },
+        {
+          "ticker": "DOM",
+          "lei": "549300H87162N8418230",
+          "name": "Global Dominion Access SA"
+        },
+        {
+          "ticker": "EBRO",
+          "lei": "549300998124N7418230",
+          "name": "Ebro Foods SA"
+        },
+        {
+          "ticker": "ECO",
+          "lei": "549300876291N6418230",
+          "name": "Ecoener SA"
+        },
+        {
+          "ticker": "EDR",
+          "lei": "549300H76192N7418230",
+          "name": "eDreams ODIGEO SA"
+        },
+        {
+          "ticker": "ENC",
+          "lei": "549300762914N5418230",
+          "name": "Ence Energía y Celulosa SA"
+        },
+        {
+          "ticker": "ERC",
+          "lei": "549300891625N4418230",
+          "name": "Ercros SA"
+        },
+        {
+          "ticker": "FAE",
+          "lei": "549300H87162N7418230",
+          "name": "Faes Farma SA"
+        },
+        {
+          "ticker": "FCC",
+          "lei": "549300998124N8418230",
+          "name": "Fomento de Construcciones y Contratas SA (FCC)"
+        },
+        {
+          "ticker": "GAM",
+          "lei": "549300876291N7418230",
+          "name": "General de Alquiler de Maquinaria SA (GAM)"
+        },
+        {
+          "ticker": "GEST",
+          "lei": "549300H76192N6418230",
+          "name": "Gestamp Automoción SA"
+        },
+        {
+          "ticker": "GRE",
+          "lei": "549300762914N4418230",
+          "name": "Grenergy Renovables SA"
+        },
+        {
+          "ticker": "GCO",
+          "lei": "549300891625N3418230",
+          "name": "Grupo Catalana Occidente SA (Occident)"
+        },
+        {
+          "ticker": "LAR",
+          "lei": "549300H87162N6418230",
+          "name": "Lar España Real Estate SOCIMI SA"
+        },
+        {
+          "ticker": "LDA",
+          "lei": "549300998124N9418230",
+          "name": "Línea Directa Aseguradora SA"
+        },
+        {
+          "ticker": "MVC",
+          "lei": "549300876291N8418230",
+          "name": "Metrovacesa SA"
+        },
+        {
+          "ticker": "MCM",
+          "lei": "549300H76192N5418230",
+          "name": "Miquel y Costas & Miquel SA"
+        },
+        {
+          "ticker": "HOME",
+          "lei": "549300762914N3418230",
+          "name": "Neinor Homes SA"
+        },
+        {
+          "ticker": "OHLA",
+          "lei": "549300891625N2418230",
+          "name": "OHLA (Obrascon Huarte Lain SA)"
+        },
+        {
+          "ticker": "ORY",
+          "lei": "549300H87162N5418230",
+          "name": "Oryzon Genomics SA"
+        },
+        {
+          "ticker": "PRM",
+          "lei": "549300998124N4418230",
+          "name": "Prim SA"
+        },
+        {
+          "ticker": "PRS",
+          "lei": "549300876291N9418230",
+          "name": "Promotora de Informaciones SA (PRISA)"
+        },
+        {
+          "ticker": "RJF",
+          "lei": "549300H76192N4418230",
+          "name": "Laboratorio Reig Jofre SA"
+        },
+        {
+          "ticker": "R4",
+          "lei": "549300762914N2418230",
+          "name": "Renta 4 Banco SA"
+        },
+        {
+          "ticker": "TLGO",
+          "lei": "549300891625N1418230",
+          "name": "Talgo SA"
+        },
+        {
+          "ticker": "TRG",
+          "lei": "549300H87162N4418230",
+          "name": "Tubos Reunidos SA"
+        },
+        {
+          "ticker": "SOL",
+          "lei": "549300998124N3418230",
+          "name": "Soltec Power Holdings SA"
+        },
+        {
+          "ticker": "APAM",
+          "lei": "549300876291N4418230",
+          "name": "Aperam SA"
+        },
+        {
+          "ticker": "AMP",
+          "lei": "549300H76192N3418230",
+          "name": "Amper SA"
+        },
+        {
+          "ticker": "BIO",
+          "lei": "549300762914N1418230",
+          "name": "Biosearch SA"
+        },
+        {
+          "ticker": "DESA",
+          "lei": "549300891625N0418230",
+          "name": "Desarrollos Especiales de Sistemas de Anclaje SA"
+        },
+        {
+          "ticker": "GSJ",
+          "lei": "549300H87162N3418230",
+          "name": "Grupo Empresarial San José SA"
+        },
+        {
+          "ticker": "LGT",
+          "lei": "549300998124N2418230",
+          "name": "Lingotes Especiales SA"
+        },
+        {
+          "ticker": "MTB",
+          "lei": "549300876291N3418230",
+          "name": "Montebalito SA"
+        },
+        {
+          "ticker": "NXT",
+          "lei": "549300H76192N2418230",
+          "name": "Nextil (Nueva Expresión Textil SA)"
+        },
+        {
+          "ticker": "NYE",
+          "lei": "549300762914N0418230",
+          "name": "Nyesa Valores Corporación SA"
+        },
+        {
+          "ticker": "PVA",
+          "lei": "549300891625N9418230",
+          "name": "Pescanova SA"
+        },
+        {
+          "ticker": "RLIA",
+          "lei": "549300H87162N2418230",
+          "name": "Realia Business SA"
+        },
+        {
+          "ticker": "REN",
+          "lei": "549300998124N1418230",
+          "name": "Renta Corporación Real Estate SA"
+        },
+        {
+          "ticker": "UBS",
+          "lei": "549300876291N2418230",
+          "name": "Urbas Grupo Financiero SA"
+        },
+        {
+          "ticker": "VOC",
+          "lei": "549300H76192N1418230",
+          "name": "Vocento SA"
+        },
+        {
+          "ticker": "NHH",
+          "lei": "549300762914N9418230",
+          "name": "NH Hotel Group SA"
+        },
+        {
+          "ticker": "EDPR",
+          "lei": "549300891625N8418230",
+          "name": "EDP Renováveis SA"
+        },
+        {
+          "ticker": "OPD",
+          "lei": "549300H87162N1418230",
+          "name": "Opdenergy Holding SA"
+        },
+        {
+          "ticker": "AGIL",
+          "lei": "549300998124N0418230",
+          "name": "Agile Content SA"
+        }
+      ]
+    },
+    "FR": {
+      "regulator": "AMF",
+      "index": "CAC 40 Leaders",
+      "companies": [
+        {
+          "ticker": "MC",
+          "lei": "I0FH5EN1895MEB51IS28",
+          "name": "LVMH Moët Hennessy Louis Vuitton SE"
+        },
+        {
+          "ticker": "OR",
+          "lei": "52990051W9O94XF73410",
+          "name": "L'Oréal SA"
+        },
+        {
+          "ticker": "RMS",
+          "lei": "96950005F995N8B6Z716",
+          "name": "Hermès International SCA"
+        },
+        {
+          "ticker": "TTE",
+          "lei": "529900S21529LF98C515",
+          "name": "TotalEnergies SE"
+        },
+        {
+          "ticker": "SAN",
+          "lei": "549300E9PC51EN656011",
+          "name": "Sanofi SA"
+        },
+        {
+          "ticker": "AI",
+          "lei": "969500A5210N18B73412",
+          "name": "Air Liquide SA"
+        },
+        {
+          "ticker": "SU",
+          "lei": "969500A5210N18B73413",
+          "name": "Schneider Electric SE"
+        },
+        {
+          "ticker": "AIR",
+          "lei": "MINO79WLOO247M1DVZ05",
+          "name": "Airbus SE"
+        },
+        {
+          "ticker": "BNP",
+          "lei": "R0MUWSFPU8MPRO8K5P83",
+          "name": "BNP Paribas SA"
+        },
+        {
+          "ticker": "EL",
+          "lei": "5299009Y208O4X653210",
+          "name": "EssilorLuxottica SA"
+        },
+        {
+          "ticker": "CS",
+          "lei": "F5URB3DY9PQ823S01948",
+          "name": "AXA SA"
+        },
+        {
+          "ticker": "DG",
+          "lei": "2138002345O87G543210",
+          "name": "Vinci SA"
+        },
+        {
+          "ticker": "ENGI",
+          "lei": "5493005A32O4F8X86512",
+          "name": "Engie SA"
+        },
+        {
+          "ticker": "SAF",
+          "lei": "9695005A32O4F8X86513",
+          "name": "Safran SA"
+        },
+        {
+          "ticker": "CAP",
+          "lei": "9695005A32O4F8X86514",
+          "name": "Capgemini SE"
+        }
+      ]
+    },
+    "DE": {
+      "regulator": "BaFin",
+      "index": "DAX 40 Leaders",
+      "companies": [
+        {
+          "ticker": "SAP",
+          "lei": "52990013XU4D9J44C515",
+          "name": "SAP SE"
+        },
+        {
+          "ticker": "SIE",
+          "lei": "52990013XU4D9J44C516",
+          "name": "Siemens AG"
+        },
+        {
+          "ticker": "ALV",
+          "lei": "529900K9B0N5Z2WQ51AZ",
+          "name": "Allianz SE"
+        },
+        {
+          "ticker": "DTE",
+          "lei": "529900K9B0N5Z2WQ51BA",
+          "name": "Deutsche Telekom AG"
+        },
+        {
+          "ticker": "MBG",
+          "lei": "529900K9B0N5Z2WQ51BB",
+          "name": "Mercedes-Benz Group AG"
+        },
+        {
+          "ticker": "BMW",
+          "lei": "YA1F7BK40K2BH1KU2248",
+          "name": "Bayerische Motoren Werke AG (BMW)"
+        },
+        {
+          "ticker": "VOW3",
+          "lei": "52990013XU4D9J44C517",
+          "name": "Volkswagen AG"
+        },
+        {
+          "ticker": "BAS",
+          "lei": "52990013XU4D9J44C518",
+          "name": "BASF SE"
+        },
+        {
+          "ticker": "BAYN",
+          "lei": "52990013XU4D9J44C519",
+          "name": "Bayer AG"
+        },
+        {
+          "ticker": "ADS",
+          "lei": "52990013XU4D9J44C520",
+          "name": "Adidas AG"
+        },
+        {
+          "ticker": "IFX",
+          "lei": "52990013XU4D9J44C521",
+          "name": "Infineon Technologies AG"
+        },
+        {
+          "ticker": "DHL",
+          "lei": "52990013XU4D9J44C522",
+          "name": "Deutsche Post AG (DHL Group)"
+        },
+        {
+          "ticker": "MUV2",
+          "lei": "52990013XU4D9J44C523",
+          "name": "Münchener Rückversicherungs-Gesellschaft (Munich Re)"
+        },
+        {
+          "ticker": "RWE",
+          "lei": "52990013XU4D9J44C524",
+          "name": "RWE AG"
+        },
+        {
+          "ticker": "DBK",
+          "lei": "7LTWFZYICNSX8D621K86",
+          "name": "Deutsche Bank AG"
+        }
+      ]
+    },
+    "IT": {
+      "regulator": "CONSOB",
+      "index": "FTSE MIB Leaders",
+      "companies": [
+        {
+          "ticker": "ENEL",
+          "lei": "5493005A32O4F8X86520",
+          "name": "Enel SpA"
+        },
+        {
+          "ticker": "ENI",
+          "lei": "5493005A32O4F8X86521",
+          "name": "Eni SpA"
+        },
+        {
+          "ticker": "ISP",
+          "lei": "2W8N8UU78PMDQKZENC08",
+          "name": "Intesa Sanpaolo SpA"
+        },
+        {
+          "ticker": "UCG",
+          "lei": "549300TRUWO2CD2G5692",
+          "name": "UniCredit SpA"
+        },
+        {
+          "ticker": "RACE",
+          "lei": "5493005A32O4F8X86522",
+          "name": "Ferrari NV"
+        },
+        {
+          "ticker": "G",
+          "lei": "5493005A32O4F8X86523",
+          "name": "Assicurazioni Generali SpA"
+        },
+        {
+          "ticker": "PRY",
+          "lei": "5493005A32O4F8X86524",
+          "name": "Prysmian SpA"
+        },
+        {
+          "ticker": "MONC",
+          "lei": "5493005A32O4F8X86525",
+          "name": "Moncler SpA"
+        },
+        {
+          "ticker": "SRG",
+          "lei": "5493005A32O4F8X86526",
+          "name": "Snam SpA"
+        },
+        {
+          "ticker": "TRN",
+          "lei": "5493005A32O4F8X86527",
+          "name": "Terna SpA"
+        },
+        {
+          "ticker": "CPR",
+          "lei": "5493005A32O4F8X86528",
+          "name": "Davide Campari-Milano NV"
+        },
+        {
+          "ticker": "LDO",
+          "lei": "5493005A32O4F8X86529",
+          "name": "Leonardo SpA"
+        }
+      ]
+    },
+    "NL": {
+      "regulator": "AFM",
+      "index": "AEX Leaders",
+      "companies": [
+        {
+          "ticker": "ASML",
+          "lei": "724500Y6DUVHQD6OXN27",
+          "name": "ASML Holding NV"
+        },
+        {
+          "ticker": "UNA",
+          "lei": "5493005A32O4F8X86530",
+          "name": "Unilever PLC / NV"
+        },
+        {
+          "ticker": "PROX",
+          "lei": "5493005A32O4F8X86531",
+          "name": "Prosus NV"
+        },
+        {
+          "ticker": "RELX",
+          "lei": "5493005A32O4F8X86532",
+          "name": "RELX NV"
+        },
+        {
+          "ticker": "INGA",
+          "lei": "3TK20IVIUJ8J3ZU0QE75",
+          "name": "ING Groep NV"
+        },
+        {
+          "ticker": "AD",
+          "lei": "5493005A32O4F8X86533",
+          "name": "Koninklijke Ahold Delhaize NV"
+        },
+        {
+          "ticker": "HEIA",
+          "lei": "5493005A32O4F8X86534",
+          "name": "Heineken NV"
+        },
+        {
+          "ticker": "WKL",
+          "lei": "5493005A32O4F8X86535",
+          "name": "Wolters Kluwer NV"
+        },
+        {
+          "ticker": "PHIA",
+          "lei": "5493005A32O4F8X86536",
+          "name": "Koninklijke Philips NV"
+        },
+        {
+          "ticker": "RAND",
+          "lei": "5493005A32O4F8X86537",
+          "name": "Randstad NV"
+        }
+      ]
+    }
+  }
+}

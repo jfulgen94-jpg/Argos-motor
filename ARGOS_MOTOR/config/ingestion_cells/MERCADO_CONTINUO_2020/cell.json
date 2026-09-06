@@ -1,0 +1,1020 @@
+{
+  "cell_id": "MERCADO_CONTINUO_2020",
+  "segment": "MERCADO_CONTINUO",
+  "year": "2020",
+  "generated_at": "2026-08-27T22:22:54.311081+00:00",
+  "expected_tickers": [
+    "A3M",
+    "ABG",
+    "ACS",
+    "ACX",
+    "ADX",
+    "AEDAS",
+    "AENA",
+    "AIR",
+    "ALB",
+    "ALM",
+    "ALNT",
+    "AMP",
+    "AMS",
+    "ANA",
+    "ANE",
+    "APAM",
+    "APPS",
+    "ATRS",
+    "AYCO",
+    "AZK",
+    "BAV",
+    "BBVA",
+    "BIO",
+    "BKIA",
+    "BKT",
+    "BKY",
+    "BME",
+    "CABK",
+    "CAF",
+    "CIE",
+    "CLEO",
+    "CLNX",
+    "COAM",
+    "CPL",
+    "DESA",
+    "DESI",
+    "DFER",
+    "DGI",
+    "DIA",
+    "DOM",
+    "EAT",
+    "EBRO",
+    "ECO",
+    "EDPR",
+    "EDR",
+    "ELE",
+    "ENC",
+    "ENG",
+    "ENO",
+    "ERC",
+    "EZE",
+    "FAE",
+    "FCC",
+    "FDR",
+    "FER",
+    "GAM",
+    "GCO",
+    "GEST",
+    "GRE",
+    "GRF",
+    "IAG",
+    "IBE",
+    "IBP",
+    "IDR",
+    "ITX",
+    "LBK",
+    "LGT",
+    "LIB",
+    "LINEA",
+    "LOG",
+    "MAP",
+    "MAS",
+    "MCM",
+    "MDF",
+    "MEL",
+    "MVC",
+    "MVR",
+    "NEA",
+    "NEIN",
+    "NEXT",
+    "NHH",
+    "NTGY",
+    "NTH",
+    "NYS",
+    "OHLA",
+    "OPDE",
+    "ORYZ",
+    "PGR",
+    "PHL",
+    "PHM",
+    "PRM",
+    "PRS",
+    "PSG",
+    "PUIG",
+    "R4",
+    "RED",
+    "REN",
+    "REP",
+    "RJF",
+    "ROVI",
+    "SAB",
+    "SAN",
+    "SANJ",
+    "SCF",
+    "SCYR",
+    "SLPK",
+    "SNI",
+    "SOL",
+    "SOLT",
+    "SQRL",
+    "TEF",
+    "TLGO",
+    "TRE",
+    "TRG",
+    "TUB",
+    "UNI",
+    "URB",
+    "VID",
+    "VIS",
+    "VOC",
+    "ZOT"
+  ],
+  "expected_ticker_count": 121,
+  "expected_documents_per_company": [
+    "cuentas_anuales_consolidadas_auditadas",
+    "informe_de_gestion_consolidado",
+    "estado_informacion_no_financiera_csrd",
+    "informe_anual_gobierno_corporativo_IAGC",
+    "informe_anual_remuneraciones_IARC"
+  ],
+  "coverage": {
+    "A3M": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ABG": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ACS": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ACX": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ADX": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\ADX-A-62338827",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "AEDAS": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "AENA": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "AIR": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ALB": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\ALB-A-28165264",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ALM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ALNT": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\ALNT-A-81862492",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "AMP": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "AMS": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\AMS-A-84236934",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ANA": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ANE": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "APAM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "APPS": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\APPS-A-85150961",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ATRS": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\ATRS-A-85150961",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "AYCO": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "AZK": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "BAV": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\BAV-A-80415391",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "BBVA": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\BBVA-A-48265169",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "BIO": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "BKIA": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\BKIA-A-14010342",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "BKT": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\BKT-A-28157360",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "BKY": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "BME": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "CABK": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\CABK-A-08663619",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "CAF": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "CIE": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "CLEO": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "CLNX": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "COAM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "CPL": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\CPL-A-08008351",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "DESA": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "DESI": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\DESI-A-28107951",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "DFER": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\DFER-A-33002627",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "DGI": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\DGI-A-08039323",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "DIA": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "DOM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "EAT": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\EAT-W-0022359-J",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "EBRO": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ECO": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "EDPR": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\EDPR-A-75000001",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "EDR": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ELE": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ENC": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\ENC-A-28212264",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ENG": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ENO": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ERC": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "EZE": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "FAE": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\FAE-A-48004139",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "FCC": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "FDR": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "FER": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "GAM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "GCO": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "GEST": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "GRE": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "GRF": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\GRF-A-58297783",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "IAG": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "IBE": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\IBE-A-48010615",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "IBP": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\IBP-A-20037131",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "IDR": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ITX": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "LBK": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\LBK-A-33519802",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "LGT": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "LIB": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\LIB-A-33984015",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "LINEA": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "LOG": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "MAP": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "MAS": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "MCM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "MDF": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "MEL": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\MEL-A-78304516",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "MVC": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "MVR": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\MVR-A-87895108",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "NEA": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "NEIN": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "NEXT": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "NHH": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\NHH-A-28029700",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "NTGY": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\NTGY-A-08015497",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "NTH": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "NYS": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\NYS-A-28014561",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "OHLA": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "OPDE": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ORYZ": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "PGR": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "PHL": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "PHM": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\PHM-A-28120616",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "PRM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "PRS": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\PRS-A-28297059",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "PSG": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\PSG-A-28424083",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "PUIG": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "R4": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\R4-A-79567939",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "RED": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\RED-A-78003662",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "REN": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\REN-A-08249872",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "REP": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "RJF": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\RJF-A-08015844",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ROVI": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "SAB": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\SAB-A-08000143",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "SAN": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\SAN-A-39000013",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "SANJ": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "SCF": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\SCF-A-28001071",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "SCYR": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "SLPK": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\SLPK-A-95333838",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "SNI": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\SNI-A-39000211",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "SOL": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "SOLT": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\SOLT-A-73891467",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "SQRL": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "TEF": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "TLGO": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\TLGO-A-85150961",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "TRE": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "TRG": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "TUB": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "UNI": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\UNI-A-93139096",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "URB": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2020\\URB-A-48002059",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "VID": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "VIS": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "VOC": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ZOT": {
+      "folder_exists": false,
+      "documents_present": []
+    }
+  },
+  "fully_covered_companies": 0,
+  "pending_companies": 121,
+  "shared_components": {
+    "feeding": [
+      "mod_01_ingestion/src/ingest_runner.py",
+      "mod_01_ingestion/src/es_cnmv_client.py",
+      "mod_01_ingestion/src/bme_growth_client.py",
+      "mod_01_ingestion/src/xbrl_org_client.py"
+    ],
+    "forensic": [
+      "mod_01_ingestion/src/forensic_dataset_auditor.py",
+      "mod_01_ingestion/src/ai_pre_validation_guard.py",
+      "mod_01_ingestion/src/document_completeness_validator.py",
+      "mod_01_ingestion/src/branch_threshold_validator.py",
+      "mod_01_ingestion/src/remediation_runner.py"
+    ]
+  }
+}

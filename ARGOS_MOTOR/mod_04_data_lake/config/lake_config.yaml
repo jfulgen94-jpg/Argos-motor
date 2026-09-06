@@ -1,0 +1,5 @@
+# Data Lake configuration
+db_path: "data/stater_motor.duckdb"
+parquet_compression: "zstd"
+retention_days: 365
+snapshots_dir: "data/lake/snapshots"

@@ -1,0 +1,7 @@
+# Azure OpenAI Service deployment specifications
+service_name: "stater-openai-eastus"
+deployments:
+  - name: "gpt-4o"
+    model: "gpt-4o"
+    version: "2024-08-01-preview"
+    capacity: 30

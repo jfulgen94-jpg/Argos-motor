@@ -1,0 +1,2 @@
+-- Migration v001: Initial schema setup
+-- Executed automatically by lake_manager.py

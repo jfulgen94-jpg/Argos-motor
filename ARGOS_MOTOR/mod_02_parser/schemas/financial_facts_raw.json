@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FinancialFactRaw",
+  "type": "object",
+  "properties": {
+    "fact_id": {
+      "type": "string"
+    },
+    "doc_id": {
+      "type": "string"
+    },
+    "entity_lei": {
+      "type": "string"
+    },
+    "period_end": {
+      "type": "string",
+      "format": "date"
+    },
+    "concept": {
+      "type": "string"
+    },
+    "concept_std": {
+      "type": "string"
+    },
+    "value": {
+      "type": "number"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "taxonomy": {
+      "type": "string",
+      "enum": [
+        "IFRS",
+        "US-GAAP",
+        "PGC"
+      ]
+    }
+  },
+  "required": [
+    "fact_id",
+    "doc_id",
+    "entity_lei",
+    "period_end",
+    "concept_std",
+    "value"
+  ]
+}

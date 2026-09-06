@@ -1,0 +1,22 @@
+{
+  "version": "3.0.0",
+  "jurisdiction": "ES",
+  "total_entities": 1,
+  "segments_breakdown": {
+    "IBEX35": 1,
+    "MERCADO_CONTINUO": 0,
+    "BME_GROWTH": 0
+  },
+  "socimis_count": 0,
+  "companies": {
+    "SAN": {
+      "ticker": "SAN",
+      "cif_nif": "A-39000013",
+      "lei": "5493006QMFDDMYWIAM13",
+      "name_legal": "Banco Santander, S.A.",
+      "segment": "IBEX35",
+      "is_socimi": false,
+      "resolution_score": 1.0
+    }
+  }
+}

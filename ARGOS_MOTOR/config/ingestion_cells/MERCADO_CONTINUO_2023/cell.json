@@ -1,0 +1,1359 @@
+{
+  "cell_id": "MERCADO_CONTINUO_2023",
+  "segment": "MERCADO_CONTINUO",
+  "year": "2023",
+  "generated_at": "2026-08-27T22:22:55.588628+00:00",
+  "expected_tickers": [
+    "A3M",
+    "ABG",
+    "ACS",
+    "ACX",
+    "ADX",
+    "AEDAS",
+    "AENA",
+    "AIR",
+    "ALB",
+    "ALM",
+    "ALNT",
+    "AMP",
+    "AMS",
+    "ANA",
+    "ANE",
+    "APAM",
+    "APPS",
+    "ATRS",
+    "AYCO",
+    "AZK",
+    "BAV",
+    "BBVA",
+    "BIO",
+    "BKIA",
+    "BKT",
+    "BKY",
+    "BME",
+    "CABK",
+    "CAF",
+    "CIE",
+    "CLEO",
+    "CLNX",
+    "COAM",
+    "CPL",
+    "DESA",
+    "DESI",
+    "DFER",
+    "DGI",
+    "DIA",
+    "DOM",
+    "EAT",
+    "EBRO",
+    "ECO",
+    "EDPR",
+    "EDR",
+    "ELE",
+    "ENC",
+    "ENG",
+    "ENO",
+    "ERC",
+    "EZE",
+    "FAE",
+    "FCC",
+    "FDR",
+    "FER",
+    "GAM",
+    "GCO",
+    "GEST",
+    "GRE",
+    "GRF",
+    "IAG",
+    "IBE",
+    "IBP",
+    "IDR",
+    "ITX",
+    "LBK",
+    "LGT",
+    "LIB",
+    "LINEA",
+    "LOG",
+    "MAP",
+    "MAS",
+    "MCM",
+    "MDF",
+    "MEL",
+    "MVC",
+    "MVR",
+    "NEA",
+    "NEIN",
+    "NEXT",
+    "NHH",
+    "NTGY",
+    "NTH",
+    "NYS",
+    "OHLA",
+    "OPDE",
+    "ORYZ",
+    "PGR",
+    "PHL",
+    "PHM",
+    "PRM",
+    "PRS",
+    "PSG",
+    "PUIG",
+    "R4",
+    "RED",
+    "REN",
+    "REP",
+    "RJF",
+    "ROVI",
+    "SAB",
+    "SAN",
+    "SANJ",
+    "SCF",
+    "SCYR",
+    "SLPK",
+    "SNI",
+    "SOL",
+    "SOLT",
+    "SQRL",
+    "TEF",
+    "TLGO",
+    "TRE",
+    "TRG",
+    "TUB",
+    "UNI",
+    "URB",
+    "VID",
+    "VIS",
+    "VOC",
+    "ZOT"
+  ],
+  "expected_ticker_count": 121,
+  "expected_documents_per_company": [
+    "cuentas_anuales_consolidadas_auditadas",
+    "informe_de_gestion_consolidado",
+    "estado_informacion_no_financiera_csrd",
+    "informe_anual_gobierno_corporativo_IAGC",
+    "informe_anual_remuneraciones_IARC"
+  ],
+  "coverage": {
+    "A3M": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ABG": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ACS": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\ACS-A-28004885",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ACX": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\ACX-A-28250777",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ADX": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\ADX-A-62338827",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "AEDAS": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "AENA": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\AENA-A-86212420",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "AIR": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ALB": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\ALB-A-28165264",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ALM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ALNT": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\ALNT-A-81862492",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "AMP": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\AMP-A-28005387",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "AMS": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\AMS-A-84236934",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ANA": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\ANA-A-08001851",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ANE": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\ANE-A-85474773",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "APAM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "APPS": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\APPS-A-85150961",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ATRS": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\ATRS-A-85150961",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "AYCO": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\AYCO-A-28001600",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "AZK": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\AZK-A-31065527",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "BAV": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\BAV-A-80415391",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "BBVA": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\BBVA-A-48265169",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "BIO": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "BKIA": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "BKT": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\BKT-A-28157360",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "BKY": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "BME": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\BME-A-83236746",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "CABK": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\CABK-A-08663619",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "CAF": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "CIE": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "CLEO": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "CLNX": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\CLNX-A-64907306",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "COAM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "CPL": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\CPL-A-08008351",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "DESA": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "DESI": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\DESI-A-28107951",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "DFER": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\DFER-A-33002627",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "DGI": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\DGI-A-08039323",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "DIA": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\DIA-A-28164754",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "DOM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "EAT": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\EAT-W-0022359-J",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "EBRO": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\EBRO-A-47412333",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ECO": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\ECO-A-15024474",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "EDPR": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\EDPR-A-75000001",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "EDR": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ELE": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\ELE-A-28023430",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ENC": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\ENC-A-28212264",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ENG": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\ENG-A-28294726",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ENO": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ERC": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\ERC-A-08000671",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "EZE": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\EZE-A-28014868",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "FAE": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\FAE-A-48004139",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "FCC": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "FDR": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\FDR-A-08249963",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "FER": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\FER-A-28004471",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "GAM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "GCO": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\GCO-A-08168270",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "GEST": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "GRE": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\GRE-A-85150961",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "GRF": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\GRF-A-58297783",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "IAG": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\IAG-A-85845535",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "IBE": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\IBE-A-48010615",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "IBP": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\IBP-A-20037131",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "IDR": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\IDR-A-28599033",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ITX": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\ITX-A-15075062",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "LBK": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "LGT": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\LGT-A-47007620",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "LIB": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\LIB-A-33984015",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "LINEA": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\LINEA-A-80875416",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "LOG": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\LOG-A-86928603",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "MAP": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\MAP-A-08055741",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "MAS": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "MCM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "MDF": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "MEL": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\MEL-A-78304516",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "MVC": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\MVC-A-87471280",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "MVR": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\MVR-A-87895108",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "NEA": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\NEA-A-09000570",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "NEIN": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\NEIN-A-95777174",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "NEXT": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\NEXT-A-08018319",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "NHH": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\NHH-A-28029700",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "NTGY": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\NTGY-A-08015497",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "NTH": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\NTH-A-80126584",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "NYS": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\NYS-A-28014561",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "OHLA": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "OPDE": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\OPDE-A-84462100",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ORYZ": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "PGR": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\PGR-A-87474474",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "PHL": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "PHM": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\PHM-A-28120616",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "PRM": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\PRM-A-28017366",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "PRS": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\PRS-A-28297059",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "PSG": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\PSG-A-28424083",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "PUIG": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "R4": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\R4-A-79567939",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "RED": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\RED-A-78003662",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "REN": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\REN-A-08249872",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "REP": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\REP-A-78374725",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "RJF": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\RJF-A-08015844",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "ROVI": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\ROVI-A-28249761",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "SAB": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\SAB-A-08000143",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "SAN": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\SAN-A-39000013",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "SANJ": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\SANJ-A-36046993",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "SCF": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\SCF-A-28001071",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "SCYR": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\SCYR-A-28013811",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "SLPK": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "SNI": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\SNI-A-39000211",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "SOL": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\SOL-A-82569963",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "SOLT": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\SOLT-A-73891467",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "SQRL": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\SQRL-A-82787839",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "TEF": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\TEF-A-28015865",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "TLGO": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\TLGO-A-85150961",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "TRE": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\TRE-A-28008894",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "TRG": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "TUB": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "UNI": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\UNI-A-93139096",
+      "documents_present": [
+        "cuentas_anuales_consolidadas_auditadas"
+      ],
+      "documents_missing": [
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "URB": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2023\\URB-A-48002059",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "VID": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "VIS": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "VOC": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ZOT": {
+      "folder_exists": false,
+      "documents_present": []
+    }
+  },
+  "fully_covered_companies": 0,
+  "pending_companies": 121,
+  "shared_components": {
+    "feeding": [
+      "mod_01_ingestion/src/ingest_runner.py",
+      "mod_01_ingestion/src/es_cnmv_client.py",
+      "mod_01_ingestion/src/bme_growth_client.py",
+      "mod_01_ingestion/src/xbrl_org_client.py"
+    ],
+    "forensic": [
+      "mod_01_ingestion/src/forensic_dataset_auditor.py",
+      "mod_01_ingestion/src/ai_pre_validation_guard.py",
+      "mod_01_ingestion/src/document_completeness_validator.py",
+      "mod_01_ingestion/src/branch_threshold_validator.py",
+      "mod_01_ingestion/src/remediation_runner.py"
+    ]
+  }
+}

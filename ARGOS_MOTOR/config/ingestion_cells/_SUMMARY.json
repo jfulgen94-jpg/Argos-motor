@@ -1,0 +1,62 @@
+[
+  {
+    "cell_id": "MERCADO_CONTINUO_2020",
+    "expected": 121,
+    "fully_covered": 0,
+    "pending": 121
+  },
+  {
+    "cell_id": "MERCADO_CONTINUO_2021",
+    "expected": 121,
+    "fully_covered": 0,
+    "pending": 121
+  },
+  {
+    "cell_id": "MERCADO_CONTINUO_2022",
+    "expected": 121,
+    "fully_covered": 0,
+    "pending": 121
+  },
+  {
+    "cell_id": "MERCADO_CONTINUO_2023",
+    "expected": 121,
+    "fully_covered": 0,
+    "pending": 121
+  },
+  {
+    "cell_id": "MERCADO_CONTINUO_2024",
+    "expected": 121,
+    "fully_covered": 0,
+    "pending": 121
+  },
+  {
+    "cell_id": "BME_GROWTH_2020",
+    "expected": 54,
+    "fully_covered": 0,
+    "pending": 54
+  },
+  {
+    "cell_id": "BME_GROWTH_2021",
+    "expected": 54,
+    "fully_covered": 0,
+    "pending": 54
+  },
+  {
+    "cell_id": "BME_GROWTH_2022",
+    "expected": 54,
+    "fully_covered": 0,
+    "pending": 54
+  },
+  {
+    "cell_id": "BME_GROWTH_2023",
+    "expected": 54,
+    "fully_covered": 0,
+    "pending": 54
+  },
+  {
+    "cell_id": "BME_GROWTH_2024",
+    "expected": 54,
+    "fully_covered": 0,
+    "pending": 54
+  }
+]

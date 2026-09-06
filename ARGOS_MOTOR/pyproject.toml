@@ -1,0 +1,32 @@
+[project]
+name = "stater-motor-argos"
+version = "0.1.0"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [{name = "STATER Financial Technologies", email = "dev@stater.es"}]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-v"
+testpaths = [
+    "mod_01_ingestion/tests",
+    "mod_02_parser/tests",
+    "mod_03_nlp_audit/tests",
+    "mod_04_data_lake/tests",
+    "mod_05_quant_sfi/tests",
+    "mod_06_api_gateway/tests",
+    "mod_07_ai_agents/tests",
+    "mod_08_monitor/tests"
+]
+pythonpath = [
+    ".",
+    ".."
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true

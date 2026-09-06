@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FinancialPanelRecord",
+  "type": "object",
+  "properties": {
+    "entity_lei": {
+      "type": "string"
+    },
+    "fiscal_year": {
+      "type": "integer"
+    },
+    "total_activo": {
+      "type": "number"
+    },
+    "total_pasivo": {
+      "type": "number"
+    },
+    "patrimonio_neto": {
+      "type": "number"
+    },
+    "revenue": {
+      "type": "number"
+    },
+    "beneficio_neto": {
+      "type": "number"
+    },
+    "balance_check": {
+      "type": "boolean"
+    },
+    "version_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "entity_lei",
+    "fiscal_year",
+    "total_activo",
+    "total_pasivo",
+    "patrimonio_neto",
+    "balance_check"
+  ]
+}

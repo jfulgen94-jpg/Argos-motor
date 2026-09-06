@@ -1,0 +1,53 @@
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Temporary IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local database & temp outputs
+*.duckdb
+*.duckdb.wal
+*.parquet
+*.log
+logs/
+logs/**
+audits/
+audits/**
+scratch/
+tmp/
+*.zip
+
+# Data Dumps & Large Datasets (Exceeding GitHub limits)
+Argos_BD/**
+!Argos_BD/.gitkeep
+Argos_SFI_TFM/**
+!Argos_SFI_TFM/.gitkeep
+ARGOS_MOTOR/data/**
+!ARGOS_MOTOR/data/**/.gitkeep
+ARGOS_MOTOR/ipp_extract/**
+
+# Testing & Coverage
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# Sensitive / Private Corporate files
+.env
+.env.local
+*.pem
+*.key

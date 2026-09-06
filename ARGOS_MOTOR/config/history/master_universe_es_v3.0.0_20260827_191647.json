@@ -1,0 +1,1990 @@
+{
+  "version": "3.0.0",
+  "jurisdiction": "ES",
+  "supervisor": "CNMV / BME",
+  "generated_at": "2026-08-27T17:34:04.440815+00:00",
+  "total_entities": 141,
+  "segments_breakdown": {
+    "IBEX35": 34,
+    "MERCADO_CONTINUO": 65,
+    "BME_GROWTH": 42
+  },
+  "socimis_count": 0,
+  "companies": {
+    "SAN": {
+      "ticker": "SAN",
+      "cif_nif": "A-39000013",
+      "lei": "5493006QMFDDMYWIAM13",
+      "name_legal": "Banco Santander, S.A.",
+      "segment": "IBEX35",
+      "sector": "Banca",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440212+00:00"
+    },
+    "BBVA": {
+      "ticker": "BBVA",
+      "cif_nif": "A-48265169",
+      "lei": "K8MS7FD7N5Z2WQ51AZ71",
+      "name_legal": "Banco Bilbao Vizcaya Argentaria, S.A.",
+      "segment": "IBEX35",
+      "sector": "Banca",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440235+00:00"
+    },
+    "IBE": {
+      "ticker": "IBE",
+      "cif_nif": "A-48010615",
+      "lei": "5QK37QC7NWOJ8D7WVQ45",
+      "name_legal": "Iberdrola, S.A.",
+      "segment": "IBEX35",
+      "sector": "Utilities / Electricidad",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440241+00:00"
+    },
+    "ITX": {
+      "ticker": "ITX",
+      "cif_nif": "A-15075062",
+      "lei": "549300H5G5S6G31H6878",
+      "name_legal": "Industria de Diseño Textil, S.A. (Inditex)",
+      "segment": "IBEX35",
+      "sector": "Consumo / Textil",
+      "is_socimi": false,
+      "fiscal_year_end": "01-31",
+      "historical_name_changes": [
+        "Inditex",
+        "Industria de Diseno Textil SA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440248+00:00"
+    },
+    "TEF": {
+      "ticker": "TEF",
+      "cif_nif": "A-28015865",
+      "lei": "549300G916G0JGT9L459",
+      "name_legal": "Telefónica, S.A.",
+      "segment": "IBEX35",
+      "sector": "Telecomunicaciones",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440252+00:00"
+    },
+    "REP": {
+      "ticker": "REP",
+      "cif_nif": "A-78374725",
+      "lei": "BSYCX13Y0NOT13Q2A572",
+      "name_legal": "Repsol, S.A.",
+      "segment": "IBEX35",
+      "sector": "Petróleo y Gas / Energía",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440255+00:00"
+    },
+    "CABK": {
+      "ticker": "CABK",
+      "cif_nif": "A-08663619",
+      "lei": "7CUNS533WMO58WR71540",
+      "name_legal": "CaixaBank, S.A.",
+      "segment": "IBEX35",
+      "sector": "Banca",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "CaixaBank SA",
+        "Criteria CaixaCorp"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440259+00:00"
+    },
+    "AMS": {
+      "ticker": "AMS",
+      "cif_nif": "A-84236934",
+      "lei": "9598004A3FTY3TEHHN09",
+      "name_legal": "Amadeus IT Group, S.A.",
+      "segment": "IBEX35",
+      "sector": "Tecnología / Viajes",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Amadeus IT Holding SA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440264+00:00"
+    },
+    "CLNX": {
+      "ticker": "CLNX",
+      "cif_nif": "A-64907306",
+      "lei": "549300B7K8799K586432",
+      "name_legal": "Cellnex Telecom, S.A.",
+      "segment": "IBEX35",
+      "sector": "Telecomunicaciones / Infraestructuras",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Abertis Telecom Terrestre"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440267+00:00"
+    },
+    "FER": {
+      "ticker": "FER",
+      "cif_nif": "A-28004471",
+      "lei": "549300088898Y6U83321",
+      "name_legal": "Ferrovial SE",
+      "segment": "IBEX35",
+      "sector": "Infraestructuras / Construcción",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Grupo Ferrovial SA",
+        "Ferrovial SA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440271+00:00"
+    },
+    "GRF": {
+      "ticker": "GRF",
+      "cif_nif": "A-58297783",
+      "lei": "959800HSSNXWRKBK4N60",
+      "name_legal": "Grifols, S.A.",
+      "segment": "IBEX35",
+      "sector": "Farmacéutico / Salud",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440274+00:00"
+    },
+    "MEL": {
+      "ticker": "MEL",
+      "cif_nif": "A-78304516",
+      "lei": "959800JRKSZ6YZD4EL80",
+      "name_legal": "Meliá Hotels International, S.A.",
+      "segment": "IBEX35",
+      "sector": "Turismo / Hoteles",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Sol Melia SA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440278+00:00"
+    },
+    "ACS": {
+      "ticker": "ACS",
+      "cif_nif": "A-28004885",
+      "lei": "959800201400051783",
+      "name_legal": "ACS Actividades de Construcción y Servicios, S.A.",
+      "segment": "IBEX35",
+      "sector": "Construcción / Concesiones",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Actividades de Construccion y Servicios SA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440281+00:00"
+    },
+    "IAG": {
+      "ticker": "IAG",
+      "cif_nif": "A-85845535",
+      "lei": "959800TZHQRUS1770638",
+      "name_legal": "International Consolidated Airlines Group, S.A. (IAG)",
+      "segment": "IBEX35",
+      "sector": "Aerolíneas / Transporte",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Iberia / British Airways Merger Entity"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440284+00:00"
+    },
+    "MAP": {
+      "ticker": "MAP",
+      "cif_nif": "A-08055741",
+      "lei": "549300H2P9S800000000",
+      "name_legal": "MAPFRE, S.A.",
+      "segment": "IBEX35",
+      "sector": "Seguros",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440288+00:00"
+    },
+    "NTGY": {
+      "ticker": "NTGY",
+      "cif_nif": "A-08015497",
+      "lei": "TL2N6M87CW970S5SV098",
+      "name_legal": "Naturgy Energy Group, S.A.",
+      "segment": "IBEX35",
+      "sector": "Utilities / Gas y Electricidad",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Gas Natural SDG SA",
+        "Gas Natural Fenosa"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440291+00:00"
+    },
+    "ENG": {
+      "ticker": "ENG",
+      "cif_nif": "A-28294726",
+      "lei": "213800OU3FQK6PO55Y38",
+      "name_legal": "Enagás, S.A.",
+      "segment": "IBEX35",
+      "sector": "Utilities / Infraestructura de Gas",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440296+00:00"
+    },
+    "ELE": {
+      "ticker": "ELE",
+      "cif_nif": "A-28023430",
+      "lei": "5493000G5Q0M3W193766",
+      "name_legal": "Endesa, S.A.",
+      "segment": "IBEX35",
+      "sector": "Utilities / Electricidad",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440299+00:00"
+    },
+    "RED": {
+      "ticker": "RED",
+      "cif_nif": "A-78003662",
+      "lei": "5493009HMD0C90GUV498",
+      "name_legal": "Redeia Corporación, S.A.",
+      "segment": "IBEX35",
+      "sector": "Utilities / Red Eléctrica",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Red Electrica Corporacion SA",
+        "REE"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440304+00:00"
+    },
+    "BKT": {
+      "ticker": "BKT",
+      "cif_nif": "A-28157360",
+      "lei": "VWMYAEQSTOPNV0SUGU82",
+      "name_legal": "Bankinter, S.A.",
+      "segment": "IBEX35",
+      "sector": "Banca",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440308+00:00"
+    },
+    "UNI": {
+      "ticker": "UNI",
+      "cif_nif": "A-93139096",
+      "lei": "5493007SJLLCTM6J6M37",
+      "name_legal": "Unicaja Banco, S.A.",
+      "segment": "IBEX35",
+      "sector": "Banca",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Fusión con Liberbank en 2021"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440311+00:00"
+    },
+    "SOL": {
+      "ticker": "SOL",
+      "cif_nif": "A-82569963",
+      "lei": "959800PM2YJU76XN2L65",
+      "name_legal": "Solaria Energía y Medio Ambiente, S.A.",
+      "segment": "IBEX35",
+      "sector": "Energías Renovables / Solar",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440314+00:00"
+    },
+    "PHM": {
+      "ticker": "PHM",
+      "cif_nif": "A-28120616",
+      "lei": "959800QWKZ45ZQC2AV58",
+      "name_legal": "PharmaMar, S.A.",
+      "segment": "IBEX35",
+      "sector": "Farmacéutico / Biotecnología",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Zeltia SA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440318+00:00"
+    },
+    "ACX": {
+      "ticker": "ACX",
+      "cif_nif": "A-28250777",
+      "lei": "959800AXZW3E00000000",
+      "name_legal": "Acerinox, S.A.",
+      "segment": "IBEX35",
+      "sector": "Siderurgia / Acero Inoxidable",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440321+00:00"
+    },
+    "SAB": {
+      "ticker": "SAB",
+      "cif_nif": "A-08000143",
+      "lei": "SI5RG2M0WQQLZCXKRM20",
+      "name_legal": "Banco de Sabadell, S.A.",
+      "segment": "IBEX35",
+      "sector": "Banca",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440324+00:00"
+    },
+    "ROVI": {
+      "ticker": "ROVI",
+      "cif_nif": "A-28249761",
+      "lei": "959800ROVI0000000001",
+      "name_legal": "Laboratorios Farmacéuticos Rovi, S.A.",
+      "segment": "IBEX35",
+      "sector": "Farmacéutico",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440327+00:00"
+    },
+    "SCYR": {
+      "ticker": "SCYR",
+      "cif_nif": "A-28013811",
+      "lei": "959800XKAB9VNAVN9425",
+      "name_legal": "Sacyr, S.A.",
+      "segment": "IBEX35",
+      "sector": "Construcción / Concesiones",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Sacyr Vallehermoso SA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440330+00:00"
+    },
+    "LOG": {
+      "ticker": "LOG",
+      "cif_nif": "A-86928603",
+      "lei": "959800LOGISTA0000001",
+      "name_legal": "Compañía de Distribución Integral Logista Holdings, S.A.",
+      "segment": "IBEX35",
+      "sector": "Logística / Distribución",
+      "is_socimi": false,
+      "fiscal_year_end": "09-30",
+      "historical_name_changes": [
+        "Logista"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440335+00:00"
+    },
+    "IDR": {
+      "ticker": "IDR",
+      "cif_nif": "A-28599033",
+      "lei": "959800INDRA000000001",
+      "name_legal": "Indra Sistemas, S.A.",
+      "segment": "IBEX35",
+      "sector": "Tecnología / Defensa",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440338+00:00"
+    },
+    "ANA": {
+      "ticker": "ANA",
+      "cif_nif": "A-08001851",
+      "lei": "54930002KP7500000000",
+      "name_legal": "Acciona, S.A.",
+      "segment": "IBEX35",
+      "sector": "Infraestructuras / Energía",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440341+00:00"
+    },
+    "ANE": {
+      "ticker": "ANE",
+      "cif_nif": "A-85474773",
+      "lei": "254900UPX0OETN796D56",
+      "name_legal": "Corporación Acciona Energías Renovables, S.A.",
+      "segment": "IBEX35",
+      "sector": "Energías Renovables",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Acciona Energia",
+        "OPV en julio 2021"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440344+00:00"
+    },
+    "PUIG": {
+      "ticker": "PUIG",
+      "cif_nif": "A-08158289",
+      "lei": "549300OVHNSX00000000",
+      "name_legal": "Puig Brands, S.A.",
+      "segment": "IBEX35",
+      "sector": "Consumo / Belleza y Moda",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "OPV en mayo 2024"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440348+00:00"
+    },
+    "AENA": {
+      "ticker": "AENA",
+      "cif_nif": "A-86212420",
+      "lei": "959800R7QMXK00000000",
+      "name_legal": "Aena SME, S.A.",
+      "segment": "IBEX35",
+      "sector": "Aeropuertos / Infraestructuras",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440351+00:00"
+    },
+    "FDR": {
+      "ticker": "FDR",
+      "cif_nif": "A-08249963",
+      "lei": "959800201400050266",
+      "name_legal": "Fluidra, S.A.",
+      "segment": "IBEX35",
+      "sector": "Piscinas y Equipamiento de Agua",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440355+00:00"
+    },
+    "ALNT": {
+      "ticker": "ALNT",
+      "cif_nif": "A-81862492",
+      "lei": "95980078NDTDLTDH6130",
+      "name_legal": "Alantra Partners, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Servicios Financieros / Banca de Inversión",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "N+1 Mercados Financieros"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440358+00:00"
+    },
+    "ALM": {
+      "ticker": "ALM",
+      "cif_nif": "A-08008641",
+      "lei": "959800ALMIRALL000001",
+      "name_legal": "Almirall, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Farmacéutico / Dermatología",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440362+00:00"
+    },
+    "AMP": {
+      "ticker": "AMP",
+      "cif_nif": "A-28005387",
+      "lei": "959800GZESQU00000000",
+      "name_legal": "Amper, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Tecnología / Defensa y Comunicaciones",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440366+00:00"
+    },
+    "EAT": {
+      "ticker": "EAT",
+      "cif_nif": "W-0022359-J",
+      "lei": "259400T6ZDQIMDBGDN42",
+      "name_legal": "AmRest Holdings SE",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Restauración / Franquicias",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440370+00:00"
+    },
+    "APAM": {
+      "ticker": "APAM",
+      "cif_nif": "N-0030000-A",
+      "lei": "549300APAM0000000001",
+      "name_legal": "Aperam, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Siderurgia / Acero",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440374+00:00"
+    },
+    "APPS": {
+      "ticker": "APPS",
+      "cif_nif": "A-85150961",
+      "lei": "213800M9XCA6NR98E873",
+      "name_legal": "Applus Services, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Inspección y Certificación Técnica",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "OPA de exclusión en 2024"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440377+00:00"
+    },
+    "A3M": {
+      "ticker": "A3M",
+      "cif_nif": "A-78907359",
+      "lei": "959800ATRESMEDIA00001",
+      "name_legal": "Atresmedia Corporación de Medios de Comunicación, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Medios de Comunicación / Audiovisual",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Antena 3 de Television SA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440380+00:00"
+    },
+    "ATRS": {
+      "ticker": "ATRS",
+      "cif_nif": "A-85150961",
+      "lei": "959800HHEE9W4TZA8627",
+      "name_legal": "Atrys Health, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Salud / Telemedicina y Oncología",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salto de BME Growth al Continuo en 2022"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440383+00:00"
+    },
+    "ADX": {
+      "ticker": "ADX",
+      "cif_nif": "A-62338827",
+      "lei": "959800MAFGMXMGJHCH48",
+      "name_legal": "Audax Renovables, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Energías Renovables / Comercialización",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Fersa Energias Renovables SA",
+        "Audax"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440386+00:00"
+    },
+    "AYCO": {
+      "ticker": "AYCO",
+      "cif_nif": "A-28001600",
+      "lei": "959800AYCO0000000001",
+      "name_legal": "Ayco Grupo Inmobiliario, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Inmobiliario Residencial",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440391+00:00"
+    },
+    "AZK": {
+      "ticker": "AZK",
+      "cif_nif": "A-31065527",
+      "lei": "959800AXZW3E00000001",
+      "name_legal": "Azkoyen, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Industrial / Vending y Control de Accesos",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440394+00:00"
+    },
+    "BKIA": {
+      "ticker": "BKIA",
+      "cif_nif": "A-14010342",
+      "lei": "549300685QG7DJS55M76",
+      "name_legal": "Bankia, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Banca",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Absorbida por CaixaBank en marzo 2021"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440397+00:00"
+    },
+    "BAV": {
+      "ticker": "BAV",
+      "cif_nif": "A-80415391",
+      "lei": "959800CR1BA43ZK65T94",
+      "name_legal": "Clínica Baviera, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Salud / Oftalmología",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440400+00:00"
+    },
+    "CAF": {
+      "ticker": "CAF",
+      "cif_nif": "A-20001020",
+      "lei": "959800CAF00000000001",
+      "name_legal": "Construcciones y Auxiliar de Ferrocarriles, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Ferrocarril / Movilidad Sostenible",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440405+00:00"
+    },
+    "CIE": {
+      "ticker": "CIE",
+      "cif_nif": "A-48231567",
+      "lei": "959800CIE000000000001",
+      "name_legal": "CIE Automotive, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Automoción / Componentes",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440408+00:00"
+    },
+    "DESA": {
+      "ticker": "DESA",
+      "cif_nif": "A-08149866",
+      "lei": "959800DESA00000000001",
+      "name_legal": "Desarrollos Especiales de Sistemas de Anclaje, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Industrial / Fijaciones",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440412+00:00"
+    },
+    "DIA": {
+      "ticker": "DIA",
+      "cif_nif": "A-28164754",
+      "lei": "54930063C6K200000000",
+      "name_legal": "Distribuidora Internacional de Alimentación, S.A. (DIA)",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Distribución / Supermercados",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440415+00:00"
+    },
+    "DOM": {
+      "ticker": "DOM",
+      "cif_nif": "A-95044450",
+      "lei": "959800DOMINION0000001",
+      "name_legal": "Global Dominion Access, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Servicios e Ingeniería / Tecnología",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440418+00:00"
+    },
+    "EBRO": {
+      "ticker": "EBRO",
+      "cif_nif": "A-47412333",
+      "lei": "959800NW6DLQ00000000",
+      "name_legal": "Ebro Foods, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Alimentación / Arroz y Pasta",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Ebro Puleva SA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440421+00:00"
+    },
+    "ECO": {
+      "ticker": "ECO",
+      "cif_nif": "A-15024474",
+      "lei": "959800HBGZWH00000000",
+      "name_legal": "Ecoener, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Energías Renovables / Hidráulica y Eólica",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "OPV en mayo 2021"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440424+00:00"
+    },
+    "EDPR": {
+      "ticker": "EDPR",
+      "cif_nif": "A-75000001",
+      "lei": "529900MUFAH07Q1TAX06",
+      "name_legal": "EDP Renováveis, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Energías Renovables",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440427+00:00"
+    },
+    "EDR": {
+      "ticker": "EDR",
+      "cif_nif": "W-0040000-A",
+      "lei": "549300TTCXZO00000000",
+      "name_legal": "eDreams ODIGEO, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Viajes Online / OTAs",
+      "is_socimi": false,
+      "fiscal_year_end": "03-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440431+00:00"
+    },
+    "ENC": {
+      "ticker": "ENC",
+      "cif_nif": "A-28212264",
+      "lei": "95980020140005309084",
+      "name_legal": "Ence Energía y Celulosa, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Celulosa y Biomasa Renovable",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Grupo Empresarial Ence SA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440434+00:00"
+    },
+    "ERC": {
+      "ticker": "ERC",
+      "cif_nif": "A-08000671",
+      "lei": "959800Z611RK00000000",
+      "name_legal": "Ercros, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Industria Química",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440438+00:00"
+    },
+    "FAE": {
+      "ticker": "FAE",
+      "cif_nif": "A-48004139",
+      "lei": "959800FXZQY7U3P1G969",
+      "name_legal": "Faes Farma, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Farmacéutico / Salud",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440441+00:00"
+    },
+    "FCC": {
+      "ticker": "FCC",
+      "cif_nif": "A-28037224",
+      "lei": "959800201400051783",
+      "name_legal": "Fomento de Construcciones y Contratas, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Construcción / Servicios Medioambientales",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440445+00:00"
+    },
+    "GAM": {
+      "ticker": "GAM",
+      "cif_nif": "A-33519802",
+      "lei": "959800GAM00000000001",
+      "name_legal": "General de Alquiler de Maquinaria, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Maquinaria Industrial / Servicios",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440448+00:00"
+    },
+    "GEST": {
+      "ticker": "GEST",
+      "cif_nif": "A-48227656",
+      "lei": "959800GESTAMP0000001",
+      "name_legal": "Gestamp Automoción, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Componentes de Automoción",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440452+00:00"
+    },
+    "GCO": {
+      "ticker": "GCO",
+      "cif_nif": "A-08168270",
+      "lei": "959800H2P9S800000001",
+      "name_legal": "Grupo Catalana Occidente, S.A. (Occident)",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Seguros",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Occident"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440456+00:00"
+    },
+    "GRE": {
+      "ticker": "GRE",
+      "cif_nif": "A-85150961",
+      "lei": "959800M1FVPL00000000",
+      "name_legal": "Grenergy Renovables, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Energías Renovables / Solar y Baterías",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salto de BME Growth al Continuo en dic 2019"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440460+00:00"
+    },
+    "SANJ": {
+      "ticker": "SANJ",
+      "cif_nif": "A-36046993",
+      "lei": "9598002SMUBZ00000000",
+      "name_legal": "Grupo Empresarial San José, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Construcción / Inmobiliario",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "GSJ"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440464+00:00"
+    },
+    "EZE": {
+      "ticker": "EZE",
+      "cif_nif": "A-28014868",
+      "lei": "959800EZENTIS00000001",
+      "name_legal": "Grupo Ezentis, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Telecomunicaciones / Servicios",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Avanzit SA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440468+00:00"
+    },
+    "IBP": {
+      "ticker": "IBP",
+      "cif_nif": "A-20037131",
+      "lei": "959800RG37G800000000",
+      "name_legal": "Iberpapel Gestión, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Papel y Celulosa",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440471+00:00"
+    },
+    "LBK": {
+      "ticker": "LBK",
+      "cif_nif": "A-33519802",
+      "lei": "635400XT3V7WHLSFYY25",
+      "name_legal": "Liberbank, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Banca",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Absorbida por Unicaja Banco en julio 2021"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440477+00:00"
+    },
+    "LINEA": {
+      "ticker": "LINEA",
+      "cif_nif": "A-80875416",
+      "lei": "95980079E2NB00000000",
+      "name_legal": "Línea Directa Aseguradora, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Seguros",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Escisión de Bankinter y OPV en abril 2021"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440483+00:00"
+    },
+    "LGT": {
+      "ticker": "LGT",
+      "cif_nif": "A-47007620",
+      "lei": "959800PV7FH000000000",
+      "name_legal": "Lingotes Especiales, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Metalurgia / Fundición de Hierro",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440487+00:00"
+    },
+    "MVC": {
+      "ticker": "MVC",
+      "cif_nif": "A-87471280",
+      "lei": "959800ZQW44V00000000",
+      "name_legal": "Metrovacesa, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Promoción Inmobiliaria Residencial",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440491+00:00"
+    },
+    "NHH": {
+      "ticker": "NHH",
+      "cif_nif": "A-28029700",
+      "lei": "959800LM1RW3PKJ4A296",
+      "name_legal": "Minor Hotels Europe & Americas, S.A. (NH)",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Hoteles / Turismo",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "NH Hotel Group SA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440496+00:00"
+    },
+    "MCM": {
+      "ticker": "MCM",
+      "cif_nif": "A-08008401",
+      "lei": "959800MIQUEL00000001",
+      "name_legal": "Miquel y Costas & Miquel, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Papel Especial y Fino",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440499+00:00"
+    },
+    "NTH": {
+      "ticker": "NTH",
+      "cif_nif": "A-80126584",
+      "lei": "959800NATURHOUSE0001",
+      "name_legal": "Naturhouse Health, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Salud y Nutrición / Retail",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440503+00:00"
+    },
+    "NEIN": {
+      "ticker": "NEIN",
+      "cif_nif": "A-95777174",
+      "lei": "959800FW4JL600000000",
+      "name_legal": "Neinor Homes, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Promoción Residencial",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "HOME"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440507+00:00"
+    },
+    "NEA": {
+      "ticker": "NEA",
+      "cif_nif": "A-09000570",
+      "lei": "959800EXHG0000000000",
+      "name_legal": "Nicolás Correa, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Maquinaria / Fresadoras Industriales",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "COR"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440511+00:00"
+    },
+    "NEXT": {
+      "ticker": "NEXT",
+      "cif_nif": "A-08018319",
+      "lei": "959800NEXTIL00000001",
+      "name_legal": "Nueva Expresión Textil, S.A. (Nextil)",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Textil / Tejidos Elásticos",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Dogi International Fabrics SA",
+        "NXT"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440519+00:00"
+    },
+    "NYS": {
+      "ticker": "NYS",
+      "cif_nif": "A-28014561",
+      "lei": "959800V35MGZXBNZP485",
+      "name_legal": "Nyesa Valores Corporación, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Inmobiliario y Servicios",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Inbesos SA",
+        "NYE"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440526+00:00"
+    },
+    "OHLA": {
+      "ticker": "OHLA",
+      "cif_nif": "A-48010573",
+      "lei": "959800OHLA00000000001",
+      "name_legal": "OHLA (Obrascón Huarte Lain), S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Construcción y Concesiones",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "OHL",
+        "Obrascon Huarte Lain SA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440531+00:00"
+    },
+    "OPDE": {
+      "ticker": "OPDE",
+      "cif_nif": "A-84462100",
+      "lei": "959800KT1FVN00000000",
+      "name_legal": "Opdenergy Holding, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Energías Renovables / IPP",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "OPV en julio 2022, OPA exclusión Antin 2024"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440535+00:00"
+    },
+    "ORYZ": {
+      "ticker": "ORYZ",
+      "cif_nif": "A-62281480",
+      "lei": "95980063R15RDF29DK13",
+      "name_legal": "Oryzon Genomics, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Biofarmacia / Epigenética",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "ORY"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440539+00:00"
+    },
+    "PRM": {
+      "ticker": "PRM",
+      "cif_nif": "A-28017366",
+      "lei": "959800M75M8100000000",
+      "name_legal": "Prim, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Tecnología Médica / Suministros Sanitarios",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440542+00:00"
+    },
+    "PRS": {
+      "ticker": "PRS",
+      "cif_nif": "A-28297059",
+      "lei": "959800U3NGPX00000000",
+      "name_legal": "Promotora de Informaciones, S.A. (PRISA)",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Medios de Comunicación / Educación",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Grupo PRISA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440546+00:00"
+    },
+    "PSG": {
+      "ticker": "PSG",
+      "cif_nif": "A-28424083",
+      "lei": "549300N94L4D5NDBFG97",
+      "name_legal": "Prosegur Compañía de Seguridad, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Seguridad y Vigilancia",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440550+00:00"
+    },
+    "PGR": {
+      "ticker": "PGR",
+      "cif_nif": "A-87474474",
+      "lei": "9598005HY5DE00000000",
+      "name_legal": "Prosegur Cash, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Logística de Valores y Gestión de Efectivo",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440554+00:00"
+    },
+    "R4": {
+      "ticker": "R4",
+      "cif_nif": "A-79567939",
+      "lei": "213800IMKAUV5KW28586",
+      "name_legal": "Renta 4 Banco, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Banca de Inversión y Gestión Patrimonial",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440557+00:00"
+    },
+    "REN": {
+      "ticker": "REN",
+      "cif_nif": "A-08249872",
+      "lei": "959800N1575U0SRS5Z65",
+      "name_legal": "Renta Corporación Real Estate, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Inmobiliario / Transformación Urbana",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440563+00:00"
+    },
+    "RJF": {
+      "ticker": "RJF",
+      "cif_nif": "A-08015844",
+      "lei": "9598003MRMJHA81QJF20",
+      "name_legal": "Laboratorio Reig Jofre, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Farmacéutico / Fabricación Especializada",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Natraceutical SA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440570+00:00"
+    },
+    "SCF": {
+      "ticker": "SCF",
+      "cif_nif": "A-28001071",
+      "lei": "5493000LM0MZ4JPMGM90",
+      "name_legal": "Santander Consumer Finance, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Financiación al Consumo / Crédito",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Emisor cotizado de deuda"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440575+00:00"
+    },
+    "SLPK": {
+      "ticker": "SLPK",
+      "cif_nif": "A-95333838",
+      "lei": "959800NAFTNQ00000000",
+      "name_legal": "Solarpack Corporación Tecnológica, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Energía Solar Fotovoltaica",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Excluida tras OPA de EQT en dic 2021"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440579+00:00"
+    },
+    "SOLT": {
+      "ticker": "SOLT",
+      "cif_nif": "A-73891467",
+      "lei": "959800L6L2B2GGN73292",
+      "name_legal": "Soltec Power Holdings, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Seguidores Solares / Fotovoltaica",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "OPV en octubre 2020"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440583+00:00"
+    },
+    "SQRL": {
+      "ticker": "SQRL",
+      "cif_nif": "A-82787839",
+      "lei": "959800NZ03Z400000000",
+      "name_legal": "Squirrel Media, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Medios / Publicidad y Contenidos",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Vertice 360 Grados SA"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440587+00:00"
+    },
+    "TLGO": {
+      "ticker": "TLGO",
+      "cif_nif": "A-85150961",
+      "lei": "95980037JECHVQDJDT59",
+      "name_legal": "Talgo, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Material Rodante Ferroviario",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440591+00:00"
+    },
+    "TRE": {
+      "ticker": "TRE",
+      "cif_nif": "A-28008894",
+      "lei": "213800JEZBUP00000000",
+      "name_legal": "Técnicas Reunidas, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Ingeniería Industrial y Energía",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440595+00:00"
+    },
+    "TUB": {
+      "ticker": "TUB",
+      "cif_nif": "A-01004603",
+      "lei": "959800TUBACEX0000001",
+      "name_legal": "Tubacex, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Tubos de Acero Inoxidable sin Soldadura",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440599+00:00"
+    },
+    "TRG": {
+      "ticker": "TRG",
+      "cif_nif": "A-01000858",
+      "lei": "959800TUBOSREUN00001",
+      "name_legal": "Tubos Reunidos, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Siderurgia / Tubería de Acero",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440603+00:00"
+    },
+    "VID": {
+      "ticker": "VID",
+      "cif_nif": "A-01002342",
+      "lei": "959800VIDRALA0000001",
+      "name_legal": "Vidrala, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Envases de Vidrio",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440607+00:00"
+    },
+    "VIS": {
+      "ticker": "VIS",
+      "cif_nif": "A-31065501",
+      "lei": "959800VISCOFAN000001",
+      "name_legal": "Viscofan, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Envolturas Celulósicas Alimentarias",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440614+00:00"
+    },
+    "VOC": {
+      "ticker": "VOC",
+      "cif_nif": "A-82937863",
+      "lei": "959800VOCENTO0000001",
+      "name_legal": "Vocento, S.A.",
+      "segment": "MERCADO_CONTINUO",
+      "sector": "Medios de Comunicación / Prensa",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Grupo Correo Prensa Espanola"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440620+00:00"
+    },
+    "ALTI": {
+      "ticker": "ALTI",
+      "cif_nif": "A-15486806",
+      "lei": "959800L5NRK0QKKARP40",
+      "name_legal": "Altia Consultores, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Tecnología / Consultoría TI y Software",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440624+00:00"
+    },
+    "MS": {
+      "ticker": "MS",
+      "cif_nif": "A-87588828",
+      "lei": "984500D45D5950C6CB68",
+      "name_legal": "Making Science Group, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Marketing Digital / Cloud e Inteligencia Artificial",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440629+00:00"
+    },
+    "GIGA": {
+      "ticker": "GIGA",
+      "cif_nif": "A-86221769",
+      "lei": "959800HPL6CH6F4KFQ29",
+      "name_legal": "Gigas Hosting, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Cloud Hosting / Telecomunicaciones",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440636+00:00"
+    },
+    "IZER": {
+      "ticker": "IZER",
+      "cif_nif": "A-33519802",
+      "lei": "959800X6PDF1A9CC6S16",
+      "name_legal": "Izertis, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Consultoría Tecnológica y Transformación Digital",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440640+00:00"
+    },
+    "480": {
+      "ticker": "480",
+      "cif_nif": "B-12880708",
+      "lei": "959800GKWBRP37CSVX97",
+      "name_legal": "Cuatroochenta (480S), S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Ciberseguridad y Software Cloud",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "480 Interactive"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440645+00:00"
+    },
+    "AGIL": {
+      "ticker": "AGIL",
+      "cif_nif": "A-64703895",
+      "lei": "9598008F2KPH0T9ZQG65",
+      "name_legal": "Agile Content, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Software Audiovisual / Televisión Digital OTT",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440650+00:00"
+    },
+    "LLN": {
+      "ticker": "LLN",
+      "cif_nif": "A-25340936",
+      "lei": "95980020140005510650",
+      "name_legal": "Lleida.net (Lleidanetworks Serveis Telemàtics), S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Certificación y Notificación Electrónica",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440654+00:00"
+    },
+    "TR1": {
+      "ticker": "TR1",
+      "cif_nif": "A-41551896",
+      "lei": "95980005703678912345",
+      "name_legal": "Tier1 Technology, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Software Transaccional / Comerzzia",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440659+00:00"
+    },
+    "FACE": {
+      "ticker": "FACE",
+      "cif_nif": "A-54673896",
+      "lei": "959800H5NST7QNR25786",
+      "name_legal": "FacePhi Biometría, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Biometría e Identidad Digital",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440665+00:00"
+    },
+    "SAI": {
+      "ticker": "SAI",
+      "cif_nif": "A-98926448",
+      "lei": "959800K3URS2BMHE3P84",
+      "name_legal": "Substrate Artificial Intelligence, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Inteligencia Artificial / Deep Learning",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440669+00:00"
+    },
+    "PARLEM": {
+      "ticker": "PARLEM",
+      "cif_nif": "A-66173873",
+      "lei": "959800QYACRRQHJ0N686",
+      "name_legal": "Parlem Telecom Companyia de Telecomunicacions, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Telecomunicaciones / Fibra y Móvil",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salida a bolsa en 2021"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440674+00:00"
+    },
+    "NTX": {
+      "ticker": "NTX",
+      "cif_nif": "A-15638927",
+      "lei": "959800J1JE5XLLL4U266",
+      "name_legal": "Netex Knowledge Factory, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "EdTech / Soluciones Tecnológicas de Aprendizaje",
+      "is_socimi": false,
+      "fiscal_year_end": "09-30",
+      "historical_name_changes": [
+        "OPA de exclusión en 2024"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440678+00:00"
+    },
+    "CAT": {
+      "ticker": "CAT",
+      "cif_nif": "A-82743899",
+      "lei": "213800TJ7678821J2S55",
+      "name_legal": "Catenon, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Búsqueda Ejecutiva de Talento / Tecnología",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440681+00:00"
+    },
+    "SNGR": {
+      "ticker": "SNGR",
+      "cif_nif": "A-85743896",
+      "lei": "959800SNGULAR0000001",
+      "name_legal": "Sngular (Singular People), S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Ingeniería de Software / Inteligencia Artificial",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salida a bolsa en 2021"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440686+00:00"
+    },
+    "COMM": {
+      "ticker": "COMM",
+      "cif_nif": "A-15638928",
+      "lei": "959800YNCPQFA2U65681",
+      "name_legal": "Commcenter, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Distribución y Servicios de Telecomunicaciones",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440690+00:00"
+    },
+    "NBI": {
+      "ticker": "NBI",
+      "cif_nif": "A-01334893",
+      "lei": "9598009GMCMAYCBRWX52",
+      "name_legal": "NBI Bearings Europe, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Diseño y Fabricación de Rodamientos Industriales",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440695+00:00"
+    },
+    "ENERS": {
+      "ticker": "ENERS",
+      "cif_nif": "A-67343892",
+      "lei": "959800J3PD72XUPD5G26",
+      "name_legal": "Enerside Energy, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Energía Solar Fotovoltaica / Desarrollo e IPP",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salida a bolsa en marzo 2022"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440700+00:00"
+    },
+    "EIDF": {
+      "ticker": "EIDF",
+      "cif_nif": "A-94002896",
+      "lei": "959800NMBHBD7JH0ST60",
+      "name_legal": "EiDF Solar (Energía, Innovación y Desarrollo Fotovoltaico), S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Autoconsumo Solar / Generación Fotovoltaica",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salida a bolsa en julio 2021"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440704+00:00"
+    },
+    "CLR": {
+      "ticker": "CLR",
+      "cif_nif": "A-73891468",
+      "lei": "959800K43A1NS3E7WK78",
+      "name_legal": "Clerhp Estructuras, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Ingeniería de Estructuras y Construcción",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440709+00:00"
+    },
+    "GREN": {
+      "ticker": "GREN",
+      "cif_nif": "A-19638926",
+      "lei": "959800LGQ87E1SSV7P03",
+      "name_legal": "Greening Group (Greening 2020), S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Energías Renovables / Generación Distribuida",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salida a bolsa en abril 2023"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440714+00:00"
+    },
+    "HLZ": {
+      "ticker": "HLZ",
+      "cif_nif": "A-65448927",
+      "lei": "95980020140005811350",
+      "name_legal": "Holaluz (Clidom Energy), S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Comercialización de Energía Verde y Autoconsumo",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440719+00:00"
+    },
+    "SOLAR": {
+      "ticker": "SOLAR",
+      "cif_nif": "A-66123894",
+      "lei": "959800SOLARPROFIT001",
+      "name_legal": "Solarprofit (Profithol), S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Instalaciones Solares Fotovoltaicas",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salida a bolsa en dic 2021"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440724+00:00"
+    },
+    "UMB": {
+      "ticker": "UMB",
+      "cif_nif": "A-98743896",
+      "lei": "9598008G23YMD3EYL965",
+      "name_legal": "Umbrella Solar Investment, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Energía Solar / IPP",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salida a bolsa en julio 2022"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440728+00:00"
+    },
+    "ISE": {
+      "ticker": "ISE",
+      "cif_nif": "A-78943892",
+      "lei": "959800RXCRTDLPW1B415",
+      "name_legal": "Inclam, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Ingeniería del Agua y Mitigación del Cambio Climático",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440731+00:00"
+    },
+    "END": {
+      "ticker": "END",
+      "cif_nif": "A-98943896",
+      "lei": "9598000KZEC1C7302H86",
+      "name_legal": "Endurance Motive, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Baterías de Litio para Movilidad Eléctrica Industrial",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salida a bolsa en julio 2021"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440736+00:00"
+    },
+    "COXG": {
+      "ticker": "COXG",
+      "cif_nif": "A-87123896",
+      "lei": "549300GJVY6K38260481",
+      "name_legal": "Cox Group (Cox Energy), S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Infraestructuras de Agua y Energía Renovable",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440739+00:00"
+    },
+    "PAN": {
+      "ticker": "PAN",
+      "cif_nif": "A-64321896",
+      "lei": "959800TSRNQZYHX37Y29",
+      "name_legal": "Pangaea Oncology, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Servicios Médicos / Oncología de Precisión",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440743+00:00"
+    },
+    "VYTR": {
+      "ticker": "VYTR",
+      "cif_nif": "A-65123896",
+      "lei": "959800KVCD3WK0L9A989",
+      "name_legal": "Vytrus Biotech, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Biotecnología / Células Madre Vegetales para Cosmética",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salida a bolsa en marzo 2022"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440747+00:00"
+    },
+    "LAB": {
+      "ticker": "LAB",
+      "cif_nif": "A-08123896",
+      "lei": "959800PSH8S68MKGZF50",
+      "name_legal": "Labiana Health, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Fabricación Farmacéutica Humana y Veterinaria",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salida a bolsa en junio 2022"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440753+00:00"
+    },
+    "KOMP": {
+      "ticker": "KOMP",
+      "cif_nif": "A-58291896",
+      "lei": "9598006D23D7JAV8AH11",
+      "name_legal": "Plásticos Compuestos (Kompuestos), S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Polímeros Sostenibles y Masterbatches",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440758+00:00"
+    },
+    "HANN": {
+      "ticker": "HANN",
+      "cif_nif": "B-67123896",
+      "lei": "984500F8EA7CR440VD97",
+      "name_legal": "Hannun, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Mobiliario Sostenible / D2C E-commerce",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salida a bolsa en junio 2022"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440763+00:00"
+    },
+    "ELZ": {
+      "ticker": "ELZ",
+      "cif_nif": "A-74123896",
+      "lei": "959800XWP1TQGWNQ0Y95",
+      "name_legal": "Asturiana de Laminados (Elzinc), S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Metalurgia / Fabricación de Zinc Laminado",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440767+00:00"
+    },
+    "EVM": {
+      "ticker": "EVM",
+      "cif_nif": "A-67891896",
+      "lei": "959800Y0M22CCD0R6A81",
+      "name_legal": "EV Motors (EBRO Automotive), S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Automoción / Fabricación de Vehículos Eléctricos",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salida a bolsa en octubre 2024"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440771+00:00"
+    },
+    "CLEV": {
+      "ticker": "CLEV",
+      "cif_nif": "A-91341896",
+      "lei": "95980067SQTCYL9EAL91",
+      "name_legal": "Clever Global, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Gestión y Auditoría de Proveedores y Contratistas",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440775+00:00"
+    },
+    "MED": {
+      "ticker": "MED",
+      "cif_nif": "A-63451896",
+      "lei": "9598005YF7QJV749FL69",
+      "name_legal": "Medcom Tech, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Distribución de Productos de Traumatología y Cirugía",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440778+00:00"
+    },
+    "PROED": {
+      "ticker": "PROED",
+      "cif_nif": "A-85123896",
+      "lei": "9598006K459Q4E9X7C61",
+      "name_legal": "Proeduca Altus, S.A. (UNIR)",
+      "segment": "BME_GROWTH",
+      "sector": "Educación Superior Online / Universidad UNIR",
+      "is_socimi": false,
+      "fiscal_year_end": "08-31",
+      "historical_name_changes": [
+        "Mayor capitalización de BME Growth"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440781+00:00"
+    },
+    "SEC": {
+      "ticker": "SEC",
+      "cif_nif": "A-85471896",
+      "lei": "529900A9QNZEADGP2692",
+      "name_legal": "Secuoya Content Group, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Creación y Producción de Contenidos Audiovisuales",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440784+00:00"
+    },
+    "MONDO": {
+      "ticker": "MONDO",
+      "cif_nif": "A-82123896",
+      "lei": "95980039WZZX6128E546",
+      "name_legal": "Mondo TV Iberoamérica, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Producción y Distribución de Animación y Ficción",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Mondo TV Studios"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440798+00:00"
+    },
+    "IDX": {
+      "ticker": "IDX",
+      "cif_nif": "A-87141896",
+      "lei": "959800SFRDQWTRV0P171",
+      "name_legal": "Indexa Capital Group, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Fintech / Gestor Automatizado de Inversiones",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salida a bolsa en julio 2023"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440803+00:00"
+    },
+    "IFF": {
+      "ticker": "IFF",
+      "cif_nif": "A-54123896",
+      "lei": "959800Z2P9RQYSQ5Z410",
+      "name_legal": "CF Intercity, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Deporte Profesional y Entretenimiento",
+      "is_socimi": false,
+      "fiscal_year_end": "06-30",
+      "historical_name_changes": [
+        "Primer club de fútbol cotizado en España (2021)"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440806+00:00"
+    },
+    "ART": {
+      "ticker": "ART",
+      "cif_nif": "A-48011896",
+      "lei": "959800U5ELPWJJQ0TV35",
+      "name_legal": "Arteche (Grupo Arteche), S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Equipos Eléctricos de Medida y Protección para Redes",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salida a bolsa en junio 2021"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440809+00:00"
+    },
+    "VAN": {
+      "ticker": "VAN",
+      "cif_nif": "A-42718964",
+      "lei": "9598004VCCR784BDZR94",
+      "name_legal": "Vanadi Coffee, S.A.",
+      "segment": "BME_GROWTH",
+      "sector": "Restauración y Cadena de Cafeterías",
+      "is_socimi": false,
+      "fiscal_year_end": "12-31",
+      "historical_name_changes": [
+        "Salida a bolsa en julio 2023"
+      ],
+      "resolution_score": 1.0,
+      "resolved_at": "2026-08-27T17:34:04.440812+00:00"
+    }
+  }
+}

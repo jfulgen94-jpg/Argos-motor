@@ -1,0 +1,5 @@
+# AI Agents configuration
+default_model: "stater-audit"
+ollama_url: "http://localhost:11434"
+temperature: 0.1
+max_tokens: 4096

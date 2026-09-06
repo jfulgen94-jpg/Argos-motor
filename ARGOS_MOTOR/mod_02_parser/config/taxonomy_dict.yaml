@@ -1,0 +1,329 @@
+# ============================================================================
+# STATER MOTOR ARGOS — DICCIONARIO MAESTRO DE TAXONOMÍAS FINANCIERAS
+# Mapeo canónico: IFRS-FULL <-> US-GAAP <-> PGC 2007 -> Campos Estándar STATER
+# ============================================================================
+
+mappings:
+  # --- BALANCE: ACTIVO --------------------------------------------------------
+  total_activo:
+    canonical: total_activo
+    statement: BS
+    ifrs:
+      - ifrs-full:Assets
+      - ifrs-full:TotalAssets
+    us_gaap:
+      - us-gaap:Assets
+      - us-gaap:AssetsTotal
+    pgc:
+      - pgc:ActivoTotal
+      - pgc:TotalActivo
+
+  activo_no_corriente:
+    canonical: activo_no_corriente
+    statement: BS
+    ifrs:
+      - ifrs-full:NoncurrentAssets
+    us_gaap:
+      - us-gaap:NoncurrentAssets
+    pgc:
+      - pgc:ActivoNoCorriente
+
+  inmovilizado_material:
+    canonical: inmovilizado_material
+    statement: BS
+    ifrs:
+      - ifrs-full:PropertyPlantAndEquipment
+    us_gaap:
+      - us-gaap:PropertyPlantAndEquipmentNet
+    pgc:
+      - pgc:InmovilizadoMaterial
+
+  inmovilizado_intangible:
+    canonical: inmovilizado_intangible
+    statement: BS
+    ifrs:
+      - ifrs-full:IntangibleAssetsOtherThanGoodwill
+      - ifrs-full:GoodwillAndIntangibleAssets
+      - ifrs-full:Goodwill
+    us_gaap:
+      - us-gaap:Goodwill
+      - us-gaap:IntangibleAssetsNetExcludingGoodwill
+    pgc:
+      - pgc:InmovilizadoIntangible
+      - pgc:FondoDeComercio
+
+  activo_corriente:
+    canonical: activo_corriente
+    statement: BS
+    ifrs:
+      - ifrs-full:CurrentAssets
+    us_gaap:
+      - us-gaap:AssetsCurrent
+    pgc:
+      - pgc:ActivoCorriente
+
+  existencias:
+    canonical: existencias
+    statement: BS
+    ifrs:
+      - ifrs-full:Inventories
+    us_gaap:
+      - us-gaap:InventoryNet
+    pgc:
+      - pgc:Existencias
+
+  deudores_comerciales:
+    canonical: deudores_comerciales
+    statement: BS
+    ifrs:
+      - ifrs-full:TradeAndOtherCurrentReceivables
+      - ifrs-full:CurrentTradeReceivables
+    us_gaap:
+      - us-gaap:AccountsReceivableNetCurrent
+    pgc:
+      - pgc:DeudoresComerciales
+
+  efectivo_y_equivalentes:
+    canonical: efectivo_y_equivalentes
+    statement: BS
+    ifrs:
+      - ifrs-full:CashAndCashEquivalents
+    us_gaap:
+      - us-gaap:CashAndCashEquivalentsAtCarryingValue
+      - us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents
+    pgc:
+      - pgc:EfectivoYOtrosActivosLiquidosEquivalentes
+
+  # --- BALANCE: PASIVO Y PATRIMONIO NETO --------------------------------------
+  total_pasivo:
+    canonical: total_pasivo
+    statement: BS
+    ifrs:
+      - ifrs-full:Liabilities
+      - ifrs-full:TotalLiabilities
+    us_gaap:
+      - us-gaap:Liabilities
+      - us-gaap:LiabilitiesTotal
+    pgc:
+      - pgc:PasivoTotal
+
+  pasivo_no_corriente:
+    canonical: pasivo_no_corriente
+    statement: BS
+    ifrs:
+      - ifrs-full:NoncurrentLiabilities
+    us_gaap:
+      - us-gaap:LiabilitiesNoncurrent
+    pgc:
+      - pgc:PasivoNoCorriente
+
+  deuda_financiera_lp:
+    canonical: deuda_financiera_lp
+    statement: BS
+    ifrs:
+      - ifrs-full:NoncurrentBorrowings
+      - ifrs-full:NoncurrentFinancialLiabilities
+    us_gaap:
+      - us-gaap:LongTermDebtNoncurrent
+      - us-gaap:LongTermDebtAndCapitalLeaseObligations
+    pgc:
+      - pgc:DeudasALargoPlazo
+
+  pasivo_corriente:
+    canonical: pasivo_corriente
+    statement: BS
+    ifrs:
+      - ifrs-full:CurrentLiabilities
+    us_gaap:
+      - us-gaap:LiabilitiesCurrent
+    pgc:
+      - pgc:PasivoCorriente
+
+  deuda_financiera_cp:
+    canonical: deuda_financiera_cp
+    statement: BS
+    ifrs:
+      - ifrs-full:CurrentBorrowings
+      - ifrs-full:CurrentFinancialLiabilities
+    us_gaap:
+      - us-gaap:ShortTermBorrowings
+      - us-gaap:LongTermDebtCurrent
+    pgc:
+      - pgc:DeudasACortoPlazo
+
+  acreedores_comerciales:
+    canonical: acreedores_comerciales
+    statement: BS
+    ifrs:
+      - ifrs-full:TradeAndOtherCurrentPayables
+      - ifrs-full:CurrentTradePayables
+    us_gaap:
+      - us-gaap:AccountsPayableCurrent
+    pgc:
+      - pgc:AcreedoresComerciales
+
+  patrimonio_neto:
+    canonical: patrimonio_neto
+    statement: BS
+    ifrs:
+      - ifrs-full:Equity
+      - ifrs-full:EquityAttributableToOwnersOfParent
+      - ifrs-full:TotalEquity
+    us_gaap:
+      - us-gaap:StockholdersEquity
+      - us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+    pgc:
+      - pgc:PatrimonioNeto
+
+  capital_social:
+    canonical: capital_social
+    statement: BS
+    ifrs:
+      - ifrs-full:IssuedCapital
+    us_gaap:
+      - us-gaap:CommonStockValue
+    pgc:
+      - pgc:CapitalSocial
+
+  reservas:
+    canonical: reservas
+    statement: BS
+    ifrs:
+      - ifrs-full:RetainedEarnings
+      - ifrs-full:OtherReserves
+    us_gaap:
+      - us-gaap:RetainedEarningsAccumulatedDeficit
+      - us-gaap:AdditionalPaidInCapital
+    pgc:
+      - pgc:Reservas
+
+  # --- CUENTA DE RESULTADOS (PYG / INCOME STATEMENT) --------------------------
+  revenue:
+    canonical: revenue
+    statement: PL
+    ifrs:
+      - ifrs-full:Revenue
+      - ifrs-full:RevenueFromContractsWithCustomers
+    us_gaap:
+      - us-gaap:Revenues
+      - us-gaap:SalesRevenueNet
+      - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+    pgc:
+      - pgc:ImporteNetoDeLaCifraDeNegocios
+
+  cost_of_goods_sold:
+    canonical: cost_of_goods_sold
+    statement: PL
+    ifrs:
+      - ifrs-full:CostOfSales
+    us_gaap:
+      - us-gaap:CostOfGoodsAndServicesSold
+      - us-gaap:CostOfRevenue
+    pgc:
+      - pgc:Aprovisionamientos
+
+  gross_profit:
+    canonical: gross_profit
+    statement: PL
+    ifrs:
+      - ifrs-full:GrossProfit
+    us_gaap:
+      - us-gaap:GrossProfit
+    pgc:
+      - pgc:MargenBruto
+
+  operating_expenses:
+    canonical: operating_expenses
+    statement: PL
+    ifrs:
+      - ifrs-full:OperatingExpense
+    us_gaap:
+      - us-gaap:OperatingExpenses
+    pgc:
+      - pgc:GastosDeExplotacion
+
+  ebit:
+    canonical: ebit
+    statement: PL
+    ifrs:
+      - ifrs-full:ProfitLossFromOperatingActivities
+    us_gaap:
+      - us-gaap:OperatingIncomeLoss
+    pgc:
+      - pgc:ResultadoDeExplotacion
+
+  ebt:
+    canonical: ebt
+    statement: PL
+    ifrs:
+      - ifrs-full:ProfitLossBeforeTax
+    us_gaap:
+      - us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+      - us-gaap:IncomeLossBeforeIncomeTaxExpenseBenefit
+    pgc:
+      - pgc:ResultadoAntesDeImpuestos
+
+  income_tax:
+    canonical: income_tax
+    statement: PL
+    ifrs:
+      - ifrs-full:IncomeTaxExpenseContinuingOperations
+    us_gaap:
+      - us-gaap:IncomeTaxExpenseBenefit
+    pgc:
+      - pgc:ImpuestoSobreBeneficios
+
+  beneficio_neto:
+    canonical: beneficio_neto
+    statement: PL
+    ifrs:
+      - ifrs-full:ProfitLoss
+      - ifrs-full:ProfitLossAttributableToOwnersOfParent
+    us_gaap:
+      - us-gaap:NetIncomeLoss
+      - us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic
+    pgc:
+      - pgc:ResultadoDelEjercicio
+
+  # --- ESTADO DE FLUJOS DE EFECTIVO -------------------------------------------
+  cfo:
+    canonical: cfo
+    statement: CF
+    ifrs:
+      - ifrs-full:CashFlowsFromUsedInOperatingActivities
+    us_gaap:
+      - us-gaap:NetCashProvidedByUsedInOperatingActivities
+    pgc:
+      - pgc:FlujosDeEfectivoDeLasActividadesDeExplotacion
+
+  capex:
+    canonical: capex
+    statement: CF
+    ifrs:
+      - ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities
+      - ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities
+    us_gaap:
+      - us-gaap:PaymentsToAcquirePropertyPlantAndEquipment
+      - us-gaap:PaymentsToAcquireProductiveAssets
+    pgc:
+      - pgc:PagosPorInversionesInmovilizado
+
+  cfi:
+    canonical: cfi
+    statement: CF
+    ifrs:
+      - ifrs-full:CashFlowsFromUsedInInvestingActivities
+    us_gaap:
+      - us-gaap:NetCashProvidedByUsedInInvestingActivities
+    pgc:
+      - pgc:FlujosDeEfectivoDeLasActividadesDeInversion
+
+  cff:
+    canonical: cff
+    statement: CF
+    ifrs:
+      - ifrs-full:CashFlowsFromUsedInFinancingActivities
+    us_gaap:
+      - us-gaap:NetCashProvidedByUsedInFinancingActivities
+    pgc:
+      - pgc:FlujosDeEfectivoDeLasActividadesDeFinanciacion

@@ -1,0 +1,7 @@
+# NLP Audit & CSRD configuration
+chunk_size_tokens: 4000
+overlap_tokens: 200
+confidence_threshold: 0.80
+models:
+  local: "stater-audit"
+  azure: "gpt-4o"

@@ -1,0 +1,38 @@
+# Configuración de fuentes de ingesta transatlántica regulada
+sources:
+  sec_edgar:
+    country: US
+    regulator: "Securities and Exchange Commission"
+    base_url: "https://data.sec.gov"
+    rate_limit_per_second: 10
+    doc_types: ["10-K", "10-Q", "8-K"]
+
+  cnmv:
+    country: ES
+    regulator: "Comisión Nacional del Mercado de Valores"
+    base_url: "https://www.cnmv.es"
+    doc_types: ["ESEF", "IAGC", "CUENTAS_ANUALES"]
+
+  amf:
+    country: FR
+    regulator: "Autorité des Marchés Financiers"
+    base_url: "https://bdif.amf-france.org"
+    doc_types: ["ESEF", "URD", "DPEF"]
+
+  bafin:
+    country: DE
+    regulator: "BaFin / Unternehmensregister"
+    base_url: "https://www.unternehmensregister.de"
+    doc_types: ["ESEF", "JAHRESFINANZBERICHT"]
+
+  consob:
+    country: IT
+    regulator: "CONSOB / 1INFO"
+    base_url: "https://www.consob.it"
+    doc_types: ["ESEF", "RFA", "DNF"]
+
+  afm:
+    country: NL
+    regulator: "Autoriteit Financiële Markten"
+    base_url: "https://www.afm.nl"
+    doc_types: ["ESEF", "ANNUAL_REPORT"]

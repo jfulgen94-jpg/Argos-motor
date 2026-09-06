@@ -1,0 +1,321 @@
+{
+  "cell_id": "BME_GROWTH_2022",
+  "segment": "BME_GROWTH",
+  "year": "2022",
+  "generated_at": "2026-08-27T22:22:56.068277+00:00",
+  "expected_tickers": [
+    "480",
+    "AGIL",
+    "ALTI",
+    "ART",
+    "BIOM",
+    "CAT",
+    "CLEV",
+    "CLR",
+    "COMM",
+    "COXG",
+    "DOCS",
+    "E4Y",
+    "EIDF",
+    "ELZ",
+    "END",
+    "ENERS",
+    "EVM",
+    "FACE",
+    "GIGA",
+    "GOW",
+    "GREN",
+    "HANN",
+    "HLZ",
+    "IDX",
+    "IFF",
+    "INDEX",
+    "ISE",
+    "IZER",
+    "KOMP",
+    "LAB",
+    "LLN",
+    "MED",
+    "MONDO",
+    "MS",
+    "NBI",
+    "NEO",
+    "NTAC",
+    "NTX",
+    "PAN",
+    "PARLEM",
+    "PLAS",
+    "PROED",
+    "REVO",
+    "SAI",
+    "SEC",
+    "SING",
+    "SNGR",
+    "SOLAR",
+    "TR1",
+    "UBI",
+    "UMB",
+    "VAN",
+    "VBI",
+    "VYTR"
+  ],
+  "expected_ticker_count": 54,
+  "expected_documents_per_company": [
+    "cuentas_anuales_consolidadas_auditadas",
+    "informe_de_gestion_consolidado",
+    "estado_informacion_no_financiera_csrd",
+    "informe_anual_gobierno_corporativo_IAGC",
+    "informe_anual_remuneraciones_IARC"
+  ],
+  "coverage": {
+    "480": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "AGIL": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ALTI": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ART": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "BIOM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "CAT": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "CLEV": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "CLR": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "COMM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "COXG": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "DOCS": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "E4Y": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "EIDF": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ELZ": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "END": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ENERS": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "EVM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "FACE": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "GIGA": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "GOW": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "GREN": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "HANN": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "HLZ": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2022\\HLZ-A-65448927",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "IDX": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "IFF": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "INDEX": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "ISE": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "IZER": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "KOMP": {
+      "folder_exists": true,
+      "folder": "data\\raw\\ES_CNMV\\INFORMES_ANUALES_COMPLETOS\\2022\\KOMP-A-58291896",
+      "documents_present": [],
+      "documents_missing": [
+        "cuentas_anuales_consolidadas_auditadas",
+        "informe_de_gestion_consolidado",
+        "estado_informacion_no_financiera_csrd",
+        "informe_anual_gobierno_corporativo_IAGC",
+        "informe_anual_remuneraciones_IARC"
+      ]
+    },
+    "LAB": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "LLN": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "MED": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "MONDO": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "MS": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "NBI": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "NEO": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "NTAC": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "NTX": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "PAN": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "PARLEM": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "PLAS": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "PROED": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "REVO": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "SAI": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "SEC": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "SING": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "SNGR": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "SOLAR": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "TR1": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "UBI": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "UMB": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "VAN": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "VBI": {
+      "folder_exists": false,
+      "documents_present": []
+    },
+    "VYTR": {
+      "folder_exists": false,
+      "documents_present": []
+    }
+  },
+  "fully_covered_companies": 0,
+  "pending_companies": 54,
+  "shared_components": {
+    "feeding": [
+      "mod_01_ingestion/src/ingest_runner.py",
+      "mod_01_ingestion/src/es_cnmv_client.py",
+      "mod_01_ingestion/src/bme_growth_client.py",
+      "mod_01_ingestion/src/xbrl_org_client.py"
+    ],
+    "forensic": [
+      "mod_01_ingestion/src/forensic_dataset_auditor.py",
+      "mod_01_ingestion/src/ai_pre_validation_guard.py",
+      "mod_01_ingestion/src/document_completeness_validator.py",
+      "mod_01_ingestion/src/branch_threshold_validator.py",
+      "mod_01_ingestion/src/remediation_runner.py"
+    ]
+  }
+}

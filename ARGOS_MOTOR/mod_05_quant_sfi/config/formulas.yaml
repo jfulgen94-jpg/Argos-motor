@@ -1,0 +1,8 @@
+# Mathematical definitions for ratios and factors
+ratios:
+  current_ratio: "activo_corriente / pasivo_corriente"
+  quick_ratio: "(activo_corriente - existencias) / pasivo_corriente"
+  debt_to_equity: "total_pasivo / patrimonio_neto"
+  roe: "beneficio_neto / patrimonio_neto"
+  roic: "ebit * (1 - 0.25) / (total_activo - pasivo_corriente)"
+  fcf: "cfo - capex"

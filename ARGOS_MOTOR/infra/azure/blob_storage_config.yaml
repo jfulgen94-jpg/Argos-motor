@@ -1,0 +1,7 @@
+# Azure Blob Storage Container definitions
+storage_account: "staterdatalake"
+containers:
+  - name: "stater-raw-filings"
+    access_tier: "Hot"
+  - name: "stater-lake-snapshots"
+    access_tier: "Cool"
