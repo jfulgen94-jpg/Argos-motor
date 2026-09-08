@@ -26,6 +26,7 @@ import re
 import zipfile
 import hashlib
 import requests
+import shutil
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, List, Any, Optional, Tuple
@@ -212,7 +213,7 @@ def _parse_cnmv_docs(html: str, nif: str, year: int) -> list[dict]:
                         "nombre": link.get_text(strip=True) or "Documento",
                     })
                     
-    print(f"[CNMV Crawler] NIF={nif} year={year} → {len(docs)} documentos encontrados")
+    print(f"[CNMV Crawler] NIF={nif} year={year} -> {len(docs)} documentos encontrados")
     return docs
 
 
@@ -236,8 +237,9 @@ class CNMVEngine:
                 fallback_rel = self.config.get('fallback_raw_path', 'ARGOS_MOTOR/data/raw/ES_CNMV')
                 self.base_dir = self.project_root / fallback_rel if not Path(fallback_rel).is_absolute() else Path(fallback_rel)
 
-        self.staging_dir = self.project_root / "ARGOS_MOTOR/data/staging/tmp_download"
-        self.quarantine_dir = self.project_root / "ARGOS_MOTOR/data/quarantine_es"
+        # Staging y cuarentena en la misma unidad que base_dir (evita WinError 17 cross-drive)
+        self.staging_dir = self.base_dir.parent / "staging" / "tmp_download"
+        self.quarantine_dir = self.base_dir.parent / "quarantine_es"
         
         self.base_dir.mkdir(parents=True, exist_ok=True)
         self.staging_dir.mkdir(parents=True, exist_ok=True)
@@ -481,13 +483,13 @@ class CNMVEngine:
             if magic in ['EMPTY', 'BLOCKED_HTML', 'UNKNOWN']:
                 quarantine_target = self.quarantine_dir / f"quarantine_{year}_{ticker}_{file_name}"
                 if staging_file.exists():
-                    staging_file.replace(quarantine_target)
+                    shutil.move(str(staging_file), str(quarantine_target))
                 print(f"    -> [Advertencia] El archivo no superó la validación de Magic Bytes ({magic}). Movido a Cuarentena: {quarantine_target.name}")
                 return False, f"QUARANTINED_{magic}", quarantine_target
 
             if target_file.exists():
                 target_file.unlink()
-            staging_file.replace(target_file)
+            shutil.move(str(staging_file), str(target_file))
 
             print(f"    -> [Éxito] Descargado y sellado exitosamente: {target_file.name}")
             return True, "DOWNLOADED_AND_SEALED", target_file
@@ -578,11 +580,11 @@ class CNMVEngine:
         manifest_out.write_text(json.dumps(stats, indent=2, ensure_ascii=False), encoding='utf-8')
 
         print(f"\n=== RESUMEN DESCARGA AÑO {year} ===")
-        print(f" ✔ Descargados nuevos: {stats['downloaded']}")
-        print(f" ✔ Ya en caché (Válidos): {stats['cache_hits']}")
-        print(f" ✖ Fallidos / Sin Enlace Directo: {stats['failed']}")
-        print(f" ⚠ En Cuarentena (Bloqueos/Incompletos): {stats['quarantined']}")
-        print(f" 📄 Manifiesto Anual Guardado: {manifest_out}")
+        print(f" [OK] Descargados nuevos: {stats['downloaded']}")
+        print(f" [OK] Ya en caché (Válidos): {stats['cache_hits']}")
+        print(f" [FAIL] Fallidos / Sin Enlace Directo: {stats['failed']}")
+        print(f" [WARN] En Cuarentena (Bloqueos/Incompletos): {stats['quarantined']}")
+        print(f" [DOC] Manifiesto Anual Guardado: {manifest_out}")
 
         return stats
 
