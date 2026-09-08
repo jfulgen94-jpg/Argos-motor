@@ -1,0 +1,22 @@
+{
+  "jurisdiction": "ES",
+  "country_name": "Spain",
+  "supervisor": "CNMV",
+  "oam_name": "Registro Oficial CNMV",
+  "oam_url": "https://www.cnmv.es/portal/Consultas/DerechosVoto/IP.aspx",
+  "esef_repo_url": "https://filings.xbrl.org/",
+  "master_universe_path": "ARGOS_MOTOR/config/master_universe_es.json",
+  "landing_path": "ARGOS_MOTOR/data/raw/landing_raw",
+  "canonical_raw_path": "D:/ARGOS_DATA/raw/ES_CNMV",
+  "fallback_raw_path": "ARGOS_MOTOR/data/raw/ES_CNMV",
+  "staging_path": "D:/ARGOS_DATA/staging",
+  "quarantine_path": "D:/ARGOS_DATA/quarantine",
+  "target_segments": ["IBEX35", "MERCADO_CONTINUO", "BME_GROWTH"],
+  "target_years": [2020, 2021, 2022, 2023, 2024],
+  "rate_limit": {
+    "requests_per_minute": 30,
+    "delay_between_requests_seconds": 1.5,
+    "max_retries": 4
+  },
+  "user_agent": "ARGOS-Institutional-Data-Auditor/1.0 (Compliance; Regulatory Research)"
+}

@@ -1,0 +1,21 @@
+{
+  "jurisdiction": "FR",
+  "country_name": "France",
+  "supervisor": "AMF",
+  "oam_name": "info-financiere.gouv.fr (DILA)",
+  "oam_url": "https://www.info-financiere.gouv.fr",
+  "bdif_api_url": "https://data.gouv.fr/api/1/datasets/amf-bdif/",
+  "esef_repo_url": "https://filings.xbrl.org/",
+  "canonical_raw_path": "D:/ARGOS_DATA/raw/FR_AMF",
+  "fallback_raw_path": "ARGOS_MOTOR/data/raw/FR_AMF",
+  "staging_path": "D:/ARGOS_DATA/staging",
+  "quarantine_path": "D:/ARGOS_DATA/quarantine",
+  "target_indices": ["CAC40", "SBF120"],
+  "target_years": [2021, 2022, 2023, 2024],
+  "rate_limit": {
+    "requests_per_minute": 20,
+    "delay_between_requests_seconds": 2.0,
+    "max_retries": 3
+  },
+  "user_agent": "ARGOS-Institutional-Data-Auditor/1.0 (Compliance; Regulatory Research)"
+}

@@ -1,0 +1,21 @@
+{
+  "jurisdiction": "DE",
+  "country_name": "Germany",
+  "supervisor": "BaFin",
+  "oam_name": "Unternehmensregister (Bundesanzeiger Verlag)",
+  "oam_url": "https://www.unternehmensregister.de",
+  "bundesanzeiger_url": "https://www.bundesanzeiger.de",
+  "esef_repo_url": "https://filings.xbrl.org/",
+  "canonical_raw_path": "D:/ARGOS_DATA/raw/DE_BAFIN",
+  "fallback_raw_path": "ARGOS_MOTOR/data/raw/DE_BAFIN",
+  "staging_path": "D:/ARGOS_DATA/staging",
+  "quarantine_path": "D:/ARGOS_DATA/quarantine",
+  "target_indices": ["DAX40", "MDAX"],
+  "target_years": [2021, 2022, 2023, 2024],
+  "rate_limit": {
+    "requests_per_minute": 20,
+    "delay_between_requests_seconds": 2.0,
+    "max_retries": 3
+  },
+  "user_agent": "ARGOS-Institutional-Data-Auditor/1.0 (Compliance; Regulatory Research)"
+}

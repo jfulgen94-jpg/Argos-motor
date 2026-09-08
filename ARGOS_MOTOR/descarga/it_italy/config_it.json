@@ -1,0 +1,28 @@
+{
+  "jurisdiction": "IT",
+  "country_name": "Italy",
+  "supervisor": "CONSOB",
+  "storage_mechanisms": [
+    {
+      "name": "1Info (Computershare)",
+      "url": "https://www.1info.it"
+    },
+    {
+      "name": "eMarket STORAGE (Teleborsa/Spafid)",
+      "url": "https://www.emarketstorage.it"
+    }
+  ],
+  "esef_repo_url": "https://filings.xbrl.org/",
+  "canonical_raw_path": "D:/ARGOS_DATA/raw/IT_CONSOB",
+  "fallback_raw_path": "ARGOS_MOTOR/data/raw/IT_CONSOB",
+  "staging_path": "D:/ARGOS_DATA/staging",
+  "quarantine_path": "D:/ARGOS_DATA/quarantine",
+  "target_indices": ["FTSEMIB"],
+  "target_years": [2021, 2022, 2023, 2024],
+  "rate_limit": {
+    "requests_per_minute": 20,
+    "delay_between_requests_seconds": 2.0,
+    "max_retries": 3
+  },
+  "user_agent": "ARGOS-Institutional-Data-Auditor/1.0 (Compliance; Regulatory Research)"
+}
