@@ -50,7 +50,7 @@ def load_config() -> dict:
         "landing_path": "ARGOS_MOTOR/data/raw/landing_raw",
         "staging_path": "ARGOS_MOTOR/data/staging/tmp_download",
         "quarantine_path": "ARGOS_MOTOR/data/quarantine_es",
-        "target_years": [2020, 2021, 2022, 2023, 2024, 2025]
+        "target_years": [2020, 2021, 2022, 2023, 2024, 2025, 2026]
     }
 
 
@@ -239,14 +239,19 @@ class CNMVEngine:
 
         found_filings = []
 
+        print(f"  [Crawler] Iniciando búsqueda para {ticker} ({company_name}) - CIF: {cif_clean} - Año: {yr}")
+
         for surl in search_urls:
             try:
+                print(f"    -> Consultando: {surl}")
                 resp = self.session.get(surl, timeout=15)
                 if resp.status_code != 200:
+                    print(f"    [Aviso] La URL {surl} respondió con código HTTP {resp.status_code}")
                     continue
 
                 soup = BeautifulSoup(resp.text, 'html.parser')
                 links = soup.find_all('a', href=True)
+                links_found_count = 0
 
                 for link in links:
                     href = link['href']
@@ -275,13 +280,20 @@ class CNMVEngine:
                             'url': full_url,
                             'file_name': file_name
                         })
+                        links_found_count += 1
+                        print(f"      [OK] Documento mapeado: {doc_type} -> {file_name}")
                 
-                if found_filings:
+                if links_found_count > 0:
+                    print(f"    [Éxito] Se mapearon {links_found_count} documentos de la URL {surl}")
                     break
+                else:
+                    print(f"    [Info] No se identificaron enlaces de documentos en la página de {surl}")
 
             except Exception as e:
-                pass
+                print(f"    [Error] Excepción al consultar {surl}: {type(e).__name__} - {e}")
 
+        if not found_filings:
+            print(f"  [Crawler] No se pudo encontrar ningún documento para {ticker} en el año {yr}")
         return found_filings
 
     def download_filing(self, filing: dict) -> Tuple[bool, str, Optional[Path]]:
@@ -304,13 +316,17 @@ class CNMVEngine:
         if target_file.exists() and target_file.stat().st_size > 1000:
             mb = check_magic_bytes(target_file)
             if mb in ['ZIP_ESEF', 'PDF', 'XHTML_XML', 'HTML_XHTML', 'XML_XHTML']:
+                print(f"    -> [Caché hit] El archivo {file_name} ya existe y es un tipo válido ({mb}).")
                 return True, "CACHE_HIT", target_file
 
+        print(f"    -> [Descarga] Iniciando descarga de: {file_name}")
+        print(f"       Desde URL: {url}")
         staging_file = self.staging_dir / f"tmp_{year}_{ticker}_{file_name}"
 
         try:
             resp = self.session.get(url, stream=True, timeout=30)
             if resp.status_code != 200:
+                print(f"    -> [Fallo] Error HTTP {resp.status_code} al intentar descargar de {url}")
                 return False, f"HTTP_{resp.status_code}", None
 
             with open(staging_file, 'wb') as f:
@@ -323,18 +339,21 @@ class CNMVEngine:
                 quarantine_target = self.quarantine_dir / f"quarantine_{year}_{ticker}_{file_name}"
                 if staging_file.exists():
                     staging_file.replace(quarantine_target)
+                print(f"    -> [Advertencia] El archivo no superó la validación de Magic Bytes ({magic}). Movido a Cuarentena: {quarantine_target.name}")
                 return False, f"QUARANTINED_{magic}", quarantine_target
 
             if target_file.exists():
                 target_file.unlink()
             staging_file.replace(target_file)
 
+            print(f"    -> [Éxito] Descargado y sellado exitosamente: {target_file.name}")
             return True, "DOWNLOADED_AND_SEALED", target_file
 
         except Exception as e:
             if staging_file.exists():
                 try: staging_file.unlink()
                 except Exception: pass
+            print(f"    -> [Error] Excepción al descargar {file_name}: {type(e).__name__} - {e}")
             return False, f"EXCEPTION_{type(e).__name__}", None
 
     def execute_year_download(self, year: int) -> dict:

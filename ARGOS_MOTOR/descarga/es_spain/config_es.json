@@ -12,7 +12,7 @@
   "staging_path": "D:/ARGOS_DATA/staging",
   "quarantine_path": "D:/ARGOS_DATA/quarantine",
   "target_segments": ["IBEX35", "MERCADO_CONTINUO", "BME_GROWTH"],
-  "target_years": [2020, 2021, 2022, 2023, 2024],
+  "target_years": [2020, 2021, 2022, 2023, 2024, 2025, 2026],
   "rate_limit": {
     "requests_per_minute": 30,
     "delay_between_requests_seconds": 1.5,

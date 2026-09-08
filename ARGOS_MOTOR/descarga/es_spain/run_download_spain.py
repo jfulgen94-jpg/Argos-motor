@@ -26,7 +26,7 @@ def main():
 
     args = parser.parse_args()
 
-    years_to_run = [2020, 2021, 2022, 2023, 2024, 2025]
+    years_to_run = [2020, 2021, 2022, 2023, 2024, 2025, 2026]
     if args.year:
         years_to_run = [args.year]
     elif args.years:
