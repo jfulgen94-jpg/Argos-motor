@@ -1,0 +1,30 @@
+{
+  "baseline_id": "BASELINE-ARGOS-2026-09-09",
+  "generated_at": "2026-09-09T23:10:47Z",
+  "repository": "Argos-motor",
+  "python": "3.14.4",
+  "platform": "win32",
+  "pytest_command": "python -m pytest -q",
+  "rootdir": "C:\\Users\\jfulg\\Desktop\\Stater",
+  "configfile": "pyproject.toml",
+  "test_count": 88,
+  "pytest_summary": "88 passed, 2 warnings in 16.55s",
+  "pytest_exit_code": 0,
+  "testpaths": [
+    "ARGOS_MOTOR/mod_01_ingestion/tests",
+    "ARGOS_MOTOR/mod_02_parser/tests",
+    "ARGOS_MOTOR/mod_03_nlp_audit/tests",
+    "ARGOS_MOTOR/mod_04_data_lake/tests",
+    "ARGOS_MOTOR/mod_05_quant_sfi/tests",
+    "ARGOS_MOTOR/mod_06_api_gateway/tests",
+    "ARGOS_MOTOR/mod_07_ai_agents/tests",
+    "ARGOS_MOTOR/mod_08_monitor/tests"
+  ],
+  "excluded_dirs": [
+    "ARGOS_MOTOR/ipp_extract",
+    "ARGOS_MOTOR/archive",
+    "Argos_BD",
+    "audits"
+  ],
+  "contract_status": "VERIFIED_PASSING"
+}

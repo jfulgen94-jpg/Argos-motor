@@ -1,0 +1,34 @@
+[project]
+name = "stater-motor-argos-workspace"
+version = "0.2.0"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-v"
+testpaths = [
+    "ARGOS_MOTOR/mod_01_ingestion/tests",
+    "ARGOS_MOTOR/mod_02_parser/tests",
+    "ARGOS_MOTOR/mod_03_nlp_audit/tests",
+    "ARGOS_MOTOR/mod_04_data_lake/tests",
+    "ARGOS_MOTOR/mod_05_quant_sfi/tests",
+    "ARGOS_MOTOR/mod_06_api_gateway/tests",
+    "ARGOS_MOTOR/mod_07_ai_agents/tests",
+    "ARGOS_MOTOR/mod_08_monitor/tests"
+]
+pythonpath = [
+    ".",
+    "ARGOS_MOTOR"
+]
+norecursedirs = [
+    "ARGOS_MOTOR/ipp_extract",
+    "ARGOS_MOTOR/archive",
+    "Argos_BD",
+    "audits",
+    ".git"
+]
+markers = [
+    "network: Pruebas que requieren conectividad de red hacia APIs externas (ESMA, GLEIF)",
+    "external_data: Pruebas dependientes de archivos en D:\\ARGOS_DATA",
+    "real_data: Pruebas de integración contable sobre datasets Gold"
+]

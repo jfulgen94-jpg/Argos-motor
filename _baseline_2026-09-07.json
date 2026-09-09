@@ -1,0 +1,13 @@
+{
+  "baseline_id": "BASELINE-ARGOS-2026-09-07",
+  "generated_at": "2026-09-07T16:40:00Z",
+  "repository": "stater-motor-argos",
+  "commit": "23aa99e16bd6324da1f7c3eb4c33fba368df104a",
+  "shallow_clone": true,
+  "python": "3.13.14",
+  "pytest_summary": "88 passed",
+  "pytest_exit_code": 0,
+  "test_count": 88,
+  "pytest_output_tail": "mod_01_ingestion/tests/test_sha256_sealer.py .                           [ 64%]\nmod_01_ingestion/tests/test_universe_gap_filler.py ....                  [ 69%]\nmod_02_parser/tests/test_balance_validator.py ..                         [ 71%]\nmod_02_parser/tests/test_taxonomy_mapper.py .                            [ 72%]\nmod_02_parser/tests/test_xbrl_parser.py ..                               [ 75%]\nmod_03_nlp_audit/tests/test_nlp_components.py ..                         [ 77%]\nmod_04_data_lake/tests/test_lake_integrity.py ....                       [ 81%]\nmod_05_quant_sfi/tests/test_dcf_engine.py ..                             [ 84%]\nmod_05_quant_sfi/tests/test_ratio_engine.py ..                           [ 86%]\nmod_06_api_gateway/tests/test_api_endpoints.py ....                      [ 90%]\nmod_07_ai_agents/tests/test_agent_router.py ....                         [ 95%]\nmod_08_monitor/tests/test_monitor.py ....                                [100%]\n\n=============================== warnings summary ===============================\n../../../../home/openhands/.local/lib/python3.13/site-packages/starlette/testclient.py:53\n  /home/openhands/.local/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\nmod_01_ingestion/tests/test_hitl_and_ml_engine.py::test_hitl_and_training_lifecycle\nmod_01_ingestion/tests/test_hitl_and_ml_engine.py::test_hitl_and_training_lifecycle\n  /home/openhands/.local/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but GradientBoostingClassifier was fitted with feature names\n    warnings.warn(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n======================== 88 passed, 3 warnings in 4.54s ========================",
+  "sha256": "692ac0bf4ba0a325ecfbff2e477774d159a31b363654fbf7e73761d82df97d31"
+}

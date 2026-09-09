@@ -37,6 +37,8 @@ Argos_SFI_TFM/**
 !Argos_SFI_TFM/.gitkeep
 ARGOS_MOTOR/data/**
 !ARGOS_MOTOR/data/**/.gitkeep
+data/**
+!data/**/.gitkeep
 ARGOS_MOTOR/ipp_extract/**
 
 # Testing & Coverage
