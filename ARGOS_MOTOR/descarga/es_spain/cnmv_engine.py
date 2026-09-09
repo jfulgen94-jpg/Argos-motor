@@ -511,23 +511,41 @@ class CNMVEngine:
         print(f"Destino Canónico: {self.base_dir}")
         print(f"Universo Objetivo: {len(self.universe)} empresas (IBEX35, Continuo, BME Growth)")
 
-        # 1. Obtener filings de Canal A (XBRL.org) para el año
-        esef_filings = self.fetch_esef_filings_xbrl_org(year_filter=year)
-        covered_tickers = {f['ticker'] for f in esef_filings if f['ticker'] in self.universe}
+        # 1. Caché de mapeo previo o rastreo multicanal completo
+        cache_filings_file = self.base_dir / f"MAPPED_FILINGS_{year}.json"
+        all_filings = None
+        if cache_filings_file.exists():
+            try:
+                all_filings = json.loads(cache_filings_file.read_text(encoding='utf-8'))
+                print(f"  -> [Caché Mapeo] Cargados {len(all_filings)} documentos mapeados desde {cache_filings_file.name}")
+            except Exception as e:
+                print(f"  -> [Aviso] Error leyendo caché de mapeo: {e}. Procediendo a rastreo...")
+                all_filings = None
 
-        # 2. Crawler de Canal B (CNMV Portal) para empresas sin ESEF o para complementar con PDF/IAGC
-        print(f"  -> Ejecutando Crawler CNMV (www.cnmv.es) para empresas pendientes/no-ESEF...")
-        cnmv_crawled_filings = []
+        if all_filings is None:
+            # 1. Obtener filings de Canal A (XBRL.org) para el año
+            esef_filings = self.fetch_esef_filings_xbrl_org(year_filter=year)
+            covered_tickers = {f['ticker'] for f in esef_filings if f['ticker'] in self.universe}
 
-        for ticker, comp in self.universe.items():
-            cif = comp.get('cif_nif', '')
-            name = comp.get('name_legal', ticker)
-            
-            # Si no tiene ESEF en XBRL.org, rastrear el portal CNMV
-            c_filings = self.crawl_cnmv_portal_by_cif(cif, ticker, name, year)
-            cnmv_crawled_filings.extend(c_filings)
+            # 2. Crawler de Canal B (CNMV Portal) para empresas sin ESEF o para complementar con PDF/IAGC
+            print(f"  -> Ejecutando Crawler CNMV (www.cnmv.es) para empresas pendientes/no-ESEF...")
+            cnmv_crawled_filings = []
 
-        all_filings = esef_filings + cnmv_crawled_filings
+            for ticker, comp in self.universe.items():
+                cif = comp.get('cif_nif', '')
+                name = comp.get('name_legal', ticker)
+                
+                # Si no tiene ESEF en XBRL.org, rastrear el portal CNMV
+                c_filings = self.crawl_cnmv_portal_by_cif(cif, ticker, name, year)
+                cnmv_crawled_filings.extend(c_filings)
+
+            all_filings = esef_filings + cnmv_crawled_filings
+            try:
+                cache_filings_file.write_text(json.dumps(all_filings, indent=2, ensure_ascii=False), encoding='utf-8')
+                print(f"  -> [Caché Mapeo] Guardados {len(all_filings)} documentos en {cache_filings_file.name}")
+            except Exception as e:
+                print(f"  -> [Aviso] No se pudo persistir caché de mapeo: {e}")
+
         print(f"\nTotal documentos e informes mapeados para {year}: {len(all_filings)}")
 
         stats = {
