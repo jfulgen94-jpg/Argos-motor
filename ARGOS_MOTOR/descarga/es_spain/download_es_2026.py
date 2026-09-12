@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 
 # Añadir raíz al path
+sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from ARGOS_MOTOR.descarga.es_spain.cnmv_engine import CNMVEngine
