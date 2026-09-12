@@ -19,36 +19,31 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 from ARGOS_MOTOR.descarga.es_spain.cnmv_engine import CNMVEngine
 
 def main():
-    parser = argparse.ArgumentParser(description="Orquestador Maestro y Descargador Total CNMV / ESEF (España 2012-2026)")
-    parser.add_argument('--year', type=int, help="Año específico a procesar (ej: 2024)")
-    parser.add_argument('--years', nargs='+', type=int, help="Lista de años específicos (ej: 2020 2021 2022 2023 2024)")
-    parser.add_argument('--historic', action='store_true', help="Procesar solo rango histórico pre-ESEF (2012-2019)")
-    parser.add_argument('--esef', action='store_true', help="Procesar solo rango digital ESEF (2020-2026)")
-    parser.add_argument('--output-dir', type=str, help="Directorio de salida personalizado (por defecto D:/ARGOS_DATA/raw/ES_CNMV)")
+    parser = argparse.ArgumentParser(description="Orquestador Maestro de Descarga CNMV (España)")
+    parser.add_argument('--year', type=int, help="Año específico a descargar (ej: 2023)")
+    parser.add_argument('--years', nargs='+', type=int, help="Lista de años a descargar (ej: 2020 2021 2022 2023 2024)")
+    parser.add_argument('--output-dir', type=str, help="Directorio de salida personalizado")
 
     args = parser.parse_args()
 
+    years_to_run = [2020]
     if args.year:
         years_to_run = [args.year]
     elif args.years:
         years_to_run = args.years
-    elif args.historic:
-        years_to_run = list(range(2012, 2020))
-    elif args.esef:
-        years_to_run = list(range(2020, 2027))
-    else:
-        # Por defecto: DESCARGADOR TOTAL COMPLETO DE ESPAÑA (2012 - 2026)
-        years_to_run = list(range(2012, 2027))
+
+    # Set output directory
+    output_dir = args.output_dir if args.output_dir else "/workspace/project/Argos-motor/ARGOS_MOTOR/data/raw/ES_CNMV"
 
     print("=========================================================================")
-    print("=== DESCARGADOR TOTAL UNIVERSAL CNMV / ESEF ESPAÑA (2012 - 2026) ========")
+    print("=== ORQUESTADOR DE DESCARGA CNMV / ESEF ESPAÑA (1.000 ARCHIVOS / PAÍS) ===")
     print("=========================================================================")
-    print(f"Ejercicios programados: {years_to_run}")
+    print(f"Años a procesar: {years_to_run}")
 
     summary_reports = []
 
     for yr in years_to_run:
-        engine = CNMVEngine(target_year=yr, output_dir=args.output_dir)
+        engine = CNMVEngine(target_year=yr, output_dir=output_dir)
         stats = engine.execute_year_download(yr)
         summary_reports.append(stats)
 
