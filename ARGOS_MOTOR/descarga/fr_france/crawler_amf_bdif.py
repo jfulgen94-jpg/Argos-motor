@@ -94,7 +94,7 @@ class AMFBDIFCrawler:
                 url = f"{BDIF_API_SEARCH}?{urllib.parse.urlencode(params)}"
                 try:
                     req = urllib.request.Request(url, headers=self.headers)
-                    with urllib.request.urlopen(req, timeout=20) as resp:
+                    with urllib.request.urlopen(req, timeout=25) as resp:
                         data = json.loads(resp.read().decode('utf-8'))
                         results = data.get('result', [])
                         total = data.get('total', 0)
@@ -111,7 +111,12 @@ class AMFBDIFCrawler:
                             company_name = socs[0].get('raisonSociale', 'UNKNOWN') if socs else 'UNKNOWN'
                             jeton = socs[0].get('jeton', '') if socs else ''
 
-                            for d in docs:
+                            # Priorizar documentos del emisor (docRegulateur == False)
+                            # Si no existen, recurrir al documento del regulador
+                            issuer_docs = [d for d in docs if not d.get('docRegulateur') and d.get('path')]
+                            target_docs = issuer_docs if issuer_docs else [d for d in docs if d.get('path')]
+
+                            for d_idx, d in enumerate(target_docs):
                                 path_val = d.get('path')
                                 if not path_val:
                                     continue
@@ -123,6 +128,9 @@ class AMFBDIFCrawler:
                                     'jeton': jeton,
                                     'year': year,
                                     'doc_type': dt,
+                                    'doc_index': d_idx,
+                                    'total_docs_in_filing': len(target_docs),
+                                    'is_regulator_doc': d.get('docRegulateur', False),
                                     'nom_fichier': d.get('nomFichier'),
                                     'doc_path': path_val,
                                     'download_url': f"{BDIF_API_DOC}/{path_val}",
@@ -138,15 +146,91 @@ class AMFBDIFCrawler:
                     print(f"  [ERROR] Error al paginar {dt} offset {offset}: {e}")
                     break
 
-        print(f"  [OK] Total documentos encontrados en BDIF para {year}: {len(catalog)}")
+        print(f"  [OK] Total documentos identificados en BDIF para {year}: {len(catalog)}")
         return catalog
 
-    def run_download(self, target_years, max_downloads=None, doc_types=None):
+    def _download_single_filing(self, item, yr):
+        raw_name = item['company_name'].replace('/', '_').replace('\\', '_')
+        safe_name = "".join(c for c in raw_name if c.isalnum() or c in (' ', '_', '-')).strip().replace(' ', '_')
+        if not safe_name:
+            safe_name = item['jeton'] or "COMPANY"
+
+        target_dir = self.raw_base / str(yr) / safe_name
+        if item.get('total_docs_in_filing', 1) > 1 and item.get('doc_index', 0) > 0:
+            filename = f"{safe_name}_{yr}_{item['doc_type']}_doc{item['doc_index']+1}.pdf"
+            meta_filename = f"{safe_name}_{yr}_{item['doc_type']}_doc{item['doc_index']+1}.meta.json"
+        else:
+            filename = f"{safe_name}_{yr}_{item['doc_type']}.pdf"
+            meta_filename = f"{safe_name}_{yr}_{item['doc_type']}.meta.json"
+
+        target_file = target_dir / filename
+        meta_file = target_dir / meta_filename
+
+        # Omisión inteligente:
+        # Si el archivo ya existe y supera 100 KB (informe real, no simple ficha de depósito), omitir
+        if target_file.exists() and target_file.stat().st_size >= 100_000:
+            return "SKIPPED", safe_name, target_file
+
+        tmp_path = self.staging_dir / f"tmp_{yr}_{abs(hash(item['download_url']))}_{int(time.time()*1000)}.tmp"
+
+        # Reintentos de descarga
+        max_retries = 3
+        last_error = None
+        for attempt in range(max_retries):
+            try:
+                req = urllib.request.Request(item['download_url'], headers={'User-Agent': self.ua, 'Referer': f"{BDIF_BASE}/"})
+                with urllib.request.urlopen(req, timeout=45) as resp:
+                    with open(tmp_path, 'wb') as f_out:
+                        while chunk := resp.read(65536):
+                            f_out.write(chunk)
+
+                if not check_pdf_magic(tmp_path):
+                    tmp_path.unlink(missing_ok=True)
+                    return "FAILED", safe_name, "Fichero no es PDF valido o corrupto"
+
+                target_dir.mkdir(parents=True, exist_ok=True)
+                if target_file.exists():
+                    target_file.unlink()
+                tmp_path.replace(target_file)
+
+                sha = calculate_sha256(target_file)
+                size_mb = target_file.stat().st_size / (1024 * 1024)
+
+                meta = {
+                    "company_name": item['company_name'],
+                    "jeton_amf": item['jeton'],
+                    "year": yr,
+                    "doc_type": item['doc_type'],
+                    "is_regulator_doc": item.get('is_regulator_doc', False),
+                    "nom_fichier": item.get('nom_fichier'),
+                    "amf_numero": item['numero'],
+                    "source_url": item['download_url'],
+                    "sha256": sha,
+                    "size_bytes": target_file.stat().st_size,
+                    "size_mb": round(size_mb, 2),
+                    "date_publication_amf": item['date_publication'],
+                    "downloaded_at": datetime.now(timezone.utc).isoformat(),
+                    "supervisor": "AMF (France)",
+                    "format": "PDF"
+                }
+                meta_file.write_text(json.dumps(meta, indent=2, ensure_ascii=False), encoding='utf-8')
+                return "OK", safe_name, f"{target_file.name} ({size_mb:.2f} MB | SHA256: {sha[:10]}...)"
+            except Exception as e:
+                last_error = e
+                time.sleep(1 + attempt)
+
+        if tmp_path.exists():
+            tmp_path.unlink(missing_ok=True)
+        return "FAILED", safe_name, str(last_error)
+
+    def run_download(self, target_years, max_downloads=None, doc_types=None, workers=4):
+        import concurrent.futures
         print("=========================================================================")
         print("=== CRAWLER & DESCARGADOR OFICIAL BDIF AMF (FRANCIA) — ARGOS MOTOR ===")
         print("=========================================================================")
         print(f"Destino Canónico: {self.raw_base}")
         print(f"Años Objetivo: {target_years}")
+        print(f"Hilos concurrentes: {workers}")
 
         if not self.dry_run:
             self.staging_dir.mkdir(parents=True, exist_ok=True)
@@ -169,71 +253,24 @@ class AMFBDIFCrawler:
             skipped = 0
             failed = 0
 
-            for idx, item in enumerate(filings, 1):
-                raw_name = item['company_name'].replace('/', '_').replace('\\', '_')
-                safe_name = "".join(c for c in raw_name if c.isalnum() or c in (' ', '_', '-')).strip().replace(' ', '_')
-                if not safe_name:
-                    safe_name = item['jeton'] or "COMPANY"
+            with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
+                future_to_item = {executor.submit(self._download_single_filing, item, yr): item for item in filings}
+                done_count = 0
+                total_count = len(filings)
 
-                target_dir = self.raw_base / str(yr) / safe_name
-                filename = f"{safe_name}_{yr}_{item['doc_type']}.pdf"
-                target_file = target_dir / filename
-                meta_file = target_dir / f"{safe_name}_{yr}_{item['doc_type']}.meta.json"
-
-                # Check if already downloaded
-                if target_file.exists() and target_file.stat().st_size > 5000:
-                    skipped += 1
-                    continue
-
-                tmp_path = self.staging_dir / f"tmp_{yr}_{idx}_{int(time.time())}.tmp"
-                print(f"[{idx:03d}/{len(filings):03d}] Descargando [{safe_name}] {yr} ({item['doc_type']})...")
-
-                try:
-                    req = urllib.request.Request(item['download_url'], headers={'User-Agent': self.ua, 'Referer': f"{BDIF_BASE}/"})
-                    with urllib.request.urlopen(req, timeout=40) as resp:
-                        with open(tmp_path, 'wb') as f_out:
-                            while chunk := resp.read(65536):
-                                f_out.write(chunk)
-
-                    if not check_pdf_magic(tmp_path):
-                        print(f"   [AVISO] Archivo corrupto o no es PDF. Descartando.")
-                        tmp_path.unlink(missing_ok=True)
+                for future in concurrent.futures.as_completed(future_to_item):
+                    done_count += 1
+                    status, name, info = future.result()
+                    if status == "OK":
+                        downloaded += 1
+                        print(f"[{done_count:03d}/{total_count:03d}] [OK] {name}: {info}")
+                    elif status == "SKIPPED":
+                        skipped += 1
+                        if done_count % 25 == 0 or done_count == total_count:
+                            print(f"[{done_count:03d}/{total_count:03d}] [OMITIDO] {name} (ya descargado y verificado)")
+                    else:
                         failed += 1
-                        continue
-
-                    target_dir.mkdir(parents=True, exist_ok=True)
-                    if target_file.exists():
-                        target_file.unlink()
-                    tmp_path.replace(target_file)
-
-                    sha = calculate_sha256(target_file)
-                    size_mb = target_file.stat().st_size / (1024 * 1024)
-
-                    meta = {
-                        "company_name": item['company_name'],
-                        "jeton_amf": item['jeton'],
-                        "year": yr,
-                        "doc_type": item['doc_type'],
-                        "amf_numero": item['numero'],
-                        "source_url": item['download_url'],
-                        "sha256": sha,
-                        "size_bytes": target_file.stat().st_size,
-                        "size_mb": round(size_mb, 2),
-                        "date_publication_amf": item['date_publication'],
-                        "downloaded_at": datetime.now(timezone.utc).isoformat(),
-                        "supervisor": "AMF (France)",
-                        "format": "PDF"
-                    }
-                    meta_file.write_text(json.dumps(meta, indent=2, ensure_ascii=False), encoding='utf-8')
-                    print(f"   [OK] Sellado: {target_file.name} ({size_mb:.2f} MB) | SHA256: {sha[:12]}...")
-                    downloaded += 1
-                except Exception as e:
-                    print(f"   [ERROR] Fallo al descargar {item['download_url']}: {e}")
-                    if tmp_path.exists():
-                        tmp_path.unlink(missing_ok=True)
-                    failed += 1
-
-                time.sleep(0.3)
+                        print(f"[{done_count:03d}/{total_count:03d}] [ERROR] {name}: {info}")
 
             # Actualizar manifiesto BDIF anual
             manifest_file = self.raw_base / f"MANIFEST_AMF_BDIF_{yr}.json"
@@ -260,14 +297,15 @@ class AMFBDIFCrawler:
 
 def main():
     parser = argparse.ArgumentParser(description="Crawler y Descargador Oficial BDIF AMF Francia")
-    parser.add_argument('--years', type=str, default="2018,2019", help="Años contables separados por coma")
+    parser.add_argument('--years', type=str, default="2012,2013,2014,2015,2016,2017", help="Años contables separados por coma")
     parser.add_argument('--max', type=int, default=None, help="Límite máximo de descargas por año")
+    parser.add_argument('--workers', type=int, default=4, help="Número de descargas concurrentes")
     parser.add_argument('--dry-run', action='store_true', help="Simular sin descargar ficheros")
     args = parser.parse_args()
 
     years = [int(y.strip()) for y in args.years.split(',') if y.strip().isdigit()]
     crawler = AMFBDIFCrawler(dry_run=args.dry_run)
-    crawler.run_download(target_years=years, max_downloads=args.max)
+    crawler.run_download(target_years=years, max_downloads=args.max, workers=args.workers)
 
 if __name__ == '__main__':
     main()
