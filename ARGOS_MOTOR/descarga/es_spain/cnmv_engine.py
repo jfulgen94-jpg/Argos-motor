@@ -193,24 +193,32 @@ def _get_with_retry(session, url, max_retries=3):
 
 
 def _parse_cnmv_docs(html: str, nif: str, year: int) -> list[dict]:
-    """Extrae los documentos disponibles del HTML de respuesta CNMV."""
+    """
+    Extrae los documentos disponibles del HTML de respuesta CNMV (ListadoIFA).
+    Solo extrae documentos de las filas de la tabla correspondientes al ejercicio fiscal solicitado.
+    """
     soup = BeautifulSoup(html, "html.parser")
     docs = []
     
-    # 1. Buscar filas (tr) de tabla que correspondan al año solicitado
-    # En ListadoIFA, la segunda celda (tds[1]) contiene la fecha de las cuentas anuales (ej: 31/12/2020)
-    found_by_tr = False
+    # Exclusiones de enlaces institucionales generales del portal de CNMV
+    GENERIC_EXCLUSIONS = (
+        'cnmv_2030', 'codigo_de_conducta', 'c_digo_de_conducta',
+        'sostenibilidad_ambiental', 'politica_de_comunicacion', 'pol_tica_de_comunicaci_n',
+        'ciberseguridad', 'boletin_de_la_cnmv', 'bolet_n_de_la_cnmv', 'infadicionifa'
+    )
+
+    # Buscar filas (tr) de tabla que correspondan al año solicitado
+    # En ListadoIFA, la segunda celda (tds[1]) contiene la fecha de las cuentas anuales (ej: 31/12/2025)
     for tr in soup.find_all("tr"):
         tds = tr.find_all("td")
         if len(tds) > 1:
             date_text = tds[1].get_text(strip=True)
             if date_text.endswith(f"/{year}"):
-                found_by_tr = True
                 for link in tr.find_all("a", href=True):
                     href = link["href"]
                     if "/SEND/" in href or ".pdf" in href.lower() or "verdocumento/ver" in href.lower():
                         full_url = href if href.startswith("http") else f"https://www.cnmv.es{href}"
-                        if "infadicionifa" not in href.lower() and not any(d["url"] == full_url for d in docs):
+                        if not any(ex in full_url.lower() for ex in GENERIC_EXCLUSIONS) and not any(d["url"] == full_url for d in docs):
                             docs.append({
                                 "nif": nif,
                                 "year": year,
@@ -218,21 +226,6 @@ def _parse_cnmv_docs(html: str, nif: str, year: int) -> list[dict]:
                                 "nombre": link.get_text(strip=True) or "Informe",
                             })
                             
-    # Fallback: si no es el formato de tabla ListadoIFA o no encontramos ninguna fila para ese año,
-    # parseamos todos los enlaces de la página de forma directa
-    if not found_by_tr:
-        for link in soup.find_all("a", href=True):
-            href = link["href"]
-            if "/SEND/" in href or ".pdf" in href.lower() or "verdocumento/ver" in href.lower():
-                full_url = href if href.startswith("http") else f"https://www.cnmv.es{href}"
-                if not any(d["url"] == full_url for d in docs):
-                    docs.append({
-                        "nif": nif,
-                        "year": year,
-                        "url": full_url,
-                        "nombre": link.get_text(strip=True) or "Documento",
-                    })
-                    
     print(f"[CNMV Crawler] NIF={nif} year={year} -> {len(docs)} documentos encontrados")
     return docs
 
@@ -451,8 +444,8 @@ class CNMVEngine:
             })
             print(f"      [OK] Documento mapeado: {doc_type} -> {file_name}")
 
-        # Retardo aleatorio entre peticiones para simular comportamiento humano
-        time.sleep(random.uniform(2.0, 5.0))
+        # Retardo entre peticiones para evitar saturación y mantener resiliencia antibot
+        time.sleep(random.uniform(0.6, 1.2))
 
         if not found_filings:
             print(f"  [CNMV Crawler] No se pudo encontrar ningún documento para {ticker} en el año {yr}")
@@ -567,11 +560,13 @@ class CNMVEngine:
                 print(f"  -> [Caché Mapeo] Cargados {len(all_filings)} documentos mapeados desde {cache_filings_file.name}")
             except Exception as e:
                 print(f"  -> [Aviso] Error leyendo caché de mapeo: {e}. Procediendo a rastreo...")
-                all_filings = None
-
         if all_filings is None:
-            # 1. Obtener filings de Canal A (XBRL.org) para el año
-            esef_filings = self.fetch_esef_filings_xbrl_org(year_filter=year)
+            # 1. Obtener filings de Canal A (XBRL.org) para el año (sólo aplicable para >= 2020)
+            if year >= 2020:
+                esef_filings = self.fetch_esef_filings_xbrl_org(year_filter=year)
+            else:
+                esef_filings = []
+                print(f"  -> Ejercicio fiscal {year} es pre-ESEF (<2020). Canal A omitido; 100% adquisición vía Canal B (CNMV Portal).")
             covered_tickers = {f['ticker'] for f in esef_filings if f['ticker'] in self.universe}
 
             # 2. Crawler de Canal B (CNMV Portal) para empresas sin ESEF o para complementar con PDF/IAGC
