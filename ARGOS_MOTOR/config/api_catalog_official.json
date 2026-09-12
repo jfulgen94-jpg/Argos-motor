@@ -1,0 +1,90 @@
+{
+  "version": "1.0.0",
+  "description": "Catálogo institucional de APIs oficiales y endpoints estructurados sin antibot para ingesta de universos bursátiles y estados financieros.",
+  "markets": {
+    "DE_GERMANY": {
+      "country": "Germany",
+      "supervisor": "BaFin / Unternehmensregister",
+      "indices_universe_apis": {
+        "dax_40": "https://en.wikipedia.org/w/api.php?action=parse&page=DAX&prop=wikitext&format=json",
+        "mdax_50": "https://en.wikipedia.org/w/api.php?action=parse&page=MDAX&prop=wikitext&format=json",
+        "sdax_70": "https://de.wikipedia.org/w/api.php?action=parse&page=SDAX&prop=wikitext&format=json",
+        "tecdax": "https://en.wikipedia.org/w/api.php?action=parse&page=TecDAX&prop=wikitext&format=json"
+      },
+      "regulatory_identifiers_api": {
+        "gleif_by_name": "https://api.gleif.org/api/v1/lei-records?filter[entity.legalName]={NAME}&filter[entity.legalAddress.country]=DE&page[size]=3",
+        "gleif_by_isin": "https://api.gleif.org/api/v1/lei-records?filter[isin]={ISIN}&page[size]=1"
+      },
+      "filings_api": {
+        "xbrl_esef": "https://filings.xbrl.org/api/filings?filter[lei]={LEI}&filter[reporting_year]={YEAR}",
+        "unternehmensregister": "https://www.unternehmensregister.de"
+      }
+    },
+    "ES_SPAIN": {
+      "country": "Spain",
+      "supervisor": "CNMV",
+      "indices_universe_apis": {
+        "ibex_35": "https://es.wikipedia.org/w/api.php?action=parse&page=IBEX_35&prop=wikitext&format=json",
+        "mercado_continuo": "https://es.wikipedia.org/w/api.php?action=parse&page=Mercado_Continuo_(Espa%C3%B1a)&prop=wikitext&format=json",
+        "bme_growth": "https://es.wikipedia.org/w/api.php?action=parse&page=BME_Growth&prop=wikitext&format=json"
+      },
+      "regulatory_identifiers_api": {
+        "gleif_by_name": "https://api.gleif.org/api/v1/lei-records?filter[entity.legalName]={NAME}&filter[entity.legalAddress.country]=ES&page[size]=3",
+        "gleif_by_cif": "https://api.gleif.org/api/v1/lei-records?filter[entity.registeredAs]={CIF}&page[size]=1"
+      },
+      "filings_api": {
+        "cnmv_audita_pdf": "https://www.cnmv.es/AUDITA/{YEAR}/{NUM_REG}.pdf",
+        "cnmv_ver_documento": "https://www.cnmv.es/webservices/verdocumento/ver?e={ENCRYPTED_ID}",
+        "xbrl_esef": "https://filings.xbrl.org/api/filings?filter[lei]={LEI}&filter[reporting_year]={YEAR}"
+      }
+    },
+    "FR_FRANCE": {
+      "country": "France",
+      "supervisor": "AMF",
+      "indices_universe_apis": {
+        "cac_40": "https://en.wikipedia.org/w/api.php?action=parse&page=CAC_40&prop=wikitext&format=json",
+        "sbf_120": "https://fr.wikipedia.org/w/api.php?action=parse&page=SBF_120&prop=wikitext&format=json",
+        "cac_mid_60": "https://fr.wikipedia.org/w/api.php?action=parse&page=CAC_Mid_60&prop=wikitext&format=json"
+      },
+      "regulatory_identifiers_api": {
+        "gleif_by_name": "https://api.gleif.org/api/v1/lei-records?filter[entity.legalName]={NAME}&filter[entity.legalAddress.country]=FR&page[size]=3"
+      },
+      "filings_api": {
+        "amf_bdif_search": "https://bdif.amf-france.org/back/api/v1/documents",
+        "xbrl_esef": "https://filings.xbrl.org/api/filings?filter[lei]={LEI}&filter[reporting_year]={YEAR}"
+      }
+    },
+    "IT_ITALY": {
+      "country": "Italy",
+      "supervisor": "CONSOB",
+      "indices_universe_apis": {
+        "ftse_mib": "https://it.wikipedia.org/w/api.php?action=parse&page=FTSE_MIB&prop=wikitext&format=json",
+        "ftse_italia_mid_cap": "https://it.wikipedia.org/w/api.php?action=parse&page=FTSE_Italia_Mid_Cap&prop=wikitext&format=json",
+        "ftse_italia_star": "https://it.wikipedia.org/w/api.php?action=parse&page=FTSE_Italia_STAR&prop=wikitext&format=json"
+      },
+      "regulatory_identifiers_api": {
+        "gleif_by_name": "https://api.gleif.org/api/v1/lei-records?filter[entity.legalName]={NAME}&filter[entity.legalAddress.country]=IT&page[size]=3"
+      },
+      "filings_api": {
+        "emarket_storage": "https://www.emarketstorage.it",
+        "one_info": "https://www.1info.it",
+        "xbrl_esef": "https://filings.xbrl.org/api/filings?filter[lei]={LEI}&filter[reporting_year]={YEAR}"
+      }
+    },
+    "NL_NETHERLANDS": {
+      "country": "Netherlands",
+      "supervisor": "AFM",
+      "indices_universe_apis": {
+        "aex": "https://en.wikipedia.org/w/api.php?action=parse&page=AEX_index&prop=wikitext&format=json",
+        "amx": "https://en.wikipedia.org/w/api.php?action=parse&page=AMX_index&prop=wikitext&format=json"
+      },
+      "regulatory_identifiers_api": {
+        "gleif_by_name": "https://api.gleif.org/api/v1/lei-records?filter[entity.legalName]={NAME}&filter[entity.legalAddress.country]=NL&page[size]=3"
+      },
+      "filings_api": {
+        "afm_registers": "https://www.afm.nl/en/sector/registers",
+        "xbrl_esef": "https://filings.xbrl.org/api/filings?filter[lei]={LEI}&filter[reporting_year]={YEAR}"
+      }
+    }
+  }
+}
