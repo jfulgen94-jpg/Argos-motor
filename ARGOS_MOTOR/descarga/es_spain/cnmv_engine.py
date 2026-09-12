@@ -28,9 +28,17 @@ import hashlib
 import requests
 import shutil
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, List, Any, Optional, Tuple
 from bs4 import BeautifulSoup
+
+try:
+    from .normalizar_espana_canonica import LEI_TO_INFO
+except ImportError:
+    try:
+        from ARGOS_MOTOR.descarga.es_spain.normalizar_espana_canonica import LEI_TO_INFO
+    except ImportError:
+        LEI_TO_INFO = {}
 
 CONFIG_PATH = Path(__file__).parent / 'config_es.json'
 XBRL_API = "https://filings.xbrl.org/api/filings"
@@ -294,9 +302,97 @@ class CNMVEngine:
 
         return companies, lei_map, cif_map, ticker_map
 
+    def resolve_entity(self, lei: str = "", cif: str = "", ticker: str = "") -> dict:
+        """
+        Resuelve una entidad a su tupla canónica (ticker, cif, name, lei)
+        consultando el catálogo maestro y la base de equivalencias GLEIF oficiales.
+        """
+        lei_clean = lei.upper().strip() if lei else ""
+        cif_clean = re.sub(r'[^A-Z0-9]', '', cif.upper().strip()) if cif else ""
+        ticker_clean = re.sub(r'[^A-Z0-9_]', '', ticker.upper().strip()) if ticker else ""
+
+        # 1. Búsqueda por LEI
+        if lei_clean:
+            if lei_clean in self.lei_map:
+                t, cinfo = self.lei_map[lei_clean]
+                c = re.sub(r'[^A-Z0-9]', '', cinfo.get('cif_nif', '').upper().strip())
+                return {'ticker': t, 'cif': c, 'name': cinfo.get('name_legal', t), 'lei': lei_clean}
+            if lei_clean in LEI_TO_INFO:
+                info = LEI_TO_INFO[lei_clean]
+                return {'ticker': info['ticker'], 'cif': info['cif'], 'name': info['name'], 'lei': lei_clean}
+
+        # 2. Búsqueda por CIF
+        if cif_clean:
+            if cif_clean in self.cif_map:
+                t, cinfo = self.cif_map[cif_clean]
+                return {'ticker': t, 'cif': cif_clean, 'name': cinfo.get('name_legal', t), 'lei': cinfo.get('lei', '')}
+            for k_lei, info in LEI_TO_INFO.items():
+                if info['cif'] == cif_clean:
+                    return {'ticker': info['ticker'], 'cif': cif_clean, 'name': info['name'], 'lei': k_lei}
+
+        # 3. Búsqueda por Ticker
+        if ticker_clean and ticker_clean in self.ticker_map:
+            t, cinfo = self.ticker_map[ticker_clean]
+            c = re.sub(r'[^A-Z0-9]', '', cinfo.get('cif_nif', '').upper().strip())
+            return {'ticker': t, 'cif': c, 'name': cinfo.get('name_legal', t), 'lei': cinfo.get('lei', '')}
+
+        # Fallback controlado
+        resolved_ticker = ticker_clean if ticker_clean else (f"LEI_{lei_clean[:8]}" if lei_clean else "UNKNOWN")
+        resolved_cif = cif_clean if cif_clean else ("ES_ESEF" if lei_clean else "ES_UNKNOWN")
+        return {'ticker': resolved_ticker, 'cif': resolved_cif, 'name': resolved_ticker, 'lei': lei_clean}
+
+    def resolve_canonical_filing_paths(self, filing: dict) -> Tuple[Path, Path, Path, str, str]:
+        """
+        Aplica la regla de oro canónica de ARGOS_MOTOR para todas las descargas:
+        - Directorio: {base_dir}/{year}/{cif}_{ticker}/
+        - Archivo:    {ticker}_{year}_{TAG}.{ext}
+        - Metadatos:  {ticker}_{year}_{TAG}.meta.json
+        - TAGs estándar:
+            * ESEF (.zip) -> Paquete digital regulatorio ESEF
+            * ANUAL (.pdf) -> Cuentas Anuales / Informe de Auditoría tradicional CNMV
+            * IAGC (.pdf)  -> Informe Anual de Gobierno Corporativo
+            * IARC (.pdf)  -> Informe Anual de Remuneraciones de Consejeros
+        """
+        ent = self.resolve_entity(
+            lei=filing.get('lei', ''),
+            cif=filing.get('cif', ''),
+            ticker=filing.get('ticker', '')
+        )
+        ticker = ent['ticker']
+        cif = ent['cif']
+        year = filing['year']
+        doc_type = filing.get('doc_type', '')
+        source = filing.get('source', '')
+        ext = filing.get('ext', '')
+
+        # Determinar TAG canónico y extensión
+        if 'ESEF' in doc_type.upper() or 'XBRL' in source.upper() or (ext and ext.lower() == '.zip'):
+            tag = 'ESEF'
+            file_ext = '.zip'
+            source_channel = 'ESEF'
+        elif 'IAGC' in doc_type.upper() or 'GOBIERNO' in doc_type.upper():
+            tag = 'IAGC'
+            file_ext = '.pdf'
+            source_channel = 'CNMV_CRAWLER'
+        elif 'IARC' in doc_type.upper() or 'REMUNERA' in doc_type.upper():
+            tag = 'IARC'
+            file_ext = '.pdf'
+            source_channel = 'CNMV_CRAWLER'
+        else:
+            tag = 'ANUAL'
+            file_ext = '.pdf'
+            source_channel = 'CNMV_CRAWLER' if 'CNMV' in source.upper() else ('ESEF' if file_ext == '.zip' else 'CNMV_CRAWLER')
+
+        canonical_dir = self.base_dir / str(year) / f"{cif}_{ticker}"
+        canonical_file = canonical_dir / f"{ticker}_{year}_{tag}{file_ext}"
+        meta_file = canonical_dir / f"{ticker}_{year}_{tag}.meta.json"
+
+        return canonical_dir, canonical_file, meta_file, tag, source_channel
+
     def fetch_esef_filings_xbrl_org(self, year_filter: Optional[int] = None) -> List[dict]:
         """
         Consulta la API de filings.xbrl.org con paginación exhaustiva (páginas 1 a N).
+        Normaliza de inmediato a la entidad canónica (CIF_TICKER).
         """
         filings = []
         page = 1
@@ -334,21 +430,16 @@ class CNMVEngine:
                         continue
 
                     lei = pkg_url.strip('/').split('/')[0].upper()
-                    
-                    company_tuple = self.lei_map.get(lei)
-                    if company_tuple:
-                        ticker, comp_info = company_tuple
-                        cif = comp_info.get('cif_nif', 'UNKNOWN')
-                        legal_name = comp_info.get('name_legal', ticker)
-                    else:
-                        ticker = f"LEI_{lei[:8]}"
-                        cif = "ES_ESEF"
-                        legal_name = f"Emisor ES LEI {lei}"
+                    ent = self.resolve_entity(lei=lei)
+                    ticker = ent['ticker']
+                    cif = ent['cif']
+                    legal_name = ent['name']
 
                     download_url = f"https://filings.xbrl.org{pkg_url}" if not pkg_url.startswith('http') else pkg_url
 
                     filings.append({
                         'source': 'XBRL_ORG_ESEF',
+                        'source_channel': 'ESEF',
                         'ticker': ticker,
                         'cif': cif,
                         'name_legal': legal_name,
@@ -356,7 +447,8 @@ class CNMVEngine:
                         'year': f_year,
                         'doc_type': 'ESEF_PACKAGE',
                         'url': download_url,
-                        'file_name': f"{ticker}_{f_year}_esef.zip"
+                        'file_name': f"{ticker}_{f_year}_ESEF.zip",
+                        'ext': '.zip'
                     })
 
                 if len(items) < page_size:
@@ -410,20 +502,20 @@ class CNMVEngine:
             text_upper = nombre.upper()
             if 'IAGC' in text_upper or 'GOBIERNO' in text_upper:
                 doc_type = 'IAGC'
+                tag = 'IAGC'
+                ext = '.pdf'
             elif 'IARC' in text_upper or 'REMUNERA' in text_upper:
                 doc_type = 'IARC'
-
-            # Construir extensión y file_name
-            ext = '.pdf' if ('.pdf' in full_url.lower() or '/SEND/' in full_url or doc_type in ['IAGC', 'IARC']) else '.zip'
-            
-            nombre_clean = re.sub(r'[^A-Z0-9]', '_', nombre.upper().strip())
-            nombre_clean = nombre_clean.strip('_')
-            if nombre_clean:
-                file_name = f"{ticker}_{yr}_{doc_type.lower()}_{nombre_clean.lower()}{ext}"
+                tag = 'IARC'
+                ext = '.pdf'
             else:
-                file_name = f"{ticker}_{yr}_{doc_type.lower()}{ext}"
+                doc_type = 'CNMV_ANNUAL_REPORT'
+                tag = 'ANUAL'
+                ext = '.pdf' if ('.pdf' in full_url.lower() or '/SEND/' in full_url) else '.zip'
 
-            # Deduplicación de nombre de archivo para evitar colisiones
+            file_name = f"{ticker}_{yr}_{tag}{ext}"
+
+            # Deduplicación si hubiera más de un informe anual/adicional
             base_file_name = file_name
             idx_dedup = 1
             while any(f["file_name"] == file_name for f in found_filings):
@@ -433,16 +525,19 @@ class CNMVEngine:
 
             found_filings.append({
                 'source': 'CNMV_CRAWLER_DIRECT',
+                'source_channel': 'CNMV_CRAWLER',
                 'ticker': ticker,
                 'cif': cif_clean,
                 'name_legal': company_name,
                 'lei': '',
                 'year': yr,
                 'doc_type': doc_type,
+                'tag': tag,
                 'url': full_url,
-                'file_name': file_name
+                'file_name': file_name,
+                'ext': ext
             })
-            print(f"      [OK] Documento mapeado: {doc_type} -> {file_name}")
+            print(f"      [OK] Documento mapeado canónico: {tag} -> {file_name}")
 
         # Retardo entre peticiones para evitar saturación y mantener resiliencia antibot
         time.sleep(random.uniform(0.6, 1.2))
@@ -453,46 +548,58 @@ class CNMVEngine:
 
     def download_filing(self, filing: dict) -> Tuple[bool, str, Optional[Path]]:
         """
-        Descarga un documento individual mediante descarga atómica (Staging -> Raw).
-        Sella con SHA-256 y valida Magic Bytes.
+        Descarga un documento individual aplicando la regla de normalización canónica obligatoria.
+        Directorio: {base_dir}/{year}/{cif}_{ticker}/
+        Archivo:    {ticker}_{year}_{TAG}.{ext}
+        Metadatos:  {ticker}_{year}_{TAG}.meta.json (sellado con SHA-256 y source_channel)
         """
+        target_dir, target_file, meta_file, tag, source_channel = self.resolve_canonical_filing_paths(filing)
+        target_dir.mkdir(parents=True, exist_ok=True)
+
         ticker = filing['ticker']
-        cif = filing['cif'].replace('-', '').replace(' ', '')
+        cif = filing.get('cif', '')
         year = filing['year']
         url = filing['url']
-        file_name = filing['file_name']
+        file_name = target_file.name
 
-        # Directorio destino canónico
-        if filing.get('source') == 'CNMV_CRAWLER_DIRECT':
-            target_dir = self.base_dir / cif / str(year)
-        else:
-            target_dir = self.base_dir / "INFORMES_ANUALES_COMPLETOS" / str(year) / f"{ticker}-{cif}"
-        target_dir.mkdir(parents=True, exist_ok=True)
-        target_file = target_dir / file_name
-
-        # Cache-hit check resiliente
+        # Cache-hit check con verificación de integridad y metadatos
         try:
             if target_file.exists():
-                try:
-                    fsize = target_file.stat().st_size
-                except (PermissionError, OSError):
-                    fsize = 0
+                fsize = target_file.stat().st_size
                 if fsize > 1000:
                     mb = check_magic_bytes(target_file)
                     if mb in ['ZIP_ESEF', 'PDF', 'XHTML_XML', 'HTML_XHTML', 'XML_XHTML']:
-                        print(f"    -> [Caché hit] El archivo {file_name} ya existe y es un tipo válido ({mb}).")
+                        if not meta_file.exists():
+                            sha = calculate_sha256(target_file)
+                            meta_content = {
+                                "source_channel": source_channel,
+                                "ticker": ticker,
+                                "cif": cif,
+                                "company_name": filing.get('name_legal', ticker),
+                                "lei": filing.get('lei', ''),
+                                "year": year,
+                                "file_name": target_file.name,
+                                "size_bytes": fsize,
+                                "size_mb": round(fsize / (1024 * 1024), 2),
+                                "sha256": sha,
+                                "doc_type": tag,
+                                "source_url": url,
+                                "downloaded_at": datetime.now(timezone.utc).isoformat()
+                            }
+                            meta_file.write_text(json.dumps(meta_content, indent=2, ensure_ascii=False), encoding='utf-8')
+                        print(f"    -> [Caché hit Canónico] {file_name} ({fsize} bytes, {mb})")
                         return True, "CACHE_HIT", target_file
         except Exception as e:
-            print(f"    -> [Aviso en caché-check {file_name}]: {e}")
+            print(f"    -> [Aviso caché check {file_name}]: {e}")
 
-        print(f"    -> [Descarga] Iniciando descarga de: {file_name}")
+        print(f"    -> [Descarga Canónica] Iniciando descarga de: {file_name}")
         print(f"       Desde URL: {url}")
         staging_file = self.staging_dir / f"tmp_{year}_{ticker}_{file_name}"
 
         try:
             resp = self.session.get(url, stream=True, timeout=30)
             if resp.status_code != 200:
-                print(f"    -> [Fallo] Error HTTP {resp.status_code} al intentar descargar de {url}")
+                print(f"    -> [Fallo] Error HTTP {resp.status_code} al descargar {url}")
                 return False, f"HTTP_{resp.status_code}", None
 
             with open(staging_file, 'wb') as f:
@@ -510,10 +617,10 @@ class CNMVEngine:
                         shutil.copy2(str(staging_file), str(quarantine_target))
                         try: staging_file.unlink()
                         except Exception: pass
-                print(f"    -> [Advertencia] El archivo no superó la validación de Magic Bytes ({magic}). Movido a Cuarentena: {quarantine_target.name}")
+                print(f"    -> [Advertencia] Magic Bytes inválido ({magic}). Movido a Cuarentena: {quarantine_target.name}")
                 return False, f"QUARANTINED_{magic}", quarantine_target
 
-            # Movimiento resiliente ante bloqueos transitorios de antivirus en Windows (WinError 32)
+            # Mover a ruta canónica
             moved = False
             for attempt in range(5):
                 try:
@@ -531,7 +638,27 @@ class CNMVEngine:
                 except Exception:
                     pass
 
-            print(f"    -> [Éxito] Descargado y sellado exitosamente: {target_file.name}")
+            # Sellar con SHA-256 y generar .meta.json acompañante
+            fsize = target_file.stat().st_size
+            sha = calculate_sha256(target_file)
+            meta_content = {
+                "source_channel": source_channel,
+                "ticker": ticker,
+                "cif": cif,
+                "company_name": filing.get('name_legal', ticker),
+                "lei": filing.get('lei', ''),
+                "year": year,
+                "file_name": target_file.name,
+                "size_bytes": fsize,
+                "size_mb": round(fsize / (1024 * 1024), 2),
+                "sha256": sha,
+                "doc_type": tag,
+                "source_url": url,
+                "downloaded_at": datetime.now(timezone.utc).isoformat()
+            }
+            meta_file.write_text(json.dumps(meta_content, indent=2, ensure_ascii=False), encoding='utf-8')
+
+            print(f"    -> [Éxito Canónico] {target_file.name} sellado con SHA-256: {sha[:16]}...")
             return True, "DOWNLOADED_AND_SEALED", target_file
 
         except Exception as e:
