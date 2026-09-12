@@ -56,18 +56,38 @@ def load_config() -> dict:
 
 
 def calculate_sha256(filepath: Path) -> str:
-    h = hashlib.sha256()
-    with open(filepath, 'rb') as f:
-        while chunk := f.read(65536):
-            h.update(chunk)
-    return h.hexdigest()
+    for attempt in range(5):
+        try:
+            h = hashlib.sha256()
+            with open(filepath, 'rb') as f:
+                while chunk := f.read(65536):
+                    h.update(chunk)
+            return h.hexdigest()
+        except (PermissionError, OSError):
+            time.sleep(0.5)
+    return "UNKNOWN"
 
 
 def check_magic_bytes(filepath: Path) -> str:
-    if not filepath.exists() or filepath.stat().st_size == 0:
+    if not filepath.exists():
         return 'EMPTY'
-    with open(filepath, 'rb') as f:
-        header = f.read(512)
+    try:
+        if filepath.stat().st_size == 0:
+            return 'EMPTY'
+    except (PermissionError, OSError):
+        pass
+
+    header = b''
+    for attempt in range(5):
+        try:
+            with open(filepath, 'rb') as f:
+                header = f.read(512)
+            break
+        except (PermissionError, OSError):
+            time.sleep(0.5)
+
+    if not header:
+        return 'UNKNOWN'
     if header.startswith(b'PK\x03\x04'):
         return 'ZIP_ESEF'
     if header.startswith(b'%PDF'):
@@ -457,12 +477,20 @@ class CNMVEngine:
         target_dir.mkdir(parents=True, exist_ok=True)
         target_file = target_dir / file_name
 
-        # Cache-hit check
-        if target_file.exists() and target_file.stat().st_size > 1000:
-            mb = check_magic_bytes(target_file)
-            if mb in ['ZIP_ESEF', 'PDF', 'XHTML_XML', 'HTML_XHTML', 'XML_XHTML']:
-                print(f"    -> [Caché hit] El archivo {file_name} ya existe y es un tipo válido ({mb}).")
-                return True, "CACHE_HIT", target_file
+        # Cache-hit check resiliente
+        try:
+            if target_file.exists():
+                try:
+                    fsize = target_file.stat().st_size
+                except (PermissionError, OSError):
+                    fsize = 0
+                if fsize > 1000:
+                    mb = check_magic_bytes(target_file)
+                    if mb in ['ZIP_ESEF', 'PDF', 'XHTML_XML', 'HTML_XHTML', 'XML_XHTML']:
+                        print(f"    -> [Caché hit] El archivo {file_name} ya existe y es un tipo válido ({mb}).")
+                        return True, "CACHE_HIT", target_file
+        except Exception as e:
+            print(f"    -> [Aviso en caché-check {file_name}]: {e}")
 
         print(f"    -> [Descarga] Iniciando descarga de: {file_name}")
         print(f"       Desde URL: {url}")
@@ -483,13 +511,32 @@ class CNMVEngine:
             if magic in ['EMPTY', 'BLOCKED_HTML', 'UNKNOWN']:
                 quarantine_target = self.quarantine_dir / f"quarantine_{year}_{ticker}_{file_name}"
                 if staging_file.exists():
-                    shutil.move(str(staging_file), str(quarantine_target))
+                    try:
+                        shutil.move(str(staging_file), str(quarantine_target))
+                    except (PermissionError, OSError):
+                        shutil.copy2(str(staging_file), str(quarantine_target))
+                        try: staging_file.unlink()
+                        except Exception: pass
                 print(f"    -> [Advertencia] El archivo no superó la validación de Magic Bytes ({magic}). Movido a Cuarentena: {quarantine_target.name}")
                 return False, f"QUARANTINED_{magic}", quarantine_target
 
-            if target_file.exists():
-                target_file.unlink()
-            shutil.move(str(staging_file), str(target_file))
+            # Movimiento resiliente ante bloqueos transitorios de antivirus en Windows (WinError 32)
+            moved = False
+            for attempt in range(5):
+                try:
+                    if target_file.exists():
+                        target_file.unlink()
+                    shutil.move(str(staging_file), str(target_file))
+                    moved = True
+                    break
+                except (PermissionError, OSError):
+                    time.sleep(0.5)
+            if not moved:
+                shutil.copy2(str(staging_file), str(target_file))
+                try:
+                    staging_file.unlink()
+                except Exception:
+                    pass
 
             print(f"    -> [Éxito] Descargado y sellado exitosamente: {target_file.name}")
             return True, "DOWNLOADED_AND_SEALED", target_file
@@ -563,7 +610,11 @@ class CNMVEngine:
             doc_t = item['doc_type']
             url = item['url']
             
-            success, status, dest_path = self.download_filing(item)
+            try:
+                success, status, dest_path = self.download_filing(item)
+            except Exception as e:
+                print(f"    -> [Fallo no controlado al procesar {t} - {item.get('file_name')}]: {type(e).__name__} - {e}")
+                success, status, dest_path = False, f"EXCEPTION_{type(e).__name__}", None
 
             if success:
                 if status == "CACHE_HIT":
@@ -572,7 +623,12 @@ class CNMVEngine:
                     stats['downloaded'] += 1
                 
                 sha256 = calculate_sha256(dest_path) if dest_path and dest_path.exists() else "UNKNOWN"
-                file_size = dest_path.stat().st_size if dest_path and dest_path.exists() else 0
+                file_size = 0
+                if dest_path and dest_path.exists():
+                    try:
+                        file_size = dest_path.stat().st_size
+                    except (PermissionError, OSError):
+                        file_size = 0
                 
                 stats['manifest'].append({
                     'ticker': t,

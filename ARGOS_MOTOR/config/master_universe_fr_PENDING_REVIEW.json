@@ -1,0 +1,140 @@
+{
+  "version": "1.0.0",
+  "jurisdiction": "FR",
+  "description": "Entidades excluidas del catálogo principal o pendientes de revisión por jurisdicción extranjera o régimen societario SIIC/SOCIMI",
+  "generated_at": "2026-09-12T06:20:34.563422+00:00",
+  "total_pending": 8,
+  "entities": [
+    {
+      "ticker": "AIR",
+      "lei": "529900FCMZ4LKXFD0R69",
+      "name_legal": "Airbus SE",
+      "segment": "CAC40",
+      "jurisdiction": "NL",
+      "reason": "Sede social y registro legal en Países Bajos (NL). No elegible para jurisdicción fiscal/societaria FR según GLEIF.",
+      "resolution_score": 0.0,
+      "country_code": "NL",
+      "source": {
+        "index_source": "Euronext Paris / CAC 40",
+        "gleif_source": "https://api.gleif.org/api/v1/lei-records/529900FCMZ4LKXFD0R69",
+        "filing_source": "https://filings.xbrl.org/api/filings?filter[entity.identifier]=529900FCMZ4LKXFD0R69",
+        "verified_at": "2026-09-12"
+      }
+    },
+    {
+      "ticker": "STLAP",
+      "lei": "549300LKT9PWQCHLC247",
+      "name_legal": "Stellantis N.V.",
+      "segment": "CAC40",
+      "jurisdiction": "NL",
+      "reason": "Sede social y registro legal en Países Bajos (NL). No elegible para jurisdicción fiscal/societaria FR según GLEIF.",
+      "resolution_score": 0.0,
+      "country_code": "NL",
+      "source": {
+        "index_source": "Euronext Paris / CAC 40",
+        "gleif_source": "https://api.gleif.org/api/v1/lei-records/549300LKT9PWQCHLC247",
+        "filing_source": "https://filings.xbrl.org/api/filings?filter[entity.identifier]=549300LKT9PWQCHLC247",
+        "verified_at": "2026-09-12"
+      }
+    },
+    {
+      "ticker": "STMPA",
+      "lei": "213800Z8OHIZUIDG9652",
+      "name_legal": "STMicroelectronics N.V.",
+      "segment": "CAC40",
+      "jurisdiction": "NL",
+      "reason": "Sede social y registro legal en Países Bajos (NL). No elegible para jurisdicción fiscal/societaria FR según GLEIF.",
+      "resolution_score": 0.0,
+      "country_code": "NL",
+      "source": {
+        "index_source": "Euronext Paris / CAC 40",
+        "gleif_source": "https://api.gleif.org/api/v1/lei-records/213800Z8OHIZUIDG9652",
+        "filing_source": "https://filings.xbrl.org/api/filings?filter[entity.identifier]=213800Z8OHIZUIDG9652",
+        "verified_at": "2026-09-12"
+      }
+    },
+    {
+      "ticker": "MT",
+      "lei": "5493000PCHVIAB7POG11",
+      "name_legal": "ArcelorMittal S.A.",
+      "segment": "CAC40",
+      "jurisdiction": "LU",
+      "reason": "Sede social y registro legal en Luxemburgo (LU). No elegible para jurisdicción fiscal/societaria FR según GLEIF.",
+      "resolution_score": 0.0,
+      "country_code": "LU",
+      "source": {
+        "index_source": "Euronext Paris / CAC 40",
+        "gleif_source": "https://api.gleif.org/api/v1/lei-records/5493000PCHVIAB7POG11",
+        "filing_source": "https://filings.xbrl.org/api/filings?filter[entity.identifier]=5493000PCHVIAB7POG11",
+        "verified_at": "2026-09-12"
+      }
+    },
+    {
+      "ticker": "ERF",
+      "lei": "529900JEFHULP455Z569",
+      "name_legal": "Eurofins Scientific SE",
+      "segment": "CAC40",
+      "jurisdiction": "LU",
+      "reason": "Sede social y registro legal en Luxemburgo (LU). No elegible para jurisdicción fiscal/societaria FR según GLEIF.",
+      "resolution_score": 0.0,
+      "country_code": "LU",
+      "source": {
+        "index_source": "Euronext Paris / CAC 40",
+        "gleif_source": "https://api.gleif.org/api/v1/lei-records/529900JEFHULP455Z569",
+        "filing_source": "https://filings.xbrl.org/api/filings?filter[entity.identifier]=529900JEFHULP455Z569",
+        "verified_at": "2026-09-12"
+      }
+    },
+    {
+      "ticker": "URW",
+      "lei": "969500SHQITWXSIS7N89",
+      "name_legal": "UNIBAIL-RODAMCO-WESTFIELD SE",
+      "segment": "CAC40",
+      "jurisdiction": "FR",
+      "reason": "Vehículo inmobiliario bajo régimen SIIC (equivalente exacto a SOCIMI española). Excluida del universo operativo corporativo según Regla 8.",
+      "resolution_score": 0.0,
+      "country_code": "FR",
+      "is_socimi": true,
+      "source": {
+        "index_source": "Euronext Paris / CAC 40",
+        "gleif_source": "https://api.gleif.org/api/v1/lei-records/969500SHQITWXSIS7N89",
+        "filing_source": "https://filings.xbrl.org/api/filings?filter[entity.identifier]=969500SHQITWXSIS7N89",
+        "verified_at": "2026-09-12"
+      }
+    },
+    {
+      "ticker": "GFC",
+      "lei": "9695003E4MMA10IBTR26",
+      "name_legal": "GECINA",
+      "segment": "SBF120",
+      "jurisdiction": "FR",
+      "reason": "Vehículo inmobiliario bajo régimen SIIC (equivalente exacto a SOCIMI española). Excluida del universo operativo corporativo según Regla 8.",
+      "resolution_score": 0.0,
+      "country_code": "FR",
+      "is_socimi": true,
+      "source": {
+        "index_source": "Euronext Paris / SBF 120",
+        "gleif_source": "https://api.gleif.org/api/v1/lei-records/9695003E4MMA10IBTR26",
+        "filing_source": "https://filings.xbrl.org/api/filings?filter[entity.identifier]=9695003E4MMA10IBTR26",
+        "verified_at": "2026-09-12"
+      }
+    },
+    {
+      "ticker": "COV",
+      "lei": "969500P8M3W2XX376054",
+      "name_legal": "COVIVIO",
+      "segment": "SBF120",
+      "jurisdiction": "FR",
+      "reason": "Vehículo inmobiliario bajo régimen SIIC (equivalente exacto a SOCIMI española). Excluida del universo operativo corporativo según Regla 8.",
+      "resolution_score": 0.0,
+      "country_code": "FR",
+      "is_socimi": true,
+      "source": {
+        "index_source": "Euronext Paris / SBF 120",
+        "gleif_source": "https://api.gleif.org/api/v1/lei-records/969500P8M3W2XX376054",
+        "filing_source": "https://filings.xbrl.org/api/filings?filter[entity.identifier]=969500P8M3W2XX376054",
+        "verified_at": "2026-09-12"
+      }
+    }
+  ]
+}

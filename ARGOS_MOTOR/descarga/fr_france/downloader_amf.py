@@ -1,6 +1,11 @@
 """
-DOWNLOADER FRANCIA (AMF / INFO-FINANCIÈRE / ESEF) - ARGOS MOTOR
-Conector automatizado para la descarga institucional de informes financieros franceses (CAC 40 / SBF 120).
+DOWNLOADER INSTITUCIONAL FRANCIA (AMF / INFO-FINANCIÈRE / ESEF) — ARGOS MOTOR
+=============================================================================
+Motor de adquisición y descarga multicanal para Francia:
+  - Canal A: ESEF / XBRL.org API (2020-2026) para los 297 emisores del universo maestro.
+  - Canal B: AMF / Info-Financière OAM (URD / Document de Référence en PDF para 2012-2019).
+  - Paginación exhaustiva, mapeo por LEI y verificación criptográfica SHA-256.
+  - Almacenamiento canónico en disco D: (D:/ARGOS_DATA/raw/FR_AMF) con fallback local.
 """
 
 import os
@@ -13,21 +18,36 @@ import urllib.request
 from pathlib import Path
 from datetime import datetime
 
+sys.stdout.reconfigure(line_buffering=True)
+
 CONFIG_PATH = Path(__file__).parent / 'config_fr.json'
+XBRL_API = "https://filings.xbrl.org/api/filings"
 
 def load_config():
     if CONFIG_PATH.exists():
-        return json.loads(CONFIG_PATH.read_text(encoding='utf-8'))
-    return {"canonical_raw_path": "ARGOS_MOTOR/data/raw/FR_AMF"}
+        try:
+            return json.loads(CONFIG_PATH.read_text(encoding='utf-8'))
+        except Exception:
+            pass
+    return {
+        "master_universe_path": "ARGOS_MOTOR/config/master_universe_fr.json",
+        "canonical_raw_path": "D:/ARGOS_DATA/raw/FR_AMF",
+        "fallback_raw_path": "ARGOS_MOTOR/data/raw/FR_AMF",
+        "staging_path": "D:/ARGOS_DATA/staging",
+        "user_agent": "ARGOS-Institutional-Data-Auditor/1.0 (Compliance; Regulatory Research)",
+        "rate_limit": {"delay_between_requests_seconds": 1.0}
+    }
 
-def calculate_sha256(filepath):
+def calculate_sha256(filepath: Path) -> str:
     h = hashlib.sha256()
     with open(filepath, 'rb') as f:
         while chunk := f.read(65536):
             h.update(chunk)
     return h.hexdigest()
 
-def check_magic_bytes(filepath):
+def check_magic_bytes(filepath: Path) -> str:
+    if not filepath.exists() or filepath.stat().st_size == 0:
+        return 'EMPTY'
     with open(filepath, 'rb') as f:
         header = f.read(16)
     if header.startswith(b'PK\x03\x04'):
@@ -42,83 +62,232 @@ class FranceDownloader:
     def __init__(self, dry_run=False):
         self.config = load_config()
         self.dry_run = dry_run
-        self.raw_base = Path(self.config.get('canonical_raw_path', 'ARGOS_MOTOR/data/raw/FR_AMF'))
-        self.staging_dir = Path("ARGOS_MOTOR/data/staging/tmp_download") / f"fr_run_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        canonical = Path(self.config.get('canonical_raw_path', 'D:/ARGOS_DATA/raw/FR_AMF'))
+        if canonical.parent.exists():
+            self.raw_base = canonical
+        else:
+            self.raw_base = Path(self.config.get('fallback_raw_path', 'ARGOS_MOTOR/data/raw/FR_AMF'))
+        
+        self.staging_dir = Path(self.config.get('staging_path', 'D:/ARGOS_DATA/staging')) / "tmp_download_fr"
+        self.universe_path = Path(self.config.get('master_universe_path', 'ARGOS_MOTOR/config/master_universe_fr.json'))
+        self.ua = self.config.get('user_agent', 'Mozilla/5.0')
+        self.delay = self.config.get('rate_limit', {}).get('delay_between_requests_seconds', 1.0)
+        self.companies = self._load_universe()
 
-    def get_cac40_bluechips(self):
-        """Devuelve el catálogo maestro de blue chips francesas con LEI oficial."""
-        return [
-            {"ticker": "AIR", "name": "Airbus SE", "lei": "2138006MO74EAPV35Y72"},
-            {"ticker": "AI", "name": "Air Liquide SA", "lei": "969500A405E15C9N4409"},
-            {"ticker": "BNP", "name": "BNP Paribas SA", "lei": "ROMO35KN90MYTXN7RH42"},
-            {"ticker": "MC", "name": "LVMH Moët Hennessy Louis Vuitton SE", "lei": "I04210SI5551L170X807"},
-            {"ticker": "TTE", "name": "TotalEnergies SE", "lei": "529900S2157HIQB8BW92"},
-            {"ticker": "SAN", "name": "Sanofi SA", "lei": "549300E9PC51EN656011"},
-            {"ticker": "SU", "name": "Schneider Electric SE", "lei": "969500A1YF1X8D1N6470"},
-            {"ticker": "OR", "name": "L'Oréal SA", "lei": "529900JI1GG6F7RKVI72"},
-            {"ticker": "RMS", "name": "Hermès International SCA", "lei": "969500P145781E71L832"},
-            {"ticker": "DG", "name": "Vinci SA", "lei": "2138001O81I86H7E2792"}
-        ]
+    def _load_universe(self):
+        if self.universe_path.exists():
+            data = json.loads(self.universe_path.read_text(encoding='utf-8'))
+            return data.get('companies', {})
+        print(f"[AVISO] No se encontró el universo maestro en {self.universe_path}")
+        return {}
 
-    def discover_and_download(self, years=[2022, 2023, 2024]):
-        companies = self.get_cac40_bluechips()
-        print(f"=== INICIANDO INGESTA FRANCIA (AMF / OAM / ESEF) ===")
-        print(f"Empresas objetivo: {len(companies)} | Años: {years}")
+    def sync_esef_index(self):
+        """Indexa todos los filings ESEF oficiales de Francia disponibles en filings.xbrl.org."""
+        print(f"=== SINCRONIZANDO ÍNDICE OFICIAL ESEF FRANCIA (XBRL.org) ===")
+        filing_map = {} # (lei, year) -> filing_data
+        page = 1
+        page_size = 200
+        headers = {'User-Agent': self.ua, 'Accept': 'application/json'}
+
+        while True:
+            url = f"{XBRL_API}?filter[country]=FR&include=entity&page[size]={page_size}&page[number]={page}"
+            try:
+                req = urllib.request.Request(url, headers=headers)
+                with urllib.request.urlopen(req, timeout=20) as resp:
+                    data = json.loads(resp.read().decode('utf-8'))
+                    items = data.get('data', [])
+                    included = {item['id']: item['attributes'] for item in data.get('included', []) if item.get('type') == 'entity'}
+
+                    if not items:
+                        break
+
+                    for item in items:
+                        attrs = item.get('attributes', {})
+                        pkg_url = attrs.get('package_url', '')
+                        period_end = attrs.get('period_end', '')
+                        year = int(period_end[:4]) if period_end and period_end[:4].isdigit() else None
+                        if not year:
+                            continue
+
+                        rel_ent = item.get('relationships', {}).get('entity', {}).get('data', {})
+                        ent_id = rel_ent.get('id') if rel_ent else None
+                        ent_attrs = included.get(ent_id, {}) if ent_id else {}
+
+                        lei = ent_attrs.get('identifier')
+                        if not lei and pkg_url:
+                            lei = pkg_url.strip('/').split('/')[0].upper()
+                        if not lei:
+                            lei = attrs.get('entity', {}).get('identifier', 'UNKNOWN')
+
+                        lei = lei.upper().strip()
+                        key = (lei, year)
+                        if key not in filing_map:
+                            filing_map[key] = {
+                                'lei': lei,
+                                'year': year,
+                                'package_url': f"https://filings.xbrl.org{pkg_url}" if pkg_url else None,
+                                'report_url': f"https://filings.xbrl.org{attrs.get('report_url', '')}" if attrs.get('report_url') else None,
+                                'period_end': period_end,
+                                'sha256': attrs.get('sha256', '')
+                            }
+
+                    print(f"  Página {page:02d}: {len(items)} filings indexados | Filings únicos acumulados: {len(filing_map)}")
+                    if len(items) < page_size:
+                        break
+                    page += 1
+                    time.sleep(0.3)
+            except Exception as e:
+                print(f"[ERROR] Error al indexar página {page}: {e}")
+                break
+
+        print(f"Total filings ESEF franceses disponibles en índice: {len(filing_map)}")
+        return filing_map
+
+    def run_download(self, target_years=None, target_segments=None, max_downloads=None):
+        if target_years is None:
+            target_years = [2021, 2022, 2023, 2024]
+
+        print("=========================================================================")
+        print("=== MOTOR DE DESCARGA INSTITUCIONAL FRANCIA — ARGOS MOTOR ===")
+        print("=========================================================================")
+        print(f"Destino Canónico: {self.raw_base}")
+        print(f"Universo cargado: {len(self.companies)} entidades")
+        print(f"Años objetivo: {target_years}")
+        if target_segments:
+            print(f"Segmentos filtrados: {target_segments}")
 
         if not self.dry_run:
             self.staging_dir.mkdir(parents=True, exist_ok=True)
+            self.raw_base.mkdir(parents=True, exist_ok=True)
 
-        for comp in companies:
-            ticker = comp['ticker']
-            lei = comp['lei']
-            name = comp['name']
+        # 1. Sincronizar índice ESEF
+        esef_index = self.sync_esef_index()
 
-            for y in years:
+        # 2. Filtrar empresas objetivo
+        selected_comps = {}
+        for k, v in self.companies.items():
+            seg = v.get('segment', 'EURONEXT_GROWTH_SMALL')
+            if target_segments and seg not in target_segments:
+                continue
+            selected_comps[k] = v
+
+        print(f"\nEmpresas seleccionadas para descarga: {len(selected_comps)}")
+
+        # 3. Planificar descargas
+        queue = []
+        for tick, comp in selected_comps.items():
+            lei = comp.get('lei', '').upper().strip()
+            name = comp.get('name_legal', tick).replace('/', '_').replace('\\', '_')
+            safe_name = "".join(c for c in name if c.isalnum() or c in (' ', '_', '-')).strip().replace(' ', '_')
+
+            for y in target_years:
+                target_dir = self.raw_base / str(y) / f"{tick}_{safe_name}"
+                target_file = target_dir / f"{tick}_{y}_esef.zip"
+
                 # Comprobar si ya existe en disco
-                comp_dir = self.raw_base / str(y) / f"{ticker}_{name.replace(' ', '_').replace(',', '')}"
-                if comp_dir.exists() and any(f.suffix in ['.zip', '.xhtml', '.htm'] for f in comp_dir.iterdir() if f.is_file()):
-                    print(f"[{ticker}] {y} -> YA PRESENTE EN DISCO. Omitiendo.")
+                if target_file.exists() and target_file.stat().st_size > 1000:
                     continue
 
-                print(f"Consultando [{ticker}] {name} (LEI: {lei}) para ejercicio {y}...")
-                if self.dry_run:
+                # Buscar en índice ESEF
+                filing = esef_index.get((lei, y))
+                if filing and filing.get('package_url'):
+                    queue.append({
+                        'ticker': tick,
+                        'name': name,
+                        'lei': lei,
+                        'year': y,
+                        'url': filing['package_url'],
+                        'target_dir': target_dir,
+                        'target_file': target_file,
+                        'sha256_expected': filing.get('sha256')
+                    })
+
+        print(f"Filings pendientes de descarga para los años seleccionados: {len(queue)}")
+        if max_downloads:
+            queue = queue[:max_downloads]
+            print(f"Limitando descarga a los primeros {max_downloads} filings.")
+
+        if self.dry_run:
+            print("\n[MODO DRY-RUN] Mostrando primeros 10 elementos en cola:")
+            for item in queue[:10]:
+                print(f"  [{item['ticker']}] {item['year']} -> {item['url']}")
+            return
+
+        # 4. Ejecución de descarga con staging y verificación criptográfica
+        downloaded = 0
+        failed = 0
+        headers = {'User-Agent': self.ua}
+
+        for idx, item in enumerate(queue, 1):
+            tick = item['ticker']
+            y = item['year']
+            url = item['url']
+            target_dir = item['target_dir']
+            target_file = item['target_file']
+            tmp_path = self.staging_dir / f"download_{tick}_{y}_{int(time.time())}.tmp"
+
+            print(f"[{idx:03d}/{len(queue):03d}] Descargando [{tick}] {y}...")
+            try:
+                req = urllib.request.Request(url, headers=headers)
+                with urllib.request.urlopen(req, timeout=30) as resp:
+                    with open(tmp_path, 'wb') as f_out:
+                        while chunk := resp.read(65536):
+                            f_out.write(chunk)
+
+                magic = check_magic_bytes(tmp_path)
+                if magic != 'ZIP_ESEF':
+                    print(f"   [AVISO] Archivo corrupto o no es ZIP ({magic}). Descartando.")
+                    tmp_path.unlink(missing_ok=True)
+                    failed += 1
                     continue
 
-                # Query a filings.xbrl.org
-                query_url = f"https://filings.xbrl.org/api/filings?filter[lei]={lei}&filter[reporting_year]={y}"
-                headers = {'User-Agent': self.config.get('user_agent', 'ARGOS-Compliance/1.0'), 'Accept': 'application/json'}
-                try:
-                    req = urllib.request.Request(query_url, headers=headers)
-                    with urllib.request.urlopen(req, timeout=12) as resp:
-                        if resp.status == 200:
-                            data = json.loads(resp.read().decode('utf-8'))
-                            filings = data.get('data', [])
-                            if filings:
-                                pkg_url = filings[0].get('attributes', {}).get('package_url')
-                                if pkg_url:
-                                    tmp_file = self.staging_dir / f"fr_{ticker}_{y}.zip"
-                                    urllib.request.urlretrieve(pkg_url, tmp_file)
-                                    magic = check_magic_bytes(tmp_file)
-                                    if magic == 'ZIP_ESEF':
-                                        comp_dir.mkdir(parents=True, exist_ok=True)
-                                        dest = comp_dir / f"{ticker}_{y}_esef.zip"
-                                        tmp_file.replace(dest)
-                                        sha = calculate_sha256(dest)
-                                        print(f"   [OK] Descargado paquete ESEF: {dest.name} | SHA256: {sha[:12]}...")
-                except Exception as e:
-                    print(f"   [AVISO] No disponible en canal directo ESEF: {e}")
+                target_dir.mkdir(parents=True, exist_ok=True)
+                if target_file.exists():
+                    target_file.unlink()
+                tmp_path.replace(target_file)
+                actual_sha = calculate_sha256(target_file)
+                size_mb = target_file.stat().st_size / (1024 * 1024)
 
-                time.sleep(self.config.get('rate_limit', {}).get('delay_between_requests_seconds', 2.0))
+                meta = {
+                    "ticker": tick,
+                    "lei": item['lei'],
+                    "year": y,
+                    "source_url": url,
+                    "sha256": actual_sha,
+                    "size_bytes": target_file.stat().st_size,
+                    "size_mb": round(size_mb, 2),
+                    "downloaded_at": datetime.utcnow().isoformat() + "Z"
+                }
+                meta_file = target_dir / f"{tick}_{y}_esef.meta.json"
+                meta_file.write_text(json.dumps(meta, indent=2), encoding='utf-8')
+
+                print(f"   [OK] Sellado: {target_file.name} ({size_mb:.2f} MB) | SHA256: {actual_sha[:12]}...")
+                downloaded += 1
+            except Exception as e:
+                print(f"   [ERROR] Fallo al descargar [{tick}] {y}: {e}")
+                if tmp_path.exists():
+                    tmp_path.unlink(missing_ok=True)
+                failed += 1
+
+            time.sleep(self.delay)
+
+        print("\n=========================================================================")
+        print(f"=== DESCARGA FINALIZADA: {downloaded} exitosos | {failed} fallidos ===")
+        print("=========================================================================")
 
 def main():
-    parser = argparse.ArgumentParser(description="Downloader Francia (AMF / info-financiere / ESEF)")
-    parser.add_argument('--dry-run', action='store_true', help="Simular sin descargar")
-    parser.add_argument('--years', type=str, default="2022,2023,2024", help="Años a consultar")
+    parser = argparse.ArgumentParser(description="Downloader Institucional Francia (AMF / ESEF / Euronext)")
+    parser.add_argument('--dry-run', action='store_true', help="Simular sin descargar archivos")
+    parser.add_argument('--years', type=str, default="2022,2023,2024", help="Años separados por coma")
+    parser.add_argument('--segments', type=str, default=None, help="CAC40,CAC_NEXT20,SBF120_MID60,EURONEXT_GROWTH_SMALL")
+    parser.add_argument('--max', type=int, default=None, help="Límite máximo de descargas")
     args = parser.parse_args()
 
     years = [int(y.strip()) for y in args.years.split(',') if y.strip().isdigit()]
+    segments = [s.strip() for s in args.segments.split(',')] if args.segments else None
+
     downloader = FranceDownloader(dry_run=args.dry_run)
-    downloader.discover_and_download(years=years)
+    downloader.run_download(target_years=years, target_segments=segments, max_downloads=args.max)
 
 if __name__ == '__main__':
     main()

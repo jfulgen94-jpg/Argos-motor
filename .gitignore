@@ -53,3 +53,5 @@ htmlcov/
 .env.local
 *.pem
 *.key
+iniciar_openhands.bat
+ejecutar_descarga_*.bat

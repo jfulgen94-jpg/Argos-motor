@@ -6,15 +6,16 @@
   "oam_url": "https://www.info-financiere.gouv.fr",
   "bdif_api_url": "https://data.gouv.fr/api/1/datasets/amf-bdif/",
   "esef_repo_url": "https://filings.xbrl.org/",
+  "master_universe_path": "ARGOS_MOTOR/config/master_universe_fr.json",
   "canonical_raw_path": "D:/ARGOS_DATA/raw/FR_AMF",
   "fallback_raw_path": "ARGOS_MOTOR/data/raw/FR_AMF",
   "staging_path": "D:/ARGOS_DATA/staging",
   "quarantine_path": "D:/ARGOS_DATA/quarantine",
-  "target_indices": ["CAC40", "SBF120"],
-  "target_years": [2021, 2022, 2023, 2024],
+  "target_indices": ["CAC40", "CAC_NEXT20", "SBF120_MID60", "EURONEXT_GROWTH_SMALL"],
+  "target_years": [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026],
   "rate_limit": {
-    "requests_per_minute": 20,
-    "delay_between_requests_seconds": 2.0,
+    "requests_per_minute": 30,
+    "delay_between_requests_seconds": 1.5,
     "max_retries": 3
   },
   "user_agent": "ARGOS-Institutional-Data-Auditor/1.0 (Compliance; Regulatory Research)"
