@@ -62,10 +62,18 @@ api_latency = Histogram(
     buckets=(0.01, 0.05, 0.1, 0.25, 0.5, 1.0, 2.5, 5.0),
 )
 
+
+pipeline_duration = Histogram(
+    "stater_pipeline_duration_seconds",
+    "Duración de cada módulo del pipeline",
+    ["module"],
+    buckets=(1, 5, 15, 30, 60, 120, 300, 600, 1800),
+)
+
 # --- Aliases estándar ---
 INGEST_DOCS_TOTAL = documents_ingested
 INGEST_ERRORS_TOTAL = parse_errors
-PIPELINE_DURATION_SECONDS = api_latency
+PIPELINE_DURATION_SECONDS = pipeline_duration
 AGENT_REQUESTS_TOTAL = agent_calls
 
 

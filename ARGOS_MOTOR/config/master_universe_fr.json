@@ -12,7 +12,8 @@
       "SBF120_MID60": 54,
       "EURONEXT_GROWTH_SMALL": 188,
       "CAC40_FOREIGN_HOLDINGS": 5
-    }
+    },
+    "socimis_count": 0
   },
   "companies": {
     "AIR": {
@@ -20,45 +21,80 @@
       "name_legal": "Airbus SE",
       "lei": "2138006MO74EAPV35Y72",
       "segment": "CAC40_FOREIGN_NL",
-      "country_incorporation": "NL",
       "supervisor": "AFM (Netherlands) / Euronext Paris",
-      "note": "Cotizada en CAC 40; reporting ESEF bajo AFM Holanda"
+      "note": "Cotizada en CAC 40; reporting ESEF bajo AFM Holanda",
+      "country_code": "FR",
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31",
+      "source": {
+        "gleif_source": "",
+        "filing_source": ""
+      }
     },
     "MT": {
       "ticker": "MT",
       "name_legal": "ArcelorMittal SA",
       "lei": "2138001EP3E3725F5670",
       "segment": "CAC40_FOREIGN_LU",
-      "country_incorporation": "LU",
       "supervisor": "CSSF (Luxembourg) / Euronext Paris",
-      "note": "Cotizada en CAC 40; reporting ESEF bajo CSSF Luxemburgo"
+      "note": "Cotizada en CAC 40; reporting ESEF bajo CSSF Luxemburgo",
+      "country_code": "FR",
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31",
+      "source": {
+        "gleif_source": "",
+        "filing_source": ""
+      }
     },
     "ERF": {
       "ticker": "ERF",
       "name_legal": "Eurofins Scientific SE",
       "lei": "529900JEFHUWR19O3642",
       "segment": "CAC40_FOREIGN_LU",
-      "country_incorporation": "LU",
       "supervisor": "CSSF (Luxembourg) / Euronext Paris",
-      "note": "Cotizada en CAC 40; reporting ESEF bajo CSSF Luxemburgo"
+      "note": "Cotizada en CAC 40; reporting ESEF bajo CSSF Luxemburgo",
+      "country_code": "FR",
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31",
+      "source": {
+        "gleif_source": "",
+        "filing_source": ""
+      }
     },
     "STLAM": {
       "ticker": "STLAM",
       "name_legal": "Stellantis NV",
       "lei": "549300LKT3UKJEW8KW64",
       "segment": "CAC40_FOREIGN_NL",
-      "country_incorporation": "NL",
       "supervisor": "AFM (Netherlands) / Euronext Paris",
-      "note": "Cotizada en CAC 40; reporting ESEF bajo AFM Holanda"
+      "note": "Cotizada en CAC 40; reporting ESEF bajo AFM Holanda",
+      "country_code": "FR",
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31",
+      "source": {
+        "gleif_source": "",
+        "filing_source": ""
+      }
     },
     "STMPA": {
       "ticker": "STMPA",
       "name_legal": "STMicroelectronics NV",
       "lei": "213800Z8OHIZUDWIPQ83",
       "segment": "CAC40_FOREIGN_NL",
-      "country_incorporation": "NL",
       "supervisor": "AFM (Netherlands) / Euronext Paris",
-      "note": "Cotizada en CAC 40; reporting ESEF bajo AFM Holanda"
+      "note": "Cotizada en CAC 40; reporting ESEF bajo AFM Holanda",
+      "country_code": "FR",
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31",
+      "source": {
+        "gleif_source": "",
+        "filing_source": ""
+      }
     },
     "ATLAND": {
       "ticker": "ATLAND",
@@ -82,8 +118,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300HGBVWX4FC44K67"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300HGBVWX4FC44K67",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GROUPE": {
       "ticker": "GROUPE",
@@ -106,8 +147,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695004ANBJMIMZEYY03"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695004ANBJMIMZEYY03",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "DIM": {
       "ticker": "DIM",
@@ -131,8 +177,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/52990006IVXY7GCSSR39"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/52990006IVXY7GCSSR39",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SA": {
       "ticker": "SA",
@@ -155,8 +206,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500XPWN2DMZQA5X73"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500XPWN2DMZQA5X73",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "AC": {
       "ticker": "AC",
@@ -180,8 +236,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500QZC2Q0TK11NV07"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500QZC2Q0TK11NV07",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "COVIVI": {
       "ticker": "COVIVI",
@@ -205,8 +266,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500P8M3W2XX376054"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500P8M3W2XX376054",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SOCIET": {
       "ticker": "SOCIET",
@@ -227,8 +293,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500B0S40FTUVKD182"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500B0S40FTUVKD182",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BN": {
       "ticker": "BN",
@@ -251,8 +322,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500KMUQ2B6CBAF162"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500KMUQ2B6CBAF162",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GENSIG": {
       "ticker": "GENSIG",
@@ -275,8 +351,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300NK4AB8OUEX1F54"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300NK4AB8OUEX1F54",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "TIKEHA": {
       "ticker": "TIKEHA",
@@ -300,8 +381,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500BY8TEU16U3SJ94"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500BY8TEU16U3SJ94",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CS": {
       "ticker": "CS",
@@ -325,8 +411,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/F5WCUMTUM4RKZ1MAIE39"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/F5WCUMTUM4RKZ1MAIE39",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "RMS": {
       "ticker": "RMS",
@@ -351,8 +442,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500Y4IJGHJE2MTJ13"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500Y4IJGHJE2MTJ13",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "PLASTI": {
       "ticker": "PLASTI",
@@ -375,8 +471,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500E35QZFDE7TVG55"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500E35QZFDE7TVG55",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "COVIVI_1": {
       "ticker": "COVIVI",
@@ -399,8 +500,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500N2QX5LGFFZ0I67"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500N2QX5LGFFZ0I67",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "FGR": {
       "ticker": "FGR",
@@ -422,8 +528,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500OQXKE5WDM9M994"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500OQXKE5WDM9M994",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "QUADIE": {
       "ticker": "QUADIE",
@@ -448,8 +559,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300K4W3A5ITOPTK67"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300K4W3A5ITOPTK67",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "VITURA": {
       "ticker": "VITURA",
@@ -473,8 +589,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500EQZGSVHQZQE212"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500EQZGSVHQZQE212",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CA": {
       "ticker": "CA",
@@ -498,8 +619,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300B8P6MUJ1YWTS08"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300B8P6MUJ1YWTS08",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CNP": {
       "ticker": "CNP",
@@ -523,8 +649,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500QKVPV2H8UXM738"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500QKVPV2H8UXM738",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "NEXITY": {
       "ticker": "NEXITY",
@@ -548,8 +679,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500JJ71T2DIPDVV84"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500JJ71T2DIPDVV84",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "DSY": {
       "ticker": "DSY",
@@ -574,8 +710,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950065LBWY0APQIM86"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950065LBWY0APQIM86",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CLARAN": {
       "ticker": "CLARAN",
@@ -598,8 +739,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500P3RUS57W9Z9Z70"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500P3RUS57W9Z9Z70",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ACA": {
       "ticker": "ACA",
@@ -624,8 +770,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500K2MUPSI57XK083"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500K2MUPSI57XK083",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EKINOP": {
       "ticker": "EKINOP",
@@ -648,8 +799,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500Y8FMHV2BHC0C87"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500Y8FMHV2BHC0C87",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "VETOQU": {
       "ticker": "VETOQU",
@@ -673,8 +829,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500YP0AETQIK48R39"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500YP0AETQIK48R39",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "NEOEN": {
       "ticker": "NEOEN",
@@ -697,8 +858,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500C0AIAGQWZGJO13"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500C0AIAGQWZGJO13",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SRP": {
       "ticker": "SRP",
@@ -721,8 +887,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500R79R79EPOYHA40"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500R79R79EPOYHA40",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EMEIS": {
       "ticker": "EMEIS",
@@ -746,8 +917,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500LHIH3NT7PK1V89"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500LHIH3NT7PK1V89",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ALSTOM": {
       "ticker": "ALSTOM",
@@ -770,8 +946,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950032TUYMW11FB530"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950032TUYMW11FB530",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CREDIT": {
       "ticker": "CREDIT",
@@ -791,8 +972,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/54930076YK05WVH25M52"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/54930076YK05WVH25M52",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SOI": {
       "ticker": "SOI",
@@ -817,8 +1003,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500ZR92SQCU9TST26"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500ZR92SQCU9TST26",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "UNIBEL": {
       "ticker": "UNIBEL",
@@ -841,8 +1032,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500DCGMF1DNOXFH76"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500DCGMF1DNOXFH76",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BLEECK": {
       "ticker": "BLEECK",
@@ -865,8 +1061,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500NWS9YHZ8AW0B54"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500NWS9YHZ8AW0B54",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ARAMIS": {
       "ticker": "ARAMIS",
@@ -889,8 +1090,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002Q984W0T41WB42"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002Q984W0T41WB42",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ABEO": {
       "ticker": "ABEO",
@@ -914,8 +1120,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500VJOAUSXLS74682"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500VJOAUSXLS74682",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SAF": {
       "ticker": "SAF",
@@ -940,8 +1151,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500UIC89GT3UL7L24"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500UIC89GT3UL7L24",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "NRJ": {
       "ticker": "NRJ",
@@ -963,8 +1179,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500IQLBCOOICLAB88"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500IQLBCOOICLAB88",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EDEN": {
       "ticker": "EDEN",
@@ -988,8 +1209,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695006LOD5B2D7Y0N70"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695006LOD5B2D7Y0N70",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "INTERP": {
       "ticker": "INTERP",
@@ -1013,8 +1239,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500SARWF33OPQED48"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500SARWF33OPQED48",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BVI": {
       "ticker": "BVI",
@@ -1038,8 +1269,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500TPU5T3HA5D1F11"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500TPU5T3HA5D1F11",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LATECO": {
       "ticker": "LATECO",
@@ -1063,8 +1299,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500F9H7I22AX1D138"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500F9H7I22AX1D138",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LAUREN": {
       "ticker": "LAUREN",
@@ -1087,8 +1328,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950036OIHAEGNGJ871"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950036OIHAEGNGJ871",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "PIERRE": {
       "ticker": "PIERRE",
@@ -1111,8 +1357,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695009FXHWX468RM706"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695009FXHWX468RM706",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ELIOR": {
       "ticker": "ELIOR",
@@ -1135,8 +1386,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500LYSYS0E800SQ95"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500LYSYS0E800SQ95",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EXEL": {
       "ticker": "EXEL",
@@ -1160,8 +1416,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500M2EFP3ASV8WL56"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500M2EFP3ASV8WL56",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "NACON": {
       "ticker": "NACON",
@@ -1184,8 +1445,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500A4R8HLXMZQDT80"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500A4R8HLXMZQDT80",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "COMPAG": {
       "ticker": "COMPAG",
@@ -1209,8 +1475,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500ZPQQLG72TQND21"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500ZPQQLG72TQND21",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "AVENIR": {
       "ticker": "AVENIR",
@@ -1234,8 +1505,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500IKELAA58Q3C212"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500IKELAA58Q3C212",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GFC": {
       "ticker": "GFC",
@@ -1260,8 +1536,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695003E4MMA10IBTR26"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695003E4MMA10IBTR26",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "HSBC": {
       "ticker": "HSBC",
@@ -1285,8 +1566,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/F0HUI1NY1AZMJMD8LP67"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/F0HUI1NY1AZMJMD8LP67",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "RCO": {
       "ticker": "RCO",
@@ -1311,8 +1597,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/5493004V6A3Z027YT216"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/5493004V6A3Z027YT216",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "THERMA": {
       "ticker": "THERMA",
@@ -1336,8 +1627,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500SSIGMAGT008F11"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500SSIGMAGT008F11",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "TEP": {
       "ticker": "TEP",
@@ -1362,8 +1658,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695004GI61FHFFNRG61"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695004GI61FHFFNRG61",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ARGAN": {
       "ticker": "ARGAN",
@@ -1383,8 +1684,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500GQIUBGXU7EML92"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500GQIUBGXU7EML92",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SAN": {
       "ticker": "SAN",
@@ -1409,8 +1715,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300E9PC51EN656011"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300E9PC51EN656011",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EO": {
       "ticker": "EO",
@@ -1432,8 +1743,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500F0VMZLK2IULV85"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500F0VMZLK2IULV85",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ST": {
       "ticker": "ST",
@@ -1456,8 +1772,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500YT2CGGAD8YNM04"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500YT2CGGAD8YNM04",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "DG": {
       "ticker": "DG",
@@ -1480,8 +1801,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/213800WFQ334R8UXUG83"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/213800WFQ334R8UXUG83",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "KER": {
       "ticker": "KER",
@@ -1503,8 +1829,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300VGEJKB7SVUZR78"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300VGEJKB7SVUZR78",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "PRECIA": {
       "ticker": "PRECIA",
@@ -1524,8 +1855,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500RU6K8AVTCX7818"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500RU6K8AVTCX7818",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GAUMON": {
       "ticker": "GAUMON",
@@ -1550,8 +1886,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500GMPWNUM7HCZ452"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500GMPWNUM7HCZ452",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ORAPI": {
       "ticker": "ORAPI",
@@ -1572,8 +1913,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008J05IVNRH25N49"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008J05IVNRH25N49",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SERGEF": {
       "ticker": "SERGEF",
@@ -1595,8 +1941,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950023L46VUM1L8555"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950023L46VUM1L8555",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "RALLYE": {
       "ticker": "RALLYE",
@@ -1618,8 +1969,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500AI7V5V0J9TOU58"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500AI7V5V0J9TOU58",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ASSYST": {
       "ticker": "ASSYST",
@@ -1639,8 +1995,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500QK2T9PFDA3CA64"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500QK2T9PFDA3CA64",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "VALLOU": {
       "ticker": "VALLOU",
@@ -1663,8 +2024,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500P2Q1B47H4MCJ34"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500P2Q1B47H4MCJ34",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SOCIET_1": {
       "ticker": "SOCIET",
@@ -1688,8 +2054,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/529900EOUMEP2AXWRT17"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/529900EOUMEP2AXWRT17",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BOIRON": {
       "ticker": "BOIRON",
@@ -1710,8 +2081,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695000UMPNY21KKDO98"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695000UMPNY21KKDO98",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "DBV": {
       "ticker": "DBV",
@@ -1735,8 +2111,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500PVBQFWQKVDMD80"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500PVBQFWQKVDMD80",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "AI": {
       "ticker": "AI",
@@ -1759,8 +2140,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500MMPQVHK671GT54"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500MMPQVHK671GT54",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BNP": {
       "ticker": "BNP",
@@ -1784,8 +2170,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/R0MUWSFPU8MPRO8K5P83"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/R0MUWSFPU8MPRO8K5P83",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "METROP": {
       "ticker": "METROP",
@@ -1809,8 +2200,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950018NOMJX5XRH047"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950018NOMJX5XRH047",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ENGI": {
       "ticker": "ENGI",
@@ -1834,8 +2230,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/LAXUQCHT4FH58LRZDY46"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/LAXUQCHT4FH58LRZDY46",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "RXL": {
       "ticker": "RXL",
@@ -1856,8 +2257,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500N6AVPA51648T62"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500N6AVPA51648T62",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "AIR_1": {
       "ticker": "AIR",
@@ -1879,8 +2285,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500AQW31GYO8JZD66"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500AQW31GYO8JZD66",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GLE": {
       "ticker": "GLE",
@@ -1903,8 +2314,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/O2RNE8IBXP4R0TD8PU41"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/O2RNE8IBXP4R0TD8PU41",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EL": {
       "ticker": "EL",
@@ -1927,8 +2343,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300M3VH1A3ER1TB49"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300M3VH1A3ER1TB49",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "TELEVI": {
       "ticker": "TELEVI",
@@ -1953,8 +2374,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500WQFC6OAQYG7E65"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500WQFC6OAQYG7E65",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "NEURON": {
       "ticker": "NEURON",
@@ -1978,8 +2404,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008Y07TSG8SZCG57"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008Y07TSG8SZCG57",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BOLLOR": {
       "ticker": "BOLLOR",
@@ -2003,8 +2434,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500LEKCHH6VV86P94"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500LEKCHH6VV86P94",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BELIEV": {
       "ticker": "BELIEV",
@@ -2027,8 +2463,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500WGEAZ8YE4UAI86"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500WGEAZ8YE4UAI86",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ATOS": {
       "ticker": "ATOS",
@@ -2052,8 +2493,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/5493001EZOOA66PTBR68"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/5493001EZOOA66PTBR68",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "MANITO": {
       "ticker": "MANITO",
@@ -2078,8 +2524,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008SHP3XTT9QCM25"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008SHP3XTT9QCM25",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SAMSE": {
       "ticker": "SAMSE",
@@ -2102,8 +2553,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500OP0AFORNKIGP59"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500OP0AFORNKIGP59",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "HIGH": {
       "ticker": "HIGH",
@@ -2128,8 +2584,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500FYLNRXCJ348W66"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500FYLNRXCJ348W66",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "COMPAG_1": {
       "ticker": "COMPAG",
@@ -2153,8 +2614,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950029IN3GW457GG90"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950029IN3GW457GG90",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ESI": {
       "ticker": "ESI",
@@ -2175,8 +2641,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500SJCEYK6O6RXV95"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500SJCEYK6O6RXV95",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SOPRA": {
       "ticker": "SOPRA",
@@ -2201,8 +2672,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950020QIOHAAK9V551"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950020QIOHAAK9V551",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "NEXANS": {
       "ticker": "NEXANS",
@@ -2226,8 +2702,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950015FU78G84UIV14"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950015FU78G84UIV14",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "IMMOBI": {
       "ticker": "IMMOBI",
@@ -2250,8 +2731,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500CRQJCR86DNNC50"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500CRQJCR86DNNC50",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "FNAC": {
       "ticker": "FNAC",
@@ -2276,8 +2762,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950091FL62XSLPHO35"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950091FL62XSLPHO35",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LA": {
       "ticker": "LA",
@@ -2301,8 +2792,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500R4CLSQFTYYI535"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500R4CLSQFTYYI535",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ETABLI": {
       "ticker": "ETABLI",
@@ -2326,8 +2822,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500ZTYI9C1C594X25"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500ZTYI9C1C594X25",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LISI": {
       "ticker": "LISI",
@@ -2351,8 +2852,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500UU4O58BR802Y55"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500UU4O58BR802Y55",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LOREAL": {
       "ticker": "LOREAL",
@@ -2376,8 +2882,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/529900JI1GG6F7RKVI53"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/529900JI1GG6F7RKVI53",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "VIV": {
       "ticker": "VIV",
@@ -2401,8 +2912,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500FU4DRAEVJW7U54"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500FU4DRAEVJW7U54",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "VIRIDI": {
       "ticker": "VIRIDI",
@@ -2427,8 +2943,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500FCVQ5SLAAUJV59"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500FCVQ5SLAAUJV59",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "PATRIM": {
       "ticker": "PATRIM",
@@ -2451,8 +2972,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500C2C11L0PTGRH11"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500C2C11L0PTGRH11",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LAGARD": {
       "ticker": "LAGARD",
@@ -2476,8 +3002,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500VX2NV2AQQ65G45"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500VX2NV2AQQ65G45",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ROCHE": {
       "ticker": "ROCHE",
@@ -2501,8 +3032,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500JZSD8O83SPU920"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500JZSD8O83SPU920",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GET": {
       "ticker": "GET",
@@ -2525,8 +3061,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695007ZEQ7M0OE74G82"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695007ZEQ7M0OE74G82",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "RNO": {
       "ticker": "RNO",
@@ -2550,8 +3091,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500F7JLTX36OUI695"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500F7JLTX36OUI695",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "MERCIA": {
       "ticker": "MERCIA",
@@ -2575,8 +3121,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500081CGAXB7YS433"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500081CGAXB7YS433",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ELECTR": {
       "ticker": "ELECTR",
@@ -2599,8 +3150,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300X3UK4GG3FNMO06"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300X3UK4GG3FNMO06",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "MERSEN": {
       "ticker": "MERSEN",
@@ -2624,8 +3180,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/OQXDLNM5DTBULYMF5U27"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/OQXDLNM5DTBULYMF5U27",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "TARKET": {
       "ticker": "TARKET",
@@ -2649,8 +3210,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002EVBYM5B2OIP31"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002EVBYM5B2OIP31",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BPCE": {
       "ticker": "BPCE",
@@ -2674,8 +3240,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695005MSX1OYEMGDF46"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695005MSX1OYEMGDF46",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "UNIBAI": {
       "ticker": "UNIBAI",
@@ -2700,8 +3271,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500SHQITWXSIS7N89"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500SHQITWXSIS7N89",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ACA_1": {
       "ticker": "ACA",
@@ -2726,8 +3302,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500TJ5KRTCJQWXH05"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500TJ5KRTCJQWXH05",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ALTARE": {
       "ticker": "ALTARE",
@@ -2751,8 +3332,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500ICGCY1PD6OT783"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500ICGCY1PD6OT783",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "FREY": {
       "ticker": "FREY",
@@ -2775,8 +3361,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500JTN8BU5BW6UW36"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500JTN8BU5BW6UW36",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "NATIXI": {
       "ticker": "NATIXI",
@@ -2800,8 +3391,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/KX1WK48MPD4Y2NCUIZ63"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/KX1WK48MPD4Y2NCUIZ63",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LA_1": {
       "ticker": "LA",
@@ -2825,8 +3421,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695000YG7TR7PAP0L59"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695000YG7TR7PAP0L59",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EURAZE": {
       "ticker": "EURAZE",
@@ -2850,8 +3451,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500C656AA39O94N60"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500C656AA39O94N60",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LA_2": {
       "ticker": "LA",
@@ -2875,8 +3481,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950066U5XAAIRCPA78"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950066U5XAAIRCPA78",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EN": {
       "ticker": "EN",
@@ -2899,8 +3510,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500MOCLNQFNZN0D63"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500MOCLNQFNZN0D63",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BIM": {
       "ticker": "BIM",
@@ -2925,8 +3541,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300AK8Y0LBIQ4T071"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300AK8Y0LBIQ4T071",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "VIE": {
       "ticker": "VIE",
@@ -2950,8 +3571,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500LENY69X51OOT31"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500LENY69X51OOT31",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "74SOFT": {
       "ticker": "74SOFT",
@@ -2974,8 +3600,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950022O6SP7FQONJ77"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950022O6SP7FQONJ77",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "TTE": {
       "ticker": "TTE",
@@ -2998,8 +3629,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/529900S21EQ1BO4ESM68"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/529900S21EQ1BO4ESM68",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BPIFRA": {
       "ticker": "BPIFRA",
@@ -3023,8 +3659,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500STN7T9MRUMJ267"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500STN7T9MRUMJ267",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SECHE": {
       "ticker": "SECHE",
@@ -3048,8 +3689,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500R9ENNIN33POO20"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500R9ENNIN33POO20",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "COMPAG_2": {
       "ticker": "COMPAG",
@@ -3072,8 +3718,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/NFONVGN05Z0FMN5PEC35"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/NFONVGN05Z0FMN5PEC35",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "IMERYS": {
       "ticker": "IMERYS",
@@ -3098,8 +3749,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/54930075MZSSIB2TGC64"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/54930075MZSSIB2TGC64",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GUERBE": {
       "ticker": "GUERBE",
@@ -3123,8 +3779,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500WV1U1WQ059L135"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500WV1U1WQ059L135",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "FERMEN": {
       "ticker": "FERMEN",
@@ -3146,8 +3807,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695007VNRQR6V5TMN85"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695007VNRQR6V5TMN85",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "JCDECA": {
       "ticker": "JCDECA",
@@ -3167,8 +3833,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695009KV7AFPDEI5S30"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695009KV7AFPDEI5S30",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ELIS": {
       "ticker": "ELIS",
@@ -3192,8 +3863,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500UX71LCE8MAY492"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500UX71LCE8MAY492",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CAP": {
       "ticker": "CAP",
@@ -3215,8 +3891,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950077L0TN7BAROX36"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950077L0TN7BAROX36",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "VERALL": {
       "ticker": "VERALL",
@@ -3239,8 +3920,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/5299007YZU978DE0ZY32"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/5299007YZU978DE0ZY32",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "MC": {
       "ticker": "MC",
@@ -3263,8 +3949,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/IOG4E947OATN0KJYSD45"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/IOG4E947OATN0KJYSD45",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "PHAXIA": {
       "ticker": "PHAXIA",
@@ -3286,8 +3977,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500U8ZZCODU8A9374"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500U8ZZCODU8A9374",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SU": {
       "ticker": "SU",
@@ -3312,8 +4008,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500A1YF1XUYYXS284"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500A1YF1XUYYXS284",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GL": {
       "ticker": "GL",
@@ -3337,8 +4038,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002PXZMQNBPY2P44"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002PXZMQNBPY2P44",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CASINO": {
       "ticker": "CASINO",
@@ -3360,8 +4066,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500VHL8F83GBL6L29"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500VHL8F83GBL6L29",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "HO": {
       "ticker": "HO",
@@ -3384,8 +4095,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/529900FNDVTQJOVVPZ19"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/529900FNDVTQJOVVPZ19",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "TOUAX": {
       "ticker": "TOUAX",
@@ -3409,8 +4125,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500QZJBA9R36U9J48"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500QZJBA9R36U9J48",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ALTARE_1": {
       "ticker": "ALTARE",
@@ -3434,8 +4155,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695004OAPTHOKN99645"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695004OAPTHOKN99645",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "KAUFMA": {
       "ticker": "KAUFMA",
@@ -3459,8 +4185,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500CE0X343D8ALO86"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500CE0X343D8ALO86",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "INSTIT": {
       "ticker": "INSTIT",
@@ -3483,8 +4214,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500Q2MA9VBQ8BG884"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500Q2MA9VBQ8BG884",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "VALNEV": {
       "ticker": "VALNEV",
@@ -3508,8 +4244,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500DIVIP5VKNW4948"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500DIVIP5VKNW4948",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ITISSA": {
       "ticker": "ITISSA",
@@ -3533,8 +4274,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/254900LH0G1ZIZ78Y462"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/254900LH0G1ZIZ78Y462",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "FR": {
       "ticker": "FR",
@@ -3558,8 +4304,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/5493006IH2N2WMIBB742"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/5493006IH2N2WMIBB742",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SOCIET_2": {
       "ticker": "SOCIET",
@@ -3584,8 +4335,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500UR00DF63I0VH67"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500UR00DF63I0VH67",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "INVENT": {
       "ticker": "INVENT",
@@ -3609,8 +4365,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500I9Y690B3FZW590"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500I9Y690B3FZW590",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ORA": {
       "ticker": "ORA",
@@ -3633,8 +4394,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500MCOONR8990S771"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500MCOONR8990S771",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ICADE": {
       "ticker": "ICADE",
@@ -3659,8 +4425,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500UDH342QLTE1M42"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500UDH342QLTE1M42",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ACA_2": {
       "ticker": "ACA",
@@ -3685,8 +4456,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/1VUV7VQFKUOQSJ21A208"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/1VUV7VQFKUOQSJ21A208",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "AKE": {
       "ticker": "AKE",
@@ -3711,8 +4487,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695000EHMS84KKP2785"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695000EHMS84KKP2785",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SEB": {
       "ticker": "SEB",
@@ -3736,8 +4517,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500WP61NBK098AC47"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500WP61NBK098AC47",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EUTELS": {
       "ticker": "EUTELS",
@@ -3760,8 +4546,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300EFWH9UR17YSK05"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300EFWH9UR17YSK05",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GENEUR": {
       "ticker": "GENEUR",
@@ -3782,8 +4573,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/213800FUJCKXO9LK3444"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/213800FUJCKXO9LK3444",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "RI": {
       "ticker": "RI",
@@ -3807,8 +4603,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/52990097YFPX9J0H5D87"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/52990097YFPX9J0H5D87",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BONDUE": {
       "ticker": "BONDUE",
@@ -3831,8 +4632,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500QVHHN3NNVYRE94"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500QVHHN3NNVYRE94",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SOC": {
       "ticker": "SOC",
@@ -3855,8 +4661,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500RWF4QUJY6HF161"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500RWF4QUJY6HF161",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "RAMSAY": {
       "ticker": "RAMSAY",
@@ -3879,8 +4690,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500I1EJGUAT223F44"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500I1EJGUAT223F44",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EAGLE": {
       "ticker": "EAGLE",
@@ -3903,8 +4719,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500YG7U0UQDEHBD60"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500YG7U0UQDEHBD60",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ASSYST_1": {
       "ticker": "ASSYST",
@@ -3927,8 +4748,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008GTTDJGF00CT88"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008GTTDJGF00CT88",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ARGAN_1": {
       "ticker": "ARGAN",
@@ -3950,8 +4776,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/529900FXM41XSCUSGH04"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/529900FXM41XSCUSGH04",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "VICAT": {
       "ticker": "VICAT",
@@ -3975,8 +4806,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695009YI1863TOVDP79"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695009YI1863TOVDP79",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ALTAMI": {
       "ticker": "ALTAMI",
@@ -3996,8 +4832,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500U4BPYFRAOQ3Z75"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500U4BPYFRAOQ3Z75",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ML": {
       "ticker": "ML",
@@ -4021,8 +4862,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300SOSI58J6VIW052"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300SOSI58J6VIW052",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "NHOA": {
       "ticker": "NHOA",
@@ -4044,8 +4890,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500NWCP1OQ4315C79"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500NWCP1OQ4315C79",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "DERICH": {
       "ticker": "DERICH",
@@ -4067,8 +4918,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500QOO4C4IPGID263"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500QOO4C4IPGID263",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "AYVENS": {
       "ticker": "AYVENS",
@@ -4093,8 +4949,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500E7V019H9NP7427"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500E7V019H9NP7427",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "RUBIS": {
       "ticker": "RUBIS",
@@ -4118,8 +4979,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500MGFIKUGLTC9742"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500MGFIKUGLTC9742",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GAZTRA": {
       "ticker": "GAZTRA",
@@ -4144,8 +5010,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500BVOHVZUUFWDT54"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500BVOHVZUUFWDT54",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "NICOX": {
       "ticker": "NICOX",
@@ -4165,8 +5036,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500EZGEO9W4JXR353"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500EZGEO9W4JXR353",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CARMIL": {
       "ticker": "CARMIL",
@@ -4187,8 +5063,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/222100P6D3QKU33LZQ72"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/222100P6D3QKU33LZQ72",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ANTIN": {
       "ticker": "ANTIN",
@@ -4210,8 +5091,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/2138008FABJXP4HUOK53"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/2138008FABJXP4HUOK53",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SCOR": {
       "ticker": "SCOR",
@@ -4234,8 +5120,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950056ULJ4JI7V3752"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950056ULJ4JI7V3752",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "MARIE": {
       "ticker": "MARIE",
@@ -4259,8 +5150,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500XQM2JOWHKWI437"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500XQM2JOWHKWI437",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CLARIA": {
       "ticker": "CLARIA",
@@ -4284,8 +5180,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500WEPS61H6TJM037"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500WEPS61H6TJM037",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "VANTIV": {
       "ticker": "VANTIV",
@@ -4310,8 +5211,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/4N6SD705LP5XZKA2A097"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/4N6SD705LP5XZKA2A097",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CAISSE": {
       "ticker": "CAISSE",
@@ -4335,8 +5241,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500P4HYOPYINEPE06"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500P4HYOPYINEPE06",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ARVERN": {
       "ticker": "ARVERN",
@@ -4358,8 +5269,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/894500FOM6WHY0KFW309"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/894500FOM6WHY0KFW309",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LINEDA": {
       "ticker": "LINEDA",
@@ -4382,8 +5298,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695003D6KVJ0H8CL506"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695003D6KVJ0H8CL506",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "UTI": {
       "ticker": "UTI",
@@ -4406,8 +5327,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500KB7P0M43DNUN56"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500KB7P0M43DNUN56",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ADOCIA": {
       "ticker": "ADOCIA",
@@ -4431,8 +5357,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500ZL79KYH9PTYP78"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500ZL79KYH9PTYP78",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "MCPHY": {
       "ticker": "MCPHY",
@@ -4454,8 +5385,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500W5X02DTT3BZS69"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500W5X02DTT3BZS69",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "AGENCE": {
       "ticker": "AGENCE",
@@ -4478,8 +5414,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008K5N8MKIT4XJ91"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008K5N8MKIT4XJ91",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "MRM": {
       "ticker": "MRM",
@@ -4500,8 +5441,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950047J5JOCUPMHI30"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950047J5JOCUPMHI30",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BALYO": {
       "ticker": "BALYO",
@@ -4524,8 +5470,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500JJRU82J0JMV072"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500JJRU82J0JMV072",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "MAISON": {
       "ticker": "MAISON",
@@ -4550,8 +5501,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695009DV2698O4ZBU71"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695009DV2698O4ZBU71",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SOCIET_3": {
       "ticker": "SOCIET",
@@ -4575,8 +5531,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500LIJD0OW1446X30"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500LIJD0OW1446X30",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "WENDEL": {
       "ticker": "WENDEL",
@@ -4599,8 +5560,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500M98ZMIZYJD5O34"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500M98ZMIZYJD5O34",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LI": {
       "ticker": "LI",
@@ -4624,8 +5590,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500PB4U31KEFHZ621"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500PB4U31KEFHZ621",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "PRODWA": {
       "ticker": "PRODWA",
@@ -4647,8 +5618,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500URB8KRQ9IDBK68"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500URB8KRQ9IDBK68",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "PUB": {
       "ticker": "PUB",
@@ -4671,8 +5647,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/2138004KW8BV57III342"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/2138004KW8BV57III342",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BOURSE": {
       "ticker": "BOURSE",
@@ -4695,8 +5676,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500GFIL2Z81YKUM35"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500GFIL2Z81YKUM35",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EXAIL": {
       "ticker": "EXAIL",
@@ -4720,8 +5706,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300EWC06TYV07XE53"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300EWC06TYV07XE53",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CEGEDI": {
       "ticker": "CEGEDI",
@@ -4744,8 +5735,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002XQWX9TKCOZT86"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002XQWX9TKCOZT86",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "FONCIE": {
       "ticker": "FONCIE",
@@ -4768,8 +5764,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695000H29HRRE478O62"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695000H29HRRE478O62",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ABIVAX": {
       "ticker": "ABIVAX",
@@ -4791,8 +5792,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500D8TMNB184OJU95"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500D8TMNB184OJU95",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EUROAP": {
       "ticker": "EUROAP",
@@ -4814,8 +5820,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002FT7GGI3CKKJ14"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002FT7GGI3CKKJ14",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "COFACE": {
       "ticker": "COFACE",
@@ -4840,8 +5851,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950025N07LTJYFSN57"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950025N07LTJYFSN57",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LUMIBI": {
       "ticker": "LUMIBI",
@@ -4865,8 +5881,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500MLJC3ZSZP4L019"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500MLJC3ZSZP4L019",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "INNATE": {
       "ticker": "INNATE",
@@ -4890,8 +5911,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002Y8420ZB8HJE29"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002Y8420ZB8HJE29",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ABIONY": {
       "ticker": "ABIONY",
@@ -4915,8 +5941,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500785J7VIC5YPC96"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500785J7VIC5YPC96",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LR": {
       "ticker": "LR",
@@ -4940,8 +5971,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500XXRPGD7HCAFA90"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500XXRPGD7HCAFA90",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SMCP": {
       "ticker": "SMCP",
@@ -4965,8 +6001,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950034TTGHHKKEN547"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950034TTGHHKKEN547",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "JCDECA_1": {
       "ticker": "JCDECA",
@@ -4989,8 +6030,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500G83IPSX1HQL497"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500G83IPSX1HQL497",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GROUPE_1": {
       "ticker": "GROUPE",
@@ -5011,8 +6057,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500GEHCCQHWGSYG40"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500GEHCCQHWGSYG40",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EQUASE": {
       "ticker": "EQUASE",
@@ -5036,8 +6087,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950066I7XVFGZI8L92"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950066I7XVFGZI8L92",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "IPSOS": {
       "ticker": "IPSOS",
@@ -5061,8 +6117,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002OY2X35E9X8W87"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002OY2X35E9X8W87",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "IDI": {
       "ticker": "IDI",
@@ -5087,8 +6148,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950022J37K8UHSJH76"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950022J37K8UHSJH76",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CREDIT_1": {
       "ticker": "CREDIT",
@@ -5113,8 +6179,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950041VJ1QP0B69503"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950041VJ1QP0B69503",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BANQUE": {
       "ticker": "BANQUE",
@@ -5137,8 +6208,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/VBHFXSYT7OG62HNT8T76"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/VBHFXSYT7OG62HNT8T76",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "TRANSG": {
       "ticker": "TRANSG",
@@ -5162,8 +6238,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500PDJW8N0FSGGK69"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500PDJW8N0FSGGK69",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ERAMET": {
       "ticker": "ERAMET",
@@ -5188,8 +6269,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300LUH78PG2MP6N64"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300LUH78PG2MP6N64",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "PEUGEO": {
       "ticker": "PEUGEO",
@@ -5214,8 +6300,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500Z8LOO0H8JY2E60"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500Z8LOO0H8JY2E60",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "AUBAY": {
       "ticker": "AUBAY",
@@ -5240,8 +6331,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500KGFSDP6UUKIA67"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500KGFSDP6UUKIA67",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CREDIT_2": {
       "ticker": "CREDIT",
@@ -5264,8 +6360,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/N4JDFKKH2FTD8RKFXO39"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/N4JDFKKH2FTD8RKFXO39",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ID": {
       "ticker": "ID",
@@ -5289,8 +6390,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500U1DQN70VMJ9P45"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500U1DQN70VMJ9P45",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "MAISON_1": {
       "ticker": "MAISON",
@@ -5314,8 +6420,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500M5EQJVDASURW53"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500M5EQJVDASURW53",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "AMUNDI": {
       "ticker": "AMUNDI",
@@ -5339,8 +6450,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950010FL2T1TJKR531"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950010FL2T1TJKR531",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "PAREF": {
       "ticker": "PAREF",
@@ -5364,8 +6480,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500IWD41VNMP1NT87"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500IWD41VNMP1NT87",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "JACQUE": {
       "ticker": "JACQUE",
@@ -5389,8 +6510,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500V8OL3NGL0GKZ37"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500V8OL3NGL0GKZ37",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "IPSEN": {
       "ticker": "IPSEN",
@@ -5413,8 +6539,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300M6SGDPB4Z94P11"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300M6SGDPB4Z94P11",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CIE": {
       "ticker": "CIE",
@@ -5434,8 +6565,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500ZIB8VE0GM5YA81"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500ZIB8VE0GM5YA81",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ALTEN": {
       "ticker": "ALTEN",
@@ -5458,8 +6594,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500Y7G9TY7Y24GN07"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500Y7G9TY7Y24GN07",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CROSSW": {
       "ticker": "CROSSW",
@@ -5483,8 +6624,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500YEQRY2T8Z7W336"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500YEQRY2T8Z7W336",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "INFOTE": {
       "ticker": "INFOTE",
@@ -5507,8 +6653,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008JULKH9KJQLP04"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008JULKH9KJQLP04",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ITESOF": {
       "ticker": "ITESOF",
@@ -5530,8 +6681,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500HZ36JO2ODTSW29"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500HZ36JO2ODTSW29",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "PCAS": {
       "ticker": "PCAS",
@@ -5552,8 +6708,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695009WMW72CD0E3W90"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695009WMW72CD0E3W90",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "AEROPO": {
       "ticker": "AEROPO",
@@ -5576,8 +6737,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500PJMBSFHYC37989"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500PJMBSFHYC37989",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "VOLTAL": {
       "ticker": "VOLTAL",
@@ -5599,8 +6765,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500KE938Z79ZH1N44"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500KE938Z79ZH1N44",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SOGECL": {
       "ticker": "SOGECL",
@@ -5621,8 +6792,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695005NNHRB8KW54I35"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695005NNHRB8KW54I35",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CARMIL_1": {
       "ticker": "CARMIL",
@@ -5642,8 +6818,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300ECA6MK5PD4MR60"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300ECA6MK5PD4MR60",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "PARROT": {
       "ticker": "PARROT",
@@ -5665,8 +6846,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695000KELLFSASOM232"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695000KELLFSASOM232",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SOLOCA": {
       "ticker": "SOLOCA",
@@ -5690,8 +6876,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695005U38X1SF184325"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695005U38X1SF184325",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SOC_1": {
       "ticker": "SOC",
@@ -5715,8 +6906,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500USKOS4RHAJLM09"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500USKOS4RHAJLM09",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "WORLDL": {
       "ticker": "WORLDL",
@@ -5740,8 +6936,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300CJMQNCA0U4TS33"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300CJMQNCA0U4TS33",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LNA": {
       "ticker": "LNA",
@@ -5761,8 +6962,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500GGHMYIBZ90CR14"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500GGHMYIBZ90CR14",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "DEEZER": {
       "ticker": "DEEZER",
@@ -5785,8 +6991,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500LM904RGABQUN96"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500LM904RGABQUN96",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "VERIMA": {
       "ticker": "VERIMA",
@@ -5811,8 +7022,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500MQKPVEWTQIRT36"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500MQKPVEWTQIRT36",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SQLI": {
       "ticker": "SQLI",
@@ -5833,8 +7049,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500G42GDB5YEC2Q03"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500G42GDB5YEC2Q03",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EXCLUS": {
       "ticker": "EXCLUS",
@@ -5854,8 +7075,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500GFM1C4M1KMPL74"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500GFM1C4M1KMPL74",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GUILLE": {
       "ticker": "GUILLE",
@@ -5879,8 +7105,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500N24EZ7HPKJIV79"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500N24EZ7HPKJIV79",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LHYFE": {
       "ticker": "LHYFE",
@@ -5902,8 +7133,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500RTYSRSTZAJCG72"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500RTYSRSTZAJCG72",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "FORSEE": {
       "ticker": "FORSEE",
@@ -5925,8 +7161,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500S7F4LVSHHUZB87"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500S7F4LVSHHUZB87",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GROUPE_2": {
       "ticker": "GROUPE",
@@ -5950,8 +7191,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500KI179R130T7Q32"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500KI179R130T7Q32",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "NANOBI": {
       "ticker": "NANOBI",
@@ -5975,8 +7221,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500667RSYIH8YL895"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500667RSYIH8YL895",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "VUSION": {
       "ticker": "VUSION",
@@ -5999,8 +7250,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500U51BYOMEW9M549"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500U51BYOMEW9M549",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SPIE": {
       "ticker": "SPIE",
@@ -6021,8 +7277,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500MPA5XEFPUJNU29"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500MPA5XEFPUJNU29",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CRIT": {
       "ticker": "CRIT",
@@ -6042,8 +7303,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/89450054R82I99Y73N93"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/89450054R82I99Y73N93",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "POXEL": {
       "ticker": "POXEL",
@@ -6065,8 +7331,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695003OIX0T7NX72N26"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695003OIX0T7NX72N26",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "HEXAOM": {
       "ticker": "HEXAOM",
@@ -6086,8 +7357,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500AGQP2FXW6GMN75"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500AGQP2FXW6GMN75",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "STEF": {
       "ticker": "STEF",
@@ -6107,8 +7383,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008BIKG0E486UL47"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008BIKG0E486UL47",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EKINOP_1": {
       "ticker": "EKINOP",
@@ -6128,8 +7409,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008N1821311KX668"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008N1821311KX668",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CATERI": {
       "ticker": "CATERI",
@@ -6150,8 +7436,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500OIT7HXEIH2Z703"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500OIT7HXEIH2Z703",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ACTIA": {
       "ticker": "ACTIA",
@@ -6171,8 +7462,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500UPP3G1EYL1UI19"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500UPP3G1EYL1UI19",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "COMPAG_3": {
       "ticker": "COMPAG",
@@ -6192,8 +7488,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500Q0TXUSFDLH3940"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500Q0TXUSFDLH3940",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ILIAD": {
       "ticker": "ILIAD",
@@ -6213,8 +7514,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500FZ9BTRZS3JNB97"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500FZ9BTRZS3JNB97",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "MEDINC": {
       "ticker": "MEDINC",
@@ -6237,8 +7543,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500R79U6PXCL2FF46"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500R79U6PXCL2FF46",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CS_1": {
       "ticker": "CS",
@@ -6258,8 +7569,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500CYVT2W6EG5BH51"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500CYVT2W6EG5BH51",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "MICROP": {
       "ticker": "MICROP",
@@ -6279,8 +7595,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500RO0IO2QBIE5W58"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500RO0IO2QBIE5W58",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EDEN_1": {
       "ticker": "EDEN",
@@ -6300,8 +7621,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500OMWE3VU620TT76"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500OMWE3VU620TT76",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "UMANIS": {
       "ticker": "UMANIS",
@@ -6321,8 +7647,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695000YAN1ITY2E1L16"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695000YAN1ITY2E1L16",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BLOOMB": {
       "ticker": "BLOOMB",
@@ -6342,8 +7673,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/5493001KJTIIGC8Y1R12"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/5493001KJTIIGC8Y1R12",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SW": {
       "ticker": "SW",
@@ -6365,8 +7701,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500LCBOG12HXPYM84"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500LCBOG12HXPYM84",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CREDIT_3": {
       "ticker": "CREDIT",
@@ -6386,8 +7727,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695009F5UPB9IITI298"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695009F5UPB9IITI298",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "BIGBEN": {
       "ticker": "BIGBEN",
@@ -6409,8 +7755,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008GVA59G8SVGO83"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695008GVA59G8SVGO83",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SUEZ": {
       "ticker": "SUEZ",
@@ -6430,8 +7781,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300JQIZM6CL7POC81"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300JQIZM6CL7POC81",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "MAUNA": {
       "ticker": "MAUNA",
@@ -6451,8 +7807,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/5493007KMDG4MFIGJJ63"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/5493007KMDG4MFIGJJ63",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GROUPE_3": {
       "ticker": "GROUPE",
@@ -6472,8 +7833,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500THGE54QJH45009"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500THGE54QJH45009",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GENERI": {
       "ticker": "GENERI",
@@ -6493,8 +7859,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695003QNWHLC60H9E89"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695003QNWHLC60H9E89",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "UBI": {
       "ticker": "UBI",
@@ -6518,8 +7889,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500I7C8V1LBIMSM05"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500I7C8V1LBIMSM05",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LYSOGE": {
       "ticker": "LYSOGE",
@@ -6539,8 +7915,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500T64RILK1RD0852"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500T64RILK1RD0852",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "HOPSCO": {
       "ticker": "HOPSCO",
@@ -6560,8 +7941,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695003W8NIBIV7IN278"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695003W8NIBIV7IN278",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ALBIOM": {
       "ticker": "ALBIOM",
@@ -6581,8 +7967,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002W8GRJRZ44MA62"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695002W8GRJRZ44MA62",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "NEXTST": {
       "ticker": "NEXTST",
@@ -6602,8 +7993,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500M995FIN8ZI5N84"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500M995FIN8ZI5N84",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "AMPLIT": {
       "ticker": "AMPLIT",
@@ -6624,8 +8020,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695006Q1VL1OHK06336"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695006Q1VL1OHK06336",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "IPSEN_1": {
       "ticker": "IPSEN",
@@ -6645,8 +8046,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950004ZQHLJ6V8PJ87"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950004ZQHLJ6V8PJ87",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "OVH": {
       "ticker": "OVH",
@@ -6668,8 +8074,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695001J8OSOVX4TP939"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/9695001J8OSOVX4TP939",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CARVOL": {
       "ticker": "CARVOL",
@@ -6692,8 +8103,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500N30CO4B5N2GN67"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500N30CO4B5N2GN67",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "GCC": {
       "ticker": "GCC",
@@ -6713,8 +8129,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950093ZAC66BDWZS36"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950093ZAC66BDWZS36",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ACTEOS": {
       "ticker": "ACTEOS",
@@ -6734,8 +8155,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500O0L8I77GLC6V09"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500O0L8I77GLC6V09",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "VILMOR": {
       "ticker": "VILMOR",
@@ -6755,8 +8181,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500TQ4OAZZXSUPZ18"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500TQ4OAZZXSUPZ18",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "OSE": {
       "ticker": "OSE",
@@ -6778,8 +8209,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500HIUWVGY6NZSM05"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500HIUWVGY6NZSM05",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SFIL": {
       "ticker": "SFIL",
@@ -6799,8 +8235,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300HFEHJOXGE4ZE63"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300HFEHJOXGE4ZE63",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "LNA_1": {
       "ticker": "LNA",
@@ -6824,8 +8265,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500FULTKJYIRIAT87"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500FULTKJYIRIAT87",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EUROPC": {
       "ticker": "EUROPC",
@@ -6845,8 +8291,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500XCGTMV08D76N87"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500XCGTMV08D76N87",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "CAISSE_1": {
       "ticker": "CAISSE",
@@ -6866,8 +8317,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300E6W08778I4OW85"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/549300E6W08778I4OW85",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "WAVEST": {
       "ticker": "WAVEST",
@@ -6889,8 +8345,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500GSN25I3B3X6F94"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500GSN25I3B3X6F94",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "WAGA": {
       "ticker": "WAGA",
@@ -6912,8 +8373,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500O3NXA5XJF97623"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500O3NXA5XJF97623",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "AUREA": {
       "ticker": "AUREA",
@@ -6933,8 +8399,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950045MCSQKLJ0OQ13"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/96950045MCSQKLJ0OQ13",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "SPIE_1": {
       "ticker": "SPIE",
@@ -6955,8 +8426,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500TJNS5GSFWJ8X85"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500TJNS5GSFWJ8X85",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "ATEME": {
       "ticker": "ATEME",
@@ -6977,8 +8453,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500I4RF06BPM4AN82"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500I4RF06BPM4AN82",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "EXOSEN": {
       "ticker": "EXOSEN",
@@ -6999,8 +8480,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500R3AKTPEDO9EG76"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500R3AKTPEDO9EG76",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "PLANIS": {
       "ticker": "PLANIS",
@@ -7021,8 +8507,13 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500356FAUM2X41Q59"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500356FAUM2X41Q59",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     },
     "TERACT": {
       "ticker": "TERACT",
@@ -7042,8 +8533,15 @@
       },
       "source": {
         "filings_xbrl_url": "https://filings.xbrl.org/api/filings?filter[country]=FR",
-        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500HQ6PWNILD1HE63"
-      }
+        "gleif_url": "https://api.gleif.org/api/v1/lei-records/969500HQ6PWNILD1HE63",
+        "gleif_source": "",
+        "filing_source": ""
+      },
+      "is_socimi": false,
+      "resolution_score": 1.0,
+      "fiscal_year_end": "12-31"
     }
-  }
+  },
+  "socimis_count": 0,
+  "total_entities": 297
 }

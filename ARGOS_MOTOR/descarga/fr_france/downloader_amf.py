@@ -15,8 +15,9 @@ import time
 import hashlib
 import argparse
 import urllib.request
+import urllib.parse
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 sys.stdout.reconfigure(line_buffering=True)
 
@@ -143,9 +144,23 @@ class FranceDownloader:
         print(f"Total filings ESEF franceses disponibles en índice: {len(filing_map)}")
         return filing_map
 
+    def save_esef_index(self, esef_index, filename="esef_filings_index_fr.json"):
+        """Persiste el índice completo de filings ESEF franceses en JSON para auditoría y cache."""
+        output_paths = [
+            self.raw_base / filename,
+            Path("ARGOS_MOTOR/data/raw") / filename
+        ]
+        serializable_index = [{'lei': k[0], 'year': k[1], **v} for k, v in esef_index.items()]
+        for p in output_paths:
+            p.parent.mkdir(parents=True, exist_ok=True)
+            with open(p, "w", encoding="utf-8") as f:
+                json.dump(serializable_index, f, indent=2, ensure_ascii=False)
+            print(f" [DOC] Índice ESEF guardado en: {p} ({len(serializable_index)} registros)")
+        return serializable_index
+
     def run_download(self, target_years=None, target_segments=None, max_downloads=None):
         if target_years is None:
-            target_years = [2021, 2022, 2023, 2024]
+            target_years = [2020, 2021, 2022, 2023, 2024, 2025, 2026]
 
         print("=========================================================================")
         print("=== MOTOR DE DESCARGA INSTITUCIONAL FRANCIA — ARGOS MOTOR ===")
@@ -228,7 +243,8 @@ class FranceDownloader:
 
             print(f"[{idx:03d}/{len(queue):03d}] Descargando [{tick}] {y}...")
             try:
-                req = urllib.request.Request(url, headers=headers)
+                safe_url = urllib.parse.quote(url, safe=':/?&=#')
+                req = urllib.request.Request(safe_url, headers=headers)
                 with urllib.request.urlopen(req, timeout=30) as resp:
                     with open(tmp_path, 'wb') as f_out:
                         while chunk := resp.read(65536):
@@ -256,7 +272,7 @@ class FranceDownloader:
                     "sha256": actual_sha,
                     "size_bytes": target_file.stat().st_size,
                     "size_mb": round(size_mb, 2),
-                    "downloaded_at": datetime.utcnow().isoformat() + "Z"
+                    "downloaded_at": datetime.now(timezone.utc).isoformat()
                 }
                 meta_file = target_dir / f"{tick}_{y}_esef.meta.json"
                 meta_file.write_text(json.dumps(meta, indent=2), encoding='utf-8')
@@ -271,6 +287,30 @@ class FranceDownloader:
 
             time.sleep(self.delay)
 
+        # Generar o actualizar manifiesto institucional por año para Francia
+        print("\n=== GENERANDO MANIFIESTOS INSTITUCIONALES FRANCIA ===")
+        for yr in target_years:
+            yr_dir = self.raw_base / str(yr)
+            if not yr_dir.exists():
+                continue
+            yr_manifest_file = self.raw_base / f"MANIFEST_AMF_{yr}.json"
+            metas = []
+            for meta_path in yr_dir.glob("*/*_esef.meta.json"):
+                try:
+                    metas.append(json.loads(meta_path.read_text(encoding='utf-8')))
+                except Exception:
+                    pass
+            manifest_data = {
+                "year": yr,
+                "jurisdiction": "FR",
+                "supervisor": "AMF / Euronext Paris",
+                "total_filings": len(metas),
+                "generated_at": datetime.now(timezone.utc).isoformat(),
+                "manifest": metas
+            }
+            yr_manifest_file.write_text(json.dumps(manifest_data, indent=2, ensure_ascii=False), encoding='utf-8')
+            print(f" [DOC] Manifiesto Anual Francia {yr}: {yr_manifest_file.name} ({len(metas)} filings)")
+
         print("\n=========================================================================")
         print(f"=== DESCARGA FINALIZADA: {downloaded} exitosos | {failed} fallidos ===")
         print("=========================================================================")
@@ -281,12 +321,22 @@ def main():
     parser.add_argument('--years', type=str, default="2022,2023,2024", help="Años separados por coma")
     parser.add_argument('--segments', type=str, default=None, help="CAC40,CAC_NEXT20,SBF120_MID60,EURONEXT_GROWTH_SMALL")
     parser.add_argument('--max', type=int, default=None, help="Límite máximo de descargas")
+    parser.add_argument('--generate-index', action='store_true', help="Generar y guardar archivo de índice ESEF de filings franceses")
     args = parser.parse_args()
+
+    downloader = FranceDownloader(dry_run=args.dry_run)
+
+    if args.generate_index:
+        print("\n=========================================================================")
+        print("=== GENERANDO Y GUARDANDO ÍNDICE ESEF OFICIAL FRANCIA ===")
+        print("=========================================================================")
+        esef_index = downloader.sync_esef_index()
+        downloader.save_esef_index(esef_index)
+        return
 
     years = [int(y.strip()) for y in args.years.split(',') if y.strip().isdigit()]
     segments = [s.strip() for s in args.segments.split(',')] if args.segments else None
 
-    downloader = FranceDownloader(dry_run=args.dry_run)
     downloader.run_download(target_years=years, target_segments=segments, max_downloads=args.max)
 
 if __name__ == '__main__':

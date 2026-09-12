@@ -26,6 +26,8 @@ logs/
 logs/**
 audits/
 audits/**
+!ARGOS_MOTOR/audits/
+!ARGOS_MOTOR/audits/**
 scratch/
 tmp/
 *.zip
@@ -55,3 +57,5 @@ htmlcov/
 *.key
 iniciar_openhands.bat
 ejecutar_descarga_*.bat
+ARGOS_DATA_DISK/
+*.pdf

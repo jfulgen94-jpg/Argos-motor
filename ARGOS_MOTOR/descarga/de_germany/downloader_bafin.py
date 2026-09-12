@@ -45,23 +45,18 @@ class GermanyDownloader:
         self.raw_base = Path(self.config.get('canonical_raw_path', 'ARGOS_MOTOR/data/raw/DE_BAFIN'))
         self.staging_dir = Path("ARGOS_MOTOR/data/staging/tmp_download") / f"de_run_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 
-    def get_dax40_bluechips(self):
-        """Devuelve el catálogo de blue chips alemanas con su LEI oficial."""
-        return [
-            {"ticker": "SAP", "name": "SAP SE", "lei": "52990000000000000001"}, # placeholder LEI resolve
-            {"ticker": "SIE", "name": "Siemens AG", "lei": "52990000000000000002"},
-            {"ticker": "ALV", "name": "Allianz SE", "lei": "529900K9B0N5BT694847"},
-            {"ticker": "DTE", "name": "Deutsche Telekom AG", "lei": "549300V9P591VNW1Y031"},
-            {"ticker": "MBG", "name": "Mercedes-Benz Group AG", "lei": "52990000000000000005"},
-            {"ticker": "BMW", "name": "Bayerische Motoren Werke AG", "lei": "YE52QVNBLD34T7QHQC29"},
-            {"ticker": "BAYN", "name": "Bayer AG", "lei": "529900G5LDQ75Q8F4W92"},
-            {"ticker": "BAS", "name": "BASF SE", "lei": "M81559132K0T9I776854"},
-            {"ticker": "DBK", "name": "Deutsche Bank AG", "lei": "7LTWFZYICNSX8D621K86"},
-            {"ticker": "ADS", "name": "Adidas AG", "lei": "5493000P8H12261Y5784"}
-        ]
+    def load_universe(self):
+        """Carga el universo de empresas desde el archivo master_universe_de.json."""
+        universe_path = Path("ARGOS_MOTOR/config/master_universe_de.json")
+        if not universe_path.exists():
+            print("Error: El archivo master_universe_de.json no existe.")
+            return []
+        
+        data = json.loads(universe_path.read_text(encoding='utf-8'))
+        return list(data['companies'].values())
 
     def discover_and_download(self, years=[2022, 2023, 2024]):
-        companies = self.get_dax40_bluechips()
+        companies = self.load_universe()
         print(f"=== INICIANDO INGESTA ALEMANIA (BAFIN / UNTERNEHMENSREGISTER / ESEF) ===")
         print(f"Empresas objetivo: {len(companies)} | Años: {years}")
 
@@ -71,7 +66,7 @@ class GermanyDownloader:
         for comp in companies:
             ticker = comp['ticker']
             lei = comp['lei']
-            name = comp['name']
+            name = comp['name_legal']
 
             for y in years:
                 comp_dir = self.raw_base / str(y) / f"{ticker}_{name.replace(' ', '_').replace(',', '')}"

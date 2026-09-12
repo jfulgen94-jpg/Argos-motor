@@ -27,6 +27,7 @@ from mod_08_monitor.src.metrics import (
     parse_errors as INGEST_ERRORS_TOTAL,
     agent_calls as AGENT_REQUESTS_TOTAL,
     balance_quarantines as QUALITY_IMBALANCES_TOTAL,
+    pipeline_duration as PIPELINE_DURATION_SECONDS,
 )
 from mod_08_monitor.src.data_quality_checker import run_checks as _run_quality_checks
 
