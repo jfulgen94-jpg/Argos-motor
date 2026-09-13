@@ -1,0 +1,329 @@
+{
+  "year": 2021,
+  "country": "DE",
+  "supervisor": "BaFin",
+  "oam": "Unternehmensregister / ESEF",
+  "generated_at_utc": "2026-09-13T09:19:19.861802+00:00",
+  "total_mapped": 1011,
+  "downloaded": 14,
+  "cache_hits": 21,
+  "failed": 0,
+  "quarantined": 0,
+  "manifest": [
+    {
+      "ticker": "AIRB",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "8dd45855b5fec69ee959dd3344b271ce908d945cbf2869faf910d751835c5ece",
+      "size_bytes": 7259671,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\70138192_AIRB\\AIRB_2021_ESEF.zip"
+    },
+    {
+      "ticker": "NOKI",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "22e0551ef310a38d2855e4e7ac13bb39978c107d2ac8c96c648766d670ab332c",
+      "size_bytes": 8461718,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\549300A0JPRWG1KI7U06_NOKI\\NOKI_2021_ESEF.zip"
+    },
+    {
+      "ticker": "VANT",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "9525fb67233a3a49b3b1d8c6e95659b2d069156c7b4783d93a8c400941d216cf",
+      "size_bytes": 28758652,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_92244_VANT\\VANT_2021_ESEF.zip"
+    },
+    {
+      "ticker": "REDC",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "5996fb9d2d09720f261d07554d2f0c31e191cefab82ce08564a3899482e6b3f4",
+      "size_bytes": 88098945,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900JK6UXHY1YKZ082_REDC\\REDC_2021_ESEF.zip"
+    },
+    {
+      "ticker": "CPIP",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "8c3d5c9a2aa22492ca7b598118c10da4f05ca870088499cd0a6604e10576d334",
+      "size_bytes": 942412,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\222100CO2ZOTEPGJO223_CPIP\\CPIP_2021_ESEF.zip"
+    },
+    {
+      "ticker": "SAMS",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "5591c9fb254d625e474ddfac39c80868e1fed7da01900c474eb43303b9e1d338",
+      "size_bytes": 9118492,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_4657_SAMS\\SAMS_2021_ESEF.zip"
+    },
+    {
+      "ticker": "DE_BP",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "efd2f4e175b4cbff1e307e67138456e6095b85fab2386e73a477a6d8bb1c4d05",
+      "size_bytes": 18213487,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_96015_DE_BP\\DE_BP_2021_ESEF.zip"
+    },
+    {
+      "ticker": "DE_BP_2",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "efd2f4e175b4cbff1e307e67138456e6095b85fab2386e73a477a6d8bb1c4d05",
+      "size_bytes": 18213487,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_96015_DE_BP_2\\DE_BP_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "LUKO",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "cce56eacc0b8cc52d7e5a654eadd1ffe5033f36fa77b73e46246c2ba8a7f905f",
+      "size_bytes": 11028296,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_84870_LUKO\\LUKO_2021_ESEF.zip"
+    },
+    {
+      "ticker": "LUKO_2",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "cce56eacc0b8cc52d7e5a654eadd1ffe5033f36fa77b73e46246c2ba8a7f905f",
+      "size_bytes": 11028296,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_84870_LUKO_2\\LUKO_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "QIAG",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "f7916c8b205c70cd135b62562e1ad468e7324d07babddf22345e2df51a32c224",
+      "size_bytes": 2565520,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_45822_QIAG\\QIAG_2021_ESEF.zip"
+    },
+    {
+      "ticker": "TATN",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "296c098e2aa3bee6d26a35f2f05bed863fae8fe6f74a4e8bb4b3e2458e0637b7",
+      "size_bytes": 3038508,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\253400PAT768SVJMV121_TATN\\TATN_2021_ESEF.zip"
+    },
+    {
+      "ticker": "TATN_2",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "296c098e2aa3bee6d26a35f2f05bed863fae8fe6f74a4e8bb4b3e2458e0637b7",
+      "size_bytes": 3038508,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\253400PAT768SVJMV121_TATN_2\\TATN_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "TATN_3",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "296c098e2aa3bee6d26a35f2f05bed863fae8fe6f74a4e8bb4b3e2458e0637b7",
+      "size_bytes": 3038508,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\253400PAT768SVJMV121_TATN_3\\TATN_3_2021_ESEF.zip"
+    },
+    {
+      "ticker": "MAND",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "7ba81764dd53d7aacdad7f5974a29f85671e96888a52fd23bbdbfd155b8db775",
+      "size_bytes": 7558588,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\213800KQ1UMKZ1JXJR80_MAND\\MAND_2021_ESEF.zip"
+    },
+    {
+      "ticker": "RTLG",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "cd99eb8404e5b7fafbad4f173205bea9e10300578cfaff461e03039f24ab1dbd",
+      "size_bytes": 666607,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_35904_RTLG\\RTLG_2021_ESEF.zip"
+    },
+    {
+      "ticker": "AURU",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "ba85129e1c94a46d5ed1566a26d3e5aaf17de167e5355d56b3578220aedcf6af",
+      "size_bytes": 2836261,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_1775_AURU\\AURU_2021_ESEF.zip"
+    },
+    {
+      "ticker": "BSBA",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "5a837bf2feac60b9059ac353da6eb82759b91386b4fb64dd8686c0f2e8882c3c",
+      "size_bytes": 1786147,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_120849_BSBA\\BSBA_2021_ESEF.zip"
+    },
+    {
+      "ticker": "BAST",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "e14edcd1a5385466bce4baa63ceec9b83a585d0621a3272036041076fdc93b0b",
+      "size_bytes": 1044887,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900F1RRY8J20M2I79_BAST\\BAST_2021_ESEF.zip"
+    },
+    {
+      "ticker": "BERT",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "b9604242ad52f699c1c28d28dce709702c408c7caaa79fe841a974ad7a4972dd",
+      "size_bytes": 1651468,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900DRBK1K538NYX30_BERT\\BERT_2021_ESEF.zip"
+    },
+    {
+      "ticker": "BORU",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "CACHE_HIT",
+      "sha256": "ead7e1805a2461f73470047f11d6f6e15704ae06fa4206f4b4c5e02fcae92a1e",
+      "size_bytes": 21991562,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900XO0YTOOKCLQB44_BORU\\BORU_2021_ESEF.zip"
+    },
+    {
+      "ticker": "FORT",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "DOWNLOADED",
+      "sha256": "aa4bc210c432374ee6889707515a99bdfbf042a171690f96cd7a4baaba4fd0b7",
+      "size_bytes": 1968600,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900NG5C03XEKUA646_FORT\\FORT_2021_ESEF.zip"
+    },
+    {
+      "ticker": "HORN",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "DOWNLOADED",
+      "sha256": "6ef15c645a4fed9ef26b223c8513607cff28f5d18106d3344925181489ae93f8",
+      "size_bytes": 1951592,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\5299008WW53GLXRORN29_HORN\\HORN_2021_ESEF.zip"
+    },
+    {
+      "ticker": "HORN_2",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "DOWNLOADED",
+      "sha256": "dbaf18699293474b461b9873cefd18f323ec79c12b7bfa061a013108359a7e88",
+      "size_bytes": 7639839,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900EGQZ79V21LBL44_HORN_2\\HORN_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "KROM",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "DOWNLOADED",
+      "sha256": "b7d6bcb780ed09b14b839d6ade6fc6f43ffdd5cf8940446d9022418c0c1a43dd",
+      "size_bytes": 1893566,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900L3GACMYY4MMX62_KROM\\KROM_2021_ESEF.zip"
+    },
+    {
+      "ticker": "KWSS",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "DOWNLOADED",
+      "sha256": "9c4d7639ca5c88bbc35e0ae88f3e06229617d6fa701bc4834b96dcec6c78027a",
+      "size_bytes": 3288108,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_205722_KWSS\\KWSS_2021_ESEF.zip"
+    },
+    {
+      "ticker": "VERB",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "DOWNLOADED",
+      "sha256": "d8d94190f3f1a96d557e35032ad95aac7dbb95aa10c104cac83164f7cf723daa",
+      "size_bytes": 1071388,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_33567_VERB\\VERB_2021_ESEF.zip"
+    },
+    {
+      "ticker": "XFAB",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "DOWNLOADED",
+      "sha256": "e91ea481b4deaba1154b854a0a115dad72ea146e080fef5ce9d0e86d9447bae0",
+      "size_bytes": 11988917,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\0882_390_885_XFAB\\XFAB_2021_ESEF.zip"
+    },
+    {
+      "ticker": "VERB_2",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "DOWNLOADED",
+      "sha256": "d8d94190f3f1a96d557e35032ad95aac7dbb95aa10c104cac83164f7cf723daa",
+      "size_bytes": 1071388,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900W51PINCFFALS96_VERB_2\\VERB_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "HEID_4",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "DOWNLOADED",
+      "sha256": "ec2c3c67dcf0d6a33b3cf5d0341c00ac69d8ff70980f6fd6f81a8f8a713c1931",
+      "size_bytes": 8761208,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900ZM98OISTG16932_HEID_4\\HEID_4_2021_ESEF.zip"
+    },
+    {
+      "ticker": "AURU_2",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "DOWNLOADED",
+      "sha256": "ba85129e1c94a46d5ed1566a26d3e5aaf17de167e5355d56b3578220aedcf6af",
+      "size_bytes": 2836261,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\5299005SHIN9ZK7GW242_AURU_2\\AURU_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "VANT_2",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "DOWNLOADED",
+      "sha256": "9525fb67233a3a49b3b1d8c6e95659b2d069156c7b4783d93a8c400941d216cf",
+      "size_bytes": 28758652,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_92244_VANT_2\\VANT_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "ABOU_2",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "DOWNLOADED",
+      "sha256": "51b0b627f4a5977b6a8bca9f5fe64e7134de3571d861145a92c137e0d0cf8f11",
+      "size_bytes": 5424945,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\894500A85A8VDRIGZ723_ABOU_2\\ABOU_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "KWSS_2",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "DOWNLOADED",
+      "sha256": "9c4d7639ca5c88bbc35e0ae88f3e06229617d6fa701bc4834b96dcec6c78027a",
+      "size_bytes": 3288108,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900FR2K4P9L9XLV21_KWSS_2\\KWSS_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "BSBA_2",
+      "year": 2021,
+      "doc_type": "ESEF_PACKAGE",
+      "status": "DOWNLOADED",
+      "sha256": "5a837bf2feac60b9059ac353da6eb82759b91386b4fb64dd8686c0f2e8882c3c",
+      "size_bytes": 1786147,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\5299007PZPBNXDDWHC04_BSBA_2\\BSBA_2_2021_ESEF.zip"
+    }
+  ]
+}
