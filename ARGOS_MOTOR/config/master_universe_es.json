@@ -29,7 +29,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440212+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440212+00:00",
+      "cif": "A-39000013"
     },
     "BBVA": {
       "ticker": "BBVA",
@@ -42,7 +43,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440235+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440235+00:00",
+      "cif": "A-48265169"
     },
     "IBE": {
       "ticker": "IBE",
@@ -55,7 +57,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440241+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440241+00:00",
+      "cif": "A-48010615"
     },
     "ITX": {
       "ticker": "ITX",
@@ -71,7 +74,8 @@
         "Industria de Diseno Textil SA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440248+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440248+00:00",
+      "cif": "A-15075062"
     },
     "TEF": {
       "ticker": "TEF",
@@ -84,7 +88,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440252+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440252+00:00",
+      "cif": "A-28015865"
     },
     "REP": {
       "ticker": "REP",
@@ -97,7 +102,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440255+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440255+00:00",
+      "cif": "A-78374725"
     },
     "CABK": {
       "ticker": "CABK",
@@ -113,7 +119,8 @@
         "Criteria CaixaCorp"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440259+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440259+00:00",
+      "cif": "A-08663619"
     },
     "AMS": {
       "ticker": "AMS",
@@ -128,7 +135,8 @@
         "Amadeus IT Holding SA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440264+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440264+00:00",
+      "cif": "A-84236934"
     },
     "CLNX": {
       "ticker": "CLNX",
@@ -143,7 +151,8 @@
         "Abertis Telecom Terrestre"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440267+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440267+00:00",
+      "cif": "A-64907306"
     },
     "FER": {
       "ticker": "FER",
@@ -159,7 +168,8 @@
         "Ferrovial SA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440271+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440271+00:00",
+      "cif": "A-28004471"
     },
     "GRF": {
       "ticker": "GRF",
@@ -172,7 +182,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440274+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440274+00:00",
+      "cif": "A-58297783"
     },
     "MEL": {
       "ticker": "MEL",
@@ -187,7 +198,8 @@
         "Sol Melia SA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440278+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440278+00:00",
+      "cif": "A-78304516"
     },
     "ACS": {
       "ticker": "ACS",
@@ -202,7 +214,8 @@
         "Actividades de Construccion y Servicios SA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440281+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440281+00:00",
+      "cif": "A-28004885"
     },
     "IAG": {
       "ticker": "IAG",
@@ -217,7 +230,8 @@
         "Iberia / British Airways Merger Entity"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440284+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440284+00:00",
+      "cif": "A-85845535"
     },
     "MAP": {
       "ticker": "MAP",
@@ -230,7 +244,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440288+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440288+00:00",
+      "cif": "A-08055741"
     },
     "NTGY": {
       "ticker": "NTGY",
@@ -246,7 +261,8 @@
         "Gas Natural Fenosa"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440291+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440291+00:00",
+      "cif": "A-08015497"
     },
     "ENG": {
       "ticker": "ENG",
@@ -259,7 +275,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440296+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440296+00:00",
+      "cif": "A-28294726"
     },
     "ELE": {
       "ticker": "ELE",
@@ -272,7 +289,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440299+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440299+00:00",
+      "cif": "A-28023430"
     },
     "RED": {
       "ticker": "RED",
@@ -288,7 +306,8 @@
         "REE"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440304+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440304+00:00",
+      "cif": "A-78003662"
     },
     "BKT": {
       "ticker": "BKT",
@@ -301,7 +320,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440308+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440308+00:00",
+      "cif": "A-28157360"
     },
     "UNI": {
       "ticker": "UNI",
@@ -316,7 +336,8 @@
         "Fusión con Liberbank en 2021"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440311+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440311+00:00",
+      "cif": "A-93139096"
     },
     "SOL": {
       "ticker": "SOL",
@@ -329,7 +350,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440314+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440314+00:00",
+      "cif": "A-82569963"
     },
     "PHM": {
       "ticker": "PHM",
@@ -344,7 +366,8 @@
         "Zeltia SA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440318+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440318+00:00",
+      "cif": "A-28120616"
     },
     "ACX": {
       "ticker": "ACX",
@@ -357,7 +380,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440321+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440321+00:00",
+      "cif": "A-28250777"
     },
     "SAB": {
       "ticker": "SAB",
@@ -370,7 +394,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440324+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440324+00:00",
+      "cif": "A-08000143"
     },
     "ROVI": {
       "ticker": "ROVI",
@@ -383,7 +408,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440327+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440327+00:00",
+      "cif": "A-28249761"
     },
     "SCYR": {
       "ticker": "SCYR",
@@ -398,7 +424,8 @@
         "Sacyr Vallehermoso SA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440330+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440330+00:00",
+      "cif": "A-28013811"
     },
     "LOG": {
       "ticker": "LOG",
@@ -413,7 +440,8 @@
         "Logista"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440335+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440335+00:00",
+      "cif": "A-86928603"
     },
     "IDR": {
       "ticker": "IDR",
@@ -426,7 +454,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440338+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440338+00:00",
+      "cif": "A-28599033"
     },
     "ANA": {
       "ticker": "ANA",
@@ -439,7 +468,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440341+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440341+00:00",
+      "cif": "A-08001851"
     },
     "ANE": {
       "ticker": "ANE",
@@ -455,7 +485,8 @@
         "OPV en julio 2021"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440344+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440344+00:00",
+      "cif": "A-85474773"
     },
     "PUIG": {
       "ticker": "PUIG",
@@ -470,7 +501,8 @@
         "OPV en mayo 2024"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440348+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440348+00:00",
+      "cif": "A-08158289"
     },
     "AENA": {
       "ticker": "AENA",
@@ -483,7 +515,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440351+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440351+00:00",
+      "cif": "A-86212420"
     },
     "FDR": {
       "ticker": "FDR",
@@ -496,7 +529,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440355+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440355+00:00",
+      "cif": "A-08249963"
     },
     "ALNT": {
       "ticker": "ALNT",
@@ -511,7 +545,8 @@
         "N+1 Mercados Financieros"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440358+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440358+00:00",
+      "cif": "A-81862492"
     },
     "ALM": {
       "ticker": "ALM",
@@ -524,7 +559,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440362+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440362+00:00",
+      "cif": "A-08008641"
     },
     "AMP": {
       "ticker": "AMP",
@@ -537,7 +573,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440366+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440366+00:00",
+      "cif": "A-28005387"
     },
     "EAT": {
       "ticker": "EAT",
@@ -550,7 +587,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440370+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440370+00:00",
+      "cif": "W-0022359-J"
     },
     "APAM": {
       "ticker": "APAM",
@@ -563,7 +601,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440374+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440374+00:00",
+      "cif": "N-0030000-A"
     },
     "APPS": {
       "ticker": "APPS",
@@ -578,7 +617,8 @@
         "OPA de exclusión en 2024"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440377+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440377+00:00",
+      "cif": "A-85150961"
     },
     "A3M": {
       "ticker": "A3M",
@@ -593,7 +633,8 @@
         "Antena 3 de Television SA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440380+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440380+00:00",
+      "cif": "A-78907359"
     },
     "ATRS": {
       "ticker": "ATRS",
@@ -608,7 +649,8 @@
         "Salto de BME Growth al Continuo en 2022"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440383+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440383+00:00",
+      "cif": "A-85150961"
     },
     "ADX": {
       "ticker": "ADX",
@@ -624,7 +666,8 @@
         "Audax"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440386+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440386+00:00",
+      "cif": "A-62338827"
     },
     "AYCO": {
       "ticker": "AYCO",
@@ -637,7 +680,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440391+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440391+00:00",
+      "cif": "A-28001600"
     },
     "AZK": {
       "ticker": "AZK",
@@ -650,7 +694,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440394+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440394+00:00",
+      "cif": "A-31065527"
     },
     "BKIA": {
       "ticker": "BKIA",
@@ -665,7 +710,8 @@
         "Absorbida por CaixaBank en marzo 2021"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440397+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440397+00:00",
+      "cif": "A-14010342"
     },
     "BAV": {
       "ticker": "BAV",
@@ -678,7 +724,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440400+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440400+00:00",
+      "cif": "A-80415391"
     },
     "CAF": {
       "ticker": "CAF",
@@ -691,7 +738,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440405+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440405+00:00",
+      "cif": "A-20001020"
     },
     "CIE": {
       "ticker": "CIE",
@@ -704,7 +752,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440408+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440408+00:00",
+      "cif": "A-48231567"
     },
     "DESA": {
       "ticker": "DESA",
@@ -717,7 +766,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440412+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440412+00:00",
+      "cif": "A-08149866"
     },
     "DIA": {
       "ticker": "DIA",
@@ -730,7 +780,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440415+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440415+00:00",
+      "cif": "A-28164754"
     },
     "DOM": {
       "ticker": "DOM",
@@ -743,7 +794,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440418+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440418+00:00",
+      "cif": "A-95044450"
     },
     "EBRO": {
       "ticker": "EBRO",
@@ -758,7 +810,8 @@
         "Ebro Puleva SA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440421+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440421+00:00",
+      "cif": "A-47412333"
     },
     "ECO": {
       "ticker": "ECO",
@@ -773,7 +826,8 @@
         "OPV en mayo 2021"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440424+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440424+00:00",
+      "cif": "A-15024474"
     },
     "EDPR": {
       "ticker": "EDPR",
@@ -786,7 +840,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440427+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440427+00:00",
+      "cif": "A-75000001"
     },
     "EDR": {
       "ticker": "EDR",
@@ -799,7 +854,8 @@
       "fiscal_year_end": "03-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440431+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440431+00:00",
+      "cif": "W-0040000-A"
     },
     "ENC": {
       "ticker": "ENC",
@@ -814,7 +870,8 @@
         "Grupo Empresarial Ence SA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440434+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440434+00:00",
+      "cif": "A-28212264"
     },
     "ERC": {
       "ticker": "ERC",
@@ -827,7 +884,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440438+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440438+00:00",
+      "cif": "A-08000671"
     },
     "FAE": {
       "ticker": "FAE",
@@ -840,7 +898,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440441+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440441+00:00",
+      "cif": "A-48004139"
     },
     "FCC": {
       "ticker": "FCC",
@@ -853,7 +912,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440445+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440445+00:00",
+      "cif": "A-28037224"
     },
     "GAM": {
       "ticker": "GAM",
@@ -866,7 +926,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440448+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440448+00:00",
+      "cif": "A-33519802"
     },
     "GEST": {
       "ticker": "GEST",
@@ -879,7 +940,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440452+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440452+00:00",
+      "cif": "A-48227656"
     },
     "GCO": {
       "ticker": "GCO",
@@ -894,7 +956,8 @@
         "Occident"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440456+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440456+00:00",
+      "cif": "A-08168270"
     },
     "GRE": {
       "ticker": "GRE",
@@ -909,7 +972,8 @@
         "Salto de BME Growth al Continuo en dic 2019"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440460+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440460+00:00",
+      "cif": "A-85150961"
     },
     "SANJ": {
       "ticker": "SANJ",
@@ -924,7 +988,8 @@
         "GSJ"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440464+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440464+00:00",
+      "cif": "A-36046993"
     },
     "EZE": {
       "ticker": "EZE",
@@ -939,7 +1004,8 @@
         "Avanzit SA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440468+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440468+00:00",
+      "cif": "A-28014868"
     },
     "IBP": {
       "ticker": "IBP",
@@ -952,7 +1018,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440471+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440471+00:00",
+      "cif": "A-20037131"
     },
     "LBK": {
       "ticker": "LBK",
@@ -967,7 +1034,8 @@
         "Absorbida por Unicaja Banco en julio 2021"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440477+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440477+00:00",
+      "cif": "A-33519802"
     },
     "LINEA": {
       "ticker": "LINEA",
@@ -982,7 +1050,8 @@
         "Escisión de Bankinter y OPV en abril 2021"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440483+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440483+00:00",
+      "cif": "A-80875416"
     },
     "LGT": {
       "ticker": "LGT",
@@ -995,7 +1064,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440487+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440487+00:00",
+      "cif": "A-47007620"
     },
     "MVC": {
       "ticker": "MVC",
@@ -1008,7 +1078,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440491+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440491+00:00",
+      "cif": "A-87471280"
     },
     "NHH": {
       "ticker": "NHH",
@@ -1023,7 +1094,8 @@
         "NH Hotel Group SA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440496+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440496+00:00",
+      "cif": "A-28029700"
     },
     "MCM": {
       "ticker": "MCM",
@@ -1036,7 +1108,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440499+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440499+00:00",
+      "cif": "A-08008401"
     },
     "NTH": {
       "ticker": "NTH",
@@ -1049,7 +1122,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440503+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440503+00:00",
+      "cif": "A-80126584"
     },
     "NEIN": {
       "ticker": "NEIN",
@@ -1064,7 +1138,8 @@
         "HOME"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440507+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440507+00:00",
+      "cif": "A-95777174"
     },
     "NEA": {
       "ticker": "NEA",
@@ -1079,7 +1154,8 @@
         "COR"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440511+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440511+00:00",
+      "cif": "A-09000570"
     },
     "NEXT": {
       "ticker": "NEXT",
@@ -1095,7 +1171,8 @@
         "NXT"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440519+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440519+00:00",
+      "cif": "A-08018319"
     },
     "NYS": {
       "ticker": "NYS",
@@ -1111,7 +1188,8 @@
         "NYE"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440526+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440526+00:00",
+      "cif": "A-28014561"
     },
     "OHLA": {
       "ticker": "OHLA",
@@ -1127,7 +1205,8 @@
         "Obrascon Huarte Lain SA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440531+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440531+00:00",
+      "cif": "A-48010573"
     },
     "OPDE": {
       "ticker": "OPDE",
@@ -1142,7 +1221,8 @@
         "OPV en julio 2022, OPA exclusión Antin 2024"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440535+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440535+00:00",
+      "cif": "A-84462100"
     },
     "ORYZ": {
       "ticker": "ORYZ",
@@ -1157,7 +1237,8 @@
         "ORY"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440539+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440539+00:00",
+      "cif": "A-62281480"
     },
     "PRM": {
       "ticker": "PRM",
@@ -1170,7 +1251,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440542+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440542+00:00",
+      "cif": "A-28017366"
     },
     "PRS": {
       "ticker": "PRS",
@@ -1185,7 +1267,8 @@
         "Grupo PRISA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440546+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440546+00:00",
+      "cif": "A-28297059"
     },
     "PSG": {
       "ticker": "PSG",
@@ -1198,7 +1281,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440550+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440550+00:00",
+      "cif": "A-28424083"
     },
     "PGR": {
       "ticker": "PGR",
@@ -1211,7 +1295,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440554+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440554+00:00",
+      "cif": "A-87474474"
     },
     "R4": {
       "ticker": "R4",
@@ -1224,7 +1309,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440557+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440557+00:00",
+      "cif": "A-79567939"
     },
     "REN": {
       "ticker": "REN",
@@ -1237,7 +1323,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440563+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440563+00:00",
+      "cif": "A-08249872"
     },
     "RJF": {
       "ticker": "RJF",
@@ -1252,7 +1339,8 @@
         "Natraceutical SA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440570+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440570+00:00",
+      "cif": "A-08015844"
     },
     "SCF": {
       "ticker": "SCF",
@@ -1267,7 +1355,8 @@
         "Emisor cotizado de deuda"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440575+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440575+00:00",
+      "cif": "A-28001071"
     },
     "SLPK": {
       "ticker": "SLPK",
@@ -1282,7 +1371,8 @@
         "Excluida tras OPA de EQT en dic 2021"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440579+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440579+00:00",
+      "cif": "A-95333838"
     },
     "SOLT": {
       "ticker": "SOLT",
@@ -1297,7 +1387,8 @@
         "OPV en octubre 2020"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440583+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440583+00:00",
+      "cif": "A-73891467"
     },
     "SQRL": {
       "ticker": "SQRL",
@@ -1312,7 +1403,8 @@
         "Vertice 360 Grados SA"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440587+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440587+00:00",
+      "cif": "A-82787839"
     },
     "TLGO": {
       "ticker": "TLGO",
@@ -1325,7 +1417,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440591+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440591+00:00",
+      "cif": "A-85150961"
     },
     "TRE": {
       "ticker": "TRE",
@@ -1338,7 +1431,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440595+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440595+00:00",
+      "cif": "A-28008894"
     },
     "TUB": {
       "ticker": "TUB",
@@ -1351,7 +1445,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440599+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440599+00:00",
+      "cif": "A-01004603"
     },
     "TRG": {
       "ticker": "TRG",
@@ -1364,7 +1459,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440603+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440603+00:00",
+      "cif": "A-01000858"
     },
     "VID": {
       "ticker": "VID",
@@ -1377,7 +1473,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440607+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440607+00:00",
+      "cif": "A-01002342"
     },
     "VIS": {
       "ticker": "VIS",
@@ -1390,7 +1487,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440614+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440614+00:00",
+      "cif": "A-31065501"
     },
     "VOC": {
       "ticker": "VOC",
@@ -1405,7 +1503,8 @@
         "Grupo Correo Prensa Espanola"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440620+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440620+00:00",
+      "cif": "A-82937863"
     },
     "ALTI": {
       "ticker": "ALTI",
@@ -1418,7 +1517,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440624+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440624+00:00",
+      "cif": "A-15486806"
     },
     "MS": {
       "ticker": "MS",
@@ -1431,7 +1531,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440629+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440629+00:00",
+      "cif": "A-87588828"
     },
     "GIGA": {
       "ticker": "GIGA",
@@ -1444,7 +1545,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440636+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440636+00:00",
+      "cif": "A-86221769"
     },
     "IZER": {
       "ticker": "IZER",
@@ -1457,7 +1559,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440640+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440640+00:00",
+      "cif": "A-33519802"
     },
     "480": {
       "ticker": "480",
@@ -1472,7 +1575,8 @@
         "480 Interactive"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440645+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440645+00:00",
+      "cif": "B-12880708"
     },
     "AGIL": {
       "ticker": "AGIL",
@@ -1485,7 +1589,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440650+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440650+00:00",
+      "cif": "A-64703895"
     },
     "LLN": {
       "ticker": "LLN",
@@ -1498,7 +1603,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440654+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440654+00:00",
+      "cif": "A-25340936"
     },
     "TR1": {
       "ticker": "TR1",
@@ -1511,7 +1617,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440659+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440659+00:00",
+      "cif": "A-41551896"
     },
     "FACE": {
       "ticker": "FACE",
@@ -1524,7 +1631,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440665+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440665+00:00",
+      "cif": "A-54673896"
     },
     "SAI": {
       "ticker": "SAI",
@@ -1537,7 +1645,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440669+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440669+00:00",
+      "cif": "A-98926448"
     },
     "PARLEM": {
       "ticker": "PARLEM",
@@ -1552,7 +1661,8 @@
         "Salida a bolsa en 2021"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440674+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440674+00:00",
+      "cif": "A-66173873"
     },
     "NTX": {
       "ticker": "NTX",
@@ -1567,7 +1677,8 @@
         "OPA de exclusión en 2024"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440678+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440678+00:00",
+      "cif": "A-15638927"
     },
     "CAT": {
       "ticker": "CAT",
@@ -1580,7 +1691,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440681+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440681+00:00",
+      "cif": "A-82743899"
     },
     "SNGR": {
       "ticker": "SNGR",
@@ -1595,7 +1707,8 @@
         "Salida a bolsa en 2021"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440686+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440686+00:00",
+      "cif": "A-85743896"
     },
     "COMM": {
       "ticker": "COMM",
@@ -1608,7 +1721,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440690+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440690+00:00",
+      "cif": "A-15638928"
     },
     "NBI": {
       "ticker": "NBI",
@@ -1621,7 +1735,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440695+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440695+00:00",
+      "cif": "A-01334893"
     },
     "ENERS": {
       "ticker": "ENERS",
@@ -1636,7 +1751,8 @@
         "Salida a bolsa en marzo 2022"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440700+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440700+00:00",
+      "cif": "A-67343892"
     },
     "EIDF": {
       "ticker": "EIDF",
@@ -1649,7 +1765,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-09-12T12:00:00.000000+00:00"
+      "resolved_at": "2026-09-12T12:00:00.000000+00:00",
+      "cif": "A-85573713"
     },
     "CLR": {
       "ticker": "CLR",
@@ -1662,7 +1779,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440709+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440709+00:00",
+      "cif": "A-73891468"
     },
     "GREN": {
       "ticker": "GREN",
@@ -1677,7 +1795,8 @@
         "Salida a bolsa en abril 2023"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440714+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440714+00:00",
+      "cif": "A-19638926"
     },
     "HLZ": {
       "ticker": "HLZ",
@@ -1690,7 +1809,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-09-12T12:00:00.000000+00:00"
+      "resolved_at": "2026-09-12T12:00:00.000000+00:00",
+      "cif": "A-65963363"
     },
     "SOLAR": {
       "ticker": "SOLAR",
@@ -1705,7 +1825,8 @@
         "Salida a bolsa en dic 2021"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440724+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440724+00:00",
+      "cif": "A-66123894"
     },
     "UMB": {
       "ticker": "UMB",
@@ -1720,7 +1841,8 @@
         "Salida a bolsa en julio 2022"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440728+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440728+00:00",
+      "cif": "A-98743896"
     },
     "ISE": {
       "ticker": "ISE",
@@ -1733,7 +1855,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440731+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440731+00:00",
+      "cif": "A-78943892"
     },
     "END": {
       "ticker": "END",
@@ -1748,7 +1871,8 @@
         "Salida a bolsa en julio 2021"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440736+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440736+00:00",
+      "cif": "A-98943896"
     },
     "COXG": {
       "ticker": "COXG",
@@ -1761,7 +1885,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440739+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440739+00:00",
+      "cif": "A-87123896"
     },
     "PAN": {
       "ticker": "PAN",
@@ -1774,7 +1899,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440743+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440743+00:00",
+      "cif": "A-64321896"
     },
     "VYTR": {
       "ticker": "VYTR",
@@ -1789,7 +1915,8 @@
         "Salida a bolsa en marzo 2022"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440747+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440747+00:00",
+      "cif": "A-65123896"
     },
     "LAB": {
       "ticker": "LAB",
@@ -1804,7 +1931,8 @@
         "Salida a bolsa en junio 2022"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440753+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440753+00:00",
+      "cif": "A-08123896"
     },
     "KOMP": {
       "ticker": "KOMP",
@@ -1817,7 +1945,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440758+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440758+00:00",
+      "cif": "A-58291896"
     },
     "HANN": {
       "ticker": "HANN",
@@ -1832,7 +1961,8 @@
         "Salida a bolsa en junio 2022"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440763+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440763+00:00",
+      "cif": "B-67123896"
     },
     "ELZ": {
       "ticker": "ELZ",
@@ -1845,7 +1975,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440767+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440767+00:00",
+      "cif": "A-74123896"
     },
     "EVM": {
       "ticker": "EVM",
@@ -1860,7 +1991,8 @@
         "Salida a bolsa en octubre 2024"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440771+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440771+00:00",
+      "cif": "A-67891896"
     },
     "CLEV": {
       "ticker": "CLEV",
@@ -1873,7 +2005,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440775+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440775+00:00",
+      "cif": "A-91341896"
     },
     "MED": {
       "ticker": "MED",
@@ -1886,7 +2019,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440778+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440778+00:00",
+      "cif": "A-63451896"
     },
     "PROED": {
       "ticker": "PROED",
@@ -1901,7 +2035,8 @@
         "Mayor capitalización de BME Growth"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440781+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440781+00:00",
+      "cif": "A-85123896"
     },
     "SEC": {
       "ticker": "SEC",
@@ -1914,7 +2049,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440784+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440784+00:00",
+      "cif": "A-85471896"
     },
     "MONDO": {
       "ticker": "MONDO",
@@ -1929,7 +2065,8 @@
         "Mondo TV Studios"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440798+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440798+00:00",
+      "cif": "A-82123896"
     },
     "IDX": {
       "ticker": "IDX",
@@ -1944,7 +2081,8 @@
         "Salida a bolsa en julio 2023"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440803+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440803+00:00",
+      "cif": "A-87141896"
     },
     "IFF": {
       "ticker": "IFF",
@@ -1959,7 +2097,8 @@
         "Primer club de fútbol cotizado en España (2021)"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440806+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440806+00:00",
+      "cif": "A-54123896"
     },
     "ART": {
       "ticker": "ART",
@@ -1974,7 +2113,8 @@
         "Salida a bolsa en junio 2021"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440809+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440809+00:00",
+      "cif": "A-48011896"
     },
     "VAN": {
       "ticker": "VAN",
@@ -1989,7 +2129,8 @@
         "Salida a bolsa en julio 2023"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T17:34:04.440812+00:00"
+      "resolved_at": "2026-08-27T17:34:04.440812+00:00",
+      "cif": "A-42718964"
     },
     "AIR": {
       "ticker": "AIR",
@@ -2005,7 +2146,8 @@
         "Airbus Group"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069146+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069146+00:00",
+      "cif": "NL0000235190"
     },
     "ALB": {
       "ticker": "ALB",
@@ -2018,7 +2160,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069173+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069173+00:00",
+      "cif": "A-28165264"
     },
     "DFER": {
       "ticker": "DFER",
@@ -2031,7 +2174,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069184+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069184+00:00",
+      "cif": "A-33002627"
     },
     "ENO": {
       "ticker": "ENO",
@@ -2044,7 +2188,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069191+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069191+00:00",
+      "cif": "A-48027056"
     },
     "MDF": {
       "ticker": "MDF",
@@ -2057,7 +2202,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069196+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069196+00:00",
+      "cif": "A-28292852"
     },
     "PHL": {
       "ticker": "PHL",
@@ -2072,7 +2218,8 @@
         "Sociedad de Cartera Pescanova"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069202+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069202+00:00",
+      "cif": "A-36001479"
     },
     "URB": {
       "ticker": "URB",
@@ -2087,7 +2234,8 @@
         "Urbas Guadahermosa"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069207+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069207+00:00",
+      "cif": "A-48002059"
     },
     "AEDAS": {
       "ticker": "AEDAS",
@@ -2100,7 +2248,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069213+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069213+00:00",
+      "cif": "A-87895108"
     },
     "MVR": {
       "ticker": "MVR",
@@ -2113,7 +2262,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069218+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069218+00:00",
+      "cif": "A-87895108"
     },
     "BKY": {
       "ticker": "BKY",
@@ -2126,7 +2276,8 @@
       "fiscal_year_end": "06-30",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069223+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069223+00:00",
+      "cif": "AU000000BKY0"
     },
     "BIO": {
       "ticker": "BIO",
@@ -2142,7 +2293,8 @@
         "Puleva Biotech"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069228+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069228+00:00",
+      "cif": "A-18012344"
     },
     "CPL": {
       "ticker": "CPL",
@@ -2155,7 +2307,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069233+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069233+00:00",
+      "cif": "A-08008351"
     },
     "DESI": {
       "ticker": "DESI",
@@ -2168,7 +2321,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069238+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069238+00:00",
+      "cif": "A-28107951"
     },
     "COAM": {
       "ticker": "COAM",
@@ -2183,7 +2337,8 @@
         "Uralita"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069246+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069246+00:00",
+      "cif": "A-28003184"
     },
     "SNI": {
       "ticker": "SNI",
@@ -2196,7 +2351,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069254+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069254+00:00",
+      "cif": "A-39000211"
     },
     "ABG": {
       "ticker": "ABG",
@@ -2209,7 +2365,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069259+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069259+00:00",
+      "cif": "A-41002288"
     },
     "DGI": {
       "ticker": "DGI",
@@ -2225,7 +2382,8 @@
         "Nextil"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069266+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069266+00:00",
+      "cif": "A-08039323"
     },
     "MAS": {
       "ticker": "MAS",
@@ -2241,7 +2399,8 @@
         "MasMovil"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069271+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069271+00:00",
+      "cif": "A-82390197"
     },
     "ZOT": {
       "ticker": "ZOT",
@@ -2254,7 +2413,8 @@
       "fiscal_year_end": "11-30",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069277+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069277+00:00",
+      "cif": "A-28011112"
     },
     "BME": {
       "ticker": "BME",
@@ -2269,7 +2429,8 @@
         "SIX Group"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069284+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069284+00:00",
+      "cif": "A-83236746"
     },
     "LIB": {
       "ticker": "LIB",
@@ -2284,7 +2445,8 @@
         "Fusionada en Unicaja Banco en julio 2021"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069289+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069289+00:00",
+      "cif": "A-33984015"
     },
     "CLEO": {
       "ticker": "CLEO",
@@ -2297,7 +2459,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069294+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069294+00:00",
+      "cif": "A-46001020"
     },
     "REVO": {
       "ticker": "REVO",
@@ -2312,7 +2475,8 @@
         "Revenga Ingenieros"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069299+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069299+00:00",
+      "cif": "A-28292852"
     },
     "DOCS": {
       "ticker": "DOCS",
@@ -2327,7 +2491,8 @@
         "Enxendra Technologies"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069304+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069304+00:00",
+      "cif": "A-70233077"
     },
     "INDEX": {
       "ticker": "INDEX",
@@ -2340,7 +2505,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069311+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069311+00:00",
+      "cif": "A-87428801"
     },
     "VBI": {
       "ticker": "VBI",
@@ -2353,7 +2519,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069316+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069316+00:00",
+      "cif": "A-66236680"
     },
     "SING": {
       "ticker": "SING",
@@ -2368,7 +2535,8 @@
         "Sngular"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069322+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069322+00:00",
+      "cif": "A-87008579"
     },
     "NTAC": {
       "ticker": "NTAC",
@@ -2383,7 +2551,8 @@
         "IFFE Futura"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069327+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069327+00:00",
+      "cif": "A-83188509"
     },
     "GOW": {
       "ticker": "GOW",
@@ -2396,7 +2565,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069332+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069332+00:00",
+      "cif": "A-82194455"
     },
     "BIOM": {
       "ticker": "BIOM",
@@ -2409,7 +2579,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069337+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069337+00:00",
+      "cif": "A-85194455"
     },
     "NEO": {
       "ticker": "NEO",
@@ -2422,7 +2593,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069354+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069354+00:00",
+      "cif": "A-18852341"
     },
     "E4Y": {
       "ticker": "E4Y",
@@ -2435,7 +2607,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069361+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069361+00:00",
+      "cif": "A-88481288"
     },
     "UBI": {
       "ticker": "UBI",
@@ -2448,7 +2621,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069367+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069367+00:00",
+      "cif": "A-65123456"
     },
     "PLAS": {
       "ticker": "PLAS",
@@ -2463,7 +2637,8 @@
         "Kompuestos"
       ],
       "resolution_score": 1.0,
-      "resolved_at": "2026-08-27T19:16:47.069373+00:00"
+      "resolved_at": "2026-08-27T19:16:47.069373+00:00",
+      "cif": "A-58580649"
     },
     "YCPS": {
       "ticker": "YCPS",
@@ -2476,7 +2651,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-09-12T12:00:00.000000+00:00"
+      "resolved_at": "2026-09-12T12:00:00.000000+00:00",
+      "cif": "A-87938369"
     },
     "YSIL": {
       "ticker": "YSIL",
@@ -2489,7 +2665,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-09-12T12:00:00.000000+00:00"
+      "resolved_at": "2026-09-12T12:00:00.000000+00:00",
+      "cif": "A-88151543"
     },
     "YURO": {
       "ticker": "YURO",
@@ -2502,7 +2679,8 @@
       "fiscal_year_end": "12-31",
       "historical_name_changes": [],
       "resolution_score": 1.0,
-      "resolved_at": "2026-09-12T12:00:00.000000+00:00"
+      "resolved_at": "2026-09-12T12:00:00.000000+00:00",
+      "cif": "A-87006524"
     },
     "ASHI": {
       "ticker": "ASHI",
@@ -2516,7 +2694,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000311262862"
     },
     "BRIC": {
       "ticker": "BRIC",
@@ -2530,7 +2709,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000296736573"
     },
     "INMO": {
       "ticker": "INMO",
@@ -2544,7 +2724,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000078406353"
     },
     "RENT": {
       "ticker": "RENT",
@@ -2558,7 +2739,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000319215565"
     },
     "WIZA": {
       "ticker": "WIZA",
@@ -2572,7 +2754,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000300782560"
     },
     "AP67": {
       "ticker": "AP67",
@@ -2586,7 +2769,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000266585273"
     },
     "ARAF": {
       "ticker": "ARAF",
@@ -2600,7 +2784,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000297329263"
     },
     "IRG1": {
       "ticker": "IRG1",
@@ -2614,7 +2799,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000240185867"
     },
     "TORI": {
       "ticker": "TORI",
@@ -2628,7 +2814,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000241772149"
     },
     "OBSI": {
       "ticker": "OBSI",
@@ -2642,7 +2829,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000044125752"
     },
     "QUON": {
       "ticker": "QUON",
@@ -2656,7 +2844,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000364276986"
     },
     "OPEN": {
       "ticker": "OPEN",
@@ -2670,7 +2859,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000477118570"
     },
     "HQ": {
       "ticker": "HQ",
@@ -2684,7 +2874,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A24950594"
     },
     "VIVS": {
       "ticker": "VIVS",
@@ -2698,7 +2889,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000460194259"
     },
     "SILO": {
       "ticker": "SILO",
@@ -2712,7 +2904,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "B82800038"
     },
     "BIMM": {
       "ticker": "BIMM",
@@ -2726,7 +2919,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000425795071"
     },
     "MEDI": {
       "ticker": "MEDI",
@@ -2740,7 +2934,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A65540312"
     },
     "ALDI": {
       "ticker": "ALDI",
@@ -2754,7 +2949,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000314896993"
     },
     "MASA": {
       "ticker": "MASA",
@@ -2768,7 +2964,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000437932162"
     },
     "VICS": {
       "ticker": "VICS",
@@ -2782,7 +2979,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000435128666"
     },
     "INMO2": {
       "ticker": "INMO2",
@@ -2796,7 +2994,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000436383890"
     },
     "GLOB": {
       "ticker": "GLOB",
@@ -2810,7 +3009,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A13916812"
     },
     "TELC": {
       "ticker": "TELC",
@@ -2824,7 +3024,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000308970993"
     },
     "JHG": {
       "ticker": "JHG",
@@ -2838,7 +3039,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A75536185"
     },
     "INVE": {
       "ticker": "INVE",
@@ -2852,7 +3054,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000047602757"
     },
     "MERP": {
       "ticker": "MERP",
@@ -2866,7 +3069,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000383592578"
     },
     "ORIO": {
       "ticker": "ORIO",
@@ -2880,7 +3084,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000081165759"
     },
     "LAUT": {
       "ticker": "LAUT",
@@ -2894,7 +3099,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000307658680"
     },
     "GLOB2": {
       "ticker": "GLOB2",
@@ -2908,7 +3114,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000308341052"
     },
     "ROMA": {
       "ticker": "ROMA",
@@ -2922,7 +3129,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000310359967"
     },
     "TECH": {
       "ticker": "TECH",
@@ -2936,7 +3144,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000302780358"
     },
     "ALFI": {
       "ticker": "ALFI",
@@ -2950,7 +3159,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000006382153"
     },
     "CUPU": {
       "ticker": "CUPU",
@@ -2964,7 +3174,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000176854985"
     },
     "WELL": {
       "ticker": "WELL",
@@ -2978,7 +3189,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000313007647"
     },
     "ASTI": {
       "ticker": "ASTI",
@@ -2992,7 +3204,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000308590892"
     },
     "AC": {
       "ticker": "AC",
@@ -3006,7 +3219,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "M7772038"
     },
     "EMPE": {
       "ticker": "EMPE",
@@ -3020,7 +3234,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000304645356"
     },
     "AOFI": {
       "ticker": "AOFI",
@@ -3034,7 +3249,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000304337146"
     },
     "NORD": {
       "ticker": "NORD",
@@ -3048,7 +3264,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000306872679"
     },
     "AREF": {
       "ticker": "AREF",
@@ -3062,7 +3279,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000309791898"
     },
     "MUFL": {
       "ticker": "MUFL",
@@ -3076,7 +3294,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "B88082847"
     },
     "MONT": {
       "ticker": "MONT",
@@ -3090,7 +3309,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000119356985"
     },
     "IBI": {
       "ticker": "IBI",
@@ -3104,7 +3324,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000307131456"
     },
     "WHIT": {
       "ticker": "WHIT",
@@ -3118,7 +3339,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000304123137"
     },
     "ARIM": {
       "ticker": "ARIM",
@@ -3132,7 +3354,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A88362892"
     },
     "EURO": {
       "ticker": "EURO",
@@ -3146,7 +3369,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000302517445"
     },
     "FAIF": {
       "ticker": "FAIF",
@@ -3160,7 +3384,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A88525563"
     },
     "RES": {
       "ticker": "RES",
@@ -3174,7 +3399,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000047507658"
     },
     "GLOB3": {
       "ticker": "GLOB3",
@@ -3188,7 +3414,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000305231142"
     },
     "GLOB4": {
       "ticker": "GLOB4",
@@ -3202,7 +3429,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A88581251"
     },
     "INMA": {
       "ticker": "INMA",
@@ -3216,7 +3444,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "M7109148"
     },
     "ORBI": {
       "ticker": "ORBI",
@@ -3230,7 +3459,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "M6725928"
     },
     "GENE": {
       "ticker": "GENE",
@@ -3244,7 +3474,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000297034155"
     },
     "IANT": {
       "ticker": "IANT",
@@ -3258,7 +3489,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000299196697"
     },
     "AGP": {
       "ticker": "AGP",
@@ -3272,7 +3504,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000046989170"
     },
     "GAVA": {
       "ticker": "GAVA",
@@ -3286,7 +3519,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000301614955"
     },
     "NEXT2": {
       "ticker": "NEXT2",
@@ -3300,7 +3534,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000314424760"
     },
     "ADVE": {
       "ticker": "ADVE",
@@ -3314,7 +3549,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A67077628"
     },
     "LINW": {
       "ticker": "LINW",
@@ -3328,7 +3564,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000377746889"
     },
     "MANS": {
       "ticker": "MANS",
@@ -3342,7 +3579,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000295624564"
     },
     "ADRI": {
       "ticker": "ADRI",
@@ -3356,7 +3594,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000302920239"
     },
     "IPOS": {
       "ticker": "IPOS",
@@ -3370,7 +3609,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000302681461"
     },
     "EURI": {
       "ticker": "EURI",
@@ -3384,7 +3624,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A66832007"
     },
     "INVE2": {
       "ticker": "INVE2",
@@ -3398,7 +3639,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000299110049"
     },
     "HUBR": {
       "ticker": "HUBR",
@@ -3412,7 +3654,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000288947275"
     },
     "AZAR": {
       "ticker": "AZAR",
@@ -3426,7 +3669,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000297712463"
     },
     "GRUP": {
       "ticker": "GRUP",
@@ -3440,7 +3684,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000300140334"
     },
     "HISP": {
       "ticker": "HISP",
@@ -3454,7 +3699,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A08077976"
     },
     "LIVI": {
       "ticker": "LIVI",
@@ -3468,7 +3714,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000298942580"
     },
     "GESR": {
       "ticker": "GESR",
@@ -3482,7 +3729,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000317190577"
     },
     "ATOM": {
       "ticker": "ATOM",
@@ -3496,7 +3744,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000300344546"
     },
     "TEMP": {
       "ticker": "TEMP",
@@ -3510,7 +3759,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000299286798"
     },
     "LOGI": {
       "ticker": "LOGI",
@@ -3524,7 +3774,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000297306975"
     },
     "VERA": {
       "ticker": "VERA",
@@ -3538,7 +3789,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000169507875"
     },
     "TAND": {
       "ticker": "TAND",
@@ -3552,7 +3804,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000368306566"
     },
     "CAST": {
       "ticker": "CAST",
@@ -3566,7 +3819,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000294634770"
     },
     "BARC": {
       "ticker": "BARC",
@@ -3580,7 +3834,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000370449250"
     },
     "ECOI": {
       "ticker": "ECOI",
@@ -3594,7 +3849,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000211121021"
     },
     "ORON": {
       "ticker": "ORON",
@@ -3608,7 +3864,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000295419873"
     },
     "CORO": {
       "ticker": "CORO",
@@ -3622,7 +3879,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A87066460"
     },
     "FIDE": {
       "ticker": "FIDE",
@@ -3636,7 +3894,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000289531059"
     },
     "EURO2": {
       "ticker": "EURO2",
@@ -3650,7 +3909,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000292777162"
     },
     "HADL": {
       "ticker": "HADL",
@@ -3664,7 +3924,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000373048563"
     },
     "ALBI": {
       "ticker": "ALBI",
@@ -3678,7 +3939,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A87116877"
     },
     "FARR": {
       "ticker": "FARR",
@@ -3692,7 +3954,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000368731059"
     },
     "TARJ": {
       "ticker": "TARJ",
@@ -3706,7 +3969,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000246820766"
     },
     "INVE3": {
       "ticker": "INVE3",
@@ -3720,7 +3984,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000261938559"
     },
     "ENTR": {
       "ticker": "ENTR",
@@ -3734,7 +3999,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000274367262"
     },
     "GOP": {
       "ticker": "GOP",
@@ -3748,7 +4014,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000297027567"
     },
     "TRAJ": {
       "ticker": "TRAJ",
@@ -3762,7 +4029,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000294346566"
     },
     "HERE": {
       "ticker": "HERE",
@@ -3776,7 +4044,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000293307552"
     },
     "TEST": {
       "ticker": "TEST",
@@ -3790,7 +4059,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A82865890"
     },
     "ZAMB": {
       "ticker": "ZAMB",
@@ -3804,7 +4074,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000290452657"
     },
     "KING": {
       "ticker": "KING",
@@ -3818,7 +4089,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000292566053"
     },
     "HELI": {
       "ticker": "HELI",
@@ -3832,7 +4104,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000291989990"
     },
     "MERL": {
       "ticker": "MERL",
@@ -3846,7 +4119,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000292361664"
     },
     "AXIA": {
       "ticker": "AXIA",
@@ -3860,7 +4134,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000292362974"
     },
     "HISP2": {
       "ticker": "HISP2",
@@ -3874,7 +4149,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000470194363"
     },
     "GMP": {
       "ticker": "GMP",
@@ -3888,7 +4164,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000241268456"
     },
     "COLO": {
       "ticker": "COLO",
@@ -3902,7 +4179,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000299697291"
     },
     "ORIO2": {
       "ticker": "ORIO2",
@@ -3930,7 +4208,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000471544870"
     },
     "SAMA": {
       "ticker": "SAMA",
@@ -3944,7 +4223,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A26800714"
     },
     "ES": {
       "ticker": "ES",
@@ -3958,7 +4238,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000100285140"
     },
     "VIRI": {
       "ticker": "VIRI",
@@ -3972,7 +4253,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A56913122"
     },
     "RENT2": {
       "ticker": "RENT2",
@@ -3986,7 +4268,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000454891583"
     },
     "MGN": {
       "ticker": "MGN",
@@ -4000,7 +4283,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000434247154"
     },
     "RIVO": {
       "ticker": "RIVO",
@@ -4014,7 +4298,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000450604545"
     },
     "GRUP2": {
       "ticker": "GRUP2",
@@ -4028,7 +4313,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000049429877"
     },
     "SMAR": {
       "ticker": "SMAR",
@@ -4042,7 +4328,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000313007956"
     },
     "MADR": {
       "ticker": "MADR",
@@ -4056,7 +4343,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000430279359"
     },
     "SAJA": {
       "ticker": "SAJA",
@@ -4070,7 +4358,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000429001457"
     },
     "ALMO": {
       "ticker": "ALMO",
@@ -4084,7 +4373,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000309189910"
     },
     "MULT": {
       "ticker": "MULT",
@@ -4098,7 +4388,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "FI53389"
     },
     "LIGH": {
       "ticker": "LIGH",
@@ -4112,7 +4403,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000309793076"
     },
     "SPAN": {
       "ticker": "SPAN",
@@ -4126,7 +4418,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000312561043"
     },
     "WELL2": {
       "ticker": "WELL2",
@@ -4140,7 +4433,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000382636871"
     },
     "ATOL": {
       "ticker": "ATOL",
@@ -4154,7 +4448,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A88247671"
     },
     "SMAR2": {
       "ticker": "SMAR2",
@@ -4168,7 +4463,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A10962686"
     },
     "OLIM": {
       "ticker": "OLIM",
@@ -4182,7 +4478,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "M8018148"
     },
     "SOLV": {
       "ticker": "SOLV",
@@ -4196,7 +4493,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000048752364"
     },
     "RENT3": {
       "ticker": "RENT3",
@@ -4210,7 +4508,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000010805223"
     },
     "MICI": {
       "ticker": "MICI",
@@ -4224,7 +4523,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000311857870"
     },
     "K": {
       "ticker": "K",
@@ -4238,7 +4538,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000100295658"
     },
     "CORE": {
       "ticker": "CORE",
@@ -4252,7 +4553,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000309925059"
     },
     "PINA": {
       "ticker": "PINA",
@@ -4266,7 +4568,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "B84775741"
     },
     "INHO": {
       "ticker": "INHO",
@@ -4280,7 +4583,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "M7442368"
     },
     "PROM": {
       "ticker": "PROM",
@@ -4294,7 +4598,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000304841148"
     },
     "PROM2": {
       "ticker": "PROM2",
@@ -4308,7 +4613,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "M7212888"
     },
     "SAGA": {
       "ticker": "SAGA",
@@ -4322,7 +4628,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "B5200438"
     },
     "MATR": {
       "ticker": "MATR",
@@ -4336,7 +4643,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000305614246"
     },
     "PERS": {
       "ticker": "PERS",
@@ -4350,7 +4658,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000041279042"
     },
     "SILI": {
       "ticker": "SILI",
@@ -4364,7 +4673,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "M6117038"
     },
     "KTES": {
       "ticker": "KTES",
@@ -4378,7 +4688,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000303274666"
     },
     "APOD": {
       "ticker": "APOD",
@@ -4392,7 +4703,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000304649360"
     },
     "ORIN": {
       "ticker": "ORIN",
@@ -4406,7 +4718,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000298507672"
     },
     "STUD": {
       "ticker": "STUD",
@@ -4420,7 +4733,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000264795169"
     },
     "RIVE": {
       "ticker": "RIVE",
@@ -4434,7 +4748,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000301122642"
     },
     "VAND": {
       "ticker": "VAND",
@@ -4448,7 +4763,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A88445762"
     },
     "AROC": {
       "ticker": "AROC",
@@ -4462,7 +4778,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000302708136"
     },
     "HEAL": {
       "ticker": "HEAL",
@@ -4476,7 +4793,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000302978777"
     },
     "HOME": {
       "ticker": "HOME",
@@ -4490,7 +4808,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000299936378"
     },
     "MAQ": {
       "ticker": "MAQ",
@@ -4504,7 +4823,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A93322766"
     },
     "MEDC": {
       "ticker": "MEDC",
@@ -4518,7 +4838,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A98790231"
     },
     "AGAR": {
       "ticker": "AGAR",
@@ -4532,7 +4853,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000302022644"
     },
     "TRIV": {
       "ticker": "TRIV",
@@ -4546,7 +4868,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A88163969"
     },
     "JSS": {
       "ticker": "JSS",
@@ -4560,7 +4883,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000300559350"
     },
     "ARIM2": {
       "ticker": "ARIM2",
@@ -4574,7 +4898,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000301513129"
     },
     "ARRI": {
       "ticker": "ARRI",
@@ -4588,7 +4913,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000299572485"
     },
     "HOTE": {
       "ticker": "HOTE",
@@ -4602,7 +4928,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000299008877"
     },
     "MIST": {
       "ticker": "MIST",
@@ -4616,7 +4943,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000297416361"
     },
     "TORB": {
       "ticker": "TORB",
@@ -4630,7 +4958,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000372900652"
     },
     "GO": {
       "ticker": "GO",
@@ -4644,7 +4973,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000296414562"
     },
     "ROUN": {
       "ticker": "ROUN",
@@ -4658,7 +4988,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A87130993"
     },
     "BARI": {
       "ticker": "BARI",
@@ -4672,7 +5003,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000296671682"
     },
     "NICA": {
       "ticker": "NICA",
@@ -4686,7 +5018,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000267129155"
     },
     "MAQ2": {
       "ticker": "MAQ2",
@@ -4700,7 +5033,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000043670043"
     },
     "SERR": {
       "ticker": "SERR",
@@ -4714,7 +5048,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000294775681"
     },
     "VIVE": {
       "ticker": "VIVE",
@@ -4728,7 +5063,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000298666587"
     },
     "ELAI": {
       "ticker": "ELAI",
@@ -4742,7 +5078,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000295722460"
     },
     "TORR": {
       "ticker": "TORR",
@@ -4756,7 +5093,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000245236869"
     },
     "URBA": {
       "ticker": "URBA",
@@ -4770,7 +5108,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000240848968"
     },
     "VBAR": {
       "ticker": "VBAR",
@@ -4784,7 +5123,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000294218352"
     },
     "OPTI": {
       "ticker": "OPTI",
@@ -4798,7 +5138,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A87079208"
     },
     "URO": {
       "ticker": "URO",
@@ -4812,7 +5153,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000280743966"
     },
     "VITR": {
       "ticker": "VITR",
@@ -4826,7 +5168,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000292716967"
     },
     "AM": {
       "ticker": "AM",
@@ -4840,7 +5183,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "M130458"
     },
     "EWER": {
       "ticker": "EWER",
@@ -4854,7 +5198,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000372868780"
     },
     "OLIM2": {
       "ticker": "OLIM2",
@@ -4868,7 +5213,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A87709655"
     },
     "TORB2": {
       "ticker": "TORB2",
@@ -4882,7 +5228,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A66717240"
     },
     "BAY": {
       "ticker": "BAY",
@@ -4896,7 +5243,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000377691589"
     },
     "PUER": {
       "ticker": "PUER",
@@ -4924,7 +5272,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000444878583"
     },
     "PROM3": {
       "ticker": "PROM3",
@@ -4938,7 +5287,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000311217337"
     },
     "DARI": {
       "ticker": "DARI",
@@ -4952,7 +5302,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "B13761531"
     },
     "GRUP3": {
       "ticker": "GRUP3",
@@ -4966,7 +5317,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000271141754"
     },
     "NW1": {
       "ticker": "NW1",
@@ -4980,7 +5332,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000309105045"
     },
     "ONAL": {
       "ticker": "ONAL",
@@ -4994,7 +5347,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000376557991"
     },
     "ELIX": {
       "ticker": "ELIX",
@@ -5008,7 +5362,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000310807337"
     },
     "PRIM": {
       "ticker": "PRIM",
@@ -5022,7 +5377,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000308689178"
     },
     "INMU": {
       "ticker": "INMU",
@@ -5036,7 +5392,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000303907758"
     },
     "RAV": {
       "ticker": "RAV",
@@ -5050,7 +5407,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A01757046"
     },
     "PROY": {
       "ticker": "PROY",
@@ -5064,7 +5422,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000307132663"
     },
     "MILE": {
       "ticker": "MILE",
@@ -5078,7 +5437,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000306719564"
     },
     "INBE": {
       "ticker": "INBE",
@@ -5092,7 +5452,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000306758987"
     },
     "INBE2": {
       "ticker": "INBE2",
@@ -5106,7 +5467,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000303939666"
     },
     "INBE3": {
       "ticker": "INBE3",
@@ -5120,7 +5482,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000304510753"
     },
     "BURG": {
       "ticker": "BURG",
@@ -5134,7 +5497,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "B84331156"
     },
     "IGIS": {
       "ticker": "IGIS",
@@ -5148,7 +5512,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000303965465"
     },
     "RSR": {
       "ticker": "RSR",
@@ -5162,7 +5527,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000295149055"
     },
     "ALL": {
       "ticker": "ALL",
@@ -5176,7 +5542,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "M6555928"
     },
     "DESA2": {
       "ticker": "DESA2",
@@ -5190,7 +5557,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000301725445"
     },
     "INBE4": {
       "ticker": "INBE4",
@@ -5204,7 +5572,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000299251681"
     },
     "INBE5": {
       "ticker": "INBE5",
@@ -5218,7 +5587,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000299251784"
     },
     "INBE6": {
       "ticker": "INBE6",
@@ -5232,7 +5602,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000299251887"
     },
     "INBE7": {
       "ticker": "INBE7",
@@ -5246,7 +5617,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000296197380"
     },
     "INMO3": {
       "ticker": "INMO3",
@@ -5260,7 +5632,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000368481174"
     },
     "URBA2": {
       "ticker": "URBA2",
@@ -5274,7 +5647,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000374363776"
     },
     "GREE": {
       "ticker": "GREE",
@@ -5288,7 +5662,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "1000297002144"
     },
     "MIST2": {
       "ticker": "MIST2",
@@ -5302,7 +5677,8 @@
       "jurisdiction": "ES",
       "supervisor": "CNMV",
       "currency": "EUR",
-      "is_active": true
+      "is_active": true,
+      "cif_nif": "A88000807"
     }
   }
 }

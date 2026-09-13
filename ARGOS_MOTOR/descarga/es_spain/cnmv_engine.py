@@ -296,7 +296,8 @@ class CNMVEngine:
             if lei:
                 lei_map[lei] = (t_clean, info)
 
-            cif = info.get('cif_nif', '').upper().replace('-', '').replace(' ', '').strip()
+            cif_val = info.get('cif_nif') or info.get('cif') or ''
+            cif = cif_val.upper().replace('-', '').replace(' ', '').strip()
             if cif:
                 cif_map[cif] = (t_clean, info)
 
@@ -315,7 +316,8 @@ class CNMVEngine:
         if lei_clean:
             if lei_clean in self.lei_map:
                 t, cinfo = self.lei_map[lei_clean]
-                c = re.sub(r'[^A-Z0-9]', '', cinfo.get('cif_nif', '').upper().strip())
+                c_val = cinfo.get('cif_nif') or cinfo.get('cif') or ''
+                c = re.sub(r'[^A-Z0-9]', '', c_val.upper().strip())
                 return {'ticker': t, 'cif': c, 'name': cinfo.get('name_legal', t), 'lei': lei_clean}
             if lei_clean in LEI_TO_INFO:
                 info = LEI_TO_INFO[lei_clean]
@@ -333,7 +335,8 @@ class CNMVEngine:
         # 3. Búsqueda por Ticker
         if ticker_clean and ticker_clean in self.ticker_map:
             t, cinfo = self.ticker_map[ticker_clean]
-            c = re.sub(r'[^A-Z0-9]', '', cinfo.get('cif_nif', '').upper().strip())
+            c_val = cinfo.get('cif_nif') or cinfo.get('cif') or ''
+            c = re.sub(r'[^A-Z0-9]', '', c_val.upper().strip())
             return {'ticker': t, 'cif': c, 'name': cinfo.get('name_legal', t), 'lei': cinfo.get('lei', '')}
 
         # Fallback controlado
