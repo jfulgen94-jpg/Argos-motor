@@ -1,19 +1,19 @@
 {
-  "version": "2.0.0",
+  "version": "3.0.0",
   "jurisdiction": "DE",
   "country_name": "Germany",
   "supervisor": "BaFin / Unternehmensregister",
   "market_operator": "Deutsche Börse AG (XETRA / Börse Frankfurt)",
-  "total_entities": 172,
-  "generated_at": "2026-09-12T21:55:49Z",
+  "total_entities": 420,
+  "generated_at": "2026-09-13T07:14:31Z",
   "segments_breakdown": {
-    "PRIME_STANDARD": 172,
+    "PRIME_STANDARD": 420,
     "GENERAL_STANDARD": 0,
     "SCALE_GROWTH": 0
   },
   "stats": {
-    "resolved_leis": 159,
-    "resolution_rate": "92.4%"
+    "resolved_leis": 166,
+    "resolution_rate": "39.5%"
   },
   "companies": {
     "LUFT": {
@@ -35,14 +35,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "AIRB": {
-      "ticker": "AIRB",
-      "isin": "NL0000235190",
+    "AUDI": {
+      "ticker": "AUDI",
+      "isin": "DE0006757008",
       "wkn": "",
-      "lei": "MINO79WLOO247M1IL051",
-      "hrb_reg": "70138192",
-      "name_legal": "Airbus Dachfonds",
-      "name_common": "Airbus",
+      "lei": "529900J1PXYSZJVZ3Z09",
+      "hrb_reg": "HRB 1",
+      "name_legal": "AUDI Aktiengesellschaft",
+      "name_common": "Audi AG",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -54,14 +54,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "NOKI": {
-      "ticker": "NOKI",
-      "isin": "FI0009000681",
+    "ADID": {
+      "ticker": "ADID",
+      "isin": "DE000A1EWWW0",
       "wkn": "",
-      "lei": "549300A0JPRWG1KI7U06",
-      "hrb_reg": "",
-      "name_legal": "Nokia",
-      "name_common": "Nokia",
+      "lei": "549300JSX0Z4CW0V5023",
+      "hrb_reg": "HRB 3868",
+      "name_legal": "adidas AG",
+      "name_common": "Adidas",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -111,14 +111,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "ADID": {
-      "ticker": "ADID",
-      "isin": "DE000A1EWWW0",
+    "SAMS": {
+      "ticker": "SAMS",
+      "isin": "KR7005930003",
       "wkn": "",
-      "lei": "549300JSX0Z4CW0V5023",
-      "hrb_reg": "HRB 3868",
-      "name_legal": "adidas AG",
-      "name_common": "Adidas",
+      "lei": "9884007ER46L6N7EI764",
+      "hrb_reg": "HRB 4657",
+      "name_legal": "SAMSUNG ELECTRONICS GMBH",
+      "name_common": "Samsung Electronics",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -130,14 +130,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "STRA": {
-      "ticker": "STRA",
-      "isin": "DE0007289001",
+    "AIRB": {
+      "ticker": "AIRB",
+      "isin": "NL0000235190",
       "wkn": "",
-      "lei": "529900ZZJWANAFSPGV30",
-      "hrb_reg": "HRB 732007",
-      "name_legal": "STRATEC SE",
-      "name_common": "STRATEC",
+      "lei": "MINO79WLOO247M1IL051",
+      "hrb_reg": "70138192",
+      "name_legal": "Airbus Dachfonds",
+      "name_common": "Airbus",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -149,90 +149,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "SPRI": {
-      "ticker": "SPRI",
-      "isin": "DE000SPG1003",
+    "NOKI": {
+      "ticker": "NOKI",
+      "isin": "FI0009000681",
       "wkn": "",
-      "lei": "549300UMNC43HQB3JA96",
-      "hrb_reg": "HRB 195463",
-      "name_legal": "Springer Nature AG & Co. KGaA",
-      "name_common": "Springer Nature",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "UNIP": {
-      "ticker": "UNIP",
-      "isin": "DE000UNSE018",
-      "wkn": "",
-      "lei": "549300UXRTWGIBZQ4J67",
-      "hrb_reg": "HRB 77425",
-      "name_legal": "UNIPER SE",
-      "name_common": "Uniper",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "UNIP_2": {
-      "ticker": "UNIP_2",
-      "isin": "DE000UNSE026",
-      "wkn": "",
-      "lei": "549300UXRTWGIBZQ4J67",
-      "hrb_reg": "HRB 77425",
-      "name_legal": "UNIPER SE",
-      "name_common": "Uniper",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "UNIP_3": {
-      "ticker": "UNIP_3",
-      "isin": "DE000UNSE2N1",
-      "wkn": "",
-      "lei": "549300UXRTWGIBZQ4J67",
-      "hrb_reg": "HRB 77425",
-      "name_legal": "UNIPER SE",
-      "name_common": "Uniper",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "BARI": {
-      "ticker": "BARI",
-      "isin": "",
-      "wkn": "",
-      "lei": "254900CLXCIVO1KCF078",
+      "lei": "549300A0JPRWG1KI7U06",
       "hrb_reg": "",
-      "name_legal": "Barito Pacific",
-      "name_common": "Barito Pacific",
+      "name_legal": "Nokia",
+      "name_common": "Nokia",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -244,19 +168,191 @@
       "currency": "EUR",
       "is_active": true
     },
-    "HENS": {
-      "ticker": "HENS",
-      "isin": "DE000HAG0005",
+    "BAYE": {
+      "ticker": "BAYE",
+      "isin": "DE0005190037",
       "wkn": "",
-      "lei": "894500686FYLLZD3M624",
-      "hrb_reg": "HRB 258711",
-      "name_legal": "HENSOLDT AG",
-      "name_common": "Hensoldt AG",
+      "lei": "YEH5ZCD6E441RHVHD759",
+      "hrb_reg": "HRB 42243",
+      "name_legal": "Bayerische Motoren Werke Aktiengesellschaft",
+      "name_common": "Bayerische Motoren Werke Aktiengesellschaft",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
         "MDAX",
         "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "MERC": {
+      "ticker": "MERC",
+      "isin": "DE0007100000",
+      "wkn": "",
+      "lei": "529900R27DL06UVNT076",
+      "hrb_reg": "HRB 19360",
+      "name_legal": "Mercedes-Benz Group AG",
+      "name_common": "Mercedes-Benz Group",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BAYE_2": {
+      "ticker": "BAYE_2",
+      "isin": "DE0005190003",
+      "wkn": "",
+      "lei": "YEH5ZCD6E441RHVHD759",
+      "hrb_reg": "HRB 42243",
+      "name_legal": "Bayerische Motoren Werke Aktiengesellschaft",
+      "name_common": "Bayerische Motoren Werke Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_2": {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "wkn": "",
+      "lei": "7LTWFZYICNSX8D621K86",
+      "hrb_reg": "HRB 30000",
+      "name_legal": "DEUTSCHE BANK AKTIENGESELLSCHAFT",
+      "name_common": "Deutsche Bank",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "UNIC": {
+      "ticker": "UNIC",
+      "isin": "IT0005239360",
+      "wkn": "",
+      "lei": "549300TRUWO2CD2G5692",
+      "hrb_reg": "HRA 42148",
+      "name_legal": "UniCredit Bank AG",
+      "name_common": "UniCredit",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "MANS": {
+      "ticker": "MANS",
+      "isin": "DE0005937007",
+      "wkn": "",
+      "lei": "52990018UPG26YRFSM46",
+      "hrb_reg": "HRB 179426",
+      "name_legal": "MAN SE",
+      "name_common": "MAN SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "MANS_2": {
+      "ticker": "MANS_2",
+      "isin": "DE0005937031",
+      "wkn": "",
+      "lei": "52990018UPG26YRFSM46",
+      "hrb_reg": "HRB 179426",
+      "name_legal": "MAN SE",
+      "name_common": "MAN SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "PORS": {
+      "ticker": "PORS",
+      "isin": "DE000PAG9113",
+      "wkn": "",
+      "lei": "529900EWEX125AULXI58",
+      "hrb_reg": "HRB 730623",
+      "name_legal": "Dr. Ing. h.c. F. Porsche Aktiengesellschaft",
+      "name_common": "Porsche",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "MERC_2": {
+      "ticker": "MERC_2",
+      "isin": "DE0006599905",
+      "wkn": "",
+      "lei": "529900OAREIS0MOPTW25",
+      "hrb_reg": "HRB 6164",
+      "name_legal": "MERCK Kommanditgesellschaft auf Aktien",
+      "name_common": "Merck",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AIRB_2": {
+      "ticker": "AIRB_2",
+      "isin": "GB00B128C026",
+      "wkn": "",
+      "lei": "529900AJLXERVU6GEY09",
+      "hrb_reg": "HRB 10443",
+      "name_legal": "Air Berlin Fünfte Flugzeug GmbH",
+      "name_common": "Air Berlin",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX",
+        "SDAX"
       ],
       "jurisdiction": "DE",
       "supervisor": "BaFin / Unternehmensregister",
@@ -567,14 +663,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "CDVS": {
-      "ticker": "CDVS",
-      "isin": "",
+    "DEUT_3": {
+      "ticker": "DEUT_3",
+      "isin": "DE0005810055",
       "wkn": "",
-      "lei": "",
-      "hrb_reg": "",
-      "name_legal": "cdv Software Entertainment",
-      "name_common": "cdv Software Entertainment",
+      "lei": "529900G3SW56SHYNPR95",
+      "hrb_reg": "HRB 32232",
+      "name_legal": "Deutsche Börse Aktiengesellschaft",
+      "name_common": "Deutsche Börse",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -586,33 +682,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "MAN": {
-      "ticker": "MAN",
-      "isin": "DE0005937007",
+    "DHLA": {
+      "ticker": "DHLA",
+      "isin": "DE0005552004",
       "wkn": "",
-      "lei": "52990018UPG26YRFSM46",
-      "hrb_reg": "HRB 179426",
-      "name_legal": "MAN SE",
-      "name_common": "MAN",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "MAN_2": {
-      "ticker": "MAN_2",
-      "isin": "DE0005937031",
-      "wkn": "",
-      "lei": "52990018UPG26YRFSM46",
-      "hrb_reg": "HRB 179426",
-      "name_legal": "MAN SE",
-      "name_common": "MAN",
+      "lei": "8ER8GIG7CSMVD8VUFE78",
+      "hrb_reg": "HRB 6792",
+      "name_legal": "DHL AG",
+      "name_common": "DHL AG",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -662,318 +739,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "ROCK": {
-      "ticker": "ROCK",
-      "isin": "DE000A12UKK6",
-      "wkn": "",
-      "lei": "3912003IMZTQTU1V0F73",
-      "hrb_reg": "HRB 165662",
-      "name_legal": "Rocket Internet SE",
-      "name_common": "Rocket Internet SE",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "MTUA": {
-      "ticker": "MTUA",
-      "isin": "DE000A0D9PT0",
-      "wkn": "",
-      "lei": "529900807L67JY81RD65",
-      "hrb_reg": "HRB 157206",
-      "name_legal": "MTU Aero Engines AG",
-      "name_common": "MTU Aero Engines",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "SAMS": {
-      "ticker": "SAMS",
-      "isin": "KR7005930003",
-      "wkn": "",
-      "lei": "9884007ER46L6N7EI764",
-      "hrb_reg": "HRB 4657",
-      "name_legal": "SAMSUNG ELECTRONICS GMBH",
-      "name_common": "Samsung Electronics",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "PORS": {
-      "ticker": "PORS",
-      "isin": "DE000PAG9113",
-      "wkn": "",
-      "lei": "529900EWEX125AULXI58",
-      "hrb_reg": "HRB 730623",
-      "name_legal": "Dr. Ing. h.c. F. Porsche Aktiengesellschaft",
-      "name_common": "Porsche",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "DEUT_2": {
-      "ticker": "DEUT_2",
-      "isin": "DE0005140008",
-      "wkn": "",
-      "lei": "7LTWFZYICNSX8D621K86",
-      "hrb_reg": "HRB 30000",
-      "name_legal": "DEUTSCHE BANK AKTIENGESELLSCHAFT",
-      "name_common": "Deutsche Bank",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "UNIC": {
-      "ticker": "UNIC",
-      "isin": "IT0005239360",
-      "wkn": "",
-      "lei": "549300TRUWO2CD2G5692",
-      "hrb_reg": "HRA 42148",
-      "name_legal": "UniCredit Bank AG",
-      "name_common": "UniCredit",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "HOCH": {
-      "ticker": "HOCH",
-      "isin": "DE0006070006",
-      "wkn": "",
-      "lei": "529900Y25S8NZIYTT924",
-      "hrb_reg": "HRB 279",
-      "name_legal": "HOCHTIEF Aktiengesellschaft",
-      "name_common": "Hochtief",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "ZALA": {
-      "ticker": "ZALA",
-      "isin": "DE000ZAL1111",
-      "wkn": "",
-      "lei": "529900YRFFGH5AXU4S86",
-      "hrb_reg": "HRB 158855",
-      "name_legal": "Zalando SE",
-      "name_common": "Zalando",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "THYS": {
-      "ticker": "THYS",
-      "isin": "DE0007500001",
-      "wkn": "",
-      "lei": "549300UDG16DOYUPR330",
-      "hrb_reg": "HRB 15364",
-      "name_legal": "thyssenkrupp AG",
-      "name_common": "thyssenkrupp AG",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "BAYE": {
-      "ticker": "BAYE",
-      "isin": "DE0005190037",
-      "wkn": "",
-      "lei": "YEH5ZCD6E441RHVHD759",
-      "hrb_reg": "HRB 42243",
-      "name_legal": "Bayerische Motoren Werke Aktiengesellschaft",
-      "name_common": "Bayerische Motoren Werke Aktiengesellschaft",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "MERC": {
-      "ticker": "MERC",
-      "isin": "DE0007100000",
-      "wkn": "",
-      "lei": "529900R27DL06UVNT076",
-      "hrb_reg": "HRB 19360",
-      "name_legal": "Mercedes-Benz Group AG",
-      "name_common": "Mercedes-Benz Group",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "BAYE_2": {
-      "ticker": "BAYE_2",
-      "isin": "DE0005190003",
-      "wkn": "",
-      "lei": "YEH5ZCD6E441RHVHD759",
-      "hrb_reg": "HRB 42243",
-      "name_legal": "Bayerische Motoren Werke Aktiengesellschaft",
-      "name_common": "Bayerische Motoren Werke Aktiengesellschaft",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "BAYE_3": {
-      "ticker": "BAYE_3",
-      "isin": "DE000BAY0017",
-      "wkn": "",
-      "lei": "549300J4U55H3WP1XT59",
-      "hrb_reg": "HRB 48248",
-      "name_legal": "Bayer Aktiengesellschaft",
-      "name_common": "Bayer AG",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "RWE": {
-      "ticker": "RWE",
-      "isin": "DE0007037129",
-      "wkn": "",
-      "lei": "529900GB7KCA94ACC940",
-      "hrb_reg": "HRB 14525",
-      "name_legal": "RWE Aktiengesellschaft",
-      "name_common": "RWE",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "AUDI": {
-      "ticker": "AUDI",
-      "isin": "DE0006757008",
-      "wkn": "",
-      "lei": "529900J1PXYSZJVZ3Z09",
-      "hrb_reg": "HRB 1",
-      "name_legal": "AUDI Aktiengesellschaft",
-      "name_common": "Audi AG",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "1188": {
-      "ticker": "1188",
-      "isin": "DE0005118806",
-      "wkn": "",
-      "lei": "391200VWMMJ6ZN48DH82",
-      "hrb_reg": "HRB 29301",
-      "name_legal": "11 88 0 Solutions AG",
-      "name_common": "11 88 0 Solutions AG",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "HOEC": {
-      "ticker": "HOEC",
+    "CDVS": {
+      "ticker": "CDVS",
       "isin": "",
       "wkn": "",
-      "lei": "549300JK4RENAM94P588",
-      "hrb_reg": "HRB 75707",
-      "name_legal": "Hoechst GmbH",
-      "name_common": "Hoechst",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "cdv Software Entertainment",
+      "name_common": "cdv Software Entertainment",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -985,19 +758,78 @@
       "currency": "EUR",
       "is_active": true
     },
-    "SAP": {
-      "ticker": "SAP",
-      "isin": "DE0007164600",
+    "DE_BP": {
+      "ticker": "DE_BP",
+      "isin": "DE0008618737",
       "wkn": "",
-      "lei": "529900D6BF99LW9R2E68",
-      "hrb_reg": "HRB 719915",
-      "name_legal": "SAP SE",
-      "name_common": "SAP",
+      "lei": "213800LH1BZH3DI6G760",
+      "hrb_reg": "HRB 96015",
+      "name_legal": "BP InvCons GmbH",
+      "name_common": "BP",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DE_BP_2": {
+      "ticker": "DE_BP_2",
+      "isin": "GB0007980591",
+      "wkn": "",
+      "lei": "213800LH1BZH3DI6G760",
+      "hrb_reg": "HRB 96015",
+      "name_legal": "BP InvCons GmbH",
+      "name_common": "BP",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DE_DAX": {
+      "ticker": "DE_DAX",
+      "isin": "DE0008467440",
+      "wkn": "",
+      "lei": "529900G3SW56SHYNPR95",
+      "hrb_reg": "HRB 32232",
+      "name_legal": "Deutsche Börse Aktiengesellschaft",
+      "name_common": "DAX",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
         "TECDAX",
-        "MDAX"
+        "SDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DE_DAX_2": {
+      "ticker": "DE_DAX_2",
+      "isin": "DE0008469008",
+      "wkn": "",
+      "lei": "529900G3SW56SHYNPR95",
+      "hrb_reg": "HRB 32232",
+      "name_legal": "Deutsche Börse Aktiengesellschaft",
+      "name_common": "DAX",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX",
+        "SDAX"
       ],
       "jurisdiction": "DE",
       "supervisor": "BaFin / Unternehmensregister",
@@ -1195,14 +1027,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "BP": {
-      "ticker": "BP",
-      "isin": "DE0008618737",
+    "CONT": {
+      "ticker": "CONT",
+      "isin": "DE0005439004",
       "wkn": "",
-      "lei": "213800LH1BZH3DI6G760",
-      "hrb_reg": "HRB 96015",
-      "name_legal": "BP InvCons GmbH",
-      "name_common": "BP",
+      "lei": "529900A7YD9C0LLXM621",
+      "hrb_reg": "HRB 3527",
+      "name_legal": "Continental Aktiengesellschaft",
+      "name_common": "Continental AG",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -1214,14 +1046,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "BP_2": {
-      "ticker": "BP_2",
-      "isin": "GB0007980591",
+    "AXEL": {
+      "ticker": "AXEL",
+      "isin": "DE0005501357",
       "wkn": "",
-      "lei": "213800LH1BZH3DI6G760",
-      "hrb_reg": "HRB 96015",
-      "name_legal": "BP InvCons GmbH",
-      "name_common": "BP",
+      "lei": "529900PXZU3YHO6HMD80",
+      "hrb_reg": "HRB 154517",
+      "name_legal": "Axel Springer SE",
+      "name_common": "Axel Springer SE",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -1233,40 +1065,76 @@
       "currency": "EUR",
       "is_active": true
     },
-    "DAX": {
-      "ticker": "DAX",
-      "isin": "DE0008467440",
+    "TESL": {
+      "ticker": "TESL",
+      "isin": "US88160R1014",
       "wkn": "",
-      "lei": "529900G3SW56SHYNPR95",
-      "hrb_reg": "HRB 32232",
-      "name_legal": "Deutsche Börse Aktiengesellschaft",
-      "name_common": "DAX",
+      "lei": "54930043XZGB27CTOV49",
+      "hrb_reg": "",
+      "name_legal": "Tesla, Inc.",
+      "name_common": "Tesla, Inc.",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
         "MDAX",
-        "TECDAX",
-        "SDAX"
+        "TECDAX"
       ],
       "jurisdiction": "DE",
       "supervisor": "BaFin / Unternehmensregister",
       "currency": "EUR",
       "is_active": true
     },
-    "DAX_2": {
-      "ticker": "DAX_2",
-      "isin": "DE0008469008",
+    "FIEL": {
+      "ticker": "FIEL",
+      "isin": "DE0005772206",
       "wkn": "",
-      "lei": "529900G3SW56SHYNPR95",
-      "hrb_reg": "HRB 32232",
-      "name_legal": "Deutsche Börse Aktiengesellschaft",
-      "name_common": "DAX",
+      "lei": "529900BU5B7N9GE4XU15",
+      "hrb_reg": "HRB 56098",
+      "name_legal": "Fielmann Group AG",
+      "name_common": "Fielmann",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
         "MDAX",
-        "TECDAX",
-        "SDAX"
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "VOLK": {
+      "ticker": "VOLK",
+      "isin": "DE0007664005",
+      "wkn": "",
+      "lei": "529900NNUPAGGOMPXZ31",
+      "hrb_reg": "HRB 100484",
+      "name_legal": "VOLKSWAGEN AKTIENGESELLSCHAFT",
+      "name_common": "Volkswagen AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "VOLK_2": {
+      "ticker": "VOLK_2",
+      "isin": "DE0007664039",
+      "wkn": "",
+      "lei": "529900NNUPAGGOMPXZ31",
+      "hrb_reg": "HRB 100484",
+      "name_legal": "VOLKSWAGEN AKTIENGESELLSCHAFT",
+      "name_common": "Volkswagen AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
       ],
       "jurisdiction": "DE",
       "supervisor": "BaFin / Unternehmensregister",
@@ -1292,14 +1160,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "DHLG": {
-      "ticker": "DHLG",
-      "isin": "DE0005552004",
+    "STRA": {
+      "ticker": "STRA",
+      "isin": "DE0007289001",
       "wkn": "",
-      "lei": "8ER8GIG7CSMVD8VUFE78",
-      "hrb_reg": "HRB 6792",
-      "name_legal": "DHL AG",
-      "name_common": "DHL Group",
+      "lei": "529900ZZJWANAFSPGV30",
+      "hrb_reg": "HRB 732007",
+      "name_legal": "STRATEC SE",
+      "name_common": "STRATEC",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -1311,14 +1179,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "FREE": {
-      "ticker": "FREE",
-      "isin": "DE000A0Z2ZZ5",
+    "SPRI": {
+      "ticker": "SPRI",
+      "isin": "DE000SPG1003",
       "wkn": "",
-      "lei": "5299003GLDODCVP8DO20",
-      "hrb_reg": "HRB 7306 KI",
-      "name_legal": "freenet AG",
-      "name_common": "Freenet AG",
+      "lei": "549300UMNC43HQB3JA96",
+      "hrb_reg": "HRB 195463",
+      "name_legal": "Springer Nature AG & Co. KGaA",
+      "name_common": "Springer Nature",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -1330,14 +1198,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "EON": {
-      "ticker": "EON",
-      "isin": "DE000ENAG999",
+    "UNIP": {
+      "ticker": "UNIP",
+      "isin": "DE000UNSE018",
       "wkn": "",
-      "lei": "Q9MAIUP40P25UFBFG033",
-      "hrb_reg": "HRB 28196",
-      "name_legal": "E.ON SE",
-      "name_common": "E.ON",
+      "lei": "549300UXRTWGIBZQ4J67",
+      "hrb_reg": "HRB 77425",
+      "name_legal": "UNIPER SE",
+      "name_common": "Uniper",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -1349,14 +1217,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "BEIE": {
-      "ticker": "BEIE",
-      "isin": "DE0005200000",
+    "UNIP_2": {
+      "ticker": "UNIP_2",
+      "isin": "DE000UNSE026",
       "wkn": "",
-      "lei": "L47NHHI0Z9X22DV46U41",
-      "hrb_reg": "HRB 1787",
-      "name_legal": "Beiersdorf Aktiengesellschaft",
-      "name_common": "Beiersdorf AG",
+      "lei": "549300UXRTWGIBZQ4J67",
+      "hrb_reg": "HRB 77425",
+      "name_legal": "UNIPER SE",
+      "name_common": "Uniper",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -1368,14 +1236,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "KNOR": {
-      "ticker": "KNOR",
-      "isin": "DE000KBX1006",
+    "UNIP_3": {
+      "ticker": "UNIP_3",
+      "isin": "DE000UNSE2N1",
       "wkn": "",
-      "lei": "5299001GRRO0Z25YZT52",
-      "hrb_reg": "HRB 42031",
-      "name_legal": "Knorr-Bremse Aktiengesellschaft",
-      "name_common": "Knorr-Bremse",
+      "lei": "549300UXRTWGIBZQ4J67",
+      "hrb_reg": "HRB 77425",
+      "name_legal": "UNIPER SE",
+      "name_common": "Uniper",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -1387,14 +1255,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "OSRA": {
-      "ticker": "OSRA",
-      "isin": "DE000LED4000",
+    "BARI": {
+      "ticker": "BARI",
+      "isin": "",
       "wkn": "",
-      "lei": "549300SXOGQHLID37W55",
-      "hrb_reg": "HRB 199675",
-      "name_legal": "OSRAM Licht AG",
-      "name_common": "OSRAM Licht AG",
+      "lei": "254900CLXCIVO1KCF078",
+      "hrb_reg": "",
+      "name_legal": "Barito Pacific",
+      "name_common": "Barito Pacific",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -1406,52 +1274,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "HENK": {
-      "ticker": "HENK",
-      "isin": "DE0006048408",
+    "HENS": {
+      "ticker": "HENS",
+      "isin": "DE000HAG0005",
       "wkn": "",
-      "lei": "549300VZCL1HTH4O4Y49",
-      "hrb_reg": "HRB 4724",
-      "name_legal": "Henkel AG & Co. KGaA",
-      "name_common": "Henkel KGaA",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "HENK_2": {
-      "ticker": "HENK_2",
-      "isin": "DE0006048432",
-      "wkn": "",
-      "lei": "549300VZCL1HTH4O4Y49",
-      "hrb_reg": "HRB 4724",
-      "name_legal": "Henkel AG & Co. KGaA",
-      "name_common": "Henkel KGaA",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "DEUT_3": {
-      "ticker": "DEUT_3",
-      "isin": "DE0005810055",
-      "wkn": "",
-      "lei": "529900G3SW56SHYNPR95",
-      "hrb_reg": "HRB 32232",
-      "name_legal": "Deutsche Börse Aktiengesellschaft",
-      "name_common": "Deutsche Börse",
+      "lei": "894500686FYLLZD3M624",
+      "hrb_reg": "HRB 258711",
+      "name_legal": "HENSOLDT AG",
+      "name_common": "Hensoldt AG",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -1521,8 +1351,8 @@
       "currency": "EUR",
       "is_active": true
     },
-    "THYS_2": {
-      "ticker": "THYS_2",
+    "THYS": {
+      "ticker": "THYS",
       "isin": "DE000NCA0001",
       "wkn": "",
       "lei": "549300T0K3CI2C25SC77",
@@ -1939,33 +1769,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "INFI": {
-      "ticker": "INFI",
-      "isin": "DE0006231004",
+    "BEIE": {
+      "ticker": "BEIE",
+      "isin": "DE0005200000",
       "wkn": "",
-      "lei": "TSI2PJM6EPETEQ4X1U25",
-      "hrb_reg": "HRB 126492",
-      "name_legal": "Infineon Technologies AG",
-      "name_common": "Infineon Technologies",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "TECDAX",
-        "MDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "HHLA": {
-      "ticker": "HHLA",
-      "isin": "DE000A0S8488",
-      "wkn": "",
-      "lei": "52990003RXKZ9J9ERW70",
-      "hrb_reg": "HRB 1902",
-      "name_legal": "Hamburger Hafen und Logistik Aktiengesellschaft",
-      "name_common": "HHLA",
+      "lei": "L47NHHI0Z9X22DV46U41",
+      "hrb_reg": "HRB 1787",
+      "name_legal": "Beiersdorf Aktiengesellschaft",
+      "name_common": "Beiersdorf",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -1977,33 +1788,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "QIAG": {
-      "ticker": "QIAG",
-      "isin": "NL0000240000",
+    "MUNI": {
+      "ticker": "MUNI",
+      "isin": "DE0008430026",
       "wkn": "",
-      "lei": "54930036WK3GMCN17Z57",
-      "hrb_reg": "HRB 45822",
-      "name_legal": "QIAGEN GMBH",
-      "name_common": "Qiagen",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "TECDAX",
-        "MDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "OVBH": {
-      "ticker": "OVBH",
-      "isin": "DE0006286560",
-      "wkn": "",
-      "lei": "391200YVRGI53NXMSV66",
-      "hrb_reg": "HRB 34649",
-      "name_legal": "OVB Holding AG",
-      "name_common": "OVB Holding",
+      "lei": "529900MUF4C20K50JS49",
+      "hrb_reg": "HRB 42039",
+      "name_legal": "Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München",
+      "name_common": "Munich Re",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -2015,52 +1807,413 @@
       "currency": "EUR",
       "is_active": true
     },
-    "LUKO": {
-      "ticker": "LUKO",
-      "isin": "RU0009024277",
-      "wkn": "",
-      "lei": "549300LCJ1UJXHYBWI24",
-      "hrb_reg": "HRB 84870",
-      "name_legal": "LUKOIL Hamburg GmbH",
-      "name_common": "Lukoil",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "LUKO_2": {
-      "ticker": "LUKO_2",
-      "isin": "US6778621044",
-      "wkn": "",
-      "lei": "549300LCJ1UJXHYBWI24",
-      "hrb_reg": "HRB 84870",
-      "name_legal": "LUKOIL Hamburg GmbH",
-      "name_common": "Lukoil",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "MANN": {
-      "ticker": "MANN",
+    "METR": {
+      "ticker": "METR",
       "isin": "",
       "wkn": "",
-      "lei": "529900W4Q1G6D4CZFF25",
+      "lei": "5299006EQ03K3SSUYS12",
+      "hrb_reg": "HRB 54522",
+      "name_legal": "MGC METRO Group Clearing GmbH",
+      "name_common": "METRO Group",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "SART": {
+      "ticker": "SART",
+      "isin": "DE0007165607",
+      "wkn": "",
+      "lei": "529900EQV2DY4FOAMU38",
+      "hrb_reg": "HRB 1970",
+      "name_legal": "Sartorius Aktiengesellschaft",
+      "name_common": "Sartorius AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "TECDAX",
+        "MDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "SART_2": {
+      "ticker": "SART_2",
+      "isin": "DE0007165631",
+      "wkn": "",
+      "lei": "529900EQV2DY4FOAMU38",
+      "hrb_reg": "HRB 1970",
+      "name_legal": "Sartorius Aktiengesellschaft",
+      "name_common": "Sartorius AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "TECDAX",
+        "MDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "HOCH": {
+      "ticker": "HOCH",
+      "isin": "DE0006070006",
+      "wkn": "",
+      "lei": "529900Y25S8NZIYTT924",
+      "hrb_reg": "HRB 279",
+      "name_legal": "HOCHTIEF Aktiengesellschaft",
+      "name_common": "Hochtief",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ZALA": {
+      "ticker": "ZALA",
+      "isin": "DE000ZAL1111",
+      "wkn": "",
+      "lei": "529900YRFFGH5AXU4S86",
+      "hrb_reg": "HRB 158855",
+      "name_legal": "Zalando SE",
+      "name_common": "Zalando",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "THYS_2": {
+      "ticker": "THYS_2",
+      "isin": "DE0007500001",
+      "wkn": "",
+      "lei": "549300UDG16DOYUPR330",
+      "hrb_reg": "HRB 15364",
+      "name_legal": "thyssenkrupp AG",
+      "name_common": "thyssenkrupp AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "FREE": {
+      "ticker": "FREE",
+      "isin": "DE000A0Z2ZZ5",
+      "wkn": "",
+      "lei": "5299003GLDODCVP8DO20",
+      "hrb_reg": "HRB 7306 KI",
+      "name_legal": "freenet AG",
+      "name_common": "Freenet AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DE_EON": {
+      "ticker": "DE_EON",
+      "isin": "DE000ENAG999",
+      "wkn": "",
+      "lei": "Q9MAIUP40P25UFBFG033",
+      "hrb_reg": "HRB 28196",
+      "name_legal": "E.ON SE",
+      "name_common": "E.ON",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "KNOR": {
+      "ticker": "KNOR",
+      "isin": "DE000KBX1006",
+      "wkn": "",
+      "lei": "5299001GRRO0Z25YZT52",
+      "hrb_reg": "HRB 42031",
+      "name_legal": "Knorr-Bremse Aktiengesellschaft",
+      "name_common": "Knorr-Bremse",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "1188": {
+      "ticker": "1188",
+      "isin": "DE0005118806",
+      "wkn": "",
+      "lei": "391200VWMMJ6ZN48DH82",
+      "hrb_reg": "HRB 29301",
+      "name_legal": "11 88 0 Solutions AG",
+      "name_common": "11 88 0 Solutions AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "HOEC": {
+      "ticker": "HOEC",
+      "isin": "",
+      "wkn": "",
+      "lei": "549300JK4RENAM94P588",
+      "hrb_reg": "HRB 75707",
+      "name_legal": "Hoechst GmbH",
+      "name_common": "Hoechst",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DE_SAP": {
+      "ticker": "DE_SAP",
+      "isin": "DE0007164600",
+      "wkn": "",
+      "lei": "529900D6BF99LW9R2E68",
+      "hrb_reg": "HRB 719915",
+      "name_legal": "SAP SE",
+      "name_common": "SAP",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "TECDAX",
+        "MDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "LEIC": {
+      "ticker": "LEIC",
+      "isin": "",
+      "wkn": "",
+      "lei": "529900F0BXPCY8CSGI67",
+      "hrb_reg": "HRB 966",
+      "name_legal": "Leica Camera Aktiengesellschaft",
+      "name_common": "Leica Camera",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "RHEI": {
+      "ticker": "RHEI",
+      "isin": "DE0007030009",
+      "wkn": "",
+      "lei": "5299001OU9CSE29O6S05",
+      "hrb_reg": "HRB 39401",
+      "name_legal": "Rheinmetall Aktiengesellschaft",
+      "name_common": "Rheinmetall",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "TUIG": {
+      "ticker": "TUIG",
+      "isin": "DE000TUAG000",
+      "wkn": "",
+      "lei": "529900SL2WSPV293B552",
+      "hrb_reg": "HRB 62564",
+      "name_legal": "TUI Group Services GmbH",
+      "name_common": "TUI Group",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "TUIG_2": {
+      "ticker": "TUIG_2",
+      "isin": "DE000TUAG505",
+      "wkn": "",
+      "lei": "529900SL2WSPV293B552",
+      "hrb_reg": "HRB 6580",
+      "name_legal": "TUI AG",
+      "name_common": "TUI Group",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "WIRE": {
+      "ticker": "WIRE",
+      "isin": "DE0007472060",
+      "wkn": "",
+      "lei": "529900A8LX4KL0YUTH71",
+      "hrb_reg": "HRB 169227",
+      "name_legal": "Wirecard AG",
+      "name_common": "Wirecard",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ROCK": {
+      "ticker": "ROCK",
+      "isin": "DE000A12UKK6",
+      "wkn": "",
+      "lei": "3912003IMZTQTU1V0F73",
+      "hrb_reg": "HRB 165662",
+      "name_legal": "Rocket Internet SE",
+      "name_common": "Rocket Internet SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "MTUA": {
+      "ticker": "MTUA",
+      "isin": "DE000A0D9PT0",
+      "wkn": "",
+      "lei": "529900807L67JY81RD65",
+      "hrb_reg": "HRB 157206",
+      "name_legal": "MTU Aero Engines AG",
+      "name_common": "MTU Aero Engines",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "WACK": {
+      "ticker": "WACK",
+      "isin": "DE000WCH8881",
+      "wkn": "",
+      "lei": "0NURKC5Q3CJYZPPK5046",
+      "hrb_reg": "HRB 159705",
+      "name_legal": "Wacker Chemie AG",
+      "name_common": "Wacker Chemie AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ALLI": {
+      "ticker": "ALLI",
+      "isin": "DE0008404005",
+      "wkn": "",
+      "lei": "529900K9B0N5BT694847",
+      "hrb_reg": "HRB 164232",
+      "name_legal": "Allianz SE",
+      "name_common": "Allianz SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "VARE": {
+      "ticker": "VARE",
+      "isin": "DE0005479307",
+      "wkn": "",
+      "lei": "529900BIK4WRWS06MR52",
       "hrb_reg": "",
-      "name_legal": "Allgemeine Sterbekasse Mannesmann",
-      "name_common": "Mannesmann",
+      "name_legal": "Varengold Bank",
+      "name_common": "Varengold Bank",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -2072,14 +2225,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "LIND": {
-      "ticker": "LIND",
-      "isin": "IE000S9YS762",
+    "BAYE_3": {
+      "ticker": "BAYE_3",
+      "isin": "DE000BAY0017",
       "wkn": "",
-      "lei": "5299003QR1WT0EF88V51",
-      "hrb_reg": "",
-      "name_legal": "Linde Group",
-      "name_common": "Linde Group",
+      "lei": "549300J4U55H3WP1XT59",
+      "hrb_reg": "HRB 48248",
+      "name_legal": "Bayer Aktiengesellschaft",
+      "name_common": "Bayer AG",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -2091,14 +2244,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "KHNE": {
-      "ticker": "KHNE",
-      "isin": "CH0025238863",
+    "DE_RWE": {
+      "ticker": "DE_RWE",
+      "isin": "DE0007037129",
       "wkn": "",
-      "lei": "529900Q0YED3805QXQ66",
-      "hrb_reg": "HRB 4955",
-      "name_legal": "Kühne + Nagel Logistics Langenau GmbH",
-      "name_common": "Kühne + Nagel",
+      "lei": "529900GB7KCA94ACC940",
+      "hrb_reg": "HRB 14525",
+      "name_legal": "RWE Aktiengesellschaft",
+      "name_common": "RWE",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -2110,14 +2263,52 @@
       "currency": "EUR",
       "is_active": true
     },
-    "VART": {
-      "ticker": "VART",
-      "isin": "DE000A0TGJ55",
+    "OSRA": {
+      "ticker": "OSRA",
+      "isin": "DE000LED4000",
       "wkn": "",
-      "lei": "529900E7KB95KOXBWP63",
-      "hrb_reg": "HRB 728059",
-      "name_legal": "VARTA AKTIENGESELLSCHAFT",
-      "name_common": "Varta AG",
+      "lei": "549300SXOGQHLID37W55",
+      "hrb_reg": "HRB 199675",
+      "name_legal": "OSRAM Licht AG",
+      "name_common": "OSRAM Licht AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "HENK": {
+      "ticker": "HENK",
+      "isin": "DE0006048408",
+      "wkn": "",
+      "lei": "549300VZCL1HTH4O4Y49",
+      "hrb_reg": "HRB 4724",
+      "name_legal": "Henkel AG & Co. KGaA",
+      "name_common": "Henkel KGaA",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "HENK_2": {
+      "ticker": "HENK_2",
+      "isin": "DE0006048432",
+      "wkn": "",
+      "lei": "549300VZCL1HTH4O4Y49",
+      "hrb_reg": "HRB 4724",
+      "name_legal": "Henkel AG & Co. KGaA",
+      "name_common": "Henkel KGaA",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -2246,14 +2437,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "VOLK": {
-      "ticker": "VOLK",
-      "isin": "DE0007664005",
+    "COMD": {
+      "ticker": "COMD",
+      "isin": "DE0005428007",
       "wkn": "",
-      "lei": "529900NNUPAGGOMPXZ31",
-      "hrb_reg": "HRB 100484",
-      "name_legal": "VOLKSWAGEN AKTIENGESELLSCHAFT",
-      "name_common": "Volkswagen AG",
+      "lei": "529900RE48FNDGN95P03",
+      "hrb_reg": "HRB 4889 PI",
+      "name_legal": "comdirect bank Aktiengesellschaft",
+      "name_common": "comdirect bank Aktiengesellschaft",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -2265,14 +2456,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "VOLK_2": {
-      "ticker": "VOLK_2",
-      "isin": "DE0007664039",
+    "CTSE": {
+      "ticker": "CTSE",
+      "isin": "DE0005470306",
       "wkn": "",
-      "lei": "529900NNUPAGGOMPXZ31",
-      "hrb_reg": "HRB 100484",
-      "name_legal": "VOLKSWAGEN AKTIENGESELLSCHAFT",
-      "name_common": "Volkswagen AG",
+      "lei": "529900FDHSN08UBJII80",
+      "hrb_reg": "HRB 212700",
+      "name_legal": "CTS Eventim AG & Co. KGaA",
+      "name_common": "CTS Eventim",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -2284,53 +2475,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "MERC_2": {
-      "ticker": "MERC_2",
-      "isin": "DE0006599905",
-      "wkn": "",
-      "lei": "529900OAREIS0MOPTW25",
-      "hrb_reg": "HRB 6164",
-      "name_legal": "MERCK Kommanditgesellschaft auf Aktien",
-      "name_common": "Merck",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "AIRB_2": {
-      "ticker": "AIRB_2",
-      "isin": "GB00B128C026",
-      "wkn": "",
-      "lei": "529900AJLXERVU6GEY09",
-      "hrb_reg": "HRB 10443",
-      "name_legal": "Air Berlin Fünfte Flugzeug GmbH",
-      "name_common": "Air Berlin",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX",
-        "SDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "LEIC": {
-      "ticker": "LEIC",
+    "KANA": {
+      "ticker": "KANA",
       "isin": "",
       "wkn": "",
-      "lei": "529900F0BXPCY8CSGI67",
-      "hrb_reg": "HRB 966",
-      "name_legal": "Leica Camera Aktiengesellschaft",
-      "name_common": "Leica Camera",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Kanadevia Inova Schmack",
+      "name_common": "Kanadevia Inova Schmack",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -2342,14 +2494,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "RHEI": {
-      "ticker": "RHEI",
-      "isin": "DE0007030009",
+    "DERM": {
+      "ticker": "DERM",
+      "isin": "DE000A2GS5D8",
       "wkn": "",
-      "lei": "5299001OU9CSE29O6S05",
-      "hrb_reg": "HRB 39401",
-      "name_legal": "Rheinmetall Aktiengesellschaft",
-      "name_common": "Rheinmetall",
+      "lei": "5299009F0KNZINQQQK37",
+      "hrb_reg": "HRB 234575",
+      "name_legal": "Dermapharm Holding SE",
+      "name_common": "Dermapharm",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -2361,14 +2513,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "CONT": {
-      "ticker": "CONT",
-      "isin": "DE0005439004",
+    "CEWE": {
+      "ticker": "CEWE",
+      "isin": "DE0005403901",
       "wkn": "",
-      "lei": "529900A7YD9C0LLXM621",
-      "hrb_reg": "HRB 3527",
-      "name_legal": "Continental Aktiengesellschaft",
-      "name_common": "Continental AG",
+      "lei": "529900IDFHN9MQ3WUD64",
+      "hrb_reg": "HRB 208214",
+      "name_legal": "CEWE Stiftung & Co. KGaA",
+      "name_common": "CEWE",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -2380,14 +2532,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "AXEL": {
-      "ticker": "AXEL",
-      "isin": "DE0005501357",
+    "RTLG": {
+      "ticker": "RTLG",
+      "isin": "LU0061462528",
       "wkn": "",
-      "lei": "529900PXZU3YHO6HMD80",
-      "hrb_reg": "HRB 154517",
-      "name_legal": "Axel Springer SE",
-      "name_common": "Axel Springer SE",
+      "lei": "5493000C8J3C3SZYS040",
+      "hrb_reg": "HRB 35904",
+      "name_legal": "RTL GROUP VERMÖGENSVERWALTUNG GMBH",
+      "name_common": "RTL Group",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -2399,166 +2551,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "FRES": {
-      "ticker": "FRES",
-      "isin": "DE0005785604",
-      "wkn": "",
-      "lei": "XDFJ0CYCOO1FXRFTQS51",
-      "hrb_reg": "HRB 28239",
-      "name_legal": "Hochschulen Fresenius GmbH",
-      "name_common": "Fresenius",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "AIXT": {
-      "ticker": "AIXT",
-      "isin": "DE000A0WMPJ6",
-      "wkn": "",
-      "lei": "5299004UJ4D51M25LD67",
-      "hrb_reg": "HRB 16590",
-      "name_legal": "AIXTRON SE",
-      "name_common": "Aixtron",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "HELL": {
-      "ticker": "HELL",
-      "isin": "DE000A13SX22",
-      "wkn": "",
-      "lei": "529900PLX4ADJFWIY024",
-      "hrb_reg": "HRB 6857",
-      "name_legal": "HELLA GmbH & Co. KGaA",
-      "name_common": "Hella",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "FIEL": {
-      "ticker": "FIEL",
-      "isin": "DE0005772206",
-      "wkn": "",
-      "lei": "529900BU5B7N9GE4XU15",
-      "hrb_reg": "HRB 56098",
-      "name_legal": "Fielmann Group AG",
-      "name_common": "Fielmann",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "TUIG": {
-      "ticker": "TUIG",
-      "isin": "DE000TUAG000",
-      "wkn": "",
-      "lei": "529900SL2WSPV293B552",
-      "hrb_reg": "HRB 62564",
-      "name_legal": "TUI Group Services GmbH",
-      "name_common": "TUI Group",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "TUIG_2": {
-      "ticker": "TUIG_2",
-      "isin": "DE000TUAG505",
-      "wkn": "",
-      "lei": "529900SL2WSPV293B552",
-      "hrb_reg": "HRB 6580",
-      "name_legal": "TUI AG",
-      "name_common": "TUI Group",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "WIRE": {
-      "ticker": "WIRE",
-      "isin": "DE0007472060",
-      "wkn": "",
-      "lei": "529900A8LX4KL0YUTH71",
-      "hrb_reg": "HRB 169227",
-      "name_legal": "Wirecard AG",
-      "name_common": "Wirecard",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "MUNI": {
-      "ticker": "MUNI",
-      "isin": "DE0008430026",
-      "wkn": "",
-      "lei": "529900MUF4C20K50JS49",
-      "hrb_reg": "HRB 42039",
-      "name_legal": "Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München",
-      "name_common": "Munich Re",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "METR": {
-      "ticker": "METR",
+    "MANN": {
+      "ticker": "MANN",
       "isin": "",
       "wkn": "",
-      "lei": "5299006EQ03K3SSUYS12",
-      "hrb_reg": "HRB 54522",
-      "name_legal": "MGC METRO Group Clearing GmbH",
-      "name_common": "METRO Group",
+      "lei": "529900W4Q1G6D4CZFF25",
+      "hrb_reg": null,
+      "name_legal": "Allgemeine Sterbekasse Mannesmann",
+      "name_common": "Mannesmann",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -2570,38 +2570,133 @@
       "currency": "EUR",
       "is_active": true
     },
-    "SART": {
-      "ticker": "SART",
-      "isin": "DE0007165607",
+    "LIND": {
+      "ticker": "LIND",
+      "isin": "IE000S9YS762",
       "wkn": "",
-      "lei": "529900EQV2DY4FOAMU38",
-      "hrb_reg": "HRB 1970",
-      "name_legal": "Sartorius Aktiengesellschaft",
-      "name_common": "Sartorius AG",
+      "lei": "5299003QR1WT0EF88V51",
+      "hrb_reg": "",
+      "name_legal": "Linde Group",
+      "name_common": "Linde Group",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
-        "TECDAX",
-        "MDAX"
+        "MDAX",
+        "TECDAX"
       ],
       "jurisdiction": "DE",
       "supervisor": "BaFin / Unternehmensregister",
       "currency": "EUR",
       "is_active": true
     },
-    "SART_2": {
-      "ticker": "SART_2",
-      "isin": "DE0007165631",
+    "KHNE": {
+      "ticker": "KHNE",
+      "isin": "CH0025238863",
       "wkn": "",
-      "lei": "529900EQV2DY4FOAMU38",
-      "hrb_reg": "HRB 1970",
-      "name_legal": "Sartorius Aktiengesellschaft",
-      "name_common": "Sartorius AG",
+      "lei": "529900Q0YED3805QXQ66",
+      "hrb_reg": "HRB 4955",
+      "name_legal": "Kühne + Nagel Logistics Langenau GmbH",
+      "name_common": "Kühne + Nagel",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
-        "TECDAX",
-        "MDAX"
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "VART": {
+      "ticker": "VART",
+      "isin": "DE000A0TGJ55",
+      "wkn": "",
+      "lei": "529900E7KB95KOXBWP63",
+      "hrb_reg": "HRB 728059",
+      "name_legal": "VARTA AKTIENGESELLSCHAFT",
+      "name_common": "Varta AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DELT": {
+      "ticker": "DELT",
+      "isin": "DE0005146807",
+      "wkn": "",
+      "lei": "529900F3EU2GVHVCLR26",
+      "hrb_reg": "HRB 58026",
+      "name_legal": "Delticom AG",
+      "name_common": "Delticom",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "VONO": {
+      "ticker": "VONO",
+      "isin": "DE000A1ML7J1",
+      "wkn": "",
+      "lei": "5299005A2ZEP6AP7KM81",
+      "hrb_reg": "HRB 16879",
+      "name_legal": "Vonovia SE",
+      "name_common": "Vonovia",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DAIM": {
+      "ticker": "DAIM",
+      "isin": "DE000DTR0CK8",
+      "wkn": "",
+      "lei": "529900HWPVQ42PJZBV22",
+      "hrb_reg": "HRB 778600",
+      "name_legal": "Daimler Truck Holding AG",
+      "name_common": "Daimler Truck",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "HAIE": {
+      "ticker": "HAIE",
+      "isin": "CNE1000031C1",
+      "wkn": "",
+      "lei": "529900AL2J8IU1ZOWL36",
+      "hrb_reg": "HRB 255974",
+      "name_legal": "Haier Deutschland GmbH",
+      "name_common": "Haier",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
       ],
       "jurisdiction": "DE",
       "supervisor": "BaFin / Unternehmensregister",
@@ -2798,6 +2893,158 @@
       "currency": "EUR",
       "is_active": true
     },
+    "INFI": {
+      "ticker": "INFI",
+      "isin": "DE0006231004",
+      "wkn": "",
+      "lei": "TSI2PJM6EPETEQ4X1U25",
+      "hrb_reg": "HRB 126492",
+      "name_legal": "Infineon Technologies AG",
+      "name_common": "Infineon Technologies",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "TECDAX",
+        "MDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "HHLA": {
+      "ticker": "HHLA",
+      "isin": "DE000A0S8488",
+      "wkn": "",
+      "lei": "52990003RXKZ9J9ERW70",
+      "hrb_reg": "HRB 1902",
+      "name_legal": "Hamburger Hafen und Logistik Aktiengesellschaft",
+      "name_common": "HHLA",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "QIAG": {
+      "ticker": "QIAG",
+      "isin": "NL0000240000",
+      "wkn": "",
+      "lei": "54930036WK3GMCN17Z57",
+      "hrb_reg": "HRB 45822",
+      "name_legal": "QIAGEN GMBH",
+      "name_common": "Qiagen",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "TECDAX",
+        "MDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "OVBH": {
+      "ticker": "OVBH",
+      "isin": "DE0006286560",
+      "wkn": "",
+      "lei": "391200YVRGI53NXMSV66",
+      "hrb_reg": "HRB 34649",
+      "name_legal": "OVB Holding AG",
+      "name_common": "OVB Holding",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "LUKO": {
+      "ticker": "LUKO",
+      "isin": "RU0009024277",
+      "wkn": "",
+      "lei": "549300LCJ1UJXHYBWI24",
+      "hrb_reg": "HRB 84870",
+      "name_legal": "LUKOIL Hamburg GmbH",
+      "name_common": "Lukoil",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "LUKO_2": {
+      "ticker": "LUKO_2",
+      "isin": "US6778621044",
+      "wkn": "",
+      "lei": "549300LCJ1UJXHYBWI24",
+      "hrb_reg": "HRB 84870",
+      "name_legal": "LUKOIL Hamburg GmbH",
+      "name_common": "Lukoil",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AIXT": {
+      "ticker": "AIXT",
+      "isin": "DE000A0WMPJ6",
+      "wkn": "",
+      "lei": "5299004UJ4D51M25LD67",
+      "hrb_reg": "HRB 16590",
+      "name_legal": "AIXTRON SE",
+      "name_common": "Aixtron",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "HELL": {
+      "ticker": "HELL",
+      "isin": "DE000A13SX22",
+      "wkn": "",
+      "lei": "529900PLX4ADJFWIY024",
+      "hrb_reg": "HRB 6857",
+      "name_legal": "HELLA GmbH & Co. KGaA",
+      "name_common": "Hella",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
     "MERK": {
       "ticker": "MERK",
       "isin": "DE0008148206",
@@ -2893,6 +3140,25 @@
       "currency": "EUR",
       "is_active": true
     },
+    "FRES": {
+      "ticker": "FRES",
+      "isin": "DE0005785604",
+      "wkn": "",
+      "lei": "XDFJ0CYCOO1FXRFTQS51",
+      "hrb_reg": "HRB 28239",
+      "name_legal": "Hochschulen Fresenius GmbH",
+      "name_common": "Fresenius",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
     "HANN": {
       "ticker": "HANN",
       "isin": "DE0008402215",
@@ -2931,33 +3197,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "KS": {
-      "ticker": "KS",
+    "DE_KS": {
+      "ticker": "DE_KS",
       "isin": "DE000KSAG888",
       "wkn": "",
       "lei": "529900YURAYD4IJX2J91",
       "hrb_reg": "HRB 2669",
       "name_legal": "K+S Aktiengesellschaft",
       "name_common": "K+S",
-      "segment": "PRIME_STANDARD",
-      "index_membership": [
-        "DAX40",
-        "MDAX",
-        "TECDAX"
-      ],
-      "jurisdiction": "DE",
-      "supervisor": "BaFin / Unternehmensregister",
-      "currency": "EUR",
-      "is_active": true
-    },
-    "TESL": {
-      "ticker": "TESL",
-      "isin": "US88160R1014",
-      "wkn": "",
-      "lei": "54930043XZGB27CTOV49",
-      "hrb_reg": "",
-      "name_legal": "Tesla, Inc.",
-      "name_common": "Tesla, Inc.",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -3045,14 +3292,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "WACK": {
-      "ticker": "WACK",
-      "isin": "DE000WCH8881",
+    "029G": {
+      "ticker": "029G",
+      "isin": "",
       "wkn": "",
-      "lei": "0NURKC5Q3CJYZPPK5046",
-      "hrb_reg": "HRB 159705",
-      "name_legal": "Wacker Chemie AG",
-      "name_common": "Wacker Chemie AG",
+      "lei": "894500HTWHCWL0NSS150",
+      "hrb_reg": "HRB 200678 B",
+      "name_legal": "029 Group SE",
+      "name_common": "029 Group SE",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -3064,14 +3311,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "ALLI": {
-      "ticker": "ALLI",
-      "isin": "DE0008404005",
+    "DE_11": {
+      "ticker": "DE_11",
+      "isin": "",
       "wkn": "",
-      "lei": "529900K9B0N5BT694847",
-      "hrb_reg": "HRB 164232",
-      "name_legal": "Allianz SE",
-      "name_common": "Allianz SE",
+      "lei": "5299003VKVDCUPSS5X23",
+      "hrb_reg": "HRB 28530",
+      "name_legal": "1&1 AG",
+      "name_common": "1&1",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -3083,14 +3330,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "VARE": {
-      "ticker": "VARE",
-      "isin": "DE0005479307",
+    "123F": {
+      "ticker": "123F",
+      "isin": "",
       "wkn": "",
-      "lei": "529900BIK4WRWS06MR52",
-      "hrb_reg": "",
-      "name_legal": "Varengold Bank",
-      "name_common": "Varengold Bank",
+      "lei": "894500K921GZTYDA4U88",
+      "hrb_reg": "HRB 119374",
+      "name_legal": "123fahrschule SE",
+      "name_common": "123fahrschule SE",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -3102,14 +3349,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "COMD": {
-      "ticker": "COMD",
-      "isin": "DE0005428007",
+    "2GEN": {
+      "ticker": "2GEN",
+      "isin": "",
       "wkn": "",
-      "lei": "529900RE48FNDGN95P03",
-      "hrb_reg": "HRB 4889 PI",
-      "name_legal": "comdirect bank Aktiengesellschaft",
-      "name_common": "comdirect bank Aktiengesellschaft",
+      "lei": "529900GC2NUJ6F0TSK26",
+      "hrb_reg": "HRB 11081",
+      "name_legal": "2G Energy AG",
+      "name_common": "2G Energy",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -3121,14 +3368,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "CTSE": {
-      "ticker": "CTSE",
-      "isin": "DE0005470306",
+    "2INV": {
+      "ticker": "2INV",
+      "isin": "",
       "wkn": "",
-      "lei": "529900FDHSN08UBJII80",
-      "hrb_reg": "HRB 212700",
-      "name_legal": "CTS Eventim AG & Co. KGaA",
-      "name_common": "CTS Eventim",
+      "lei": "391200H5BDEVHMOV3U10",
+      "hrb_reg": "HRB 335706",
+      "name_legal": "2invest AG",
+      "name_common": "2Invest AG",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -3140,14 +3387,52 @@
       "currency": "EUR",
       "is_active": true
     },
-    "KANA": {
-      "ticker": "KANA",
+    "3UHO": {
+      "ticker": "3UHO",
+      "isin": "",
+      "wkn": "",
+      "lei": "529900VVQ4470YJ67K26",
+      "hrb_reg": "HRB 4680",
+      "name_legal": "3U Holding AG",
+      "name_common": "3U Holding",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DE_4SC": {
+      "ticker": "DE_4SC",
+      "isin": "",
+      "wkn": "",
+      "lei": "391200QOKN7LGVP0RQ86",
+      "hrb_reg": "HRB 132917",
+      "name_legal": "4SC AG",
+      "name_common": "4SC",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "7CSO": {
+      "ticker": "7CSO",
       "isin": "",
       "wkn": "",
       "lei": "",
       "hrb_reg": "",
-      "name_legal": "Kanadevia Inova Schmack",
-      "name_common": "Kanadevia Inova Schmack",
+      "name_legal": "7C Solarparken",
+      "name_common": "7C Solarparken",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -3159,14 +3444,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "DERM": {
-      "ticker": "DERM",
-      "isin": "DE000A2GS5D8",
+    "AAAA": {
+      "ticker": "AAAA",
+      "isin": "",
       "wkn": "",
-      "lei": "5299009F0KNZINQQQK37",
-      "hrb_reg": "HRB 234575",
-      "name_legal": "Dermapharm Holding SE",
-      "name_common": "Dermapharm",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "a.a.a. aktiengesellschaft allgemeine anlageverwaltung",
+      "name_common": "a.a.a. aktiengesellschaft allgemeine anlageverwaltung",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -3178,14 +3463,2395 @@
       "currency": "EUR",
       "is_active": true
     },
-    "CEWE": {
-      "ticker": "CEWE",
-      "isin": "DE0005403901",
+    "AISA": {
+      "ticker": "AISA",
+      "isin": "",
       "wkn": "",
-      "lei": "529900IDFHN9MQ3WUD64",
-      "hrb_reg": "HRB 208214",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "a.i.s. AG",
+      "name_common": "a.i.s. AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ASCR": {
+      "ticker": "ASCR",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "A.S. Création Tapeten AG",
+      "name_common": "A.S. Création Tapeten AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AAPI": {
+      "ticker": "AAPI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "aap Implantate AG",
+      "name_common": "aap Implantate AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AARE": {
+      "ticker": "AARE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Aareal Bank AG",
+      "name_common": "Aareal Bank AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CLEA": {
+      "ticker": "CLEA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "clearvise AG",
+      "name_common": "clearvise AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ABOE": {
+      "ticker": "ABOE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "ABO Energy",
+      "name_common": "ABO Energy",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ACCE": {
+      "ticker": "ACCE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Accentro Real Estate AG",
+      "name_common": "Accentro Real Estate AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ACON": {
+      "ticker": "ACON",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Aconnic",
+      "name_common": "Aconnic",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ACTI": {
+      "ticker": "ACTI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Activa Resources AG",
+      "name_common": "Activa Resources AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ADCA": {
+      "ticker": "ADCA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "AdCapital AG",
+      "name_common": "AdCapital AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ADES": {
+      "ticker": "ADES",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Adesso SE",
+      "name_common": "Adesso SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ADIN": {
+      "ticker": "ADIN",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "adinotec",
+      "name_common": "adinotec",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ADLE": {
+      "ticker": "ADLE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Adler Group",
+      "name_common": "Adler Group",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ADTR_2": {
+      "ticker": "ADTR_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Adtran Networks",
+      "name_common": "Adtran Networks",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ADVA": {
+      "ticker": "ADVA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Advantag Aktiengesellschaft",
+      "name_common": "Advantag Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ADVI": {
+      "ticker": "ADVI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "advides AG",
+      "name_common": "advides AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AENE": {
+      "ticker": "AENE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "AE New Media Innovations SE",
+      "name_common": "AE New Media Innovations SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AEEA": {
+      "ticker": "AEEA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "AEE Ahaus-Enscheder AG",
+      "name_common": "AEE Ahaus-Enscheder AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AFKE": {
+      "ticker": "AFKE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "AFKEM AG für chemische Industrie",
+      "name_common": "AFKEM AG für chemische Industrie",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AGEN": {
+      "ticker": "AGEN",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Agennix AG",
+      "name_common": "Agennix AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AGIV": {
+      "ticker": "AGIV",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "AGIV Real Estate AG",
+      "name_common": "AGIV Real Estate AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AGRA": {
+      "ticker": "AGRA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "AGRARIUS AG",
+      "name_common": "AGRARIUS AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AGRO": {
+      "ticker": "AGRO",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "AGROB Immobilien AG",
+      "name_common": "AGROB Immobilien AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AHLE": {
+      "ticker": "AHLE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Ahlers AG",
+      "name_common": "Ahlers AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AIFI": {
+      "ticker": "AIFI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "aifinyo AG",
+      "name_common": "aifinyo AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AIRB_3": {
+      "ticker": "AIRB_3",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Air Berlin PLC & Co. Luftverkehrs KG",
+      "name_common": "Air Berlin PLC & Co. Luftverkehrs KG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX",
+        "SDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AIXT_2": {
+      "ticker": "AIXT_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "AIXTRON SE",
+      "name_common": "AIXTRON SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AKTI": {
+      "ticker": "AKTI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Aktienbrauerei Kaufbeuren",
+      "name_common": "Aktienbrauerei Kaufbeuren",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AKTI_2": {
+      "ticker": "AKTI_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Aktiengesellschaft Bad Neuenahr",
+      "name_common": "Aktiengesellschaft Bad Neuenahr",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ALBA": {
+      "ticker": "ALBA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "ALBA SE",
+      "name_common": "ALBA SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ALBI": {
+      "ticker": "ALBI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Albis Leasing",
+      "name_common": "Albis Leasing",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ALDE": {
+      "ticker": "ALDE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Aldea Assekuranzmakler",
+      "name_common": "Aldea Assekuranzmakler",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ALEI": {
+      "ticker": "ALEI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Aleia Holding",
+      "name_common": "Aleia Holding",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ALEX": {
+      "ticker": "ALEX",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Alexanderwerk",
+      "name_common": "Alexanderwerk",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ALLF": {
+      "ticker": "ALLF",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "All for One Group",
+      "name_common": "All for One Group",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ALLE": {
+      "ticker": "ALLE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Allerthal-Werke",
+      "name_common": "Allerthal-Werke",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ALLG": {
+      "ticker": "ALLG",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Allgäuer Brauhaus",
+      "name_common": "Allgäuer Brauhaus",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ALLG_2": {
+      "ticker": "ALLG_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Allgeier SE",
+      "name_common": "Allgeier SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ALST": {
+      "ticker": "ALST",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "alstria office",
+      "name_common": "alstria office",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ALTE": {
+      "ticker": "ALTE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Altech Advanced Materials",
+      "name_common": "Altech Advanced Materials",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ALZC": {
+      "ticker": "ALZC",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "AlzChem",
+      "name_common": "AlzChem",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AMAD": {
+      "ticker": "AMAD",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Amadeus FiRe",
+      "name_common": "Amadeus FiRe",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AMAL": {
+      "ticker": "AMAL",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "amalphi AG",
+      "name_common": "amalphi AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AMAT": {
+      "ticker": "AMAT",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "AmaTech AG",
+      "name_common": "AmaTech AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AMAT_2": {
+      "ticker": "AMAT_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Amatheon Agri Holding N.V. (deutsches Unternehmen mit niederländischer Rechtsform, notiert in Paris)",
+      "name_common": "Amatheon Agri Holding N.V. (deutsches Unternehmen mit niederländischer Rechtsform, notiert in Paris)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AOVO": {
+      "ticker": "AOVO",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "aovo Touristik AG",
+      "name_common": "aovo Touristik AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AQUA": {
+      "ticker": "AQUA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "AQUAMONDI",
+      "name_common": "AQUAMONDI",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ARNG": {
+      "ticker": "ARNG",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Arn. Georg Aktiengesellschaft",
+      "name_common": "Arn. Georg Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ARTE": {
+      "ticker": "ARTE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "artec technologies AG",
+      "name_common": "artec technologies AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ARTN": {
+      "ticker": "ARTN",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "artnet AG",
+      "name_common": "artnet AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ASKN": {
+      "ticker": "ASKN",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "asknet AG",
+      "name_common": "asknet AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ATOS": {
+      "ticker": "ATOS",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Atoss Software",
+      "name_common": "Atoss Software",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AUDE": {
+      "ticker": "AUDE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Auden",
+      "name_common": "Auden",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AUMA": {
+      "ticker": "AUMA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Aumann AG",
+      "name_common": "Aumann AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AURE": {
+      "ticker": "AURE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "AURELIUS Equity Opportunities SE & Co. KGaA",
+      "name_common": "AURELIUS Equity Opportunities SE & Co. KGaA",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AURE_2": {
+      "ticker": "AURE_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Aureum Realwert AG (ehemals HELIO Biotech AG)",
+      "name_common": "Aureum Realwert AG (ehemals HELIO Biotech AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AURU": {
+      "ticker": "AURU",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Aurubis",
+      "name_common": "Aurubis",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AUTA": {
+      "ticker": "AUTA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Autark Group Aktiengesellschaft (ehemals PS Vermögensverwaltung AG)",
+      "name_common": "Autark Group Aktiengesellschaft (ehemals PS Vermögensverwaltung AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AUTO_2": {
+      "ticker": "AUTO_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "autowerkstatt group N.V. (börsennotierte Holding in den Niederlanden)",
+      "name_common": "autowerkstatt group N.V. (börsennotierte Holding in den Niederlanden)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX",
+        "SDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AVES": {
+      "ticker": "AVES",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Aves One AG (ehemals PriCon Invest AG, zuvor Primea Invest AG, davor BHE Finanz AG, davor BHE Beteiligungs-Aktiengesellschaft)",
+      "name_common": "Aves One AG (ehemals PriCon Invest AG, zuvor Primea Invest AG, davor BHE Finanz AG, davor BHE Beteiligungs-Aktiengesellschaft)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "AVWI": {
+      "ticker": "AVWI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "AVW Immobilien AG",
+      "name_common": "AVW Immobilien AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BMPP": {
+      "ticker": "BMPP",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "B.M.P. Pharma Trading",
+      "name_common": "B.M.P. Pharma Trading",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BSBA": {
+      "ticker": "BSBA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "B+S Banksysteme",
+      "name_common": "B+S Banksysteme",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BRAI": {
+      "ticker": "BRAI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Brain Biotech",
+      "name_common": "Brain Biotech",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BAAD": {
+      "ticker": "BAAD",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Baader Bank",
+      "name_common": "Baader Bank",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BABC": {
+      "ticker": "BABC",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Babcock-BSH",
+      "name_common": "Babcock-BSH",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BACK": {
+      "ticker": "BACK",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Backbone Technology",
+      "name_common": "Backbone Technology",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BASF_2": {
+      "ticker": "BASF_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "BASF SE",
+      "name_common": "BASF SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BASI": {
+      "ticker": "BASI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Basic Resources AG (vormals Yalta AG)",
+      "name_common": "Basic Resources AG (vormals Yalta AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BASL": {
+      "ticker": "BASL",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Basler Aktiengesellschaft",
+      "name_common": "Basler Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BAST": {
+      "ticker": "BAST",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Bastei Lübbe AG",
+      "name_common": "Bastei Lübbe AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BAST_2": {
+      "ticker": "BAST_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Bastfaserkontor Aktiengesellschaft",
+      "name_common": "Bastfaserkontor Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BAUE": {
+      "ticker": "BAUE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Bauer AG",
+      "name_common": "Bauer AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BAUM": {
+      "ticker": "BAUM",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Baumot Group",
+      "name_common": "Baumot Group",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BAVA": {
+      "ticker": "BAVA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Bavaria Industries Group",
+      "name_common": "Bavaria Industries Group",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BAVA_2": {
+      "ticker": "BAVA_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Bavaria Venture Capital & Trade AG",
+      "name_common": "Bavaria Venture Capital & Trade AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BAYE_4": {
+      "ticker": "BAYE_4",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Bayer Aktiengesellschaft",
+      "name_common": "Bayer Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BAYE_5": {
+      "ticker": "BAYE_5",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Bayerische Motoren Werke AG (BMW)",
+      "name_common": "Bayerische Motoren Werke AG (BMW)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BAYW": {
+      "ticker": "BAYW",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "BayWa AG",
+      "name_common": "BayWa AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BBIB": {
+      "ticker": "BBIB",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "BBI Bürgerliches Brauhaus Immobilien Aktiengesellschaft (ehemals Bürgerliches Brauhaus Ingolstadt AG)",
+      "name_common": "BBI Bürgerliches Brauhaus Immobilien Aktiengesellschaft (ehemals Bürgerliches Brauhaus Ingolstadt AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BECH": {
+      "ticker": "BECH",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Bechtle Aktiengesellschaft",
+      "name_common": "Bechtle Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BEIE_2": {
+      "ticker": "BEIE_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Beiersdorf Aktiengesellschaft",
+      "name_common": "Beiersdorf Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BERC": {
+      "ticker": "BERC",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Berchtesgadener Bergbahn Aktiengesellschaft",
+      "name_common": "Berchtesgadener Bergbahn Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BERE": {
+      "ticker": "BERE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Berentzen-Gruppe Aktiengesellschaft",
+      "name_common": "Berentzen-Gruppe Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BERL": {
+      "ticker": "BERL",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Berliner Effektengesellschaft AG",
+      "name_common": "Berliner Effektengesellschaft AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX",
+        "SDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BERT": {
+      "ticker": "BERT",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Bertrandt Aktiengesellschaft",
+      "name_common": "Bertrandt Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BETA": {
+      "ticker": "BETA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "bet-at-home.com AG",
+      "name_common": "bet-at-home.com AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BETA_2": {
+      "ticker": "BETA_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Beta Systems Software AG",
+      "name_common": "Beta Systems Software AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BETE": {
+      "ticker": "BETE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Beteiligungen im Baltikum Aktiengesellschaft",
+      "name_common": "Beteiligungen im Baltikum Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BHBB": {
+      "ticker": "BHBB",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "BHB Brauholding Bayern-Mitte AG",
+      "name_common": "BHB Brauholding Bayern-Mitte AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BHST": {
+      "ticker": "BHST",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "BHS tabletop AG",
+      "name_common": "BHS tabletop AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BIJO": {
+      "ticker": "BIJO",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Bijou Brigitte modische Accessoires Aktiengesellschaft",
+      "name_common": "Bijou Brigitte modische Accessoires Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BILF": {
+      "ticker": "BILF",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Bilfinger SE",
+      "name_common": "Bilfinger SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BINE": {
+      "ticker": "BINE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Binect AG (ehemals MAX21 Management und Beteiligungen AG)",
+      "name_common": "Binect AG (ehemals MAX21 Management und Beteiligungen AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BIOG": {
+      "ticker": "BIOG",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Bio-Gate AG",
+      "name_common": "Bio-Gate AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BIOF": {
+      "ticker": "BIOF",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Biofrontera AG",
+      "name_common": "Biofrontera AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BION": {
+      "ticker": "BION",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "BioNTech SE (Nasdaq)",
+      "name_common": "BioNTech SE (Nasdaq)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BIOS": {
+      "ticker": "BIOS",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Biosilu Healthcare AG (ehemals AMP Biosimilars AG)",
+      "name_common": "Biosilu Healthcare AG (ehemals AMP Biosimilars AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BIOT": {
+      "ticker": "BIOT",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Biotest Aktiengesellschaft",
+      "name_common": "Biotest Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BITB": {
+      "ticker": "BITB",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "bit by bit Holding AG",
+      "name_common": "bit by bit Holding AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BITC": {
+      "ticker": "BITC",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Bitcoin Group SE",
+      "name_common": "Bitcoin Group SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BLUE": {
+      "ticker": "BLUE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Blue Cap AG",
+      "name_common": "Blue Cap AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BLUE_2": {
+      "ticker": "BLUE_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "bluepool AG",
+      "name_common": "bluepool AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BORU": {
+      "ticker": "BORU",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien",
+      "name_common": "Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BRAI_2": {
+      "ticker": "BRAI_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "BrainCloud AG",
+      "name_common": "BrainCloud AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BREM": {
+      "ticker": "BREM",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Bremer Lagerhaus-Gesellschaft – Aktiengesellschaft von 1877",
+      "name_common": "Bremer Lagerhaus-Gesellschaft – Aktiengesellschaft von 1877",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BRIL": {
+      "ticker": "BRIL",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Brilliant AG",
+      "name_common": "Brilliant AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BRDE": {
+      "ticker": "BRDE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Brüder Mannesmann",
+      "name_common": "Brüder Mannesmann",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "BRGE": {
+      "ticker": "BRGE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Bürgerliches Brauhaus Ravensburg-Lindau",
+      "name_common": "Bürgerliches Brauhaus Ravensburg-Lindau",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CAME": {
+      "ticker": "CAME",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Camera Work AG (ehemals Nordhäuser Tabakfabriken Aktiengesellschaft)",
+      "name_common": "Camera Work AG (ehemals Nordhäuser Tabakfabriken Aktiengesellschaft)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CANC": {
+      "ticker": "CANC",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "CANCOM SE",
+      "name_common": "CANCOM SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX",
+        "SDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CANT": {
+      "ticker": "CANT",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Cantourage Group SE",
+      "name_common": "Cantourage Group SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CAPI": {
+      "ticker": "CAPI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Capital One AG",
+      "name_common": "Capital One AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CAPS": {
+      "ticker": "CAPS",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Capsensixx AG",
+      "name_common": "Capsensixx AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CARL": {
+      "ticker": "CARL",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Carl Zeiss Meditec AG",
+      "name_common": "Carl Zeiss Meditec AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX",
+        "SDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CARP": {
+      "ticker": "CARP",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Carpevigo Holding AG",
+      "name_common": "Carpevigo Holding AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CASH": {
+      "ticker": "CASH",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "cash.life AG",
+      "name_common": "cash.life AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CASH_2": {
+      "ticker": "CASH_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Cash.Medien AG",
+      "name_common": "Cash.Medien AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CDDE": {
+      "ticker": "CDDE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "CD Deutsche Eigenheim AG (ehemals DESIGN Bau AG)",
+      "name_common": "CD Deutsche Eigenheim AG (ehemals DESIGN Bau AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CECO": {
+      "ticker": "CECO",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "CECONOMY AG",
+      "name_common": "CECONOMY AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CENI": {
+      "ticker": "CENI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "CENIT Aktiengesellschaft",
+      "name_common": "CENIT Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CENT": {
+      "ticker": "CENT",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Centrotec Sustainable AG",
+      "name_common": "Centrotec Sustainable AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CENT_2": {
+      "ticker": "CENT_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "centrotherm photovoltaics AG",
+      "name_common": "centrotherm photovoltaics AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CEOT": {
+      "ticker": "CEOT",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Ceotronics Aktiengesellschaft",
+      "name_common": "Ceotronics Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CEWE_2": {
+      "ticker": "CEWE_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
       "name_legal": "CEWE Stiftung & Co. KGaA",
-      "name_common": "CEWE",
+      "name_common": "CEWE Stiftung & Co. KGaA",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX",
+        "SDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CHAI": {
+      "ticker": "CHAI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Chainledger Systems AG (ehemals Globewater AG)",
+      "name_common": "Chainledger Systems AG (ehemals Globewater AG)",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -3197,14 +5863,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "RTLG": {
-      "ticker": "RTLG",
-      "isin": "LU0061462528",
+    "CHIN": {
+      "ticker": "CHIN",
+      "isin": "",
       "wkn": "",
-      "lei": "5493000C8J3C3SZYS040",
-      "hrb_reg": "HRB 35904",
-      "name_legal": "RTL GROUP VERMÖGENSVERWALTUNG GMBH",
-      "name_common": "RTL Group",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "China Specialty Glass AG",
+      "name_common": "China Specialty Glass AG",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -3216,14 +5882,34 @@
       "currency": "EUR",
       "is_active": true
     },
-    "DAIM": {
-      "ticker": "DAIM",
-      "isin": "DE000DTR0CK8",
+    "CINE": {
+      "ticker": "CINE",
+      "isin": "",
       "wkn": "",
-      "lei": "529900HWPVQ42PJZBV22",
-      "hrb_reg": "HRB 778600",
-      "name_legal": "Daimler Truck Holding AG",
-      "name_common": "Daimler Truck",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "CINEMEDIA AG (ehemals Berliner Synchron AG)",
+      "name_common": "CINEMEDIA AG (ehemals Berliner Synchron AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX",
+        "SDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CLER": {
+      "ticker": "CLER",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Clere (ehemals Balda)",
+      "name_common": "Clere (ehemals Balda)",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -3235,14 +5921,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "HAIE": {
-      "ticker": "HAIE",
-      "isin": "CNE1000031C1",
+    "CLIQ": {
+      "ticker": "CLIQ",
+      "isin": "",
       "wkn": "",
-      "lei": "529900AL2J8IU1ZOWL36",
-      "hrb_reg": "HRB 255974",
-      "name_legal": "Haier Deutschland GmbH",
-      "name_common": "Haier",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Cliq Digital AG (ehemals BOB MOBILE AG)",
+      "name_common": "Cliq Digital AG (ehemals BOB MOBILE AG)",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -3254,14 +5940,14 @@
       "currency": "EUR",
       "is_active": true
     },
-    "DELT": {
-      "ticker": "DELT",
-      "isin": "DE0005146807",
+    "CODO": {
+      "ticker": "CODO",
+      "isin": "",
       "wkn": "",
-      "lei": "529900F3EU2GVHVCLR26",
-      "hrb_reg": "HRB 58026",
-      "name_legal": "Delticom AG",
-      "name_common": "Delticom",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "co.don Aktiengesellschaft",
+      "name_common": "co.don Aktiengesellschaft",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
@@ -3273,14 +5959,2053 @@
       "currency": "EUR",
       "is_active": true
     },
-    "VONO": {
-      "ticker": "VONO",
-      "isin": "DE000A1ML7J1",
+    "COMM_2": {
+      "ticker": "COMM_2",
+      "isin": "",
       "wkn": "",
-      "lei": "5299005A2ZEP6AP7KM81",
-      "hrb_reg": "HRB 16879",
-      "name_legal": "Vonovia SE",
-      "name_common": "Vonovia",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Commerzbank Aktiengesellschaft",
+      "name_common": "Commerzbank Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "COMP_3": {
+      "ticker": "COMP_3",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "CompuGroup Medical SE",
+      "name_common": "CompuGroup Medical SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CONV": {
+      "ticker": "CONV",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Con Value AG",
+      "name_common": "Con Value AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CONS": {
+      "ticker": "CONS",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Consus Commercial Property AG",
+      "name_common": "Consus Commercial Property AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CONV_2": {
+      "ticker": "CONV_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Convertis AG (ehemals Energie-Effizienz Beteiligungs AG)",
+      "name_common": "Convertis AG (ehemals Energie-Effizienz Beteiligungs AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CORE": {
+      "ticker": "CORE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Coreo AG (ehemals Nanostart AG)",
+      "name_common": "Coreo AG (ehemals Nanostart AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "COVE_2": {
+      "ticker": "COVE_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Covestro AG",
+      "name_common": "Covestro AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CPUS": {
+      "ticker": "CPUS",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "CPU Softwarehouse AG",
+      "name_common": "CPU Softwarehouse AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CRCA": {
+      "ticker": "CRCA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "CR Capital Real Estate AG",
+      "name_common": "CR Capital Real Estate AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CROP": {
+      "ticker": "CROP",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "CropEnergies AG",
+      "name_common": "CropEnergies AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CTSE_2": {
+      "ticker": "CTSE_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "CTS Eventim AG & Co. KGaA",
+      "name_common": "CTS Eventim AG & Co. KGaA",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CURE": {
+      "ticker": "CURE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Curetis N.V. (deutsches Unternehmen mit niederländischer Rechtsform)",
+      "name_common": "Curetis N.V. (deutsches Unternehmen mit niederländischer Rechtsform)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CUST": {
+      "ticker": "CUST",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Custodia Holding",
+      "name_common": "Custodia Holding",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CYAN": {
+      "ticker": "CYAN",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Cyan AG",
+      "name_common": "Cyan AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CYBI": {
+      "ticker": "CYBI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Cybits Holding AG (ehemals Reality Capital Partners AG, zuvor SIBRA Beteiligungs AG)",
+      "name_common": "Cybits Holding AG (ehemals Reality Capital Partners AG, zuvor SIBRA Beteiligungs AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "CYTO": {
+      "ticker": "CYTO",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "CytoTools AG",
+      "name_common": "CytoTools AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DWHD": {
+      "ticker": "DWHD",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "D-W-H Deutsche Werte Holding AG (ehemals ES ! Energie Systeme AG, zuvor BEMA AG)",
+      "name_common": "D-W-H Deutsche Werte Holding AG (ehemals ES ! Energie Systeme AG, zuvor BEMA AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DAVI": {
+      "ticker": "DAVI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Da Vinci Luxury AG (ehemals Xerius AG)",
+      "name_common": "Da Vinci Luxury AG (ehemals Xerius AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DAHL": {
+      "ticker": "DAHL",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Dahlbusch Aktiengesellschaft",
+      "name_common": "Dahlbusch Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DAIM_2": {
+      "ticker": "DAIM_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Daimler AG (ehemals DaimlerChrysler AG)",
+      "name_common": "Daimler AG (ehemals DaimlerChrysler AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DALD": {
+      "ticker": "DALD",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Daldrup & Söhne Aktiengesellschaft",
+      "name_common": "Daldrup & Söhne Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DATA": {
+      "ticker": "DATA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DATA MODUL Aktiengesellschaft Produktion und Vertrieb von elektronischen Systemen",
+      "name_common": "DATA MODUL Aktiengesellschaft Produktion und Vertrieb von elektronischen Systemen",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DATA_2": {
+      "ticker": "DATA_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Datagroup SE",
+      "name_common": "Datagroup SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DATR": {
+      "ticker": "DATR",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DATRON AG",
+      "name_common": "DATRON AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DCID": {
+      "ticker": "DCID",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DCI Database for Commerce and Industry AG",
+      "name_common": "DCI Database for Commerce and Industry AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEAG": {
+      "ticker": "DEAG",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DEAG Deutsche Entertainment Aktiengesellschaft",
+      "name_common": "DEAG Deutsche Entertainment Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DECH": {
+      "ticker": "DECH",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Decheng Technology AG",
+      "name_common": "Decheng Technology AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEFA": {
+      "ticker": "DEFA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DEFAMA Deutsche Fachmarkt Aktiengesellschaft",
+      "name_common": "DEFAMA Deutsche Fachmarkt Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DELI_2": {
+      "ticker": "DELI_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Delignit AG",
+      "name_common": "Delignit AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DELI_3": {
+      "ticker": "DELI_3",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Delivery Hero AG",
+      "name_common": "Delivery Hero AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEMI": {
+      "ticker": "DEMI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DEMIRE Deutsche Mittelstand Real Estate",
+      "name_common": "DEMIRE Deutsche Mittelstand Real Estate",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DERA": {
+      "ticker": "DERA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "De Raj Group AG (notiert in Wien)",
+      "name_common": "De Raj Group AG (notiert in Wien)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DESI": {
+      "ticker": "DESI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Design Hotels",
+      "name_common": "Design Hotels",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUF": {
+      "ticker": "DEUF",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deufol",
+      "name_common": "Deufol",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_4": {
+      "ticker": "DEUT_4",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Balaton",
+      "name_common": "Deutsche Balaton",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_5": {
+      "ticker": "DEUT_5",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Beteiligungs AG",
+      "name_common": "Deutsche Beteiligungs AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX",
+        "SDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_6": {
+      "ticker": "DEUT_6",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Biotech Innovativ",
+      "name_common": "Deutsche Biotech Innovativ",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_7": {
+      "ticker": "DEUT_7",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Cannabis",
+      "name_common": "Deutsche Cannabis",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_8": {
+      "ticker": "DEUT_8",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Effecten- und Wechsel-Beteiligungsgesellschaft",
+      "name_common": "Deutsche Effecten- und Wechsel-Beteiligungsgesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_9": {
+      "ticker": "DEUT_9",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche EuroShop",
+      "name_common": "Deutsche EuroShop",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_10": {
+      "ticker": "DEUT_10",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Geothermische Immobilien AG",
+      "name_common": "Deutsche Geothermische Immobilien AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_11": {
+      "ticker": "DEUT_11",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Grundstücksauktionen",
+      "name_common": "Deutsche Grundstücksauktionen",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_12": {
+      "ticker": "DEUT_12",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Konsum",
+      "name_common": "Deutsche Konsum",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_13": {
+      "ticker": "DEUT_13",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Lufthansa",
+      "name_common": "Deutsche Lufthansa",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_14": {
+      "ticker": "DEUT_14",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Pfandbriefbank",
+      "name_common": "Deutsche Pfandbriefbank",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_15": {
+      "ticker": "DEUT_15",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Post AG",
+      "name_common": "Deutsche Post AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_16": {
+      "ticker": "DEUT_16",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Real Estate AG",
+      "name_common": "Deutsche Real Estate AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_17": {
+      "ticker": "DEUT_17",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Rohstoff AG",
+      "name_common": "Deutsche Rohstoff AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_18": {
+      "ticker": "DEUT_18",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Technologie Beteiligungen AG",
+      "name_common": "Deutsche Technologie Beteiligungen AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_19": {
+      "ticker": "DEUT_19",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Telekom AG",
+      "name_common": "Deutsche Telekom AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "TECDAX",
+        "MDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_20": {
+      "ticker": "DEUT_20",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Deutsche Wohnen SE",
+      "name_common": "Deutsche Wohnen SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DEUT_21": {
+      "ticker": "DEUT_21",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DEUTZ Aktiengesellschaft",
+      "name_common": "DEUTZ Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DFDE": {
+      "ticker": "DFDE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DF Deutsche Forfait Aktiengesellschaft",
+      "name_common": "DF Deutsche Forfait Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DFVD": {
+      "ticker": "DFVD",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DFV Deutsche Familienversicherung AG",
+      "name_common": "DFV Deutsche Familienversicherung AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DGGR": {
+      "ticker": "DGGR",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DG-Gruppe AG",
+      "name_common": "DG-Gruppe AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DGHD": {
+      "ticker": "DGHD",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DGH Deutsche Grundwert Holding AG (ehemals TUSTE AG)",
+      "name_common": "DGH Deutsche Grundwert Holding AG (ehemals TUSTE AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DICA": {
+      "ticker": "DICA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DIC Asset AG",
+      "name_common": "DIC Asset AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DIER": {
+      "ticker": "DIER",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Dierig Holding",
+      "name_common": "Dierig Holding",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DINK": {
+      "ticker": "DINK",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Dinkelacker Aktiengesellschaft",
+      "name_common": "Dinkelacker Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DISK": {
+      "ticker": "DISK",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Diskus Werke AG",
+      "name_common": "Diskus Werke AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DLBA": {
+      "ticker": "DLBA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DLB-Anlageservice Aktiengesellschaft",
+      "name_common": "DLB-Anlageservice Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DMGM": {
+      "ticker": "DMGM",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DMG Mori Aktiengesellschaft",
+      "name_common": "DMG Mori Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DNIB": {
+      "ticker": "DNIB",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DNI Beteiligungen AG",
+      "name_common": "DNI Beteiligungen AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DOCC": {
+      "ticker": "DOCC",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "DocCheck",
+      "name_common": "DocCheck",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DOUG": {
+      "ticker": "DOUG",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Douglas",
+      "name_common": "Douglas",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DRIN": {
+      "ticker": "DRIN",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Dr. Ing. h.c. F. Porsche Aktiengesellschaft",
+      "name_common": "Dr. Ing. h.c. F. Porsche Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DRGE": {
+      "ticker": "DRGE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Drägerwerk",
+      "name_common": "Drägerwerk",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "DRRA": {
+      "ticker": "DRRA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Dürr AG",
+      "name_common": "Dürr AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX",
+        "SDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EONA": {
+      "ticker": "EONA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "E.ON AG",
+      "name_common": "E.ON AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EASY": {
+      "ticker": "EASY",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "EASY SOFTWARE AG",
+      "name_common": "EASY SOFTWARE AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ECKE": {
+      "ticker": "ECKE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Eckert & Ziegler Strahlen- und Medizintechnik AG",
+      "name_common": "Eckert & Ziegler Strahlen- und Medizintechnik AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX",
+        "SDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ECOL": {
+      "ticker": "ECOL",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Ecolutions GmbH & Co. KGaA (notiert in Paris)",
+      "name_common": "Ecolutions GmbH & Co. KGaA (notiert in Paris)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ECOT": {
+      "ticker": "ECOT",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "ecotel communication ag",
+      "name_common": "ecotel communication ag",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ECOU": {
+      "ticker": "ECOU",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "EcoUnion AG (ehemals KnowOne AG)",
+      "name_common": "EcoUnion AG (ehemals KnowOne AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EDDI": {
+      "ticker": "EDDI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "edding Aktiengesellschaft",
+      "name_common": "edding Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EDEL": {
+      "ticker": "EDEL",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Edel SE (ehemals edel music AG)",
+      "name_common": "Edel SE (ehemals edel music AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EDGE": {
+      "ticker": "EDGE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "EdgeSearch AG",
+      "name_common": "EdgeSearch AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EFFE": {
+      "ticker": "EFFE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Effecten-Spiegel AG",
+      "name_common": "Effecten-Spiegel AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EIFE": {
+      "ticker": "EIFE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Eifelhöhen-Klinik Aktiengesellschaft",
+      "name_common": "Eifelhöhen-Klinik Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EINB": {
+      "ticker": "EINB",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Einbecker Brauhaus Aktiengesellschaft",
+      "name_common": "Einbecker Brauhaus Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX",
+        "SDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EINH": {
+      "ticker": "EINH",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Einhell Germany AG (ehemals Hans Einhell AG)",
+      "name_common": "Einhell Germany AG (ehemals Hans Einhell AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX",
+        "SDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EISE": {
+      "ticker": "EISE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Eisen- und Hüttenwerke AG",
+      "name_common": "Eisen- und Hüttenwerke AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EKOT": {
+      "ticker": "EKOT",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Ekotechnika AG",
+      "name_common": "Ekotechnika AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ELAN": {
+      "ticker": "ELAN",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Elanix Biotechnologies AG (ehemals Porta Systems AG)",
+      "name_common": "Elanix Biotechnologies AG (ehemals Porta Systems AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ELBS": {
+      "ticker": "ELBS",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Elbstein AG",
+      "name_common": "Elbstein AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ELEK": {
+      "ticker": "ELEK",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Elektrische Licht- und Kraftanlagen Aktiengesellschaft (ELIKRAFT)",
+      "name_common": "Elektrische Licht- und Kraftanlagen Aktiengesellschaft (ELIKRAFT)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ELEX": {
+      "ticker": "ELEX",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "elexxion AG",
+      "name_common": "elexxion AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ELMO": {
+      "ticker": "ELMO",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Elmos Semiconductor SE",
+      "name_common": "Elmos Semiconductor SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ELRI": {
+      "ticker": "ELRI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "ElringKlinger AG",
+      "name_common": "ElringKlinger AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ELUM": {
+      "ticker": "ELUM",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "elumeo SE",
+      "name_common": "elumeo SE",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ENBW_2": {
+      "ticker": "ENBW_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "EnBW Energie Baden-Württemberg AG",
+      "name_common": "EnBW Energie Baden-Württemberg AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ENCA": {
+      "ticker": "ENCA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Encavis AG (vormals Capital Stage AG)",
+      "name_common": "Encavis AG (vormals Capital Stage AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ENDO": {
+      "ticker": "ENDO",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "ENDOR Aktiengesellschaft",
+      "name_common": "ENDOR Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ENER": {
+      "ticker": "ENER",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Energiekontor AG",
+      "name_common": "Energiekontor AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX",
+        "SDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ENVI": {
+      "ticker": "ENVI",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Envitec Biogas AG",
+      "name_common": "Envitec Biogas AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EPIG": {
+      "ticker": "EPIG",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Epigenomics AG",
+      "name_common": "Epigenomics AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EQSG": {
+      "ticker": "EQSG",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "EQS Group AG",
+      "name_common": "EQS Group AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ERLE": {
+      "ticker": "ERLE",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Erlebnis Akademie AG",
+      "name_common": "Erlebnis Akademie AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "ERNS": {
+      "ticker": "ERNS",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Ernst Russ AG (ehemals HCI Capital AG)",
+      "name_common": "Ernst Russ AG (ehemals HCI Capital AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EURO": {
+      "ticker": "EURO",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "EUROKAI GmbH & Co. KGaA",
+      "name_common": "EUROKAI GmbH & Co. KGaA",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EURO_2": {
+      "ticker": "EURO_2",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "euromicron AG",
+      "name_common": "euromicron AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EUWA": {
+      "ticker": "EUWA",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "EUWAX Aktiengesellschaft",
+      "name_common": "EUWAX Aktiengesellschaft",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EVON": {
+      "ticker": "EVON",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Evonik Industries AG",
+      "name_common": "Evonik Industries AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EVOT": {
+      "ticker": "EVOT",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Evotec AG",
+      "name_common": "Evotec AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "EYEM": {
+      "ticker": "EYEM",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Eyemaxx Real Estate AG (ehemals BinTec Communications AG)",
+      "name_common": "Eyemaxx Real Estate AG (ehemals BinTec Communications AG)",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "FAIR": {
+      "ticker": "FAIR",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Fair Value REIT AG",
+      "name_common": "Fair Value REIT AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "FALK": {
+      "ticker": "FALK",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "Falkenstein Nebenwerte AG",
+      "name_common": "Falkenstein Nebenwerte AG",
+      "segment": "PRIME_STANDARD",
+      "index_membership": [
+        "DAX40",
+        "MDAX",
+        "TECDAX"
+      ],
+      "jurisdiction": "DE",
+      "supervisor": "BaFin / Unternehmensregister",
+      "currency": "EUR",
+      "is_active": true
+    },
+    "FDGR": {
+      "ticker": "FDGR",
+      "isin": "",
+      "wkn": "",
+      "lei": "",
+      "hrb_reg": "",
+      "name_legal": "FD Group AG (ehemals FinData Group AG, zuvor Omiris AG, davor H5 B5 Media AG)",
+      "name_common": "FD Group AG (ehemals FinData Group AG, zuvor Omiris AG, davor H5 B5 Media AG)",
       "segment": "PRIME_STANDARD",
       "index_membership": [
         "DAX40",
