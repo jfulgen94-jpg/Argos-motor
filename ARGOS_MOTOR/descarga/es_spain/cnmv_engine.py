@@ -496,6 +496,18 @@ class CNMVEngine:
         # Parsear HTML
         docs = _parse_cnmv_docs(resp.text, cif_clean, yr)
         
+        # Resolución dual de CIF: si no hay documentos con CIF limpio, reintentar con guión
+        if not docs and len(cif_clean) > 1:
+            cif_hyphen = f"{cif_clean[0]}-{cif_clean[1:]}"
+            url_hyphen = (
+                f"https://www.cnmv.es/portal/Consultas/EEFFAuditoria/EEFFAuditoria.aspx"
+                f"?nif={cif_hyphen}&tipo=1&ejercicio={yr}"
+            )
+            print(f"    [Dual CIF] Probando variante con guión para {ticker}: {cif_hyphen}")
+            resp_hyphen = _get_with_retry(self.session, url_hyphen)
+            if resp_hyphen:
+                docs = _parse_cnmv_docs(resp_hyphen.text, cif_hyphen, yr)
+        
         # Mapear los documentos al formato que espera download_filing
         for doc in docs:
             full_url = doc["url"]
