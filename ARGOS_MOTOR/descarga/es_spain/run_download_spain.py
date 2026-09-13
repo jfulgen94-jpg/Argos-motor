@@ -26,14 +26,23 @@ def main():
 
     args = parser.parse_args()
 
-    years_to_run = [2020]
+    years_to_run = [2020, 2021, 2022, 2023, 2024, 2025]
     if args.year:
         years_to_run = [args.year]
     elif args.years:
         years_to_run = args.years
 
-    # Set output directory
-    output_dir = args.output_dir if args.output_dir else "/workspace/project/Argos-motor/ARGOS_MOTOR/data/raw/ES_CNMV"
+    # Set output directory with robust multi-platform detection
+    if args.output_dir:
+        output_dir = args.output_dir
+    elif Path("D:/ARGOS_DATA/raw/ES_CNMV").parent.exists():
+        output_dir = "D:/ARGOS_DATA/raw/ES_CNMV"
+    elif Path("/opt/argos_data/raw/ES_CNMV").parent.exists():
+        output_dir = "/opt/argos_data/raw/ES_CNMV"
+    elif Path("/workspace/project/Argos-motor/ARGOS_MOTOR/data/raw/ES_CNMV").parent.exists():
+        output_dir = "/workspace/project/Argos-motor/ARGOS_MOTOR/data/raw/ES_CNMV"
+    else:
+        output_dir = "ARGOS_MOTOR/data/raw/ES_CNMV"
 
     print("=========================================================================")
     print("=== ORQUESTADOR DE DESCARGA CNMV / ESEF ESPAÑA (1.000 ARCHIVOS / PAÍS) ===")
