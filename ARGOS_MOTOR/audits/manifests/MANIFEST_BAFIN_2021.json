@@ -3,10 +3,10 @@
   "country": "DE",
   "supervisor": "BaFin",
   "oam": "Unternehmensregister / ESEF",
-  "generated_at_utc": "2026-09-13T09:19:19.861802+00:00",
+  "generated_at_utc": "2026-09-13T19:42:11.513918+00:00",
   "total_mapped": 1011,
-  "downloaded": 14,
-  "cache_hits": 21,
+  "downloaded": 0,
+  "cache_hits": 35,
   "failed": 0,
   "quarantined": 0,
   "manifest": [
@@ -203,7 +203,7 @@
       "ticker": "FORT",
       "year": 2021,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "aa4bc210c432374ee6889707515a99bdfbf042a171690f96cd7a4baaba4fd0b7",
       "size_bytes": 1968600,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900NG5C03XEKUA646_FORT\\FORT_2021_ESEF.zip"
@@ -212,7 +212,7 @@
       "ticker": "HORN",
       "year": 2021,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "6ef15c645a4fed9ef26b223c8513607cff28f5d18106d3344925181489ae93f8",
       "size_bytes": 1951592,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\5299008WW53GLXRORN29_HORN\\HORN_2021_ESEF.zip"
@@ -221,7 +221,7 @@
       "ticker": "HORN_2",
       "year": 2021,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "dbaf18699293474b461b9873cefd18f323ec79c12b7bfa061a013108359a7e88",
       "size_bytes": 7639839,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900EGQZ79V21LBL44_HORN_2\\HORN_2_2021_ESEF.zip"
@@ -230,7 +230,7 @@
       "ticker": "KROM",
       "year": 2021,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "b7d6bcb780ed09b14b839d6ade6fc6f43ffdd5cf8940446d9022418c0c1a43dd",
       "size_bytes": 1893566,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900L3GACMYY4MMX62_KROM\\KROM_2021_ESEF.zip"
@@ -239,7 +239,7 @@
       "ticker": "KWSS",
       "year": 2021,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "9c4d7639ca5c88bbc35e0ae88f3e06229617d6fa701bc4834b96dcec6c78027a",
       "size_bytes": 3288108,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_205722_KWSS\\KWSS_2021_ESEF.zip"
@@ -248,7 +248,7 @@
       "ticker": "VERB",
       "year": 2021,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "d8d94190f3f1a96d557e35032ad95aac7dbb95aa10c104cac83164f7cf723daa",
       "size_bytes": 1071388,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_33567_VERB\\VERB_2021_ESEF.zip"
@@ -257,7 +257,7 @@
       "ticker": "XFAB",
       "year": 2021,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "e91ea481b4deaba1154b854a0a115dad72ea146e080fef5ce9d0e86d9447bae0",
       "size_bytes": 11988917,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\0882_390_885_XFAB\\XFAB_2021_ESEF.zip"
@@ -266,7 +266,7 @@
       "ticker": "VERB_2",
       "year": 2021,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "d8d94190f3f1a96d557e35032ad95aac7dbb95aa10c104cac83164f7cf723daa",
       "size_bytes": 1071388,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900W51PINCFFALS96_VERB_2\\VERB_2_2021_ESEF.zip"
@@ -275,7 +275,7 @@
       "ticker": "HEID_4",
       "year": 2021,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "ec2c3c67dcf0d6a33b3cf5d0341c00ac69d8ff70980f6fd6f81a8f8a713c1931",
       "size_bytes": 8761208,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900ZM98OISTG16932_HEID_4\\HEID_4_2021_ESEF.zip"
@@ -284,7 +284,7 @@
       "ticker": "AURU_2",
       "year": 2021,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "ba85129e1c94a46d5ed1566a26d3e5aaf17de167e5355d56b3578220aedcf6af",
       "size_bytes": 2836261,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\5299005SHIN9ZK7GW242_AURU_2\\AURU_2_2021_ESEF.zip"
@@ -293,7 +293,7 @@
       "ticker": "VANT_2",
       "year": 2021,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "9525fb67233a3a49b3b1d8c6e95659b2d069156c7b4783d93a8c400941d216cf",
       "size_bytes": 28758652,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\HRB_92244_VANT_2\\VANT_2_2021_ESEF.zip"
@@ -302,7 +302,7 @@
       "ticker": "ABOU_2",
       "year": 2021,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "51b0b627f4a5977b6a8bca9f5fe64e7134de3571d861145a92c137e0d0cf8f11",
       "size_bytes": 5424945,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\894500A85A8VDRIGZ723_ABOU_2\\ABOU_2_2021_ESEF.zip"
@@ -311,7 +311,7 @@
       "ticker": "KWSS_2",
       "year": 2021,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "9c4d7639ca5c88bbc35e0ae88f3e06229617d6fa701bc4834b96dcec6c78027a",
       "size_bytes": 3288108,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\529900FR2K4P9L9XLV21_KWSS_2\\KWSS_2_2021_ESEF.zip"
@@ -320,7 +320,7 @@
       "ticker": "BSBA_2",
       "year": 2021,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "5a837bf2feac60b9059ac353da6eb82759b91386b4fb64dd8686c0f2e8882c3c",
       "size_bytes": 1786147,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2021\\5299007PZPBNXDDWHC04_BSBA_2\\BSBA_2_2021_ESEF.zip"

@@ -3,10 +3,10 @@
   "country": "DE",
   "supervisor": "BaFin",
   "oam": "Unternehmensregister / ESEF",
-  "generated_at_utc": "2026-09-13T09:22:53.946047+00:00",
+  "generated_at_utc": "2026-09-13T19:42:11.533631+00:00",
   "total_mapped": 1011,
-  "downloaded": 3,
-  "cache_hits": 0,
+  "downloaded": 0,
+  "cache_hits": 3,
   "failed": 0,
   "quarantined": 0,
   "manifest": [
@@ -14,7 +14,7 @@
       "ticker": "TUIG",
       "year": 2022,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "03333accf194cab83f9468cd39c1504702035be0414d4171fdce2691817028f3",
       "size_bytes": 9774523,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2022\\HRB_6580_TUIG\\TUIG_2022_ESEF.zip"
@@ -23,7 +23,7 @@
       "ticker": "TUIG_2",
       "year": 2022,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "03333accf194cab83f9468cd39c1504702035be0414d4171fdce2691817028f3",
       "size_bytes": 9774523,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2022\\HRB_6580_TUIG_2\\TUIG_2_2022_ESEF.zip"
@@ -32,7 +32,7 @@
       "ticker": "TUIA",
       "year": 2022,
       "doc_type": "ESEF_PACKAGE",
-      "status": "DOWNLOADED",
+      "status": "CACHE_HIT",
       "sha256": "03333accf194cab83f9468cd39c1504702035be0414d4171fdce2691817028f3",
       "size_bytes": 9774523,
       "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2022\\HRB_6580_TUIA\\TUIA_2022_ESEF.zip"
