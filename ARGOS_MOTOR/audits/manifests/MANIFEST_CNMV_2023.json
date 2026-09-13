@@ -1,8 +1,8 @@
 {
   "year": 2023,
   "total_mapped": 1136,
-  "downloaded": 174,
-  "cache_hits": 962,
+  "downloaded": 12,
+  "cache_hits": 1124,
   "failed": 0,
   "quarantined": 0,
   "manifest": [
@@ -67,7 +67,7 @@
       "year": 2023,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/9598005H67MP8U20RW81/2023-03-31/ESEF/ES/0/9598005H67MP8U20RW81-2023-03-31.zip",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "4acda9b6cbdfbafdde782a2d54248ff5374783b5550d355bbddd9a7b52829dc3",
       "size_bytes": 29211301,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A87895108_AEDAS\\AEDAS_2023_ESEF.zip"
@@ -89,7 +89,7 @@
       "year": 2023,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/95980020140005204809/2023-12-31/ESEF/ES/0/95980020140005204809-2023-12-31-es.zip",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "ac3f3115e87b14e118c228e8a7e6539725011707719fcadff57ba36703a6ee97",
       "size_bytes": 30660628,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\ESESEF_LEI_95980020\\LEI_95980020_2023_ESEF.zip"
@@ -144,10 +144,10 @@
       "year": 2023,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/959800L8KD863DP30X04/2023-12-31/ESEF/ES/0/959800L8KD863DP30X04-20231231-en.zip",
-      "status": "CACHE_HIT",
+      "status": "DOWNLOADED_AND_SEALED",
       "sha256": "d736ece0987eb7f37e3ed46d1ad1ecf099277b65d70014e3f346609a6f8a2c7c",
       "size_bytes": 25504695,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A86927311_MRL\\MRL_2023_ESEF.zip"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\1000292361664_MERL\\MERL_2023_ESEF.zip"
     },
     {
       "ticker": "FAE",
@@ -232,7 +232,7 @@
       "year": 2023,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/959800RGBUGJA3UVZZ88/2023-12-31/ESEF/ES/0/959800RGBUGJA3UVZZ88-2023-12-31-es.zip",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "7d68d94f764665daadf3deca79087e74f35c1a731cf5f7d7d1b486f16788207d",
       "size_bytes": 9357696,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\ESESEF_LEI_959800RG\\LEI_959800RG_2023_ESEF.zip"
@@ -287,7 +287,7 @@
       "year": 2023,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/549300EQ15OJK3S3LL42/2023-12-31/ESEF/ES/0/549300EQ15OJK3S3LL42-2023-12-31.zip",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "6a46dd8339379e00a11281bc8d12e56ce8348f17b4752ac4a51d1c6a100e9b75",
       "size_bytes": 14586211,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\ESESEF_LEI_549300EQ\\LEI_549300EQ_2023_ESEF.zip"
@@ -364,7 +364,7 @@
       "year": 2023,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/95980020140005684765/2023-12-31/ESEF/ES/0/95980020140005684765-20231231-es.zip",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a986206f51eeb5cc7d842875aa60a84b6b3526b691530224a22ad573f279ae2a",
       "size_bytes": 43706861,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A31065500_VIS\\VIS_2023_ESEF.zip"
@@ -672,10 +672,10 @@
       "year": 2023,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/959800K5R280DP2B5694/2023-12-31/ESEF/ES/0/959800K5R280DP2B5694-2023-12-31-es.zip",
-      "status": "CACHE_HIT",
+      "status": "DOWNLOADED_AND_SEALED",
       "sha256": "5f73fd15acbf5cd166faebc4a9567829513bc9a24874622278895707044d54f4",
       "size_bytes": 12468908,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A88151543_ARM\\ARM_2023_ESEF.zip"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\1000301513129_ARIM2\\ARIM2_2023_ESEF.zip"
     },
     {
       "ticker": "CPL",
@@ -705,10 +705,10 @@
       "year": 2023,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/9598002PHMH00MHN3741/2023-12-31/ESEF/ES/0/9598002PHMH00MHN3741-20231231-es.zip",
-      "status": "CACHE_HIT",
+      "status": "DOWNLOADED_AND_SEALED",
       "sha256": "c7d1bd7def45d5703c8395f9e332440fa13f359366a1ba17ebf982923b226181",
       "size_bytes": 8566045,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A88448097_YHLR\\YHLR_2023_ESEF.zip"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\1000291989990_HELI\\HELI_2023_ESEF.zip"
     },
     {
       "ticker": "LEI_95980079",
@@ -881,7 +881,7 @@
       "year": 2023,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/959800HHEE9W4TZA8627/2023-12-31/ESEF/ES/0/959800HHEE9W4TZA8627-2023-12-31-es.zip",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "0a041db72279b01bcfe6626c3839996b264677f175d6bc88365a2140e49ba5a2",
       "size_bytes": 15355501,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85150961_ATRS\\ATRS_2023_ESEF.zip"
@@ -903,7 +903,7 @@
       "year": 2023,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/213800M9XCA6NR98E873/2023-12-31/ESEF/ES/0/213800M9XCA6NR98E873-2023-12-31.zip",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "c44c7a475b90cac24eb3cfa03cc42f44e9c98f08e635289e13ad4a1900b89a84",
       "size_bytes": 84004722,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85150961_APPS\\APPS_2023_ESEF.zip"
@@ -1046,7 +1046,7 @@
       "year": 2023,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/95980020140005178328/2023-12-31/ESEF/ES/0/95980020140005178328-2023-12-31-es.zip",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "481cca1420f6834af59ca3907841f688f874897d0e9ecf02afbeff0ceb1b078d",
       "size_bytes": 29537915,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28037224_FCC\\FCC_2023_ESEF.zip"
@@ -1079,10 +1079,10 @@
       "year": 2023,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/95980020140005007414/2023-12-31/ESEF/ES/0/95980020140005007414-2023-12-31-es.zip",
-      "status": "CACHE_HIT",
-      "sha256": "ac3f3115e87b14e118c228e8a7e6539725011707719fcadff57ba36703a6ee97",
-      "size_bytes": 30660628,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\ESESEF_LEI_95980020\\LEI_95980020_2023_ESEF.zip"
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "13feccb20284fba33290ebb16c33ea47a68e32dff2d413dd138e83cff58ebca4",
+      "size_bytes": 20127147,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\1000299697291_COLO\\COLO_2023_ESEF.zip"
     },
     {
       "ticker": "LEI_95980020",
@@ -1387,7 +1387,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=p6eURxfQoWb66xtK9CxO2EvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "623f409a12f6b0d65794b9a0f6d1960ac16bc1a1618f82d6286a8a2e4ab328ec",
       "size_bytes": 28760170,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A39000013_SAN\\SAN_2023_ANUAL.pdf"
@@ -1420,7 +1420,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=V8tei4KT%2bNA1U1pbra2xY0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "202ca1f9be9146f0f0911f01b47ba465ab9e69981702afb2b13dd8b58f8867de",
       "size_bytes": 31303097,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A48265169_BBVA\\BBVA_2023_ANUAL.pdf"
@@ -1453,7 +1453,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A48010615_IBE\\IBE_2023_ANUAL.pdf"
@@ -1519,7 +1519,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A15075062_ITX\\ITX_2023_ANUAL.pdf"
@@ -1585,7 +1585,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=WvPYRAdHvY295UqdPHTEBUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "30f63a211a54f880fd7c17191ff1b3b2bd25ecc55aa96cdc0514db86fe8b6805",
       "size_bytes": 14708292,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28015865_TEF\\TEF_2023_ANUAL.pdf"
@@ -1618,7 +1618,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=Jw9F%2fZrZD6siND9Vv2hnBEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "94164098f70dd7474af6379f45d4f36b0ddb840357a5d0ae9d4dfe6d46213ef8",
       "size_bytes": 7958333,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A78374725_REP\\REP_2023_ANUAL.pdf"
@@ -1651,7 +1651,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=tyi%2bz7V%2fv6lsYCSeOy07fUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "3caef09c5cca4e5c8ff085cdb6a531afc63b1da42a2c2985b33ca6dc1088b0ee",
       "size_bytes": 61825001,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08663619_CABK\\CABK_2023_ANUAL.pdf"
@@ -1687,7 +1687,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A84236934_OPD\\OPD_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A84236934_AMS\\AMS_2023_ANUAL.pdf"
     },
     {
       "ticker": "AMS",
@@ -1698,7 +1698,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A84236934_OPD\\OPD_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A84236934_AMS\\AMS_2023_ANUAL.pdf"
     },
     {
       "ticker": "AMS",
@@ -1709,7 +1709,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A84236934_OPD\\OPD_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A84236934_AMS\\AMS_2023_ANUAL.pdf"
     },
     {
       "ticker": "AMS",
@@ -1720,7 +1720,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A84236934_OPD\\OPD_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A84236934_AMS\\AMS_2023_ANUAL.pdf"
     },
     {
       "ticker": "AMS",
@@ -1731,7 +1731,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A84236934_OPD\\OPD_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A84236934_AMS\\AMS_2023_ANUAL.pdf"
     },
     {
       "ticker": "AMS",
@@ -1742,7 +1742,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A84236934_OPD\\OPD_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A84236934_AMS\\AMS_2023_ANUAL.pdf"
     },
     {
       "ticker": "CLNX",
@@ -1750,7 +1750,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=%2bAD4dT7iBs4TC0sC5jzIFkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "cdb6e330717c46fb88d8d61eea9b525a450df1a10754fd1057cad24d1644737b",
       "size_bytes": 16355908,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A64907306_CLNX\\CLNX_2023_ANUAL.pdf"
@@ -1783,7 +1783,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28004471_FER\\FER_2023_ANUAL.pdf"
@@ -1849,7 +1849,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A58297783_GRF\\GRF_2023_ANUAL.pdf"
@@ -1915,7 +1915,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=Neq1wDqh463P2i0O8QQ10kvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "0ebead5f6a38009ecbd74c446f4f57719936b764cc0bd4050d0b67822aa410a2",
       "size_bytes": 11617652,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A78304516_MEL\\MEL_2023_ANUAL.pdf"
@@ -1948,7 +1948,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28004885_ACS\\ACS_2023_ANUAL.pdf"
@@ -2014,7 +2014,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=fFGOQjamc6nXVcjkWMyRtUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "6e1b4c0a29c9c4cbddb10c1edaa9fd34dfd59c3670c7f4a2cfac1445129afca9",
       "size_bytes": 24119828,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85845535_IAG\\IAG_2023_ANUAL.pdf"
@@ -2047,7 +2047,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=27ILGkEjWU%2fkKTPnkBWs6EvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "784c6bfb01dafbe279ad0d7b8ec099a9af45283c5329851780a297316b0c3d4d",
       "size_bytes": 5930280,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08055741_MAP\\MAP_2023_ANUAL.pdf"
@@ -2080,7 +2080,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=IDSf%2bvF6nnOK1lHCEeJ6pUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "ca27b3e06ab47725cb6cf942c6493729cf1a9275d9731998ba9de490992ecc7a",
       "size_bytes": 9986433,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08015497_NTGY\\NTGY_2023_ANUAL.pdf"
@@ -2113,7 +2113,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28294726_ENG\\ENG_2023_ANUAL.pdf"
@@ -2179,7 +2179,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28023430_ELE\\ELE_2023_ANUAL.pdf"
@@ -2245,7 +2245,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A78003662_RED\\RED_2023_ANUAL.pdf"
@@ -2311,7 +2311,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=y8BmzeiazxmtkZHbtVuoAkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "2bb8da7ffd9dc4dad06112e4f3d40ce51e69972d3e756ecc7f38828d3f665e8c",
       "size_bytes": 17665118,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28157360_BKT\\BKT_2023_ANUAL.pdf"
@@ -2344,7 +2344,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A93139096_UNI\\UNI_2023_ANUAL.pdf"
@@ -2410,7 +2410,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A82569963_SOL\\SOL_2023_ANUAL.pdf"
@@ -2476,7 +2476,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28120616_PHM\\PHM_2023_ANUAL.pdf"
@@ -2542,7 +2542,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28250777_ACX\\ACX_2023_ANUAL.pdf"
@@ -2611,7 +2611,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "0cfe92b2854eb2ab658f02d230aa376c8d9e31b025d5fc1be2b640774bd42bd7",
       "size_bytes": 24264457,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08000143_ECR\\ECR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08000143_SAB\\SAB_2023_ANUAL.pdf"
     },
     {
       "ticker": "SAB",
@@ -2622,7 +2622,7 @@
       "status": "CACHE_HIT",
       "sha256": "0cfe92b2854eb2ab658f02d230aa376c8d9e31b025d5fc1be2b640774bd42bd7",
       "size_bytes": 24264457,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08000143_ECR\\ECR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08000143_SAB\\SAB_2023_ANUAL.pdf"
     },
     {
       "ticker": "SAB",
@@ -2633,7 +2633,7 @@
       "status": "CACHE_HIT",
       "sha256": "0cfe92b2854eb2ab658f02d230aa376c8d9e31b025d5fc1be2b640774bd42bd7",
       "size_bytes": 24264457,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08000143_ECR\\ECR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08000143_SAB\\SAB_2023_ANUAL.pdf"
     },
     {
       "ticker": "ROVI",
@@ -2641,7 +2641,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28249761_ROVI\\ROVI_2023_ANUAL.pdf"
@@ -2707,7 +2707,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28013811_SCYR\\SCYR_2023_ANUAL.pdf"
@@ -2773,7 +2773,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A86928603_LOG\\LOG_2023_ANUAL.pdf"
@@ -2839,7 +2839,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28599033_IDR\\IDR_2023_ANUAL.pdf"
@@ -2905,7 +2905,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=D9geziYOj9JWlDgB%2bKs8uEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "8acc00bc95cd876c781a9fbd2cec1e011af119c12bbd4933c0c5c2732b1577be",
       "size_bytes": 5887456,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08001851_ANA\\ANA_2023_ANUAL.pdf"
@@ -2938,7 +2938,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85474773_ANE\\ANE_2023_ANUAL.pdf"
@@ -3004,7 +3004,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08158289_PUIG\\PUIG_2023_ANUAL.pdf"
@@ -3070,7 +3070,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=xVrFGOvO8xvRL9Wy31VAckvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "8e4d929610592297a555ecb67ac0f7cd3c8a0151f5a26932cd8bc033a663dcb6",
       "size_bytes": 32667284,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A86212420_AENA\\AENA_2023_ANUAL.pdf"
@@ -3103,7 +3103,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08249963_FDR\\FDR_2023_ANUAL.pdf"
@@ -3169,7 +3169,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A81862492_ALNT\\ALNT_2023_ANUAL.pdf"
@@ -3235,7 +3235,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08008641_ALM\\ALM_2023_ANUAL.pdf"
@@ -3301,7 +3301,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28005387_AMP\\AMP_2023_ANUAL.pdf"
@@ -3367,7 +3367,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\W0022359J_EAT\\EAT_2023_ANUAL.pdf"
@@ -3433,7 +3433,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\N0030000A_APAM\\APAM_2023_ANUAL.pdf"
@@ -3499,7 +3499,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85150961_TLGO\\TLGO_2023_ANUAL.pdf"
@@ -3565,7 +3565,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A78907359_A3M\\A3M_2023_ANUAL.pdf"
@@ -3697,7 +3697,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=LCtIYV9ZvnIuuZIw8cGjJkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "44d0b6527029e0aa61be988b364cfd932fe79d325e9fefe7d17ec895ebd9c5ea",
       "size_bytes": 9864177,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A62338827_ADX\\ADX_2023_ANUAL.pdf"
@@ -3730,7 +3730,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28001600_AYCO\\AYCO_2023_ANUAL.pdf"
@@ -3796,7 +3796,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A31065527_AZK\\AZK_2023_ANUAL.pdf"
@@ -3862,7 +3862,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A14010342_BKIA\\BKIA_2023_ANUAL.pdf"
@@ -3928,7 +3928,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A80415391_BAV\\BAV_2023_ANUAL.pdf"
@@ -3997,7 +3997,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "cac4c89e1f9250df2441e51abf1813912071fec19a77598e00e8e4bc5d134659",
       "size_bytes": 39166962,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A20001020_IBG\\IBG_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A20001020_CAF\\CAF_2023_ANUAL.pdf"
     },
     {
       "ticker": "CAF",
@@ -4008,7 +4008,7 @@
       "status": "CACHE_HIT",
       "sha256": "cac4c89e1f9250df2441e51abf1813912071fec19a77598e00e8e4bc5d134659",
       "size_bytes": 39166962,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A20001020_IBG\\IBG_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A20001020_CAF\\CAF_2023_ANUAL.pdf"
     },
     {
       "ticker": "CAF",
@@ -4019,7 +4019,7 @@
       "status": "CACHE_HIT",
       "sha256": "cac4c89e1f9250df2441e51abf1813912071fec19a77598e00e8e4bc5d134659",
       "size_bytes": 39166962,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A20001020_IBG\\IBG_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A20001020_CAF\\CAF_2023_ANUAL.pdf"
     },
     {
       "ticker": "CIE",
@@ -4027,7 +4027,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A48231567_CIE\\CIE_2023_ANUAL.pdf"
@@ -4093,7 +4093,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08149866_DESA\\DESA_2023_ANUAL.pdf"
@@ -4159,7 +4159,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=zMh%2bBleTic%2fgW4u2hbfCnEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "814705eb138990e985de8d981ce089fadeca66d16a9a7fb3aa905b1db35eb809",
       "size_bytes": 10209658,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28164754_DIA\\DIA_2023_ANUAL.pdf"
@@ -4192,7 +4192,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A95044450_DOM\\DOM_2023_ANUAL.pdf"
@@ -4258,7 +4258,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=GoDiCrQWq1CQLgxcLxj940vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "8d0f8057e21d21f64d0165ddef30254817d8655b1409fb904715182b6a29f804",
       "size_bytes": 19692277,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A47412333_EBRO\\EBRO_2023_ANUAL.pdf"
@@ -4291,17 +4291,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A15024474_ECO\\ECO_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "ECO",
-      "cif": "A15024474",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4312,6 +4301,17 @@
       "cif": "A15024474",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A15024474_ECO\\ECO_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "ECO",
+      "cif": "A15024474",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4357,17 +4357,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A75000001_EDPR\\EDPR_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "EDPR",
-      "cif": "A75000001",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4378,6 +4367,17 @@
       "cif": "A75000001",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A75000001_EDPR\\EDPR_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "EDPR",
+      "cif": "A75000001",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4423,17 +4423,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\W0040000A_EDR\\EDR_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "EDR",
-      "cif": "W0040000A",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4444,6 +4433,17 @@
       "cif": "W0040000A",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\W0040000A_EDR\\EDR_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "EDR",
+      "cif": "W0040000A",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4489,17 +4489,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28212264_ENC\\ENC_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "ENC",
-      "cif": "A28212264",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4510,6 +4499,17 @@
       "cif": "A28212264",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28212264_ENC\\ENC_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "ENC",
+      "cif": "A28212264",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4555,17 +4555,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08000671_ERC\\ERC_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "ERC",
-      "cif": "A08000671",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4576,6 +4565,17 @@
       "cif": "A08000671",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08000671_ERC\\ERC_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "ERC",
+      "cif": "A08000671",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4621,17 +4621,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A48004139_FAE\\FAE_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "FAE",
-      "cif": "A48004139",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4642,6 +4631,17 @@
       "cif": "A48004139",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A48004139_FAE\\FAE_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "FAE",
+      "cif": "A48004139",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4687,17 +4687,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28037224_FCC\\FCC_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "FCC",
-      "cif": "A28037224",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4708,6 +4697,17 @@
       "cif": "A28037224",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28037224_FCC\\FCC_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "FCC",
+      "cif": "A28037224",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4753,17 +4753,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A33519802_IZER\\IZER_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "GAM",
-      "cif": "A33519802",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4774,6 +4763,17 @@
       "cif": "A33519802",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A33519802_IZER\\IZER_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "GAM",
+      "cif": "A33519802",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4819,17 +4819,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A48227656_GEST\\GEST_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "GEST",
-      "cif": "A48227656",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4840,6 +4829,17 @@
       "cif": "A48227656",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A48227656_GEST\\GEST_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "GEST",
+      "cif": "A48227656",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4885,17 +4885,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08168270_GCO\\GCO_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "GCO",
-      "cif": "A08168270",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4906,6 +4895,17 @@
       "cif": "A08168270",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08168270_GCO\\GCO_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "GCO",
+      "cif": "A08168270",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -5017,17 +5017,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A36046993_SANJ\\SANJ_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "SANJ",
-      "cif": "A36046993",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -5038,6 +5027,17 @@
       "cif": "A36046993",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A36046993_SANJ\\SANJ_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "SANJ",
+      "cif": "A36046993",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -5083,17 +5083,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28014868_EZE\\EZE_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "EZE",
-      "cif": "A28014868",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -5104,6 +5093,17 @@
       "cif": "A28014868",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28014868_EZE\\EZE_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "EZE",
+      "cif": "A28014868",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -5149,17 +5149,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A20037131_IBP\\IBP_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "IBP",
-      "cif": "A20037131",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -5170,6 +5159,17 @@
       "cif": "A20037131",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A20037131_IBP\\IBP_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "IBP",
+      "cif": "A20037131",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -5281,17 +5281,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A80875416_LINEA\\LINEA_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "LINEA",
-      "cif": "A80875416",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -5302,6 +5291,17 @@
       "cif": "A80875416",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A80875416_LINEA\\LINEA_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "LINEA",
+      "cif": "A80875416",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -5347,17 +5347,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A47007620_LGT\\LGT_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "LGT",
-      "cif": "A47007620",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -5368,6 +5357,17 @@
       "cif": "A47007620",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A47007620_LGT\\LGT_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "LGT",
+      "cif": "A47007620",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -5413,17 +5413,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A87471280_MVC\\MVC_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "MVC",
-      "cif": "A87471280",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -5434,6 +5423,17 @@
       "cif": "A87471280",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A87471280_MVC\\MVC_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "MVC",
+      "cif": "A87471280",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -5479,17 +5479,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28029700_NHH\\NHH_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "NHH",
-      "cif": "A28029700",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -5500,6 +5489,17 @@
       "cif": "A28029700",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28029700_NHH\\NHH_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "NHH",
+      "cif": "A28029700",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -5545,7 +5545,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08008401_MCM\\MCM_2023_ANUAL.pdf"
@@ -5611,7 +5611,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A80126584_NTH\\NTH_2023_ANUAL.pdf"
@@ -5677,7 +5677,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A95777174_NEIN\\NEIN_2023_ANUAL.pdf"
@@ -5743,7 +5743,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A09000570_NEA\\NEA_2023_ANUAL.pdf"
@@ -5809,7 +5809,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08018319_NEXT\\NEXT_2023_ANUAL.pdf"
@@ -5878,7 +5878,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28014561_LDA\\LDA_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28014561_NYS\\NYS_2023_ANUAL.pdf"
     },
     {
       "ticker": "NYS",
@@ -5889,7 +5889,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28014561_LDA\\LDA_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28014561_NYS\\NYS_2023_ANUAL.pdf"
     },
     {
       "ticker": "NYS",
@@ -5900,7 +5900,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28014561_LDA\\LDA_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28014561_NYS\\NYS_2023_ANUAL.pdf"
     },
     {
       "ticker": "NYS",
@@ -5911,7 +5911,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28014561_LDA\\LDA_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28014561_NYS\\NYS_2023_ANUAL.pdf"
     },
     {
       "ticker": "NYS",
@@ -5922,7 +5922,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28014561_LDA\\LDA_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28014561_NYS\\NYS_2023_ANUAL.pdf"
     },
     {
       "ticker": "NYS",
@@ -5933,7 +5933,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28014561_LDA\\LDA_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28014561_NYS\\NYS_2023_ANUAL.pdf"
     },
     {
       "ticker": "OHLA",
@@ -5941,7 +5941,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A48010573_OHLA\\OHLA_2023_ANUAL.pdf"
@@ -6007,7 +6007,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A84462100_OPDE\\OPDE_2023_ANUAL.pdf"
@@ -6073,7 +6073,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A62281480_ORYZ\\ORYZ_2023_ANUAL.pdf"
@@ -6139,7 +6139,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28017366_PRM\\PRM_2023_ANUAL.pdf"
@@ -6205,7 +6205,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=W0qiuyT4DdOnbOE6FoD5dEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "733836bd2b6869b0cba19b3572668a7e4af5a17cc2f9f38484959e441729a248",
       "size_bytes": 6109844,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28297059_PRS\\PRS_2023_ANUAL.pdf"
@@ -6238,17 +6238,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28424083_PSG\\PSG_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "PSG",
-      "cif": "A28424083",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6259,6 +6248,17 @@
       "cif": "A28424083",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28424083_PSG\\PSG_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "PSG",
+      "cif": "A28424083",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6304,17 +6304,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A87474474_PGR\\PGR_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "PGR",
-      "cif": "A87474474",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6325,6 +6314,17 @@
       "cif": "A87474474",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A87474474_PGR\\PGR_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "PGR",
+      "cif": "A87474474",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6370,17 +6370,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A79567939_R4\\R4_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "R4",
-      "cif": "A79567939",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6391,6 +6380,17 @@
       "cif": "A79567939",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A79567939_R4\\R4_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "R4",
+      "cif": "A79567939",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6436,17 +6436,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08249872_REN\\REN_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "REN",
-      "cif": "A08249872",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6457,6 +6446,17 @@
       "cif": "A08249872",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08249872_REN\\REN_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "REN",
+      "cif": "A08249872",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6505,7 +6505,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08015844_CMA\\CMA_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08015844_RJF\\RJF_2023_ANUAL.pdf"
     },
     {
       "ticker": "RJF",
@@ -6516,7 +6516,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08015844_CMA\\CMA_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08015844_RJF\\RJF_2023_ANUAL.pdf"
     },
     {
       "ticker": "RJF",
@@ -6527,7 +6527,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08015844_CMA\\CMA_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08015844_RJF\\RJF_2023_ANUAL.pdf"
     },
     {
       "ticker": "RJF",
@@ -6538,7 +6538,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08015844_CMA\\CMA_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08015844_RJF\\RJF_2023_ANUAL.pdf"
     },
     {
       "ticker": "RJF",
@@ -6549,7 +6549,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08015844_CMA\\CMA_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08015844_RJF\\RJF_2023_ANUAL.pdf"
     },
     {
       "ticker": "RJF",
@@ -6560,7 +6560,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08015844_CMA\\CMA_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08015844_RJF\\RJF_2023_ANUAL.pdf"
     },
     {
       "ticker": "SCF",
@@ -6568,7 +6568,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28001071_SCF\\SCF_2023_ANUAL.pdf"
@@ -6634,7 +6634,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A95333838_SLPK\\SLPK_2023_ANUAL.pdf"
@@ -6700,7 +6700,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A73891467_SOLT\\SOLT_2023_ANUAL.pdf"
@@ -6766,7 +6766,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A82787839_SQRL\\SQRL_2023_ANUAL.pdf"
@@ -6898,17 +6898,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28008894_TRE\\TRE_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "TRE",
-      "cif": "A28008894",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6919,6 +6908,17 @@
       "cif": "A28008894",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28008894_TRE\\TRE_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "TRE",
+      "cif": "A28008894",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6964,17 +6964,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A01004603_TUB\\TUB_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "TUB",
-      "cif": "A01004603",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6985,6 +6974,17 @@
       "cif": "A01004603",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A01004603_TUB\\TUB_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "TUB",
+      "cif": "A01004603",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7030,17 +7030,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A01000858_TRG\\TRG_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "TRG",
-      "cif": "A01000858",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7051,6 +7040,17 @@
       "cif": "A01000858",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A01000858_TRG\\TRG_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "TRG",
+      "cif": "A01000858",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7096,17 +7096,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A01002342_VID\\VID_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "VID",
-      "cif": "A01002342",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7117,6 +7106,17 @@
       "cif": "A01002342",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A01002342_VID\\VID_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "VID",
+      "cif": "A01002342",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7162,17 +7162,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A31065501_VIS\\VIS_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "VIS",
-      "cif": "A31065501",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7183,6 +7172,17 @@
       "cif": "A31065501",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A31065501_VIS\\VIS_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "VIS",
+      "cif": "A31065501",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7228,17 +7228,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A82937863_VOC\\VOC_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "VOC",
-      "cif": "A82937863",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7249,6 +7238,17 @@
       "cif": "A82937863",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A82937863_VOC\\VOC_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "VOC",
+      "cif": "A82937863",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7294,17 +7294,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A15486806_ALTI\\ALTI_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "ALTI",
-      "cif": "A15486806",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7315,6 +7304,17 @@
       "cif": "A15486806",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A15486806_ALTI\\ALTI_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "ALTI",
+      "cif": "A15486806",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7360,17 +7360,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A87588828_MS\\MS_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "MS",
-      "cif": "A87588828",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7381,6 +7370,17 @@
       "cif": "A87588828",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A87588828_MS\\MS_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "MS",
+      "cif": "A87588828",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7426,17 +7426,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A86221769_GIGA\\GIGA_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "GIGA",
-      "cif": "A86221769",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7447,6 +7436,17 @@
       "cif": "A86221769",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A86221769_GIGA\\GIGA_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "GIGA",
+      "cif": "A86221769",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7558,17 +7558,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\B12880708_480\\480_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "480",
-      "cif": "B12880708",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7579,6 +7568,17 @@
       "cif": "B12880708",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\B12880708_480\\480_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "480",
+      "cif": "B12880708",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7624,17 +7624,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A64703895_AGIL\\AGIL_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "AGIL",
-      "cif": "A64703895",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7645,6 +7634,17 @@
       "cif": "A64703895",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A64703895_AGIL\\AGIL_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "AGIL",
+      "cif": "A64703895",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7690,17 +7690,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A25340936_LLN\\LLN_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "LLN",
-      "cif": "A25340936",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7711,6 +7700,17 @@
       "cif": "A25340936",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A25340936_LLN\\LLN_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "LLN",
+      "cif": "A25340936",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7756,17 +7756,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41551896_TR1\\TR1_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "TR1",
-      "cif": "A41551896",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7777,6 +7766,17 @@
       "cif": "A41551896",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41551896_TR1\\TR1_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "TR1",
+      "cif": "A41551896",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7822,17 +7822,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A54673896_FACE\\FACE_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "FACE",
-      "cif": "A54673896",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7843,6 +7832,17 @@
       "cif": "A54673896",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A54673896_FACE\\FACE_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "FACE",
+      "cif": "A54673896",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7888,17 +7888,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A98926448_SAI\\SAI_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "SAI",
-      "cif": "A98926448",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7909,6 +7898,17 @@
       "cif": "A98926448",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A98926448_SAI\\SAI_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "SAI",
+      "cif": "A98926448",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7954,17 +7954,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A66173873_PARLEM\\PARLEM_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "PARLEM",
-      "cif": "A66173873",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7975,6 +7964,17 @@
       "cif": "A66173873",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A66173873_PARLEM\\PARLEM_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "PARLEM",
+      "cif": "A66173873",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -8020,17 +8020,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A15638927_NTX\\NTX_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "NTX",
-      "cif": "A15638927",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -8041,6 +8030,17 @@
       "cif": "A15638927",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A15638927_NTX\\NTX_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "NTX",
+      "cif": "A15638927",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -8086,17 +8086,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A82743899_CAT\\CAT_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "CAT",
-      "cif": "A82743899",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -8107,6 +8096,17 @@
       "cif": "A82743899",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A82743899_CAT\\CAT_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "CAT",
+      "cif": "A82743899",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -8152,17 +8152,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85743896_SNGR\\SNGR_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "SNGR",
-      "cif": "A85743896",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -8173,6 +8162,17 @@
       "cif": "A85743896",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85743896_SNGR\\SNGR_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "SNGR",
+      "cif": "A85743896",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -8218,17 +8218,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A15638928_COMM\\COMM_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "COMM",
-      "cif": "A15638928",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -8239,6 +8228,17 @@
       "cif": "A15638928",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A15638928_COMM\\COMM_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "COMM",
+      "cif": "A15638928",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -8284,17 +8284,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A01334893_NBI\\NBI_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "NBI",
-      "cif": "A01334893",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -8305,6 +8294,17 @@
       "cif": "A01334893",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A01334893_NBI\\NBI_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "NBI",
+      "cif": "A01334893",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -8350,17 +8350,6 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A67343892_ENERS\\ENERS_2023_ANUAL.pdf"
-    },
-    {
-      "ticker": "ENERS",
-      "cif": "A67343892",
-      "year": 2023,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -8371,6 +8360,17 @@
       "cif": "A67343892",
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A67343892_ENERS\\ENERS_2023_ANUAL.pdf"
+    },
+    {
+      "ticker": "ENERS",
+      "cif": "A67343892",
+      "year": 2023,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -8419,7 +8419,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A94002896_EIDF\\EIDF_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85573713_EIDF\\EIDF_2023_ANUAL.pdf"
     },
     {
       "ticker": "EIDF",
@@ -8430,7 +8430,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A94002896_EIDF\\EIDF_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85573713_EIDF\\EIDF_2023_ANUAL.pdf"
     },
     {
       "ticker": "EIDF",
@@ -8441,7 +8441,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A94002896_EIDF\\EIDF_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85573713_EIDF\\EIDF_2023_ANUAL.pdf"
     },
     {
       "ticker": "EIDF",
@@ -8452,7 +8452,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A94002896_EIDF\\EIDF_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85573713_EIDF\\EIDF_2023_ANUAL.pdf"
     },
     {
       "ticker": "EIDF",
@@ -8463,7 +8463,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A94002896_EIDF\\EIDF_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85573713_EIDF\\EIDF_2023_ANUAL.pdf"
     },
     {
       "ticker": "EIDF",
@@ -8474,7 +8474,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A94002896_EIDF\\EIDF_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85573713_EIDF\\EIDF_2023_ANUAL.pdf"
     },
     {
       "ticker": "CLR",
@@ -8482,7 +8482,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A73891468_CLR\\CLR_2023_ANUAL.pdf"
@@ -8548,7 +8548,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A19638926_GREN\\GREN_2023_ANUAL.pdf"
@@ -8617,7 +8617,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A65448927_HLZ\\HLZ_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A65963363_HLZ\\HLZ_2023_ANUAL.pdf"
     },
     {
       "ticker": "HLZ",
@@ -8628,7 +8628,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A65448927_HLZ\\HLZ_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A65963363_HLZ\\HLZ_2023_ANUAL.pdf"
     },
     {
       "ticker": "HLZ",
@@ -8639,7 +8639,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A65448927_HLZ\\HLZ_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A65963363_HLZ\\HLZ_2023_ANUAL.pdf"
     },
     {
       "ticker": "HLZ",
@@ -8650,7 +8650,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A65448927_HLZ\\HLZ_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A65963363_HLZ\\HLZ_2023_ANUAL.pdf"
     },
     {
       "ticker": "HLZ",
@@ -8661,7 +8661,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A65448927_HLZ\\HLZ_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A65963363_HLZ\\HLZ_2023_ANUAL.pdf"
     },
     {
       "ticker": "HLZ",
@@ -8672,7 +8672,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A65448927_HLZ\\HLZ_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A65963363_HLZ\\HLZ_2023_ANUAL.pdf"
     },
     {
       "ticker": "SOLAR",
@@ -8680,7 +8680,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A66123894_SOLAR\\SOLAR_2023_ANUAL.pdf"
@@ -8746,7 +8746,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A98743896_UMB\\UMB_2023_ANUAL.pdf"
@@ -8812,7 +8812,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A78943892_ISE\\ISE_2023_ANUAL.pdf"
@@ -8878,7 +8878,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A98943896_END\\END_2023_ANUAL.pdf"
@@ -8944,7 +8944,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A87123896_COXG\\COXG_2023_ANUAL.pdf"
@@ -9010,7 +9010,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A64321896_PAN\\PAN_2023_ANUAL.pdf"
@@ -9076,7 +9076,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A65123896_VYTR\\VYTR_2023_ANUAL.pdf"
@@ -9142,7 +9142,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08123896_LAB\\LAB_2023_ANUAL.pdf"
@@ -9208,7 +9208,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A58291896_KOMP\\KOMP_2023_ANUAL.pdf"
@@ -9274,7 +9274,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\B67123896_HANN\\HANN_2023_ANUAL.pdf"
@@ -9340,7 +9340,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A74123896_ELZ\\ELZ_2023_ANUAL.pdf"
@@ -9406,7 +9406,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A67891896_EVM\\EVM_2023_ANUAL.pdf"
@@ -9472,7 +9472,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A91341896_CLEV\\CLEV_2023_ANUAL.pdf"
@@ -9538,7 +9538,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A63451896_MED\\MED_2023_ANUAL.pdf"
@@ -9604,7 +9604,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85123896_PROED\\PROED_2023_ANUAL.pdf"
@@ -9670,7 +9670,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85471896_SEC\\SEC_2023_ANUAL.pdf"
@@ -9736,7 +9736,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A82123896_MONDO\\MONDO_2023_ANUAL.pdf"
@@ -9802,7 +9802,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A87141896_IDX\\IDX_2023_ANUAL.pdf"
@@ -9868,7 +9868,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A54123896_IFF\\IFF_2023_ANUAL.pdf"
@@ -9934,7 +9934,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A48011896_ART\\ART_2023_ANUAL.pdf"
@@ -10000,7 +10000,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A42718964_VAN\\VAN_2023_ANUAL.pdf"
@@ -10066,7 +10066,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28165264_ALB\\ALB_2023_ANUAL.pdf"
@@ -10132,7 +10132,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A33002627_DFER\\DFER_2023_ANUAL.pdf"
@@ -10198,7 +10198,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A48027056_ENO\\ENO_2023_ANUAL.pdf"
@@ -10264,7 +10264,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28292852_REVO\\REVO_2023_ANUAL.pdf"
@@ -10330,7 +10330,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A36001479_PHL\\PHL_2023_ANUAL.pdf"
@@ -10396,7 +10396,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A48002059_URB\\URB_2023_ANUAL.pdf"
@@ -10462,7 +10462,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A87895108_MVR\\MVR_2023_ANUAL.pdf"
@@ -10594,7 +10594,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A18012344_BIO\\BIO_2023_ANUAL.pdf"
@@ -10660,7 +10660,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08008351_CPL\\CPL_2023_ANUAL.pdf"
@@ -10726,7 +10726,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28107951_DESI\\DESI_2023_ANUAL.pdf"
@@ -10792,7 +10792,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28003184_COAM\\COAM_2023_ANUAL.pdf"
@@ -10858,7 +10858,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A39000211_SNI\\SNI_2023_ANUAL.pdf"
@@ -10927,7 +10927,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -10938,7 +10938,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -10949,7 +10949,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -10960,7 +10960,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -10971,7 +10971,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -10982,7 +10982,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -10993,7 +10993,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11004,7 +11004,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11015,7 +11015,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11026,7 +11026,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11037,7 +11037,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11048,7 +11048,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11059,7 +11059,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11070,7 +11070,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11081,7 +11081,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11092,7 +11092,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11103,7 +11103,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11114,7 +11114,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11125,7 +11125,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11136,7 +11136,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11147,7 +11147,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11158,7 +11158,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11169,7 +11169,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11180,7 +11180,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11191,7 +11191,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11202,7 +11202,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11213,7 +11213,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11224,7 +11224,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11235,7 +11235,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11246,7 +11246,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11257,7 +11257,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11268,7 +11268,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11279,7 +11279,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11290,7 +11290,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11301,7 +11301,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11312,7 +11312,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11323,7 +11323,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11334,7 +11334,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -11345,7 +11345,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ISUR\\ISUR_2023_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A41002288_ABG\\ABG_2023_ANUAL.pdf"
     },
     {
       "ticker": "DGI",
@@ -11353,7 +11353,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A08039323_DGI\\DGI_2023_ANUAL.pdf"
@@ -11419,7 +11419,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A82390197_MAS\\MAS_2023_ANUAL.pdf"
@@ -11485,7 +11485,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A28011112_ZOT\\ZOT_2023_ANUAL.pdf"
@@ -11551,7 +11551,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A83236746_BME\\BME_2023_ANUAL.pdf"
@@ -11617,7 +11617,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A33984015_LIB\\LIB_2023_ANUAL.pdf"
@@ -11683,7 +11683,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A46001020_CLEO\\CLEO_2023_ANUAL.pdf"
@@ -11815,7 +11815,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A70233077_DOCS\\DOCS_2023_ANUAL.pdf"
@@ -11881,7 +11881,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A87428801_INDEX\\INDEX_2023_ANUAL.pdf"
@@ -11947,7 +11947,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A66236680_VBI\\VBI_2023_ANUAL.pdf"
@@ -12013,7 +12013,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=Iuyvnirx7bAPAJWosO5JakvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "543085480992cd3d3ce3d1a3a5f9fc66f5f53891973eacda99121b901c607793",
       "size_bytes": 11623696,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A87008579_SING\\SING_2023_ANUAL.pdf"
@@ -12046,7 +12046,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A83188509_NTAC\\NTAC_2023_ANUAL.pdf"
@@ -12112,7 +12112,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A82194455_GOW\\GOW_2023_ANUAL.pdf"
@@ -12178,7 +12178,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A85194455_BIOM\\BIOM_2023_ANUAL.pdf"
@@ -12244,7 +12244,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A18852341_NEO\\NEO_2023_ANUAL.pdf"
@@ -12310,7 +12310,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A88481288_E4Y\\E4Y_2023_ANUAL.pdf"
@@ -12376,7 +12376,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A65123456_UBI\\UBI_2023_ANUAL.pdf"
@@ -12442,7 +12442,7 @@
       "year": 2023,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2023\\A58580649_PLAS\\PLAS_2023_ANUAL.pdf"

@@ -1,8 +1,8 @@
 {
   "year": 2020,
   "total_mapped": 1013,
-  "downloaded": 171,
-  "cache_hits": 842,
+  "downloaded": 9,
+  "cache_hits": 1004,
   "failed": 0,
   "quarantined": 0,
   "manifest": [
@@ -34,7 +34,7 @@
       "year": 2020,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/959800NAFTNQ5VSH4K06/2020-12-31/ESEF/ES/0/solarpack.zip",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "ab5d152c9a16c79679ff8792a3f6fd4775a0b25603edcb99656ef25cf494661f",
       "size_bytes": 12215576,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\ESESEF_LEI_959800NA\\LEI_959800NA_2020_ESEF.zip"
@@ -144,7 +144,7 @@
       "year": 2020,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/95980020140005757903/2020-12-31/ESEF/ES/0/95980020140005757903-20201231.zip",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "6cba85f165f0c95ec9a0bdad2d4591286adccb8380104e7c69d17fff0a18967a",
       "size_bytes": 39459055,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\ESESEF_LEI_95980020\\LEI_95980020_2020_ESEF.zip"
@@ -166,7 +166,7 @@
       "year": 2020,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/635400XT3V7WHLSFYY25/2020-12-31/ESEF/ES/0/635400XT3V7WHLSFYY25-2020-12-31.zip",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "f964b533393349c406c812d6d2e583a628ba61e83a44445c20ca5ac84478da52",
       "size_bytes": 18659582,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A33519802_LBK\\LBK_2020_ESEF.zip"
@@ -419,10 +419,10 @@
       "year": 2020,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/959800L8KD863DP30X04/2020-12-31/ESEF/ES/0/959800L8KD863DP30X04-20201231.zip",
-      "status": "CACHE_HIT",
+      "status": "DOWNLOADED_AND_SEALED",
       "sha256": "f2dd9a68c62395cdc64b43b5c48028e28077b3207021c03e35b360e584aa2fac",
       "size_bytes": 21467222,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A86927311_MRL\\MRL_2020_ESEF.zip"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\1000292361664_MERL\\MERL_2020_ESEF.zip"
     },
     {
       "ticker": "NHH",
@@ -452,7 +452,7 @@
       "year": 2020,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/959800RGBUGJA3UVZZ88/2020-12-31/ESEF/ES/0/realiabusinesssa.zip",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "b739841fdec19015ca0590cee28a675b5441282d982b43ee73d8cdb4ab727a73",
       "size_bytes": 9723105,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\ESESEF_LEI_959800RG\\LEI_959800RG_2020_ESEF.zip"
@@ -463,7 +463,7 @@
       "year": 2020,
       "doc_type": "ESEF_PACKAGE",
       "url": "https://filings.xbrl.org/95980020140005178328/2020-12-31/ESEF/ES/0/fcc-2020-12-31.zip",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "3c4c8b8cc065eeb55b2d0d14746e1af09badcecade1a8ee365772b2dfc3fdf7d",
       "size_bytes": 13185836,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28037224_FCC\\FCC_2020_ESEF.zip"
@@ -584,7 +584,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=yvRjIPlSW%2bQb0ZMT9%2bJIbkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "98869516201e335f8ba70e62dd783cf5f1c6c322df4a55205ff7490e781b2abe",
       "size_bytes": 38405052,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A39000013_SAN\\SAN_2020_ANUAL.pdf"
@@ -617,7 +617,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=DGxufebVyuRTmszJh98oSkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "6adcca1662a1298cab77a7f078f39fb38071092f5d828fb82c0f6d1ca80f27fd",
       "size_bytes": 16081828,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A48265169_BBVA\\BBVA_2020_ANUAL.pdf"
@@ -650,7 +650,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A48010615_IBE\\IBE_2020_ANUAL.pdf"
@@ -716,7 +716,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A15075062_ITX\\ITX_2020_ANUAL.pdf"
@@ -782,7 +782,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=Ku54xijdTSDgb%2blvI%2felskvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "1b0ff2170e50f0ea53d8c005c7a910adfd093f0b7f35d965bec139ac1ffa3d99",
       "size_bytes": 12780600,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28015865_TEF\\TEF_2020_ANUAL.pdf"
@@ -815,7 +815,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=9KK77GyW%2fiYdNTairvipC0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "1d60450009909c10c2ba952b854c6d5dbe5d0a6240ac0799104db2e50973966d",
       "size_bytes": 40993337,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A78374725_REP\\REP_2020_ANUAL.pdf"
@@ -848,7 +848,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=QGWn9EpM8rTLTmdljblpXkvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "05d40aa52134b6524ac2430bb422aedc359e0b3f2a3b0370b06f42e007e63392",
       "size_bytes": 64252520,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08663619_CABK\\CABK_2020_ANUAL.pdf"
@@ -884,7 +884,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A84236934_OPD\\OPD_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A84236934_AMS\\AMS_2020_ANUAL.pdf"
     },
     {
       "ticker": "AMS",
@@ -895,7 +895,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A84236934_OPD\\OPD_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A84236934_AMS\\AMS_2020_ANUAL.pdf"
     },
     {
       "ticker": "AMS",
@@ -906,7 +906,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A84236934_OPD\\OPD_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A84236934_AMS\\AMS_2020_ANUAL.pdf"
     },
     {
       "ticker": "AMS",
@@ -917,7 +917,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A84236934_OPD\\OPD_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A84236934_AMS\\AMS_2020_ANUAL.pdf"
     },
     {
       "ticker": "AMS",
@@ -928,7 +928,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A84236934_OPD\\OPD_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A84236934_AMS\\AMS_2020_ANUAL.pdf"
     },
     {
       "ticker": "AMS",
@@ -939,7 +939,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A84236934_OPD\\OPD_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A84236934_AMS\\AMS_2020_ANUAL.pdf"
     },
     {
       "ticker": "CLNX",
@@ -947,7 +947,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=vVqZpFqorawkhf0YY1Wu2EvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "c3769cf2709f0fb7fe18db99cf2027e5dd708eda832483d746e634827a2dfbd3",
       "size_bytes": 21524269,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A64907306_CLNX\\CLNX_2020_ANUAL.pdf"
@@ -980,7 +980,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28004471_FER\\FER_2020_ANUAL.pdf"
@@ -1046,7 +1046,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A58297783_GRF\\GRF_2020_ANUAL.pdf"
@@ -1112,7 +1112,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=3F9gKLpZNL8uwVFsajyD7UvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "09f8d63ed0835d245ce19f0d412bb5f24db4e1e729de31d59ef17262e02f82d7",
       "size_bytes": 41770635,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A78304516_MEL\\MEL_2020_ANUAL.pdf"
@@ -1145,7 +1145,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28004885_ACS\\ACS_2020_ANUAL.pdf"
@@ -1211,7 +1211,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2020/18814.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "0ea59cc876100b234f1248ab49c3f8b0657e3bab59b02b9c782d33e5c5e9e184",
       "size_bytes": 6598484,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A85845535_IAG\\IAG_2020_ANUAL.pdf"
@@ -1222,7 +1222,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=kjRqzBF%2bgDGvgJOCX3UY2kvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "9df7a8a29f2865aa368f45819ae50f62a5d7d90991c5932b5abc8de9642dd1f2",
       "size_bytes": 5303265,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08055741_MAP\\MAP_2020_ANUAL.pdf"
@@ -1255,7 +1255,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=qkel4FzCrznu5iMTgr35AEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "5293754652a6528acf2b4d573e4dd2ed7fb0b6f1767d2c8f97de96ac0b6af125",
       "size_bytes": 18930982,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08015497_NTGY\\NTGY_2020_ANUAL.pdf"
@@ -1288,7 +1288,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28294726_ENG\\ENG_2020_ANUAL.pdf"
@@ -1354,7 +1354,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28023430_ELE\\ELE_2020_ANUAL.pdf"
@@ -1420,7 +1420,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A78003662_RED\\RED_2020_ANUAL.pdf"
@@ -1486,7 +1486,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=WLjTecNebovNrxjtMhLB2kvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "ee40c91dd65b13729dbfc62353a954096f21d782145627f1cbbe12a8250e3324",
       "size_bytes": 30420806,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28157360_BKT\\BKT_2020_ANUAL.pdf"
@@ -1519,7 +1519,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A93139096_UNI\\UNI_2020_ANUAL.pdf"
@@ -1585,7 +1585,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A82569963_SOL\\SOL_2020_ANUAL.pdf"
@@ -1651,7 +1651,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28120616_PHM\\PHM_2020_ANUAL.pdf"
@@ -1717,7 +1717,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28250777_ACX\\ACX_2020_ANUAL.pdf"
@@ -1786,7 +1786,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "08cb564c93c42fd536a08bcfca2d93239787ca18d9e53c39d750d823fc20722a",
       "size_bytes": 83141235,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08000143_ECR\\ECR_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08000143_SAB\\SAB_2020_ANUAL.pdf"
     },
     {
       "ticker": "SAB",
@@ -1797,7 +1797,7 @@
       "status": "CACHE_HIT",
       "sha256": "08cb564c93c42fd536a08bcfca2d93239787ca18d9e53c39d750d823fc20722a",
       "size_bytes": 83141235,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08000143_ECR\\ECR_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08000143_SAB\\SAB_2020_ANUAL.pdf"
     },
     {
       "ticker": "SAB",
@@ -1808,7 +1808,7 @@
       "status": "CACHE_HIT",
       "sha256": "08cb564c93c42fd536a08bcfca2d93239787ca18d9e53c39d750d823fc20722a",
       "size_bytes": 83141235,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08000143_ECR\\ECR_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08000143_SAB\\SAB_2020_ANUAL.pdf"
     },
     {
       "ticker": "ROVI",
@@ -1816,7 +1816,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28249761_ROVI\\ROVI_2020_ANUAL.pdf"
@@ -1882,7 +1882,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28013811_SCYR\\SCYR_2020_ANUAL.pdf"
@@ -1948,7 +1948,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A86928603_LOG\\LOG_2020_ANUAL.pdf"
@@ -2014,7 +2014,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28599033_IDR\\IDR_2020_ANUAL.pdf"
@@ -2080,7 +2080,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2020/18738.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "d88d92c5ea68021f62269f8b1e458be9b3191646effe6b7a980899d475fbd312",
       "size_bytes": 13478463,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08001851_ANA\\ANA_2020_ANUAL.pdf"
@@ -2091,7 +2091,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A85474773_ANE\\ANE_2020_ANUAL.pdf"
@@ -2157,7 +2157,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08158289_PUIG\\PUIG_2020_ANUAL.pdf"
@@ -2223,7 +2223,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=aru5TIOuGI1H%2bTb3wtpPCUvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "34ae2c334f731278c2c3ab46de25aec9c7d166c48fa6bea297123844385cfb97",
       "size_bytes": 12710248,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A86212420_AENA\\AENA_2020_ANUAL.pdf"
@@ -2256,7 +2256,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08249963_FDR\\FDR_2020_ANUAL.pdf"
@@ -2322,7 +2322,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A81862492_ALNT\\ALNT_2020_ANUAL.pdf"
@@ -2388,7 +2388,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08008641_ALM\\ALM_2020_ANUAL.pdf"
@@ -2454,7 +2454,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28005387_AMP\\AMP_2020_ANUAL.pdf"
@@ -2520,7 +2520,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\W0022359J_EAT\\EAT_2020_ANUAL.pdf"
@@ -2586,7 +2586,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\N0030000A_APAM\\APAM_2020_ANUAL.pdf"
@@ -2652,7 +2652,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A85150961_TLGO\\TLGO_2020_ANUAL.pdf"
@@ -2718,7 +2718,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A78907359_A3M\\A3M_2020_ANUAL.pdf"
@@ -2850,7 +2850,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=SijmHe0E3wBwkcCIS8Poh0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "704025910d51c3fde9aca490f152ef17bca97c4d42440e403b0b6e18976bab69",
       "size_bytes": 69531536,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A62338827_ADX\\ADX_2020_ANUAL.pdf"
@@ -2883,7 +2883,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28001600_AYCO\\AYCO_2020_ANUAL.pdf"
@@ -2949,7 +2949,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A31065527_AZK\\AZK_2020_ANUAL.pdf"
@@ -3015,7 +3015,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A14010342_BKIA\\BKIA_2020_ANUAL.pdf"
@@ -3081,7 +3081,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A80415391_BAV\\BAV_2020_ANUAL.pdf"
@@ -3150,7 +3150,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "0ac47f6628fda9a4f9f2f5f69b0d94befcf6163234b0b299d4266d87e2dbc5e6",
       "size_bytes": 12684488,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A20001020_IBG\\IBG_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A20001020_CAF\\CAF_2020_ANUAL.pdf"
     },
     {
       "ticker": "CIE",
@@ -3158,7 +3158,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A48231567_CIE\\CIE_2020_ANUAL.pdf"
@@ -3224,7 +3224,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08149866_DESA\\DESA_2020_ANUAL.pdf"
@@ -3290,7 +3290,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2020/18983.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a03ecde50b93072730d778bb9ad7dbbdd0b19bc9c5d9572735b4ee66efc4e0c1",
       "size_bytes": 6256436,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28164754_DIA\\DIA_2020_ANUAL.pdf"
@@ -3301,7 +3301,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A95044450_DOM\\DOM_2020_ANUAL.pdf"
@@ -3367,7 +3367,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2020/18833.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "4011e5ec24e321d6aae691dfa178fb8fcedcfd4c2c34ee92dbcea166edd39fae",
       "size_bytes": 6614203,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A47412333_EBRO\\EBRO_2020_ANUAL.pdf"
@@ -3378,17 +3378,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A15024474_ECO\\ECO_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "ECO",
-      "cif": "A15024474",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -3399,6 +3388,17 @@
       "cif": "A15024474",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A15024474_ECO\\ECO_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "ECO",
+      "cif": "A15024474",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -3444,17 +3444,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A75000001_EDPR\\EDPR_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "EDPR",
-      "cif": "A75000001",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -3465,6 +3454,17 @@
       "cif": "A75000001",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A75000001_EDPR\\EDPR_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "EDPR",
+      "cif": "A75000001",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -3510,17 +3510,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\W0040000A_EDR\\EDR_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "EDR",
-      "cif": "W0040000A",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -3531,6 +3520,17 @@
       "cif": "W0040000A",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\W0040000A_EDR\\EDR_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "EDR",
+      "cif": "W0040000A",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -3576,17 +3576,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28212264_ENC\\ENC_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "ENC",
-      "cif": "A28212264",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -3597,6 +3586,17 @@
       "cif": "A28212264",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28212264_ENC\\ENC_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "ENC",
+      "cif": "A28212264",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -3642,17 +3642,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08000671_ERC\\ERC_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "ERC",
-      "cif": "A08000671",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -3663,6 +3652,17 @@
       "cif": "A08000671",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08000671_ERC\\ERC_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "ERC",
+      "cif": "A08000671",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -3708,17 +3708,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A48004139_FAE\\FAE_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "FAE",
-      "cif": "A48004139",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -3729,6 +3718,17 @@
       "cif": "A48004139",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A48004139_FAE\\FAE_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "FAE",
+      "cif": "A48004139",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -3774,17 +3774,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28037224_FCC\\FCC_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "FCC",
-      "cif": "A28037224",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -3795,6 +3784,17 @@
       "cif": "A28037224",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28037224_FCC\\FCC_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "FCC",
+      "cif": "A28037224",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -3840,17 +3840,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A33519802_IZER\\IZER_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "GAM",
-      "cif": "A33519802",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -3861,6 +3850,17 @@
       "cif": "A33519802",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A33519802_IZER\\IZER_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "GAM",
+      "cif": "A33519802",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -3906,17 +3906,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A48227656_GEST\\GEST_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "GEST",
-      "cif": "A48227656",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -3927,6 +3916,17 @@
       "cif": "A48227656",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A48227656_GEST\\GEST_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "GEST",
+      "cif": "A48227656",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -3972,17 +3972,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08168270_GCO\\GCO_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "GCO",
-      "cif": "A08168270",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -3993,6 +3982,17 @@
       "cif": "A08168270",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08168270_GCO\\GCO_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "GCO",
+      "cif": "A08168270",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4104,17 +4104,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A36046993_SANJ\\SANJ_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "SANJ",
-      "cif": "A36046993",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4125,6 +4114,17 @@
       "cif": "A36046993",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A36046993_SANJ\\SANJ_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "SANJ",
+      "cif": "A36046993",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4170,17 +4170,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28014868_EZE\\EZE_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "EZE",
-      "cif": "A28014868",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4191,6 +4180,17 @@
       "cif": "A28014868",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28014868_EZE\\EZE_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "EZE",
+      "cif": "A28014868",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4236,17 +4236,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A20037131_IBP\\IBP_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "IBP",
-      "cif": "A20037131",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4257,6 +4246,17 @@
       "cif": "A20037131",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A20037131_IBP\\IBP_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "IBP",
+      "cif": "A20037131",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4368,17 +4368,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A80875416_LINEA\\LINEA_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "LINEA",
-      "cif": "A80875416",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4389,6 +4378,17 @@
       "cif": "A80875416",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A80875416_LINEA\\LINEA_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "LINEA",
+      "cif": "A80875416",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4434,17 +4434,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A47007620_LGT\\LGT_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "LGT",
-      "cif": "A47007620",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4455,6 +4444,17 @@
       "cif": "A47007620",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A47007620_LGT\\LGT_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "LGT",
+      "cif": "A47007620",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4500,17 +4500,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A87471280_MVC\\MVC_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "MVC",
-      "cif": "A87471280",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4521,6 +4510,17 @@
       "cif": "A87471280",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A87471280_MVC\\MVC_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "MVC",
+      "cif": "A87471280",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4566,17 +4566,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28029700_NHH\\NHH_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "NHH",
-      "cif": "A28029700",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -4587,6 +4576,17 @@
       "cif": "A28029700",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28029700_NHH\\NHH_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "NHH",
+      "cif": "A28029700",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -4632,7 +4632,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08008401_MCM\\MCM_2020_ANUAL.pdf"
@@ -4698,7 +4698,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A80126584_NTH\\NTH_2020_ANUAL.pdf"
@@ -4764,7 +4764,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A95777174_NEIN\\NEIN_2020_ANUAL.pdf"
@@ -4830,7 +4830,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A09000570_NEA\\NEA_2020_ANUAL.pdf"
@@ -4896,7 +4896,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08018319_NEXT\\NEXT_2020_ANUAL.pdf"
@@ -4965,7 +4965,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28014561_LDA\\LDA_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28014561_NYS\\NYS_2020_ANUAL.pdf"
     },
     {
       "ticker": "NYS",
@@ -4976,7 +4976,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28014561_LDA\\LDA_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28014561_NYS\\NYS_2020_ANUAL.pdf"
     },
     {
       "ticker": "NYS",
@@ -4987,7 +4987,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28014561_LDA\\LDA_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28014561_NYS\\NYS_2020_ANUAL.pdf"
     },
     {
       "ticker": "NYS",
@@ -4998,7 +4998,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28014561_LDA\\LDA_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28014561_NYS\\NYS_2020_ANUAL.pdf"
     },
     {
       "ticker": "NYS",
@@ -5009,7 +5009,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28014561_LDA\\LDA_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28014561_NYS\\NYS_2020_ANUAL.pdf"
     },
     {
       "ticker": "NYS",
@@ -5020,7 +5020,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28014561_LDA\\LDA_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28014561_NYS\\NYS_2020_ANUAL.pdf"
     },
     {
       "ticker": "OHLA",
@@ -5028,7 +5028,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A48010573_OHLA\\OHLA_2020_ANUAL.pdf"
@@ -5094,7 +5094,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A84462100_OPDE\\OPDE_2020_ANUAL.pdf"
@@ -5160,7 +5160,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A62281480_ORYZ\\ORYZ_2020_ANUAL.pdf"
@@ -5226,7 +5226,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28017366_PRM\\PRM_2020_ANUAL.pdf"
@@ -5292,7 +5292,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=hBkm7XoM%2f3XIyeZH9CPaukvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "755efb620af8d01572ae6b98125566f9a22d87b3515ea8d1dddabfe4fe7e4759",
       "size_bytes": 65461435,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28297059_PRS\\PRS_2020_ANUAL.pdf"
@@ -5325,17 +5325,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28424083_PSG\\PSG_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "PSG",
-      "cif": "A28424083",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -5346,6 +5335,17 @@
       "cif": "A28424083",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28424083_PSG\\PSG_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "PSG",
+      "cif": "A28424083",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -5391,17 +5391,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A87474474_PGR\\PGR_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "PGR",
-      "cif": "A87474474",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -5412,6 +5401,17 @@
       "cif": "A87474474",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A87474474_PGR\\PGR_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "PGR",
+      "cif": "A87474474",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -5457,17 +5457,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A79567939_R4\\R4_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "R4",
-      "cif": "A79567939",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -5478,6 +5467,17 @@
       "cif": "A79567939",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A79567939_R4\\R4_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "R4",
+      "cif": "A79567939",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -5523,17 +5523,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08249872_REN\\REN_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "REN",
-      "cif": "A08249872",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -5544,6 +5533,17 @@
       "cif": "A08249872",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08249872_REN\\REN_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "REN",
+      "cif": "A08249872",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -5592,7 +5592,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08015844_CMA\\CMA_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08015844_RJF\\RJF_2020_ANUAL.pdf"
     },
     {
       "ticker": "RJF",
@@ -5603,7 +5603,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08015844_CMA\\CMA_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08015844_RJF\\RJF_2020_ANUAL.pdf"
     },
     {
       "ticker": "RJF",
@@ -5614,7 +5614,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08015844_CMA\\CMA_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08015844_RJF\\RJF_2020_ANUAL.pdf"
     },
     {
       "ticker": "RJF",
@@ -5625,7 +5625,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08015844_CMA\\CMA_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08015844_RJF\\RJF_2020_ANUAL.pdf"
     },
     {
       "ticker": "RJF",
@@ -5636,7 +5636,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08015844_CMA\\CMA_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08015844_RJF\\RJF_2020_ANUAL.pdf"
     },
     {
       "ticker": "RJF",
@@ -5647,7 +5647,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08015844_CMA\\CMA_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08015844_RJF\\RJF_2020_ANUAL.pdf"
     },
     {
       "ticker": "SCF",
@@ -5655,7 +5655,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28001071_SCF\\SCF_2020_ANUAL.pdf"
@@ -5721,7 +5721,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A95333838_SLPK\\SLPK_2020_ANUAL.pdf"
@@ -5787,7 +5787,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A73891467_SOLT\\SOLT_2020_ANUAL.pdf"
@@ -5853,7 +5853,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A82787839_SQRL\\SQRL_2020_ANUAL.pdf"
@@ -5985,17 +5985,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28008894_TRE\\TRE_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "TRE",
-      "cif": "A28008894",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6006,6 +5995,17 @@
       "cif": "A28008894",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28008894_TRE\\TRE_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "TRE",
+      "cif": "A28008894",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6051,17 +6051,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A01004603_TUB\\TUB_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "TUB",
-      "cif": "A01004603",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6072,6 +6061,17 @@
       "cif": "A01004603",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A01004603_TUB\\TUB_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "TUB",
+      "cif": "A01004603",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6117,17 +6117,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A01000858_TRG\\TRG_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "TRG",
-      "cif": "A01000858",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6138,6 +6127,17 @@
       "cif": "A01000858",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A01000858_TRG\\TRG_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "TRG",
+      "cif": "A01000858",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6183,17 +6183,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A01002342_VID\\VID_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "VID",
-      "cif": "A01002342",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6204,6 +6193,17 @@
       "cif": "A01002342",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A01002342_VID\\VID_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "VID",
+      "cif": "A01002342",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6249,17 +6249,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A31065501_VIS\\VIS_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "VIS",
-      "cif": "A31065501",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6270,6 +6259,17 @@
       "cif": "A31065501",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A31065501_VIS\\VIS_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "VIS",
+      "cif": "A31065501",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6315,17 +6315,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A82937863_VOC\\VOC_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "VOC",
-      "cif": "A82937863",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6336,6 +6325,17 @@
       "cif": "A82937863",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A82937863_VOC\\VOC_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "VOC",
+      "cif": "A82937863",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6381,17 +6381,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A15486806_ALTI\\ALTI_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "ALTI",
-      "cif": "A15486806",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6402,6 +6391,17 @@
       "cif": "A15486806",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A15486806_ALTI\\ALTI_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "ALTI",
+      "cif": "A15486806",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6447,17 +6447,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A87588828_MS\\MS_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "MS",
-      "cif": "A87588828",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6468,6 +6457,17 @@
       "cif": "A87588828",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A87588828_MS\\MS_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "MS",
+      "cif": "A87588828",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6513,17 +6513,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A86221769_GIGA\\GIGA_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "GIGA",
-      "cif": "A86221769",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6534,6 +6523,17 @@
       "cif": "A86221769",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A86221769_GIGA\\GIGA_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "GIGA",
+      "cif": "A86221769",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6645,17 +6645,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\B12880708_480\\480_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "480",
-      "cif": "B12880708",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6666,6 +6655,17 @@
       "cif": "B12880708",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\B12880708_480\\480_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "480",
+      "cif": "B12880708",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6711,17 +6711,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A64703895_AGIL\\AGIL_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "AGIL",
-      "cif": "A64703895",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6732,6 +6721,17 @@
       "cif": "A64703895",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A64703895_AGIL\\AGIL_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "AGIL",
+      "cif": "A64703895",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6777,17 +6777,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A25340936_LLN\\LLN_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "LLN",
-      "cif": "A25340936",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6798,6 +6787,17 @@
       "cif": "A25340936",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A25340936_LLN\\LLN_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "LLN",
+      "cif": "A25340936",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6843,17 +6843,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A41551896_TR1\\TR1_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "TR1",
-      "cif": "A41551896",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6864,6 +6853,17 @@
       "cif": "A41551896",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A41551896_TR1\\TR1_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "TR1",
+      "cif": "A41551896",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6909,17 +6909,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A54673896_FACE\\FACE_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "FACE",
-      "cif": "A54673896",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6930,6 +6919,17 @@
       "cif": "A54673896",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A54673896_FACE\\FACE_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "FACE",
+      "cif": "A54673896",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -6975,17 +6975,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A98926448_SAI\\SAI_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "SAI",
-      "cif": "A98926448",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -6996,6 +6985,17 @@
       "cif": "A98926448",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A98926448_SAI\\SAI_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "SAI",
+      "cif": "A98926448",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7041,17 +7041,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A66173873_PARLEM\\PARLEM_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "PARLEM",
-      "cif": "A66173873",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7062,6 +7051,17 @@
       "cif": "A66173873",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A66173873_PARLEM\\PARLEM_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "PARLEM",
+      "cif": "A66173873",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7107,17 +7107,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A15638927_NTX\\NTX_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "NTX",
-      "cif": "A15638927",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7128,6 +7117,17 @@
       "cif": "A15638927",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A15638927_NTX\\NTX_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "NTX",
+      "cif": "A15638927",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7173,17 +7173,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A82743899_CAT\\CAT_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "CAT",
-      "cif": "A82743899",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7194,6 +7183,17 @@
       "cif": "A82743899",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A82743899_CAT\\CAT_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "CAT",
+      "cif": "A82743899",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7239,17 +7239,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A85743896_SNGR\\SNGR_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "SNGR",
-      "cif": "A85743896",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7260,6 +7249,17 @@
       "cif": "A85743896",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A85743896_SNGR\\SNGR_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "SNGR",
+      "cif": "A85743896",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7305,17 +7305,6 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
-      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
-      "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A15638928_COMM\\COMM_2020_ANUAL.pdf"
-    },
-    {
-      "ticker": "COMM",
-      "cif": "A15638928",
-      "year": 2020,
-      "doc_type": "CNMV_ANNUAL_REPORT",
-      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
@@ -7326,6 +7315,17 @@
       "cif": "A15638928",
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/DocPortal/OtrosDocumentos/CNMV2030.pdf",
+      "status": "CACHE_HIT",
+      "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
+      "size_bytes": 20260205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A15638928_COMM\\COMM_2020_ANUAL.pdf"
+    },
+    {
+      "ticker": "COMM",
+      "cif": "A15638928",
+      "year": 2020,
+      "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/AlDia/PoliticaComunicacionCNMV.pdf",
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
@@ -7371,7 +7371,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A01334893_NBI\\NBI_2020_ANUAL.pdf"
@@ -7437,7 +7437,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A67343892_ENERS\\ENERS_2020_ANUAL.pdf"
@@ -7506,7 +7506,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A94002896_EIDF\\EIDF_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A85573713_EIDF\\EIDF_2020_ANUAL.pdf"
     },
     {
       "ticker": "EIDF",
@@ -7517,7 +7517,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A94002896_EIDF\\EIDF_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A85573713_EIDF\\EIDF_2020_ANUAL.pdf"
     },
     {
       "ticker": "EIDF",
@@ -7528,7 +7528,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A94002896_EIDF\\EIDF_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A85573713_EIDF\\EIDF_2020_ANUAL.pdf"
     },
     {
       "ticker": "EIDF",
@@ -7539,7 +7539,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A94002896_EIDF\\EIDF_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A85573713_EIDF\\EIDF_2020_ANUAL.pdf"
     },
     {
       "ticker": "EIDF",
@@ -7550,7 +7550,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A94002896_EIDF\\EIDF_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A85573713_EIDF\\EIDF_2020_ANUAL.pdf"
     },
     {
       "ticker": "EIDF",
@@ -7561,7 +7561,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A94002896_EIDF\\EIDF_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A85573713_EIDF\\EIDF_2020_ANUAL.pdf"
     },
     {
       "ticker": "CLR",
@@ -7569,7 +7569,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A73891468_CLR\\CLR_2020_ANUAL.pdf"
@@ -7635,7 +7635,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A19638926_GREN\\GREN_2020_ANUAL.pdf"
@@ -7704,7 +7704,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A65448927_HLZ\\HLZ_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A65963363_HLZ\\HLZ_2020_ANUAL.pdf"
     },
     {
       "ticker": "HLZ",
@@ -7715,7 +7715,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A65448927_HLZ\\HLZ_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A65963363_HLZ\\HLZ_2020_ANUAL.pdf"
     },
     {
       "ticker": "HLZ",
@@ -7726,7 +7726,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A65448927_HLZ\\HLZ_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A65963363_HLZ\\HLZ_2020_ANUAL.pdf"
     },
     {
       "ticker": "HLZ",
@@ -7737,7 +7737,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A65448927_HLZ\\HLZ_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A65963363_HLZ\\HLZ_2020_ANUAL.pdf"
     },
     {
       "ticker": "HLZ",
@@ -7748,7 +7748,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A65448927_HLZ\\HLZ_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A65963363_HLZ\\HLZ_2020_ANUAL.pdf"
     },
     {
       "ticker": "HLZ",
@@ -7759,7 +7759,7 @@
       "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A65448927_HLZ\\HLZ_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A65963363_HLZ\\HLZ_2020_ANUAL.pdf"
     },
     {
       "ticker": "SOLAR",
@@ -7767,7 +7767,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A66123894_SOLAR\\SOLAR_2020_ANUAL.pdf"
@@ -7833,7 +7833,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A98743896_UMB\\UMB_2020_ANUAL.pdf"
@@ -7899,7 +7899,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A78943892_ISE\\ISE_2020_ANUAL.pdf"
@@ -7965,7 +7965,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A98943896_END\\END_2020_ANUAL.pdf"
@@ -8031,7 +8031,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A87123896_COXG\\COXG_2020_ANUAL.pdf"
@@ -8097,7 +8097,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A64321896_PAN\\PAN_2020_ANUAL.pdf"
@@ -8163,7 +8163,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A65123896_VYTR\\VYTR_2020_ANUAL.pdf"
@@ -8229,7 +8229,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08123896_LAB\\LAB_2020_ANUAL.pdf"
@@ -8295,7 +8295,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A58291896_KOMP\\KOMP_2020_ANUAL.pdf"
@@ -8361,7 +8361,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\B67123896_HANN\\HANN_2020_ANUAL.pdf"
@@ -8427,7 +8427,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A74123896_ELZ\\ELZ_2020_ANUAL.pdf"
@@ -8493,7 +8493,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A67891896_EVM\\EVM_2020_ANUAL.pdf"
@@ -8559,7 +8559,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A91341896_CLEV\\CLEV_2020_ANUAL.pdf"
@@ -8625,7 +8625,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A63451896_MED\\MED_2020_ANUAL.pdf"
@@ -8691,7 +8691,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A85123896_PROED\\PROED_2020_ANUAL.pdf"
@@ -8757,7 +8757,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A85471896_SEC\\SEC_2020_ANUAL.pdf"
@@ -8823,7 +8823,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A82123896_MONDO\\MONDO_2020_ANUAL.pdf"
@@ -8889,7 +8889,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A87141896_IDX\\IDX_2020_ANUAL.pdf"
@@ -8955,7 +8955,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A54123896_IFF\\IFF_2020_ANUAL.pdf"
@@ -9021,7 +9021,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A48011896_ART\\ART_2020_ANUAL.pdf"
@@ -9087,7 +9087,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A42718964_VAN\\VAN_2020_ANUAL.pdf"
@@ -9153,7 +9153,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28165264_ALB\\ALB_2020_ANUAL.pdf"
@@ -9219,7 +9219,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A33002627_DFER\\DFER_2020_ANUAL.pdf"
@@ -9285,7 +9285,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A48027056_ENO\\ENO_2020_ANUAL.pdf"
@@ -9351,7 +9351,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28292852_REVO\\REVO_2020_ANUAL.pdf"
@@ -9417,7 +9417,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A36001479_PHL\\PHL_2020_ANUAL.pdf"
@@ -9483,7 +9483,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A48002059_URB\\URB_2020_ANUAL.pdf"
@@ -9549,7 +9549,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A87895108_MVR\\MVR_2020_ANUAL.pdf"
@@ -9681,7 +9681,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A18012344_BIO\\BIO_2020_ANUAL.pdf"
@@ -9747,7 +9747,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08008351_CPL\\CPL_2020_ANUAL.pdf"
@@ -9813,7 +9813,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28107951_DESI\\DESI_2020_ANUAL.pdf"
@@ -9879,7 +9879,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28003184_COAM\\COAM_2020_ANUAL.pdf"
@@ -9945,7 +9945,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A39000211_SNI\\SNI_2020_ANUAL.pdf"
@@ -10014,7 +10014,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "d9cb217e76b43524fcce97630d596eab0e5123c34fa7217d83e1993e8ef8b523",
       "size_bytes": 14968578,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A41002288_ISUR\\ISUR_2020_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A41002288_ABG\\ABG_2020_ANUAL.pdf"
     },
     {
       "ticker": "DGI",
@@ -10022,7 +10022,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A08039323_DGI\\DGI_2020_ANUAL.pdf"
@@ -10088,7 +10088,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A82390197_MAS\\MAS_2020_ANUAL.pdf"
@@ -10154,7 +10154,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A28011112_ZOT\\ZOT_2020_ANUAL.pdf"
@@ -10220,7 +10220,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A83236746_BME\\BME_2020_ANUAL.pdf"
@@ -10286,7 +10286,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A33984015_LIB\\LIB_2020_ANUAL.pdf"
@@ -10352,7 +10352,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A46001020_CLEO\\CLEO_2020_ANUAL.pdf"
@@ -10484,7 +10484,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A70233077_DOCS\\DOCS_2020_ANUAL.pdf"
@@ -10550,7 +10550,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A87428801_INDEX\\INDEX_2020_ANUAL.pdf"
@@ -10616,7 +10616,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A66236680_VBI\\VBI_2020_ANUAL.pdf"
@@ -10682,7 +10682,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2020/18728.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "541b5593d1a2b4270facfe95f337abca749e8cc1a9e9446537d6140f9728e484",
       "size_bytes": 13461277,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A87008579_SING\\SING_2020_ANUAL.pdf"
@@ -10693,7 +10693,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A83188509_NTAC\\NTAC_2020_ANUAL.pdf"
@@ -10759,7 +10759,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A82194455_GOW\\GOW_2020_ANUAL.pdf"
@@ -10825,7 +10825,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A85194455_BIOM\\BIOM_2020_ANUAL.pdf"
@@ -10891,7 +10891,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A18852341_NEO\\NEO_2020_ANUAL.pdf"
@@ -10957,7 +10957,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A88481288_E4Y\\E4Y_2020_ANUAL.pdf"
@@ -11023,7 +11023,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A65123456_UBI\\UBI_2020_ANUAL.pdf"
@@ -11089,7 +11089,7 @@
       "year": 2020,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2020\\A58580649_PLAS\\PLAS_2020_ANUAL.pdf"

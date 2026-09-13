@@ -1,8 +1,8 @@
 {
   "year": 2017,
-  "total_mapped": 21,
-  "downloaded": 21,
-  "cache_hits": 0,
+  "total_mapped": 38,
+  "downloaded": 20,
+  "cache_hits": 18,
   "failed": 0,
   "quarantined": 0,
   "manifest": [
@@ -12,7 +12,7 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17319.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "8fb4fda673472760fd514d8ded80f3256546c02d485d6683e0993d889eeeac88",
       "size_bytes": 13253103,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A39000013_SAN\\SAN_2017_ANUAL.pdf"
@@ -23,10 +23,32 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17318.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "ecb8c887ddf8180ec1f0159995de4b72b1764c2d0b720c7b6621a1c2da4dbe8c",
       "size_bytes": 11280655,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A48265169_BBVA\\BBVA_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "IBE",
+      "cif": "A48010615",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17334.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "c85b85f8bb90e2924bca5513db2a74f1dade2b9078f07a4dbbde4fe5a6e2ebf1",
+      "size_bytes": 11098295,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A48010615_IBE\\IBE_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "ITX",
+      "cif": "A15075062",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/16881.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "687f22ed17bbb44ce9ec512570e8fd9b4420d3906cfd0d8f48d08f4a419ab712",
+      "size_bytes": 10777813,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A15075062_ITX\\ITX_2017_ANUAL.pdf"
     },
     {
       "ticker": "TEF",
@@ -34,7 +56,7 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17327.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "ba469e7d667beb6a5e961a9ec1d712e91e8f772a58f69ebca438b925f0c3094b",
       "size_bytes": 12615353,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A28015865_TEF\\TEF_2017_ANUAL.pdf"
@@ -45,7 +67,7 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17375.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "87222f9f5febb01d1560ec24a7be1c10b05f8d10e7b914337d82ad29d4d5a281",
       "size_bytes": 12998832,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A78374725_REP\\REP_2017_ANUAL.pdf"
@@ -56,10 +78,21 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17335.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "caa0088d58ddfda5090fca320ab7d13043d07eafb519c33345102a35c8a2b701",
       "size_bytes": 13379473,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A08663619_CABK\\CABK_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "AMS",
+      "cif": "A84236934",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17355.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "bf1bb794ff5141da6968918955940c06c553b4875328c2817ed286f6ea65edaf",
+      "size_bytes": 7223319,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A84236934_AMS\\AMS_2017_ANUAL.pdf"
     },
     {
       "ticker": "CLNX",
@@ -67,7 +100,7 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17316.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "64c333de189f84d0d73931b97edf8cdce2dfb5b8a398774f1745ee8add26f23e",
       "size_bytes": 5604632,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A64907306_CLNX\\CLNX_2017_ANUAL.pdf"
@@ -78,10 +111,21 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17422.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "d4b17bba081cb53fe9e4e3ca6e890ab9a2579717acc33c66c27c2d17f5f0d700",
       "size_bytes": 11105914,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A78304516_MEL\\MEL_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "ACS",
+      "cif": "A28004885",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17425.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "ba6d37469c3a6fdebd564ecdad3bfee42cb962dfda81e860f70729079346fc82",
+      "size_bytes": 14816503,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A28004885_ACS\\ACS_2017_ANUAL.pdf"
     },
     {
       "ticker": "IAG",
@@ -89,7 +133,7 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17362.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "5bc336f16f4869c58ae40eab72723068fe7870eb157c08e478d35f33f6070ade",
       "size_bytes": 6363623,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A85845535_IAG\\IAG_2017_ANUAL.pdf"
@@ -100,7 +144,7 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17314.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "9da2ef60877f612841f4f246ffb5d2851f74e5009c3d87c41ead68110807d16e",
       "size_bytes": 39201259,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A08055741_MAP\\MAP_2017_ANUAL.pdf"
@@ -111,10 +155,43 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17317.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "688c364c26b9f902e5daf2ccf20d8e8e6dfab0b27f572124a7058bf63f437f14",
       "size_bytes": 5129753,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A08015497_NTGY\\NTGY_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "ENG",
+      "cif": "A28294726",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17326.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "edf52d0dcf5db2c67571939044a80fbe7dd48211891f00319f189b03d122072a",
+      "size_bytes": 4254385,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A28294726_ENG\\ENG_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "ELE",
+      "cif": "A28023430",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17372.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "2fb5ff1603d2279bda4acba0f7c96db43a06144e678bab716c96b082092e97eb",
+      "size_bytes": 12763844,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A28023430_ELE\\ELE_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "RED",
+      "cif": "A78003662",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17321.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "2ba38b7664fb30b6229128a5916d8b0d8d02f007601fc02481029d1ed60bf778",
+      "size_bytes": 3525019,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A78003662_RED\\RED_2017_ANUAL.pdf"
     },
     {
       "ticker": "BKT",
@@ -122,10 +199,21 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17333.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a55dc2e79dbad169a826e4c98411f6020904ed85279820ef264a812e69a8d586",
       "size_bytes": 9323174,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A28157360_BKT\\BKT_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "ACX",
+      "cif": "A28250777",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17363.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "4b7be5d92c3e9af8c936f0d518b3c36ed744f944aaadf3a46fff51b990f2428d",
+      "size_bytes": 7032180,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A28250777_ACX\\ACX_2017_ANUAL.pdf"
     },
     {
       "ticker": "SAB",
@@ -136,7 +224,29 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "3e216cccf87f92c148287db80b4ca8e943f27d60bff363bb4ac1eee595b91cca",
       "size_bytes": 10851267,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A08000143_ECR\\ECR_2017_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A08000143_SAB\\SAB_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "SCYR",
+      "cif": "A28013811",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17455.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "9d159cc7ccc0fc3b94f51cf5b902fa067bfb229e293c90e20dbbcec9356126c1",
+      "size_bytes": 6755828,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A28013811_SCYR\\SCYR_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "IDR",
+      "cif": "A28599033",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17410.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "e10e21ae72647282494e8da058f92d03b2888d270ea52f0bbff4c226de640fa3",
+      "size_bytes": 14181507,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A28599033_IDR\\IDR_2017_ANUAL.pdf"
     },
     {
       "ticker": "ANA",
@@ -144,7 +254,7 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17346.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "c8454b3b5365d247e5dc81321bc352e97183ca46c439dd03434dea9b15f0ed60",
       "size_bytes": 4213015,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A08001851_ANA\\ANA_2017_ANUAL.pdf"
@@ -155,7 +265,7 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17354.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "3904084f6eb7a60dcda736aeaab5040adef4d8fe66893d9e0e69a5f67c50c0d4",
       "size_bytes": 6275679,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A86212420_AENA\\AENA_2017_ANUAL.pdf"
@@ -166,10 +276,21 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17338.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "687a3b8765408a944253639cf93e17845e1d63bdb54b7d0e3cc60d427cf4eb31",
       "size_bytes": 2990335,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A62338827_ADX\\ADX_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "BKIA",
+      "cif": "A14010342",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17374.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "694c56a118e49265958be03daa132fba72dcbdba28eea2851c252cb440e0338b",
+      "size_bytes": 9658542,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A14010342_BKIA\\BKIA_2017_ANUAL.pdf"
     },
     {
       "ticker": "CAF",
@@ -180,7 +301,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "6df65c03fb2c55562631776a04212f4883882f8e227cd423fdad49d2ee7a1267",
       "size_bytes": 8777864,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A20001020_IBG\\IBG_2017_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A20001020_CAF\\CAF_2017_ANUAL.pdf"
     },
     {
       "ticker": "DIA",
@@ -188,7 +309,7 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17329.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "783bc7b5c3d206efc2b408cf4605848f42ac3e707c34d6168d617b1fe417cca6",
       "size_bytes": 3659116,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A28164754_DIA\\DIA_2017_ANUAL.pdf"
@@ -199,10 +320,54 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17709.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "6ed7d241c749458a39fffe48871dec4499ad94991cf9efeb006b6d82d113e7e8",
       "size_bytes": 3736729,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A47412333_EBRO\\EBRO_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "ENC",
+      "cif": "A28212264",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17325.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "db074754a73014fef927b1f6e8fe38393839921bd8f5cef4f2c14c3f360c59d2",
+      "size_bytes": 8380417,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A28212264_ENC\\ENC_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "FCC",
+      "cif": "A28037224",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17361.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "0da272bd9114eb2ad1b0aac57d23941606dffb00f5b6bbb4f6b0d5f0f843d2ba",
+      "size_bytes": 12516603,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A28037224_FCC\\FCC_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "SANJ",
+      "cif": "A36046993",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17390.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "36ef1699aa6f90b3622fcaaf5f1615b51768b6facf7ef566bef7b79505f804a1",
+      "size_bytes": 2200743,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A36046993_SANJ\\SANJ_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "OHLA",
+      "cif": "A48010573",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17389.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "264f81af316520a9ac59f50aefa66e03bd9fb8a2e324cbe0cf94654e08ee22d9",
+      "size_bytes": 8264874,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A48010573_OHLA\\OHLA_2017_ANUAL.pdf"
     },
     {
       "ticker": "PRS",
@@ -210,10 +375,32 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17413.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "8015b868f372c7e4ff583fa972b69dfee38cf140562865914c7f21004a15278a",
       "size_bytes": 6515389,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A28297059_PRS\\PRS_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "VIS",
+      "cif": "A31065501",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17383.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "6efbfb139077d90b50cf8ca26a18be600895d7b35c0822dcb9afda76035203b8",
+      "size_bytes": 4980466,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A31065501_VIS\\VIS_2017_ANUAL.pdf"
+    },
+    {
+      "ticker": "ENO",
+      "cif": "A48027056",
+      "year": 2017,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2017/17381.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "6e1448d69c2e0781c162fdcf4b3716aa45e894173983c77361540d11349f8b0e",
+      "size_bytes": 25603318,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A48027056_ENO\\ENO_2017_ANUAL.pdf"
     },
     {
       "ticker": "ABG",
@@ -224,7 +411,7 @@
       "status": "DOWNLOADED_AND_SEALED",
       "sha256": "53bcf9934f52b36e2d5dfdb031903b8a69c6a20abd73e593b03c6463c382794d",
       "size_bytes": 11843594,
-      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A41002288_ISUR\\ISUR_2017_ANUAL.pdf"
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A41002288_ABG\\ABG_2017_ANUAL.pdf"
     },
     {
       "ticker": "SING",
@@ -232,7 +419,7 @@
       "year": 2017,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/AUDITA/2017/17299.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "184d8b8edabbe56d5b0248c0c820c990a6f2dd04a1efb658a0230c027340c5a7",
       "size_bytes": 2693751,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2017\\A87008579_SING\\SING_2017_ANUAL.pdf"

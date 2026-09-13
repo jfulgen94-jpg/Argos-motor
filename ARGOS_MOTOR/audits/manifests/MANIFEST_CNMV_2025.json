@@ -1,8 +1,8 @@
 {
   "year": 2025,
   "total_mapped": 1012,
-  "downloaded": 8,
-  "cache_hits": 1004,
+  "downloaded": 0,
+  "cache_hits": 1012,
   "failed": 0,
   "quarantined": 0,
   "manifest": [
@@ -320,7 +320,7 @@
       "year": 2025,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2025\\A84236934_AMS\\AMS_2025_ANUAL.pdf"
@@ -1244,7 +1244,7 @@
       "year": 2025,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=kSoBUrrptmIWDeZsLZQNZ0vGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a8bc8fa2c5b7990d9ebbb03a010a265177b6b00b58d4895416d8802ea03273ac",
       "size_bytes": 40062961,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2025\\A08000143_SAB\\SAB_2025_ANUAL.pdf"
@@ -2630,7 +2630,7 @@
       "year": 2025,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=%2bvQMSsqjCGg9ovM8MwMxyEvGON43wHHcXbrRTjRnO%2bCze5HLI2BThe6mgBjw3Gx%2f",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "8991a76cc975723d02ce0585b8ee6d3da59c52fe1c259e410ebc26c135662531",
       "size_bytes": 31040641,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2025\\A20001020_CAF\\CAF_2025_ANUAL.pdf"
@@ -4511,7 +4511,7 @@
       "year": 2025,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2025\\A28014561_NYS\\NYS_2025_ANUAL.pdf"
@@ -5138,7 +5138,7 @@
       "year": 2025,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2025\\A08015844_RJF\\RJF_2025_ANUAL.pdf"
@@ -7052,7 +7052,7 @@
       "year": 2025,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2025\\A85573713_EIDF\\EIDF_2025_ANUAL.pdf"
@@ -7250,7 +7250,7 @@
       "year": 2025,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2025\\A65963363_HLZ\\HLZ_2025_ANUAL.pdf"
@@ -9560,7 +9560,7 @@
       "year": 2025,
       "doc_type": "CNMV_ANNUAL_REPORT",
       "url": "https://www.cnmv.es/DocPortal/quees/Conducta.pdf",
-      "status": "DOWNLOADED_AND_SEALED",
+      "status": "CACHE_HIT",
       "sha256": "a80b7cc89747d5124542ec01d32f3b3848ed4a91d9dd86a0b457916f1859dc4a",
       "size_bytes": 20260205,
       "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2025\\A41002288_ABG\\ABG_2025_ANUAL.pdf"
