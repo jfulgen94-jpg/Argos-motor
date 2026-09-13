@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-24T18:23:52.718307+00:00",
+  "mode": "nivel1",
+  "total_companies": 103,
+  "processed_count": 103,
+  "progress_pct": 100.0,
+  "speed_docs_per_sec": 16.55,
+  "current_market": "NL",
+  "last_company": "RAND - Randstad NV",
+  "duckdb_status": "HEALTHY",
+  "active_model": "stater-audit"
+}
