@@ -1,6 +1,6 @@
 # Informe Forense de Auditoría: Ingesta Diferencial de España v4.0.0
 
-- **Fecha de Auditoría**: 2026-09-13 00:11:46 UTC
+- **Fecha de Auditoría**: 2026-09-13 20:19:28 UTC
 - **Total Sociedades Cotizadas Catalogadas**: **378**
 - **Supervisor Oficial**: Comisión Nacional del Mercado de Valores (CNMV)
 - **Operador de Mercado**: BME (Bolsas y Mercados Españoles)

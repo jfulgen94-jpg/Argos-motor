@@ -169,8 +169,7 @@ class CNMVEngineV5:
                 manifest_path.write_text(json.dumps(doc, indent=2), 'utf-8')
                 print(f"[+] Manifiesto para el año {year} sellado en {manifest_path}")
         await self.http_client.aclose()
-        print("
-[FIN] Proceso de ingesta completado.")
+        print("\n[FIN] Proceso de ingesta completado.")
 
 def main():
     parser = argparse.ArgumentParser(description="ARGOS Motor de Ingesta Institucional v5 para España.")
