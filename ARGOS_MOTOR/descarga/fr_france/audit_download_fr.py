@@ -6,10 +6,13 @@ Inspecciona y valida la integridad de los paquetes descargados en data/raw/FR_AM
 import os
 from pathlib import Path
 
-BASE_FR = Path("ARGOS_MOTOR/data/raw/FR_AMF")
+CANONICAL_FR = Path("D:/ARGOS_DATA/raw/FR_AMF")
+FALLBACK_FR = Path("ARGOS_MOTOR/data/raw/FR_AMF")
+BASE_FR = CANONICAL_FR if CANONICAL_FR.exists() else FALLBACK_FR
 
 def audit_french_downloads():
     print("=== AUDITORÍA DE ARCHIVOS DESCARGADOS EN FRANCIA (FR_AMF) ===")
+    print(f"Ruta auditada: {BASE_FR}")
     if not BASE_FR.exists():
         print(f"Directorio no encontrado: {BASE_FR}")
         return
