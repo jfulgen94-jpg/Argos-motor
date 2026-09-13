@@ -1,0 +1,241 @@
+{
+  "year": 2019,
+  "total_mapped": 21,
+  "downloaded": 21,
+  "cache_hits": 0,
+  "failed": 0,
+  "quarantined": 0,
+  "manifest": [
+    {
+      "ticker": "SAN",
+      "cif": "A39000013",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18359.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "7623687260f0eeafc191262ab13672a2ad7c9930e759c4a841f7df0b5943f4a2",
+      "size_bytes": 13793104,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A39000013_SAN\\SAN_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "BBVA",
+      "cif": "A48265169",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18285.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "405f9c94efba3ad7e8ae76364ce3d993ab40db2f8ace854499aaf8f979593fbb",
+      "size_bytes": 14505913,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A48265169_BBVA\\BBVA_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "TEF",
+      "cif": "A28015865",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18290.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "bbe7660da39e5926c68356c673e88f3e7173a247351b8a7809dd5bbfd28ab242",
+      "size_bytes": 23864356,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A28015865_TEF\\TEF_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "REP",
+      "cif": "A78374725",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18291.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "f39104153075cc863790753dab91793c54b079f54dce66d57544a2446ce34df9",
+      "size_bytes": 13889609,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A78374725_REP\\REP_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "CABK",
+      "cif": "A08663619",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18294.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "acac0c12b867a454d74c2a72775d0ec6d7fa4b0822832743099cb8d2b65bc14c",
+      "size_bytes": 33276985,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A08663619_CABK\\CABK_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "CLNX",
+      "cif": "A64907306",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18302.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "a4f7186d286b2f94f8b76e6778e338ca888a9b6a64130c8007aa2ff90c23e457",
+      "size_bytes": 8973949,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A64907306_CLNX\\CLNX_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "MEL",
+      "cif": "A78304516",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18311.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "9ce94eee4a47ce9860d8fcda8d5435bf84e48261ae12034684647d3918a4fe4a",
+      "size_bytes": 15630028,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A78304516_MEL\\MEL_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "IAG",
+      "cif": "A85845535",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18371.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "af4e163064cad80b40329203b218d692a228a770f4aed28d0bc212d6275db978",
+      "size_bytes": 11988148,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A85845535_IAG\\IAG_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "MAP",
+      "cif": "A08055741",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18286.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "809a81f036709d99d01f8025046aac8fb279d3672e8ad4f8a71c7ed62c8b185d",
+      "size_bytes": 19946496,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A08055741_MAP\\MAP_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "NTGY",
+      "cif": "A08015497",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18284.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "32d0c2ed3abded2ca50299e4bc1aea719fe62fbc1ca8b0fe055fd0f7db77899a",
+      "size_bytes": 9507592,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A08015497_NTGY\\NTGY_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "BKT",
+      "cif": "A28157360",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18289.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "01d7f0c76a122a5576145614cdf90625f368fb3c45657a3bff25ccc6bd87b553",
+      "size_bytes": 20818789,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A28157360_BKT\\BKT_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "SAB",
+      "cif": "A08000143",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18288.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "8110aa749692c1b188198bc7e34fb5834085d4149bd53a29496f5cbafc769b76",
+      "size_bytes": 23890138,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A08000143_ECR\\ECR_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "ANA",
+      "cif": "A08001851",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18348.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "ad69ae08a70254d609ec9d78ac9321a3e67b391932c4549ac523f21f908efa55",
+      "size_bytes": 12498958,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A08001851_ANA\\ANA_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "AENA",
+      "cif": "A86212420",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18308.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "73a0f5dde5359ee5a8769e029a4dba49cc673b62570a4ad02bb02d70381973da",
+      "size_bytes": 9087110,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A86212420_AENA\\AENA_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "ADX",
+      "cif": "A62338827",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18317.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "4ddc0802c2e8fe5c07e0c366895c8cca8d83e69305728b9c5424d047bd453cf4",
+      "size_bytes": 6756009,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A62338827_ADX\\ADX_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "CAF",
+      "cif": "A20001020",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18346.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "76b58d5fe77bd82d1b9ecdf53708394d7e2b7e416c48e589a4d6e641a70b44f5",
+      "size_bytes": 7845418,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A20001020_IBG\\IBG_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "DIA",
+      "cif": "A28164754",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18383.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "aaa9c7c474d2d0288e2639a700c47dc5576cbddd09412d73031ba5936ff00430",
+      "size_bytes": 4772205,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A28164754_DIA\\DIA_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "EBRO",
+      "cif": "A47412333",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18388.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "5d94c2d6e93f8f9f2cb9ce386c5074620808388241ae9eaa266ff2e7468d0ecb",
+      "size_bytes": 10301162,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A47412333_EBRO\\EBRO_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "PRS",
+      "cif": "A28297059",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18590.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "54c7caa14bfd333bd8855705cd68ac5253298fff8dba77f7621c0ac0e8d401e5",
+      "size_bytes": 4223840,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A28297059_PRS\\PRS_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "ABG",
+      "cif": "A41002288",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/19169.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "e30c2d571c703527dea823023d3556b88b5db9e311a42c414985d953494d22d5",
+      "size_bytes": 12475763,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A41002288_ISUR\\ISUR_2019_ANUAL.pdf"
+    },
+    {
+      "ticker": "SING",
+      "cif": "A87008579",
+      "year": 2019,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2019/18279.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "858b46293c529558b0e1baa146a64f4ff14bcb30fe446bfa78b0668a735ae053",
+      "size_bytes": 7637709,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2019\\A87008579_SING\\SING_2019_ANUAL.pdf"
+    }
+  ]
+}

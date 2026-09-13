@@ -1,0 +1,241 @@
+{
+  "year": 2015,
+  "total_mapped": 21,
+  "downloaded": 21,
+  "cache_hits": 0,
+  "failed": 0,
+  "quarantined": 0,
+  "manifest": [
+    {
+      "ticker": "SAN",
+      "cif": "A39000013",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16171.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "0d0061fa792ff67638509cba6e45ac188ca350339f00ff38a8dbdefa562cfbea",
+      "size_bytes": 12537140,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A39000013_SAN\\SAN_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "BBVA",
+      "cif": "A48265169",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16162.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "1d5726a1e42120aab6bf7cc38d01f09a64b0ee19eb7068d968ef48da69e135b9",
+      "size_bytes": 19553240,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A48265169_BBVA\\BBVA_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "TEF",
+      "cif": "A28015865",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16211.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "28ba33a14e70d39bf06867baa1f0bc16403af23fb87eb30fb1ed949afeca7510",
+      "size_bytes": 9056379,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A28015865_TEF\\TEF_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "REP",
+      "cif": "A78374725",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16197.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "cf67ecccee6a33e61c91e331cf9fd77258335f41532e6f52367e90078d60b9b9",
+      "size_bytes": 10427338,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A78374725_REP\\REP_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "CABK",
+      "cif": "A08663619",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16210.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "cf473f83a1579c6336e197cc994ce7fe853f4f39aa1eb1a6fff37cedfe6e501c",
+      "size_bytes": 16696723,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A08663619_CABK\\CABK_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "CLNX",
+      "cif": "A64907306",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16174.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "6c82ab18a6d4ce2c28e610a7d06ed4b7cdc27e29d2e2705de55403960af2e32e",
+      "size_bytes": 13195514,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A64907306_CLNX\\CLNX_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "MEL",
+      "cif": "A78304516",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16277.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "de1a25393be95fb2c35e2314b51db2ee428bf7fd22f5091f1653ed1dd8d93527",
+      "size_bytes": 5294977,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A78304516_MEL\\MEL_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "IAG",
+      "cif": "A85845535",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16251.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "7aa25f0eb0cdd8479c888bff6e1d555e45a85127f944a29be897d9d469c86e09",
+      "size_bytes": 6212628,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A85845535_IAG\\IAG_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "MAP",
+      "cif": "A08055741",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16164.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "6a838525863658071a7998877d82b6a0aecba9ce106522437de390bde5493cf1",
+      "size_bytes": 10860517,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A08055741_MAP\\MAP_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "NTGY",
+      "cif": "A08015497",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16161.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "4e5f3f8c2d1589e50dfd37aee88fda15de9c0ef2940a5ab022724f24f0fab3ef",
+      "size_bytes": 5210317,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A08015497_NTGY\\NTGY_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "BKT",
+      "cif": "A28157360",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16173.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "93e40521276e26446944c7de1d852f0a68504ce1335ba1633118334b65c7c892",
+      "size_bytes": 12093216,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A28157360_BKT\\BKT_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "SAB",
+      "cif": "A08000143",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16194.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "02a548874307c743f5e589d852238de010dfbc54a41ce0e4e141b8f72095fbdb",
+      "size_bytes": 6746431,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A08000143_ECR\\ECR_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "ANA",
+      "cif": "A08001851",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16242.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "e42c0d2e4d8dfa3634fcbca065373a948bff01f57073a1d4871a3bef8846933c",
+      "size_bytes": 3213900,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A08001851_ANA\\ANA_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "AENA",
+      "cif": "A86212420",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16181.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "fedca0f1febb42f43d71818c0600556a4dc5514026b3ab364a5802e7a699d4a6",
+      "size_bytes": 22963136,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A86212420_AENA\\AENA_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "ADX",
+      "cif": "A62338827",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16241.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "eef00b9f326d45fa1492d7da7f0b7bfb8655b2a5e7a2fe16464c58ff867ccf50",
+      "size_bytes": 4884978,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A62338827_ADX\\ADX_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "CAF",
+      "cif": "A20001020",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16202.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "def51db4f9f75228db0a122a758733852a2eacae017cf9617a867d9b1e53af14",
+      "size_bytes": 4394929,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A20001020_IBG\\IBG_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "DIA",
+      "cif": "A28164754",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16179.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "9159a73540f72116d17994d391703660f2087f627f6cb7ddbb878b4147028bd4",
+      "size_bytes": 2383182,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A28164754_DIA\\DIA_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "EBRO",
+      "cif": "A47412333",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16390.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "0f0a285328125e40480d19eb30a686beb8d6e30c72ab241830d2612a3ea3a602",
+      "size_bytes": 4181580,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A47412333_EBRO\\EBRO_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "PRS",
+      "cif": "A28297059",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16224.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "ca3c9ddb88c565e966c97204772b0c9b5bc6469adf8888d72fd8d594e9991c5c",
+      "size_bytes": 8735376,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A28297059_PRS\\PRS_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "ABG",
+      "cif": "A41002288",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16312.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "644be72efd9a82c7e92143cfe782e3185dcb23a0730736550e862b4afe0a5eb0",
+      "size_bytes": 10557817,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A41002288_ISUR\\ISUR_2015_ANUAL.pdf"
+    },
+    {
+      "ticker": "SING",
+      "cif": "A87008579",
+      "year": 2015,
+      "doc_type": "CNMV_ANNUAL_REPORT",
+      "url": "https://www.cnmv.es/AUDITA/2015/16156.pdf",
+      "status": "DOWNLOADED_AND_SEALED",
+      "sha256": "8c844b05b0b070d5c3adbc32f01b3de385c285c71be26aece09b5b51da4cc345",
+      "size_bytes": 1851461,
+      "path": "D:\\ARGOS_DATA\\raw\\ES_CNMV\\2015\\A87008579_SING\\SING_2015_ANUAL.pdf"
+    }
+  ]
+}
