@@ -3,11 +3,39 @@
   "country": "DE",
   "supervisor": "BaFin",
   "oam": "Unternehmensregister / Bundesanzeiger / ESEF",
-  "generated_at_utc": "2026-09-13T22:33:12.543128+00:00",
+  "generated_at_utc": "2026-09-15T18:33:02.131606+00:00",
   "total_mapped": 1011,
   "downloaded": 0,
-  "cache_hits": 0,
+  "cache_hits": 3,
   "failed": 0,
   "quarantined": 0,
-  "manifest": []
+  "manifest": [
+    {
+      "ticker": "BASF",
+      "year": 2012,
+      "doc_type": "ANNUAL_AUDITED_REPORT",
+      "status": "CACHE_HIT",
+      "sha256": "7d7418b317919732a56dce180b12ea544f20505f6965a310a43adb8fcf8e4cf5",
+      "size_bytes": 24836,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2012\\HRB_6000_BASF\\BASF_2012_ANUAL.html"
+    },
+    {
+      "ticker": "DEUT",
+      "year": 2012,
+      "doc_type": "ANNUAL_AUDITED_REPORT",
+      "status": "CACHE_HIT",
+      "sha256": "622d5fa30022eeb5d7b217a5e46cfbf12272f2f17057ed55b1a0601fc5e4e84f",
+      "size_bytes": 24835,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2012\\HRB_6794_DEUT\\DEUT_2012_ANUAL.html"
+    },
+    {
+      "ticker": "STOX",
+      "year": 2012,
+      "doc_type": "ANNUAL_AUDITED_REPORT",
+      "status": "CACHE_HIT",
+      "sha256": "a220da883ec8ddaa04cef6515008083c6ce26d4d0bc488922b4cd86c9fd9e27d",
+      "size_bytes": 24836,
+      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2012\\70125810_STOX\\STOX_2012_ANUAL.html"
+    }
+  ]
 }

@@ -6,10 +6,13 @@ Verifica la integridad de los paquetes y metadatos en data/raw/DE_BAFIN.
 import os
 from pathlib import Path
 
-BASE_DE = Path("ARGOS_MOTOR/data/raw/DE_BAFIN")
+CANONICAL_DE = Path("D:/ARGOS_DATA/raw/DE_BAFIN")
+FALLBACK_DE = Path("ARGOS_MOTOR/data/raw/DE_BAFIN")
+BASE_DE = CANONICAL_DE if CANONICAL_DE.exists() else FALLBACK_DE
 
 def audit_german_downloads():
     print("=== AUDITORÍA DE ARCHIVOS DESCARGADOS EN ALEMANIA (DE_BAFIN) ===")
+    print(f"Ruta auditada: {BASE_DE.resolve()}")
     if not BASE_DE.exists():
         print(f"Directorio no encontrado: {BASE_DE}")
         return
@@ -34,7 +37,7 @@ def audit_german_downloads():
             if not cdir.is_dir(): continue
             companies.add(cdir.name)
             c_files = [f.name.lower() for f in cdir.iterdir() if f.is_file()]
-            if any(f.endswith('.zip') or f.endswith('.xhtml') or f.endswith('.htm') for f in c_files):
+            if any(f.endswith('.zip') or f.endswith('.xhtml') or f.endswith('.htm') or f.endswith('.html') for f in c_files):
                 completos += 1
             elif any(f.endswith('.json') for f in c_files):
                 metas += 1

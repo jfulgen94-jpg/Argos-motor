@@ -55,6 +55,8 @@ htmlcov/
 .env.local
 *.pem
 *.key
+*azure_secrets*
+*azure_config*
 iniciar_openhands.bat
 ejecutar_descarga_*.bat
 ARGOS_DATA_DISK/

@@ -13,12 +13,12 @@
   "target_indices": ["DAX40", "MDAX"],
   "target_years": [2021, 2022, 2023, 2024],
   "rate_limit": {
-    "delay_between_requests_seconds": 1.5,
-    "concurrent_downloads": 3
+    "delay_between_requests_seconds": 2.0,
+    "concurrent_downloads": 2
   },
   "retry_policy": {
     "max_retries": 3,
     "backoff_factor": 15
   },
-  "user_agent": "ARGOS-Institutional-Data-Auditor/1.0 (Compliance; Regulatory Research)"
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
 }
