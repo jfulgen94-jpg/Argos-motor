@@ -80,7 +80,7 @@ FINANCIAL_KEYWORDS = [
 ]
 
 USER_AGENTS = [
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15",
 ]
@@ -96,8 +96,8 @@ IR_PAGE_PATTERNS = {
     'ALLI':   ('https://www.allianz.com/en/investor_relations/results_reports/annual-report.html', 'a[href$=".pdf"]'),
     'BAS':    ('https://www.basf.com/global/en/investors/calendar-and-publications/annual-report.html', 'a[href$=".pdf"]'),
     'BASF':   ('https://www.basf.com/global/en/investors/calendar-and-publications/annual-report.html', 'a[href$=".pdf"]'),
-    'BAYN':   ('https://www.bayer.com/en/investors/annual-report', 'a[href$=".pdf"]'),
-    'BAYG':   ('https://www.bayer.com/en/investors/annual-report', 'a[href$=".pdf"]'),
+    'BAYN':   ('https://www.bayer.com/en/investors/integrated-annual-reports', 'a[href$=".pdf"]'),
+    'BAYG':   ('https://www.bayer.com/en/investors/integrated-annual-reports', 'a[href$=".pdf"]'),
     'BMW':    ('https://www.bmwgroup.com/en/investor-relations/financial-reports.html', 'a[href$=".pdf"]'),
     'BMWG':   ('https://www.bmwgroup.com/en/investor-relations/financial-reports.html', 'a[href$=".pdf"]'),
     'BAYE_5': ('https://www.bmwgroup.com/en/investor-relations/financial-reports.html', 'a[href$=".pdf"]'),  # BMW en universo
@@ -163,29 +163,72 @@ IR_PAGE_PATTERNS = {
     'ZALN':   ('https://corporate.zalando.com/en/investor-relations/publications/annual-reports', 'a[href$=".pdf"]'),
     'NGEN':   ('https://www.nemetschek.com/en/investor-relations/publications/', 'a[href$=".pdf"]'),
     'G1A':    ('https://www.gerresheimer.com/en/investor-relations/publications', 'a[href$=".pdf"]'),
+    # --- Tickers reales del universo maestro (encontrados via analisis) ---
+    'VOLK':   ('https://www.volkswagen-group.com/en/investor-relations/publications/annual-report.html', 'a[href$=".pdf"]'),
+    'VOLK_2': ('https://www.volkswagen-group.com/en/investor-relations/publications/annual-report.html', 'a[href$=".pdf"]'),
+    'VOLK_3': ('https://www.volkswagen-group.com/en/investor-relations/publications/annual-report.html', 'a[href$=".pdf"]'),
+    'INFI':   ('https://www.infineon.com/cms/en/about-infineon/investor/publications/', 'a[href$=".pdf"]'),
+    'BAYE_3': ('https://www.bayer.com/en/investors/integrated-annual-reports', 'a[href$=".pdf"]'),
+    'MUNI':   ('https://www.munich-re.com/en/investors/publications/annual-report/', 'a[href$=".pdf"]'),
+    'CONT':   ('https://www.continental.com/en/investors/financial-publications/annual-reports/', 'a[href$=".pdf"]'),
+    'DE_RWE': ('https://www.rwe.com/investors/publications/annual-report/', 'a[href$=".pdf"]'),
+    'DE_EON': ('https://www.eon.com/en/investor-relations/financial-publications.html', 'a[href$=".pdf"]'),
+    'FRES':   ('https://www.fresenius.com/investors/reports-and-publications', 'a[href$=".pdf"]'),
+    'FRES_2': ('https://www.freseniusmedicalcare.com/en/investors/publications', 'a[href$=".pdf"]'),
+    'FRES_3': ('https://www.fresenius.com/investors/reports-and-publications', 'a[href$=".pdf"]'),
+    'MERC_2': ('https://www.merckgroup.com/investors/reports-and-publications/annual-report', 'a[href$=".pdf"]'),
+    'MERC_3': ('https://www.merckgroup.com/investors/reports-and-publications/annual-report', 'a[href$=".pdf"]'),
+    'MERC_4': ('https://www.merckgroup.com/investors/reports-and-publications/annual-report', 'a[href$=".pdf"]'),
+    'COVE':   ('https://www.covestro.com/en/investor-relations/financial-reports', 'a[href$=".pdf"]'),
+    'COVE_2': ('https://www.covestro.com/en/investor-relations/financial-reports', 'a[href$=".pdf"]'),
+    'THYS_2': ('https://www.thyssenkrupp.com/en/investors/reporting-and-publications/', 'a[href$=".pdf"]'),
+    'SYMR_2': ('https://www.symrise.com/investors/reports-publications/', 'a[href$=".pdf"]'),
 }
 
+
 # PDFs directos curados (Canal 2 fast-path)
+# NOTA: Las URLs de SAP en assets.cdn.sap.com retornan 404 desde 2024.
+# Usando scraping via IR_PAGE_PATTERNS en su lugar.
 IR_PDF_MAP = {
-    'SAP': {
-        2019: 'https://assets.cdn.sap.com/sapcom/docs/2020/01/adfbe02f-847d-0010-87a3-c30de2ffd8ff.pdf',
-        2018: 'https://assets.cdn.sap.com/sapcom/docs/2019/01/a28e57b1-477d-0010-87a3-c30de2ffd8ff.pdf',
-        2017: 'https://assets.cdn.sap.com/sapcom/docs/2018/01/4da44f10-f07d-0010-87a3-c30de2ffd8ff.pdf',
-        2016: 'https://assets.cdn.sap.com/sapcom/docs/2017/01/4da44f10-f07d-0010-87a3-c30de2ffd8ff.pdf',
-        2015: 'https://assets.cdn.sap.com/sapcom/docs/2016/01/4da44f10-f07d-0010-87a3-c30de2ffd8ff.pdf',
-        2014: 'https://assets.cdn.sap.com/sapcom/docs/2015/01/4da44f10-f07d-0010-87a3-c30de2ffd8ff.pdf',
-        2013: 'https://assets.cdn.sap.com/sapcom/docs/2014/01/4da44f10-f07d-0010-87a3-c30de2ffd8ff.pdf',
-        2012: 'https://assets.cdn.sap.com/sapcom/docs/2013/01/4da44f10-f07d-0010-87a3-c30de2ffd8ff.pdf',
+    # Lufthansa -- PDFs historicos estables en investor-relations.lufthansagroup.com
+    'LUFT': {
+        2019: 'https://investor-relations.lufthansagroup.com/en/publications/financial-reports/annual-report-2019.pdf',
+        2018: 'https://investor-relations.lufthansagroup.com/en/publications/financial-reports/annual-report-2018.pdf',
+        2017: 'https://investor-relations.lufthansagroup.com/en/publications/financial-reports/annual-report-2017.pdf',
     },
-    'SAPS': {
-        2019: 'https://assets.cdn.sap.com/sapcom/docs/2020/01/adfbe02f-847d-0010-87a3-c30de2ffd8ff.pdf',
-        2018: 'https://assets.cdn.sap.com/sapcom/docs/2019/01/a28e57b1-477d-0010-87a3-c30de2ffd8ff.pdf',
-        2017: 'https://assets.cdn.sap.com/sapcom/docs/2018/01/4da44f10-f07d-0010-87a3-c30de2ffd8ff.pdf',
-        2016: 'https://assets.cdn.sap.com/sapcom/docs/2017/01/4da44f10-f07d-0010-87a3-c30de2ffd8ff.pdf',
-        2015: 'https://assets.cdn.sap.com/sapcom/docs/2016/01/4da44f10-f07d-0010-87a3-c30de2ffd8ff.pdf',
-        2014: 'https://assets.cdn.sap.com/sapcom/docs/2015/01/4da44f10-f07d-0010-87a3-c30de2ffd8ff.pdf',
-        2013: 'https://assets.cdn.sap.com/sapcom/docs/2014/01/4da44f10-f07d-0010-87a3-c30de2ffd8ff.pdf',
-        2012: 'https://assets.cdn.sap.com/sapcom/docs/2013/01/4da44f10-f07d-0010-87a3-c30de2ffd8ff.pdf',
+    'LHA': {
+        2019: 'https://investor-relations.lufthansagroup.com/en/publications/financial-reports/annual-report-2019.pdf',
+        2018: 'https://investor-relations.lufthansagroup.com/en/publications/financial-reports/annual-report-2018.pdf',
+    },
+    # Bayer AG -- PDFs directos historicos desde bayer.com
+    'BAYE_3': {
+        2019: 'https://www.bayer.com/sites/default/files/2020-11/bayer-ag-annual-report-2019_6.pdf',
+        2018: 'https://www.bayer.com/sites/default/files/2020-04/bayer_ar18_entire.pdf',
+        2017: 'https://www.bayer.com/sites/default/files/2020-05/bayer_ar17_entire.pdf',
+        2016: 'https://www.bayer.com/sites/default/files/2020-05/ar-2016.pdf',
+        2015: 'https://www.bayer.com/sites/default/files/2023-12/gb-2015-en.pdf',
+        2014: 'https://www.bayer.com/sites/default/files/2023-12/ar-2014-0.pdf',
+    },
+    'BAYN': {
+        2019: 'https://www.bayer.com/sites/default/files/2020-11/bayer-ag-annual-report-2019_6.pdf',
+        2018: 'https://www.bayer.com/sites/default/files/2020-04/bayer_ar18_entire.pdf',
+        2017: 'https://www.bayer.com/sites/default/files/2020-05/bayer_ar17_entire.pdf',
+        2016: 'https://www.bayer.com/sites/default/files/2020-05/ar-2016.pdf',
+        2015: 'https://www.bayer.com/sites/default/files/2023-12/gb-2015-en.pdf',
+        2014: 'https://www.bayer.com/sites/default/files/2023-12/ar-2014-0.pdf',
+    },
+    # Thyssenkrupp AG -- PDFs directos historicos
+    'THYS_2': {
+        2019: 'https://ucpcdn.thyssenkrupp.com/_binary/UCP5thyssenkruppAG/86ac8d65-840b-44ad-96fd-c1b76fcf0a67/thyssenkrupp-gb-2018-2019-en-web_neu.pdf',
+        2018: 'https://ucpcdn.thyssenkrupp.com/_binary/UCP5thyssenkruppAG/d696ce08-b7ec-4cf0-9183-145bbda093d1/thyssenkrupp-ag-ar-2017-2018-eng-web.pdf',
+        2017: 'https://ucpcdn.thyssenkrupp.com/_binary/UCP5thyssenkruppAG/09db9818-ed64-46f5-a3c9-c793661ba69c/neu2-gb_2016-2017-thyssenkrupp-gb-eng-web.pdf',
+        2016: 'https://ucpcdn.thyssenkrupp.com/_binary/UCP5thyssenkruppAG/08fb200e-8e4a-45b2-aac8-42f0e0ba6780/thyssenkrupp_gb_en_2015_2016.pdf',
+    },
+    'TKA': {
+        2019: 'https://ucpcdn.thyssenkrupp.com/_binary/UCP5thyssenkruppAG/86ac8d65-840b-44ad-96fd-c1b76fcf0a67/thyssenkrupp-gb-2018-2019-en-web_neu.pdf',
+        2018: 'https://ucpcdn.thyssenkrupp.com/_binary/UCP5thyssenkruppAG/d696ce08-b7ec-4cf0-9183-145bbda093d1/thyssenkrupp-ag-ar-2017-2018-eng-web.pdf',
+        2017: 'https://ucpcdn.thyssenkrupp.com/_binary/UCP5thyssenkruppAG/09db9818-ed64-46f5-a3c9-c793661ba69c/neu2-gb_2016-2017-thyssenkrupp-gb-eng-web.pdf',
+        2016: 'https://ucpcdn.thyssenkrupp.com/_binary/UCP5thyssenkruppAG/08fb200e-8e4a-45b2-aac8-42f0e0ba6780/thyssenkrupp_gb_en_2015_2016.pdf',
     },
 }
 
@@ -380,8 +423,8 @@ def channel2_ir_crawler(company: dict, year: int, comp_dir: Path, dry_run: bool)
     if not HTTPX_AVAILABLE or not BS4_AVAILABLE:
         return None
 
-    # 2a: PDF directo mapeado
-    for key in [ticker, ticker.upper()]:
+    # 2a: PDF directo mapeado (dedup para evitar doble intento cuando ticker ya esta en mayusculas)
+    for key in dict.fromkeys([ticker, ticker.upper()]):
         year_map = IR_PDF_MAP.get(key, {})
         if year in year_map:
             url = year_map[year]
@@ -392,16 +435,18 @@ def channel2_ir_crawler(company: dict, year: int, comp_dir: Path, dry_run: bool)
             try:
                 time.sleep(RATE_LIMIT_DELAY)
                 r = client.get(url, timeout=60)
-                if r.status_code == 200 and len(r.content) > 5000:
+                if r.status_code == 200 and r.content[:4] == b'%PDF' and len(r.content) > 5000:
                     return seal_document(r.content, comp_dir, ticker, year,
                                          url, "CANAL2a_PDF_DIRECTO", company, ".pdf")
+                else:
+                    print(f"  [2a] URL no valida (status={r.status_code}, size={len(r.content)})")
             except Exception as e:
                 print(f"  [2a] Error: {e}")
             finally:
                 client.close()
 
-    # 2b: Scraping de IR page curada
-    for key in [ticker, ticker.upper()]:
+    # 2b: Scraping de IR page curada (dedup para evitar doble intento)
+    for key in dict.fromkeys([ticker, ticker.upper()]):
         if key not in IR_PAGE_PATTERNS:
             continue
         ir_url, css_sel = IR_PAGE_PATTERNS[key]
@@ -618,9 +663,12 @@ def channel3_bundesanzeiger(company: dict, year: int, comp_dir: Path,
             browser.close()
 
 
-# --- CANAL 4: Busqueda Web ---
+DDG_DISABLED = False
 
 def channel4_web_search(company: dict, year: int, comp_dir: Path, dry_run: bool) -> Optional[str]:
+    global DDG_DISABLED
+    if DDG_DISABLED:
+        return None
     if not HTTPX_AVAILABLE or not BS4_AVAILABLE:
         return None
     ticker = company.get('ticker', '')
@@ -641,8 +689,8 @@ def channel4_web_search(company: dict, year: int, comp_dir: Path, dry_run: bool)
         for query in queries[:2]:
             encoded = urllib.parse.quote(query)
             try:
-                time.sleep(RATE_LIMIT_DELAY * 2)
-                r = client.get(f"https://html.duckduckgo.com/html/?q={encoded}", timeout=25)
+                time.sleep(RATE_LIMIT_DELAY)
+                r = client.get(f"https://html.duckduckgo.com/html/?q={encoded}", timeout=5)
                 if r.status_code == 200:
                     soup = BeautifulSoup(r.text, 'lxml')
                     for link in soup.select("a.result__url, .result__title a"):
@@ -661,6 +709,10 @@ def channel4_web_search(company: dict, year: int, comp_dir: Path, dry_run: bool)
                             found_urls.append(href)
             except Exception as e:
                 print(f"  [4] Error DDG '{query[:40]}': {e}")
+                if "10060" in str(e) or "ConnectError" in type(e).__name__ or "Timeout" in type(e).__name__:
+                    print("  [4] DDG no accesible en esta red. Desactivando Canal 4 para evitar esperas.")
+                    DDG_DISABLED = True
+                    break
 
         for pdf_url in found_urls[:5]:
             try:
@@ -749,10 +801,15 @@ def create_manifest(year: int, data_root: Path, results: list) -> Path:
     if year_dir.exists():
         for meta_file in year_dir.rglob("*.meta.json"):
             try:
-                entries.append(json.loads(meta_file.read_text(encoding='utf-8')))
+                raw = json.loads(meta_file.read_text(encoding='utf-8'))
+                # Soportar tanto lista como dict (legacy vs nuevo formato)
+                if isinstance(raw, list):
+                    entries.extend(raw)
+                elif isinstance(raw, dict):
+                    entries.append(raw)
             except Exception:
                 pass
-    existing_tickers = {e.get('ticker') for e in entries}
+    existing_tickers = {e.get('ticker') for e in entries if isinstance(e, dict)}
     for r in results:
         if r.get('status') in ['missing', 'NOT_INCORPORATED_YET'] and r.get('ticker') not in existing_tickers:
             entries.append({
@@ -760,6 +817,8 @@ def create_manifest(year: int, data_root: Path, results: list) -> Path:
                 'status': r.get('status'), 'channel': None,
                 'recorded_at': datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
             })
+    # Filtrar entradas no-dict por si acaso
+    entries = [e for e in entries if isinstance(e, dict)]
     entries.sort(key=lambda x: x.get('ticker', ''))
     manifest_path.write_text(json.dumps(entries, indent=2, ensure_ascii=False), encoding='utf-8')
     print(f"\n[MANIFIESTO] MANIFEST_BAFIN_{year}.json -> {len(entries)} entradas")
