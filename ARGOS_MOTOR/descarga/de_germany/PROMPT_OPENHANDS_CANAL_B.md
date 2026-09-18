@@ -1,103 +1,115 @@
-# PROMPT MAESTRO PARA OPENHANDS (GEMINI 2.5 / 2.0 PRO) — CANAL B DEFINITIVO
-## Módulo: ARGOS MOTOR — Adquisición Histórica Alemania (DE_BAFIN 2012–2025)
-**Objetivo:** Exprimir al máximo la capacidad del motor alemán (`download_canal_b_historico.py`) para completar el horizonte temporal completo (2012 a 2025) de las 1.011 sociedades cotizadas del universo (`master_universe_de.json`), superando las barreras de CAPTCHA, Wicket y ConnectTimeout.
+# PROMPT MAESTRO PARA OPENHANDS (NUEVA CONVERSACIÓN — GEMINI 2.5 PRO)
+## Proyecto: ARGOS MOTOR — Motor Unificado de Descarga Institucional Alemania (DE_BAFIN 2012–2025)
+**Destinado a:** Nueva conversación en OpenHands (ejecución autónoma desde cero sobre la base de código existente).
 
 ---
 
-### INSTRUCCIÓN MAESTRA PARA COPIAR EN OPENHANDS:
+### COPIA Y PEGA EL SIGUIENTE BLOQUE EN OPENHANDS (NUEVA CONVERSACIÓN):
 
 ```markdown
-Eres un Ingeniero Principal de Infraestructura de Datos Financieros y Scraping Forense en STATER Financial Technologies.
-Tu misión es ejecutar, monitorizar y completar la adquisición documental de Alemania en `ARGOS_MOTOR/descarga/de_germany/` sobre el universo maestro de 1.011 sociedades cotizadas (`ARGOS_MOTOR/config/master_universe_de.json`), cubriendo tanto el histórico (2012–2019) como el cierre reciente (2023–2025).
+Eres el Ingeniero Principal de Infraestructura de Datos Financieros de STATER Financial Technologies.
+Tu objetivo es consolidar y desplegar el **NUEVO MOTOR UNIFICADO DE DESCARGA INSTITUCIONAL DE ALEMANIA (v3.0)** (`ARGOS_MOTOR/descarga/de_germany/downloader_germany_v3.py`), construyéndolo sobre la base de código y datos ya existente en este repositorio, para completar la adquisición de las 1.011 sociedades cotizadas (`ARGOS_MOTOR/config/master_universe_de.json`) en el horizonte temporal 2012–2025.
 
 ---
 
-### 1. ESTADO DEL DATA LAKE Y A QUÉ PUEDE ASPIRAR EL MOTOR
+### 1. MAPA DEL ENTORNO Y BASE DE DATOS YA EXISTENTE (¡NO EMPEZAR DE CERO!)
 
-El repositorio en `D:/ARGOS_DATA/raw/DE_BAFIN` (reflejado en el enlace simbólico `ARGOS_DATA_DISK`) cuenta actualmente con:
-- **303 paquetes ZIP ESEF** (2020–2022) sellados con hash SHA-256 e inmutables. ¡NO RE-DESCARGAR!
-- **18 PDFs de cuentas anuales auditadas** (2012–2019) de Deutsche Bank, Lufthansa y Bayer.
-- **5 documentos contables oficiales HTML** de SAP y Deutsche Bank (2023–2025).
-- **427 ficheros `.meta.json`** individuales auditados.
-
-#### Techo Operativo del Universo (1.011 Sociedades):
-1. **PRIME_STANDARD (172 empresas)**: Incluye DAX40, MDAX, SDAX y TecDAX (>90% de la capitalización bursátil alemana).
-   * **Aspiración:** 100% de cobertura documental. Todas publican informes anuales completos en PDF en sus portales de Investor Relations Y en Bundesanzeiger (§ 114 WpHG).
-2. **GENERAL_STANDARD (376 empresas)**:
-   * **Aspiración:** 75%–90% de cobertura vía Bundesanzeiger Área 22 (§ 325 HGB).
-3. **SCALE & FREIVERKEHR (463 empresas)**: Micro-caps y mercado no regulado.
-   * **Aspiración:** Cobertura de cuentas anuales individuales/consolidadas depositadas bajo HGB.
-4. **Control de Entidades Recientes (Spin-offs)**: Entidades nacidas por escisión reciente (ej. Siemens Energy `SIEM` en 2020, Daimler Truck `DTG` en 2021) NO existían entre 2012 y 2019. Deben marcarse como `NOT_INCORPORATED_YET` en los manifiestos de esos años para evitar búsquedas estériles.
-
----
-
-### 2. LECCIONES TÉCNICAS CRÍTICAS Y ARQUITECTURA DEL MOTOR
-
-El script `ARGOS_MOTOR/descarga/de_germany/download_canal_b_historico.py` integra las siguientes salvaguardas arquitectónicas que DEBES respetar y mantener:
-
-1. **Persistencia de Sesión de Navegador (`launch_persistent_context`)**:
-   - Bundesanzeiger utiliza Cloudflare y CAPTCHAs matemáticos/gráficos.
-   - El script utiliza un directorio de perfil persistente en `ARGOS_MOTOR/descarga/de_germany/.playwright_bafin_session`.
-   - **Protocolo de activación**: Al ejecutar con `--bafin-manual`, el navegador se abre visible. El operador o tú resolvéis **1 solo CAPTCHA**. Una vez resuelto y pulsado ENTER, las cookies y tokens de sesión quedan guardados en disco. Las siguientes peticiones e iteraciones se ejecutan de forma automatizada sin solicitar nuevos CAPTCHAs durante horas.
-
-2. **Ventana Temporal de Depósito Contable (Regla de Oro § 325 HGB)**:
-   - Las cuentas anuales de un ejercicio fiscal `{year}` (ej. 2016) se formulan, auditan y depositan **al año siguiente (`year + 1`) o principios del segundo (`year + 2`)**.
-   - En las búsquedas de Bundesanzeiger, el filtro de fechas DEBE ser:
-     `start_date: 01.01.{year+1}` hasta `end_date: 31.12.{year+2}`.
-     *(Filtrar por el mismo año `{year}` arroja 0 resultados porque el ejercicio aún no había cerrado ni auditado).*
-
-3. **Aislamiento de Pestañas en Apache Wicket**:
-   - El Bundesanzeiger opera con URLs de sesión dinámica (`suchen2?7-1...`).
-   - Al abrir publicaciones del listado de resultados, **NUNCA se debe usar `page.go_back()`** ni pinchar en la misma pestaña porque Wicket invalida el estado (`ExpiredPageException`).
-   - El script abre cada publicación candidata en una pestaña secundaria (`context.new_page()`), extrae el contenido/descarga, y la cierra (`pub_tab.close()`), dejando intacta la página de resultados.
-
-4. **Validación Criptográfica y Contable Estricta (`is_valid_financial_document`)**:
-   - **PDFs**: Magic bytes `%PDF-` y tamaño > 5.000 bytes.
-   - **HTMLs**: Descarte inmediato de hashes boilerplate (`3f418fa1...`), firmas de Next.js (`_next/`), o avisos de `Sicherheitsabfrage` (CAPTCHA no resuelto).
-   - Verificación contable obligatoria: presencia de al menos 2 términos contables alemanes (`Aktiva`, `Passiva`, `Bilanzsumme`, `Eigenkapital`, `Jahresabschluss`, `Konzernabschluss`).
-
-5. **Resolución por Registro Mercantil (`hrb_reg`)**:
-   - 789 de las 1.011 sociedades disponen de número HRB exacto en `master_universe_de.json`.
-   - Si la búsqueda por nombre limpio genera ambigüedad, emplear el número HRB para una resolución inequívoca.
+Estás ejecutando dentro de un entorno Docker / Workspace. El sistema ya dispone de:
+1. **Workspace:** Montado en `/opt/workspace_base` (o ruta local del repositorio `ARGOS_MOTOR/`).
+2. **Data Lake Canónico (`DE_BAFIN`):** 
+   - Montado en `/opt/argos_data/raw/DE_BAFIN` (en host: `D:/ARGOS_DATA/raw/DE_BAFIN`).
+   - Respaldo / Fallback local: `ARGOS_MOTOR/data/raw/DE_BAFIN` o `ARGOS_DATA_DISK/raw/DE_BAFIN`.
+3. **Activos Ya Descargados y Sellados Criptográficamente (¡INMUTABLES, NO TOCAR NI RE-DESCARGAR!):**
+   - **303 paquetes ZIP ESEF** (2020 a 2022) con Inline XBRL en disco.
+   - **18 informes anuales auditados en PDF** (2012 a 2019) de Deutsche Bank, Lufthansa y Bayer.
+   - **5 cuentas anuales contables oficiales en HTML** (2023 a 2025) de SAP y Deutsche Bank.
+   - **427 ficheros `.meta.json`** con hash SHA-256 individual sellado.
+4. **Scripts y Módulos de Referencia en el Repositorio:**
+   - `ARGOS_MOTOR/config/master_universe_de.json`: Catálogo maestro de 1.011 sociedades cotizadas (con ticker, LEI, HRB, segmento e índices).
+   - `ARGOS_MOTOR/descarga/de_germany/download_canal_b_historico.py`: Prototipo de Canal B con Playwright y validaciones forenses.
+   - `ARGOS_MOTOR/descarga/de_germany/downloader_bafin.py`: Motor original con lógica de sellado y filtrado de boilerplate.
+   - `ARGOS_MOTOR/descarga/de_germany/audit_download_de.py`: Script de auditoría de integridad y conteo de archivos.
 
 ---
 
-### 3. PROTOCOLO DE EJECUCIÓN POR FASES
+### 2. ARQUITECTURA DEL NUEVO MOTOR (`downloader_germany_v3.py`)
 
-Ejecuta el pipeline siguiendo este orden estricto de prioridades para maximizar el valor de los datos adquiridos:
+Debes crear `ARGOS_MOTOR/descarga/de_germany/downloader_germany_v3.py` como un orquestador multicanal ultra-resiliente que integre 4 canales jerárquicos:
 
-#### Fase 1: Activación de Sesión Persistente y Validación DAX40 (2012–2019)
-Lanza el script en modo visible asistido para activar la sesión de Bundesanzeiger:
-```bash
-python ARGOS_MOTOR/descarga/de_germany/download_canal_b_historico.py --segment DAX40 --years 2012-2019 --bafin-manual
-```
-*Acción requerida:* En la ventana de Chromium que se abrirá automáticamente, navega y resuelve el CAPTCHA de Bundesanzeiger una sola vez. Pulsa ENTER en el terminal. Comprueba cómo el script descarga y sella los balances de las empresas del DAX.
-
-#### Fase 2: Expansión a MDAX, SDAX y TecDAX (Prime Standard)
-Con la sesión persistente ya guardada en `.playwright_bafin_session`, ejecuta de forma continua:
-```bash
-python ARGOS_MOTOR/descarga/de_germany/download_canal_b_historico.py --segment "MDAX,SDAX,TECDAX" --years 2012-2019 --delay-min 2.5 --delay-max 4.5
-```
-
-#### Fase 3: Adquisición del Cierre Reciente (2023–2025)
-Ejecuta para incorporar los informes auditados y declaraciones de los últimos ejercicios para todo el Prime Standard:
-```bash
-python ARGOS_MOTOR/descarga/de_germany/download_canal_b_historico.py --segment "DAX40,MDAX,SDAX,TECDAX" --years 2023-2025
+```mermaid
+graph TD
+    A[Empresa y Año] --> B{¿Fichero ya en disco?}
+    B -- Sí (Hash SHA-256 Coincide) --> C[CACHE_HIT Instantáneo - 0 Peticiones]
+    B -- No --> D{¿Año >= 2020?}
+    D -- Sí --> E[Canal 1: ESEF Fast-Path / OAM]
+    E -- Encontrado --> S[Descargar, Validar y Sellar]
+    E -- No encontrado / Año < 2020 --> F[Canal 2: IR Official PDF Crawler]
+    F -- Encontrado --> S
+    F -- No encontrado --> G[Canal 3: Bundesanzeiger Área 22 con Sesión Persistente]
+    G -- Encontrado --> S
+    G -- No encontrado --> H[Canal 4: Búsqueda Web PDF Oficial]
+    H -- Encontrado --> S
+    H -- No encontrado --> I[Registrar MISSING en Manifiesto Anual]
 ```
 
-#### Fase 4: Resto del Universo (General Standard) en Lotes de 50
-Para el tramo largo de emisores, procesa en bloques controlados:
-```bash
-python ARGOS_MOTOR/descarga/de_germany/download_canal_b_historico.py --segment GENERAL_STANDARD --years 2012-2025 --max-companies 50
-```
+#### Reglas de Oro Técnicas Obligatorias:
+1. **Detección Automática de Rutas:**
+   Resolver la ruta canónica comprobando en orden:
+   `Path(os.environ.get("ARGOS_DATA_ROOT", "")) / "raw" / "DE_BAFIN"`, `/opt/argos_data/raw/DE_BAFIN`, `D:/ARGOS_DATA/raw/DE_BAFIN`, `ARGOS_DATA_DISK/raw/DE_BAFIN`, `ARGOS_MOTOR/data/raw/DE_BAFIN`.
+2. **Ventana Temporal de Publicación (§ 325 HGB):**
+   Las cuentas anuales del ejercicio fiscal `{year}` se aprueban y publican en `{year + 1}` o principios de `{year + 2}`. En cualquier búsqueda o filtro de fechas, la ventana DEBE ser `01.01.{year+1}` a `31.12.{year+2}`.
+3. **Aislamiento de Pestañas en Bundesanzeiger (Anti Wicket-Expiration):**
+   Bundesanzeiger usa Apache Wicket. NUNCA hagas clic y navegues atrás (`page.go_back()`) en la misma pestaña porque invalida la sesión (`ExpiredPageException`). Abre cada publicación candidata en una pestaña secundaria (`context.new_page()`), extrae el contenido/binario y ciérrala (`pub_tab.close()`).
+4. **Filtro Forense Anti-Boilerplate (`is_valid_financial_document`):**
+   - PDFs: Magic bytes `%PDF-` y tamaño > 5.000 bytes.
+   - HTMLs: Descartar inmediatamente hashes conocidos de Next.js (`3f418fa1...`, `2ac7a66b...`) o páginas de CAPTCHA (`Sicherheitsabfrage`). Exigir al menos 2 términos contables alemanes (`Aktiva`, `Passiva`, `Bilanzsumme`, `Eigenkapital`, `Jahresabschluss`, `Konzernabschluss`).
+5. **Manejo de Spin-Offs:**
+   Empresas nacidas tras escisiones recientes (ej. Siemens Energy `SIEM` en 2020, Daimler Truck `DTG` en 2021) NO existían entre 2012 y 2019. Marcarlas como `NOT_INCORPORATED_YET` en los manifiestos de esos años en lugar de lanzar peticiones fallidas.
+6. **Resolución por Registro Mercantil (`hrb_reg`):**
+   Aprovechar los 789 números HRB presentes en el universo maestro para desambiguar búsquedas.
 
-#### Fase 5: Auditoría y Sellado Final de Manifiestos
-Al culminar, ejecuta la auditoría del repositorio alemán:
+---
+
+### 3. PLAN DE EJECUCIÓN PASO A PASO
+
+#### Paso 1: Auditoría Inicial del Data Lake Existente
+Ejecuta la auditoría para confirmar que detectas los 303 ZIPs, 18 PDFs y 5 HTMLs ya guardados:
 ```bash
 python ARGOS_MOTOR/descarga/de_germany/audit_download_de.py
 ```
-Verifica que los manifiestos `MANIFEST_BAFIN_{year}.json` en `D:/ARGOS_DATA/raw/DE_BAFIN` y en `ARGOS_MOTOR/audits/manifests/` reflejen los nuevos hits y hashes consolidados.
+
+#### Paso 2: Creación del Motor Unificado `downloader_germany_v3.py`
+Consolida la lógica en `ARGOS_MOTOR/descarga/de_germany/downloader_germany_v3.py`. Asegúrate de que admita:
+- `--segment`: Filtrar por índice/segmento (e.g. `DAX40`, `MDAX`, `SDAX`, `TECDAX`, `PRIME_STANDARD`, `GENERAL_STANDARD`).
+- `--years`: Rango de años (e.g. `2012-2025` o `2012-2019`).
+- `--tickers`: Filtrar sociedades específicas.
+- `--dry-run`: Probar lógica de resolución sin descargar.
+- `--bafin-manual`: Abrir navegador visible para resolver 1 CAPTCHA si es necesario y guardar sesión en `.playwright_bafin_session`.
+
+#### Paso 3: Dry-Run y Prueba Unitaria
+Prueba con 2 empresas representativas del DAX (ej. SAP y BMW) cubriendo 2012 a 2025:
+```bash
+python ARGOS_MOTOR/descarga/de_germany/downloader_germany_v3.py --tickers SAP,BAYE_5 --years 2012-2025 --dry-run
+```
+
+#### Paso 4: Descarga del Bloque Nuclear: DAX40 (2012–2025)
+Ejecuta la ingesta real del segmento DAX40:
+```bash
+python ARGOS_MOTOR/descarga/de_germany/downloader_germany_v3.py --segment DAX40 --years 2012-2025
+```
+
+#### Paso 5: Expansión a MDAX, SDAX y TecDAX (Resto del Prime Standard)
+Procesa de forma continua las ~130 empresas restantes del Prime Standard:
+```bash
+python ARGOS_MOTOR/descarga/de_germany/downloader_germany_v3.py --segment "MDAX,SDAX,TECDAX" --years 2012-2025
+```
+
+#### Paso 6: Sellado de Manifiestos Anuales y Auditoría Final
+Genera y consolida los manifiestos anuales `MANIFEST_BAFIN_{year}.json` con hashes SHA-256 para todos los años del horizonte:
+```bash
+python ARGOS_MOTOR/descarga/de_germany/audit_download_de.py
+```
 ```
 
 ---
-*Documento actualizado en el repositorio central de STATER Financial Technologies.*
+*Especificación lista para inicializar una nueva sesión de OpenHands.*

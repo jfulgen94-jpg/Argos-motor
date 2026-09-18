@@ -153,6 +153,8 @@ DEFAULT_HEADERS = {
 def load_universe() -> dict:
     candidates = [
         Path(__file__).parent.parent.parent / 'config' / 'master_universe_de.json',
+        Path('/opt/workspace_base/ARGOS_MOTOR/config/master_universe_de.json'),
+        Path('ARGOS_MOTOR/config/master_universe_de.json'),
         Path('C:/Users/jfulg/Desktop/Stater/ARGOS_MOTOR/config/master_universe_de.json'),
     ]
     for p in candidates:
@@ -686,9 +688,16 @@ def main():
     tickers_filter = [t.strip().upper() for t in args.tickers.split(',')] if args.tickers else None
     segment_filter = args.segment.strip().upper() if args.segment else None
 
-    base_path = Path("D:/ARGOS_DATA/raw/DE_BAFIN")
-    if not base_path.exists():
-        base_path = Path("ARGOS_MOTOR/data/raw/DE_BAFIN")
+    path_candidates = [
+        Path(os.environ.get("ARGOS_DATA_ROOT", "")) / "raw" / "DE_BAFIN",
+        Path("/opt/argos_data/raw/DE_BAFIN"),
+        Path("D:/ARGOS_DATA/raw/DE_BAFIN"),
+        Path("ARGOS_DATA_DISK/raw/DE_BAFIN"),
+        Path("ARGOS_MOTOR/data/raw/DE_BAFIN"),
+    ]
+    base_path = next((p for p in path_candidates if p and p.exists()), None)
+    if not base_path:
+        base_path = Path("/opt/argos_data/raw/DE_BAFIN") if os.path.exists("/opt") else Path("D:/ARGOS_DATA/raw/DE_BAFIN")
     base_path.mkdir(parents=True, exist_ok=True)
 
     print("=" * 70)
