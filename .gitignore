@@ -61,3 +61,6 @@ iniciar_openhands.bat
 ejecutar_descarga_*.bat
 ARGOS_DATA_DISK/
 *.pdf
+.playwright_*/
+*.playwright*
+

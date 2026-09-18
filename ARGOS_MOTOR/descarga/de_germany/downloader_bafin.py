@@ -66,6 +66,55 @@ def check_magic_bytes(filepath):
         return 'HTML_XHTML'
     return 'UNKNOWN'
 
+BOILERPLATE_HASHES = {
+    "3f418fa15253013f4dc73620d471cb567e0f2e1b46f7981c71ffff427ff6ff6b",
+    "2ac7a66b8489ec150d1feef7759323851317657b1a6ebbc8d18faf7618171552",
+}
+
+REJECTION_SIGNATURES = [
+    b'__NEXT_DATA__', b'/_next/static/', b'Sicherheitsabfrage',
+    b'captcha~panel-captcha', b'Zeichen eingeben', b'Ich bin ein Mensch',
+    b'suchergebnis',
+]
+
+FINANCIAL_KEYWORDS = [
+    'Aktiva', 'Passiva', 'TEUR', 'Eigenkapital', 'Bilanzsumme',
+    'Jahresueberschuss', 'Konzernjahresergebnis', 'Jahresuberschuss',
+    'Gewinn- und Verlustrechnung', 'Konzernabschluss', 'Jahresabschluss'
+]
+
+def is_valid_financial_document(filepath: Path) -> tuple:
+    if not filepath.exists():
+        return False, "Fichero no existe"
+    size = filepath.stat().st_size
+    if size < 5000:
+        return False, f"Fichero demasiado pequeño ({size} bytes)"
+    
+    sha256 = calculate_sha256(filepath)
+    if sha256 in BOILERPLATE_HASHES:
+        return False, f"Hash boilerplate conocido ({sha256[:12]})"
+
+    content = filepath.read_bytes()
+    if content.startswith(b'PK\x03\x04'):
+        return True, f"Paquete ZIP ESEF válido ({size:,} bytes)"
+
+    if content.startswith(b'%PDF'):
+        return True, f"PDF válido ({size:,} bytes)"
+
+    probe = content[:8192] + content[-4096:]
+    for sig in REJECTION_SIGNATURES:
+        if sig in probe:
+            return False, f"Firma de rechazo / CAPTCHA detectada: {sig[:30]!r}"
+
+    # Para documentos HTML/XHTML: verificación contable obligatoria
+    content_lower = content.lower()
+    hits = sum(1 for k in FINANCIAL_KEYWORDS
+               if k.lower().encode('utf-8') in content_lower or k.lower().encode('latin-1') in content_lower)
+    if hits < 2:
+        return False, f"Solo {hits} keywords financieros encontrados (mínimo 2 requeridos)"
+
+    return True, f"Documento financiero válido ({hits} keywords, {size:,} bytes)"
+
 def load_master_universe():
     if UNIVERSE_PATH.exists():
         data = json.loads(UNIVERSE_PATH.read_text(encoding='utf-8'))
@@ -353,6 +402,11 @@ class GermanyDownloader:
                 if c_file.is_file() and c_file.stat().st_size > 1000:
                     ext_l = c_file.suffix.lower()
                     if ext_l in ['.zip', '.pdf', '.html', '.htm']:
+                        valid, reason = is_valid_financial_document(c_file)
+                        if not valid:
+                            c_file.unlink(missing_ok=True)
+                            c_file.with_suffix('.meta.json').unlink(missing_ok=True)
+                            continue
                         c_fmt = 'ZIP_ESEF' if ext_l == '.zip' else ('PDF' if ext_l == '.pdf' else 'HTML_XHTML')
                         sha = calculate_sha256(c_file)
                         canonical_meta = c_file.with_suffix('.meta.json')
@@ -438,28 +492,23 @@ class GermanyDownloader:
                                 f.write(chunk)
 
                         magic = check_magic_bytes(tmp_file)
-                        if magic in ['ZIP_ESEF', 'PDF', 'HTML_XHTML']:
-                            tmp_sha = calculate_sha256(tmp_file)
-                            bogus_shas = {
-                                '3f418fa15253013f4dc73620d471cb567e0f2e1b46f7981c71ffff427ff6ff6b',
-                                '2ac7a66b8489ec150d1feef7759323851317657b1a6ebbc8d18faf7618171552'
-                            }
-                            if tmp_sha in bogus_shas:
-                                if tmp_file.exists(): tmp_file.unlink()
-                                print(f"  [-] Rechazado: Cascarón genérico SPA (sin informe real) para {ticker} {year}")
-                                return {"status": "rejected_boilerplate", "ticker": ticker, "year": year}
+                        valid, reason = is_valid_financial_document(tmp_file)
+                        if not valid:
+                            if tmp_file.exists(): tmp_file.unlink()
+                            print(f"  [-] Rechazado ({reason}) para {ticker} {year}")
+                            return {"status": "rejected_boilerplate", "ticker": ticker, "year": year, "reason": reason}
 
-                            comp_dir.mkdir(parents=True, exist_ok=True)
-                            if magic == 'ZIP_ESEF': ext = ".zip"
-                            elif magic == 'PDF': ext = ".pdf"
-                            else: ext = ".html"
+                        comp_dir.mkdir(parents=True, exist_ok=True)
+                        if magic == 'ZIP_ESEF': ext = ".zip"
+                        elif magic == 'PDF': ext = ".pdf"
+                        else: ext = ".html"
 
-                            dest_file = comp_dir / f"{ticker}_{year}_{tag}{ext}"
-                            if dest_file.exists():
-                                dest_file.unlink()
-                            tmp_file.replace(dest_file)
+                        dest_file = comp_dir / f"{ticker}_{year}_{tag}{ext}"
+                        if dest_file.exists():
+                            dest_file.unlink()
+                        tmp_file.replace(dest_file)
 
-                            sha = tmp_sha
+                        sha = calculate_sha256(dest_file)
                             meta = {
                                 "file_name": dest_file.name,
                                 "sha256": sha,
