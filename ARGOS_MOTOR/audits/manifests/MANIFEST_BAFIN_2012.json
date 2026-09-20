@@ -1,41 +1,206 @@
-{
-  "year": 2012,
-  "country": "DE",
-  "supervisor": "BaFin",
-  "oam": "Unternehmensregister / Bundesanzeiger / ESEF",
-  "generated_at_utc": "2026-09-15T18:33:02.131606+00:00",
-  "total_mapped": 1011,
-  "downloaded": 0,
-  "cache_hits": 3,
-  "failed": 0,
-  "quarantined": 0,
-  "manifest": [
-    {
-      "ticker": "BASF",
-      "year": 2012,
-      "doc_type": "ANNUAL_AUDITED_REPORT",
-      "status": "CACHE_HIT",
-      "sha256": "7d7418b317919732a56dce180b12ea544f20505f6965a310a43adb8fcf8e4cf5",
-      "size_bytes": 24836,
-      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2012\\HRB_6000_BASF\\BASF_2012_ANUAL.html"
-    },
-    {
-      "ticker": "DEUT",
-      "year": 2012,
-      "doc_type": "ANNUAL_AUDITED_REPORT",
-      "status": "CACHE_HIT",
-      "sha256": "622d5fa30022eeb5d7b217a5e46cfbf12272f2f17057ed55b1a0601fc5e4e84f",
-      "size_bytes": 24835,
-      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2012\\HRB_6794_DEUT\\DEUT_2012_ANUAL.html"
-    },
-    {
-      "ticker": "STOX",
-      "year": 2012,
-      "doc_type": "ANNUAL_AUDITED_REPORT",
-      "status": "CACHE_HIT",
-      "sha256": "a220da883ec8ddaa04cef6515008083c6ce26d4d0bc488922b4cd86c9fd9e27d",
-      "size_bytes": 24836,
-      "path": "D:\\ARGOS_DATA\\raw\\DE_BAFIN\\2012\\70125810_STOX\\STOX_2012_ANUAL.html"
-    }
-  ]
-}
+[
+  {
+    "file_name": "ADID_2012_ANUAL.pdf",
+    "sha256": "a3054e971899003aae7dad323e037b0dd98dddbffb2bbb74da64c8c10cf0b742",
+    "byte_size": 14477495,
+    "retrieved_at_utc": "2026-09-18T20:21:31Z",
+    "source_url": "https://res.cloudinary.com/confirmed-web/raw/upload/v1706002438/adidas-group/investors/financial-publications/2012/gb_2012_en_ddi8fb.pdf",
+    "reporting_year": 2012,
+    "ticker": "ADID",
+    "legal_name": "adidas AG",
+    "name_common": "Adidas",
+    "lei": "549300JSX0Z4CW0V5023",
+    "hrb_reg": "HRB 3868",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (14,477,495 bytes)",
+    "download_channel": "CANAL2b_IR_SCRAPER",
+    "downloader_version": "3.0.0"
+  },
+  {
+    "file_name": "BASF_2012_ANUAL.html",
+    "sha256": "7d7418b317919732a56dce180b12ea544f20505f6965a310a43adb8fcf8e4cf5",
+    "byte_size": 24836,
+    "retrieved_at_utc": "2026-09-15T04:31:45.211978+00:00",
+    "source_url": "https://www.bundesanzeiger.de/pub/de/suchen2?3-1.-search~table~panel-rows-0-search~table~row~panel-publication~link",
+    "reporting_year": 2012,
+    "ticker": "BASF",
+    "legal_name": "BASF SE",
+    "lei": "529900A9NIYR2QY8GP86",
+    "hrb_reg": "HRB 6000",
+    "segment": "PRIME_STANDARD",
+    "magic_mime_verified": "HTML_XHTML"
+  },
+  {
+    "file_name": "BASF_2012_ANUAL.pdf",
+    "sha256": "d9955750c24ca21210e751cce56d45e49712a459ad2c3ecaf212f6c6c23889a3",
+    "byte_size": 9392704,
+    "retrieved_at_utc": "2026-09-18T20:25:00Z",
+    "source_url": "https://www.basf.com/dam/jcr:bcc5b8c7-819a-36d0-9aab-667c9d4c7e85/BASF_Report_2012.pdf",
+    "reporting_year": 2012,
+    "ticker": "BASF",
+    "legal_name": "BASF SE",
+    "name_common": "BASF",
+    "lei": "529900A9NIYR2QY8GP86",
+    "hrb_reg": "HRB 6000",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (9,392,704 bytes)",
+    "download_channel": "CANAL4_WEB_SEARCH",
+    "downloader_version": "3.0.0"
+  },
+  {
+    "file_name": "DEUT_2012_ANUAL.html",
+    "sha256": "622d5fa30022eeb5d7b217a5e46cfbf12272f2f17057ed55b1a0601fc5e4e84f",
+    "byte_size": 24835,
+    "retrieved_at_utc": "2026-09-15T04:31:45.563919+00:00",
+    "source_url": "https://www.bundesanzeiger.de/pub/de/suchen2?7-1.-search~table~panel-rows-0-search~table~row~panel-publication~link",
+    "reporting_year": 2012,
+    "ticker": "DEUT",
+    "legal_name": "DEUTSCHE TELEKOM AG",
+    "lei": "549300V9QSIG4WX4GJ96",
+    "hrb_reg": "HRB 6794",
+    "segment": "PRIME_STANDARD",
+    "magic_mime_verified": "HTML_XHTML"
+  },
+  {
+    "file_name": "DEUT_2_2012_ANUAL.pdf",
+    "sha256": "0d51c7d3a6689289a18422bf2ea5714bbe6d43f1b9c774ca2ee636c33c756f58",
+    "byte_size": 8400988,
+    "retrieved_at_utc": "2026-09-17T17:14:33Z",
+    "source_url": "https://investor-relations.db.com/reports-and-events/annual-reports",
+    "reporting_year": 2012,
+    "ticker": "DEUT_2",
+    "legal_name": "DEUTSCHE BANK AKTIENGESELLSCHAFT",
+    "name_common": "Deutsche Bank",
+    "lei": "7LTWFZYICNSX8D621K86",
+    "hrb_reg": "HRB 30000",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (8,400,988 bytes)",
+    "download_channel": "ir_pw",
+    "downloader_version": "v4-ir-scraper"
+  },
+  {
+    "file_name": "DE_RWE_2012_ANUAL.pdf",
+    "sha256": "8a285165969e75d999c96a61be6f715cf0ce9ed1762df7b9a72ae25ab9f0589b",
+    "byte_size": 2727129,
+    "retrieved_at_utc": "2026-09-20T08:32:22Z",
+    "source_url": "https://irpages2.eqs.com/download/companies/RWE/Quarterly%20Reports/DE0007037129-Q3-2012-EQ-D-00.pdf",
+    "reporting_year": 2012,
+    "ticker": "DE_RWE",
+    "legal_name": "RWE Aktiengesellschaft",
+    "name_common": "RWE",
+    "lei": "529900GB7KCA94ACC940",
+    "hrb_reg": "HRB 14525",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (2,727,129 bytes)",
+    "download_channel": "CANAL4_WEB_SEARCH",
+    "downloader_version": "3.0.0"
+  },
+  {
+    "ticker": "HENK",
+    "company": "Henkel KGaA",
+    "year": 2012,
+    "status": "missing",
+    "channel": null,
+    "recorded_at": "2026-09-20T10:53:17Z"
+  },
+  {
+    "file_name": "LUFT_2012_ANUAL.pdf",
+    "sha256": "1e67dc8501f8f390fcc5aa49cedceb2e214fb8ad497d1db0e4a6de8a941a8909",
+    "byte_size": 4797741,
+    "retrieved_at_utc": "2026-09-17T12:46:06Z",
+    "source_url": "https://investor-relations.lufthansagroup.com/en/publications/financial-reports.html",
+    "reporting_year": 2012,
+    "ticker": "LUFT",
+    "legal_name": "Lufthansa Aviation GmbH",
+    "name_common": "Lufthansa",
+    "lei": "529900PH63HYJ86ASW55",
+    "hrb_reg": "HRB 299715",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (4,797,741 bytes)",
+    "download_channel": "ir_pw",
+    "downloader_version": "v4-ir-scraper"
+  },
+  {
+    "ticker": "MUTA",
+    "company": "Mutares",
+    "year": 2012,
+    "status": "missing",
+    "channel": null,
+    "recorded_at": "2026-09-20T10:53:17Z"
+  },
+  {
+    "ticker": "SIEM",
+    "company": "Siemens Energy",
+    "year": 2012,
+    "status": "missing",
+    "channel": null,
+    "recorded_at": "2026-09-20T10:53:17Z"
+  },
+  {
+    "file_name": "STOX_2012_ANUAL.html",
+    "sha256": "a220da883ec8ddaa04cef6515008083c6ce26d4d0bc488922b4cd86c9fd9e27d",
+    "byte_size": 24836,
+    "retrieved_at_utc": "2026-09-15T04:31:45.447561+00:00",
+    "source_url": "https://www.bundesanzeiger.de/pub/de/suchen2?5-1.-search~table~panel-rows-0-search~table~row~panel-publication~link",
+    "reporting_year": 2012,
+    "ticker": "STOX",
+    "legal_name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+    "lei": "5493004D3JTC0HBTIZ65",
+    "hrb_reg": "70125810",
+    "segment": "PRIME_STANDARD",
+    "magic_mime_verified": "HTML_XHTML"
+  },
+  {
+    "file_name": "THYS_2_2012_ANUAL.pdf",
+    "sha256": "778ae2afe50f1c318e62ff3a509bfddd181e7c57a879fdec387dcabcb401078f",
+    "byte_size": 175468,
+    "retrieved_at_utc": "2026-09-19T17:30:21Z",
+    "source_url": "https://ucpcdn.thyssenkrupp.com/_binary/UCP5thyssenkruppAG/2012aa98-8318-4bff-bc13-6f507502ed34/260212_thyssenkrupp-press-release-Q1_2025_2026.pdf",
+    "reporting_year": 2012,
+    "ticker": "THYS_2",
+    "legal_name": "thyssenkrupp AG",
+    "name_common": "thyssenkrupp AG",
+    "lei": "549300UDG16DOYUPR330",
+    "hrb_reg": "HRB 15364",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (175,468 bytes)",
+    "download_channel": "CANAL2b_IR_SCRAPER",
+    "downloader_version": "3.0.0"
+  }
+]

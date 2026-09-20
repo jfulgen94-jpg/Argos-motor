@@ -1,13 +1,164 @@
-{
-  "year": 2013,
-  "country": "DE",
-  "supervisor": "BaFin",
-  "oam": "Unternehmensregister / Bundesanzeiger / ESEF",
-  "generated_at_utc": "2026-09-15T18:37:18.450572+00:00",
-  "total_mapped": 1011,
-  "downloaded": 0,
-  "cache_hits": 0,
-  "failed": 0,
-  "quarantined": 0,
-  "manifest": []
-}
+[
+  {
+    "file_name": "ADID_2013_ANUAL.pdf",
+    "sha256": "efecd35d34760db2ed24bb1808f5d6322ba6a5d7b6af13574ab4d465346b6e08",
+    "byte_size": 11295515,
+    "retrieved_at_utc": "2026-09-18T20:21:37Z",
+    "source_url": "https://res.cloudinary.com/confirmed-web/raw/upload/v1706080610/adidas-group/investors/financial-publications/2013/adidas_gb_2013_en_ieumvn.pdf",
+    "reporting_year": 2013,
+    "ticker": "ADID",
+    "legal_name": "adidas AG",
+    "name_common": "Adidas",
+    "lei": "549300JSX0Z4CW0V5023",
+    "hrb_reg": "HRB 3868",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (11,295,515 bytes)",
+    "download_channel": "CANAL2b_IR_SCRAPER",
+    "downloader_version": "3.0.0"
+  },
+  {
+    "file_name": "AIRB_2013_ANUAL.pdf",
+    "sha256": "48744f05ea7dc593347001fdf8c01f3443f0df9666b109c054b54e688a17c733",
+    "byte_size": 186914,
+    "retrieved_at_utc": "2026-09-19T16:53:44Z",
+    "source_url": "https://ds.cgtairbus.com/files/2014/02/airbus_group_fy_2013_results_en.pdf",
+    "reporting_year": 2013,
+    "ticker": "AIRB",
+    "legal_name": "Airbus Dachfonds",
+    "name_common": "Airbus",
+    "lei": "MINO79WLOO247M1IL051",
+    "hrb_reg": "70138192",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (186,914 bytes)",
+    "download_channel": "CANAL4_WEB_SEARCH",
+    "downloader_version": "3.0.0"
+  },
+  {
+    "file_name": "DEUT_2_2013_ANUAL.pdf",
+    "sha256": "09cc510cd451c39a4e31529a0a9cf7e6ab0fb498f9eef06bd732d3bfea20b824",
+    "byte_size": 9508378,
+    "retrieved_at_utc": "2026-09-17T17:14:46Z",
+    "source_url": "https://investor-relations.db.com/reports-and-events/annual-reports",
+    "reporting_year": 2013,
+    "ticker": "DEUT_2",
+    "legal_name": "DEUTSCHE BANK AKTIENGESELLSCHAFT",
+    "name_common": "Deutsche Bank",
+    "lei": "7LTWFZYICNSX8D621K86",
+    "hrb_reg": "HRB 30000",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (9,508,378 bytes)",
+    "download_channel": "ir_pw",
+    "downloader_version": "v4-ir-scraper"
+  },
+  {
+    "file_name": "DE_RWE_2013_ANUAL.pdf",
+    "sha256": "f8267c5f7b17226349aac027db87d22e566a296600e0010d5ec6cbaf9f1956f9",
+    "byte_size": 8277270,
+    "retrieved_at_utc": "2026-09-20T08:32:39Z",
+    "source_url": "https://irpages2.eqs.com/Download/Companies/RWE/Annual%20Reports/DE0007037129-JA-2013-EQ-D-00.pdf",
+    "reporting_year": 2013,
+    "ticker": "DE_RWE",
+    "legal_name": "RWE Aktiengesellschaft",
+    "name_common": "RWE",
+    "lei": "529900GB7KCA94ACC940",
+    "hrb_reg": "HRB 14525",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (8,277,270 bytes)",
+    "download_channel": "CANAL4_WEB_SEARCH",
+    "downloader_version": "3.0.0"
+  },
+  {
+    "ticker": "HENK",
+    "company": "Henkel KGaA",
+    "year": 2013,
+    "status": "missing",
+    "channel": null,
+    "recorded_at": "2026-09-20T10:53:17Z"
+  },
+  {
+    "file_name": "LUFT_2013_ANUAL.pdf",
+    "sha256": "d39424c750e5f8638d36c05cd3f6130dcc36f8e5e2fd9156e970d554928cc718",
+    "byte_size": 3741514,
+    "retrieved_at_utc": "2026-09-17T12:46:27Z",
+    "source_url": "https://investor-relations.lufthansagroup.com/en/publications/financial-reports.html",
+    "reporting_year": 2013,
+    "ticker": "LUFT",
+    "legal_name": "Lufthansa Aviation GmbH",
+    "name_common": "Lufthansa",
+    "lei": "529900PH63HYJ86ASW55",
+    "hrb_reg": "HRB 299715",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (3,741,514 bytes)",
+    "download_channel": "ir_pw",
+    "downloader_version": "v4-ir-scraper"
+  },
+  {
+    "ticker": "MUTA",
+    "company": "Mutares",
+    "year": 2013,
+    "status": "missing",
+    "channel": null,
+    "recorded_at": "2026-09-20T10:53:17Z"
+  },
+  {
+    "ticker": "SIEM",
+    "company": "Siemens Energy",
+    "year": 2013,
+    "status": "missing",
+    "channel": null,
+    "recorded_at": "2026-09-20T10:53:17Z"
+  },
+  {
+    "file_name": "THYS_2_2013_ANUAL.pdf",
+    "sha256": "778ae2afe50f1c318e62ff3a509bfddd181e7c57a879fdec387dcabcb401078f",
+    "byte_size": 175468,
+    "retrieved_at_utc": "2026-09-19T17:30:25Z",
+    "source_url": "https://ucpcdn.thyssenkrupp.com/_binary/UCP5thyssenkruppAG/2012aa98-8318-4bff-bc13-6f507502ed34/260212_thyssenkrupp-press-release-Q1_2025_2026.pdf",
+    "reporting_year": 2013,
+    "ticker": "THYS_2",
+    "legal_name": "thyssenkrupp AG",
+    "name_common": "thyssenkrupp AG",
+    "lei": "549300UDG16DOYUPR330",
+    "hrb_reg": "HRB 15364",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (175,468 bytes)",
+    "download_channel": "CANAL2b_IR_SCRAPER",
+    "downloader_version": "3.0.0"
+  }
+]

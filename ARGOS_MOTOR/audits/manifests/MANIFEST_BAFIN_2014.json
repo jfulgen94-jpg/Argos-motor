@@ -1,13 +1,179 @@
-{
-  "year": 2014,
-  "country": "DE",
-  "supervisor": "BaFin",
-  "oam": "Unternehmensregister / Bundesanzeiger / ESEF",
-  "generated_at_utc": "2026-09-15T18:41:15.293528+00:00",
-  "total_mapped": 1011,
-  "downloaded": 0,
-  "cache_hits": 0,
-  "failed": 0,
-  "quarantined": 0,
-  "manifest": []
-}
+[
+  {
+    "file_name": "ADID_2014_ANUAL.pdf",
+    "sha256": "174480808785128d4c625653348f349d8ab6c7762409fa8557ae12b8620ee79c",
+    "byte_size": 3530198,
+    "retrieved_at_utc": "2026-09-18T20:21:41Z",
+    "source_url": "https://res.cloudinary.com/confirmed-web/raw/upload/v1706020773/adidas-group/investors/financial-publications/2014/2014_gb_en_x4qhsc.pdf",
+    "reporting_year": 2014,
+    "ticker": "ADID",
+    "legal_name": "adidas AG",
+    "name_common": "Adidas",
+    "lei": "549300JSX0Z4CW0V5023",
+    "hrb_reg": "HRB 3868",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (3,530,198 bytes)",
+    "download_channel": "CANAL2b_IR_SCRAPER",
+    "downloader_version": "3.0.0"
+  },
+  {
+    "file_name": "AIRB_2014_ANUAL.pdf",
+    "sha256": "ef1df31abf712ee32af762460b27c63496b731cf9f2a128769f10898ef1054e4",
+    "byte_size": 303883,
+    "retrieved_at_utc": "2026-09-18T20:23:02Z",
+    "source_url": "https://www.bnains.org/archives/communiques/EADS/20150227_Communique_resultats_annuels_2014_Airbus_Group.pdf",
+    "reporting_year": 2014,
+    "ticker": "AIRB",
+    "legal_name": "Airbus Dachfonds",
+    "name_common": "Airbus",
+    "lei": "MINO79WLOO247M1IL051",
+    "hrb_reg": "70138192",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (303,883 bytes)",
+    "download_channel": "CANAL4_WEB_SEARCH",
+    "downloader_version": "3.0.0"
+  },
+  {
+    "file_name": "BAYE_3_2014_ANUAL.pdf",
+    "sha256": "0445e3b4d61273053b95718580eba82ec3c7e835863866000a60b6ed677ee1d8",
+    "byte_size": 8363900,
+    "retrieved_at_utc": "2026-09-18T20:47:04Z",
+    "source_url": "https://www.bayer.com/sites/default/files/2023-12/ar-2014-0.pdf",
+    "reporting_year": 2014,
+    "ticker": "BAYE_3",
+    "legal_name": "Bayer Aktiengesellschaft",
+    "name_common": "Bayer AG",
+    "lei": "549300J4U55H3WP1XT59",
+    "hrb_reg": "HRB 48248",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (8,363,900 bytes)",
+    "download_channel": "CANAL2a_PDF_DIRECTO",
+    "downloader_version": "3.0.0"
+  },
+  {
+    "file_name": "DEUT_2_2014_ANUAL.pdf",
+    "sha256": "dcd91d2e3b1f61828dfc73babd2343f635bcb3d185bbfa31102efa0cf5276c04",
+    "byte_size": 11360795,
+    "retrieved_at_utc": "2026-09-17T17:15:01Z",
+    "source_url": "https://investor-relations.db.com/reports-and-events/annual-reports",
+    "reporting_year": 2014,
+    "ticker": "DEUT_2",
+    "legal_name": "DEUTSCHE BANK AKTIENGESELLSCHAFT",
+    "name_common": "Deutsche Bank",
+    "lei": "7LTWFZYICNSX8D621K86",
+    "hrb_reg": "HRB 30000",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (11,360,795 bytes)",
+    "download_channel": "ir_pw",
+    "downloader_version": "v4-ir-scraper"
+  },
+  {
+    "file_name": "DE_RWE_2014_ANUAL.pdf",
+    "sha256": "c24cb1846f693d4d5e6431cd80055f4bd386c0ae3da79f0a845f50bd879815a9",
+    "byte_size": 599105,
+    "retrieved_at_utc": "2026-09-20T08:32:57Z",
+    "source_url": "https://www.rwe.com/-/media/RWE/documents/05-investor-relations/finanzkalendar-und-veroeffentlichungen/hauptversammlung-2016-2017/RWE-Jahresabschluss-2014.pdf",
+    "reporting_year": 2014,
+    "ticker": "DE_RWE",
+    "legal_name": "RWE Aktiengesellschaft",
+    "name_common": "RWE",
+    "lei": "529900GB7KCA94ACC940",
+    "hrb_reg": "HRB 14525",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (599,105 bytes)",
+    "download_channel": "CANAL4_WEB_SEARCH",
+    "downloader_version": "3.0.0"
+  },
+  {
+    "ticker": "HENK",
+    "company": "Henkel KGaA",
+    "year": 2014,
+    "status": "missing",
+    "channel": null,
+    "recorded_at": "2026-09-20T10:53:17Z"
+  },
+  {
+    "file_name": "LUFT_2014_ANUAL.pdf",
+    "sha256": "f2f9bc20c85611209b0daaacf50c35848de8755318745925c6fdad3b2d73ef14",
+    "byte_size": 7659275,
+    "retrieved_at_utc": "2026-09-17T12:46:49Z",
+    "source_url": "https://investor-relations.lufthansagroup.com/en/publications/financial-reports.html",
+    "reporting_year": 2014,
+    "ticker": "LUFT",
+    "legal_name": "Lufthansa Aviation GmbH",
+    "name_common": "Lufthansa",
+    "lei": "529900PH63HYJ86ASW55",
+    "hrb_reg": "HRB 299715",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (7,659,275 bytes)",
+    "download_channel": "ir_pw",
+    "downloader_version": "v4-ir-scraper"
+  },
+  {
+    "ticker": "MUTA",
+    "company": "Mutares",
+    "year": 2014,
+    "status": "missing",
+    "channel": null,
+    "recorded_at": "2026-09-20T10:53:17Z"
+  },
+  {
+    "file_name": "SIEM_2014_ANUAL.pdf",
+    "sha256": "7bca0950553f4126a5799660ec35a2c9063889172a0286429ca7f50cbed87b19",
+    "byte_size": 6682291,
+    "retrieved_at_utc": "2026-09-20T10:52:37Z",
+    "source_url": "https://assets.ctfassets.net/17si5cpawjzf/m1AqK6wWrENrGxQQ7arjx/6ff09196d562e1c59cba38ac552df296/siemens-ar2014.pdf",
+    "reporting_year": 2014,
+    "ticker": "SIEM",
+    "legal_name": "Siemens Energy AG",
+    "name_common": "Siemens Energy",
+    "lei": "5299005CHJZ14D4FDJ62",
+    "hrb_reg": "HRB 252581",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (6,682,291 bytes)",
+    "download_channel": "CANAL2a_PDF_DIRECTO",
+    "downloader_version": "3.0.0"
+  }
+]

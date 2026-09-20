@@ -1,13 +1,202 @@
-{
-  "year": 2015,
-  "country": "DE",
-  "supervisor": "BaFin",
-  "oam": "Unternehmensregister / Bundesanzeiger / ESEF",
-  "generated_at_utc": "2026-09-15T18:45:31.625569+00:00",
-  "total_mapped": 1011,
-  "downloaded": 0,
-  "cache_hits": 0,
-  "failed": 0,
-  "quarantined": 0,
-  "manifest": []
-}
+[
+  {
+    "file_name": "ADID_2015_ANUAL.pdf",
+    "sha256": "c8ff32b7eafcdb01b23fa2efefcdc2fff00ed49b6e9f30e32819dffe750c0a0d",
+    "byte_size": 7459395,
+    "retrieved_at_utc": "2026-09-18T20:21:45Z",
+    "source_url": "https://res.cloudinary.com/confirmed-web/raw/upload/v1706019536/adidas-group/investors/financial-publications/2015/2015_gb_en_zb56ow.pdf",
+    "reporting_year": 2015,
+    "ticker": "ADID",
+    "legal_name": "adidas AG",
+    "name_common": "Adidas",
+    "lei": "549300JSX0Z4CW0V5023",
+    "hrb_reg": "HRB 3868",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (7,459,395 bytes)",
+    "download_channel": "CANAL2b_IR_SCRAPER",
+    "downloader_version": "3.0.0"
+  },
+  {
+    "file_name": "BAYE_3_2015_ANUAL.pdf",
+    "sha256": "3309b0b9221039aeed7782c421ad487fb524d422be9351eedcafc95b3894c996",
+    "byte_size": 12623238,
+    "retrieved_at_utc": "2026-09-18T20:47:27Z",
+    "source_url": "https://www.bayer.com/sites/default/files/2023-12/gb-2015-en.pdf",
+    "reporting_year": 2015,
+    "ticker": "BAYE_3",
+    "legal_name": "Bayer Aktiengesellschaft",
+    "name_common": "Bayer AG",
+    "lei": "549300J4U55H3WP1XT59",
+    "hrb_reg": "HRB 48248",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (12,623,238 bytes)",
+    "download_channel": "CANAL2a_PDF_DIRECTO",
+    "downloader_version": "3.0.0"
+  },
+  {
+    "file_name": "BAYE_5_2015_ANUAL.pdf",
+    "sha256": "316c78f59102846bbc4b0e49fb77cd841d88a75d8f2b08e3de91b350eb7b44fe",
+    "byte_size": 2520095,
+    "retrieved_at_utc": "2026-09-19T16:54:37Z",
+    "source_url": "https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/ir/finanzberichte/pdf/en/12784_GB_2015_en_Finanzbericht.pdf",
+    "reporting_year": 2015,
+    "ticker": "BAYE_5",
+    "legal_name": "Bayerische Motoren Werke Aktiengesellschaft",
+    "name_common": "Bayerische Motoren Werke AG (BMW)",
+    "lei": "YEH5ZCD6E441RHVHD759",
+    "hrb_reg": "HRB 42243",
+    "segment": "FREIVERKEHR_OPEN_MARKET",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (2,520,095 bytes)",
+    "download_channel": "CANAL2b_IR_SCRAPER",
+    "downloader_version": "3.0.0"
+  },
+  {
+    "file_name": "DEUT_2_2015_ANUAL.pdf",
+    "sha256": "8900c8197d97abbdeb65a6a1e87e16b31e69ef078f27a2d81abce22c047bf2a3",
+    "byte_size": 6349209,
+    "retrieved_at_utc": "2026-09-17T17:15:15Z",
+    "source_url": "https://investor-relations.db.com/reports-and-events/annual-reports",
+    "reporting_year": 2015,
+    "ticker": "DEUT_2",
+    "legal_name": "DEUTSCHE BANK AKTIENGESELLSCHAFT",
+    "name_common": "Deutsche Bank",
+    "lei": "7LTWFZYICNSX8D621K86",
+    "hrb_reg": "HRB 30000",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (6,349,209 bytes)",
+    "download_channel": "ir_pw",
+    "downloader_version": "v4-ir-scraper"
+  },
+  {
+    "file_name": "DE_RWE_2015_ANUAL.pdf",
+    "sha256": "1b670946450458e05607771f26062707f5ef7d98344449b753a6fe8c10d4ed5c",
+    "byte_size": 3200377,
+    "retrieved_at_utc": "2026-09-20T10:52:51Z",
+    "source_url": "https://irpages2.eqs.com/Download/Companies/RWE/Annual%20Reports/DE0007037129-JA-2015-EQ-D-01.pdf",
+    "reporting_year": 2015,
+    "ticker": "DE_RWE",
+    "legal_name": "RWE Aktiengesellschaft",
+    "name_common": "RWE",
+    "lei": "529900GB7KCA94ACC940",
+    "hrb_reg": "HRB 14525",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (3,200,377 bytes)",
+    "download_channel": "CANAL2a_PDF_DIRECTO",
+    "downloader_version": "3.0.0"
+  },
+  {
+    "ticker": "HENK",
+    "company": "Henkel KGaA",
+    "year": 2015,
+    "status": "missing",
+    "channel": null,
+    "recorded_at": "2026-09-20T10:53:17Z"
+  },
+  {
+    "file_name": "LUFT_2015_ANUAL.pdf",
+    "sha256": "84bfbcb86cec26572c799c10a73389bec5bcf347122c52f46713dfc862f40b0a",
+    "byte_size": 4078904,
+    "retrieved_at_utc": "2026-09-17T12:47:09Z",
+    "source_url": "https://investor-relations.lufthansagroup.com/en/publications/financial-reports.html",
+    "reporting_year": 2015,
+    "ticker": "LUFT",
+    "legal_name": "Lufthansa Aviation GmbH",
+    "name_common": "Lufthansa",
+    "lei": "529900PH63HYJ86ASW55",
+    "hrb_reg": "HRB 299715",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (4,078,904 bytes)",
+    "download_channel": "ir_pw",
+    "downloader_version": "v4-ir-scraper"
+  },
+  {
+    "ticker": "MUTA",
+    "company": "Mutares",
+    "year": 2015,
+    "status": "missing",
+    "channel": null,
+    "recorded_at": "2026-09-20T10:53:17Z"
+  },
+  {
+    "file_name": "SIEM_2015_ANUAL.pdf",
+    "sha256": "da2e2fd54448cfadb47b78a4984cf0ac8291f84e9fadc1193857925868480e07",
+    "byte_size": 2877034,
+    "retrieved_at_utc": "2026-09-20T10:52:39Z",
+    "source_url": "https://assets.ctfassets.net/17si5cpawjzf/4k7pu1FLwMBrejRKQW43tw/b96b491b6d1aadcbf143d15df9964990/siemens-ar2015.pdf",
+    "reporting_year": 2015,
+    "ticker": "SIEM",
+    "legal_name": "Siemens Energy AG",
+    "name_common": "Siemens Energy",
+    "lei": "5299005CHJZ14D4FDJ62",
+    "hrb_reg": "HRB 252581",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (2,877,034 bytes)",
+    "download_channel": "CANAL2a_PDF_DIRECTO",
+    "downloader_version": "3.0.0"
+  },
+  {
+    "file_name": "THYS_2_2015_ANUAL.pdf",
+    "sha256": "c407dde2f9a835c331546034c09161381beda1a2ac9fa350b1883f4d360a7e15",
+    "byte_size": 7358991,
+    "retrieved_at_utc": "2026-09-19T17:31:17Z",
+    "source_url": "https://ucpcdn.thyssenkrupp.com/_binary/UCP5thyssenkruppAG/08fb200e-8e4a-45b2-aac8-42f0e0ba6780/thyssenkrupp_gb_en_2015_2016.pdf",
+    "reporting_year": 2015,
+    "ticker": "THYS_2",
+    "legal_name": "thyssenkrupp AG",
+    "name_common": "thyssenkrupp AG",
+    "lei": "549300UDG16DOYUPR330",
+    "hrb_reg": "HRB 15364",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "PDF",
+    "validation_reason": "PDF valido (7,358,991 bytes)",
+    "download_channel": "CANAL2b_IR_SCRAPER",
+    "downloader_version": "3.0.0"
+  }
+]
