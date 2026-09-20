@@ -1,0 +1,134 @@
+{
+    "companies": {
+        "ASML": {
+            "name_legal": "ASML Holding NV",
+            "name_common": "ASML",
+            "isin": "NL0010273215",
+            "lei": "724500Y6DUVHQD6OXN27",
+            "kvk_reg": "34063999",
+            "segment": "AEX25",
+            "index_membership": "AEX, Euronext 100",
+            "ir_url": "https://www.asml.com/en/investors"
+        },
+        "UNA": {
+            "name_legal": "Unilever PLC",
+            "name_common": "Unilever",
+            "isin": "GB00B10RZP78",
+            "lei": "549300MK5O09K510H986",
+            "kvk_reg": "",
+            "segment": "AEX25",
+            "index_membership": "AEX, FTSE 100",
+            "ir_url": "https://www.unilever.com/investors/"
+        },
+        "PRX": {
+            "name_legal": "Prosus N.V.",
+            "name_common": "Prosus",
+            "isin": "NL0013654783",
+            "lei": "63540015LJ167CTUZP03",
+            "kvk_reg": "34271822",
+            "segment": "AEX25",
+            "index_membership": "AEX",
+            "ir_url": "https://www.prosus.com/investors"
+        },
+        "INGA": {
+            "name_legal": "ING Groep NV",
+            "name_common": "ING Groep",
+            "isin": "NL0011821202",
+            "lei": "3TK20IVIUJ8J3ZU0QE75",
+            "kvk_reg": "33231073",
+            "segment": "AEX25",
+            "index_membership": "AEX, Euro Stoxx 50",
+            "ir_url": "https://www.ing.com/investor-relations.htm"
+        },
+        "HEIA": {
+            "name_legal": "Heineken NV",
+            "name_common": "Heineken",
+            "isin": "NL0000009165",
+            "lei": "5493005A32O4F8X86534",
+            "kvk_reg": "33113833",
+            "segment": "AEX25",
+            "index_membership": "AEX, Euro Stoxx 50",
+            "ir_url": "https://www.theheinekencompany.com/investors"
+        },
+        "AD": {
+            "name_legal": "Koninklijke Ahold Delhaize NV",
+            "name_common": "Ahold Delhaize",
+            "isin": "NL0011794037",
+            "lei": "5493005A32O4F8X86533",
+            "kvk_reg": "35010051",
+            "segment": "AEX25",
+            "index_membership": "AEX, Euro Stoxx 50",
+            "ir_url": "https://www.aholddelhaize.com/investors/"
+        },
+        "WKL": {
+            "name_legal": "Wolters Kluwer NV",
+            "name_common": "Wolters Kluwer",
+            "isin": "NL0000395903",
+            "lei": "5493005A32O4F8X86535",
+            "kvk_reg": "33248575",
+            "segment": "AEX25",
+            "index_membership": "AEX, Euro Stoxx 50",
+            "ir_url": "https://www.wolterskluwer.com/en/investors"
+        },
+        "PHIA": {
+            "name_legal": "Koninklijke Philips NV",
+            "name_common": "Philips",
+            "isin": "NL0000009538",
+            "lei": "5493005A32O4F8X86536",
+            "kvk_reg": "17004484",
+            "segment": "AEX25",
+            "index_membership": "AEX, Euro Stoxx 50",
+            "ir_url": "https://www.philips.com/a-w/about/investor.html"
+        },
+        "ASM": {
+            "name_legal": "ASM International N.V.",
+            "name_common": "ASM International",
+            "isin": "NL0000334118",
+            "lei": "724500N4G80453303666",
+            "kvk_reg": "33023023",
+            "segment": "AEX25",
+            "index_membership": "AEX",
+            "ir_url": "https://www.asm.com/investors"
+        },
+        "ADYEN": {
+            "name_legal": "Adyen N.V.",
+            "name_common": "Adyen",
+            "isin": "NL0012969182",
+            "lei": "724500334G8045330366",
+            "kvk_reg": "34259528",
+            "segment": "AEX25",
+            "index_membership": "AEX",
+            "ir_url": "https://www.adyen.com/investor-relations"
+        },
+        "PROX": {
+            "name_legal": "Prosus NV",
+            "name_common": "PROX",
+            "isin": "",
+            "lei": "5493005A32O4F8X86531",
+            "kvk_reg": "",
+            "segment": "AEX25",
+            "index_membership": "AEX",
+            "ir_url": ""
+        },
+        "RAND": {
+            "name_legal": "Randstad NV",
+            "name_common": "RAND",
+            "isin": "",
+            "lei": "5493005A32O4F8X86537",
+            "kvk_reg": "",
+            "segment": "AEX25",
+            "index_membership": "AEX",
+            "ir_url": ""
+        },
+        "RELX": {
+            "name_legal": "RELX NV",
+            "name_common": "RELX",
+            "isin": "",
+            "lei": "5493005A32O4F8X86532",
+            "kvk_reg": "",
+            "segment": "AEX25",
+            "index_membership": "AEX",
+            "ir_url": ""
+        }
+    }
+}
