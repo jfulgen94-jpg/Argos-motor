@@ -195,6 +195,16 @@ def main():
     srv_parser.add_argument("--host", default="0.0.0.0", help="Host de escucha")
     srv_parser.add_argument("--port", "-p", type=int, default=8000, help="Puerto de escucha")
 
+    # Subcomando: azure-audit
+    az_aud_parser = subparsers.add_parser("azure-audit", help="Audita e inspecciona la metadata en Azure Blob Storage")
+    az_aud_parser.add_argument("--country", "-c", default="all", help="Jurisdicción: de, nl, es, all")
+    az_aud_parser.add_argument("--output-json", action="store_true", help="Formato JSON")
+
+    # Subcomando: azure-sync
+    az_sync_parser = subparsers.add_parser("azure-sync", help="Sincroniza archivos locales hacia Azure Blob Storage")
+    az_sync_parser.add_argument("--country", "-c", default=None, help="Jurisdicción: de, nl, es o vacio para todo")
+    az_sync_parser.add_argument("--dry-run", action="store_true", help="Simulacion sin subir")
+
     args, unknown_args = parser.parse_known_args()
 
     if not args.command:
@@ -216,6 +226,18 @@ def main():
         run_audit(args.country)
     elif args.command == "serve":
         run_server(args.host, args.port)
+    elif args.command == "azure-audit":
+        inspector_script = ROOT_DIR / "ARGOS_MOTOR" / "cloud" / "azure_metadata_inspector.py"
+        cmd = [sys.executable, str(inspector_script), "--country", args.country]
+        if args.output_json: cmd.append("--output-json")
+        subprocess.run(cmd)
+    elif args.command == "azure-sync":
+        sync_script = ROOT_DIR / "ARGOS_MOTOR" / "cloud" / "azure_data_lake_sync.py"
+        cmd = [sys.executable, str(sync_script)]
+        sub = {"de": "DE_BAFIN", "nl": "NL_AFM", "es": "ES_CNMV"}.get(args.country.lower()) if args.country else None
+        if sub: cmd.extend(["--subfolder", sub])
+        if args.dry_run: cmd.append("--dry-run")
+        subprocess.run(cmd)
 
 
 if __name__ == "__main__":
