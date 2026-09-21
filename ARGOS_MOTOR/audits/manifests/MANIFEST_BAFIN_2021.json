@@ -95,6 +95,29 @@
     "file_size_bytes": 321
   },
   {
+    "file_name": "BASF_2021_ANUAL.html",
+    "sha256": "51be84497227b117746181e772bf8aec52ce4a4e8126ee29a98e98644b811b56",
+    "byte_size": 25352,
+    "retrieved_at_utc": "2026-09-21T20:42:40Z",
+    "source_url": "https://www.bundesanzeiger.de/pub/de/suchen2?3-1.-search~table~panel-rows-1-search~table~row~panel-publication~link",
+    "reporting_year": 2021,
+    "ticker": "BASF",
+    "legal_name": "BASF SE",
+    "name_common": "BASF",
+    "lei": "529900A9NIYR2QY8GP86",
+    "hrb_reg": "HRB 6000",
+    "segment": "PRIME_STANDARD",
+    "index_membership": [
+      "DAX40",
+      "MDAX",
+      "TECDAX"
+    ],
+    "magic_mime_verified": "HTML",
+    "validation_reason": "HTML valido (2 keywords, 25,352 bytes)",
+    "download_channel": "CANAL3_BAFIN_API",
+    "downloader_version": "3.0.0"
+  },
+  {
     "file_name": "BAST_2021_ESEF.zip",
     "sha256": "e14edcd1a5385466bce4baa63ceec9b83a585d0621a3272036041076fdc93b0b",
     "byte_size": 1044887,

@@ -63,6 +63,16 @@ try:
 except ImportError:
     PLAYWRIGHT_AVAILABLE = False
 
+try:
+    from ARGOS_MOTOR.descarga.de_germany.bundesanzeiger_api import BundesanzeigerAPI
+    BUNDESANZEIGER_API_AVAILABLE = True
+except ImportError:
+    try:
+        from bundesanzeiger_api import BundesanzeigerAPI
+        BUNDESANZEIGER_API_AVAILABLE = True
+    except ImportError:
+        BUNDESANZEIGER_API_AVAILABLE = False
+
 
 # --- Cache de red para indice XBRL ---
 _XBRL_INDEX_CACHE = None
@@ -805,6 +815,49 @@ def channel3_bundesanzeiger(company: dict, year: int, comp_dir: Path,
     print(f"  [3] Bundesanzeiger: '{search_term}' | anio fiscal {year}")
     sys.stdout.flush()
 
+    # ─── VÍA A: API HTTP Rápida (Sin navegador, 0 Playwright, 0 CAPTCHA) ───
+    if BUNDESANZEIGER_API_AVAILABLE:
+        try:
+            api = BundesanzeigerAPI()
+            candidates = api.search(search_term, target_year=year)
+            if candidates:
+                scored = []
+                for c in candidates:
+                    sc = 0
+                    t_lower = c.name.lower()
+                    if 'konzernabschluss' in t_lower:
+                        sc += 20
+                    elif 'jahresabschluss' in t_lower:
+                        sc += 10
+                    elif 'finanzbericht' in t_lower or 'geschaeftsbericht' in t_lower:
+                        sc += 5
+                    if search_term.lower() in c.company.lower():
+                        sc += 5
+                    scored.append((sc, c))
+                scored.sort(key=lambda x: x[0], reverse=True)
+
+                for score, cand in scored[:3]:
+                    print(f"  [3-API] Intentando descarga directa HTTP (score={score}): {cand.name[:60]}")
+                    sys.stdout.flush()
+                    raw_html = api.fetch_report_content(cand)
+                    if raw_html and len(raw_html) > 2000:
+                        html_bytes = raw_html.encode('utf-8')
+                        valid, reason = is_valid_financial_document(html_bytes, cand.content_url)
+                        if valid:
+                            result = seal_document(html_bytes, comp_dir, ticker, year,
+                                                   cand.content_url, "CANAL3_BAFIN_API", company, ".html")
+                            if result:
+                                return str(result)
+                        else:
+                            print(f"  [3-API] Rechazado por validación contable: {reason}")
+                            sys.stdout.flush()
+                print("  [3-API] Ningún candidato HTTP cumplió criterios contables. Evaluando Vía B (Playwright)...")
+                sys.stdout.flush()
+        except Exception as e:
+            print(f"  [3-API] Aviso en consulta HTTP ({e}). Evaluando fallback Playwright...")
+            sys.stdout.flush()
+
+    # ─── VÍA B: Fallback Playwright (Navegador Headless) ───
     context = get_bafin_session(manual_mode)
     if not context:
         return None
