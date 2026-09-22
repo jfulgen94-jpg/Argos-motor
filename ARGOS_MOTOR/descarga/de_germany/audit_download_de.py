@@ -36,14 +36,13 @@ def audit_german_downloads():
         for cdir in year_dir.iterdir():
             if not cdir.is_dir(): continue
             companies.add(cdir.name)
-            c_files = [f.name.lower() for f in cdir.iterdir() if f.is_file()]
-            if any(f.endswith('.zip') or f.endswith('.xhtml') or f.endswith('.htm') or f.endswith('.html') for f in c_files):
+            if any(f.endswith('.zip') or f.endswith('.xhtml') or f.endswith('.htm') or f.endswith('.html') or f.endswith('.pdf') for f in c_files):
                 completos += 1
             elif any(f.endswith('.json') for f in c_files):
                 metas += 1
 
     print(f"Empresas únicas en DE_BAFIN: {len(companies)}")
-    print(f"Paquetes con informe primario descargado (.zip/.htm): {completos}")
+    print(f"Paquetes con informe primario descargado (.zip/.pdf/.htm): {completos}")
     print(f"Registros en espera con metadatos sellados (.json): {metas}")
 
 if __name__ == '__main__':

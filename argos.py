@@ -95,7 +95,7 @@ def check_environment():
     else:
         base = ROOT_DIR / "data"
 
-    for sub in ["raw/ES_CNMV", "raw/DE_BAFIN", "raw/NL_AFM", "staging", "quarantine", "lake/duckdb"]:
+    for sub in ["raw/ES_CNMV", "raw/DE_BAFIN", "raw/NL_AFM", "raw/FR_AMF", "staging", "quarantine", "lake/duckdb"]:
         p = base / sub
         status = "[EXISTE]" if p.exists() else "[CREADO AHORA]"
         p.mkdir(parents=True, exist_ok=True)
@@ -119,11 +119,13 @@ def run_download(country: str, extra_args: list):
         "netherlands": ROOT_DIR / "ARGOS_MOTOR" / "descarga" / "nl_netherlands" / "downloader_netherlands_v3.py",
         "es": ROOT_DIR / "ARGOS_MOTOR" / "descarga" / "es_spain" / "run_download_spain.py",
         "spain": ROOT_DIR / "ARGOS_MOTOR" / "descarga" / "es_spain" / "run_download_spain.py",
+        "fr": ROOT_DIR / "ARGOS_MOTOR" / "descarga" / "fr_france" / "downloader_france_v3.py",
+        "france": ROOT_DIR / "ARGOS_MOTOR" / "descarga" / "fr_france" / "downloader_france_v3.py",
     }
 
     if country not in script_map:
         print(f"[ERROR] País '{country}' no soportado aún en CLI unificado.")
-        print(f"        Países disponibles: {list(set(['de', 'nl', 'es']))}")
+        print(f"        Países disponibles: ['de', 'nl', 'es', 'fr']")
         sys.exit(1)
 
     target_script = script_map[country]
@@ -148,6 +150,8 @@ def run_audit(country: str):
         run_download("de", ["--audit"])
     elif country in ["nl", "netherlands"]:
         run_download("nl", ["--audit"])
+    elif country in ["fr", "france"]:
+        run_download("fr", ["--audit"])
     elif country in ["es", "spain"]:
         audit_script = ROOT_DIR / "ARGOS_MOTOR" / "descarga" / "es_spain" / "diagnostico_higiene_es.py"
         if audit_script.exists():
@@ -188,7 +192,7 @@ def main():
 
     # Subcomando: audit
     aud_parser = subparsers.add_parser("audit", help="Audita la integridad y completitud documental")
-    aud_parser.add_argument("--country", "-c", default="de", help="País: de, nl, es")
+    aud_parser.add_argument("--country", "-c", default="de", help="País: de, nl, es, fr")
 
     # Subcomando: serve
     srv_parser = subparsers.add_parser("serve", help="Lanza la API Gateway FastAPI")
@@ -197,12 +201,12 @@ def main():
 
     # Subcomando: azure-audit
     az_aud_parser = subparsers.add_parser("azure-audit", help="Audita e inspecciona la metadata en Azure Blob Storage")
-    az_aud_parser.add_argument("--country", "-c", default="all", help="Jurisdicción: de, nl, es, all")
+    az_aud_parser.add_argument("--country", "-c", default="all", help="Jurisdicción: de, nl, es, fr, all")
     az_aud_parser.add_argument("--output-json", action="store_true", help="Formato JSON")
 
     # Subcomando: azure-sync
     az_sync_parser = subparsers.add_parser("azure-sync", help="Sincroniza archivos locales hacia Azure Blob Storage")
-    az_sync_parser.add_argument("--country", "-c", default=None, help="Jurisdicción: de, nl, es o vacio para todo")
+    az_sync_parser.add_argument("--country", "-c", default=None, help="Jurisdicción: de, nl, es, fr o vacio para todo")
     az_sync_parser.add_argument("--dry-run", action="store_true", help="Simulacion sin subir")
 
     args, unknown_args = parser.parse_known_args()
@@ -234,7 +238,7 @@ def main():
     elif args.command == "azure-sync":
         sync_script = ROOT_DIR / "ARGOS_MOTOR" / "cloud" / "azure_data_lake_sync.py"
         cmd = [sys.executable, str(sync_script)]
-        sub = {"de": "DE_BAFIN", "nl": "NL_AFM", "es": "ES_CNMV"}.get(args.country.lower()) if args.country else None
+        sub = {"de": "DE_BAFIN", "nl": "NL_AFM", "es": "ES_CNMV", "fr": "FR_AMF"}.get(args.country.lower()) if args.country else None
         if sub: cmd.extend(["--subfolder", sub])
         if args.dry_run: cmd.append("--dry-run")
         subprocess.run(cmd)

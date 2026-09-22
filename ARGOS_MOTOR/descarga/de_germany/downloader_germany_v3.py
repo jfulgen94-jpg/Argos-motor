@@ -401,18 +401,43 @@ SPINOFF_INCEPTION = {
 # --- Deteccion automatica de ruta canonica ---
 
 
-def resolve_data_root() -> Path:
+def resolve_data_root(override_path: Optional[str] = None) -> Path:
+    if override_path:
+        p = Path(override_path)
+        p.mkdir(parents=True, exist_ok=True)
+        return p
+
+    # 1. Configuración explícita de config_de.json si existe
+    cfg_path = Path(__file__).parent / 'config_de.json'
+    canonical_cfg = None
+    if cfg_path.exists():
+        try:
+            cfg = json.loads(cfg_path.read_text(encoding='utf-8'))
+            canonical_cfg = cfg.get('canonical_raw_path')
+        except Exception:
+            pass
+
+    # 2. Prioridad absoluta local: Disco D: si está disponible en Windows (igual que Francia)
+    if os.path.exists("D:/") or Path("D:/").exists():
+        primary_d = Path(canonical_cfg or "D:/ARGOS_DATA/raw/DE_BAFIN")
+        primary_d.mkdir(parents=True, exist_ok=True)
+        return primary_d
+
+    # 3. Variable de entorno explícita (para contenedores cloud / Qwen Coder / OpenHands)
     env_root = os.environ.get("ARGOS_DATA_ROOT", "")
+    if env_root:
+        p_env = Path(env_root) / "raw" / "DE_BAFIN" if "raw" not in env_root else Path(env_root)
+        p_env.mkdir(parents=True, exist_ok=True)
+        return p_env
+
+    # 4. Fallbacks secundarios para contenedores Linux
     candidates = [
-        Path(env_root) / "raw" / "DE_BAFIN" if env_root else None,
-        Path(env_root) if env_root else None,
         Path("/opt/argos_data/raw/DE_BAFIN"),
-        Path("D:/ARGOS_DATA/raw/DE_BAFIN"),
         Path("ARGOS_DATA_DISK/raw/DE_BAFIN"),
         Path("ARGOS_MOTOR/data/raw/DE_BAFIN"),
     ]
     for c in candidates:
-        if c and c.exists():
+        if c.exists():
             return c
     p = Path(__file__).resolve().parents[2] / "data" / "raw" / "DE_BAFIN"
     p.mkdir(parents=True, exist_ok=True)
@@ -1245,13 +1270,14 @@ def run_audit(data_root: Path):
         m = data_root / f"MANIFEST_BAFIN_{year}.json"
         if m.exists():
             try:
-                ent = json.loads(m.read_text(encoding='utf-8'))
-                ok = sum(1 for e in ent if e.get('sha256') or e.get('status') in ['cache_hit','downloaded'])
-                miss = sum(1 for e in ent if e.get('status') == 'missing')
-                spin = sum(1 for e in ent if e.get('status') == 'NOT_INCORPORATED_YET')
-                print(f"    {year}: {len(ent):>4} registros  (ok={ok}, missing={miss}, spinoff={spin})")
-            except Exception:
-                print(f"    {year}: ERROR")
+                raw_data = json.loads(m.read_text(encoding='utf-8'))
+                ent = raw_data.get('filings', raw_data.get('manifest', [])) if isinstance(raw_data, dict) else raw_data
+                ok = sum(1 for e in ent if isinstance(e, dict) and (e.get('sha256') or e.get('status') in ['cache_hit','downloaded']))
+                miss = sum(1 for e in ent if isinstance(e, dict) and e.get('status') == 'missing')
+                spinoff = sum(1 for e in ent if isinstance(e, dict) and e.get('status') == 'NOT_INCORPORATED_YET')
+                print(f"    {year}: {len(ent):>4} registros  (ok={ok}, missing={miss}, spinoff={spinoff})")
+            except Exception as ex:
+                print(f"    {year}: ERROR ({ex})")
 
 
 
@@ -1288,6 +1314,7 @@ def main():
     parser.add_argument('--skip-canal', type=str, default='')
     parser.add_argument('--audit', action='store_true')
     parser.add_argument('--manifest-only', action='store_true')
+    parser.add_argument('--data-root', type=str, default=None, help='Ruta raíz personalizada para almacenamiento')
     args = parser.parse_args()
 
 
@@ -1299,7 +1326,7 @@ def main():
     print(f"  bs4/lxml:     {BS4_AVAILABLE}")
 
 
-    data_root = resolve_data_root()
+    data_root = resolve_data_root(args.data_root)
     print(f"  Data root:    {data_root}")
 
 

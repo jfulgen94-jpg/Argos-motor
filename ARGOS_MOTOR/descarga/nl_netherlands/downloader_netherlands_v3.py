@@ -11,17 +11,27 @@ from bs4 import BeautifulSoup
 
 
 def resolve_data_root() -> Path:
+    # 1. Prioridad absoluta local: Disco D: si está disponible en Windows
+    primary_d = Path("D:/ARGOS_DATA/raw/NL_AFM")
+    if Path("D:/ARGOS_DATA").exists():
+        primary_d.mkdir(parents=True, exist_ok=True)
+        return primary_d
+
+    # 2. Variable de entorno explícita (para contenedores cloud / Qwen Coder / OpenHands)
     env_root = os.environ.get("ARGOS_DATA_ROOT", "")
+    if env_root:
+        p_env = Path(env_root) / "raw" / "NL_AFM" if "raw" not in env_root else Path(env_root)
+        p_env.mkdir(parents=True, exist_ok=True)
+        return p_env
+
+    # 3. Fallbacks secundarios
     candidates = [
-        Path(env_root) / "raw" / "NL_AFM" if env_root else None,
-        Path(env_root) if env_root else None,
         Path("/opt/argos_data/raw/NL_AFM"),
-        Path("D:/ARGOS_DATA/raw/NL_AFM"),
         Path("ARGOS_DATA_DISK/raw/NL_AFM"),
         Path("ARGOS_MOTOR/data/raw/NL_AFM"),
     ]
     for c in candidates:
-        if c and c.exists():
+        if c.exists():
             return c
     p = Path(__file__).resolve().parents[2] / "data" / "raw" / "NL_AFM"
     p.mkdir(parents=True, exist_ok=True)

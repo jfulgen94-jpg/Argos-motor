@@ -38,13 +38,13 @@ def audit_french_downloads():
             if not cdir.is_dir(): continue
             companies.add(cdir.name)
             c_files = [f.name.lower() for f in cdir.iterdir() if f.is_file()]
-            if any(f.endswith('.zip') or f.endswith('.xhtml') or f.endswith('.htm') for f in c_files):
+            if any(f.endswith('.zip') or f.endswith('.xhtml') or f.endswith('.htm') or f.endswith('.pdf') for f in c_files):
                 completos += 1
             elif any(f.endswith('.json') for f in c_files):
                 metas += 1
 
     print(f"Empresas únicas registradas en FR_AMF: {len(companies)}")
-    print(f"Paquetes con documento primario completo (.zip/.htm): {completos}")
+    print(f"Paquetes con documento primario completo (.zip/.pdf/.htm): {completos}")
     print(f"Registros únicamente con metadatos (.json): {metas}")
 
 if __name__ == '__main__':
