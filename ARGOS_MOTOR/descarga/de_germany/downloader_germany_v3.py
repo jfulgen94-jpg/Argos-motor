@@ -649,6 +649,136 @@ def channel1_esef(company: dict, year: int, comp_dir: Path, dry_run: bool) -> Op
 
 
 
+# --- CANAL EQS / DGAP Regulatory Archive ---
+_EQS_VERIFIED_CACHE = None
+_EQS_SLUGS_CACHE = None
+
+def load_eqs_resources():
+    global _EQS_VERIFIED_CACHE, _EQS_SLUGS_CACHE
+    if _EQS_VERIFIED_CACHE is None:
+        p_ver = Path(__file__).resolve().parents[2] / "scratch" / "eqs_verified_links.json"
+        if not p_ver.exists():
+            p_ver = Path("scratch/eqs_verified_links.json")
+        if p_ver.exists():
+            try:
+                _EQS_VERIFIED_CACHE = json.loads(p_ver.read_text(encoding='utf-8'))
+            except Exception:
+                _EQS_VERIFIED_CACHE = {}
+        else:
+            _EQS_VERIFIED_CACHE = {}
+
+    if _EQS_SLUGS_CACHE is None:
+        p_slugs = Path(__file__).resolve().parents[2] / "ARGOS_MOTOR" / "config" / "eqs_company_slugs.json"
+        if not p_slugs.exists():
+            p_slugs = Path("ARGOS_MOTOR/config/eqs_company_slugs.json")
+        if p_slugs.exists():
+            try:
+                data = json.loads(p_slugs.read_text(encoding='utf-8'))
+                _EQS_SLUGS_CACHE = data.get("companies", {})
+            except Exception:
+                _EQS_SLUGS_CACHE = {}
+        else:
+            _EQS_SLUGS_CACHE = {}
+
+
+def channel_eqs_dgap(company: dict, year: int, comp_dir: Path, dry_run: bool) -> Optional[str]:
+    ticker = company.get('ticker', '')
+    isin = company.get('isin', '')
+    if not isin or not HTTPX_AVAILABLE:
+        return None
+
+    load_eqs_resources()
+
+    # 1. Hit directo si OpenHands / crawler ya verificó el enlace
+    if _EQS_VERIFIED_CACHE and ticker in _EQS_VERIFIED_CACHE:
+        rep_map = _EQS_VERIFIED_CACHE[ticker].get('reports', {})
+        if str(year) in rep_map:
+            pdf_url = rep_map[str(year)]
+            print(f"  [EQS-Hit] Enlace verificado para {ticker} {year}: {pdf_url[:60]}")
+            if dry_run:
+                return f"DRY_RUN:EQS:{pdf_url}"
+            client = get_http_client()
+            if client:
+                try:
+                    time.sleep(RATE_LIMIT_DELAY)
+                    r = client.get(pdf_url, timeout=60)
+                    if r.status_code == 200 and r.content[:4] == b'%PDF' and len(r.content) > 10_000:
+                        return seal_document(r.content, comp_dir, ticker, year,
+                                             pdf_url, "CANAL_EQS_DGAP", company, ".pdf")
+                except Exception as e:
+                    print(f"  [EQS] Error descargando {pdf_url[:50]}: {e}")
+                finally:
+                    client.close()
+
+    # 2. Búsqueda por slugs configurados (Qwen Coder) o heurísticas estándar
+    candidate_slugs = []
+    if _EQS_SLUGS_CACHE and ticker in _EQS_SLUGS_CACHE:
+        candidate_slugs.extend(_EQS_SLUGS_CACHE[ticker].get('slugs', []))
+
+    # Fallbacks y alias canónicos conocidos
+    KNOWN_EQS_ALIASES = {
+        'BASF': ['BASF'], 'BMW': ['BMW'], 'BAYE_5': ['BMW'],
+        'SIEM': ['Siemens'], 'SIEM_2': ['Siemens'], 'SMTS': ['Siemens'],
+        'RWE': ['RWE'], 'DE_RWE': ['RWE'],
+        'MERC': ['Daimler', 'MercedesBenz', 'Mercedes-Benz'],
+        'HEID': ['HeidelbergCement', 'HeidelbergMaterials'],
+        'AIRB': ['eads', 'Airbus', 'EADS'], 'AIR': ['eads', 'Airbus'],
+        'DHLG': ['DeutschePost', 'dhl', 'DHL'], 'DHL': ['DeutschePost', 'DHL'],
+        'FRES': ['Fresenius'], 'FRES_2': ['FMC', 'FreseniusMedicalCare'],
+        'MUV2': ['MunichRe', 'MuenchenerRueck'], 'MUTA': ['MunichRe', 'Mutares'],
+        'HLE': ['HannoverRueck', 'HannoverRe'],
+        'THYS': ['Thyssenkrupp', 'thyssenkrupp'], 'THYS_2': ['Thyssenkrupp'],
+        'VOW3': ['Volkswagen'], 'VOLK': ['Volkswagen'], 'VOLK_2': ['Volkswagen'],
+        'BAYN': ['Bayer'], 'BAYE_3': ['Bayer'],
+        'ALV': ['Allianz'], 'ALLI': ['Allianz'],
+        'DTE': ['DeutscheTelekom', 'Telekom'], 'DEUT': ['DeutscheTelekom', 'Telekom'],
+        'DBK': ['DeutscheBank'], 'DEUT_2': ['DeutscheBank'],
+        'CBK': ['Commerzbank'], 'COMM': ['Commerzbank'],
+        'EOAN': ['EON', 'E.ON'], 'DE_EON': ['EON', 'E.ON'],
+        'SAP': ['SAP'], 'SAPS': ['SAP'],
+        'CON': ['Continental'], 'CONTI': ['Continental'], 'CONT': ['Continental'],
+        'IFX': ['Infineon'], 'INFI': ['Infineon'],
+        'ZAL': ['Zalando'], 'ZALN': ['Zalando'],
+        'SY1': ['Symrise'], 'SYMR': ['Symrise'],
+    }
+    if ticker in KNOWN_EQS_ALIASES:
+        candidate_slugs.extend(KNOWN_EQS_ALIASES[ticker])
+
+    common_clean = re.sub(r'[^A-Za-z0-9]', '', company.get('name_common', ''))
+    if common_clean and common_clean not in candidate_slugs:
+        candidate_slugs.append(common_clean)
+    if ticker not in candidate_slugs:
+        candidate_slugs.append(ticker)
+
+    client = get_http_client()
+    if not client:
+        return None
+
+    try:
+        for slug in candidate_slugs:
+            for ver in ['00', '01']:
+                url = f"https://irpages2.eqs.com/Download/Companies/{slug}/Annual%20Reports/{isin}-JA-{year}-EQ-D-{ver}.pdf"
+                try:
+                    time.sleep(0.2)
+                    r = client.head(url, timeout=6.0)
+                    if r.status_code in [200, 301, 302]:
+                        r_get = client.get(url, timeout=60)
+                        if r_get.status_code == 200 and r_get.content[:4] == b'%PDF' and len(r_get.content) > 10_000:
+                            print(f"  [+] Hit EQS ({slug}, ver={ver}): {url[:70]}")
+                            if dry_run:
+                                return f"DRY_RUN:EQS:{url}"
+                            return seal_document(r_get.content, comp_dir, ticker, year,
+                                                 url, "CANAL_EQS_DGAP", company, ".pdf")
+                except httpx.RequestError:
+                    pass
+    finally:
+        client.close()
+
+    return None
+
+
+
+
 # Cache en memoria para páginas IR oficiales (evita re-descargar el mismo HTML 14 veces por empresa)
 _IR_PAGE_HTML_CACHE = {}
 
@@ -1223,6 +1353,10 @@ def process_company_year(company: dict, year: int, data_root: Path,
     if 1 not in skip_canal:
         res = handle_result(channel1_esef(company, year, comp_dir, dry_run), 'CANAL1_ESEF')
         if res: return res
+
+    # Canal 1b: EQS / DGAP Regulatory Archive
+    res = handle_result(channel_eqs_dgap(company, year, comp_dir, dry_run), 'CANAL_EQS_DGAP')
+    if res: return res
 
     # Canal 2: IR
     if 2 not in skip_canal:
