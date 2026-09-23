@@ -25,7 +25,7 @@ Donde:
 ### 2. ARCHIVO DE ENTRADA
 
 Tienes a tu disposición el archivo con las 172 empresas de la Fase 1:
-`scratch/prime_standard_companies.json`
+`ARGOS_MOTOR/config/prime_standard_companies.json`
 
 Cada registro contiene:
 - `ticker`: Ticker bursátil (ej. `BASF`, `MERC`, `AIRB`, `HEID`).
@@ -106,6 +106,6 @@ Estructura JSON:
 
 ### 5. SCRIPT GENERADOR AUTOMÁTICO (OPCIONAL EN PYTHON)
 
-Si lo prefieres, puedes escribir un script en `scratch/build_eqs_slugs.py` que lea `scratch/prime_standard_companies.json`, aplique las heurísticas y guarde `ARGOS_MOTOR/config/eqs_company_slugs.json`.
+Si lo prefieres, puedes escribir un script en `scratch/build_eqs_slugs.py` que lea `ARGOS_MOTOR/config/prime_standard_companies.json`, aplique las heurísticas y guarde `ARGOS_MOTOR/config/eqs_company_slugs.json`.
 
 ¡Procede a generar el archivo completo para las 172 empresas de Prime Standard!

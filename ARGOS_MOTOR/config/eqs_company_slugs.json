@@ -1,0 +1,1564 @@
+{
+  "_metadata": {
+    "generated_at": "2026-09-23",
+    "total_companies": 172,
+    "purpose": "EQS / DGAP corporate storage slug mappings for German Prime Standard issuers"
+  },
+  "companies": {
+    "LUFT": {
+      "isin": "DE0008232125",
+      "name": "Lufthansa Aviation GmbH",
+      "slugs": [
+        "Lufthansa",
+        "DeutscheLufthansa",
+        "LufthansaAviation",
+        "LUFT"
+      ]
+    },
+    "ADID": {
+      "isin": "DE000A1EWWW0",
+      "name": "adidas AG",
+      "slugs": [
+        "Adidas",
+        "adidas",
+        "ADID"
+      ]
+    },
+    "AIRB": {
+      "isin": "NL0000235190",
+      "name": "Airbus Dachfonds",
+      "slugs": [
+        "eads",
+        "Airbus",
+        "EADS",
+        "AirbusDachfonds",
+        "AIRB"
+      ]
+    },
+    "NOKI": {
+      "isin": "FI0009000681",
+      "name": "Nokia",
+      "slugs": [
+        "Nokia",
+        "NOKI"
+      ]
+    },
+    "BASF": {
+      "isin": "DE000BASF111",
+      "name": "BASF SE",
+      "slugs": [
+        "BASF"
+      ]
+    },
+    "DEUT": {
+      "isin": "DE0005557508",
+      "name": "DEUTSCHE TELEKOM AG",
+      "slugs": [
+        "DeutscheTelekom",
+        "Telekom",
+        "DEUTSCHETELEKOM",
+        "DEUT"
+      ]
+    },
+    "STOX": {
+      "isin": "EU0009658202",
+      "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+      "slugs": [
+        "STOXXEurope600",
+        "iSharesSTOXXEurope600UCITSETFDE",
+        "STOX"
+      ]
+    },
+    "ADTR": {
+      "isin": "US00738A1060",
+      "name": "Adtran Networks SE",
+      "slugs": [
+        "Adtran",
+        "AdtranNetworks",
+        "ADTR"
+      ]
+    },
+    "GKSO": {
+      "isin": "DE0007571424",
+      "name": "GK Software SE",
+      "slugs": [
+        "GKSoftware",
+        "GKSO"
+      ]
+    },
+    "INNO": {
+      "isin": "DE000A2AADD2",
+      "name": "innogy SE",
+      "slugs": [
+        "Innogy",
+        "innogy",
+        "INNO"
+      ]
+    },
+    "ROJA": {
+      "isin": "",
+      "name": "Rojam",
+      "slugs": [
+        "Rojam",
+        "ROJA"
+      ]
+    },
+    "INDO": {
+      "isin": "SG1U47933908",
+      "name": "Indofood AGRI Resources Ltd.",
+      "slugs": [
+        "IndofoodAgriResourcesLimited",
+        "IndofoodAGRIResources",
+        "INDO"
+      ]
+    },
+    "MUTA": {
+      "isin": "DE000A0SMSH2",
+      "name": "Mutares SE & Co. KGaA",
+      "slugs": [
+        "MunichRe",
+        "Mutares",
+        "MUTA"
+      ]
+    },
+    "MUTA_2": {
+      "isin": "DE000A2NB650",
+      "name": "Mutares SE & Co. KGaA",
+      "slugs": [
+        "Mutares",
+        "MUTA",
+        "MUTA_2"
+      ]
+    },
+    "SMTS": {
+      "isin": "DE0005751986",
+      "name": "SMT Scharf AG",
+      "slugs": [
+        "Siemens",
+        "SMTScharf",
+        "SMTS"
+      ]
+    },
+    "SMTS_2": {
+      "isin": "DE000A3DRAE2",
+      "name": "SMT Scharf AG",
+      "slugs": [
+        "SMTScharf",
+        "SMTS",
+        "SMTS_2"
+      ]
+    },
+    "TOWE": {
+      "isin": "IL0010823792",
+      "name": "Tower Semiconductor",
+      "slugs": [
+        "TowerSemiconductor",
+        "TOWE"
+      ]
+    },
+    "PLUR": {
+      "isin": "",
+      "name": "Pluri Inc.",
+      "slugs": [
+        "PluriInc",
+        "Pluri",
+        "PLUR"
+      ]
+    },
+    "EXAS": {
+      "isin": "DE000A0LR9G9",
+      "name": "EXASOL AG",
+      "slugs": [
+        "Exasol",
+        "EXASOL",
+        "EXAS"
+      ]
+    },
+    "TLGI": {
+      "isin": "DE000A12B8Z4",
+      "name": "TLG IMMOBILIEN AG",
+      "slugs": [
+        "TLGImmobilien",
+        "TLGIMMOBILIEN",
+        "TLGI"
+      ]
+    },
+    "WSTE": {
+      "isin": "DE0008051004",
+      "name": "Wüstenrot & Württembergische AG",
+      "slugs": [
+        "WstenrotWrttembergische",
+        "WSTE"
+      ]
+    },
+    "SINN": {
+      "isin": "DE0005141907",
+      "name": "SinnerSchrader Aktiengesellschaft",
+      "slugs": [
+        "SinnerSchrader",
+        "SinnerSchraderAktiengesellschaft",
+        "SINN"
+      ]
+    },
+    "AUDI": {
+      "isin": "DE0006757008",
+      "name": "AUDI Aktiengesellschaft",
+      "slugs": [
+        "AudiAG",
+        "AUDIAktiengesellschaft",
+        "AUDI"
+      ]
+    },
+    "STRA": {
+      "isin": "DE0007289001",
+      "name": "STRATEC SE",
+      "slugs": [
+        "STRATEC",
+        "STRA"
+      ]
+    },
+    "SPRI": {
+      "isin": "DE000SPG1003",
+      "name": "Springer Nature AG & Co. KGaA",
+      "slugs": [
+        "SpringerNature",
+        "SPRI"
+      ]
+    },
+    "UNIP": {
+      "isin": "DE000UNSE018",
+      "name": "UNIPER SE",
+      "slugs": [
+        "Uniper",
+        "UNIPER",
+        "UNIP"
+      ]
+    },
+    "UNIP_2": {
+      "isin": "DE000UNSE026",
+      "name": "UNIPER SE",
+      "slugs": [
+        "Uniper",
+        "UNIPER",
+        "UNIP",
+        "UNIP_2"
+      ]
+    },
+    "UNIP_3": {
+      "isin": "DE000UNSE2N1",
+      "name": "UNIPER SE",
+      "slugs": [
+        "Uniper",
+        "UNIPER",
+        "UNIP",
+        "UNIP_3"
+      ]
+    },
+    "BARI": {
+      "isin": "",
+      "name": "Barito Pacific",
+      "slugs": [
+        "BaritoPacific",
+        "BARI"
+      ]
+    },
+    "HENS": {
+      "isin": "DE000HAG0005",
+      "name": "HENSOLDT AG",
+      "slugs": [
+        "HensoldtAG",
+        "HENSOLDT",
+        "HENS"
+      ]
+    },
+    "BAYE": {
+      "isin": "DE0005190037",
+      "name": "Bayerische Motoren Werke Aktiengesellschaft",
+      "slugs": [
+        "BayerischeMotorenWerkeAktiengesellschaft",
+        "BAYE"
+      ]
+    },
+    "MERC": {
+      "isin": "DE0007100000",
+      "name": "Mercedes-Benz Group AG",
+      "slugs": [
+        "Daimler",
+        "MercedesBenz",
+        "Mercedes-Benz",
+        "MercedesBenzGroup",
+        "MERC"
+      ]
+    },
+    "BAYE_2": {
+      "isin": "DE0005190003",
+      "name": "Bayerische Motoren Werke Aktiengesellschaft",
+      "slugs": [
+        "BayerischeMotorenWerkeAktiengesellschaft",
+        "BAYE",
+        "BAYE_2"
+      ]
+    },
+    "MANS": {
+      "isin": "DE0005937007",
+      "name": "MAN SE",
+      "slugs": [
+        "MANSE",
+        "MAN",
+        "MANS"
+      ]
+    },
+    "MANS_2": {
+      "isin": "DE0005937031",
+      "name": "MAN SE",
+      "slugs": [
+        "MANSE",
+        "MAN",
+        "MANS",
+        "MANS_2"
+      ]
+    },
+    "PORS": {
+      "isin": "DE000PAG9113",
+      "name": "Dr. Ing. h.c. F. Porsche Aktiengesellschaft",
+      "slugs": [
+        "Porsche",
+        "DrInghcFPorscheAktiengesellschaft",
+        "PORS"
+      ]
+    },
+    "CDVS": {
+      "isin": "",
+      "name": "cdv Software Entertainment",
+      "slugs": [
+        "cdvSoftwareEntertainment",
+        "CDVS"
+      ]
+    },
+    "DEUT_2": {
+      "isin": "DE0005140008",
+      "name": "DEUTSCHE BANK AKTIENGESELLSCHAFT",
+      "slugs": [
+        "DeutscheBank",
+        "DEUTSCHEBANKAKTIENGESELLSCHAFT",
+        "DEUT",
+        "DEUT_2"
+      ]
+    },
+    "UNIC": {
+      "isin": "IT0005239360",
+      "name": "UniCredit Bank AG",
+      "slugs": [
+        "UniCredit",
+        "UniCreditBank",
+        "UNIC"
+      ]
+    },
+    "SCHO": {
+      "isin": "DE000A3ENQ51",
+      "name": "SCHOTT Pharma AG & Co. KGaA",
+      "slugs": [
+        "SchottPharmaAGCoKGaA",
+        "SCHOTTPharma",
+        "SCHO"
+      ]
+    },
+    "DEFI": {
+      "isin": "CA60255C8850",
+      "name": "Definium Therapeutics",
+      "slugs": [
+        "DefiniumTherapeutics",
+        "DEFI"
+      ]
+    },
+    "VULC": {
+      "isin": "AU0000066086",
+      "name": "Vulcan Energy Resources",
+      "slugs": [
+        "VulcanEnergyResources",
+        "VULC"
+      ]
+    },
+    "THYS": {
+      "isin": "DE000NCA0001",
+      "name": "thyssenkrupp nucera AG & Co. KGaA",
+      "slugs": [
+        "Thyssenkrupp",
+        "thyssenkrupp",
+        "ThyssenkruppNucera",
+        "thyssenkruppnucera",
+        "THYS"
+      ]
+    },
+    "FYBE": {
+      "isin": "",
+      "name": "Fyber N.V. Zweigniederlassung Berlin",
+      "slugs": [
+        "Fyber",
+        "FyberNVZweigniederlassungBerlin",
+        "FYBE"
+      ]
+    },
+    "SEAG": {
+      "isin": "US81141R1005",
+      "name": "North Sea Group Germany GmbH",
+      "slugs": [
+        "SeaGroup",
+        "NorthSeaGroupGermany",
+        "SEAG"
+      ]
+    },
+    "CIRC": {
+      "isin": "DE000A2YN355",
+      "name": "Circus SE",
+      "slugs": [
+        "CircusSE",
+        "Circus",
+        "CIRC"
+      ]
+    },
+    "SIEM": {
+      "isin": "DE000ENER6Y0",
+      "name": "Siemens Energy AG",
+      "slugs": [
+        "Siemens",
+        "SiemensEnergy",
+        "SIEM"
+      ]
+    },
+    "PENT": {
+      "isin": "DE000A40AEG0",
+      "name": "Pentixapharm Holding AG",
+      "slugs": [
+        "Pentixapharm",
+        "PentixapharmHolding",
+        "PENT"
+      ]
+    },
+    "MAXU": {
+      "isin": "",
+      "name": "Maxus Mining Inc.",
+      "slugs": [
+        "MaxusMiningInc",
+        "MaxusMining",
+        "MAXU"
+      ]
+    },
+    "ASTA": {
+      "isin": "",
+      "name": "ASTA Energy Solutions AG",
+      "slugs": [
+        "AstaEnergySolutions",
+        "ASTAEnergySolutions",
+        "ASTA"
+      ]
+    },
+    "TRIL": {
+      "isin": "",
+      "name": "TRILLION ENERGY INTERNATIONAL INC.",
+      "slugs": [
+        "TrillionEnergyInternationalInc",
+        "TRILLIONENERGYINTERNATIONAL",
+        "TRIL"
+      ]
+    },
+    "BEFE": {
+      "isin": "LU1704650164",
+      "name": "Befesa Zinc Germany GmbH",
+      "slugs": [
+        "Befesa",
+        "BefesaZincGermany",
+        "BEFE"
+      ]
+    },
+    "BIKE": {
+      "isin": "DE000A3CQ7F4",
+      "name": "Bike24 Holding AG",
+      "slugs": [
+        "BIKE24",
+        "Bike24Holding",
+        "BIKE"
+      ]
+    },
+    "THES": {
+      "isin": "DE000A1YC996",
+      "name": "The Social Chain AG",
+      "slugs": [
+        "TheSocialChain",
+        "THES"
+      ]
+    },
+    "STEM": {
+      "isin": "DE000A2G9MZ9",
+      "name": "STEMMER IMAGING AG",
+      "slugs": [
+        "StemmerImaging",
+        "STEMMERIMAGING",
+        "STEM"
+      ]
+    },
+    "PROU": {
+      "isin": "DE000A2JF9B6",
+      "name": "proud@work",
+      "slugs": [
+        "proudworkAktienfonds",
+        "proudwork",
+        "PROU"
+      ]
+    },
+    "PROU_2": {
+      "isin": "DE000A2PRZX5",
+      "name": "proud@work",
+      "slugs": [
+        "proudworkAktienfonds",
+        "proudwork",
+        "PROU",
+        "PROU_2"
+      ]
+    },
+    "PROU_3": {
+      "isin": "DE000A3D7526",
+      "name": "proud@work",
+      "slugs": [
+        "proudworkAktienfonds",
+        "proudwork",
+        "PROU",
+        "PROU_3"
+      ]
+    },
+    "PROU_4": {
+      "isin": "DE000A41ZZJ4",
+      "name": "proud@work",
+      "slugs": [
+        "proudworkAktienfonds",
+        "proudwork",
+        "PROU",
+        "PROU_4"
+      ]
+    },
+    "PLAN": {
+      "isin": "DE000A3E5ED2",
+      "name": "PLANETHIC GROUP AG",
+      "slugs": [
+        "PlanethicGroupAG",
+        "PLANETHICGROUP",
+        "PLAN"
+      ]
+    },
+    "VANT": {
+      "isin": "DE000A3H3LL2",
+      "name": "VANTAGE TOWERS AG",
+      "slugs": [
+        "VantageTowers",
+        "VANTAGETOWERS",
+        "VANT"
+      ]
+    },
+    "MOUN": {
+      "isin": "DE000A12UK08",
+      "name": "Mountain Alliance AG",
+      "slugs": [
+        "MountainAllianceAG",
+        "MountainAlliance",
+        "MOUN"
+      ]
+    },
+    "COMP": {
+      "isin": "",
+      "name": "CCS Abwicklungs AG",
+      "slugs": [
+        "CompleoChargingSolutions",
+        "CCSAbwicklungs",
+        "COMP"
+      ]
+    },
+    "COMP_2": {
+      "isin": "",
+      "name": "Compleo Charging Technologies GmbH",
+      "slugs": [
+        "CompleoChargingTechnologiesGmbH",
+        "CompleoChargingTechnologies",
+        "COMP",
+        "COMP_2"
+      ]
+    },
+    "MIST": {
+      "isin": "DE000A3CSAE2",
+      "name": "Mister Spex SE",
+      "slugs": [
+        "MisterSpex",
+        "MIST"
+      ]
+    },
+    "TEAM": {
+      "isin": "DE000A2YN900",
+      "name": "TeamViewer SE",
+      "slugs": [
+        "TeamViewerSE",
+        "TeamViewer",
+        "TEAM"
+      ]
+    },
+    "ABOU": {
+      "isin": "DE000A3CNK42",
+      "name": "ABOUT YOU Verwaltungs SE",
+      "slugs": [
+        "AboutYou",
+        "ABOUTYOUVerwaltungs",
+        "ABOU"
+      ]
+    },
+    "LYNX": {
+      "isin": "",
+      "name": "LYNX Technik AG",
+      "slugs": [
+        "LYNXBVOnlineBroker",
+        "LYNXTechnik",
+        "LYNX"
+      ]
+    },
+    "LUFT_2": {
+      "isin": "DE0008232125",
+      "name": "Deutsche Lufthansa Aktiengesellschaft",
+      "slugs": [
+        "Lufthansa",
+        "DeutscheLufthansa",
+        "LufthansaGroup",
+        "DeutscheLufthansaAktiengesellschaft",
+        "LUFT",
+        "LUFT_2"
+      ]
+    },
+    "REDC": {
+      "isin": "NL0012044747",
+      "name": "Redcare Pharmacy",
+      "slugs": [
+        "RedcarePharmacy",
+        "REDC"
+      ]
+    },
+    "TRAT": {
+      "isin": "DE000TRAT0N7",
+      "name": "TRATON SE",
+      "slugs": [
+        "Traton",
+        "TRATON",
+        "TRAT"
+      ]
+    },
+    "CPIP": {
+      "isin": "LU0251710041",
+      "name": "CPI Property Group",
+      "slugs": [
+        "CPIPropertyGroup",
+        "CPIP"
+      ]
+    },
+    "AUTO": {
+      "isin": "DE000A2LQ884",
+      "name": "AUTO1 Group SE",
+      "slugs": [
+        "Auto1Group",
+        "AUTO1Group",
+        "AUTO"
+      ]
+    },
+    "DELI": {
+      "isin": "DE000A2E4K43",
+      "name": "Delivery Hero SE",
+      "slugs": [
+        "DeliveryHero",
+        "DELI"
+      ]
+    },
+    "ROCK": {
+      "isin": "DE000A12UKK6",
+      "name": "Rocket Internet SE",
+      "slugs": [
+        "RocketInternetSE",
+        "RocketInternet",
+        "ROCK"
+      ]
+    },
+    "MTUA": {
+      "isin": "DE000A0D9PT0",
+      "name": "MTU Aero Engines AG",
+      "slugs": [
+        "MTUAeroEngines",
+        "MTUA"
+      ]
+    },
+    "SAMS": {
+      "isin": "KR7005930003",
+      "name": "SAMSUNG ELECTRONICS GMBH",
+      "slugs": [
+        "SamsungElectronics",
+        "SAMSUNGELECTRONICS",
+        "SAMS"
+      ]
+    },
+    "VOLK": {
+      "isin": "DE0007664005",
+      "name": "VOLKSWAGEN AKTIENGESELLSCHAFT",
+      "slugs": [
+        "Volkswagen",
+        "VolkswagenAG",
+        "VOLKSWAGENAKTIENGESELLSCHAFT",
+        "VOLK"
+      ]
+    },
+    "VOLK_2": {
+      "isin": "DE0007664039",
+      "name": "VOLKSWAGEN AKTIENGESELLSCHAFT",
+      "slugs": [
+        "Volkswagen",
+        "VolkswagenAG",
+        "VOLKSWAGENAKTIENGESELLSCHAFT",
+        "VOLK",
+        "VOLK_2"
+      ]
+    },
+    "SIEM_2": {
+      "isin": "DE0007236101",
+      "name": "Siemens Aktiengesellschaft",
+      "slugs": [
+        "Siemens",
+        "SiemensAktiengesellschaft",
+        "SIEM",
+        "SIEM_2"
+      ]
+    },
+    "SYMR": {
+      "isin": "DE000SYM9999",
+      "name": "Symrise AG",
+      "slugs": [
+        "Symrise",
+        "SYMR"
+      ]
+    },
+    "DE_BP": {
+      "isin": "DE0008618737",
+      "name": "BP InvCons GmbH",
+      "slugs": [
+        "BP",
+        "BPInvCons",
+        "DE",
+        "DE_BP"
+      ]
+    },
+    "DE_BP_2": {
+      "isin": "GB0007980591",
+      "name": "BP InvCons GmbH",
+      "slugs": [
+        "BP",
+        "BPInvCons",
+        "DE",
+        "DE_BP_2"
+      ]
+    },
+    "DE_DAX": {
+      "isin": "DE0008467440",
+      "name": "Deutsche Börse Aktiengesellschaft",
+      "slugs": [
+        "DAX",
+        "DeutscheBrseAktiengesellschaft",
+        "DE",
+        "DE_DAX"
+      ]
+    },
+    "DE_DAX_2": {
+      "isin": "DE0008469008",
+      "name": "Deutsche Börse Aktiengesellschaft",
+      "slugs": [
+        "DAX",
+        "DeutscheBrseAktiengesellschaft",
+        "DE",
+        "DE_DAX_2"
+      ]
+    },
+    "HOCH": {
+      "isin": "DE0006070006",
+      "name": "HOCHTIEF Aktiengesellschaft",
+      "slugs": [
+        "Hochtief",
+        "HOCHTIEFAktiengesellschaft",
+        "HOCH"
+      ]
+    },
+    "ZALA": {
+      "isin": "DE000ZAL1111",
+      "name": "Zalando SE",
+      "slugs": [
+        "Zalando",
+        "ZALA"
+      ]
+    },
+    "THYS_2": {
+      "isin": "DE0007500001",
+      "name": "thyssenkrupp AG",
+      "slugs": [
+        "Thyssenkrupp",
+        "thyssenkruppAG",
+        "thyssenkrupp",
+        "THYS",
+        "THYS_2"
+      ]
+    },
+    "MERC_2": {
+      "isin": "DE0006599905",
+      "name": "MERCK Kommanditgesellschaft auf Aktien",
+      "slugs": [
+        "Merck",
+        "MERCKKommanditgesellschaftaufAktien",
+        "MERC",
+        "MERC_2"
+      ]
+    },
+    "AIRB_2": {
+      "isin": "GB00B128C026",
+      "name": "Air Berlin Fünfte Flugzeug GmbH",
+      "slugs": [
+        "AirBerlin",
+        "AirBerlinFnfteFlugzeug",
+        "AIRB",
+        "AIRB_2"
+      ]
+    },
+    "COMM": {
+      "isin": "DE000CBK1001",
+      "name": "COMMERZBANK Aktiengesellschaft",
+      "slugs": [
+        "Commerzbank",
+        "CommerzbankAG",
+        "COMMERZBANKAktiengesellschaft",
+        "COMM"
+      ]
+    },
+    "DHLG": {
+      "isin": "DE0005552004",
+      "name": "DHL AG",
+      "slugs": [
+        "DeutschePost",
+        "dhl",
+        "DHL",
+        "DHLGroup",
+        "DHLG"
+      ]
+    },
+    "DEUT_3": {
+      "isin": "DE0005810055",
+      "name": "Deutsche Börse Aktiengesellschaft",
+      "slugs": [
+        "DeutscheBrse",
+        "DeutscheBrseAktiengesellschaft",
+        "DEUT",
+        "DEUT_3"
+      ]
+    },
+    "CONT": {
+      "isin": "DE0005439004",
+      "name": "Continental Aktiengesellschaft",
+      "slugs": [
+        "Continental",
+        "ContinentalAG",
+        "ContinentalAktiengesellschaft",
+        "CONT"
+      ]
+    },
+    "AXEL": {
+      "isin": "DE0005501357",
+      "name": "Axel Springer SE",
+      "slugs": [
+        "AxelSpringerSE",
+        "AxelSpringer",
+        "AXEL"
+      ]
+    },
+    "BAYE_3": {
+      "isin": "DE000BAY0017",
+      "name": "Bayer Aktiengesellschaft",
+      "slugs": [
+        "Bayer",
+        "BayerAG",
+        "BayerAktiengesellschaft",
+        "BAYE",
+        "BAYE_3"
+      ]
+    },
+    "DE_RWE": {
+      "isin": "DE0007037129",
+      "name": "RWE Aktiengesellschaft",
+      "slugs": [
+        "RWE",
+        "RWEAktiengesellschaft",
+        "DE",
+        "DE_RWE"
+      ]
+    },
+    "LEIC": {
+      "isin": "",
+      "name": "Leica Camera Aktiengesellschaft",
+      "slugs": [
+        "LeicaCamera",
+        "LeicaCameraAktiengesellschaft",
+        "LEIC"
+      ]
+    },
+    "RHEI": {
+      "isin": "DE0007030009",
+      "name": "Rheinmetall Aktiengesellschaft",
+      "slugs": [
+        "Rheinmetall",
+        "RheinmetallAktiengesellschaft",
+        "RHEI"
+      ]
+    },
+    "FREE": {
+      "isin": "DE000A0Z2ZZ5",
+      "name": "freenet AG",
+      "slugs": [
+        "FreenetAG",
+        "freenet",
+        "FREE"
+      ]
+    },
+    "DE_EON": {
+      "isin": "DE000ENAG999",
+      "name": "E.ON SE",
+      "slugs": [
+        "EON",
+        "E.ON",
+        "DE",
+        "DE_EON"
+      ]
+    },
+    "BEIE": {
+      "isin": "DE0005200000",
+      "name": "Beiersdorf Aktiengesellschaft",
+      "slugs": [
+        "BeiersdorfAG",
+        "BeiersdorfAktiengesellschaft",
+        "BEIE"
+      ]
+    },
+    "KNOR": {
+      "isin": "DE000KBX1006",
+      "name": "Knorr-Bremse Aktiengesellschaft",
+      "slugs": [
+        "KnorrBremse",
+        "KnorrBremseAktiengesellschaft",
+        "KNOR"
+      ]
+    },
+    "MUNI": {
+      "isin": "DE0008430026",
+      "name": "Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München",
+      "slugs": [
+        "MunichRe",
+        "MnchenerRckversicherungsGesellschaftAktiengesellschaftinMnchen",
+        "MUNI"
+      ]
+    },
+    "METR": {
+      "isin": "",
+      "name": "MGC METRO Group Clearing GmbH",
+      "slugs": [
+        "METROGroup",
+        "MGCMETROGroupClearing",
+        "METR"
+      ]
+    },
+    "SART": {
+      "isin": "DE0007165607",
+      "name": "Sartorius Aktiengesellschaft",
+      "slugs": [
+        "SartoriusAG",
+        "SartoriusAktiengesellschaft",
+        "SART"
+      ]
+    },
+    "SART_2": {
+      "isin": "DE0007165631",
+      "name": "Sartorius Aktiengesellschaft",
+      "slugs": [
+        "SartoriusAG",
+        "SartoriusAktiengesellschaft",
+        "SART",
+        "SART_2"
+      ]
+    },
+    "AIXT": {
+      "isin": "DE000A0WMPJ6",
+      "name": "AIXTRON SE",
+      "slugs": [
+        "Aixtron",
+        "AIXTRON",
+        "AIXT"
+      ]
+    },
+    "LUKO": {
+      "isin": "RU0009024277",
+      "name": "LUKOIL Hamburg GmbH",
+      "slugs": [
+        "Lukoil",
+        "LUKOILHamburg",
+        "LUKO"
+      ]
+    },
+    "LUKO_2": {
+      "isin": "US6778621044",
+      "name": "LUKOIL Hamburg GmbH",
+      "slugs": [
+        "Lukoil",
+        "LUKOILHamburg",
+        "LUKO",
+        "LUKO_2"
+      ]
+    },
+    "HELL": {
+      "isin": "DE000A13SX22",
+      "name": "HELLA GmbH & Co. KGaA",
+      "slugs": [
+        "Hella",
+        "HELLA",
+        "HELL"
+      ]
+    },
+    "FIEL": {
+      "isin": "DE0005772206",
+      "name": "Fielmann Group AG",
+      "slugs": [
+        "Fielmann",
+        "FielmannGroup",
+        "FIEL"
+      ]
+    },
+    "OSRA": {
+      "isin": "DE000LED4000",
+      "name": "OSRAM Licht AG",
+      "slugs": [
+        "OSRAMLichtAG",
+        "OSRAMLicht",
+        "OSRA"
+      ]
+    },
+    "HENK": {
+      "isin": "DE0006048408",
+      "name": "Henkel AG & Co. KGaA",
+      "slugs": [
+        "HenkelKGaA",
+        "Henkel",
+        "HENK"
+      ]
+    },
+    "HENK_2": {
+      "isin": "DE0006048432",
+      "name": "Henkel AG & Co. KGaA",
+      "slugs": [
+        "HenkelKGaA",
+        "Henkel",
+        "HENK",
+        "HENK_2"
+      ]
+    },
+    "TESL": {
+      "isin": "US88160R1014",
+      "name": "Tesla, Inc.",
+      "slugs": [
+        "TeslaInc",
+        "Tesla",
+        "TESL"
+      ]
+    },
+    "INFI": {
+      "isin": "DE0006231004",
+      "name": "Infineon Technologies AG",
+      "slugs": [
+        "Infineon",
+        "InfineonTechnologies",
+        "INFI"
+      ]
+    },
+    "HHLA": {
+      "isin": "DE000A0S8488",
+      "name": "Hamburger Hafen und Logistik Aktiengesellschaft",
+      "slugs": [
+        "HHLA",
+        "HamburgerHafenundLogistikAktiengesellschaft"
+      ]
+    },
+    "QIAG": {
+      "isin": "NL0000240000",
+      "name": "QIAGEN GMBH",
+      "slugs": [
+        "Qiagen",
+        "QIAGEN",
+        "QIAG"
+      ]
+    },
+    "OVBH": {
+      "isin": "DE0006286560",
+      "name": "OVB Holding AG",
+      "slugs": [
+        "OVBHolding",
+        "OVBH"
+      ]
+    },
+    "FRES": {
+      "isin": "DE0005785604",
+      "name": "Hochschulen Fresenius GmbH",
+      "slugs": [
+        "Fresenius",
+        "HochschulenFresenius",
+        "FRES"
+      ]
+    },
+    "WACK": {
+      "isin": "DE000WCH8881",
+      "name": "Wacker Chemie AG",
+      "slugs": [
+        "WackerChemieAG",
+        "WackerChemie",
+        "WACK"
+      ]
+    },
+    "ALLI": {
+      "isin": "DE0008404005",
+      "name": "Allianz SE",
+      "slugs": [
+        "Allianz",
+        "AllianzSE",
+        "ALLI"
+      ]
+    },
+    "VARE": {
+      "isin": "DE0005479307",
+      "name": "Varengold Bank",
+      "slugs": [
+        "VarengoldBank",
+        "VARE"
+      ]
+    },
+    "ENBW": {
+      "isin": "DE0005220008",
+      "name": "EnBW Energie Baden-Württemberg AG",
+      "slugs": [
+        "EnBW",
+        "EnBWEnergieBadenWrttemberg",
+        "ENBW"
+      ]
+    },
+    "MDAX": {
+      "isin": "DE0008467416",
+      "name": "Deutsche Börse Aktiengesellschaft",
+      "slugs": [
+        "MDAX",
+        "DeutscheBrseAktiengesellschaft"
+      ]
+    },
+    "MDAX_2": {
+      "isin": "DE0008467531",
+      "name": "Deutsche Börse Aktiengesellschaft",
+      "slugs": [
+        "MDAX",
+        "DeutscheBrseAktiengesellschaft",
+        "MDAX_2"
+      ]
+    },
+    "LATA": {
+      "isin": "US5017231003",
+      "name": "LATAM AIRLINES GROUP S.A.",
+      "slugs": [
+        "LATAMAirlines",
+        "LATAMAIRLINESGROUPSA",
+        "LATA"
+      ]
+    },
+    "HEID": {
+      "isin": "DE0006047004",
+      "name": "Heidelberg Materials AG",
+      "slugs": [
+        "HeidelbergCement",
+        "HeidelbergMaterials",
+        "HEID"
+      ]
+    },
+    "APPL": {
+      "isin": "US0382221051",
+      "name": "Applied Materials German Master Pension Fund",
+      "slugs": [
+        "AppliedMaterials",
+        "AppliedMaterialsGermanMasterPensionFund",
+        "APPL"
+      ]
+    },
+    "MANN": {
+      "isin": "",
+      "name": "Allgemeine Sterbekasse Mannesmann",
+      "slugs": [
+        "Mannesmann",
+        "AllgemeineSterbekasseMannesmann",
+        "MANN"
+      ]
+    },
+    "LIND": {
+      "isin": "IE000S9YS762",
+      "name": "Linde Group",
+      "slugs": [
+        "LindeGroup",
+        "LIND"
+      ]
+    },
+    "KHNE": {
+      "isin": "CH0025238863",
+      "name": "Kühne + Nagel Logistics Langenau GmbH",
+      "slugs": [
+        "KhneNagel",
+        "KhneNagelLogisticsLangenau",
+        "KHNE"
+      ]
+    },
+    "VART": {
+      "isin": "DE000A0TGJ55",
+      "name": "VARTA AKTIENGESELLSCHAFT",
+      "slugs": [
+        "VartaAG",
+        "VARTAAKTIENGESELLSCHAFT",
+        "VART"
+      ]
+    },
+    "DELT": {
+      "isin": "DE0005146807",
+      "name": "Delticom AG",
+      "slugs": [
+        "Delticom",
+        "DELT"
+      ]
+    },
+    "VONO": {
+      "isin": "DE000A1ML7J1",
+      "name": "Vonovia SE",
+      "slugs": [
+        "Vonovia",
+        "VONO"
+      ]
+    },
+    "1188": {
+      "isin": "DE0005118806",
+      "name": "11 88 0 Solutions AG",
+      "slugs": [
+        "11880SolutionsAG",
+        "11880Solutions",
+        "1188"
+      ]
+    },
+    "HOEC": {
+      "isin": "",
+      "name": "Hoechst GmbH",
+      "slugs": [
+        "Hoechst",
+        "HOEC"
+      ]
+    },
+    "DE_SAP": {
+      "isin": "DE0007164600",
+      "name": "SAP SE",
+      "slugs": [
+        "SAP",
+        "DE",
+        "DE_SAP"
+      ]
+    },
+    "KAUF": {
+      "isin": "",
+      "name": "Kaufring",
+      "slugs": [
+        "Kaufring",
+        "KAUF"
+      ]
+    },
+    "HART": {
+      "isin": "DE0007474041",
+      "name": "PAUL HARTMANN AG",
+      "slugs": [
+        "HartmannGruppe",
+        "PAULHARTMANN",
+        "HART"
+      ]
+    },
+    "TATN": {
+      "isin": "RU0006944147",
+      "name": "Tatneft",
+      "slugs": [
+        "Tatneft",
+        "TATN"
+      ]
+    },
+    "TATN_2": {
+      "isin": "RU0009033591",
+      "name": "Tatneft",
+      "slugs": [
+        "Tatneft",
+        "TATN",
+        "TATN_2"
+      ]
+    },
+    "TATN_3": {
+      "isin": "US8766292051",
+      "name": "Tatneft",
+      "slugs": [
+        "Tatneft",
+        "TATN",
+        "TATN_3"
+      ]
+    },
+    "GIGA": {
+      "isin": "DE0005156004",
+      "name": "Gigaset AG",
+      "slugs": [
+        "Gigaset",
+        "GIGA"
+      ]
+    },
+    "MAND": {
+      "isin": "BMG578481068",
+      "name": "Mandarin Oriental",
+      "slugs": [
+        "MandarinOriental",
+        "MAND"
+      ]
+    },
+    "FLAT": {
+      "isin": "DE000FTG1111",
+      "name": "flatexDEGIRO SE",
+      "slugs": [
+        "flatexDEGIRO",
+        "FLAT"
+      ]
+    },
+    "KNAU": {
+      "isin": "DE000A2YN504",
+      "name": "Knaus Tabbert AG",
+      "slugs": [
+        "KnausTabbert",
+        "KNAU"
+      ]
+    },
+    "LEGI": {
+      "isin": "DE000LEG1110",
+      "name": "LEG Immobilien SE",
+      "slugs": [
+        "LEGImmobilien",
+        "LEGI"
+      ]
+    },
+    "TUIG": {
+      "isin": "DE000TUAG000",
+      "name": "TUI AG",
+      "slugs": [
+        "TUIGroup",
+        "TUI",
+        "TUIG"
+      ]
+    },
+    "TUIG_2": {
+      "isin": "DE000TUAG505",
+      "name": "TUI AG",
+      "slugs": [
+        "TUIGroup",
+        "TUI",
+        "TUIG",
+        "TUIG_2"
+      ]
+    },
+    "WIRE": {
+      "isin": "DE0007472060",
+      "name": "Wirecard AG",
+      "slugs": [
+        "Wirecard",
+        "WIRE"
+      ]
+    },
+    "MERK": {
+      "isin": "DE0008148206",
+      "name": "MERKUR PRIVATBANK KGaA",
+      "slugs": [
+        "MerkurPrivatbank",
+        "MERKURPRIVATBANK",
+        "MERK"
+      ]
+    },
+    "LANG": {
+      "isin": "DE0006459324",
+      "name": "Lang & Schwarz Aktiengesellschaft",
+      "slugs": [
+        "LangSchwarz",
+        "LangSchwarzAktiengesellschaft",
+        "LANG"
+      ]
+    },
+    "LANG_2": {
+      "isin": "DE000LS1LUS9",
+      "name": "Lang & Schwarz Aktiengesellschaft",
+      "slugs": [
+        "LangSchwarz",
+        "LangSchwarzAktiengesellschaft",
+        "LANG",
+        "LANG_2"
+      ]
+    },
+    "PATR": {
+      "isin": "DE000PAT1AG3",
+      "name": "PATRIZIA SE",
+      "slugs": [
+        "PatriziaImmobilien",
+        "PATRIZIA",
+        "PATR"
+      ]
+    },
+    "PORS_2": {
+      "isin": "DE000PAH0038",
+      "name": "Porsche Automobil Holding SE",
+      "slugs": [
+        "PorscheAutomobilHoldingSE",
+        "PorscheAutomobilHolding",
+        "PORS",
+        "PORS_2"
+      ]
+    },
+    "COVE": {
+      "isin": "DE0006062144",
+      "name": "Covestro AG",
+      "slugs": [
+        "Covestro",
+        "COVE"
+      ]
+    },
+    "BREN": {
+      "isin": "DE000A1DAHH0",
+      "name": "BRENNTAG SE",
+      "slugs": [
+        "Brenntag",
+        "BRENNTAG",
+        "BREN"
+      ]
+    },
+    "BREN_2": {
+      "isin": "US1071801013",
+      "name": "BRENNTAG SE",
+      "slugs": [
+        "Brenntag",
+        "BRENNTAG",
+        "BREN",
+        "BREN_2"
+      ]
+    },
+    "BANK": {
+      "isin": "",
+      "name": "PT. Bank Mandiri (Persero) Tbk.",
+      "slugs": [
+        "BankMandiri",
+        "PTBankMandiriPerseroTbk",
+        "BANK"
+      ]
+    },
+    "HANN": {
+      "isin": "DE0008402215",
+      "name": "Hannover Rück SE",
+      "slugs": [
+        "HannoverRckSE",
+        "HannoverRck",
+        "HANN"
+      ]
+    },
+    "FRES_2": {
+      "isin": "DE0005785802",
+      "name": "Fresenius Medical Care AG",
+      "slugs": [
+        "FMC",
+        "FreseniusMedicalCare",
+        "FRES",
+        "FRES_2"
+      ]
+    },
+    "DE_KS": {
+      "isin": "DE000KSAG888",
+      "name": "K+S Aktiengesellschaft",
+      "slugs": [
+        "KS",
+        "KSAktiengesellschaft",
+        "DE",
+        "DE_KS"
+      ]
+    },
+    "COMD": {
+      "isin": "DE0005428007",
+      "name": "comdirect bank Aktiengesellschaft",
+      "slugs": [
+        "comdirectbankAktiengesellschaft",
+        "COMD"
+      ]
+    },
+    "CTSE": {
+      "isin": "DE0005470306",
+      "name": "CTS Eventim AG & Co. KGaA",
+      "slugs": [
+        "CTSEventim",
+        "CTSE"
+      ]
+    },
+    "KANA": {
+      "isin": "",
+      "name": "Kanadevia Inova AG",
+      "slugs": [
+        "KanadeviaInovaSchmack",
+        "KanadeviaInova",
+        "KANA"
+      ]
+    },
+    "DERM": {
+      "isin": "DE000A2GS5D8",
+      "name": "Dermapharm Holding SE",
+      "slugs": [
+        "Dermapharm",
+        "DermapharmHolding",
+        "DERM"
+      ]
+    },
+    "CEWE": {
+      "isin": "DE0005403901",
+      "name": "CEWE Stiftung & Co. KGaA",
+      "slugs": [
+        "CEWE",
+        "CEWEStiftung"
+      ]
+    },
+    "RTLG": {
+      "isin": "LU0061462528",
+      "name": "RTL GROUP VERMÖGENSVERWALTUNG GMBH",
+      "slugs": [
+        "RTLGroup",
+        "RTLGROUPVERMGENSVERWALTUNG",
+        "RTLG"
+      ]
+    },
+    "DAIM": {
+      "isin": "DE000DTR0CK8",
+      "name": "Daimler Truck Holding AG",
+      "slugs": [
+        "DaimlerTruck",
+        "DaimlerTruckHolding",
+        "DAIM"
+      ]
+    },
+    "HAIE": {
+      "isin": "CNE1000031C1",
+      "name": "Haier Deutschland GmbH",
+      "slugs": [
+        "Haier",
+        "HaierDeutschland",
+        "HAIE"
+      ]
+    }
+  }
+}

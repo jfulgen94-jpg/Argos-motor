@@ -19,7 +19,7 @@ Las cuentas anuales de los emisores cotizados alemanes bajo mandato regulatorio 
 ### 2. ENTRADA Y ARCHIVOS A UTILIZAR
 
 En el workspace tienes:
-1. `scratch/prime_standard_companies.json` (172 empresas con ticker, ISIN, nombres).
+1. `ARGOS_MOTOR/config/prime_standard_companies.json` (172 empresas con ticker, ISIN, nombres).
 2. `ARGOS_MOTOR/config/eqs_company_slugs.json` (si ya fue generado por Qwen Coder). Si no existe aún, puedes derivar los slugs candidatos directamente de los nombres comerciales e históricos de las empresas (ej. BASF, BMW, Siemens, Daimler, HeidelbergCement, eads, Volkswagen, etc.).
 
 ---
