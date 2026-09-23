@@ -649,6 +649,12 @@ def channel1_esef(company: dict, year: int, comp_dir: Path, dry_run: bool) -> Op
 
 
 
+# Cache en memoria para páginas IR oficiales (evita re-descargar el mismo HTML 14 veces por empresa)
+_IR_PAGE_HTML_CACHE = {}
+
+
+
+
 # --- CANAL 2: IR Official PDF Crawler ---
 
 
@@ -656,7 +662,6 @@ def channel2_ir_crawler(company: dict, year: int, comp_dir: Path, dry_run: bool)
     ticker = company.get('ticker', '')
     if not HTTPX_AVAILABLE or not BS4_AVAILABLE:
         return None
-
 
     # 2a: PDF directo mapeado (dedup para evitar doble intento cuando ticker ya esta en mayusculas)
     for key in dict.fromkeys([ticker, ticker.upper()]):
@@ -680,58 +685,75 @@ def channel2_ir_crawler(company: dict, year: int, comp_dir: Path, dry_run: bool)
             finally:
                 client.close()
 
-
-    # 2b: Scraping de IR page curada (dedup para evitar doble intento)
+    # 2b: Scraping de IR page curada con caché en memoria
     for key in dict.fromkeys([ticker, ticker.upper()]):
         if key not in IR_PAGE_PATTERNS:
             continue
         ir_url, css_sel = IR_PAGE_PATTERNS[key]
-        print(f"  [2b] Scraping IR page para {ticker}: {ir_url}")
         if dry_run:
+            print(f"  [2b] Scraping IR page para {ticker}: {ir_url}")
             return f"DRY_RUN:IR:{ir_url}"
-        client = get_http_client()
-        try:
-            time.sleep(RATE_LIMIT_DELAY)
-            r = client.get(ir_url, timeout=30)
-            if r.status_code != 200:
-                continue
-            soup = BeautifulSoup(r.text, 'lxml')
-            pdf_links = []
-            for a in soup.select(css_sel or 'a[href$=".pdf"]'):
-                href = a.get('href', '')
-                if not href:
-                    continue
-                if not href.startswith('http'):
-                    base = '/'.join(ir_url.split('/')[:3])
-                    href = base + ('' if href.startswith('/') else '/') + href
-                link_text = a.get_text(strip=True).lower()
-                year_str = str(year)
-                prev_year = str(year - 1)
-                if (year_str in link_text or year_str in href or
-                        prev_year in link_text or prev_year in href):
-                    score = 0
-                    if year_str in href or year_str in link_text: score += 10
-                    if 'konzern' in link_text or 'konzern' in href.lower(): score += 3
-                    if 'annual' in link_text or 'bericht' in link_text: score += 2
-                    pdf_links.append((score, href))
-            pdf_links.sort(reverse=True)
-            for _, pdf_url in pdf_links[:5]:
+
+        html_text = _IR_PAGE_HTML_CACHE.get(ir_url)
+        if ir_url not in _IR_PAGE_HTML_CACHE:
+            print(f"  [2b] Scraping IR page para {ticker}: {ir_url}")
+            client = get_http_client()
+            if client:
                 try:
                     time.sleep(RATE_LIMIT_DELAY)
-                    pr = client.get(pdf_url, timeout=60)
-                    if pr.status_code == 200 and len(pr.content) > 10_000:
-                        result = seal_document(pr.content, comp_dir, ticker, year,
-                                               pdf_url, "CANAL2b_IR_SCRAPER", company, ".pdf")
-                        if result:
-                            return result
+                    r = client.get(ir_url, timeout=15)
+                    if r.status_code == 200:
+                        html_text = r.text
+                    else:
+                        print(f"  [2b] IR page HTTP {r.status_code}: {ir_url[:50]}")
                 except Exception as e:
-                    print(f"  [2b] Error {pdf_url}: {e}")
-        except Exception as e:
-            print(f"  [2b] Error scraping {ir_url}: {e}")
-        finally:
-            client.close()
-        break
+                    print(f"  [2b] Error accediendo {ir_url[:50]}: {e.__class__.__name__}")
+                finally:
+                    client.close()
+            _IR_PAGE_HTML_CACHE[ir_url] = html_text
 
+        if not html_text:
+            break
+
+        soup = BeautifulSoup(html_text, 'lxml')
+        pdf_links = []
+        for a in soup.select(css_sel or 'a[href$=".pdf"]'):
+            href = a.get('href', '')
+            if not href:
+                continue
+            if not href.startswith('http'):
+                base = '/'.join(ir_url.split('/')[:3])
+                href = base + ('' if href.startswith('/') else '/') + href
+            link_text = a.get_text(strip=True).lower()
+            year_str = str(year)
+            if year_str in link_text or year_str in href:
+                score = 0
+                if year_str in href: score += 10
+                if year_str in link_text: score += 10
+                if 'konzern' in link_text or 'konzern' in href.lower(): score += 5
+                if 'annual' in link_text or 'annual' in href.lower(): score += 5
+                if 'bericht' in link_text or 'report' in href.lower(): score += 5
+                pdf_links.append((score, href))
+
+        pdf_links.sort(reverse=True)
+        if pdf_links:
+            client = get_http_client()
+            if client:
+                try:
+                    for _, pdf_url in pdf_links[:3]:
+                        try:
+                            time.sleep(RATE_LIMIT_DELAY)
+                            pr = client.get(pdf_url, timeout=60)
+                            if pr.status_code == 200 and pr.content[:4] == b'%PDF' and len(pr.content) > 10_000:
+                                result = seal_document(pr.content, comp_dir, ticker, year,
+                                                       pdf_url, "CANAL2b_IR_SCRAPER", company, ".pdf")
+                                if result:
+                                    return result
+                        except Exception as e:
+                            print(f"  [2b] Error descargando {pdf_url}: {e.__class__.__name__}")
+                finally:
+                    client.close()
+        break
 
     return None
 
@@ -882,7 +904,10 @@ def channel3_bundesanzeiger(company: dict, year: int, comp_dir: Path,
             print(f"  [3-API] Aviso en consulta HTTP ({e}). Evaluando fallback Playwright...")
             sys.stdout.flush()
 
-    # ─── VÍA B: Fallback Playwright (Navegador Headless) ───
+    # ─── VÍA B: Fallback Playwright (Solo en modo manual interactivo) ───
+    if not manual_mode:
+        return None
+
     context = get_bafin_session(manual_mode)
     if not context:
         return None
@@ -1057,8 +1082,13 @@ def channel3_bundesanzeiger(company: dict, year: int, comp_dir: Path,
 
 
 
+_DDG_OFFLINE = False
+_DDG_FAILURES = 0
+
+
 def channel4_web_search(company: dict, year: int, comp_dir: Path, dry_run: bool) -> Optional[str]:
-    if not HTTPX_AVAILABLE or not BS4_AVAILABLE:
+    global _DDG_OFFLINE, _DDG_FAILURES
+    if not HTTPX_AVAILABLE or not BS4_AVAILABLE or _DDG_OFFLINE:
         return None
     ticker = company.get('ticker', '')
     name = company.get('name_common') or company.get('name_legal', ticker)
@@ -1084,12 +1114,14 @@ def channel4_web_search(company: dict, year: int, comp_dir: Path, dry_run: bool)
     found_urls = []
     try:
         for query in queries[:2]:
+            if _DDG_OFFLINE:
+                break
             encoded_query = urllib.parse.quote(query)
             for attempt, base_url in enumerate(ddg_urls):
                 search_url = base_url.format(encoded_query)
                 try:
-                    time.sleep(RATE_LIMIT_DELAY)
-                    r = client.get(search_url, timeout=10)
+                    time.sleep(0.5)
+                    r = client.get(search_url, timeout=3.0)
                     r.raise_for_status()
 
                     soup = BeautifulSoup(r.text, 'lxml')
@@ -1112,10 +1144,13 @@ def channel4_web_search(company: dict, year: int, comp_dir: Path, dry_run: bool)
                     break # Success, move to next query
                 
                 except httpx.RequestError as e:
-                    print(f"  [4] Error DDG intento {attempt+1}/2 '{query[:40]}': {e}")
-                    if attempt == len(ddg_urls) - 1:
-                        print(f"  [4] DDG no accesible para esta consulta.")
-                    continue # Try next DDG url
+                    _DDG_FAILURES += 1
+                    if _DDG_FAILURES >= 3:
+                        _DDG_OFFLINE = True
+                        print(f"  [4] DDG omitido ({e.__class__.__name__}) -- Desactivado temporalmente por red")
+                    else:
+                        print(f"  [4] DDG omitido ({e.__class__.__name__})")
+                    break # Fail fast on network/timeout, proceed to next query without stalling
 
         for pdf_url in found_urls[:5]:
             try:
