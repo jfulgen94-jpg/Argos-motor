@@ -1,115 +1,183 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
-ARGOS MOTOR -- Generador del Mapa de Slugs Corporativos EQS / DGAP (Alemania)
-Genera ARGOS_MOTOR/config/eqs_company_slugs.json a partir de las empresas de Prime Standard.
+STATER / ARGOS MOTOR — Generador del mapa de slugs corporativos EQS / DGAP
+==========================================================================
+Lee:     ARGOS_MOTOR/config/prime_standard_companies.json (172 emisores Prime Standard)
+Escribe: ARGOS_MOTOR/config/eqs_company_slugs.json
+
+Para cada empresa produce una lista ORDENADA de slugs candidatos (2-5) para que
+el descargador / crawler pruebe la existencia de los PDFs en:
+  https://irpages2.eqs.com/Download/Companies/{CompanySlug}/Annual%20Reports/{ISIN}-JA-{Year}-EQ-D-{Version}.pdf
+
+Reglas aplicadas:
+  1. Nombre común sin espacios ni caracteres especiales.
+  2. Nombre comercial limpio en PascalCase / Upper.
+  3. Alias históricos / fusiones previas (CRÍTICO 2012-2020) -> tabla HISTORICAL_ALIASES por ISIN.
+  4. Ticker en mayúsculas y minúsculas como fallback final.
 """
 
 import json
 import re
+import unicodedata
+from datetime import date
 from pathlib import Path
 
-ARGOS_DIR = Path(__file__).resolve().parent.parent.parent
-COS_FILE = ARGOS_DIR / 'config' / 'prime_standard_companies.json'
-DEST_FILE = ARGOS_DIR / 'config' / 'eqs_company_slugs.json'
+ROOT = Path(__file__).resolve().parents[2]
+INPUT_FILE = ROOT / "config" / "prime_standard_companies.json"
+OUTPUT_FILE = ROOT / "config" / "eqs_company_slugs.json"
 
-KNOWN_ALIASES = {
-    'BASF': ['BASF'], 'BMW': ['BMW'], 'BAYE_5': ['BMW'],
-    'SIEM': ['Siemens'], 'SIEM_2': ['Siemens'], 'SMTS': ['Siemens'],
-    'RWE': ['RWE'], 'DE_RWE': ['RWE'],
-    'MERC': ['Daimler', 'MercedesBenz', 'Mercedes-Benz'],
-    'HEID': ['HeidelbergCement', 'HeidelbergMaterials'],
-    'AIRB': ['eads', 'Airbus', 'EADS'], 'AIR': ['eads', 'Airbus'],
-    'DHLG': ['DeutschePost', 'dhl', 'DHL'], 'DHL': ['DeutschePost', 'DHL'],
-    'FRES': ['Fresenius'], 'FRES_2': ['FMC', 'FreseniusMedicalCare'],
-    'MUV2': ['MunichRe', 'MuenchenerRueck'], 'MUTA': ['MunichRe', 'Mutares'],
-    'HLE': ['HannoverRueck', 'HannoverRe'],
-    'THYS': ['Thyssenkrupp', 'thyssenkrupp'], 'THYS_2': ['Thyssenkrupp'],
-    'VOW3': ['Volkswagen'], 'VOLK': ['Volkswagen'], 'VOLK_2': ['Volkswagen'],
-    'BAYN': ['Bayer'], 'BAYE_3': ['Bayer'],
-    'ALV': ['Allianz'], 'ALLI': ['Allianz'],
-    'DTE': ['DeutscheTelekom', 'Telekom'], 'DEUT': ['DeutscheTelekom', 'Telekom'],
-    'DBK': ['DeutscheBank'], 'DEUT_2': ['DeutscheBank'],
-    'CBK': ['Commerzbank'], 'COMM': ['Commerzbank'],
-    'EOAN': ['EON', 'E.ON'], 'DE_EON': ['EON', 'E.ON'],
-    'SAP': ['SAP'], 'SAPS': ['SAP'],
-    'CON': ['Continental'], 'CONTI': ['Continental'], 'CONT': ['Continental'],
-    'IFX': ['Infineon'], 'INFI': ['Infineon'],
-    'ZAL': ['Zalando'], 'ZALN': ['Zalando'],
-    'SY1': ['Symrise'], 'SYMR': ['Symrise'],
-    'BEI': ['Beiersdorf'], 'BEI_2': ['Beiersdorf'],
-    'BNR': ['Brenntag'],
-    'COV': ['Covestro'], '1COV': ['Covestro'],
-    'DHER': ['DeliveryHero'],
-    'DB1': ['DeutscheBoerse'],
-    'G1A': ['Gerresheimer'],
-    'GXI': ['Gerresheimer'],
-    'HFG': ['HelloFresh'],
-    'HEN3': ['Henkel'], 'HNKL': ['Henkel'],
-    'KBX': ['KnorrBremse'],
-    'KCO': ['Kloeckner'],
-    'LEG': ['LEG', 'LEGImmobilien'],
-    'MRK': ['Merck'],
-    'MTX': ['MTU'],
-    'NEM': ['Nemetschek'], 'NGEN': ['Nemetschek'],
-    'PUM': ['Puma'],
-    'QIA': ['Qiagen'],
-    'RHM': ['Rheinmetall'],
-    'SRT3': ['Sartorius'], 'SRT': ['Sartorius'],
-    'SDF': ['KplusS'],
-    'TEG': ['TAGImmobilien'],
-    'TKA': ['Thyssenkrupp'],
-    'VNA': ['Vonovia'],
-    'LUFT': ['Lufthansa', 'DeutscheLufthansa'],
-    'LUFT_2': ['Lufthansa', 'DeutscheLufthansa'],
+MAX_SLUGS = 5
+
+HISTORICAL_ALIASES = {
+    # --- Renombrados / fusiones críticas para el periodo 2012-2020 ---
+    "DE0007100000": ["Daimler", "MercedesBenz", "Mercedes-Benz"],            # Mercedes-Benz Group AG (ex Daimler)
+    "DE0006047004": ["HeidelbergCement", "HeidelbergMaterials"],              # Heidelberg Materials (ex HeidelbergCement)
+    "NL0000235190": ["eads", "Airbus", "EADS"],                               # Airbus SE (ex EADS N.V.)
+    "DE0005552004": ["DeutschePost", "dhl", "DHL"],                           # DHL Group (ex Deutsche Post)
+    "DE0005785604": ["Fresenius"],                                            # Fresenius
+    "DE0005785802": ["FMC", "FreseniusMedicalCare"],                          # Fresenius Medical Care
+    "DE0008430026": ["MunichRe", "MuenchenerRueck"],                          # Munich Re (Münchener Rück)
+    "DE0008402215": ["HannoverRueck", "HannoverRe"],                          # Hannover Rueck SE
+    "DE0007500001": ["Thyssenkrupp", "thyssenkrupp"],                         # thyssenkrupp AG
+    "DE000NCA0001": ["thyssenkruppnucera", "ThyssenkruppNucera", "Thyssenkrupp"],  # thyssenkrupp nucera
+    "DE0007664005": ["Volkswagen", "volkswagen"],                             # Volkswagen AG (stam shares)
+    "DE0007664039": ["Volkswagen", "volkswagen"],                             # Volkswagen Vz.
+    "DE000BAY0017": ["Bayer"],                                                # Bayer AG
+    "DE0008404005": ["Allianz"],                                              # Allianz SE
+    "DE0005557508": ["DeutscheTelekom", "Telekom"],                           # Deutsche Telekom AG
+    "DE0005140008": ["DeutscheBank"],                                         # Deutsche Bank AG
+    "DE000CBK1001": ["Commerzbank"],                                          # Commerzbank AG
+    "DE0007037129": ["RWE"],                                                  # RWE AG
+    "DE000ENAG999": ["EON", "E.ON"],                                          # E.ON SE
+    "DE0007164600": ["SAP"],                                                  # SAP SE
+    "DE000BASF111": ["BASF"],                                                 # BASF SE
+    "DE0005190003": ["BMW", "BayerischeMotorenWerke"],                        # BMW AG (Vorzüge)
+    "DE0005190037": ["BMW", "BayerischeMotorenWerke"],                        # BMW AG (Stämme)
+    "DE0007236101": ["Siemens", "SIEMENS"],                                   # Siemens AG
+    "DE000A0LAUP1": ["SiemensEnergy", "SiemensEnergyAG"],                     # Siemens Energy AG
+    "DE0007201107": ["Continental", "CONTI"],                                 # Continental AG
+    "DE0006231004": ["Infineon", "InfineonTechnologies"],                     # Infineon Technologies
+    "DE0005558696": ["DeutscheBoerse", "DeutscheBorse"],                      # Deutsche Börse AG
+    "DE000A1EWWW0": ["adidas", "Adidas"],                                     # adidas AG
+    "DE000ZAL1111": ["Zalando"],                                              # Zalando SE
+    "DE000A1ML7J1": ["Vonovia", "vonovia"],                                   # Vonovia SE
+    "DE0006062144": ["Covestro"],                                             # Covestro AG
+    "DE000DTR0CK8": ["DaimlerTruck", "DaimlerTruckHolding"],                  # Daimler Truck Holding AG
+    "DE0008232125": ["Lufthansa", "DeutscheLufthansa", "DLH"],                # Deutsche Lufthansa AG
+    "DE000FTG1111": ["flatexDEGIRO", "flatex", "BIWAG"],                      # flatexDEGIRO (ex biw AG / flatex)
+    "DE0007472060": ["Wirecard"],                                             # Wirecard AG
+    "DE0005428007": ["comdirect", "comdirectbank"],                           # comdirect bank
+    "DE0005470306": ["CTSEventim"],                                           # CTS Eventim
+    "DE0005403901": ["CEWE"],                                                 # CEWE Stiftung
+    "DE000LEG1110": ["LEGImmobilien"],                                        # LEG Immobilien SE
 }
 
-def generate_slugs():
-    if not COS_FILE.exists():
-        raise FileNotFoundError(f"Missing {COS_FILE}")
-    companies = json.loads(COS_FILE.read_text(encoding='utf-8'))
+def deumlaut(s: str) -> str:
+    """ä->ae, ö->oe, ü->ue, ß->ss (convención alemana clásica para slugs)."""
+    return (s.replace("Ä", "Ae").replace("Ö", "Oe").replace("Ü", "Ue")
+             .replace("ä", "ae").replace("ö", "oe").replace("ü", "ue")
+             .replace("ß", "ss"))
 
-    slug_map = {
-        '_metadata': {
-            'generated_at': '2026-09-23',
-            'total_companies': len(companies),
-            'purpose': 'EQS / DGAP corporate storage slug mappings for German Prime Standard issuers'
-        },
-        'companies': {}
-    }
+def strip_accents(s: str) -> str:
+    return "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
 
-    for c in companies:
-        ticker = c['ticker']
-        isin = c.get('isin', '')
-        name_com = c.get('name_common', '')
-        name_leg = c.get('name_legal', '')
+LEGAL_SUFFIXES = [
+    "Aktiengesellschaft", "Kommanditgesellschaft auf Aktien", "KGaA",
+    "GmbH & Co. KGaA", "GmbH & Co. KG", "SE & Co. KGaA", "Stiftung & Co. KGaA",
+    "AG & Co. KGaA", "Holding AG", "Verwaltungs GmbH",
+    "SE", "AG", "GmbH", "KG", "OHG", "PartG", "eG", "nv", "plc", "N.V.", "S.A.",
+]
 
-        slugs = []
-        if ticker in KNOWN_ALIASES:
-            slugs.extend(KNOWN_ALIASES[ticker])
+def clean_name(name: str) -> str:
+    """Elimina sufijos legales y ruido ('&', '.', ',') del nombre."""
+    n = re.sub(r"\(.*?\)", " ", name)
+    for suf in LEGAL_SUFFIXES:
+        n = re.sub(r"(?i)\b%s\b" % re.escape(suf), " ", n)
+    n = n.replace("&", " ").replace(".", " ").replace(",", " ")
+    n = re.sub(r"[^A-Za-zÀ-ÿ0-9\s\-/]", " ", n)
+    return re.sub(r"\s+", " ", n).strip()
 
-        clean_com = re.sub(r'[^A-Za-z0-9]', '', name_com)
-        if clean_com and clean_com not in slugs:
-            slugs.append(clean_com)
+def pascal(s: str) -> str:
+    out = []
+    for w in re.split(r"[\s\-/]+", s):
+        if not w:
+            continue
+        if w.isupper() and len(w) <= 5:      # siglas: BASF, RWE, SAP, MTU...
+            out.append(w)
+        else:
+            out.append(w[:1].upper() + w[1:])
+    return "".join(out)
 
-        clean_leg = re.sub(r'\b(AG|SE|GmbH|KGaA|Co|KG|PLC|NV|Ltd|Inc)\b', '', name_leg, flags=re.I)
-        clean_leg = re.sub(r'[^A-Za-z0-9]', '', clean_leg).strip()
-        if clean_leg and clean_leg not in slugs:
-            slugs.append(clean_leg)
+def compact(name: str) -> str:
+    """Nombre sin espacios ni caracteres especiales."""
+    base = pascal(clean_name(deumlaut(strip_accents(name))))
+    return re.sub(r"[^A-Za-z0-9]", "", base)
 
-        clean_ticker = ticker.split('_')[0]
-        if clean_ticker not in slugs:
-            slugs.append(clean_ticker)
-        if ticker not in slugs:
-            slugs.append(ticker)
+def build_slugs(rec: dict) -> list:
+    ticker = rec["ticker"]
+    isin = rec.get("isin", "")
+    common = rec.get("name_common", "") or ""
+    legal = rec.get("name_legal", "") or ""
 
-        slug_map['companies'][ticker] = {
-            'isin': isin,
-            'name': name_leg or name_com,
-            'slugs': slugs
+    candidates = []
+
+    # Regla 3: alias históricos/corporativos (prioridad máxima)
+    candidates.extend(HISTORICAL_ALIASES.get(isin, []))
+
+    # Regla 1: nombre común compactado
+    c1 = compact(common)
+    if c1:
+        candidates += [c1, c1.upper()]
+
+    # Regla 2: nombre legal compactado (PascalCase limpio)
+    c2 = compact(legal)
+    if c2 and c2 != c1:
+        candidates.append(c2)
+
+    # Variante lower del nombre común (EQS usa a veces minúsculas: eads, dhl, adidas)
+    if c1:
+        candidates.append(c1.lower())
+
+    # Regla 4: ticker como fallback final (mayúsculas y minúsculas)
+    candidates += [ticker.upper(), ticker.lower()]
+
+    # Dedup preservando orden
+    seen, out = set(), []
+    for s in candidates:
+        s = s.strip()
+        if s and s not in seen:
+            seen.add(s)
+            out.append(s)
+    return out[:MAX_SLUGS]
+
+def main():
+    if not INPUT_FILE.exists():
+        raise FileNotFoundError(f"Archivo de entrada no encontrado: {INPUT_FILE}")
+
+    companies_raw = json.loads(INPUT_FILE.read_text(encoding="utf-8"))
+    result = {}
+    for rec in companies_raw:
+        result[rec["ticker"]] = {
+            "isin": rec.get("isin", ""),
+            "name": rec.get("name_legal") or rec.get("name_common", ""),
+            "slugs": build_slugs(rec),
         }
 
-    DEST_FILE.parent.mkdir(parents=True, exist_ok=True)
-    DEST_FILE.write_text(json.dumps(slug_map, indent=2, ensure_ascii=False), encoding='utf-8')
-    print(f"Generated EQS slugs for {len(slug_map['companies'])} companies -> {DEST_FILE}")
+    payload = {
+        "_metadata": {
+            "generated_at": date.today().isoformat(),
+            "total_companies": len(result),
+            "purpose": "EQS / DGAP corporate storage slug mappings for German listed issuers",
+            "source_config": "ARGOS_MOTOR/config/prime_standard_companies.json",
+            "url_template": "https://irpages2.eqs.com/Download/Companies/{CompanySlug}/Annual%20Reports/{ISIN}-JA-{Year}-EQ-D-{Version}.pdf",
+        },
+        "companies": result,
+    }
 
-if __name__ == '__main__':
-    generate_slugs()
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"OK -> {OUTPUT_FILE} ({len(result)} empresas generadas)")
+
+if __name__ == "__main__":
+    main()

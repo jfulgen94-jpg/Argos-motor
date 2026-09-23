@@ -31,6 +31,7 @@ audits/**
 scratch/
 tmp/
 *.zip
+*.tar
 
 # Data Dumps & Large Datasets (Exceeding GitHub limits)
 Argos_BD/**

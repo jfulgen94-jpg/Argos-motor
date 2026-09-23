@@ -2,7 +2,9 @@
   "_metadata": {
     "generated_at": "2026-09-23",
     "total_companies": 172,
-    "purpose": "EQS / DGAP corporate storage slug mappings for German Prime Standard issuers"
+    "purpose": "EQS / DGAP corporate storage slug mappings for German listed issuers",
+    "source_config": "ARGOS_MOTOR/config/prime_standard_companies.json",
+    "url_template": "https://irpages2.eqs.com/Download/Companies/{CompanySlug}/Annual%20Reports/{ISIN}-JA-{Year}-EQ-D-{Version}.pdf"
   },
   "companies": {
     "LUFT": {
@@ -11,17 +13,20 @@
       "slugs": [
         "Lufthansa",
         "DeutscheLufthansa",
-        "LufthansaAviation",
-        "LUFT"
+        "DLH",
+        "LUFTHANSA",
+        "LufthansaAviation"
       ]
     },
     "ADID": {
       "isin": "DE000A1EWWW0",
       "name": "adidas AG",
       "slugs": [
-        "Adidas",
         "adidas",
-        "ADID"
+        "Adidas",
+        "ADIDAS",
+        "ADID",
+        "adid"
       ]
     },
     "AIRB": {
@@ -31,8 +36,8 @@
         "eads",
         "Airbus",
         "EADS",
-        "AirbusDachfonds",
-        "AIRB"
+        "AIRBUS",
+        "AirbusDachfonds"
       ]
     },
     "NOKI": {
@@ -40,14 +45,18 @@
       "name": "Nokia",
       "slugs": [
         "Nokia",
-        "NOKI"
+        "NOKIA",
+        "nokia",
+        "NOKI",
+        "noki"
       ]
     },
     "BASF": {
       "isin": "DE000BASF111",
       "name": "BASF SE",
       "slugs": [
-        "BASF"
+        "BASF",
+        "basf"
       ]
     },
     "DEUT": {
@@ -57,6 +66,7 @@
         "DeutscheTelekom",
         "Telekom",
         "DEUTSCHETELEKOM",
+        "deutschetelekom",
         "DEUT"
       ]
     },
@@ -65,7 +75,9 @@
       "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
       "slugs": [
         "STOXXEurope600",
-        "iSharesSTOXXEurope600UCITSETFDE",
+        "STOXXEUROPE600",
+        "ISharesSTOXXEurope600UCITSETF",
+        "stoxxeurope600",
         "STOX"
       ]
     },
@@ -74,7 +86,9 @@
       "name": "Adtran Networks SE",
       "slugs": [
         "Adtran",
+        "ADTRAN",
         "AdtranNetworks",
+        "adtran",
         "ADTR"
       ]
     },
@@ -83,7 +97,10 @@
       "name": "GK Software SE",
       "slugs": [
         "GKSoftware",
-        "GKSO"
+        "GKSOFTWARE",
+        "gksoftware",
+        "GKSO",
+        "gkso"
       ]
     },
     "INNO": {
@@ -91,8 +108,10 @@
       "name": "innogy SE",
       "slugs": [
         "Innogy",
+        "INNOGY",
         "innogy",
-        "INNO"
+        "INNO",
+        "inno"
       ]
     },
     "ROJA": {
@@ -100,7 +119,10 @@
       "name": "Rojam",
       "slugs": [
         "Rojam",
-        "ROJA"
+        "ROJAM",
+        "rojam",
+        "ROJA",
+        "roja"
       ]
     },
     "INDO": {
@@ -108,7 +130,9 @@
       "name": "Indofood AGRI Resources Ltd.",
       "slugs": [
         "IndofoodAgriResourcesLimited",
-        "IndofoodAGRIResources",
+        "INDOFOODAGRIRESOURCESLIMITED",
+        "IndofoodAGRIResourcesLtd",
+        "indofoodagriresourceslimited",
         "INDO"
       ]
     },
@@ -116,8 +140,10 @@
       "isin": "DE000A0SMSH2",
       "name": "Mutares SE & Co. KGaA",
       "slugs": [
-        "MunichRe",
         "Mutares",
+        "MUTARES",
+        "MutaresCo",
+        "mutares",
         "MUTA"
       ]
     },
@@ -126,7 +152,9 @@
       "name": "Mutares SE & Co. KGaA",
       "slugs": [
         "Mutares",
-        "MUTA",
+        "MUTARES",
+        "MutaresCo",
+        "mutares",
         "MUTA_2"
       ]
     },
@@ -134,9 +162,11 @@
       "isin": "DE0005751986",
       "name": "SMT Scharf AG",
       "slugs": [
-        "Siemens",
         "SMTScharf",
-        "SMTS"
+        "SMTSCHARF",
+        "smtscharf",
+        "SMTS",
+        "smts"
       ]
     },
     "SMTS_2": {
@@ -144,8 +174,10 @@
       "name": "SMT Scharf AG",
       "slugs": [
         "SMTScharf",
-        "SMTS",
-        "SMTS_2"
+        "SMTSCHARF",
+        "smtscharf",
+        "SMTS_2",
+        "smts_2"
       ]
     },
     "TOWE": {
@@ -153,7 +185,10 @@
       "name": "Tower Semiconductor",
       "slugs": [
         "TowerSemiconductor",
-        "TOWE"
+        "TOWERSEMICONDUCTOR",
+        "towersemiconductor",
+        "TOWE",
+        "towe"
       ]
     },
     "PLUR": {
@@ -161,8 +196,10 @@
       "name": "Pluri Inc.",
       "slugs": [
         "PluriInc",
-        "Pluri",
-        "PLUR"
+        "PLURIINC",
+        "pluriinc",
+        "PLUR",
+        "plur"
       ]
     },
     "EXAS": {
@@ -171,7 +208,9 @@
       "slugs": [
         "Exasol",
         "EXASOL",
-        "EXAS"
+        "exasol",
+        "EXAS",
+        "exas"
       ]
     },
     "TLGI": {
@@ -180,15 +219,20 @@
       "slugs": [
         "TLGImmobilien",
         "TLGIMMOBILIEN",
-        "TLGI"
+        "tlgimmobilien",
+        "TLGI",
+        "tlgi"
       ]
     },
     "WSTE": {
       "isin": "DE0008051004",
       "name": "Wüstenrot & Württembergische AG",
       "slugs": [
-        "WstenrotWrttembergische",
-        "WSTE"
+        "WustenrotWurttembergische",
+        "WUSTENROTWURTTEMBERGISCHE",
+        "wustenrotwurttembergische",
+        "WSTE",
+        "wste"
       ]
     },
     "SINN": {
@@ -196,17 +240,19 @@
       "name": "SinnerSchrader Aktiengesellschaft",
       "slugs": [
         "SinnerSchrader",
-        "SinnerSchraderAktiengesellschaft",
-        "SINN"
+        "SINNERSCHRADER",
+        "sinnerschrader",
+        "SINN",
+        "sinn"
       ]
     },
     "AUDI": {
       "isin": "DE0006757008",
       "name": "AUDI Aktiengesellschaft",
       "slugs": [
-        "AudiAG",
-        "AUDIAktiengesellschaft",
-        "AUDI"
+        "Audi",
+        "AUDI",
+        "audi"
       ]
     },
     "STRA": {
@@ -214,7 +260,9 @@
       "name": "STRATEC SE",
       "slugs": [
         "STRATEC",
-        "STRA"
+        "stratec",
+        "STRA",
+        "stra"
       ]
     },
     "SPRI": {
@@ -222,6 +270,9 @@
       "name": "Springer Nature AG & Co. KGaA",
       "slugs": [
         "SpringerNature",
+        "SPRINGERNATURE",
+        "SpringerNatureCo",
+        "springernature",
         "SPRI"
       ]
     },
@@ -231,7 +282,9 @@
       "slugs": [
         "Uniper",
         "UNIPER",
-        "UNIP"
+        "uniper",
+        "UNIP",
+        "unip"
       ]
     },
     "UNIP_2": {
@@ -240,8 +293,9 @@
       "slugs": [
         "Uniper",
         "UNIPER",
-        "UNIP",
-        "UNIP_2"
+        "uniper",
+        "UNIP_2",
+        "unip_2"
       ]
     },
     "UNIP_3": {
@@ -250,8 +304,9 @@
       "slugs": [
         "Uniper",
         "UNIPER",
-        "UNIP",
-        "UNIP_3"
+        "uniper",
+        "UNIP_3",
+        "unip_3"
       ]
     },
     "BARI": {
@@ -259,23 +314,31 @@
       "name": "Barito Pacific",
       "slugs": [
         "BaritoPacific",
-        "BARI"
+        "BARITOPACIFIC",
+        "baritopacific",
+        "BARI",
+        "bari"
       ]
     },
     "HENS": {
       "isin": "DE000HAG0005",
       "name": "HENSOLDT AG",
       "slugs": [
-        "HensoldtAG",
+        "Hensoldt",
         "HENSOLDT",
-        "HENS"
+        "hensoldt",
+        "HENS",
+        "hens"
       ]
     },
     "BAYE": {
       "isin": "DE0005190037",
       "name": "Bayerische Motoren Werke Aktiengesellschaft",
       "slugs": [
-        "BayerischeMotorenWerkeAktiengesellschaft",
+        "BMW",
+        "BayerischeMotorenWerke",
+        "BAYERISCHEMOTORENWERKE",
+        "bayerischemotorenwerke",
         "BAYE"
       ]
     },
@@ -287,15 +350,17 @@
         "MercedesBenz",
         "Mercedes-Benz",
         "MercedesBenzGroup",
-        "MERC"
+        "MERCEDESBENZGROUP"
       ]
     },
     "BAYE_2": {
       "isin": "DE0005190003",
       "name": "Bayerische Motoren Werke Aktiengesellschaft",
       "slugs": [
-        "BayerischeMotorenWerkeAktiengesellschaft",
-        "BAYE",
+        "BMW",
+        "BayerischeMotorenWerke",
+        "BAYERISCHEMOTORENWERKE",
+        "bayerischemotorenwerke",
         "BAYE_2"
       ]
     },
@@ -303,19 +368,20 @@
       "isin": "DE0005937007",
       "name": "MAN SE",
       "slugs": [
-        "MANSE",
         "MAN",
-        "MANS"
+        "man",
+        "MANS",
+        "mans"
       ]
     },
     "MANS_2": {
       "isin": "DE0005937031",
       "name": "MAN SE",
       "slugs": [
-        "MANSE",
         "MAN",
-        "MANS",
-        "MANS_2"
+        "man",
+        "MANS_2",
+        "mans_2"
       ]
     },
     "PORS": {
@@ -323,7 +389,9 @@
       "name": "Dr. Ing. h.c. F. Porsche Aktiengesellschaft",
       "slugs": [
         "Porsche",
-        "DrInghcFPorscheAktiengesellschaft",
+        "PORSCHE",
+        "DrIngHCFPorsche",
+        "porsche",
         "PORS"
       ]
     },
@@ -331,8 +399,11 @@
       "isin": "",
       "name": "cdv Software Entertainment",
       "slugs": [
-        "cdvSoftwareEntertainment",
-        "CDVS"
+        "CdvSoftwareEntertainment",
+        "CDVSOFTWAREENTERTAINMENT",
+        "cdvsoftwareentertainment",
+        "CDVS",
+        "cdvs"
       ]
     },
     "DEUT_2": {
@@ -340,9 +411,10 @@
       "name": "DEUTSCHE BANK AKTIENGESELLSCHAFT",
       "slugs": [
         "DeutscheBank",
-        "DEUTSCHEBANKAKTIENGESELLSCHAFT",
-        "DEUT",
-        "DEUT_2"
+        "DEUTSCHEBANK",
+        "deutschebank",
+        "DEUT_2",
+        "deut_2"
       ]
     },
     "UNIC": {
@@ -350,7 +422,9 @@
       "name": "UniCredit Bank AG",
       "slugs": [
         "UniCredit",
+        "UNICREDIT",
         "UniCreditBank",
+        "unicredit",
         "UNIC"
       ]
     },
@@ -358,8 +432,10 @@
       "isin": "DE000A3ENQ51",
       "name": "SCHOTT Pharma AG & Co. KGaA",
       "slugs": [
-        "SchottPharmaAGCoKGaA",
-        "SCHOTTPharma",
+        "SchottPharmaCo",
+        "SCHOTTPHARMACO",
+        "SCHOTTPharmaCo",
+        "schottpharmaco",
         "SCHO"
       ]
     },
@@ -368,7 +444,10 @@
       "name": "Definium Therapeutics",
       "slugs": [
         "DefiniumTherapeutics",
-        "DEFI"
+        "DEFINIUMTHERAPEUTICS",
+        "definiumtherapeutics",
+        "DEFI",
+        "defi"
       ]
     },
     "VULC": {
@@ -376,18 +455,21 @@
       "name": "Vulcan Energy Resources",
       "slugs": [
         "VulcanEnergyResources",
-        "VULC"
+        "VULCANENERGYRESOURCES",
+        "vulcanenergyresources",
+        "VULC",
+        "vulc"
       ]
     },
     "THYS": {
       "isin": "DE000NCA0001",
       "name": "thyssenkrupp nucera AG & Co. KGaA",
       "slugs": [
-        "Thyssenkrupp",
-        "thyssenkrupp",
-        "ThyssenkruppNucera",
         "thyssenkruppnucera",
-        "THYS"
+        "ThyssenkruppNucera",
+        "Thyssenkrupp",
+        "THYSSENKRUPPNUCERA",
+        "ThyssenkruppNuceraCo"
       ]
     },
     "FYBE": {
@@ -395,7 +477,9 @@
       "name": "Fyber N.V. Zweigniederlassung Berlin",
       "slugs": [
         "Fyber",
+        "FYBER",
         "FyberNVZweigniederlassungBerlin",
+        "fyber",
         "FYBE"
       ]
     },
@@ -404,7 +488,9 @@
       "name": "North Sea Group Germany GmbH",
       "slugs": [
         "SeaGroup",
+        "SEAGROUP",
         "NorthSeaGroupGermany",
+        "seagroup",
         "SEAG"
       ]
     },
@@ -412,18 +498,22 @@
       "isin": "DE000A2YN355",
       "name": "Circus SE",
       "slugs": [
-        "CircusSE",
         "Circus",
-        "CIRC"
+        "CIRCUS",
+        "circus",
+        "CIRC",
+        "circ"
       ]
     },
     "SIEM": {
       "isin": "DE000ENER6Y0",
       "name": "Siemens Energy AG",
       "slugs": [
-        "Siemens",
         "SiemensEnergy",
-        "SIEM"
+        "SIEMENSENERGY",
+        "siemensenergy",
+        "SIEM",
+        "siem"
       ]
     },
     "PENT": {
@@ -431,8 +521,10 @@
       "name": "Pentixapharm Holding AG",
       "slugs": [
         "Pentixapharm",
-        "PentixapharmHolding",
-        "PENT"
+        "PENTIXAPHARM",
+        "pentixapharm",
+        "PENT",
+        "pent"
       ]
     },
     "MAXU": {
@@ -440,8 +532,10 @@
       "name": "Maxus Mining Inc.",
       "slugs": [
         "MaxusMiningInc",
-        "MaxusMining",
-        "MAXU"
+        "MAXUSMININGINC",
+        "maxusmininginc",
+        "MAXU",
+        "maxu"
       ]
     },
     "ASTA": {
@@ -449,7 +543,9 @@
       "name": "ASTA Energy Solutions AG",
       "slugs": [
         "AstaEnergySolutions",
+        "ASTAENERGYSOLUTIONS",
         "ASTAEnergySolutions",
+        "astaenergysolutions",
         "ASTA"
       ]
     },
@@ -458,8 +554,10 @@
       "name": "TRILLION ENERGY INTERNATIONAL INC.",
       "slugs": [
         "TrillionEnergyInternationalInc",
-        "TRILLIONENERGYINTERNATIONAL",
-        "TRIL"
+        "TRILLIONENERGYINTERNATIONALINC",
+        "trillionenergyinternationalinc",
+        "TRIL",
+        "tril"
       ]
     },
     "BEFE": {
@@ -467,7 +565,9 @@
       "name": "Befesa Zinc Germany GmbH",
       "slugs": [
         "Befesa",
+        "BEFESA",
         "BefesaZincGermany",
+        "befesa",
         "BEFE"
       ]
     },
@@ -476,8 +576,10 @@
       "name": "Bike24 Holding AG",
       "slugs": [
         "BIKE24",
-        "Bike24Holding",
-        "BIKE"
+        "Bike24",
+        "bike24",
+        "BIKE",
+        "bike"
       ]
     },
     "THES": {
@@ -485,7 +587,10 @@
       "name": "The Social Chain AG",
       "slugs": [
         "TheSocialChain",
-        "THES"
+        "THESOCIALCHAIN",
+        "thesocialchain",
+        "THES",
+        "thes"
       ]
     },
     "STEM": {
@@ -494,15 +599,19 @@
       "slugs": [
         "StemmerImaging",
         "STEMMERIMAGING",
-        "STEM"
+        "stemmerimaging",
+        "STEM",
+        "stem"
       ]
     },
     "PROU": {
       "isin": "DE000A2JF9B6",
       "name": "proud@work",
       "slugs": [
-        "proudworkAktienfonds",
-        "proudwork",
+        "ProudWorkAktienfonds",
+        "PROUDWORKAKTIENFONDS",
+        "ProudWork",
+        "proudworkaktienfonds",
         "PROU"
       ]
     },
@@ -510,9 +619,10 @@
       "isin": "DE000A2PRZX5",
       "name": "proud@work",
       "slugs": [
-        "proudworkAktienfonds",
-        "proudwork",
-        "PROU",
+        "ProudWorkAktienfonds",
+        "PROUDWORKAKTIENFONDS",
+        "ProudWork",
+        "proudworkaktienfonds",
         "PROU_2"
       ]
     },
@@ -520,9 +630,10 @@
       "isin": "DE000A3D7526",
       "name": "proud@work",
       "slugs": [
-        "proudworkAktienfonds",
-        "proudwork",
-        "PROU",
+        "ProudWorkAktienfonds",
+        "PROUDWORKAKTIENFONDS",
+        "ProudWork",
+        "proudworkaktienfonds",
         "PROU_3"
       ]
     },
@@ -530,9 +641,10 @@
       "isin": "DE000A41ZZJ4",
       "name": "proud@work",
       "slugs": [
-        "proudworkAktienfonds",
-        "proudwork",
-        "PROU",
+        "ProudWorkAktienfonds",
+        "PROUDWORKAKTIENFONDS",
+        "ProudWork",
+        "proudworkaktienfonds",
         "PROU_4"
       ]
     },
@@ -540,9 +652,11 @@
       "isin": "DE000A3E5ED2",
       "name": "PLANETHIC GROUP AG",
       "slugs": [
-        "PlanethicGroupAG",
+        "PlanethicGroup",
         "PLANETHICGROUP",
-        "PLAN"
+        "planethicgroup",
+        "PLAN",
+        "plan"
       ]
     },
     "VANT": {
@@ -551,16 +665,20 @@
       "slugs": [
         "VantageTowers",
         "VANTAGETOWERS",
-        "VANT"
+        "vantagetowers",
+        "VANT",
+        "vant"
       ]
     },
     "MOUN": {
       "isin": "DE000A12UK08",
       "name": "Mountain Alliance AG",
       "slugs": [
-        "MountainAllianceAG",
         "MountainAlliance",
-        "MOUN"
+        "MOUNTAINALLIANCE",
+        "mountainalliance",
+        "MOUN",
+        "moun"
       ]
     },
     "COMP": {
@@ -568,7 +686,9 @@
       "name": "CCS Abwicklungs AG",
       "slugs": [
         "CompleoChargingSolutions",
+        "COMPLEOCHARGINGSOLUTIONS",
         "CCSAbwicklungs",
+        "compleochargingsolutions",
         "COMP"
       ]
     },
@@ -576,10 +696,11 @@
       "isin": "",
       "name": "Compleo Charging Technologies GmbH",
       "slugs": [
-        "CompleoChargingTechnologiesGmbH",
         "CompleoChargingTechnologies",
-        "COMP",
-        "COMP_2"
+        "COMPLEOCHARGINGTECHNOLOGIES",
+        "compleochargingtechnologies",
+        "COMP_2",
+        "comp_2"
       ]
     },
     "MIST": {
@@ -587,16 +708,21 @@
       "name": "Mister Spex SE",
       "slugs": [
         "MisterSpex",
-        "MIST"
+        "MISTERSPEX",
+        "misterspex",
+        "MIST",
+        "mist"
       ]
     },
     "TEAM": {
       "isin": "DE000A2YN900",
       "name": "TeamViewer SE",
       "slugs": [
-        "TeamViewerSE",
         "TeamViewer",
-        "TEAM"
+        "TEAMVIEWER",
+        "teamviewer",
+        "TEAM",
+        "team"
       ]
     },
     "ABOU": {
@@ -604,7 +730,9 @@
       "name": "ABOUT YOU Verwaltungs SE",
       "slugs": [
         "AboutYou",
+        "ABOUTYOU",
         "ABOUTYOUVerwaltungs",
+        "aboutyou",
         "ABOU"
       ]
     },
@@ -612,9 +740,11 @@
       "isin": "",
       "name": "LYNX Technik AG",
       "slugs": [
-        "LYNXBVOnlineBroker",
+        "LYNXBV",
         "LYNXTechnik",
-        "LYNX"
+        "lynxbv",
+        "LYNX",
+        "lynx"
       ]
     },
     "LUFT_2": {
@@ -623,10 +753,9 @@
       "slugs": [
         "Lufthansa",
         "DeutscheLufthansa",
+        "DLH",
         "LufthansaGroup",
-        "DeutscheLufthansaAktiengesellschaft",
-        "LUFT",
-        "LUFT_2"
+        "LUFTHANSAGROUP"
       ]
     },
     "REDC": {
@@ -634,7 +763,10 @@
       "name": "Redcare Pharmacy",
       "slugs": [
         "RedcarePharmacy",
-        "REDC"
+        "REDCAREPHARMACY",
+        "redcarepharmacy",
+        "REDC",
+        "redc"
       ]
     },
     "TRAT": {
@@ -643,7 +775,9 @@
       "slugs": [
         "Traton",
         "TRATON",
-        "TRAT"
+        "traton",
+        "TRAT",
+        "trat"
       ]
     },
     "CPIP": {
@@ -651,7 +785,10 @@
       "name": "CPI Property Group",
       "slugs": [
         "CPIPropertyGroup",
-        "CPIP"
+        "CPIPROPERTYGROUP",
+        "cpipropertygroup",
+        "CPIP",
+        "cpip"
       ]
     },
     "AUTO": {
@@ -659,7 +796,9 @@
       "name": "AUTO1 Group SE",
       "slugs": [
         "Auto1Group",
+        "AUTO1GROUP",
         "AUTO1Group",
+        "auto1group",
         "AUTO"
       ]
     },
@@ -668,16 +807,21 @@
       "name": "Delivery Hero SE",
       "slugs": [
         "DeliveryHero",
-        "DELI"
+        "DELIVERYHERO",
+        "deliveryhero",
+        "DELI",
+        "deli"
       ]
     },
     "ROCK": {
       "isin": "DE000A12UKK6",
       "name": "Rocket Internet SE",
       "slugs": [
-        "RocketInternetSE",
         "RocketInternet",
-        "ROCK"
+        "ROCKETINTERNET",
+        "rocketinternet",
+        "ROCK",
+        "rock"
       ]
     },
     "MTUA": {
@@ -685,7 +829,10 @@
       "name": "MTU Aero Engines AG",
       "slugs": [
         "MTUAeroEngines",
-        "MTUA"
+        "MTUAEROENGINES",
+        "mtuaeroengines",
+        "MTUA",
+        "mtua"
       ]
     },
     "SAMS": {
@@ -694,7 +841,9 @@
       "slugs": [
         "SamsungElectronics",
         "SAMSUNGELECTRONICS",
-        "SAMS"
+        "samsungelectronics",
+        "SAMS",
+        "sams"
       ]
     },
     "VOLK": {
@@ -702,9 +851,10 @@
       "name": "VOLKSWAGEN AKTIENGESELLSCHAFT",
       "slugs": [
         "Volkswagen",
-        "VolkswagenAG",
-        "VOLKSWAGENAKTIENGESELLSCHAFT",
-        "VOLK"
+        "volkswagen",
+        "VOLKSWAGEN",
+        "VOLK",
+        "volk"
       ]
     },
     "VOLK_2": {
@@ -712,10 +862,10 @@
       "name": "VOLKSWAGEN AKTIENGESELLSCHAFT",
       "slugs": [
         "Volkswagen",
-        "VolkswagenAG",
-        "VOLKSWAGENAKTIENGESELLSCHAFT",
-        "VOLK",
-        "VOLK_2"
+        "volkswagen",
+        "VOLKSWAGEN",
+        "VOLK_2",
+        "volk_2"
       ]
     },
     "SIEM_2": {
@@ -723,9 +873,10 @@
       "name": "Siemens Aktiengesellschaft",
       "slugs": [
         "Siemens",
-        "SiemensAktiengesellschaft",
-        "SIEM",
-        "SIEM_2"
+        "SIEMENS",
+        "siemens",
+        "SIEM_2",
+        "siem_2"
       ]
     },
     "SYMR": {
@@ -733,7 +884,10 @@
       "name": "Symrise AG",
       "slugs": [
         "Symrise",
-        "SYMR"
+        "SYMRISE",
+        "symrise",
+        "SYMR",
+        "symr"
       ]
     },
     "DE_BP": {
@@ -742,8 +896,9 @@
       "slugs": [
         "BP",
         "BPInvCons",
-        "DE",
-        "DE_BP"
+        "bp",
+        "DE_BP",
+        "de_bp"
       ]
     },
     "DE_BP_2": {
@@ -752,8 +907,9 @@
       "slugs": [
         "BP",
         "BPInvCons",
-        "DE",
-        "DE_BP_2"
+        "bp",
+        "DE_BP_2",
+        "de_bp_2"
       ]
     },
     "DE_DAX": {
@@ -761,9 +917,10 @@
       "name": "Deutsche Börse Aktiengesellschaft",
       "slugs": [
         "DAX",
-        "DeutscheBrseAktiengesellschaft",
-        "DE",
-        "DE_DAX"
+        "DeutscheBorse",
+        "dax",
+        "DE_DAX",
+        "de_dax"
       ]
     },
     "DE_DAX_2": {
@@ -771,9 +928,10 @@
       "name": "Deutsche Börse Aktiengesellschaft",
       "slugs": [
         "DAX",
-        "DeutscheBrseAktiengesellschaft",
-        "DE",
-        "DE_DAX_2"
+        "DeutscheBorse",
+        "dax",
+        "DE_DAX_2",
+        "de_dax_2"
       ]
     },
     "HOCH": {
@@ -781,8 +939,10 @@
       "name": "HOCHTIEF Aktiengesellschaft",
       "slugs": [
         "Hochtief",
-        "HOCHTIEFAktiengesellschaft",
-        "HOCH"
+        "HOCHTIEF",
+        "hochtief",
+        "HOCH",
+        "hoch"
       ]
     },
     "ZALA": {
@@ -790,7 +950,10 @@
       "name": "Zalando SE",
       "slugs": [
         "Zalando",
-        "ZALA"
+        "ZALANDO",
+        "zalando",
+        "ZALA",
+        "zala"
       ]
     },
     "THYS_2": {
@@ -798,10 +961,10 @@
       "name": "thyssenkrupp AG",
       "slugs": [
         "Thyssenkrupp",
-        "thyssenkruppAG",
         "thyssenkrupp",
-        "THYS",
-        "THYS_2"
+        "THYSSENKRUPP",
+        "THYS_2",
+        "thys_2"
       ]
     },
     "MERC_2": {
@@ -809,9 +972,10 @@
       "name": "MERCK Kommanditgesellschaft auf Aktien",
       "slugs": [
         "Merck",
-        "MERCKKommanditgesellschaftaufAktien",
-        "MERC",
-        "MERC_2"
+        "MERCK",
+        "merck",
+        "MERC_2",
+        "merc_2"
       ]
     },
     "AIRB_2": {
@@ -819,8 +983,9 @@
       "name": "Air Berlin Fünfte Flugzeug GmbH",
       "slugs": [
         "AirBerlin",
-        "AirBerlinFnfteFlugzeug",
-        "AIRB",
+        "AIRBERLIN",
+        "AirBerlinFunfteFlugzeug",
+        "airberlin",
         "AIRB_2"
       ]
     },
@@ -829,9 +994,10 @@
       "name": "COMMERZBANK Aktiengesellschaft",
       "slugs": [
         "Commerzbank",
-        "CommerzbankAG",
-        "COMMERZBANKAktiengesellschaft",
-        "COMM"
+        "COMMERZBANK",
+        "commerzbank",
+        "COMM",
+        "comm"
       ]
     },
     "DHLG": {
@@ -842,17 +1008,18 @@
         "dhl",
         "DHL",
         "DHLGroup",
-        "DHLG"
+        "DHLGROUP"
       ]
     },
     "DEUT_3": {
       "isin": "DE0005810055",
       "name": "Deutsche Börse Aktiengesellschaft",
       "slugs": [
-        "DeutscheBrse",
-        "DeutscheBrseAktiengesellschaft",
-        "DEUT",
-        "DEUT_3"
+        "DeutscheBorse",
+        "DEUTSCHEBORSE",
+        "deutscheborse",
+        "DEUT_3",
+        "deut_3"
       ]
     },
     "CONT": {
@@ -860,18 +1027,21 @@
       "name": "Continental Aktiengesellschaft",
       "slugs": [
         "Continental",
-        "ContinentalAG",
-        "ContinentalAktiengesellschaft",
-        "CONT"
+        "CONTINENTAL",
+        "continental",
+        "CONT",
+        "cont"
       ]
     },
     "AXEL": {
       "isin": "DE0005501357",
       "name": "Axel Springer SE",
       "slugs": [
-        "AxelSpringerSE",
         "AxelSpringer",
-        "AXEL"
+        "AXELSPRINGER",
+        "axelspringer",
+        "AXEL",
+        "axel"
       ]
     },
     "BAYE_3": {
@@ -879,10 +1049,10 @@
       "name": "Bayer Aktiengesellschaft",
       "slugs": [
         "Bayer",
-        "BayerAG",
-        "BayerAktiengesellschaft",
-        "BAYE",
-        "BAYE_3"
+        "BAYER",
+        "bayer",
+        "BAYE_3",
+        "baye_3"
       ]
     },
     "DE_RWE": {
@@ -890,9 +1060,9 @@
       "name": "RWE Aktiengesellschaft",
       "slugs": [
         "RWE",
-        "RWEAktiengesellschaft",
-        "DE",
-        "DE_RWE"
+        "rwe",
+        "DE_RWE",
+        "de_rwe"
       ]
     },
     "LEIC": {
@@ -900,8 +1070,10 @@
       "name": "Leica Camera Aktiengesellschaft",
       "slugs": [
         "LeicaCamera",
-        "LeicaCameraAktiengesellschaft",
-        "LEIC"
+        "LEICACAMERA",
+        "leicacamera",
+        "LEIC",
+        "leic"
       ]
     },
     "RHEI": {
@@ -909,17 +1081,21 @@
       "name": "Rheinmetall Aktiengesellschaft",
       "slugs": [
         "Rheinmetall",
-        "RheinmetallAktiengesellschaft",
-        "RHEI"
+        "RHEINMETALL",
+        "rheinmetall",
+        "RHEI",
+        "rhei"
       ]
     },
     "FREE": {
       "isin": "DE000A0Z2ZZ5",
       "name": "freenet AG",
       "slugs": [
-        "FreenetAG",
+        "Freenet",
+        "FREENET",
         "freenet",
-        "FREE"
+        "FREE",
+        "free"
       ]
     },
     "DE_EON": {
@@ -928,17 +1104,20 @@
       "slugs": [
         "EON",
         "E.ON",
-        "DE",
-        "DE_EON"
+        "eon",
+        "DE_EON",
+        "de_eon"
       ]
     },
     "BEIE": {
       "isin": "DE0005200000",
       "name": "Beiersdorf Aktiengesellschaft",
       "slugs": [
-        "BeiersdorfAG",
-        "BeiersdorfAktiengesellschaft",
-        "BEIE"
+        "Beiersdorf",
+        "BEIERSDORF",
+        "beiersdorf",
+        "BEIE",
+        "beie"
       ]
     },
     "KNOR": {
@@ -946,8 +1125,10 @@
       "name": "Knorr-Bremse Aktiengesellschaft",
       "slugs": [
         "KnorrBremse",
-        "KnorrBremseAktiengesellschaft",
-        "KNOR"
+        "KNORRBREMSE",
+        "knorrbremse",
+        "KNOR",
+        "knor"
       ]
     },
     "MUNI": {
@@ -955,8 +1136,10 @@
       "name": "Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München",
       "slugs": [
         "MunichRe",
-        "MnchenerRckversicherungsGesellschaftAktiengesellschaftinMnchen",
-        "MUNI"
+        "MuenchenerRueck",
+        "MUNICHRE",
+        "MunchenerRuckversicherungsGesellschaftInMunchen",
+        "munichre"
       ]
     },
     "METR": {
@@ -964,7 +1147,9 @@
       "name": "MGC METRO Group Clearing GmbH",
       "slugs": [
         "METROGroup",
+        "METROGROUP",
         "MGCMETROGroupClearing",
+        "metrogroup",
         "METR"
       ]
     },
@@ -972,19 +1157,22 @@
       "isin": "DE0007165607",
       "name": "Sartorius Aktiengesellschaft",
       "slugs": [
-        "SartoriusAG",
-        "SartoriusAktiengesellschaft",
-        "SART"
+        "Sartorius",
+        "SARTORIUS",
+        "sartorius",
+        "SART",
+        "sart"
       ]
     },
     "SART_2": {
       "isin": "DE0007165631",
       "name": "Sartorius Aktiengesellschaft",
       "slugs": [
-        "SartoriusAG",
-        "SartoriusAktiengesellschaft",
-        "SART",
-        "SART_2"
+        "Sartorius",
+        "SARTORIUS",
+        "sartorius",
+        "SART_2",
+        "sart_2"
       ]
     },
     "AIXT": {
@@ -993,7 +1181,9 @@
       "slugs": [
         "Aixtron",
         "AIXTRON",
-        "AIXT"
+        "aixtron",
+        "AIXT",
+        "aixt"
       ]
     },
     "LUKO": {
@@ -1001,7 +1191,9 @@
       "name": "LUKOIL Hamburg GmbH",
       "slugs": [
         "Lukoil",
+        "LUKOIL",
         "LUKOILHamburg",
+        "lukoil",
         "LUKO"
       ]
     },
@@ -1010,8 +1202,9 @@
       "name": "LUKOIL Hamburg GmbH",
       "slugs": [
         "Lukoil",
+        "LUKOIL",
         "LUKOILHamburg",
-        "LUKO",
+        "lukoil",
         "LUKO_2"
       ]
     },
@@ -1021,6 +1214,8 @@
       "slugs": [
         "Hella",
         "HELLA",
+        "HELLACo",
+        "hella",
         "HELL"
       ]
     },
@@ -1029,7 +1224,9 @@
       "name": "Fielmann Group AG",
       "slugs": [
         "Fielmann",
+        "FIELMANN",
         "FielmannGroup",
+        "fielmann",
         "FIEL"
       ]
     },
@@ -1037,17 +1234,21 @@
       "isin": "DE000LED4000",
       "name": "OSRAM Licht AG",
       "slugs": [
-        "OSRAMLichtAG",
         "OSRAMLicht",
-        "OSRA"
+        "OSRAMLICHT",
+        "osramlicht",
+        "OSRA",
+        "osra"
       ]
     },
     "HENK": {
       "isin": "DE0006048408",
       "name": "Henkel AG & Co. KGaA",
       "slugs": [
-        "HenkelKGaA",
         "Henkel",
+        "HENKEL",
+        "HenkelCo",
+        "henkel",
         "HENK"
       ]
     },
@@ -1055,9 +1256,10 @@
       "isin": "DE0006048432",
       "name": "Henkel AG & Co. KGaA",
       "slugs": [
-        "HenkelKGaA",
         "Henkel",
-        "HENK",
+        "HENKEL",
+        "HenkelCo",
+        "henkel",
         "HENK_2"
       ]
     },
@@ -1066,8 +1268,10 @@
       "name": "Tesla, Inc.",
       "slugs": [
         "TeslaInc",
-        "Tesla",
-        "TESL"
+        "TESLAINC",
+        "teslainc",
+        "TESL",
+        "tesl"
       ]
     },
     "INFI": {
@@ -1076,6 +1280,8 @@
       "slugs": [
         "Infineon",
         "InfineonTechnologies",
+        "INFINEONTECHNOLOGIES",
+        "infineontechnologies",
         "INFI"
       ]
     },
@@ -1084,7 +1290,8 @@
       "name": "Hamburger Hafen und Logistik Aktiengesellschaft",
       "slugs": [
         "HHLA",
-        "HamburgerHafenundLogistikAktiengesellschaft"
+        "HamburgerHafenUndLogistik",
+        "hhla"
       ]
     },
     "QIAG": {
@@ -1093,7 +1300,9 @@
       "slugs": [
         "Qiagen",
         "QIAGEN",
-        "QIAG"
+        "qiagen",
+        "QIAG",
+        "qiag"
       ]
     },
     "OVBH": {
@@ -1101,6 +1310,9 @@
       "name": "OVB Holding AG",
       "slugs": [
         "OVBHolding",
+        "OVBHOLDING",
+        "OVB",
+        "ovbholding",
         "OVBH"
       ]
     },
@@ -1109,7 +1321,9 @@
       "name": "Hochschulen Fresenius GmbH",
       "slugs": [
         "Fresenius",
+        "FRESENIUS",
         "HochschulenFresenius",
+        "fresenius",
         "FRES"
       ]
     },
@@ -1117,9 +1331,11 @@
       "isin": "DE000WCH8881",
       "name": "Wacker Chemie AG",
       "slugs": [
-        "WackerChemieAG",
         "WackerChemie",
-        "WACK"
+        "WACKERCHEMIE",
+        "wackerchemie",
+        "WACK",
+        "wack"
       ]
     },
     "ALLI": {
@@ -1127,8 +1343,10 @@
       "name": "Allianz SE",
       "slugs": [
         "Allianz",
-        "AllianzSE",
-        "ALLI"
+        "ALLIANZ",
+        "allianz",
+        "ALLI",
+        "alli"
       ]
     },
     "VARE": {
@@ -1136,7 +1354,10 @@
       "name": "Varengold Bank",
       "slugs": [
         "VarengoldBank",
-        "VARE"
+        "VARENGOLDBANK",
+        "varengoldbank",
+        "VARE",
+        "vare"
       ]
     },
     "ENBW": {
@@ -1144,8 +1365,9 @@
       "name": "EnBW Energie Baden-Württemberg AG",
       "slugs": [
         "EnBW",
-        "EnBWEnergieBadenWrttemberg",
-        "ENBW"
+        "ENBW",
+        "EnBWEnergieBadenWurttemberg",
+        "enbw"
       ]
     },
     "MDAX": {
@@ -1153,7 +1375,8 @@
       "name": "Deutsche Börse Aktiengesellschaft",
       "slugs": [
         "MDAX",
-        "DeutscheBrseAktiengesellschaft"
+        "DeutscheBorse",
+        "mdax"
       ]
     },
     "MDAX_2": {
@@ -1161,8 +1384,10 @@
       "name": "Deutsche Börse Aktiengesellschaft",
       "slugs": [
         "MDAX",
-        "DeutscheBrseAktiengesellschaft",
-        "MDAX_2"
+        "DeutscheBorse",
+        "mdax",
+        "MDAX_2",
+        "mdax_2"
       ]
     },
     "LATA": {
@@ -1170,7 +1395,9 @@
       "name": "LATAM AIRLINES GROUP S.A.",
       "slugs": [
         "LATAMAirlines",
+        "LATAMAIRLINES",
         "LATAMAIRLINESGROUPSA",
+        "latamairlines",
         "LATA"
       ]
     },
@@ -1180,6 +1407,8 @@
       "slugs": [
         "HeidelbergCement",
         "HeidelbergMaterials",
+        "HEIDELBERGMATERIALS",
+        "heidelbergmaterials",
         "HEID"
       ]
     },
@@ -1188,7 +1417,9 @@
       "name": "Applied Materials German Master Pension Fund",
       "slugs": [
         "AppliedMaterials",
+        "APPLIEDMATERIALS",
         "AppliedMaterialsGermanMasterPensionFund",
+        "appliedmaterials",
         "APPL"
       ]
     },
@@ -1197,7 +1428,9 @@
       "name": "Allgemeine Sterbekasse Mannesmann",
       "slugs": [
         "Mannesmann",
+        "MANNESMANN",
         "AllgemeineSterbekasseMannesmann",
+        "mannesmann",
         "MANN"
       ]
     },
@@ -1206,15 +1439,20 @@
       "name": "Linde Group",
       "slugs": [
         "LindeGroup",
-        "LIND"
+        "LINDEGROUP",
+        "lindegroup",
+        "LIND",
+        "lind"
       ]
     },
     "KHNE": {
       "isin": "CH0025238863",
       "name": "Kühne + Nagel Logistics Langenau GmbH",
       "slugs": [
-        "KhneNagel",
-        "KhneNagelLogisticsLangenau",
+        "KuhneNagel",
+        "KUHNENAGEL",
+        "KuhneNagelLogisticsLangenau",
+        "kuhnenagel",
         "KHNE"
       ]
     },
@@ -1222,9 +1460,11 @@
       "isin": "DE000A0TGJ55",
       "name": "VARTA AKTIENGESELLSCHAFT",
       "slugs": [
-        "VartaAG",
-        "VARTAAKTIENGESELLSCHAFT",
-        "VART"
+        "Varta",
+        "VARTA",
+        "varta",
+        "VART",
+        "vart"
       ]
     },
     "DELT": {
@@ -1232,7 +1472,10 @@
       "name": "Delticom AG",
       "slugs": [
         "Delticom",
-        "DELT"
+        "DELTICOM",
+        "delticom",
+        "DELT",
+        "delt"
       ]
     },
     "VONO": {
@@ -1240,15 +1483,19 @@
       "name": "Vonovia SE",
       "slugs": [
         "Vonovia",
-        "VONO"
+        "vonovia",
+        "VONOVIA",
+        "VONO",
+        "vono"
       ]
     },
     "1188": {
       "isin": "DE0005118806",
       "name": "11 88 0 Solutions AG",
       "slugs": [
-        "11880SolutionsAG",
         "11880Solutions",
+        "11880SOLUTIONS",
+        "11880solutions",
         "1188"
       ]
     },
@@ -1257,7 +1504,10 @@
       "name": "Hoechst GmbH",
       "slugs": [
         "Hoechst",
-        "HOEC"
+        "HOECHST",
+        "hoechst",
+        "HOEC",
+        "hoec"
       ]
     },
     "DE_SAP": {
@@ -1265,8 +1515,9 @@
       "name": "SAP SE",
       "slugs": [
         "SAP",
-        "DE",
-        "DE_SAP"
+        "sap",
+        "DE_SAP",
+        "de_sap"
       ]
     },
     "KAUF": {
@@ -1274,7 +1525,10 @@
       "name": "Kaufring",
       "slugs": [
         "Kaufring",
-        "KAUF"
+        "KAUFRING",
+        "kaufring",
+        "KAUF",
+        "kauf"
       ]
     },
     "HART": {
@@ -1282,7 +1536,9 @@
       "name": "PAUL HARTMANN AG",
       "slugs": [
         "HartmannGruppe",
+        "HARTMANNGRUPPE",
         "PAULHARTMANN",
+        "hartmanngruppe",
         "HART"
       ]
     },
@@ -1291,7 +1547,10 @@
       "name": "Tatneft",
       "slugs": [
         "Tatneft",
-        "TATN"
+        "TATNEFT",
+        "tatneft",
+        "TATN",
+        "tatn"
       ]
     },
     "TATN_2": {
@@ -1299,8 +1558,10 @@
       "name": "Tatneft",
       "slugs": [
         "Tatneft",
-        "TATN",
-        "TATN_2"
+        "TATNEFT",
+        "tatneft",
+        "TATN_2",
+        "tatn_2"
       ]
     },
     "TATN_3": {
@@ -1308,8 +1569,10 @@
       "name": "Tatneft",
       "slugs": [
         "Tatneft",
-        "TATN",
-        "TATN_3"
+        "TATNEFT",
+        "tatneft",
+        "TATN_3",
+        "tatn_3"
       ]
     },
     "GIGA": {
@@ -1317,7 +1580,10 @@
       "name": "Gigaset AG",
       "slugs": [
         "Gigaset",
-        "GIGA"
+        "GIGASET",
+        "gigaset",
+        "GIGA",
+        "giga"
       ]
     },
     "MAND": {
@@ -1325,7 +1591,10 @@
       "name": "Mandarin Oriental",
       "slugs": [
         "MandarinOriental",
-        "MAND"
+        "MANDARINORIENTAL",
+        "mandarinoriental",
+        "MAND",
+        "mand"
       ]
     },
     "FLAT": {
@@ -1333,7 +1602,10 @@
       "name": "flatexDEGIRO SE",
       "slugs": [
         "flatexDEGIRO",
-        "FLAT"
+        "flatex",
+        "BIWAG",
+        "FlatexDEGIRO",
+        "FLATEXDEGIRO"
       ]
     },
     "KNAU": {
@@ -1341,7 +1613,10 @@
       "name": "Knaus Tabbert AG",
       "slugs": [
         "KnausTabbert",
-        "KNAU"
+        "KNAUSTABBERT",
+        "knaustabbert",
+        "KNAU",
+        "knau"
       ]
     },
     "LEGI": {
@@ -1349,7 +1624,10 @@
       "name": "LEG Immobilien SE",
       "slugs": [
         "LEGImmobilien",
-        "LEGI"
+        "LEGIMMOBILIEN",
+        "legimmobilien",
+        "LEGI",
+        "legi"
       ]
     },
     "TUIG": {
@@ -1357,7 +1635,9 @@
       "name": "TUI AG",
       "slugs": [
         "TUIGroup",
+        "TUIGROUP",
         "TUI",
+        "tuigroup",
         "TUIG"
       ]
     },
@@ -1366,8 +1646,9 @@
       "name": "TUI AG",
       "slugs": [
         "TUIGroup",
+        "TUIGROUP",
         "TUI",
-        "TUIG",
+        "tuigroup",
         "TUIG_2"
       ]
     },
@@ -1376,7 +1657,10 @@
       "name": "Wirecard AG",
       "slugs": [
         "Wirecard",
-        "WIRE"
+        "WIRECARD",
+        "wirecard",
+        "WIRE",
+        "wire"
       ]
     },
     "MERK": {
@@ -1385,7 +1669,9 @@
       "slugs": [
         "MerkurPrivatbank",
         "MERKURPRIVATBANK",
-        "MERK"
+        "merkurprivatbank",
+        "MERK",
+        "merk"
       ]
     },
     "LANG": {
@@ -1393,8 +1679,10 @@
       "name": "Lang & Schwarz Aktiengesellschaft",
       "slugs": [
         "LangSchwarz",
-        "LangSchwarzAktiengesellschaft",
-        "LANG"
+        "LANGSCHWARZ",
+        "langschwarz",
+        "LANG",
+        "lang"
       ]
     },
     "LANG_2": {
@@ -1402,9 +1690,10 @@
       "name": "Lang & Schwarz Aktiengesellschaft",
       "slugs": [
         "LangSchwarz",
-        "LangSchwarzAktiengesellschaft",
-        "LANG",
-        "LANG_2"
+        "LANGSCHWARZ",
+        "langschwarz",
+        "LANG_2",
+        "lang_2"
       ]
     },
     "PATR": {
@@ -1412,7 +1701,9 @@
       "name": "PATRIZIA SE",
       "slugs": [
         "PatriziaImmobilien",
+        "PATRIZIAIMMOBILIEN",
         "PATRIZIA",
+        "patriziaimmobilien",
         "PATR"
       ]
     },
@@ -1420,10 +1711,11 @@
       "isin": "DE000PAH0038",
       "name": "Porsche Automobil Holding SE",
       "slugs": [
-        "PorscheAutomobilHoldingSE",
         "PorscheAutomobilHolding",
-        "PORS",
-        "PORS_2"
+        "PORSCHEAUTOMOBILHOLDING",
+        "porscheautomobilholding",
+        "PORS_2",
+        "pors_2"
       ]
     },
     "COVE": {
@@ -1431,7 +1723,10 @@
       "name": "Covestro AG",
       "slugs": [
         "Covestro",
-        "COVE"
+        "COVESTRO",
+        "covestro",
+        "COVE",
+        "cove"
       ]
     },
     "BREN": {
@@ -1440,7 +1735,9 @@
       "slugs": [
         "Brenntag",
         "BRENNTAG",
-        "BREN"
+        "brenntag",
+        "BREN",
+        "bren"
       ]
     },
     "BREN_2": {
@@ -1449,8 +1746,9 @@
       "slugs": [
         "Brenntag",
         "BRENNTAG",
-        "BREN",
-        "BREN_2"
+        "brenntag",
+        "BREN_2",
+        "bren_2"
       ]
     },
     "BANK": {
@@ -1458,7 +1756,9 @@
       "name": "PT. Bank Mandiri (Persero) Tbk.",
       "slugs": [
         "BankMandiri",
-        "PTBankMandiriPerseroTbk",
+        "BANKMANDIRI",
+        "PTBankMandiriTbk",
+        "bankmandiri",
         "BANK"
       ]
     },
@@ -1466,9 +1766,11 @@
       "isin": "DE0008402215",
       "name": "Hannover Rück SE",
       "slugs": [
-        "HannoverRckSE",
-        "HannoverRck",
-        "HANN"
+        "HannoverRueck",
+        "HannoverRe",
+        "HannoverRuck",
+        "HANNOVERRUCK",
+        "hannoverruck"
       ]
     },
     "FRES_2": {
@@ -1477,7 +1779,8 @@
       "slugs": [
         "FMC",
         "FreseniusMedicalCare",
-        "FRES",
+        "FRESENIUSMEDICALCARE",
+        "freseniusmedicalcare",
         "FRES_2"
       ]
     },
@@ -1486,16 +1789,19 @@
       "name": "K+S Aktiengesellschaft",
       "slugs": [
         "KS",
-        "KSAktiengesellschaft",
-        "DE",
-        "DE_KS"
+        "ks",
+        "DE_KS",
+        "de_ks"
       ]
     },
     "COMD": {
       "isin": "DE0005428007",
       "name": "comdirect bank Aktiengesellschaft",
       "slugs": [
-        "comdirectbankAktiengesellschaft",
+        "comdirect",
+        "comdirectbank",
+        "ComdirectBank",
+        "COMDIRECTBANK",
         "COMD"
       ]
     },
@@ -1504,6 +1810,9 @@
       "name": "CTS Eventim AG & Co. KGaA",
       "slugs": [
         "CTSEventim",
+        "CTSEVENTIM",
+        "CTSEventimCo",
+        "ctseventim",
         "CTSE"
       ]
     },
@@ -1512,7 +1821,9 @@
       "name": "Kanadevia Inova AG",
       "slugs": [
         "KanadeviaInovaSchmack",
+        "KANADEVIAINOVASCHMACK",
         "KanadeviaInova",
+        "kanadeviainovaschmack",
         "KANA"
       ]
     },
@@ -1521,7 +1832,9 @@
       "name": "Dermapharm Holding SE",
       "slugs": [
         "Dermapharm",
+        "DERMAPHARM",
         "DermapharmHolding",
+        "dermapharm",
         "DERM"
       ]
     },
@@ -1530,7 +1843,8 @@
       "name": "CEWE Stiftung & Co. KGaA",
       "slugs": [
         "CEWE",
-        "CEWEStiftung"
+        "CEWEStiftungCo",
+        "cewe"
       ]
     },
     "RTLG": {
@@ -1538,7 +1852,9 @@
       "name": "RTL GROUP VERMÖGENSVERWALTUNG GMBH",
       "slugs": [
         "RTLGroup",
-        "RTLGROUPVERMGENSVERWALTUNG",
+        "RTLGROUP",
+        "RTLGROUPVERMOGENSVERWALTUNG",
+        "rtlgroup",
         "RTLG"
       ]
     },
@@ -1548,6 +1864,8 @@
       "slugs": [
         "DaimlerTruck",
         "DaimlerTruckHolding",
+        "DAIMLERTRUCK",
+        "daimlertruck",
         "DAIM"
       ]
     },
@@ -1556,7 +1874,9 @@
       "name": "Haier Deutschland GmbH",
       "slugs": [
         "Haier",
+        "HAIER",
         "HaierDeutschland",
+        "haier",
         "HAIE"
       ]
     }
