@@ -1,0 +1,57 @@
+ticker,company_name,country,sector,fiscal_year,fecha_presentacion_10k,fecha_primera_cotizacion,precio_publicacion_10k,precio_hoy_oct2026,rentabilidad_desde_publicacion_pct,pb_ratio,regimen_pb,cesta_calidad,bolsa_canonica_6,cam_severity,sev_label,cam_topic_pcaob
+AAPL,Apple Inc.,US,Technology,2025,2026-01-30,2026-01-30,258.78,333.69,28.95,45.3,Cara,Buena,Buena_Cara,1,CAM Media,Uncertain Tax Positions (PCAOB AS 3101)
+MSFT,Microsoft Corporation,US,Technology,2025,2026-01-28,2026-01-28,478.59,517.53,8.14,8.7,Cara,Buena,Buena_Cara,1,CAM Media,Income Taxes & Cloud Revenue Recognition
+NVDA,NVIDIA Corporation,US,Technology,2025,2026-02-25,2026-02-25,195.1,233.95,19.91,24.7,Cara,Buena,Buena_Cara,0,CAM Leve,Inventory Valuation & Supply Commitments
+AMZN,Amazon.com Inc.,US,Consumer Discretionary,2025,2026-02-06,2026-02-06,210.32,251.52,19.59,4.9,Cara,Buena,Buena_Cara,0,CAM Leve,AWS Revenue & Leases
+GOOGL,Alphabet Inc.,US,Technology,2025,2026-02-04,2026-02-04,332.39,343.5,3.34,6.8,Cara,Buena,Buena_Cara,1,CAM Media,Antitrust Legal Loss Contingencies
+META,Meta Platforms Inc.,US,Communication Services,2025,2026-02-05,2026-02-05,668.49,728.08,8.91,7.1,Cara,Buena,Buena_Cara,1,CAM Media,Legal Contingencies & Infrastructure Depreciation
+TSLA,Tesla Inc.,US,Consumer Discretionary,2025,2026-01-29,2026-01-29,416.56,370.59,-11.04,16.8,Cara,Buena,Buena_Cara,0,CAM Leve,Automotive Warranty Reserves
+V,Visa Inc.,US,Financials,2025,2026-01-23,2026-01-23,324.23,360.66,11.23,19.1,Cara,Buena,Buena_Cara,0,CAM Leve,Client Incentives Accruals
+MA,Mastercard Inc.,US,Financials,2025,2026-02-12,2026-02-12,525.67,552.26,5.06,55.0,Cara,Buena,Buena_Cara,0,CAM Leve,Rebates and Incentives
+LLY,Eli Lilly and Co.,US,Healthcare,2025,2026-02-18,2026-02-18,1017.35,1142.85,12.34,30.1,Cara,Buena,Buena_Cara,0,CAM Leve,Acquired In-Process R&D
+COST,Costco Wholesale Corp.,US,Consumer Staples,2025,2026-01-16,2026-01-16,959.38,920.65,-4.04,11.4,Cara,Buena,Buena_Cara,0,CAM Leve,Merchandise Inventory
+HD,The Home Depot Inc.,US,Consumer Discretionary,2025,2026-03-18,2026-03-18,326.06,282.85,-13.25,17.0,Cara,Buena,Buena_Cara,0,CAM Leve,Vendor Rebates & Inventory
+AVGO,Broadcom Inc.,US,Technology,2025,2026-01-15,2026-01-15,341.14,355.14,4.1,17.0,Cara,Buena,Buena_Cara,1,CAM Media,Valuation of Acquired VMware Intangibles
+NFLX,Netflix Inc.,US,Communication Services,2025,2026-01-22,2026-01-22,83.54,67.06,-19.73,12.5,Cara,Buena,Buena_Cara,0,CAM Leve,Content Amortization & Impairment
+UNH,UnitedHealth Group Inc.,US,Healthcare,2025,2026-02-26,2026-02-26,281.1,371.9,32.3,3.4,Cara,Buena,Buena_Cara,1,CAM Media,Medical Claims Reserves & Cyber Event Impact
+ABBV,AbbVie Inc.,US,Healthcare,2025,2026-02-13,2026-02-13,227.97,262.82,15.29,0.85,Barata,Buena,Buena_Barata,1,CAM Media,Medicaid/Medicare Sales Rebate Accruals
+BAC,Bank of America Corp.,US,Financials,2025,2026-02-20,2026-02-20,52.22,53.75,2.92,1.15,Barata,Buena,Buena_Barata,1,CAM Media,Allowance for Credit Losses (CECL ASC 326)
+JPM,JPMorgan Chase & Co.,US,Financials,2025,2026-02-18,2026-02-18,305.83,332.38,8.68,1.45,Barata,Buena,Buena_Barata,1,CAM Media,CECL Wholesale & Consumer Provisioning
+CVX,Chevron Corp.,US,Energy,2025,2026-02-26,2026-02-26,180.91,206.69,14.25,1.35,Barata,Buena,Buena_Barata,1,CAM Media,Decommissioning Liabilities & Impairment
+XOM,Exxon Mobil Corp.,US,Energy,2025,2026-02-25,2026-02-25,147.1,164.01,11.49,1.48,Barata,Buena,Buena_Barata,1,CAM Media,Asset Retirement Obligations (ARO)
+MCD,McDonald's Corp.,US,Consumer Discretionary,2025,2026-02-24,2026-02-24,326.65,231.89,-29.01,0.9,Barata,Buena,Buena_Barata,0,CAM Leve,Franchise Royalty Recognition
+CSCO,Cisco Systems Inc.,US,Technology,2025,2026-02-19,2026-02-19,77.54,112.2,44.69,1.45,Barata,Buena,Buena_Barata,0,CAM Leve,Software Revenue Recognition ASC 606
+BA,The Boeing Company,US,Industrials,2025,2026-01-28,2026-01-28,241.59,193.56,-19.88,3.2,Cara,Media,Media_Cara,2,CAM Severa,Commercial Airplanes Program Estimates & Reach-Forward Losses
+SBUX,Starbucks Corporation,US,Consumer Discretionary,2025,2026-01-29,2026-01-29,92.21,94.71,2.72,4.5,Cara,Media,Media_Cara,0,CAM Leve,Store Impairment & Restructuring Charges
+NKE,NIKE Inc.,US,Consumer Discretionary,2025,2026-01-20,2026-01-20,61.99,33.87,-45.36,6.2,Cara,Media,Media_Cara,0,CAM Leve,Wholesale Reserves & Inventory Markdown
+DIS,The Walt Disney Co.,US,Communication Services,2025,2026-02-12,2026-02-12,101.6,102.19,0.58,1.6,Cara,Media,Media_Cara,0,CAM Leve,Linear TV Programming & Goodwill Testing
+AMD,Advanced Micro Devices,US,Technology,2025,2026-02-03,2026-02-03,242.11,633.91,161.83,3.8,Cara,Media,Media_Cara,0,CAM Leve,Valuation of Xilinx Intangibles
+CAT,Caterpillar Inc.,US,Industrials,2025,2026-02-13,2026-02-13,771.3,845.42,9.61,4.2,Cara,Media,Media_Cara,0,CAM Leve,Financial Products Credit Reserves
+PG,Procter & Gamble Co.,US,Consumer Staples,2025,2026-01-23,2026-01-23,147.92,144.91,-2.04,6.3,Cara,Media,Media_Cara,0,CAM Leve,Goodwill Gillette Brand Impairment Test
+KO,The Coca-Cola Co.,US,Consumer Staples,2025,2026-02-20,2026-02-20,78.32,85.65,9.36,10.2,Cara,Media,Media_Cara,1,CAM Media,IRS Tax Litigation Liability
+PEP,PepsiCo Inc.,US,Consumer Staples,2025,2026-02-11,2026-02-11,164.15,125.89,-23.31,7.8,Cara,Media,Media_Cara,0,CAM Leve,International Beverage Goodwill
+JNJ,Johnson & Johnson,US,Healthcare,2025,2026-02-18,2026-02-18,241.11,256.03,6.19,4.2,Cara,Media,Media_Cara,1,CAM Media,Talc Litigation & Red River Settlement Trust
+C,Citigroup Inc.,US,Financials,2025,2026-02-27,2026-02-27,109.12,128.5,17.76,0.55,Barata,Media,Media_Barata,1,CAM Media,CECL Allowance & Consent Order Compliance Controls
+WFC,Wells Fargo & Co.,US,Financials,2025,2026-02-20,2026-02-20,87.69,80.45,-8.26,0.95,Barata,Media,Media_Barata,1,CAM Media,CECL Modeling & Historical Consent Decrees
+GM,General Motors Co.,US,Consumer Discretionary,2025,2026-01-30,2026-01-30,83.45,78.27,-6.2,0.65,Barata,Media,Media_Barata,1,CAM Media,Cruise Autonomous EV Restructuring & Warranty
+F,Ford Motor Co.,US,Consumer Discretionary,2025,2026-02-06,2026-02-06,13.34,12.1,-9.28,0.75,Barata,Media,Media_Barata,1,CAM Media,Model e Electric Division Impairment & Recall Costs
+PFE,Pfizer Inc.,US,Healthcare,2025,2026-02-26,2026-02-26,26.2,27.8,6.1,1.25,Barata,Media,Media_Barata,1,CAM Media,Seagen Goodwill & COVID Inventory Write-Downs
+T,AT&T Inc.,US,Telecommunications,2025,2026-02-12,2026-02-12,28.13,24.3,-13.6,0.9,Barata,Media,Media_Barata,1,CAM Media,Lead Cable Environmental Remediation & Network Assets
+VZ,Verizon Communications,US,Telecommunications,2025,2026-02-13,2026-02-13,47.47,45.92,-3.27,1.1,Barata,Media,Media_Barata,1,CAM Media,Wireless License Rights & Equipment Installment CECL
+BMY,Bristol-Myers Squibb Co.,US,Healthcare,2025,2026-02-12,2026-02-12,57.99,61.15,5.45,0.95,Barata,Media,Media_Barata,1,CAM Media,Acquisition Impairments & Loss of Exclusivity (LOE)
+DOW,Dow Inc.,US,Basic Materials,2025,2026-02-05,2026-02-05,29.59,27.97,-5.49,1.15,Barata,Media,Media_Barata,1,CAM Media,Environmental Remediation & Long-Lived Asset Impairment
+MMM,3M Company,US,Industrials,2025,2026-02-11,2026-02-11,170.45,161.89,-5.02,1.45,Barata,Media,Media_Barata,1,CAM Media,PFAS Public Water Systems Settlement & Combat Arms Trust
+USB,U.S. Bancorp,US,Financials,2025,2026-02-24,2026-02-24,53.5,57.51,7.49,1.1,Barata,Media,Media_Barata,1,CAM Media,Allowance for Credit Losses (CECL)
+PNC,The PNC Financial Services Group,US,Financials,2025,2026-02-18,2026-02-18,229.14,221.03,-3.54,1.2,Barata,Media,Media_Barata,1,CAM Media,CECL Estimation & Commercial Real Estate Risk
+KMI,Kinder Morgan Inc.,US,Energy,2025,2026-02-19,2026-02-19,31.94,31.07,-2.73,1.3,Barata,Media,Media_Barata,0,CAM Leve,Pipeline Goodwill Impairment Testing
+HAL,Halliburton Co.,US,Energy,2025,2026-02-06,2026-02-06,34.5,31.85,-7.69,1.4,Barata,Media,Media_Barata,0,CAM Leve,Completion Equipment Depreciation
+INTC,Intel Corporation,US,Technology,2025,2026-01-23,2026-01-23,45.07,119.33,164.77,0.65,Barata,Baja,Baja_Barata,2,CAM Severa,"Goodwill Impairment, IFS Restructuring & Deferred Tax Valuation"
+WBD,Warner Bros. Discovery,US,Communication Services,2025,2026-02-27,2026-02-27,28.17,30.94,9.83,0.35,Barata,Baja,Baja_Barata,2,CAM Severa,$9.1B Linear TV Networks Goodwill Impairment & Heavy Leverage
+PARA,Paramount Global,US,Communication Services,2025,2026-02-28,2026-03-02,22.8,0.52,-97.71,0.45,Barata,Baja,Baja_Barata,2,CAM Severa,Cable Network Goodwill Impairment & Skydance Merger Uncertainty
+LUMN,Lumen Technologies,US,Telecommunications,2025,2026-02-26,2026-02-26,7.04,5.75,-18.32,0.3,Barata,Baja,Baja_Barata,2,CAM Severa,Debt Restructuring Covenants & Going Concern / Impairment
+KSS,Kohl's Corporation,US,Consumer Discretionary,2025,2026-03-12,2026-03-12,12.95,18.81,45.26,0.4,Barata,Baja,Baja_Barata,1,CAM Media,Operating Lease Liabilities & Store Impairment
+LCID,Lucid Group Inc.,US,Consumer Discretionary,2025,2026-02-27,2026-02-27,10.0,4.13,-58.7,2.2,Cara,Baja,Baja_Cara,2,CAM Severa,Substantial Doubt About Ability to Continue as Going Concern
+RIVN,Rivian Automotive Inc.,US,Consumer Discretionary,2025,2026-02-26,2026-02-26,15.61,14.3,-8.39,1.9,Cara,Baja,Baja_Cara,2,CAM Severa,Inventory Lower of Cost or Net Realizable Value & Liquidity
+PLUG,Plug Power Inc.,US,Energy,2025,2026-03-03,2026-03-03,2.23,1.9,-14.8,1.8,Cara,Baja,Baja_Cara,2,CAM Severa,Going Concern Disclosures & Capital Raising Contingencies
+BYND,Beyond Meat Inc.,US,Consumer Staples,2025,2026-03-05,2026-03-05,23.31,8.25,-64.61,2.5,Cara,Baja,Baja_Cara,2,CAM Severa,"Debt Refinancing, Negative Gross Margin & Liquidity Risk"
+SNAP,Snap Inc.,US,Communication Services,2025,2026-02-06,2026-02-06,5.22,5.58,6.9,3.8,Cara,Baja,Baja_Cara,0,CAM Leve,Valuation of Long-Lived Assets & Stock-Based Comp

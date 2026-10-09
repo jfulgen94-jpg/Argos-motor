@@ -1,0 +1,13 @@
+Horizonte_Temporal,Nivel_Severidad_CAM,Baja_Cara,Baja_Barata,Media_Cara,Media_Barata,Buena_Cara,Buena_Barata
+"1. Instantánea (Ventana Evento [-1, +1] días)",CAM Severa / Crítica (Nivel 2/3),"-3,29%","-1,80%","-1,25%","-2,10%","-0,45%",N/A*
+"1. Instantánea (Ventana Evento [-1, +1] días)",CAM Media / Moderada (Nivel 1),"-0,85%","-0,10%","-0,05%","+0,10%","+0,05%","+0,15%"
+"1. Instantánea (Ventana Evento [-1, +1] días)",CAM Leve (Nivel 0),"+0,15%","+0,45%","+0,22%","+0,80%","+0,30%","+0,60%"
+2. Medio Plazo (6 Meses),CAM Severa / Crítica (Nivel 2/3),"-8,90%","-4,50%","-3,90%","-9,20%","+2,40%",N/A*
+2. Medio Plazo (6 Meses),CAM Media / Moderada (Nivel 1),"-4,10%","+11,50%","+2,80%","-5,80%","+3,10%","+1,20%"
+2. Medio Plazo (6 Meses),CAM Leve (Nivel 0),"-6,80%","+7,20%","+3,50%","-6,10%","+2,80%","-8,10%"
+3. Anual (12 Meses),CAM Severa / Crítica (Nivel 2/3),"-16,19% (-14,85%)","-2,21% (-7,10%)","-3,20% (-6,98%)","-10,40% (-17,74%)","+9,85% (+4,34%)",N/A*
+3. Anual (12 Meses),CAM Media / Moderada (Nivel 1),"+1,94% (-8,65%)","+34,24% (+23,17%)","+5,51% (-0,95%)","-1,10% (-13,59%)","+9,97% (+5,56%)","-0,23% (+1,78%)"
+3. Anual (12 Meses),CAM Leve (Nivel 0),"-4,55% (-13,73%)","+18,31% (+13,06%)","+7,35% (-0,57%)","+4,07% (-14,50%)","+13,95% (+4,66%)","-16,83% (-16,83%)"
+4. Estructural (36 Meses),CAM Severa / Crítica (Nivel 2/3),"-29,90% (-42,99%)","-16,80% (-16,80%)","-18,90% (-39,30%)","-13,40% (-38,10%)","+43,80% (+12,86%)",N/A*
+4. Estructural (36 Meses),CAM Media / Moderada (Nivel 1),"+26,50% (-15,06%)","+79,60% (+91,22%)","+77,90% (+56,90%)","+229,70% (+107,40%)","+31,70% (+9,09%)","+15,60% (+7,50%)"
+4. Estructural (36 Meses),CAM Leve (Nivel 0),"-21,60% (-24,62%)","+185,00% (+10,40%)","+112,50% (+59,50%)","+394,10% (+89,90%)","+27,00% (+12,79%)","+51,30% (+24,50%)"

@@ -1,0 +1,125 @@
+ticker,yf_ticker,company_name,country,sector,fiscal_year,fecha_publicacion_informe,fecha_primera_cotizacion,precio_publicacion,precio_hoy_oct2026,rentabilidad_desde_publicacion_pct,pb_ratio,regimen_pb,cesta_calidad,bolsa_canonica_6,cam_severity,sev_label
+SAN,SAN.MC,Banco Santander SA,ES,Financials,2025,2026-02-27,2026-02-27,10.66,11.81,10.76,0.85,Barata,Buena,Buena_Barata,1,CAM Media
+BBVA,BBVA.MC,Banco Bilbao Vizcaya Argentaria SA,ES,Financials,2025,2026-02-28,2026-03-02,18.38,23.73,29.09,0.95,Barata,Buena,Buena_Barata,1,CAM Media
+ITX,ITX.MC,Inditex (Industria de Diseno Textil SA),ES,Consumer Discretionary,2025,2026-03-12,2026-03-12,51.69,53.24,2.99,5.2,Cara,Buena,Buena_Cara,0,CAM Leve
+IBE,IBE.MC,Iberdrola SA,ES,Utilities,2025,2026-02-26,2026-02-26,19.65,20.82,5.95,1.75,Cara,Buena,Buena_Cara,1,CAM Media
+TEF,TEF.MC,Telefonica SA,ES,Telecommunications,2025,2026-02-27,2026-02-27,3.7,3.31,-10.48,0.85,Barata,Baja,Baja_Barata,2,CAM Severa
+REP,REP.MC,Repsol SA,ES,Energy,2025,2026-02-27,2026-02-27,18.55,29.03,56.53,0.75,Barata,Media,Media_Barata,1,CAM Media
+CABK,CABK.MC,CaixaBank SA,ES,Financials,2025,2026-02-20,2026-02-20,10.61,12.03,13.39,1.15,Cara,Buena,Buena_Cara,1,CAM Media
+ACS,ACS.MC,ACS Actividades de Construccion y Servicios,ES,Industrials,2025,2026-02-28,2026-03-02,108.0,95.0,-12.04,1.4,Cara,Media,Media_Cara,1,CAM Media
+AMS,AMS.MC,Amadeus IT Group SA,ES,Technology,2025,2026-02-28,2026-03-02,50.03,52.8,5.54,4.2,Cara,Buena,Buena_Cara,0,CAM Leve
+FER,FER.MC,Ferrovial SE,ES,Industrials,2025,2026-02-28,2026-03-02,61.64,47.47,-22.99,2.9,Cara,Buena,Buena_Cara,1,CAM Media
+ELE,ELE.MC,Endesa SA,ES,Utilities,2025,2026-02-26,2026-02-26,34.0,41.94,23.35,1.6,Cara,Media,Media_Cara,0,CAM Leve
+CLNX,CLNX.MC,Cellnex Telecom SA,ES,Telecommunications,2025,2026-02-28,2026-03-02,31.99,22.63,-29.27,1.6,Cara,Baja,Baja_Cara,2,CAM Severa
+GRF,GRF.MC,Grifols SA,ES,Healthcare,2025,2026-03-08,2026-03-09,9.83,9.53,-3.02,1.3,Cara,Baja,Baja_Cara,2,CAM Severa
+NTGY,NTGY.MC,Naturgy Energy Group SA,ES,Utilities,2025,2026-02-27,2026-02-27,25.24,29.44,16.64,1.55,Cara,Media,Media_Cara,1,CAM Media
+AENA,AENA.MC,Aena SME SA,ES,Industrials,2025,2026-02-27,2026-02-27,25.55,25.6,0.2,3.1,Cara,Media,Media_Cara,0,CAM Leve
+ACX,ACX.MC,Acerinox SA,ES,Basic Materials,2025,2026-02-28,2026-03-02,13.18,17.27,31.06,0.85,Barata,Buena,Buena_Barata,0,CAM Leve
+BKT,BKT.MC,Bankinter SA,ES,Financials,2025,2026-01-23,2026-01-23,13.66,15.78,15.55,1.1,Cara,Buena,Buena_Cara,0,CAM Leve
+ENG,ENG.MC,Enagas SA,ES,Utilities,2025,2026-02-18,2026-02-18,14.27,16.67,16.85,1.4,Cara,Media,Media_Cara,0,CAM Leve
+COL,COL.MC,Inmobiliaria Colonial SOCIMI SA,ES,Real Estate,2025,2026-02-27,2026-02-27,5.37,4.85,-9.75,0.65,Barata,Media,Media_Barata,1,CAM Media
+MRL,MRL.MC,Merlin Properties SOCIMI SA,ES,Real Estate,2025,2026-02-27,2026-02-27,15.0,12.11,-19.24,0.75,Barata,Media,Media_Barata,1,CAM Media
+SCYR,SCYR.MC,Sacyr SA,ES,Industrials,2025,2026-02-28,2026-03-02,4.38,3.98,-9.02,1.25,Cara,Media,Media_Cara,1,CAM Media
+SLR,SLR.MC,Solaria Energia y Medio Ambiente SA,ES,Utilities,2025,2026-03-31,2026-03-31,23.7,16.57,-30.11,1.8,Cara,Baja,Baja_Cara,0,CAM Leve
+UNI,UNI.MC,Unicaja Banco SA,ES,Financials,2025,2026-02-26,2026-02-26,2.57,3.33,29.85,0.6,Barata,Media,Media_Barata,0,CAM Leve
+VIS,VIS.MC,Viscofan SA,ES,Consumer Staples,2025,2026-02-27,2026-02-27,57.47,53.1,-7.6,2.6,Cara,Media,Media_Cara,0,CAM Leve
+ROVI,ROVI.MC,Laboratorios Farmaceuticos Rovi SA,ES,Healthcare,2025,2026-02-25,2026-02-25,80.64,57.4,-28.82,3.2,Cara,Buena,Buena_Cara,0,CAM Leve
+IDR,IDR.MC,Indra Sistemas SA,ES,Technology,2025,2026-02-27,2026-02-27,62.39,59.48,-4.66,2.1,Cara,Media,Media_Cara,0,CAM Leve
+FDR,FDR.MC,Fluidra SA,ES,Industrials,2025,2026-02-27,2026-02-27,22.3,17.5,-21.51,2.3,Cara,Media,Media_Cara,0,CAM Leve
+LOG,LOG.MC,Logista Holdings SA,ES,Industrials,2025,2026-02-06,2026-02-06,31.48,34.64,10.04,2.2,Cara,Media,Media_Cara,0,CAM Leve
+MEL,MEL.MC,Melia Hotels International SA,ES,Consumer Discretionary,2025,2026-02-28,2026-03-02,7.88,10.23,29.83,1.4,Cara,Baja,Baja_Cara,0,CAM Leve
+SAB,SAB.MC,Banco de Sabadell SA,ES,Financials,2025,2026-02-06,2026-02-06,2.66,3.49,31.32,0.7,Barata,Media,Media_Barata,0,CAM Leve
+ANA,ANA.MC,Acciona SA,ES,Utilities,2025,2026-02-28,2026-03-02,241.08,213.6,-11.4,1.35,Cara,Media,Media_Cara,1,CAM Media
+ANE,ANE.MC,Acciona Energias Renovables SA,ES,Utilities,2025,2026-02-28,2026-03-02,21.75,21.94,0.87,1.25,Cara,Media,Media_Cara,0,CAM Leve
+RED,RED.MC,Redeia Corporacion SA,ES,Utilities,2025,2026-02-27,2026-02-27,15.12,14.8,-2.1,1.5,Cara,Media,Media_Cara,0,CAM Leve
+ALM,ALM.MC,Almirall SA,ES,Healthcare,2025,2026-02-23,2026-02-23,12.4,10.22,-17.56,1.1,Cara,Baja,Baja_Cara,0,CAM Leve
+VID,VID.MC,Vidrala SA,ES,Consumer Goods,2025,2026-02-28,2026-03-02,79.38,84.8,6.83,1.9,Cara,Media,Media_Cara,0,CAM Leve
+TUB,TUB.MC,Tubacex SA,ES,Basic Materials,2025,2026-02-28,2026-03-02,3.2,2.85,-11.06,0.7,Barata,Baja,Baja_Barata,2,CAM Severa
+TRG,TRG.MC,Tubos Reunidos SA,ES,Basic Materials,2025,2026-03-15,2026-03-16,0.24,0.14,-40.58,0.4,Barata,Baja,Baja_Barata,2,CAM Severa
+CAF,CAF.MC,Construcciones y Auxiliar de Ferrocarriles,ES,Industrials,2025,2026-02-27,2026-02-27,57.71,77.0,33.42,1.1,Cara,Media,Media_Cara,0,CAM Leve
+EBRO,EBRO.MC,Ebro Foods SA,ES,Consumer Staples,2025,2026-02-27,2026-02-27,18.64,17.92,-3.86,1.25,Cara,Media,Media_Cara,0,CAM Leve
+PHM,PHM.MC,Pharma Mar SA,ES,Healthcare,2025,2026-02-28,2026-03-02,83.18,71.4,-14.17,2.8,Cara,Media,Media_Cara,0,CAM Leve
+TRE,TRE.MC,Tecnicas Reunidas SA,ES,Industrials,2025,2026-02-28,2026-03-02,33.12,26.36,-20.41,1.2,Cara,Media,Media_Cara,1,CAM Media
+PUIG,PUIG.MC,Puig Brands SA,ES,Consumer Staples,2025,2026-04-15,2026-04-15,16.85,17.64,4.69,3.6,Cara,Media,Media_Cara,0,CAM Leve
+SAP,SAP.DE,SAP SE,DE,Technology,2025,2026-02-26,2026-02-26,169.35,183.92,8.61,4.5,Cara,Buena,Buena_Cara,0,CAM Leve
+SIE,SIE.DE,Siemens AG,DE,Industrials,2025,2026-01-30,2026-01-30,250.96,276.1,10.02,2.4,Cara,Media,Media_Cara,0,CAM Leve
+ALV,ALV.DE,Allianz SE,DE,Financials,2025,2026-03-05,2026-03-05,337.66,416.2,23.26,1.35,Cara,Media,Media_Cara,1,CAM Media
+DTE,DTE.DE,Deutsche Telekom AG,DE,Telecommunications,2025,2026-02-27,2026-02-27,33.02,26.56,-19.56,1.9,Cara,Media,Media_Cara,0,CAM Leve
+MBG,MBG.DE,Mercedes-Benz Group AG,DE,Consumer Discretionary,2025,2026-02-20,2026-02-20,55.35,39.72,-28.23,0.4,Barata,Buena,Buena_Barata,0,CAM Leve
+BMW,BMW.DE,Bayerische Motoren Werke AG (BMW),DE,Consumer Discretionary,2025,2026-03-14,2026-03-16,74.77,54.32,-27.35,0.34,Barata,Buena,Buena_Barata,0,CAM Leve
+VOW3,VOW3.DE,Volkswagen AG,DE,Consumer Discretionary,2025,2026-03-13,2026-03-13,83.9,67.48,-19.57,0.19,Barata,Baja,Baja_Barata,0,CAM Leve
+BAS,BAS.DE,BASF SE,DE,Basic Materials,2025,2026-02-28,2026-03-02,45.38,49.92,10.0,0.95,Barata,Media,Media_Barata,1,CAM Media
+BAYN,BAYN.DE,Bayer AG,DE,Healthcare,2025,2026-03-05,2026-03-05,37.67,44.94,19.31,1.2,Cara,Baja,Baja_Cara,2,CAM Severa
+DBK,DBK.DE,Deutsche Bank AG,DE,Financials,2025,2026-03-12,2026-03-12,24.8,30.94,24.76,0.74,Barata,Media,Media_Barata,1,CAM Media
+IFX,IFX.DE,Infineon Technologies AG,DE,Technology,2025,2026-01-20,2026-01-20,40.17,64.64,60.93,2.8,Cara,Media,Media_Cara,0,CAM Leve
+DHL,DHL.DE,Deutsche Post AG (DHL),DE,Industrials,2025,2026-03-06,2026-03-06,44.27,56.72,28.11,2.1,Cara,Media,Media_Cara,0,CAM Leve
+MUV2,MUV2.DE,Munich Re (Muenchener Rueck),DE,Financials,2025,2026-03-14,2026-03-16,515.39,508.6,-1.32,1.65,Cara,Media,Media_Cara,1,CAM Media
+RWE,RWE.DE,RWE AG,DE,Utilities,2025,2026-03-13,2026-03-13,55.92,59.1,5.69,1.3,Cara,Media,Media_Cara,0,CAM Leve
+EOAN,EOAN.DE,E.ON SE,DE,Utilities,2025,2026-03-13,2026-03-13,19.31,17.02,-11.88,1.45,Cara,Media,Media_Cara,0,CAM Leve
+HEN3,HEN3.DE,Henkel AG & Co KGaA,DE,Consumer Staples,2025,2026-03-06,2026-03-06,72.23,72.3,0.1,1.85,Cara,Media,Media_Cara,0,CAM Leve
+BEI,BEI.DE,Beiersdorf AG,DE,Consumer Staples,2025,2026-03-05,2026-03-05,81.43,75.4,-7.4,2.65,Cara,Media,Media_Cara,0,CAM Leve
+CON,CON.DE,Continental AG,DE,Consumer Discretionary,2025,2026-03-06,2026-03-06,60.85,68.1,11.92,0.75,Barata,Media,Media_Barata,0,CAM Leve
+HEI,HEI.DE,Heidelberg Materials AG,DE,Basic Materials,2025,2026-03-20,2026-03-20,167.94,148.4,-11.64,1.45,Cara,Media,Media_Cara,0,CAM Leve
+SY1,SY1.DE,Symrise AG,DE,Basic Materials,2025,2026-03-10,2026-03-10,70.42,91.0,29.22,2.4,Cara,Media,Media_Cara,0,CAM Leve
+FRE,FRE.DE,Fresenius SE & Co KGaA,DE,Healthcare,2025,2026-02-25,2026-02-25,49.72,43.63,-12.23,1.25,Cara,Media,Media_Cara,0,CAM Leve
+P911,P911.DE,Porsche AG,DE,Consumer Discretionary,2025,2026-03-12,2026-03-12,37.11,43.0,15.89,2.8,Cara,Buena,Buena_Cara,0,CAM Leve
+ZAL,ZAL.DE,Zalando SE,DE,Consumer Discretionary,2025,2026-03-13,2026-03-13,23.54,22.27,-5.4,2.2,Cara,Baja,Baja_Cara,2,CAM Severa
+CBK,CBK.DE,Commerzbank AG,DE,Financials,2025,2026-03-27,2026-03-27,29.66,39.15,32.02,0.8,Barata,Media,Media_Barata,1,CAM Media
+DTG,DTG.DE,Daimler Truck Holding AG,DE,Industrials,2025,2026-03-07,2026-03-09,37.99,40.68,7.08,1.25,Cara,Media,Media_Cara,0,CAM Leve
+MRK,MRK.DE,Merck KGaA,DE,Healthcare,2025,2026-03-06,2026-03-06,107.98,136.9,26.78,2.8,Cara,Media,Media_Cara,0,CAM Leve
+ENR,ENR.DE,Siemens Energy AG,DE,Industrials,2025,2026-01-15,2026-01-15,127.66,145.42,13.92,1.95,Cara,Media,Media_Cara,1,CAM Media
+ADS,ADS.DE,Adidas AG,DE,Consumer Discretionary,2025,2026-03-12,2026-03-12,138.6,144.05,3.93,3.5,Cara,Media,Media_Cara,0,CAM Leve
+HOT,HOT.DE,Hochtief AG,DE,Industrials,2025,2026-02-26,2026-02-26,396.88,407.4,2.65,1.2,Cara,Media,Media_Cara,0,CAM Leve
+MC,MC.PA,LVMH Moet Hennessy Louis Vuitton,FR,Consumer Discretionary,2025,2026-02-05,2026-02-05,529.56,378.55,-28.52,4.8,Cara,Buena,Buena_Cara,0,CAM Leve
+OR,OR.PA,L'Oreal SA,FR,Consumer Staples,2025,2026-02-12,2026-02-12,384.1,372.75,-2.96,5.6,Cara,Buena,Buena_Cara,0,CAM Leve
+RMS,RMS.PA,Hermes International SCA,FR,Consumer Discretionary,2025,2026-02-14,2026-02-16,2064.06,1299.5,-37.04,12.5,Cara,Buena,Buena_Cara,0,CAM Leve
+TTE,TTE.PA,TotalEnergies SE,FR,Energy,2025,2026-02-12,2026-02-12,62.12,74.46,19.87,1.15,Cara,Media,Media_Cara,1,CAM Media
+SAN_FR,SAN.PA,Sanofi SA,FR,Healthcare,2025,2026-02-06,2026-02-06,76.1,70.81,-6.96,1.6,Cara,Media,Media_Cara,0,CAM Leve
+SU,SU.PA,Schneider Electric SE,FR,Industrials,2025,2026-02-19,2026-02-19,255.35,303.0,18.66,3.1,Cara,Buena,Buena_Cara,0,CAM Leve
+AIR,AIR.PA,Airbus SE,FR,Industrials,2025,2026-02-19,2026-02-19,183.71,189.3,3.05,3.8,Cara,Buena,Buena_Cara,1,CAM Media
+AI,AI.PA,Air Liquide SA,FR,Basic Materials,2025,2026-02-20,2026-02-20,156.25,170.16,8.9,2.7,Cara,Media,Media_Cara,0,CAM Leve
+BNP,BNP.PA,BNP Paribas SA,FR,Financials,2025,2026-02-06,2026-02-06,87.58,92.06,5.12,0.84,Barata,Buena,Buena_Barata,1,CAM Media
+CS,CS.PA,AXA SA,FR,Financials,2025,2026-02-27,2026-02-27,39.12,42.07,7.55,1.1,Cara,Media,Media_Cara,1,CAM Media
+SAF,SAF.PA,Safran SA,FR,Industrials,2025,2026-02-14,2026-02-16,334.44,330.1,-1.3,4.2,Cara,Buena,Buena_Cara,0,CAM Leve
+EL,EL.PA,EssilorLuxottica SA,FR,Healthcare,2025,2026-02-26,2026-02-26,233.78,142.8,-38.92,3.4,Cara,Media,Media_Cara,0,CAM Leve
+DG,DG.PA,Vinci SA,FR,Industrials,2025,2026-02-08,2026-02-09,129.26,106.8,-17.37,1.9,Cara,Media,Media_Cara,0,CAM Leve
+BN,BN.PA,Danone SA,FR,Consumer Staples,2025,2026-02-21,2026-02-23,69.61,59.12,-15.07,2.1,Cara,Media,Media_Cara,0,CAM Leve
+ENGI,ENGI.PA,Engie SA,FR,Utilities,2025,2026-02-22,2026-02-23,25.25,22.78,-9.77,0.95,Barata,Media,Media_Barata,1,CAM Media
+KER,KER.PA,Kering SA,FR,Consumer Discretionary,2025,2026-02-12,2026-02-12,278.08,210.3,-24.37,2.4,Cara,Baja,Baja_Cara,0,CAM Leve
+GLE,GLE.PA,Societe Generale SA,FR,Financials,2025,2026-02-07,2026-02-09,73.91,66.3,-10.3,0.5,Barata,Media,Media_Barata,1,CAM Media
+ACA,ACA.PA,Credit Agricole SA,FR,Financials,2025,2026-02-07,2026-02-09,17.01,16.89,-0.72,0.75,Barata,Media,Media_Barata,1,CAM Media
+CAP,CAP.PA,Capgemini SE,FR,Technology,2025,2026-02-14,2026-02-16,98.53,108.9,10.52,2.6,Cara,Media,Media_Cara,0,CAM Leve
+ORA,ORA.PA,Orange SA,FR,Telecommunications,2025,2026-02-14,2026-02-16,16.86,13.98,-17.1,0.9,Barata,Media,Media_Barata,0,CAM Leve
+RI,RI.PA,Pernod Ricard SA,FR,Consumer Staples,2025,2026-02-15,2026-02-16,81.87,58.62,-28.4,2.1,Cara,Media,Media_Cara,0,CAM Leve
+LR,LR.PA,Legrand SA,FR,Industrials,2025,2026-02-15,2026-02-16,148.0,144.55,-2.33,2.4,Cara,Media,Media_Cara,0,CAM Leve
+ML,ML.PA,Michelin,FR,Consumer Discretionary,2025,2026-02-12,2026-02-12,32.47,33.02,1.68,1.2,Cara,Media,Media_Cara,0,CAM Leve
+VIE,VIE.PA,Veolia Environnement SA,FR,Utilities,2025,2026-02-28,2026-03-02,33.23,30.73,-7.52,1.65,Cara,Media,Media_Cara,0,CAM Leve
+PUB,PUB.PA,Publicis Groupe SA,FR,Communication Services,2025,2026-02-07,2026-02-09,76.74,94.24,22.8,1.8,Cara,Media,Media_Cara,0,CAM Leve
+TEP,TEP.PA,Teleperformance SE,FR,Industrials,2025,2026-02-26,2026-02-26,50.05,69.0,37.86,1.7,Cara,Baja,Baja_Cara,0,CAM Leve
+DSY,DSY.PA,Dassault Systemes SE,FR,Technology,2025,2026-02-12,2026-02-12,17.89,20.63,15.29,4.1,Cara,Buena,Buena_Cara,0,CAM Leve
+AC,AC.PA,Accor SA,FR,Consumer Discretionary,2025,2026-02-20,2026-02-20,47.09,44.2,-6.13,1.5,Cara,Media,Media_Cara,0,CAM Leve
+EN,EN.PA,Bouygues SA,FR,Industrials,2025,2026-02-27,2026-02-27,50.54,40.7,-19.46,1.3,Cara,Media,Media_Cara,0,CAM Leve
+CA,CA.PA,Carrefour SA,FR,Consumer Staples,2025,2026-02-20,2026-02-20,14.25,15.32,7.52,1.1,Cara,Media,Media_Cara,0,CAM Leve
+AKE,AKE.PA,Arkema SA,FR,Basic Materials,2025,2026-02-27,2026-02-27,58.36,53.85,-7.73,0.85,Barata,Media,Media_Barata,0,CAM Leve
+RNO,RNO.PA,Renault SA,FR,Consumer Discretionary,2025,2026-02-14,2026-02-16,30.02,24.68,-17.78,0.45,Barata,Baja,Baja_Barata,2,CAM Severa
+ALO,ALO.PA,Alstom SA,FR,Industrials,2025,2026-05-15,2026-05-15,17.05,15.07,-11.58,1.5,Cara,Baja,Baja_Cara,2,CAM Severa
+ASML,ASML.AS,ASML Holding NV,NL,Technology,2025,2026-01-29,2026-01-29,1186.35,1653.0,39.34,15.0,Cara,Buena,Buena_Cara,0,CAM Leve
+PROX,PRX.AS,Prosus NV,NL,Technology,2025,2026-06-24,2026-06-24,38.42,34.5,-10.2,0.48,Barata,Buena,Buena_Barata,0,CAM Leve
+INGA,INGA.AS,ING Groep NV,NL,Financials,2025,2026-03-07,2026-03-09,21.6,30.68,42.05,0.95,Barata,Buena,Buena_Barata,1,CAM Media
+UNA,UNA.AS,Unilever PLC,NL,Consumer Staples,2025,2026-02-12,2026-02-12,59.98,52.84,-11.91,2.9,Cara,Buena,Buena_Cara,0,CAM Leve
+HEIA,HEIA.AS,Heineken NV,NL,Consumer Staples,2025,2026-02-12,2026-02-12,79.35,69.66,-12.21,2.4,Cara,Buena,Buena_Cara,0,CAM Leve
+KPN,KPN.AS,Koninklijke KPN NV,NL,Telecommunications,2025,2026-02-20,2026-02-20,4.45,3.94,-11.44,0.95,Barata,Media,Media_Barata,0,CAM Leve
+WKL,WKL.AS,Wolters Kluwer NV,NL,Industrials,2025,2026-02-20,2026-02-20,59.91,67.82,13.21,4.1,Cara,Buena,Buena_Cara,0,CAM Leve
+PHIA,PHIA.AS,Koninklijke Philips NV,NL,Healthcare,2025,2026-02-10,2026-02-10,26.55,21.27,-19.88,1.6,Cara,Media,Media_Cara,1,CAM Media
+ASM,ASM.AS,ASM International NV,NL,Technology,2025,2026-02-26,2026-02-26,704.26,944.8,34.16,4.5,Cara,Media,Media_Cara,0,CAM Leve
+BESI,BESI.AS,BE Semiconductor Industries NV,NL,Technology,2025,2026-02-20,2026-02-20,183.34,204.8,11.7,4.8,Cara,Media,Media_Cara,0,CAM Leve
+ENEL,ENEL.MI,Enel SpA,IT,Utilities,2025,2026-03-19,2026-03-19,9.2,8.8,-4.31,1.45,Cara,Media,Media_Cara,1,CAM Media
+ENI,ENI.MI,Eni SpA,IT,Energy,2025,2026-03-14,2026-03-16,21.78,24.19,11.05,1.15,Cara,Media,Media_Cara,1,CAM Media
+ISP,ISP.MI,Intesa Sanpaolo SpA,IT,Financials,2025,2026-02-27,2026-02-27,5.64,6.33,12.17,0.9,Barata,Media,Media_Barata,1,CAM Media
+UCG,UCG.MI,UniCredit SpA,IT,Financials,2025,2026-02-28,2026-03-02,68.52,78.85,15.08,0.85,Barata,Media,Media_Barata,1,CAM Media
+STLAM,STLAM.MI,Stellantis NV,IT,Consumer Discretionary,2025,2026-02-26,2026-02-26,6.78,3.88,-42.72,0.42,Barata,Baja,Baja_Barata,0,CAM Leve
+RACE,RACE.MI,Ferrari NV,IT,Consumer Discretionary,2025,2026-02-20,2026-02-20,305.72,343.5,12.36,18.0,Cara,Buena,Buena_Cara,0,CAM Leve
+PRY,PRY.MI,Prysmian SpA,IT,Industrials,2025,2026-02-27,2026-02-27,101.74,129.8,27.58,2.4,Cara,Media,Media_Cara,0,CAM Leve
+MONC,MONC.MI,Moncler SpA,IT,Consumer Discretionary,2025,2026-02-28,2026-03-02,54.99,43.7,-20.53,4.1,Cara,Buena,Buena_Cara,0,CAM Leve
+G,G.MI,Assicurazioni Generali SpA,IT,Financials,2025,2026-03-12,2026-03-12,32.2,41.46,28.75,1.25,Cara,Media,Media_Cara,1,CAM Media
+BAMI,BAMI.MI,Banco BPM SpA,IT,Financials,2025,2026-02-26,2026-02-26,12.41,15.23,22.71,0.7,Barata,Media,Media_Barata,1,CAM Media

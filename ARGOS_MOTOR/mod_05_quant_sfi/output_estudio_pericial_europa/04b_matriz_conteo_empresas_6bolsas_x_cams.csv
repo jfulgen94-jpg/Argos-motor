@@ -1,0 +1,13 @@
+Horizonte_Temporal,Nivel_Severidad_CAM,Baja_Cara,Baja_Barata,Media_Cara,Media_Barata,Buena_Cara,Buena_Barata
+"1. Instantánea (Ventana Evento [-1, +1] días)",Número de Empresas CAM Severa,68 (37 cotizadas),8 (3 cotizadas),73 (34 cotizadas),155 (75 cotizadas),183 (87 cotizadas),0 (0 cotizadas)
+"1. Instantánea (Ventana Evento [-1, +1] días)",Número de Empresas CAM Media,425 (143 cotizadas),22 (8 cotizadas),421 (136 cotizadas),695 (232 cotizadas),1.179 (349 cotizadas),10 (3 cotizadas)
+"1. Instantánea (Ventana Evento [-1, +1] días)",Número de Empresas CAM Leve,272 (105 cotizadas),21 (9 cotizadas),242 (85 cotizadas),457 (180 cotizadas),621 (214 cotizadas),1 (1 cotizada)
+2. Medio Plazo (6 Meses),Número de Empresas CAM Severa,68 (37 cotizadas),8 (3 cotizadas),73 (34 cotizadas),155 (75 cotizadas),183 (87 cotizadas),0 (0 cotizadas)
+2. Medio Plazo (6 Meses),Número de Empresas CAM Media,425 (143 cotizadas),22 (8 cotizadas),421 (136 cotizadas),695 (232 cotizadas),1.179 (349 cotizadas),10 (3 cotizadas)
+2. Medio Plazo (6 Meses),Número de Empresas CAM Leve,272 (105 cotizadas),21 (9 cotizadas),242 (85 cotizadas),457 (180 cotizadas),621 (214 cotizadas),1 (1 cotizada)
+3. Anual (12 Meses),Número de Empresas CAM Severa,63 (35 cotizadas),3 (2 cotizadas),73 (34 cotizadas),149 (73 cotizadas),181 (87 cotizadas),0 (0 cotizadas)
+3. Anual (12 Meses),Número de Empresas CAM Media,411 (140 cotizadas),12 (5 cotizadas),420 (136 cotizadas),674 (227 cotizadas),1.146 (347 cotizadas),9 (3 cotizadas)
+3. Anual (12 Meses),Número de Empresas CAM Leve,263 (103 cotizadas),17 (6 cotizadas),239 (84 cotizadas),444 (177 cotizadas),616 (213 cotizadas),1 (1 cotizada)
+4. Estructural (36 Meses),Número de Empresas CAM Severa,39 (26 cotizadas),0 (0 cotizadas),46 (30 cotizadas),78 (54 cotizadas),113 (72 cotizadas),0 (0 cotizadas)
+4. Estructural (36 Meses),Número de Empresas CAM Media,236 (110 cotizadas),6 (4 cotizadas),244 (119 cotizadas),411 (188 cotizadas),661 (292 cotizadas),6 (3 cotizadas)
+4. Estructural (36 Meses),Número de Empresas CAM Leve,146 (76 cotizadas),11 (6 cotizadas),131 (65 cotizadas),217 (119 cotizadas),351 (168 cotizadas),0 (0 cotizadas)

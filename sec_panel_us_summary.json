@@ -1,0 +1,95 @@
+{
+  "descripcion": "Inventario Consolidado del Repositorio Econométrico y de Auditoría SEC (EE.UU.)",
+  "fecha_auditoria": "2026-10-08",
+  "repositorios_detectados": {
+    "curated_data_lake": {
+      "ruta": "C:/Users/jfulg/Desktop/Stater/ARGOS_DATA_DISK/lake/ESTADOS_UNIDOS",
+      "empresas_unicas": 38,
+      "documentos_totales": 266,
+      "volumen_mb": 1405.95,
+      "formatos": {
+        "htm": 265,
+        "txt": 1
+      },
+      "segmentos": {
+        "SP500_MEGA_CAPS": {
+          "empresas": 31,
+          "documentos": 231,
+          "volumen_mb": 788.09,
+          "rango": "2005-2025"
+        },
+        "HISTORICO_O_EXPANDIDO": {
+          "empresas": 7,
+          "documentos": 35,
+          "volumen_mb": 617.85,
+          "rango": "2019-2025"
+        }
+      }
+    },
+    "econometric_sec_panel": {
+      "ruta": "C:/Users/jfulg/Desktop/Stater/Argos_BD/EEUU",
+      "archivos_totales": 32280,
+      "volumen_gb": 57.68,
+      "subcarpetas": {
+        "CCA_de_la_SEC": {
+          "archivos": 8466,
+          "volumen_gb": 29.24,
+          "panel_multianio_filings": 6261
+        },
+        "CCA_BENCHMARK": {
+          "archivos": 4480,
+          "volumen_gb": 20.93,
+          "panel_simetrico_5anios": "896 empresas/año (2020-2024)"
+        },
+        "d_us_txt": {
+          "archivos": 13169,
+          "volumen_gb": 1.77,
+          "descripcion": "Filings completos en texto plano SEC EDGAR"
+        },
+        "output_csrd_impacto_EEUU": {
+          "archivos": 4998,
+          "volumen_gb": 5.61,
+          "descripcion": "Extracción datapoints sostenibilidad y controversias"
+        },
+        "output_cam_EEUU": {
+          "archivos": 304,
+          "volumen_mb": 39.47,
+          "descripcion": "Base DuckDB y manifests de Critical Audit Matters"
+        }
+      }
+    },
+    "paquetes_masivos_sec_zip": {
+      "sec_bulk_submissions": {
+        "ruta": "C:/Users/jfulg/Desktop/estudios v/sec_bulk/submissions.zip",
+        "volumen_mb": 1481.15
+      },
+      "sec_bulk_companyfacts": {
+        "ruta": "C:/Users/jfulg/Desktop/estudios v/sec_bulk/companyfacts.zip",
+        "volumen_mb": 1325.64
+      },
+      "universo_d_us_txt_zip": {
+        "ruta": "C:/Users/jfulg/Desktop/estudios v/universo/d_us_txt.zip",
+        "volumen_mb": 512.9
+      }
+    }
+  },
+  "auditoria_cam_duckdb": {
+    "total_documentos_auditados_duckdb": 4853,
+    "total_cam_extraidas": 8579,
+    "distribucion_topicos_cam": {
+      "Credit Losses": 1080,
+      "Contingencies": 1080,
+      "Business Combinations": 1079,
+      "Goodwill & Intangibles": 1076,
+      "Revenue Recognition": 1072,
+      "Going Concern": 1067,
+      "Financial Instruments": 1066,
+      "Income Taxes": 1059
+    },
+    "distribucion_por_bolsa": {
+      "B_Control_Normal": 1994,
+      "A_SFI": 2043,
+      "C_Control_Deteriorado": 816
+    }
+  }
+}

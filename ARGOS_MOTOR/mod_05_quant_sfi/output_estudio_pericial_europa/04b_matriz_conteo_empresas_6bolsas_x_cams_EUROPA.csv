@@ -1,0 +1,13 @@
+Horizonte_Temporal,Nivel_Severidad_CAM,Baja_Cara,Baja_Barata,Media_Cara,Media_Barata,Buena_Cara,Buena_Barata
+"1. Instantánea (Ventana Evento [-1, +1] días)",Número de Empresas CAM Severa,4 (4 cotizadas),4 (4 cotizadas),1 (1 cotizadas),0 (0),0 (0),0 (0)
+"1. Instantánea (Ventana Evento [-1, +1] días)",Número de Empresas CAM Media,0 (0),0 (0),3 (3 cotizadas),9 (9 cotizadas),4 (4 cotizadas),4 (4 cotizadas)
+"1. Instantánea (Ventana Evento [-1, +1] días)",Número de Empresas CAM Leve,8 (8 cotizadas),2 (2 cotizadas),69 (69 cotizadas),9 (9 cotizadas),16 (16 cotizadas),4 (4 cotizadas)
+2. Medio Plazo (6 Meses),Número de Empresas CAM Severa,4 (4 cotizadas),4 (4 cotizadas),1 (1 cotizadas),0 (0),0 (0),0 (0)
+2. Medio Plazo (6 Meses),Número de Empresas CAM Media,0 (0),0 (0),3 (3 cotizadas),9 (9 cotizadas),4 (4 cotizadas),4 (4 cotizadas)
+2. Medio Plazo (6 Meses),Número de Empresas CAM Leve,8 (8 cotizadas),2 (2 cotizadas),69 (69 cotizadas),9 (9 cotizadas),16 (16 cotizadas),4 (4 cotizadas)
+3. Anual (12 Meses),Número de Empresas CAM Severa,4 (4 cotizadas),4 (4 cotizadas),1 (1 cotizadas),0 (0),0 (0),0 (0)
+3. Anual (12 Meses),Número de Empresas CAM Media,0 (0),0 (0),3 (3 cotizadas),9 (9 cotizadas),4 (4 cotizadas),4 (4 cotizadas)
+3. Anual (12 Meses),Número de Empresas CAM Leve,8 (8 cotizadas),2 (2 cotizadas),69 (69 cotizadas),9 (9 cotizadas),16 (16 cotizadas),4 (4 cotizadas)
+4. Estructural (36 Meses),Número de Empresas CAM Severa,4 (4 cotizadas),4 (4 cotizadas),1 (1 cotizadas),0 (0),0 (0),0 (0)
+4. Estructural (36 Meses),Número de Empresas CAM Media,0 (0),0 (0),3 (3 cotizadas),9 (9 cotizadas),4 (4 cotizadas),4 (4 cotizadas)
+4. Estructural (36 Meses),Número de Empresas CAM Leve,8 (8 cotizadas),2 (2 cotizadas),69 (69 cotizadas),9 (9 cotizadas),16 (16 cotizadas),4 (4 cotizadas)

@@ -67,3 +67,8 @@ ARGOS_DATA_DISK/
 bafin_browser_session/
 *.session/
 
+
+# Repos externos clonados (referenciados en docs/argos/PLAN_DESCARGA_OAM.md, no incrustados)
+tools/deutschland/
+tools/european-company-registers/
+.continue/

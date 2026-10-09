@@ -1,0 +1,26 @@
+{
+  "R2": 0.022368625874169212,
+  "F_stat": 0.7550541782761722,
+  "F_pvalue": 0.5563742348992979,
+  "params": {
+    "const": 6.850345361852588,
+    "kam_max_severity": -3.875101289384717,
+    "dummy_Baja_Cara": -12.578251608001615,
+    "interaccion_sev_bajacara": 3.875695178891855,
+    "quality_score": 0.0976708240066155
+  },
+  "pvalues": {
+    "const": 0.600723244094259,
+    "kam_max_severity": 0.5133552819526007,
+    "dummy_Baja_Cara": 0.38278057271393134,
+    "interaccion_sev_bajacara": 0.7432584432687396,
+    "quality_score": 0.6356034143693507
+  },
+  "tvalues": {
+    "const": 0.5246258688035743,
+    "kam_max_severity": -0.6553931161854283,
+    "dummy_Baja_Cara": -0.8757060852169211,
+    "interaccion_sev_bajacara": 0.32822921590594667,
+    "quality_score": 0.47495575310099075
+  }
+}

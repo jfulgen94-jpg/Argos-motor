@@ -27,14 +27,8 @@ class KAMExtractor:
         Ejecuta la extracción sobre un fragmento de texto del informe de auditoría.
         Devuelve una lista de registros listos para insertar en la tabla `audit_kams`.
         """
-        agent = self.router.route(task_type="batch_confidential")
-        prompt = self.prompt_template.replace("{filing_text}", filing_text[:12000]) if self.prompt_template else filing_text
-        
-        raw_response = await agent.extract_kams(prompt)
-        
-        # Parsear respuesta estructurada
+    def _process_response(self, raw_response: Any, entity_lei: str, fiscal_year: int, doc_id: str, method: str = "azure_openai_mini") -> List[Dict[str, Any]]:
         if isinstance(raw_response, dict):
-            # Extraer choices si viene en formato OpenAI completion
             if "choices" in raw_response:
                 content = raw_response["choices"][0]["message"]["content"]
                 parsed_data = json.loads(content)
@@ -48,7 +42,7 @@ class KAMExtractor:
         audit_firm = parsed_data.get("audit_firm", "UNKNOWN")
         signing_partner = parsed_data.get("signing_partner")
         audit_opinion = parsed_data.get("audit_opinion", "UNQUALIFIED")
-        has_going_concern = parsed_data.get("has_going_concern", False)
+        has_going_concern = bool(parsed_data.get("has_going_concern", False))
         
         results = []
         for kam in parsed_data.get("kams", []):
@@ -64,12 +58,33 @@ class KAMExtractor:
                 "kam_title": kam.get("kam_title", "Sin título"),
                 "kam_topic": kam.get("kam_topic", "other"),
                 "severity": kam.get("severity", "MEDIUM"),
-                "risk_description": kam.get("risk_description"),
-                "audit_response": kam.get("audit_response"),
+                "risk_description": kam.get("risk_description", ""),
+                "audit_response": kam.get("audit_response", ""),
                 "text_span": kam.get("text_span", ""),
-                "extraction_method": "ollama_qwen14b",
+                "extraction_method": method,
                 "confidence_score": 0.95,
                 "human_validated": False,
             })
             
         return results
+
+    def extract_from_text_sync(self, filing_text: str, entity_lei: str, fiscal_year: int, doc_id: str, use_azure: bool = True) -> List[Dict[str, Any]]:
+        """Sincrónico con Azure OpenAI o enrutador."""
+        prompt = self.prompt_template.replace("{filing_text}", filing_text[:14000]) if self.prompt_template else filing_text
+        if use_azure:
+            from mod_07_ai_agents.src.azure_openai_agent import AzureOpenAIAgent
+            agent = AzureOpenAIAgent()
+            raw_response = agent.extract_kams_sync(prompt)
+            return self._process_response(raw_response, entity_lei, fiscal_year, doc_id, method=f"azure_{agent.deployment}")
+        else:
+            agent = self.router.route(task_type="batch_confidential")
+            raw_response = agent.extract_kams(prompt)
+            return self._process_response(raw_response, entity_lei, fiscal_year, doc_id, method="ollama")
+
+    async def extract_from_text(self, filing_text: str, entity_lei: str, fiscal_year: int, doc_id: str) -> List[Dict[str, Any]]:
+        """Asincrónico sobre el texto del informe de auditoría."""
+        prompt = self.prompt_template.replace("{filing_text}", filing_text[:14000]) if self.prompt_template else filing_text
+        agent = self.router.route(task_type="batch_confidential")
+        raw_response = await agent.extract_kams(prompt)
+        return self._process_response(raw_response, entity_lei, fiscal_year, doc_id, method="batch_confidential")
+

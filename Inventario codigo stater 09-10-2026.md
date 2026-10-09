@@ -1,0 +1,3115 @@
+# Inventario codigo stater 09/10/2026
+
+## Ultima actualizacion
+
+- Fecha: 2026-10-09
+- Carpeta auditada: Repositorio completo `Stater` (solo nombre y tipo de archivo)
+- Cambios principales: inventario regenerado recorriendo el arbol real; sin leer contenido ni ejecutar codigo.
+- Convencion: carpetas con mas de 25 archivos se resumen por extension; profundidad maxima 4; `ARGOS_DATA_DISK` no se clasifica; omitidos `.git`, `__pycache__`, `.pytest_cache`, `node_modules`.
+
+## Vision global
+
+- Archivos totales en el arbol: 93026
+- Carpetas de primer nivel: 19
+- Archivos sueltos en raiz por tipo:
+  - Markdown: 24
+  - Script Batch: 10
+  - JSON: 6
+  - Script Python: 5
+  - Log: 4
+  - Sin extension: 2
+  - Plantilla config: 1
+  - ZIP: 1
+  - Config TOML: 1
+  - Texto: 1
+  - Script Shell: 1
+  - Word: 1
+  - TAR: 1
+
+## Esquema de carpetas y archivos
+
+- [DIR] `.agents/` - 1 archivos
+  - [DIR] `rules/` - 1 archivos
+    - `autonomous.md` - Markdown
+- [DIR] `.continue/` - 2 archivos
+  - [DIR] `agents/` - 1 archivos
+    - `new-config.yaml` - Config YAML
+  - [DIR] `rules/` - 1 archivos
+    - `argos.md` - Markdown
+- [DIR] `.git/` - omitido (cache)
+- [DIR] `.pytest_cache/` - omitido (cache)
+- [DIR] `.vscode/` - 1 archivos
+  - `settings.json` - JSON
+- [DIR] `__pycache__/` - omitido (cache)
+- [DIR] `Argos_BD/` - 32273 archivos (resumen: .htm:14547, .txt:14062, .md:3145, .csv:339, .py:99, .json:73)
+  - [DIR] `EEUU/` - 32272 archivos (resumen: .htm:14547, .txt:14062, .md:3145, .csv:339, .py:99, .json:73)
+    - [DIR] `CCA de la SEC/` - 8466 archivos (resumen: .htm:8466)
+      - [DIR] `Bolsa_A_SFI/` - 1004 archivos (resumen: .htm:1004)
+        - (1004 archivos directos: HTML:1004)
+      - [DIR] `Bolsa_B_Control_Normal/` - 749 archivos (resumen: .htm:749)
+        - (749 archivos directos: HTML:749)
+      - [DIR] `Bolsa_C_Control_Deteriorado/` - 452 archivos (resumen: .htm:452)
+        - (452 archivos directos: HTML:452)
+      - [DIR] `Panel_Multianio/` - 6261 archivos (resumen: .htm:6261)
+        - [DIR] `A_SFI/` - 2760 archivos (no desglosado, profundidad)
+        - [DIR] `B_Control_Normal/` - 2364 archivos (no desglosado, profundidad)
+        - [DIR] `C_Control_Deteriorado/` - 1137 archivos (no desglosado, profundidad)
+    - [DIR] `CCA_BENCHMARK/` - 4480 archivos (resumen: .htm:4480)
+      - [DIR] `2020/` - 896 archivos (resumen: .htm:896)
+        - (896 archivos directos: HTML:896)
+      - [DIR] `2021/` - 896 archivos (resumen: .htm:896)
+        - (896 archivos directos: HTML:896)
+      - [DIR] `2022/` - 896 archivos (resumen: .htm:896)
+        - (896 archivos directos: HTML:896)
+      - [DIR] `2023/` - 896 archivos (resumen: .htm:896)
+        - (896 archivos directos: HTML:896)
+      - [DIR] `2024/` - 896 archivos (resumen: .htm:896)
+        - (896 archivos directos: HTML:896)
+    - [DIR] `d_macro_txt/` - 826 archivos (resumen: .txt:826)
+      - [DIR] `data/` - 826 archivos (resumen: .txt:826)
+        - [DIR] `daily/` - 826 archivos (no desglosado, profundidad)
+    - [DIR] `d_us_txt/` - 13169 archivos (resumen: .txt:13169)
+      - [DIR] `data/` - 13169 archivos (resumen: .txt:13169)
+        - [DIR] `daily/` - 13169 archivos (no desglosado, profundidad)
+    - [DIR] `output_cam_EEUU/` - 304 archivos (resumen: .csv:100, .txt:67, .json:66, .md:32, .htm:22, .py:14)
+      - [DIR] `00_README_Y_REPRODUCCION/` - 7 archivos
+        - `changelog.md` - Markdown
+        - `diccionario_datos.md` - Markdown
+        - `environment.yml` - Config YAML
+        - `manifest_sha256.csv` - CSV
+        - `protocolo_investigacion.md` - Markdown
+        - `README.md` - Markdown
+        - `requirements.txt` - Texto
+      - [DIR] `01_DATOS_BRUTOS_NO_MODIFICAR/` - 8 archivos
+        - [DIR] `company_tickers/` - 1 archivos
+          - `company_tickers_cik.csv` - CSV
+        - [DIR] `external_sources/` - 1 archivos
+          - `standards_regulatory_sources.csv` - CSV
+        - [DIR] `filings_index/` - 1 archivos
+          - `sec_filings_master_index.csv` - CSV
+        - [DIR] `prices_adjusted/` - 1 archivos
+          - `prices_adjusted_metadata.csv` - CSV
+        - [DIR] `prices_raw/` - 1 archivos
+          - `prices_raw_metadata.csv` - CSV
+        - [DIR] `sec_companyfacts/` - 1 archivos
+          - `companyfacts_metadata_manifest.csv` - CSV
+        - [DIR] `sec_submissions/` - 1 archivos
+          - `submissions_metadata_manifest.csv` - CSV
+        - `README_modulo_01.md` - Markdown
+      - [DIR] `02_FILINGS_POR_EMPRESA/` - 184 archivos (resumen: .txt:66, .json:66, .csv:29, .htm:22, .md:1)
+        - [DIR] `CIK_0000320193/` - 41 archivos (no desglosado, profundidad)
+        - [DIR] `CIK_0000789019/` - 41 archivos (no desglosado, profundidad)
+        - [DIR] `CIK_0001428589/` - 33 archivos (no desglosado, profundidad)
+        - [DIR] `CIK_0001442145/` - 33 archivos (no desglosado, profundidad)
+        - [DIR] `CIK_0001660280/` - 33 archivos (no desglosado, profundidad)
+        - `company_master.csv` - CSV
+        - `filings_manifest_all_firms.csv` - CSV
+        - `README_modulo_02.md` - Markdown
+      - [DIR] `03_EXTRACCION_CAM/` - 29 archivos (resumen: .csv:17, .md:11, .py:1)
+        - [DIR] `audit_v1/` - 20 archivos
+          - (20 archivos directos: CSV:10, Markdown:9, Script Python:1)
+        - `cam_coding_protocol.md` - Markdown
+        - `cam_dictionary.csv` - CSV
+        - `cam_document_level.csv` - CSV
+        - `cam_extraction_log.csv` - CSV
+        - `cam_item_level.csv` - CSV
+        - `cam_manual_review.csv` - CSV
+        - `cam_text_spans.csv` - CSV
+        - `interrater_reliability.csv` - CSV
+        - `README_modulo_03.md` - Markdown
+      - [DIR] `04_FUNDAMENTALES/` - 20 archivos
+        - [DIR] `fundamental_baskets/` - 11 archivos
+          - `basket_6groups_panel.csv` - CSV
+          - `basket_assignment_log.csv` - CSV
+          - `basket_baja_barata.csv` - CSV
+          - `basket_baja_cara.csv` - CSV
+          - `basket_buena_barata.csv` - CSV
+          - `basket_buena_cara.csv` - CSV
+          - `basket_deteriorated.csv` - CSV
+          - `basket_good.csv` - CSV
+          - `basket_intermediate.csv` - CSV
+          - `basket_media_barata.csv` - CSV
+          - `basket_media_cara.csv` - CSV
+        - `accounting_quality.csv` - CSV
+        - `fundamental_baskets.csv` - CSV
+        - `fundamental_quality_score.csv` - CSV
+        - `fundamentals_annual_panel.csv` - CSV
+        - `fundamentals_raw_xbrl.csv` - CSV
+        - `missingness_report.csv` - CSV
+        - `ratio_definitions.md` - Markdown
+        - `ratios_derived.csv` - CSV
+        - `README_modulo_04.md` - Markdown
+      - [DIR] `05_PRECIOS_Y_EVENTOS/` - 9 archivos
+        - `abnormal_returns.csv` - CSV
+        - `benchmark_returns.csv` - CSV
+        - `delisting_and_survivorship.csv` - CSV
+        - `event_dates.csv` - CSV
+        - `market_calendar.csv` - CSV
+        - `prices_daily_adjusted.csv` - CSV
+        - `prices_daily_raw.csv` - CSV
+        - `README_modulo_05.md` - Markdown
+        - `returns_event_windows.csv` - CSV
+      - [DIR] `06_MUESTRAS_ESTUDIO/` - 9 archivos
+        - `exclusions_log.csv` - CSV
+        - `README_modulo_06.md` - Markdown
+        - `sample_cam_vs_no_cam.csv` - CSV
+        - `sample_flow.csv` - CSV
+        - `sample_fundamental_baskets.csv` - CSV
+        - `sample_interaction_cam_fundamentals.csv` - CSV
+        - `sample_master.csv` - CSV
+        - `sample_severity.csv` - CSV
+        - `sample_sp1500_benchmark.csv` - CSV
+      - [DIR] `07_SCRIPTS/` - 14 archivos
+        - `00_download_sec.py` - Script Python
+        - `01_validate_filings.py` - Script Python
+        - `02_extract_cam.py` - Script Python
+        - `03_build_fundamentals.py` - Script Python
+        - `04_classify_severity.py` - Script Python
+        - `05_build_events.py` - Script Python
+        - `06_calculate_returns.py` - Script Python
+        - `07_build_samples.py` - Script Python
+        - `08_descriptive_statistics.py` - Script Python
+        - `09_event_study.py` - Script Python
+        - `10_panel_regressions.py` - Script Python
+        - `11_robustness.py` - Script Python
+        - `12_tables_figures.py` - Script Python
+        - `README_modulo_07.md` - Markdown
+      - [DIR] `08_RESULTADOS/` - 22 archivos
+        - [DIR] `figures/` - 3 archivos
+          - `figura_1_flujo_muestral.md` - Markdown
+          - `figura_2_distribucion_severidad.md` - Markdown
+          - `figura_3_curvas_rentabilidad_acumulada.md` - Markdown
+        - [DIR] `tables/` - 7 archivos
+          - `tabla_1_descriptiva_muestras.md` - Markdown
+          - `tabla_2_frecuencia_topicos_cam.md` - Markdown
+          - `tabla_3_rentabilidad_cruzada_bolsas.md` - Markdown
+          - `tabla_3b_rentabilidad_cruzada_6grupos_calidad_precio.csv` - CSV
+          - `tabla_3b_rentabilidad_cruzada_6grupos_calidad_precio.md` - Markdown
+          - `tabla_4_regresiones_panel_ols.md` - Markdown
+          - `tabla_5_comparativa_sp1500_benchmark.md` - Markdown
+        - `audit_cam_row_counts.csv` - CSV
+        - `audit_file_list_extraction_cam.csv` - CSV
+        - `cam_frequency_by_topic.csv` - CSV
+        - `cam_frequency_by_year.csv` - CSV
+        - `coverage_report.csv` - CSV
+        - `descriptive_statistics.csv` - CSV
+        - `event_study_results.csv` - CSV
+        - `fundamental_basket_statistics.csv` - CSV
+        - `interaction_results.csv` - CSV
+        - `README_modulo_08.md` - Markdown
+        - `regression_results.csv` - CSV
+        - `robustness_results.csv` - CSV
+      - `auditoria_cam.duckdb` - DuckDB
+      - `auditoria_cam.duckdb.wal` - Otro (.wal)
+    - [DIR] `output_csrd_impacto EEUU/` - 4990 archivos (resumen: .md:3098, .htm:1579, .csv:217, .py:85, .json:7, (sin ext):2)
+      - [DIR] `00_PROTOCOLO_Y_REGLAS/` - 5 archivos
+        - [DIR] `__pycache__/` - omitido (cache)
+        - `diccionario_datapoints_esrs.json` - JSON
+        - `matriz_doble_materialidad.json` - JSON
+        - `README.md` - Markdown
+        - `reglas_bloqueo_d1_d6.py` - Script Python
+        - `taxonomia_controversias_externas.json` - JSON
+      - [DIR] `01_DESCARGA_FILINGS/` - 3 archivos
+        - `ingest_sec_esg_sections.py` - Script Python
+        - `README.md` - Markdown
+        - `sec_esg_manifest.csv` - CSV
+      - [DIR] `02_EXTRACCION_DATAPOINTS_ESRS/` - 5 archivos
+        - `extract_e1_climate.py` - Script Python
+        - `extract_e2_e5_environment.py` - Script Python
+        - `extract_g1_governance.py` - Script Python
+        - `extract_s1_s4_social.py` - Script Python
+        - `README.md` - Markdown
+      - [DIR] `03_DATOS_EXTERNOS_CONTROVERSIAS/` - 12 archivos
+        - [DIR] `07_DATOS_EXTERNOS_IMPACTO/` - 9 archivos
+          - `consumer_complaints.csv` - CSV
+          - `environmental_incidents.csv` - CSV
+          - `external_sources_manifest.csv` - CSV
+          - `litigation_cases.csv` - CSV
+          - `NGO_reports.csv` - CSV
+          - `official_inspections.csv` - CSV
+          - `product_recalls.csv` - CSV
+          - `regulator_sanctions.csv` - CSV
+          - `workplace_incidents.csv` - CSV
+        - `generar_dataset_hechos_reales.py` - Script Python
+        - `ingest_external_databases.py` - Script Python
+        - `README.md` - Markdown
+      - [DIR] `04_CONCILIACION_DATOS/` - 3 archivos
+        - `conciliar_afirmaciones_vs_hechos.py` - Script Python
+        - `entity_resolution.py` - Script Python
+        - `README.md` - Markdown
+      - [DIR] `05_DETECTOR_GREENWASHING/` - 3 archivos
+        - [DIR] `__pycache__/` - omitido (cache)
+        - `generar_alertas_greenwashing.py` - Script Python
+        - `nlp_contradiction_engine.py` - Script Python
+        - `README.md` - Markdown
+      - [DIR] `06_MOTOR_SCORING/` - 6 archivos
+        - [DIR] `__pycache__/` - omitido (cache)
+        - `evaluador_maestro_balance.py` - Script Python
+        - `panel_scores_sostenibilidad.csv` - CSV
+        - `panel_scores_sostenibilidad_3005.csv` - CSV
+        - `README.md` - Markdown
+        - `score_impacto.py` - Script Python
+        - `score_integridad.py` - Script Python
+      - [DIR] `07_CESTAS_TEJIDO_EMPRESARIAL/` - 5 archivos
+        - [DIR] `__pycache__/` - omitido (cache)
+        - `cesta_alto_riesgo_greenwashing.csv` - CSV
+        - `cesta_lideres_impacto_real.csv` - CSV
+        - `cesta_transicion_creible.csv` - CSV
+        - `generar_cestas_mercado.py` - Script Python
+        - `README.md` - Markdown
+      - [DIR] `07_DATOS_EXTERNOS_IMPACTO/` - 46 archivos (resumen: .csv:34, .md:5, .json:4, .py:3)
+        - [DIR] `00_RAW_OFFICIAL/` - 4 archivos
+          - `epa_echo_enforcement_actions_2023_2025.json` - JSON
+          - `fda_cpsc_class1_recalls_2023_2025.json` - JSON
+          - `osha_enforcement_fatalities_2023_2025.json` - JSON
+          - `sec_cfpb_enforcement_actions_2023_2025.json` - JSON
+        - [DIR] `01_NORMALIZED/` - 0 archivos
+        - [DIR] `02_ENTITY_RESOLUTION/` - 3 archivos
+          - `entity_master.csv` - CSV
+          - `parent_subsidiary_facility_map.csv` - CSV
+          - `unresolved_entities.csv` - CSV
+        - [DIR] `03_EVIDENCE/` - 1 archivos
+          - `external_controversies_evidence.csv` - CSV
+        - [DIR] `04_LINKED_TO_ISSUERS/` - 1 archivos
+          - `issuers_external_controversies.csv` - CSV
+        - [DIR] `05_QUALITY_REPORTS/` - 11 archivos
+          - `auditar_evidencias_cesta_roja.py` - Script Python
+          - `data_provenance_register.csv` - CSV
+          - `external_data_audit_report.md` - Markdown
+          - `red_basket_audit.csv` - CSV
+          - `red_cases_evidence_audit.csv` - CSV
+          - `red_cases_evidence_audit.md` - Markdown
+          - `red_cases_recomputed.csv` - CSV
+          - `red_cases_unresolved.csv` - CSV
+          - `source_coverage_summary.csv` - CSV
+          - `source_query_registry.csv` - CSV
+          - `sustainability_reporting_applicability.csv` - CSV
+        - [DIR] `06_SYNTHETIC_CALIBRATION_SEPARATED/` - 8 archivos
+          - `calib_consumer_complaints.csv` - CSV
+          - `calib_environmental_incidents.csv` - CSV
+          - `calib_litigation_cases.csv` - CSV
+          - `calib_NGO_reports.csv` - CSV
+          - `calib_official_inspections.csv` - CSV
+          - `calib_product_recalls.csv` - CSV
+          - `calib_regulator_sanctions.csv` - CSV
+          - `calib_workplace_incidents.csv` - CSV
+        - (18 archivos directos: CSV:13, Markdown:3, Script Python:2)
+      - [DIR] `08_FICHAS_CIUDADANAS_BALANCE/` - 3011 archivos (resumen: .md:3010, .py:1)
+        - [DIR] `__pycache__/` - omitido (cache)
+        - [DIR] `AMARILLAS/` - 1328 archivos (no desglosado, profundidad)
+        - [DIR] `dossiers/` - 3 archivos
+          - `balance_OIL_GREENWASH_2025.md` - Markdown
+          - `balance_RETAIL_TRANSITION_2025.md` - Markdown
+          - `balance_TECH_LEADER_2025.md` - Markdown
+        - [DIR] `ROJAS/` - 3 archivos
+          - `balance_CC_2025.md` - Markdown
+          - `balance_TSN_2025.md` - Markdown
+          - `balance_WFC_2025.md` - Markdown
+        - [DIR] `VERDES/` - 1675 archivos (no desglosado, profundidad)
+        - `generar_balance_general_empresa.py` - Script Python
+        - `README.md` - Markdown
+      - [DIR] `09_RESULTADOS_ESTADISTICOS/` - 6 archivos
+        - [DIR] `__pycache__/` - omitido (cache)
+        - `concentracion_danos_y_multas_sector.csv` - CSV
+        - `distribucion_global_cestas.csv` - CSV
+        - `prevalencia_greenwashing_sector.csv` - CSV
+        - `radiografia_tejido_eeuu.py` - Script Python
+        - `README.md` - Markdown
+        - `tasa_bloqueo_critico_por_sector.csv` - CSV
+      - [DIR] `09_TFM_AUDIT/` - 45 archivos (resumen: .csv:24, .md:16, .py:3, (sin ext):2)
+        - [DIR] `v1_0_closure/` - 45 archivos (no desglosado, profundidad)
+      - [DIR] `10_REPRODUCIBILIDAD_TFM/` - 4 archivos
+        - `pipeline_maestro_estudio3.py` - Script Python
+        - `procesar_universo_3005.py` - Script Python
+        - `README.md` - Markdown
+        - `schema.sql` - SQL
+      - [DIR] `10_TFM_ECONOMETRIC_FINAL/` - 83 archivos (resumen: .csv:48, .md:22, .py:13)
+        - [DIR] `00_PROTOCOL_AND_HYPOTHESES/` - 3 archivos
+          - `hypotheses_register.csv` - CSV
+          - `protocol_v1.md` - Markdown
+          - `variable_timing_rules.md` - Markdown
+        - [DIR] `01_RAW_SOURCES_IMMUTABLE/` - 0 archivos
+        - [DIR] `02_ENTITY_RESOLUTION/` - 3 archivos
+          - `entity_master_final.csv` - CSV
+          - `entity_resolution_audit.md` - Markdown
+          - `parent_subsidiary_facility_map_final.csv` - CSV
+        - [DIR] `03_EXTERNAL_CONTROVERSIES/` - 2 archivos
+          - `external_events_panel.csv` - CSV
+          - `source_query_registry_final.csv` - CSV
+        - [DIR] `04_SUSTAINABILITY_DISCLOSURES/` - 3 archivos
+          - `disclosure_claims_panel.csv` - CSV
+          - `disclosure_manual_validation.csv` - CSV
+          - `disclosure_nlp_dictionary.csv` - CSV
+        - [DIR] `05_CAM_PANEL/` - 2 archivos
+          - `cam_panel_firm_year.csv` - CSV
+          - `cam_panel_item_level.csv` - CSV
+        - [DIR] `06_FINANCIAL_PANEL/` - 1 archivos
+          - `financial_panel_firm_year.csv` - CSV
+        - [DIR] `07_MARKET_EVENTS/` - 2 archivos
+          - `market_event_panel.csv` - CSV
+          - `returns_event_windows.csv` - CSV
+        - [DIR] `08_ANALYTIC_SAMPLES/` - 0 archivos
+        - [DIR] `09_SCORE_CONSTRUCTION/` - 5 archivos
+          - `panel_scores_final.csv` - CSV
+          - `score_percentile_buckets.csv` - CSV
+          - `score_percentiles.csv` - CSV
+          - `score_percentiles_by_evidence_status.csv` - CSV
+          - `score_percentiles_by_sector.csv` - CSV
+        - [DIR] `10_ECONOMETRIC_MODELS/` - 1 archivos
+          - `regression_models_master.csv` - CSV
+        - [DIR] `11_ROBUSTNESS/` - 2 archivos
+          - `multiple_testing_adjustments.csv` - CSV
+          - `robustness_matrix.csv` - CSV
+        - [DIR] `12_RESULTS/` - 1 archivos
+          - `hypothesis_results_final.csv` - CSV
+        - [DIR] `13_REPRODUCIBILITY/` - 2 archivos
+          - `manifest_sha256_final.csv` - CSV
+          - `unit_test_results.csv` - CSV
+        - [DIR] `14_TFM_REPORT/` - 5 archivos
+          - [DIR] `figures/` - 0 archivos
+          - [DIR] `tables/` - 1 archivos
+            - `table_1_sample_descriptives.md` - Markdown
+          - `data_dictionary.csv` - CSV
+          - `limitations_and_reproducibility.md` - Markdown
+          - `methodology_appendix.md` - Markdown
+          - `tfm_empirical_study_report.md` - Markdown
+        - [DIR] `15_CLASSIFICATION_AUDIT/` - 17 archivos
+          - [DIR] `corrected_citizen_cards/` - 0 archivos
+          - (17 archivos directos: CSV:8, Markdown:8, Script Python:1)
+        - [DIR] `15_HUMAN_REVIEW/` - 1 archivos
+          - `human_audit_checkpoints.md` - Markdown
+        - [DIR] `16_FINAL_CLASSIFICATION/` - 32 archivos (no desglosado, profundidad)
+        - `generar_documentacion_tfm.py` - Script Python
+      - [DIR] `17_VERIFICATION_LEVELS_FINAL/` - 43 archivos (resumen: .csv:20, .py:15, .md:8)
+        - [DIR] `00_REPRODUCIBILITY/` - 3 archivos
+          - `file_inventory.csv` - CSV
+          - `README_reproducibility.md` - Markdown
+          - `source_hash_manifest.csv` - CSV
+        - [DIR] `02_ENTITY_RESOLUTION/` - 1 archivos
+          - `parent_subsidiary_facility_map_final.csv` - CSV
+        - [DIR] `04_DISCLOSURE_VERIFICATION/` - 2 archivos
+          - `corporate_reports_register.csv` - CSV
+          - `disclosure_quality_audit.csv` - CSV
+        - [DIR] `15_HUMAN_REVIEW/` - 3 archivos
+          - `human_verification_protocol.md` - Markdown
+          - `human_verification_sample.csv` - CSV
+          - `human_verification_template.csv` - CSV
+        - [DIR] `tests/` - 13 archivos
+          - `test_2762_issuers.py` - Script Python
+          - `test_3005_rows.py` - Script Python
+          - `test_filing_period_alignment.py` - Script Python
+          - `test_hard_gate_evidence.py` - Script Python
+          - `test_no_record_not_green.py` - Script Python
+          - `test_no_synthetic_final_panel.py` - Script Python
+          - `test_percentile_monotonicity.py` - Script Python
+          - `test_report_assurance_fields.py` - Script Python
+          - `test_score_range.py` - Script Python
+          - `test_source_provenance.py` - Script Python
+          - `test_unique_security_unit.py` - Script Python
+          - `test_v3_requires_evidence.py` - Script Python
+          - `test_verification_level_rules.py` - Script Python
+        - (21 archivos directos: CSV:13, Markdown:6, Script Python:2)
+      - [DIR] `18_CANONICAL_FINAL_STUDY/` - 119 archivos (resumen: .csv:64, .py:28, .md:26, .svg:1)
+        - [DIR] `00_README_AND_VERSIONING/` - 3 archivos
+          - `canonical_version_manifest.csv` - CSV
+          - `final_status.md` - Markdown
+          - `full_file_inventory.csv` - CSV
+        - [DIR] `01_CANONICAL_DATA/` - 12 archivos
+          - `cam_panel_firm_year.csv` - CSV
+          - `corporate_reports_register.csv` - CSV
+          - `external_events_panel.csv` - CSV
+          - `financial_panel_firm_year.csv` - CSV
+          - `issuer_level_panel_2762.csv` - CSV
+          - `score_distribution_by_band.csv` - CSV
+          - `score_distribution_by_decile.csv` - CSV
+          - `score_percentile_distribution.csv` - CSV
+          - `security_level_panel_3005.csv` - CSV
+          - `source_query_registry_final.csv` - CSV
+          - `verification_summary_2762.csv` - CSV
+          - `verification_summary_3005.csv` - CSV
+        - [DIR] `02_CANONICAL_DOCUMENTATION/` - 3 archivos
+          - `entity_hierarchy.md` - Markdown
+          - `legacy_44_percent_exclusion.md` - Markdown
+          - `unit_of_observation.md` - Markdown
+        - [DIR] `03_CANONICAL_RESULTS/` - 1 archivos
+          - `legacy_vs_canonical_classification.csv` - CSV
+        - [DIR] `04_CANONICAL_REPORTS/` - 9 archivos
+          - [DIR] `citizen_cards/` - 4 archivos
+            - `AAPL_ficha_ciudadana.md` - Markdown
+            - `CC_ficha_ciudadana.md` - Markdown
+            - `MSFT_ficha_ciudadana.md` - Markdown
+            - `TSN_ficha_ciudadana.md` - Markdown
+          - `canonical_study_report.md` - Markdown
+          - `data_dictionary.csv` - CSV
+          - `empirical_status_and_limitations.md` - Markdown
+          - `score_distribution_explained.md` - Markdown
+          - `tfm_results_summary.md` - Markdown
+        - [DIR] `05_CANONICAL_SCRIPTS/` - 1 archivos
+          - `run_canonical_pipeline.py` - Script Python
+        - [DIR] `06_ARCHIVED_HISTORICAL_VERSIONS/` - 1 archivos
+          - `README.md` - Markdown
+        - [DIR] `07_SYNTHETIC_CALIBRATION_ARCHIVE/` - 1 archivos
+          - `README.md` - Markdown
+        - [DIR] `08_REPRODUCIBILITY/` - 18 archivos
+          - [DIR] `tests/` - 14 archivos
+            - `test_2762_issuer_rows.py` - Script Python
+            - `test_3005_security_rows.py` - Script Python
+            - `test_canonical_source_only.py` - Script Python
+            - `test_documentation_matches_data.py` - Script Python
+            - `test_hash_manifest.py` - Script Python
+            - `test_historical_files_not_read.py` - Script Python
+            - `test_legacy_44_percent_excluded.py` - Script Python
+            - `test_no_synthetic_canonical_outputs.py` - Script Python
+            - `test_percentiles_consistency.py` - Script Python
+            - `test_score_band_consistency.py` - Script Python
+            - `test_unique_keys.py` - Script Python
+            - `test_unit_of_observation.py` - Script Python
+            - `test_v3_evidence_requirement.py` - Script Python
+            - `test_verification_level_consistency.py` - Script Python
+          - `all_source_hashes.csv` - CSV
+          - `final_sha256_manifest.csv` - CSV
+          - `test_results.csv` - CSV
+          - `test_results.md` - Markdown
+        - [DIR] `09_HUMAN_REVIEW_PENDING/` - 0 archivos
+        - [DIR] `10_MULTIDIMENSIONAL_DESCRIPTIVE_ANALYSIS/` - 70 archivos (no desglosado, profundidad)
+      - [DIR] `datos_final/` - 1588 archivos (resumen: .htm:1579, .csv:8, .md:1)
+        - [DIR] `01_PANELES_CANONICOS/` - 2 archivos
+          - `issuer_level_panel_2762.csv` - CSV
+          - `security_level_panel_3005.csv` - CSV
+        - [DIR] `02_ANALISIS_SECTORIAL/` - 1 archivos
+          - `sector_dimension_summary.csv` - CSV
+        - [DIR] `03_PRACTICAS_LABORALES/` - 2 archivos
+          - `bottom_20_labor_deficit_companies.csv` - CSV
+          - `top_20_labor_excellence_companies.csv` - CSV
+        - [DIR] `04_CORRELACIONES_Y_AUDITORIA/` - 1 archivos
+          - `dimension_correlations.csv` - CSV
+        - [DIR] `05_REPRODUCIBILIDAD_Y_HASHES/` - 1 archivos
+          - `final_sha256_manifest.csv` - CSV
+        - [DIR] `06_SEC_FORMS_10K/` - 1579 archivos (no desglosado, profundidad)
+        - `indice_archivos_datos_final.csv` - CSV
+        - `README.md` - Markdown
+      - `construir_estudio_canonico_18.py` - Script Python
+      - `construir_tfm_econometric_final.py` - Script Python
+      - `copiar_archivos_datos_final.py` - Script Python
+    - [DIR] `output_real_sfi EEUU/` - 37 archivos (resumen: .csv:22, .md:15)
+      - [DIR] `01_overview/` - 3 archivos
+        - `index_data_room.md` - Markdown
+        - `README_intrinsec_value_SFI.md` - Markdown
+        - `version_changelog.csv` - CSV
+      - [DIR] `02_universe/` - 3 archivos
+        - `universe_coverage_summary.csv` - CSV
+        - `universe_filters_rules.md` - Markdown
+        - `universe_master.csv` - CSV
+      - [DIR] `03_fundamentals_panel/` - 2 archivos
+        - `fundamentals_panel_notes.md` - Markdown
+        - `fundamentals_panel_pit.csv` - CSV
+      - [DIR] `04_prices_returns/` - 2 archivos
+        - `benchmark_indices.csv` - CSV
+        - `returns_periodic.csv` - CSV
+      - [DIR] `05_strategy_membership/` - 6 archivos
+        - `informe_cola_derecha.md` - Markdown
+        - `strategy_constituents_by_date.csv` - CSV
+        - `strategy_eligibility_panel.csv` - CSV
+        - `strategy_rules_sfi.md` - Markdown
+        - `tabla_validacion.csv` - CSV
+        - `tabla_validacion.md` - Markdown
+      - [DIR] `06_factor_definitions/` - 4 archivos
+        - `cifras_corte_estrategias.md` - Markdown
+        - `factor_construction_methodology.md` - Markdown
+        - `factor_ic_time_series.csv` - CSV
+        - `factor_scores_by_date.csv` - CSV
+      - [DIR] `07_sector_macro/` - 5 archivos
+        - `macro_regime_dates.csv` - CSV
+        - `sector_macro_methodology.md` - Markdown
+        - `sector_performance_by_regime.csv` - CSV
+        - `sector_returns_annual.csv` - CSV
+        - `sector_strategy_correlation.csv` - CSV
+      - [DIR] `08_backtest_outputs/` - 6 archivos
+        - `backtest_assumptions.md` - Markdown
+        - `informe_analitico_backtest.md` - Markdown
+        - `strategy_advanced_metrics.csv` - CSV
+        - `strategy_attribution_by_sector.csv` - CSV
+        - `strategy_drawdowns_complete.csv` - CSV
+        - `strategy_nav_curve.csv` - CSV
+      - [DIR] `09_data_dictionary/` - 3 archivos
+        - `data_dictionary_factors.csv` - CSV
+        - `data_dictionary_fundamentals.csv` - CSV
+        - `data_dictionary_prices.csv` - CSV
+      - [DIR] `10_methodology_notes/` - 3 archivos
+        - `data_cleaning_process.md` - Markdown
+        - `outlier_handling.md` - Markdown
+        - `survivorship_bias_treatment.md` - Markdown
+  - `.gitkeep` - Sin extension
+- [DIR] `ARGOS_DATA_DISK/` - NO CLASIFICAR AUN (51516 archivos, no detallado)
+- [DIR] `argos_docs/` - 1 archivos
+  - `.gitkeep` - Sin extension
+- [DIR] `ARGOS_MOTOR/` - 7256 archivos (resumen: .xml:2717, .json:1851, .zip:550, .xhtml:543, .xsd:499, .htm:279)
+  - [DIR] `.github/` - 1 archivos
+    - [DIR] `workflows/` - 1 archivos
+      - `ci.yml` - Config YAML
+  - [DIR] `.pytest_cache/` - omitido (cache)
+  - [DIR] `__pycache__/` - omitido (cache)
+  - [DIR] `archive/` - 26 archivos (resumen: .py:26)
+    - [DIR] `legacy_scripts_pre_v3/` - 26 archivos (resumen: .py:26)
+      - [DIR] `__pycache__/` - omitido (cache)
+      - (26 archivos directos: Script Python:26)
+  - [DIR] `audits/` - 47 archivos (resumen: .json:36, .md:7, (sin ext):2, .py:1, .html:1)
+    - [DIR] `manifests/` - 35 archivos (resumen: .json:35)
+      - (35 archivos directos: JSON:35)
+    - [DIR] `reports/` - 1 archivos
+      - `.gitkeep` - Sin extension
+    - [DIR] `snapshots/` - 2 archivos
+      - `.gitkeep` - Sin extension
+      - `progress_status.json` - JSON
+    - `ARGOS-MOTOR-AUDIT-PLAN-v1.md` - Markdown
+    - `AUDIT_DELTA_INGESTION_ES_v4.md` - Markdown
+    - `AUDIT_ESPANNA_UNIVERSAL_SANEADO.md` - Markdown
+    - `audit_forensics_spain.py` - Script Python
+    - `AUDIT_FRANCE_UNIVERSAL.md` - Markdown
+    - `audit_report_spain.html` - HTML
+    - `AUDIT_SPAIN_FORENSIC_MASTER.md` - Markdown
+    - `AUDIT_UNIVERSE_DE_EXPANDIDO.md` - Markdown
+    - `AUDIT_UNIVERSE_ES_EXPANDIDO_TOTAL.md` - Markdown
+  - [DIR] `cloud/` - 45 archivos (resumen: .json:30, .md:7, .py:5, (sin ext):2, .html:1)
+    - [DIR] `__pycache__/` - omitido (cache)
+    - [DIR] `audits/` - 41 archivos (resumen: .json:30, .md:7, (sin ext):2, .py:1, .html:1)
+      - [DIR] `manifests/` - 29 archivos (resumen: .json:29)
+        - (29 archivos directos: JSON:29)
+      - [DIR] `reports/` - 1 archivos
+        - `.gitkeep` - Sin extension
+      - [DIR] `snapshots/` - 2 archivos
+        - `.gitkeep` - Sin extension
+        - `progress_status.json` - JSON
+      - `ARGOS-MOTOR-AUDIT-PLAN-v1.md` - Markdown
+      - `AUDIT_DELTA_INGESTION_ES_v4.md` - Markdown
+      - `AUDIT_ESPANNA_UNIVERSAL_SANEADO.md` - Markdown
+      - `audit_forensics_spain.py` - Script Python
+      - `AUDIT_FRANCE_UNIVERSAL.md` - Markdown
+      - `audit_report_spain.html` - HTML
+      - `AUDIT_SPAIN_FORENSIC_MASTER.md` - Markdown
+      - `AUDIT_UNIVERSE_DE_EXPANDIDO.md` - Markdown
+      - `AUDIT_UNIVERSE_ES_EXPANDIDO_TOTAL.md` - Markdown
+    - `auditor_clasificador_azure.py` - Script Python
+    - `azure_data_lake_sync.py` - Script Python
+    - `azure_metadata_inspector.py` - Script Python
+    - `scan_and_reorganize_datalake.py` - Script Python
+  - [DIR] `config/` - 62 archivos (resumen: .json:62)
+    - [DIR] `history/` - 32 archivos (resumen: .json:32)
+      - (32 archivos directos: JSON:32)
+    - [DIR] `ingestion_cells/` - 11 archivos
+      - [DIR] `BME_GROWTH_2020/` - 1 archivos
+        - `cell.json` - JSON
+      - [DIR] `BME_GROWTH_2021/` - 1 archivos
+        - `cell.json` - JSON
+      - [DIR] `BME_GROWTH_2022/` - 1 archivos
+        - `cell.json` - JSON
+      - [DIR] `BME_GROWTH_2023/` - 1 archivos
+        - `cell.json` - JSON
+      - [DIR] `BME_GROWTH_2024/` - 1 archivos
+        - `cell.json` - JSON
+      - [DIR] `MERCADO_CONTINUO_2020/` - 1 archivos
+        - `cell.json` - JSON
+      - [DIR] `MERCADO_CONTINUO_2021/` - 1 archivos
+        - `cell.json` - JSON
+      - [DIR] `MERCADO_CONTINUO_2022/` - 1 archivos
+        - `cell.json` - JSON
+      - [DIR] `MERCADO_CONTINUO_2023/` - 1 archivos
+        - `cell.json` - JSON
+      - [DIR] `MERCADO_CONTINUO_2024/` - 1 archivos
+        - `cell.json` - JSON
+      - `_SUMMARY.json` - JSON
+    - (19 archivos directos: JSON:19)
+  - [DIR] `data/` - 6068 archivos (resumen: .xml:2447, .json:1704, .zip:547, .xhtml:543, .xsd:413, .htm:279)
+    - [DIR] `ai_outputs/` - 3 archivos
+      - [DIR] `csrd/` - 1 archivos
+        - `.gitkeep` - Sin extension
+      - [DIR] `kams/` - 1 archivos
+        - `.gitkeep` - Sin extension
+      - [DIR] `raw_completions/` - 1 archivos
+        - `.gitkeep` - Sin extension
+    - [DIR] `catalogs/` - 8 archivos
+      - `audit_and_segment_all_countries.py` - Script Python
+      - `AUDIT_SEGMENTATION_EUROPE_SUMMARY.json` - JSON
+      - `bme_growth_clean_universe.json` - JSON
+      - `DIAGNOSTICO_ES.json` - JSON
+      - `LOCALIZADOR_FR_MEJORADO.json` - JSON
+      - `mercado_continuo_universe.json` - JSON
+      - `REVIEW_QUEUE_20260827_182217.csv` - CSV
+      - `REVIEW_QUEUE_LATEST.csv` - CSV
+    - [DIR] `exports/` - 1 archivos
+      - `.gitkeep` - Sin extension
+    - [DIR] `lake/` - 8 archivos
+      - [DIR] `duckdb/` - 3 archivos
+        - `.gitkeep` - Sin extension
+        - `stater_motor.duckdb` - DuckDB
+        - `stater_motor_ingest.duckdb` - DuckDB
+      - [DIR] `parquet/` - 4 archivos
+        - [DIR] `analytics/` - 1 archivos
+          - `.gitkeep` - Sin extension
+        - [DIR] `core_financials/` - 1 archivos
+          - `.gitkeep` - Sin extension
+        - [DIR] `raw_documents/` - 1 archivos
+          - `.gitkeep` - Sin extension
+        - [DIR] `staging_facts/` - 1 archivos
+          - `.gitkeep` - Sin extension
+      - `stater_lake.duckdb` - DuckDB
+    - [DIR] `quarantine_es/` - 0 archivos
+    - [DIR] `quarantine_forensic_retro/` - 519 archivos (resumen: .json:259, .xhtml:245, .html:14, .md:1)
+      - [DIR] `2020/` - 34 archivos (resumen: .json:17, .xhtml:17)
+        - [DIR] `AMS/` - 2 archivos
+          - `ams_2020_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `ams_2020_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `BBVA/` - 2 archivos
+          - `bbva_2020_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `bbva_2020_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `CABK/` - 2 archivos
+          - `cabk_2020_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `cabk_2020_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `CLNX/` - 2 archivos
+          - `clnx_2020_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `clnx_2020_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `ELE/` - 4 archivos
+          - `549300LHK07F2CHV4X31-2020-12-31.quarantine_reason.json` - JSON
+          - `549300LHK07F2CHV4X31-2020-12-31.xhtml` - XHTML
+          - `ele_2020_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `ele_2020_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `ENG/` - 2 archivos
+          - `213800OU3FQKGM4M2U23-20201231.quarantine_reason.json` - JSON
+          - `213800OU3FQKGM4M2U23-20201231.xhtml` - XHTML
+        - [DIR] `FER/` - 2 archivos
+          - `fer_2020_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `fer_2020_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `GRF/` - 2 archivos
+          - `grf_2020_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `grf_2020_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `HLZ/` - 2 archivos
+          - `95980020140005309084-2020-12-31.quarantine_reason.json` - JSON
+          - `95980020140005309084-2020-12-31.xhtml` - XHTML
+        - [DIR] `IBE/` - 2 archivos
+          - `ibe_2020_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `ibe_2020_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `ITX/` - 2 archivos
+          - `itx_2020_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `itx_2020_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `MEL/` - 2 archivos
+          - `959800JRJW1CZ63R8P20-20201231.quarantine_reason.json` - JSON
+          - `959800JRJW1CZ63R8P20-20201231.xhtml` - XHTML
+        - [DIR] `NEIN/` - 2 archivos
+          - `959800FW4JL65YWSQ217-2020-12-31.quarantine_reason.json` - JSON
+          - `959800FW4JL65YWSQ217-2020-12-31.xhtml` - XHTML
+        - [DIR] `REP/` - 2 archivos
+          - `rep_2020_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `rep_2020_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `SAN/` - 2 archivos
+          - `san_2020_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `san_2020_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `TEF/` - 2 archivos
+          - `tef_2020_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `tef_2020_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+      - [DIR] `2021/` - 118 archivos (resumen: .json:59, .xhtml:58, .html:1)
+        - [DIR] `ACS/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20211231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20211231-es.xhtml` - XHTML
+        - [DIR] `ACX/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20211231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20211231-es.xhtml` - XHTML
+        - [DIR] `AENA/` - 2 archivos
+          - `959800R7U7E76YMJG243-2021-12-31-es.quarantine_reason.json` - JSON
+          - `959800R7U7E76YMJG243-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `AMP/` - 2 archivos
+          - `959800GZESQUFLUH5402-2021-12-31-ES.quarantine_reason.json` - JSON
+          - `959800GZESQUFLUH5402-2021-12-31-ES.xhtml` - XHTML
+        - [DIR] `AMS/` - 4 archivos
+          - `959800GQ29X3QTKYUM69-2021-12-31-es.quarantine_reason.json` - JSON
+          - `959800GQ29X3QTKYUM69-2021-12-31-es.xhtml` - XHTML
+          - `ams_2021_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `ams_2021_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `AYCO/` - 2 archivos
+          - `95980049KFSE6UNLSJ86-2021-12-31-es.quarantine_reason.json` - JSON
+          - `95980049KFSE6UNLSJ86-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `AZK/` - 2 archivos
+          - `959800AXZW3EBUY24W90-2021-12-31-es.quarantine_reason.json` - JSON
+          - `959800AXZW3EBUY24W90-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `BBVA/` - 4 archivos
+          - `5493007SJLLCTM6J6M37-2021-12-31-es.quarantine_reason.json` - JSON
+          - `5493007SJLLCTM6J6M37-2021-12-31-es.xhtml` - XHTML
+          - `bbva_2021_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `bbva_2021_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `CABK/` - 2 archivos
+          - `cabk_2021_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `cabk_2021_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `CLNX/` - 4 archivos
+          - `5493008T4YG3AQUI7P67-20211231-es.quarantine_reason.json` - JSON
+          - `5493008T4YG3AQUI7P67-20211231-es.xhtml` - XHTML
+          - `clnx_2021_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `clnx_2021_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `DIA/` - 2 archivos
+          - `54930063C6K2TNFL6H10-20211231-es.quarantine_reason.json` - JSON
+          - `54930063C6K2TNFL6H10-20211231-es.xhtml` - XHTML
+        - [DIR] `EBRO/` - 2 archivos
+          - `959800NW6DLQT89M3240-2021-12-31-es.quarantine_reason.json` - JSON
+          - `959800NW6DLQT89M3240-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `ECO/` - 2 archivos
+          - `959800HBGZWHX69PE419-2021-12-31-es.quarantine_reason.json` - JSON
+          - `959800HBGZWHX69PE419-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `ELE/` - 6 archivos
+          - `549300LHK07F2CHV4X31-2021-12-31-es.quarantine_reason.json` - JSON
+          - `549300LHK07F2CHV4X31-2021-12-31-es.xhtml` - XHTML
+          - `549300N94L4D5NDBFG97-20211231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20211231-es.xhtml` - XHTML
+          - `ele_2021_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `ele_2021_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `ENG/` - 4 archivos
+          - `213800OU3FQKGM4M2U23-20211231-es.quarantine_reason.json` - JSON
+          - `213800OU3FQKGM4M2U23-20211231-es.xhtml` - XHTML
+          - `549300N94L4D5NDBFG97-20211231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20211231-es.xhtml` - XHTML
+        - [DIR] `ERC/` - 2 archivos
+          - `959800Z611RK76NEVF32-2021-12-31-es.quarantine_reason.json` - JSON
+          - `959800Z611RK76NEVF32-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `EZE/` - 2 archivos
+          - `959800RCPA4USH4RFB78-2021-12-31-es.html` - HTML
+          - `959800RCPA4USH4RFB78-2021-12-31-es.quarantine_reason.json` - JSON
+        - [DIR] `FER/` - 4 archivos
+          - `549300N94L4D5NDBFG97-20211231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20211231-es.xhtml` - XHTML
+          - `fer_2021_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `fer_2021_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `GCO/` - 2 archivos
+          - `959800H2P9S8MS95DT42-20211231-ES.quarantine_reason.json` - JSON
+          - `959800H2P9S8MS95DT42-20211231-ES.xhtml` - XHTML
+        - [DIR] `GRE/` - 2 archivos
+          - `959800M1FVPL5BMW3R13-2021-12-31-ES.quarantine_reason.json` - JSON
+          - `959800M1FVPL5BMW3R13-2021-12-31-ES.xhtml` - XHTML
+        - [DIR] `GRF/` - 2 archivos
+          - `grf_2021_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `grf_2021_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `HLZ/` - 2 archivos
+          - `95980020140005945792-2021-12-31-es.quarantine_reason.json` - JSON
+          - `95980020140005945792-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `IAG/` - 4 archivos
+          - `959800JRKSZ6YZD4EL80-20211231-es.quarantine_reason.json` - JSON
+          - `959800JRKSZ6YZD4EL80-20211231-es.xhtml` - XHTML
+          - `959800TZHQRUSH1ESL13-2021-12-31-en.quarantine_reason.json` - JSON
+          - `959800TZHQRUSH1ESL13-2021-12-31-en.xhtml` - XHTML
+        - [DIR] `IBE/` - 2 archivos
+          - `ibe_2021_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `ibe_2021_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `IBP/` - 2 archivos
+          - `959800RG37G8456RGX60-2021-12-31-es.quarantine_reason.json` - JSON
+          - `959800RG37G8456RGX60-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `ITX/` - 4 archivos
+          - `549300N94L4D5NDBFG97-20211231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20211231-es.xhtml` - XHTML
+          - `itx_2021_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `itx_2021_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `KOMP/` - 2 archivos
+          - `9598006DQSU4NU073U58-2021-12-31-es.quarantine_reason.json` - JSON
+          - `9598006DQSU4NU073U58-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `LGT/` - 2 archivos
+          - `959800PV7FH0KLXNKE66-2021-12-31-es.quarantine_reason.json` - JSON
+          - `959800PV7FH0KLXNKE66-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `LINEA/` - 2 archivos
+          - `95980079E2NBJT967T79-20211231-ES.quarantine_reason.json` - JSON
+          - `95980079E2NBJT967T79-20211231-ES.xhtml` - XHTML
+        - [DIR] `MAP/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20211231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20211231-es.xhtml` - XHTML
+        - [DIR] `MEL/` - 2 archivos
+          - `959800JRJW1CZ63R8P20-20211231-es.quarantine_reason.json` - JSON
+          - `959800JRJW1CZ63R8P20-20211231-es.xhtml` - XHTML
+        - [DIR] `MVC/` - 2 archivos
+          - `959800ZQW44V5U3SEZ73-2021-12-31-es.quarantine_reason.json` - JSON
+          - `959800ZQW44V5U3SEZ73-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `NEA/` - 2 archivos
+          - `959800EXHG00L95ZAK22-20211231-es.quarantine_reason.json` - JSON
+          - `959800EXHG00L95ZAK22-20211231-es.xhtml` - XHTML
+        - [DIR] `NEIN/` - 2 archivos
+          - `959800FW4JL65YWSQ217-2021-12-31-es.quarantine_reason.json` - JSON
+          - `959800FW4JL65YWSQ217-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `NEXT/` - 2 archivos
+          - `9598000XPMA4HRVG3Z89-2021-12-31-es.quarantine_reason.json` - JSON
+          - `9598000XPMA4HRVG3Z89-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `NTH/` - 2 archivos
+          - `95980007WW7TNTYX8B36-2021-12-31-es.quarantine_reason.json` - JSON
+          - `95980007WW7TNTYX8B36-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `PGR/` - 2 archivos
+          - `9598005HY5DEFPU2SM35-20211231-es.quarantine_reason.json` - JSON
+          - `9598005HY5DEFPU2SM35-20211231-es.xhtml` - XHTML
+        - [DIR] `PRM/` - 2 archivos
+          - `959800M75M81U0Y2UX24-2021-12-31-es.quarantine_reason.json` - JSON
+          - `959800M75M81U0Y2UX24-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `REP/` - 6 archivos
+          - `549300N94L4D5NDBFG97-20211231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20211231-es.xhtml` - XHTML
+          - `BSYCX13Y0NOTV14V9N85-20211231-es.quarantine_reason.json` - JSON
+          - `BSYCX13Y0NOTV14V9N85-20211231-es.xhtml` - XHTML
+          - `rep_2021_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `rep_2021_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `SAB/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20211231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20211231-es.xhtml` - XHTML
+        - [DIR] `SAN/` - 2 archivos
+          - `san_2021_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `san_2021_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `SANJ/` - 2 archivos
+          - `9598002SMUBZZBE58976-2021-12-31-es.quarantine_reason.json` - JSON
+          - `9598002SMUBZZBE58976-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `SOL/` - 2 archivos
+          - `959800PM2YJU406K2789-2021-12-31.quarantine_reason.json` - JSON
+          - `959800PM2YJU406K2789-2021-12-31.xhtml` - XHTML
+        - [DIR] `SQRL/` - 2 archivos
+          - `959800NZ03Z4U0519L24-2021-12-31-es.quarantine_reason.json` - JSON
+          - `959800NZ03Z4U0519L24-2021-12-31-es.xhtml` - XHTML
+        - [DIR] `TEF/` - 6 archivos
+          - `549300EEJH4FEPDBBR25-20211231-en.quarantine_reason.json` - JSON
+          - `549300EEJH4FEPDBBR25-20211231-en.xhtml` - XHTML
+          - `549300N94L4D5NDBFG97-20211231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20211231-es.xhtml` - XHTML
+          - `tef_2021_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `tef_2021_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `TRE/` - 2 archivos
+          - `213800JEZBUPZKWJGF49-2021-12-31-es.quarantine_reason.json` - JSON
+          - `213800JEZBUPZKWJGF49-2021-12-31-es.xhtml` - XHTML
+      - [DIR] `2022/` - 126 archivos (resumen: .json:63, .xhtml:58, .html:5)
+        - [DIR] `ACS/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20221231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20221231-es.xhtml` - XHTML
+        - [DIR] `ACX/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20221231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20221231-es.xhtml` - XHTML
+        - [DIR] `AENA/` - 2 archivos
+          - `959800R7QMXKF0NFMT29-20221231-es.quarantine_reason.json` - JSON
+          - `959800R7QMXKF0NFMT29-20221231-es.xhtml` - XHTML
+        - [DIR] `AMP/` - 2 archivos
+          - `959800GZESQUFLUH5402-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800GZESQUFLUH5402-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `AMS/` - 4 archivos
+          - `959800GQ29X3QTKYUM69-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800GQ29X3QTKYUM69-2022-12-31-es.xhtml` - XHTML
+          - `ams_2022_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `ams_2022_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `ANA/` - 2 archivos
+          - `54930002KP75TLLLNO21-2022-12-31-es.html` - HTML
+          - `54930002KP75TLLLNO21-2022-12-31-es.quarantine_reason.json` - JSON
+        - [DIR] `ANE/` - 2 archivos
+          - `254900UPX0OEHTKB9Y44-2022-12-31-es.html` - HTML
+          - `254900UPX0OEHTKB9Y44-2022-12-31-es.quarantine_reason.json` - JSON
+        - [DIR] `AYCO/` - 2 archivos
+          - `95980049KFSE6UNLSJ86-2022-12-31-es.quarantine_reason.json` - JSON
+          - `95980049KFSE6UNLSJ86-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `AZK/` - 2 archivos
+          - `959800AXZW3EBUY24W90-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800AXZW3EBUY24W90-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `BBVA/` - 4 archivos
+          - `5493007SJLLCTM6J6M37-2022-12-31-es.quarantine_reason.json` - JSON
+          - `5493007SJLLCTM6J6M37-2022-12-31-es.xhtml` - XHTML
+          - `bbva_2022_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `bbva_2022_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `CABK/` - 4 archivos
+          - `7CUNS533WID6K7DGFI87-20221231-es.quarantine_reason.json` - JSON
+          - `7CUNS533WID6K7DGFI87-20221231-es.xhtml` - XHTML
+          - `cabk_2022_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `cabk_2022_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `CLNX/` - 4 archivos
+          - `5493008T4YG3AQUI7P67-20221231-es.quarantine_reason.json` - JSON
+          - `5493008T4YG3AQUI7P67-20221231-es.xhtml` - XHTML
+          - `clnx_2022_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `clnx_2022_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `DIA/` - 2 archivos
+          - `54930063C6K2TNFL6H10-20221231-es.quarantine_reason.json` - JSON
+          - `54930063C6K2TNFL6H10-20221231-es.xhtml` - XHTML
+        - [DIR] `EBRO/` - 2 archivos
+          - `959800NW6DLQT89M3240-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800NW6DLQT89M3240-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `ECO/` - 2 archivos
+          - `959800HBGZWHX69PE419-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800HBGZWHX69PE419-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `ELE/` - 6 archivos
+          - `549300LHK07F2CHV4X31-2022-12-31-es.quarantine_reason.json` - JSON
+          - `549300LHK07F2CHV4X31-2022-12-31-es.xhtml` - XHTML
+          - `549300N94L4D5NDBFG97-20221231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20221231-es.xhtml` - XHTML
+          - `ele_2022_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `ele_2022_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `ENG/` - 4 archivos
+          - `213800OU3FQKGM4M2U23-20221231-es.quarantine_reason.json` - JSON
+          - `213800OU3FQKGM4M2U23-20221231-es.xhtml` - XHTML
+          - `549300N94L4D5NDBFG97-20221231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20221231-es.xhtml` - XHTML
+        - [DIR] `ERC/` - 2 archivos
+          - `959800Z611RK76NEVF32-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800Z611RK76NEVF32-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `EZE/` - 2 archivos
+          - `959800RCPA4USH4RFB78-2022-12-31-es.html` - HTML
+          - `959800RCPA4USH4RFB78-2022-12-31-es.quarantine_reason.json` - JSON
+        - [DIR] `FER/` - 4 archivos
+          - `549300N94L4D5NDBFG97-20221231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20221231-es.xhtml` - XHTML
+          - `fer_2022_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `fer_2022_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `GCO/` - 2 archivos
+          - `959800H2P9S8MS95DT42-20221231-es.quarantine_reason.json` - JSON
+          - `959800H2P9S8MS95DT42-20221231-es.xhtml` - XHTML
+        - [DIR] `GRE/` - 2 archivos
+          - `959800M1FVPL5BMW3R13-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800M1FVPL5BMW3R13-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `GRF/` - 2 archivos
+          - `grf_2022_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `grf_2022_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `HLZ/` - 2 archivos
+          - `95980020140005178328-2022-12-31-es.quarantine_reason.json` - JSON
+          - `95980020140005178328-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `IAG/` - 4 archivos
+          - `959800JRKSZ6YZD4EL80-20221231-en.quarantine_reason.json` - JSON
+          - `959800JRKSZ6YZD4EL80-20221231-en.xhtml` - XHTML
+          - `959800TZHQRUSH1ESL13-2022-12-31-en.quarantine_reason.json` - JSON
+          - `959800TZHQRUSH1ESL13-2022-12-31-en.xhtml` - XHTML
+        - [DIR] `IBE/` - 2 archivos
+          - `ibe_2022_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `ibe_2022_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `IBP/` - 2 archivos
+          - `959800RG37G8456RGX60-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800RG37G8456RGX60-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `ITX/` - 4 archivos
+          - `549300N94L4D5NDBFG97-20221231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20221231-es.xhtml` - XHTML
+          - `itx_2022_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `itx_2022_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `KOMP/` - 2 archivos
+          - `9598006DQSU4NU073U58-2022-12-31-es.quarantine_reason.json` - JSON
+          - `9598006DQSU4NU073U58-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `LGT/` - 2 archivos
+          - `959800PV7FH0KLXNKE66-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800PV7FH0KLXNKE66-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `LINEA/` - 2 archivos
+          - `95980079E2NBJT967T79-20221231-ES.quarantine_reason.json` - JSON
+          - `95980079E2NBJT967T79-20221231-ES.xhtml` - XHTML
+        - [DIR] `MAP/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20221231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20221231-es.xhtml` - XHTML
+        - [DIR] `MEL/` - 2 archivos
+          - `959800JRJW1CZ63R8P20-20221231-es.quarantine_reason.json` - JSON
+          - `959800JRJW1CZ63R8P20-20221231-es.xhtml` - XHTML
+        - [DIR] `MVC/` - 2 archivos
+          - `959800ZQW44V5U3SEZ73-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800ZQW44V5U3SEZ73-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `NEA/` - 2 archivos
+          - `959800EXHG00L95ZAK22-20221231-es.quarantine_reason.json` - JSON
+          - `959800EXHG00L95ZAK22-20221231-es.xhtml` - XHTML
+        - [DIR] `NEIN/` - 2 archivos
+          - `959800FW4JL65YWSQ217-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800FW4JL65YWSQ217-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `NEXT/` - 2 archivos
+          - `9598000XPMA4HRVG3Z89-2022-12-31-es.quarantine_reason.json` - JSON
+          - `9598000XPMA4HRVG3Z89-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `NTH/` - 2 archivos
+          - `95980007WW7TNTYX8B36-2022-12-31-es.quarantine_reason.json` - JSON
+          - `95980007WW7TNTYX8B36-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `OPDE/` - 2 archivos
+          - `959800KT1FVNZ7HC1R25-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800KT1FVNZ7HC1R25-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `PGR/` - 2 archivos
+          - `9598005HY5DEFPU2SM35-20221231-es.quarantine_reason.json` - JSON
+          - `9598005HY5DEFPU2SM35-20221231-es.xhtml` - XHTML
+        - [DIR] `PRM/` - 2 archivos
+          - `959800M75M81U0Y2UX24-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800M75M81U0Y2UX24-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `PRS/` - 2 archivos
+          - `959800U3NGPXSCQHQW54-2022-12-31-es.html` - HTML
+          - `959800U3NGPXSCQHQW54-2022-12-31-es.quarantine_reason.json` - JSON
+        - [DIR] `REP/` - 4 archivos
+          - `549300N94L4D5NDBFG97-20221231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20221231-es.xhtml` - XHTML
+          - `rep_2022_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `rep_2022_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `SAB/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20221231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20221231-es.xhtml` - XHTML
+        - [DIR] `SAN/` - 2 archivos
+          - `san_2022_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `san_2022_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `SOL/` - 4 archivos
+          - `254900UPX0OEHTKB9Y44-2022-12-31-es.html` - HTML
+          - `254900UPX0OEHTKB9Y44-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800PM2YJU406K2789-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800PM2YJU406K2789-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `SQRL/` - 2 archivos
+          - `959800NZ03Z4U0519L24-2022-12-31-es.quarantine_reason.json` - JSON
+          - `959800NZ03Z4U0519L24-2022-12-31-es.xhtml` - XHTML
+        - [DIR] `TEF/` - 6 archivos
+          - `549300EEJH4FEPDBBR25-20221231-en.quarantine_reason.json` - JSON
+          - `549300EEJH4FEPDBBR25-20221231-en.xhtml` - XHTML
+          - `549300N94L4D5NDBFG97-20221231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20221231-es.xhtml` - XHTML
+          - `tef_2022_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `tef_2022_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `TRE/` - 2 archivos
+          - `213800JEZBUPZKWJGF49-2022-12-31-es.quarantine_reason.json` - JSON
+          - `213800JEZBUPZKWJGF49-2022-12-31-es.xhtml` - XHTML
+      - [DIR] `2023/` - 122 archivos (resumen: .json:61, .xhtml:57, .html:4)
+        - [DIR] `ACS/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20231231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20231231-es.xhtml` - XHTML
+        - [DIR] `ACX/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20231231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20231231-es.xhtml` - XHTML
+        - [DIR] `AENA/` - 2 archivos
+          - `959800R7QMXKF0NFMT29-20231231-es.quarantine_reason.json` - JSON
+          - `959800R7QMXKF0NFMT29-20231231-es.xhtml` - XHTML
+        - [DIR] `AMP/` - 2 archivos
+          - `959800GZESQUFLUH5402-2023-12-31-es.quarantine_reason.json` - JSON
+          - `959800GZESQUFLUH5402-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `AMS/` - 2 archivos
+          - `ams_2023_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `ams_2023_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `ANA/` - 2 archivos
+          - `54930002KP75TLLLNO21-2023-12-31-es.html` - HTML
+          - `54930002KP75TLLLNO21-2023-12-31-es.quarantine_reason.json` - JSON
+        - [DIR] `AYCO/` - 2 archivos
+          - `95980049KFSE6UNLSJ86-2023-12-31-es.quarantine_reason.json` - JSON
+          - `95980049KFSE6UNLSJ86-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `AZK/` - 2 archivos
+          - `959800AXZW3EBUY24W90-2023-12-31-es.quarantine_reason.json` - JSON
+          - `959800AXZW3EBUY24W90-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `BBVA/` - 4 archivos
+          - `5493007SJLLCTM6J6M37-20231231-es.quarantine_reason.json` - JSON
+          - `5493007SJLLCTM6J6M37-20231231-es.xhtml` - XHTML
+          - `bbva_2023_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `bbva_2023_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `CABK/` - 4 archivos
+          - `7CUNS533WID6K7DGFI87-20231231-es.quarantine_reason.json` - JSON
+          - `7CUNS533WID6K7DGFI87-20231231-es.xhtml` - XHTML
+          - `cabk_2023_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `cabk_2023_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `CLNX/` - 4 archivos
+          - `5493008T4YG3AQUI7P67-20231231-es.quarantine_reason.json` - JSON
+          - `5493008T4YG3AQUI7P67-20231231-es.xhtml` - XHTML
+          - `clnx_2023_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `clnx_2023_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `DIA/` - 2 archivos
+          - `54930063C6K2TNFL6H10-20231231-es.quarantine_reason.json` - JSON
+          - `54930063C6K2TNFL6H10-20231231-es.xhtml` - XHTML
+        - [DIR] `EBRO/` - 2 archivos
+          - `959800NW6DLQT89M3240-2023-12-31-es.quarantine_reason.json` - JSON
+          - `959800NW6DLQT89M3240-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `ECO/` - 2 archivos
+          - `959800HBGZWHX69PE419-2023-12-31-es.quarantine_reason.json` - JSON
+          - `959800HBGZWHX69PE419-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `ELE/` - 4 archivos
+          - `549300N94L4D5NDBFG97-20231231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20231231-es.xhtml` - XHTML
+          - `ele_2023_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `ele_2023_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `ENG/` - 4 archivos
+          - `213800OU3FQKGM4M2U23-20231231-es.quarantine_reason.json` - JSON
+          - `213800OU3FQKGM4M2U23-20231231-es.xhtml` - XHTML
+          - `549300N94L4D5NDBFG97-20231231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20231231-es.xhtml` - XHTML
+        - [DIR] `EZE/` - 2 archivos
+          - `959800RCPA4USH4RFB78-2023-12-31-es.html` - HTML
+          - `959800RCPA4USH4RFB78-2023-12-31-es.quarantine_reason.json` - JSON
+        - [DIR] `FER/` - 4 archivos
+          - `549300N94L4D5NDBFG97-20231231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20231231-es.xhtml` - XHTML
+          - `fer_2023_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `fer_2023_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `GCO/` - 2 archivos
+          - `959800H2P9S8MS95DT42-20231231-es.quarantine_reason.json` - JSON
+          - `959800H2P9S8MS95DT42-20231231-es.xhtml` - XHTML
+        - [DIR] `GRE/` - 2 archivos
+          - `959800M1FVPL5BMW3R13-2023-12-31-es.quarantine_reason.json` - JSON
+          - `959800M1FVPL5BMW3R13-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `GRF/` - 2 archivos
+          - `grf_2023_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `grf_2023_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `HLZ/` - 2 archivos
+          - `95980020140005204809-2023-12-31-es.quarantine_reason.json` - JSON
+          - `95980020140005204809-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `IAG/` - 4 archivos
+          - `959800JRKSZ6YZD4EL80-20231231-en.quarantine_reason.json` - JSON
+          - `959800JRKSZ6YZD4EL80-20231231-en.xhtml` - XHTML
+          - `959800TZHQRUSH1ESL13-2023-12-31-en.quarantine_reason.json` - JSON
+          - `959800TZHQRUSH1ESL13-2023-12-31-en.xhtml` - XHTML
+        - [DIR] `IBE/` - 2 archivos
+          - `ibe_2023_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `ibe_2023_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `IBP/` - 2 archivos
+          - `959800RG37G8456RGX60-2023-12-31-es.quarantine_reason.json` - JSON
+          - `959800RG37G8456RGX60-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `ITX/` - 4 archivos
+          - `549300N94L4D5NDBFG97-20231231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20231231-es.xhtml` - XHTML
+          - `itx_2023_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `itx_2023_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `KOMP/` - 2 archivos
+          - `9598006DQSU4NU073U58-2023-12-31-es.quarantine_reason.json` - JSON
+          - `9598006DQSU4NU073U58-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `LGT/` - 2 archivos
+          - `959800PV7FH0KLXNKE66-2023-12-31-es.quarantine_reason.json` - JSON
+          - `959800PV7FH0KLXNKE66-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `LINEA/` - 2 archivos
+          - `95980079E2NBJT967T79-20231231-es.quarantine_reason.json` - JSON
+          - `95980079E2NBJT967T79-20231231-es.xhtml` - XHTML
+        - [DIR] `MAP/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20231231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20231231-es.xhtml` - XHTML
+        - [DIR] `MEL/` - 2 archivos
+          - `959800JRJW1CZ63R8P20-20231231-es.quarantine_reason.json` - JSON
+          - `959800JRJW1CZ63R8P20-20231231-es.xhtml` - XHTML
+        - [DIR] `MVC/` - 2 archivos
+          - `959800ZQW44V5U3SEZ73-2023-12-31-es.quarantine_reason.json` - JSON
+          - `959800ZQW44V5U3SEZ73-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `NEA/` - 2 archivos
+          - `959800EXHG00L95ZAK22-20231231-es.quarantine_reason.json` - JSON
+          - `959800EXHG00L95ZAK22-20231231-es.xhtml` - XHTML
+        - [DIR] `NEIN/` - 2 archivos
+          - `959800FW4JL65YWSQ217-2023-12-31-es.quarantine_reason.json` - JSON
+          - `959800FW4JL65YWSQ217-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `NEXT/` - 2 archivos
+          - `9598000XPMA4HRVG3Z89-2023-12-31-es.quarantine_reason.json` - JSON
+          - `9598000XPMA4HRVG3Z89-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `NTH/` - 2 archivos
+          - `95980007WW7TNTYX8B36-2023-12-31-es.quarantine_reason.json` - JSON
+          - `95980007WW7TNTYX8B36-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `OPDE/` - 2 archivos
+          - `959800KT1FVNZ7HC1R25-2023-12-31-es.quarantine_reason.json` - JSON
+          - `959800KT1FVNZ7HC1R25-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `PGR/` - 2 archivos
+          - `9598005HY5DEFPU2SM35-20231231-es.quarantine_reason.json` - JSON
+          - `9598005HY5DEFPU2SM35-20231231-es.xhtml` - XHTML
+        - [DIR] `PRM/` - 2 archivos
+          - `959800M75M81U0Y2UX24-2023-12-31-es.quarantine_reason.json` - JSON
+          - `959800M75M81U0Y2UX24-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `PRS/` - 2 archivos
+          - `959800U3NGPXSCQHQW54-2023-12-31-es.html` - HTML
+          - `959800U3NGPXSCQHQW54-2023-12-31-es.quarantine_reason.json` - JSON
+        - [DIR] `REP/` - 6 archivos
+          - `549300N94L4D5NDBFG97-20231231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20231231-es.xhtml` - XHTML
+          - `BSYCX13Y0NOTV14V9N85-20221231-es.quarantine_reason.json` - JSON
+          - `BSYCX13Y0NOTV14V9N85-20221231-es.xhtml` - XHTML
+          - `rep_2023_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `rep_2023_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `SAB/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20231231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20231231-es.xhtml` - XHTML
+        - [DIR] `SAN/` - 2 archivos
+          - `san_2023_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `san_2023_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `SANJ/` - 2 archivos
+          - `9598002SMUBZZBE58976-2023-12-31-en.quarantine_reason.json` - JSON
+          - `9598002SMUBZZBE58976-2023-12-31-en.xhtml` - XHTML
+        - [DIR] `SOL/` - 4 archivos
+          - `254900UPX0OEHTKB9Y44-2023-12-31-es.html` - HTML
+          - `254900UPX0OEHTKB9Y44-2023-12-31-es.quarantine_reason.json` - JSON
+          - `959800PM2YJU406K2789-2023-12-31-es.quarantine_reason.json` - JSON
+          - `959800PM2YJU406K2789-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `SQRL/` - 2 archivos
+          - `959800NZ03Z4U0519L24-2023-12-31-es.quarantine_reason.json` - JSON
+          - `959800NZ03Z4U0519L24-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `TEF/` - 6 archivos
+          - `549300EEJH4FEPDBBR25-20231231-en.quarantine_reason.json` - JSON
+          - `549300EEJH4FEPDBBR25-20231231-en.xhtml` - XHTML
+          - `549300N94L4D5NDBFG97-20231231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20231231-es.xhtml` - XHTML
+          - `tef_2023_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `tef_2023_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `TRE/` - 2 archivos
+          - `213800JEZBUPZKWJGF49-2023-12-31-es.quarantine_reason.json` - JSON
+          - `213800JEZBUPZKWJGF49-2023-12-31-es.xhtml` - XHTML
+      - [DIR] `2024/` - 116 archivos (resumen: .json:58, .xhtml:54, .html:4)
+        - [DIR] `ACS/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20241231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20241231-es.xhtml` - XHTML
+        - [DIR] `ACX/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20241231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20241231-es.xhtml` - XHTML
+        - [DIR] `AENA/` - 2 archivos
+          - `959800R7QMXKF0NFMT29-20241231-es.quarantine_reason.json` - JSON
+          - `959800R7QMXKF0NFMT29-20241231-es.xhtml` - XHTML
+        - [DIR] `AMP/` - 2 archivos
+          - `959800GZESQUFLUH5402-2024-12-31-es.quarantine_reason.json` - JSON
+          - `959800GZESQUFLUH5402-2024-12-31-es.xhtml` - XHTML
+        - [DIR] `AMS/` - 4 archivos
+          - `959800GQ29X3QTKYUM69-2024-12-31-es.quarantine_reason.json` - JSON
+          - `959800GQ29X3QTKYUM69-2024-12-31-es.xhtml` - XHTML
+          - `ams_2024_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `ams_2024_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `ANE/` - 2 archivos
+          - `254900UPX0OEHTKB9Y44-2024-12-31-es.html` - HTML
+          - `254900UPX0OEHTKB9Y44-2024-12-31-es.quarantine_reason.json` - JSON
+        - [DIR] `AZK/` - 2 archivos
+          - `959800AXZW3EBUY24W90-2024-12-31-es.quarantine_reason.json` - JSON
+          - `959800AXZW3EBUY24W90-2024-12-31-es.xhtml` - XHTML
+        - [DIR] `BBVA/` - 2 archivos
+          - `bbva_2024_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `bbva_2024_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `CABK/` - 4 archivos
+          - `7CUNS533WID6K7DGFI87-20241231-es.quarantine_reason.json` - JSON
+          - `7CUNS533WID6K7DGFI87-20241231-es.xhtml` - XHTML
+          - `cabk_2024_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `cabk_2024_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `CLNX/` - 4 archivos
+          - `5493008T4YG3AQUI7P67-20241231-es.quarantine_reason.json` - JSON
+          - `5493008T4YG3AQUI7P67-20241231-es.xhtml` - XHTML
+          - `clnx_2024_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `clnx_2024_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `DIA/` - 2 archivos
+          - `54930063C6K2TNFL6H10-20241231-es.quarantine_reason.json` - JSON
+          - `54930063C6K2TNFL6H10-20241231-es.xhtml` - XHTML
+        - [DIR] `ECO/` - 2 archivos
+          - `959800HBGZWHX69PE419-2024-12-31-es.quarantine_reason.json` - JSON
+          - `959800HBGZWHX69PE419-2024-12-31-es.xhtml` - XHTML
+        - [DIR] `ELE/` - 6 archivos
+          - `549300LHK07F2CHV4X31-2024-12-31-0-es.quarantine_reason.json` - JSON
+          - `549300LHK07F2CHV4X31-2024-12-31-0-es.xhtml` - XHTML
+          - `549300N94L4D5NDBFG97-20241231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20241231-es.xhtml` - XHTML
+          - `ele_2024_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `ele_2024_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `ENG/` - 4 archivos
+          - `213800OU3FQKGM4M2U23-20241231-es.quarantine_reason.json` - JSON
+          - `213800OU3FQKGM4M2U23-20241231-es.xhtml` - XHTML
+          - `549300N94L4D5NDBFG97-20241231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20241231-es.xhtml` - XHTML
+        - [DIR] `EZE/` - 2 archivos
+          - `959800RCPA4USH4RFB78-2024-12-31-es.quarantine_reason.json` - JSON
+          - `959800RCPA4USH4RFB78-2024-12-31-es.xhtml` - XHTML
+        - [DIR] `FER/` - 4 archivos
+          - `549300N94L4D5NDBFG97-20241231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20241231-es.xhtml` - XHTML
+          - `fer_2024_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `fer_2024_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `GCO/` - 2 archivos
+          - `959800H2P9S8MS95DT42-20241231-0-es.quarantine_reason.json` - JSON
+          - `959800H2P9S8MS95DT42-20241231-0-es.xhtml` - XHTML
+        - [DIR] `GRE/` - 2 archivos
+          - `959800M1FVPL5BMW3R13-2024-12-31-es.quarantine_reason.json` - JSON
+          - `959800M1FVPL5BMW3R13-2024-12-31-es.xhtml` - XHTML
+        - [DIR] `GRF/` - 2 archivos
+          - `grf_2024_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `grf_2024_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `HLZ/` - 2 archivos
+          - `95980020140005178328-2024-12-31-es.quarantine_reason.json` - JSON
+          - `95980020140005178328-2024-12-31-es.xhtml` - XHTML
+        - [DIR] `IAG/` - 4 archivos
+          - `959800JRKSZ6YZD4EL80-20241231-en.quarantine_reason.json` - JSON
+          - `959800JRKSZ6YZD4EL80-20241231-en.xhtml` - XHTML
+          - `959800TZHQRUSH1ESL13-2024-12-31-T01.html` - HTML
+          - `959800TZHQRUSH1ESL13-2024-12-31-T01.quarantine_reason.json` - JSON
+        - [DIR] `IBE/` - 2 archivos
+          - `ibe_2024_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `ibe_2024_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `IBP/` - 2 archivos
+          - `959800RG37G8456RGX60-20241231-es.quarantine_reason.json` - JSON
+          - `959800RG37G8456RGX60-20241231-es.xhtml` - XHTML
+        - [DIR] `ITX/` - 4 archivos
+          - `549300N94L4D5NDBFG97-20241231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20241231-es.xhtml` - XHTML
+          - `itx_2024_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `itx_2024_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `KOMP/` - 2 archivos
+          - `9598006DQSU4NU073U58-2024-12-31-es.quarantine_reason.json` - JSON
+          - `9598006DQSU4NU073U58-2024-12-31-es.xhtml` - XHTML
+        - [DIR] `LGT/` - 2 archivos
+          - `959800PV7FH0KLXNKE66-2024-12-31-0-es.quarantine_reason.json` - JSON
+          - `959800PV7FH0KLXNKE66-2024-12-31-0-es.xhtml` - XHTML
+        - [DIR] `LINEA/` - 2 archivos
+          - `95980079E2NBJT967T79-20241231-es.quarantine_reason.json` - JSON
+          - `95980079E2NBJT967T79-20241231-es.xhtml` - XHTML
+        - [DIR] `MAP/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20241231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20241231-es.xhtml` - XHTML
+        - [DIR] `MVC/` - 2 archivos
+          - `959800ZQW44V5U3SEZ73-2024-12-31-es.quarantine_reason.json` - JSON
+          - `959800ZQW44V5U3SEZ73-2024-12-31-es.xhtml` - XHTML
+        - [DIR] `NEA/` - 2 archivos
+          - `959800EXHG00L95ZAK22-20241231-es.quarantine_reason.json` - JSON
+          - `959800EXHG00L95ZAK22-20241231-es.xhtml` - XHTML
+        - [DIR] `NEIN/` - 2 archivos
+          - `959800FW4JL65YWSQ217-2024-12-31-es.quarantine_reason.json` - JSON
+          - `959800FW4JL65YWSQ217-2024-12-31-es.xhtml` - XHTML
+        - [DIR] `NEXT/` - 2 archivos
+          - `9598000XPMA4HRVG3Z89-2024-12-31-es.quarantine_reason.json` - JSON
+          - `9598000XPMA4HRVG3Z89-2024-12-31-es.xhtml` - XHTML
+        - [DIR] `NTH/` - 2 archivos
+          - `95980007WW7TNTYX8B36-2024-12-31-0-es.quarantine_reason.json` - JSON
+          - `95980007WW7TNTYX8B36-2024-12-31-0-es.xhtml` - XHTML
+        - [DIR] `PGR/` - 2 archivos
+          - `9598005HY5DEFPU2SM35-20241231-es.quarantine_reason.json` - JSON
+          - `9598005HY5DEFPU2SM35-20241231-es.xhtml` - XHTML
+        - [DIR] `PRM/` - 2 archivos
+          - `959800M75M81U0Y2UX24-2024-12-31-es.quarantine_reason.json` - JSON
+          - `959800M75M81U0Y2UX24-2024-12-31-es.xhtml` - XHTML
+        - [DIR] `PRS/` - 2 archivos
+          - `959800U3NGPXSCQHQW54-2024-12-31-es.html` - HTML
+          - `959800U3NGPXSCQHQW54-2024-12-31-es.quarantine_reason.json` - JSON
+        - [DIR] `PUIG/` - 2 archivos
+          - `549300OVHNSX30L1AQ94-20241231-es.quarantine_reason.json` - JSON
+          - `549300OVHNSX30L1AQ94-20241231-es.xhtml` - XHTML
+        - [DIR] `REP/` - 6 archivos
+          - `549300N94L4D5NDBFG97-20241231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20241231-es.xhtml` - XHTML
+          - `BSYCX13Y0NOTV14V9N85-20241231-es.quarantine_reason.json` - JSON
+          - `BSYCX13Y0NOTV14V9N85-20241231-es.xhtml` - XHTML
+          - `rep_2024_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `rep_2024_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `SAB/` - 2 archivos
+          - `549300N94L4D5NDBFG97-20241231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20241231-es.xhtml` - XHTML
+        - [DIR] `SAN/` - 2 archivos
+          - `san_2024_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `san_2024_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `SOL/` - 4 archivos
+          - `254900UPX0OEHTKB9Y44-2024-12-31-es.html` - HTML
+          - `254900UPX0OEHTKB9Y44-2024-12-31-es.quarantine_reason.json` - JSON
+          - `959800PM2YJU406K2789-2024-12-31-es.quarantine_reason.json` - JSON
+          - `959800PM2YJU406K2789-2024-12-31-es.xhtml` - XHTML
+        - [DIR] `SQRL/` - 2 archivos
+          - `959800NZ03Z4U0519L24-2023-12-31-es.quarantine_reason.json` - JSON
+          - `959800NZ03Z4U0519L24-2023-12-31-es.xhtml` - XHTML
+        - [DIR] `TEF/` - 6 archivos
+          - `549300EEJH4FEPDBBR25-20241231-en.quarantine_reason.json` - JSON
+          - `549300EEJH4FEPDBBR25-20241231-en.xhtml` - XHTML
+          - `549300N94L4D5NDBFG97-20241231-es.quarantine_reason.json` - JSON
+          - `549300N94L4D5NDBFG97-20241231-es.xhtml` - XHTML
+          - `tef_2024_cuentas_anuales_consolidadas_auditadas.quarantine_reason.json` - JSON
+          - `tef_2024_cuentas_anuales_consolidadas_auditadas.xhtml` - XHTML
+        - [DIR] `TRE/` - 2 archivos
+          - `213800JEZBUPZKWJGF49-2024-12-31--es.quarantine_reason.json` - JSON
+          - `213800JEZBUPZKWJGF49-2024-12-31--es.xhtml` - XHTML
+      - [DIR] `2025/` - 2 archivos
+        - [DIR] `EDR/` - 2 archivos
+          - `549300TTCXZOGZM2EY83-20250131-0-en.quarantine_reason.json` - JSON
+          - `549300TTCXZOGZM2EY83-20250131-0-en.xhtml` - XHTML
+      - `REMEDIATION_REPORT_20260827_182147.md` - Markdown
+    - [DIR] `raw/` - 5527 archivos (resumen: .xml:2447, .json:1440, .zip:545, .xsd:413, .xhtml:298, .htm:279)
+      - [DIR] `AUDITORIA_FILINGS_Y_DUPLICADOS_2022/` - 2 archivos
+        - `INFORME_COMPLETO_FILINGS_2022.json` - JSON
+        - `TABLA_AUDITORIA_FILINGS_2022.md` - Markdown
+      - [DIR] `DE_BAFIN/` - 109 archivos (resumen: .json:104, .htm:5)
+        - [DIR] `2019/` - 15 archivos
+          - [DIR] `ADS_Adidas_AG/` - 1 archivos
+            - `de_ads_2019_esef.meta.json` - JSON
+          - [DIR] `ALV_Allianz_SE/` - 1 archivos
+            - `de_alv_2019_esef.meta.json` - JSON
+          - [DIR] `BAS_BASF_SE/` - 1 archivos
+            - `de_bas_2019_esef.meta.json` - JSON
+          - [DIR] `BAYN_Bayer_AG/` - 1 archivos
+            - `de_bayn_2019_esef.meta.json` - JSON
+          - [DIR] `BMW_Bayerische_Motoren_Werke_AG_/` - 1 archivos
+            - `de_bmw_2019_esef.meta.json` - JSON
+          - [DIR] `DBK_Deutsche_Bank_AG/` - 1 archivos
+            - `de_dbk_2019_esef.meta.json` - JSON
+          - [DIR] `DHL_Deutsche_Post_AG_/` - 1 archivos
+            - `de_dhl_2019_esef.meta.json` - JSON
+          - [DIR] `DTE_Deutsche_Telekom_AG/` - 1 archivos
+            - `de_dte_2019_esef.meta.json` - JSON
+          - [DIR] `IFX_Infineon_Technologies_AG/` - 1 archivos
+            - `de_ifx_2019_esef.meta.json` - JSON
+          - [DIR] `MBG_Mercedes-Benz_Group_AG/` - 1 archivos
+            - `de_mbg_2019_esef.meta.json` - JSON
+          - [DIR] `MUV2_Münchener_Rückversicherungs-Gesellschaft_/` - 1 archivos
+            - `de_muv2_2019_esef.meta.json` - JSON
+          - [DIR] `RWE_RWE_AG/` - 1 archivos
+            - `de_rwe_2019_esef.meta.json` - JSON
+          - [DIR] `SAP_SAP_SE/` - 1 archivos
+            - `de_sap_2019_esef.meta.json` - JSON
+          - [DIR] `SIE_Siemens_AG/` - 1 archivos
+            - `de_sie_2019_esef.meta.json` - JSON
+          - [DIR] `VOW3_Volkswagen_AG/` - 1 archivos
+            - `de_vow3_2019_esef.meta.json` - JSON
+        - [DIR] `2020/` - 15 archivos
+          - [DIR] `ADS_Adidas_AG/` - 1 archivos
+            - `de_ads_2020_esef.meta.json` - JSON
+          - [DIR] `ALV_Allianz_SE/` - 1 archivos
+            - `de_alv_2020_esef.meta.json` - JSON
+          - [DIR] `BAS_BASF_SE/` - 1 archivos
+            - `de_bas_2020_esef.meta.json` - JSON
+          - [DIR] `BAYN_Bayer_AG/` - 1 archivos
+            - `de_bayn_2020_esef.meta.json` - JSON
+          - [DIR] `BMW_Bayerische_Motoren_Werke_AG_/` - 1 archivos
+            - `de_bmw_2020_esef.meta.json` - JSON
+          - [DIR] `DBK_Deutsche_Bank_AG/` - 1 archivos
+            - `de_dbk_2020_esef.meta.json` - JSON
+          - [DIR] `DHL_Deutsche_Post_AG_/` - 1 archivos
+            - `de_dhl_2020_esef.meta.json` - JSON
+          - [DIR] `DTE_Deutsche_Telekom_AG/` - 1 archivos
+            - `de_dte_2020_esef.meta.json` - JSON
+          - [DIR] `IFX_Infineon_Technologies_AG/` - 1 archivos
+            - `de_ifx_2020_esef.meta.json` - JSON
+          - [DIR] `MBG_Mercedes-Benz_Group_AG/` - 1 archivos
+            - `de_mbg_2020_esef.meta.json` - JSON
+          - [DIR] `MUV2_Münchener_Rückversicherungs-Gesellschaft_/` - 1 archivos
+            - `de_muv2_2020_esef.meta.json` - JSON
+          - [DIR] `RWE_RWE_AG/` - 1 archivos
+            - `de_rwe_2020_esef.meta.json` - JSON
+          - [DIR] `SAP_SAP_SE/` - 1 archivos
+            - `de_sap_2020_esef.meta.json` - JSON
+          - [DIR] `SIE_Siemens_AG/` - 1 archivos
+            - `de_sie_2020_esef.meta.json` - JSON
+          - [DIR] `VOW3_Volkswagen_AG/` - 1 archivos
+            - `de_vow3_2020_esef.meta.json` - JSON
+        - [DIR] `2021/` - 15 archivos
+          - [DIR] `ADS_Adidas_AG/` - 1 archivos
+            - `de_ads_2021_esef.meta.json` - JSON
+          - [DIR] `ALV_Allianz_SE/` - 1 archivos
+            - `de_alv_2021_esef.meta.json` - JSON
+          - [DIR] `BAS_BASF_SE/` - 1 archivos
+            - `de_bas_2021_esef.meta.json` - JSON
+          - [DIR] `BAYN_Bayer_AG/` - 1 archivos
+            - `de_bayn_2021_esef.meta.json` - JSON
+          - [DIR] `BMW_Bayerische_Motoren_Werke_AG_/` - 1 archivos
+            - `de_bmw_2021_esef.meta.json` - JSON
+          - [DIR] `DBK_Deutsche_Bank_AG/` - 1 archivos
+            - `de_dbk_2021_esef.meta.json` - JSON
+          - [DIR] `DHL_Deutsche_Post_AG_/` - 1 archivos
+            - `de_dhl_2021_esef.meta.json` - JSON
+          - [DIR] `DTE_Deutsche_Telekom_AG/` - 1 archivos
+            - `de_dte_2021_esef.meta.json` - JSON
+          - [DIR] `IFX_Infineon_Technologies_AG/` - 1 archivos
+            - `de_ifx_2021_esef.meta.json` - JSON
+          - [DIR] `MBG_Mercedes-Benz_Group_AG/` - 1 archivos
+            - `de_mbg_2021_esef.meta.json` - JSON
+          - [DIR] `MUV2_Münchener_Rückversicherungs-Gesellschaft_/` - 1 archivos
+            - `de_muv2_2021_esef.meta.json` - JSON
+          - [DIR] `RWE_RWE_AG/` - 1 archivos
+            - `de_rwe_2021_esef.meta.json` - JSON
+          - [DIR] `SAP_SAP_SE/` - 1 archivos
+            - `de_sap_2021_esef.meta.json` - JSON
+          - [DIR] `SIE_Siemens_AG/` - 1 archivos
+            - `de_sie_2021_esef.meta.json` - JSON
+          - [DIR] `VOW3_Volkswagen_AG/` - 1 archivos
+            - `de_vow3_2021_esef.meta.json` - JSON
+        - [DIR] `2022/` - 15 archivos
+          - [DIR] `ADS_Adidas_AG/` - 1 archivos
+            - `de_ads_2022_esef.meta.json` - JSON
+          - [DIR] `ALV_Allianz_SE/` - 1 archivos
+            - `de_alv_2022_esef.meta.json` - JSON
+          - [DIR] `BAS_BASF_SE/` - 1 archivos
+            - `de_bas_2022_esef.meta.json` - JSON
+          - [DIR] `BAYN_Bayer_AG/` - 1 archivos
+            - `de_bayn_2022_esef.meta.json` - JSON
+          - [DIR] `BMW_Bayerische_Motoren_Werke_AG_/` - 1 archivos
+            - `de_bmw_2022_esef.meta.json` - JSON
+          - [DIR] `DBK_Deutsche_Bank_AG/` - 1 archivos
+            - `de_dbk_2022_esef.meta.json` - JSON
+          - [DIR] `DHL_Deutsche_Post_AG_/` - 1 archivos
+            - `de_dhl_2022_esef.meta.json` - JSON
+          - [DIR] `DTE_Deutsche_Telekom_AG/` - 1 archivos
+            - `de_dte_2022_esef.meta.json` - JSON
+          - [DIR] `IFX_Infineon_Technologies_AG/` - 1 archivos
+            - `de_ifx_2022_esef.meta.json` - JSON
+          - [DIR] `MBG_Mercedes-Benz_Group_AG/` - 1 archivos
+            - `de_mbg_2022_esef.meta.json` - JSON
+          - [DIR] `MUV2_Münchener_Rückversicherungs-Gesellschaft_/` - 1 archivos
+            - `de_muv2_2022_esef.meta.json` - JSON
+          - [DIR] `RWE_RWE_AG/` - 1 archivos
+            - `de_rwe_2022_esef.meta.json` - JSON
+          - [DIR] `SAP_SAP_SE/` - 1 archivos
+            - `de_sap_2022_esef.meta.json` - JSON
+          - [DIR] `SIE_Siemens_AG/` - 1 archivos
+            - `de_sie_2022_esef.meta.json` - JSON
+          - [DIR] `VOW3_Volkswagen_AG/` - 1 archivos
+            - `de_vow3_2022_esef.meta.json` - JSON
+        - [DIR] `2023/` - 15 archivos
+          - [DIR] `ADS_Adidas_AG/` - 1 archivos
+            - `de_ads_2023_esef.meta.json` - JSON
+          - [DIR] `ALV_Allianz_SE/` - 1 archivos
+            - `de_alv_2023_esef.meta.json` - JSON
+          - [DIR] `BAS_BASF_SE/` - 1 archivos
+            - `de_bas_2023_esef.meta.json` - JSON
+          - [DIR] `BAYN_Bayer_AG/` - 1 archivos
+            - `de_bayn_2023_esef.meta.json` - JSON
+          - [DIR] `BMW_Bayerische_Motoren_Werke_AG_/` - 1 archivos
+            - `de_bmw_2023_esef.meta.json` - JSON
+          - [DIR] `DBK_Deutsche_Bank_AG/` - 1 archivos
+            - `de_dbk_2023_esef.meta.json` - JSON
+          - [DIR] `DHL_Deutsche_Post_AG_/` - 1 archivos
+            - `de_dhl_2023_esef.meta.json` - JSON
+          - [DIR] `DTE_Deutsche_Telekom_AG/` - 1 archivos
+            - `de_dte_2023_esef.meta.json` - JSON
+          - [DIR] `IFX_Infineon_Technologies_AG/` - 1 archivos
+            - `de_ifx_2023_esef.meta.json` - JSON
+          - [DIR] `MBG_Mercedes-Benz_Group_AG/` - 1 archivos
+            - `de_mbg_2023_esef.meta.json` - JSON
+          - [DIR] `RWE_RWE_AG/` - 1 archivos
+            - `de_rwe_2023_esef.meta.json` - JSON
+          - [DIR] `SAP_SAP_SE/` - 2 archivos
+            - `de_sap_2023_esef.meta.json` - JSON
+            - `sap_2023_cuentas_anuales_auditadas.htm` - HTML
+          - [DIR] `SIE_Siemens_AG/` - 1 archivos
+            - `de_sie_2023_esef.meta.json` - JSON
+          - [DIR] `VOW3_Volkswagen_AG/` - 1 archivos
+            - `de_vow3_2023_esef.meta.json` - JSON
+        - [DIR] `2024/` - 17 archivos
+          - [DIR] `ADS_Adidas_AG/` - 1 archivos
+            - `de_ads_2024_esef.meta.json` - JSON
+          - [DIR] `ALV_Allianz_SE/` - 1 archivos
+            - `de_alv_2024_esef.meta.json` - JSON
+          - [DIR] `BAS_BASF_SE/` - 1 archivos
+            - `de_bas_2024_esef.meta.json` - JSON
+          - [DIR] `BAYN_Bayer_AG/` - 1 archivos
+            - `de_bayn_2024_esef.meta.json` - JSON
+          - [DIR] `BMW_Bayerische_Motoren_Werke_AG_/` - 1 archivos
+            - `de_bmw_2024_esef.meta.json` - JSON
+          - [DIR] `DBK_Deutsche_Bank_AG/` - 2 archivos
+            - `db_2024_cuentas_anuales_auditadas.htm` - HTML
+            - `de_dbk_2024_esef.meta.json` - JSON
+          - [DIR] `DHL_Deutsche_Post_AG_/` - 1 archivos
+            - `de_dhl_2024_esef.meta.json` - JSON
+          - [DIR] `DTE_Deutsche_Telekom_AG/` - 1 archivos
+            - `de_dte_2024_esef.meta.json` - JSON
+          - [DIR] `IFX_Infineon_Technologies_AG/` - 1 archivos
+            - `de_ifx_2024_esef.meta.json` - JSON
+          - [DIR] `MBG_Mercedes-Benz_Group_AG/` - 1 archivos
+            - `de_mbg_2024_esef.meta.json` - JSON
+          - [DIR] `MUV2_Münchener_Rückversicherungs-Gesellschaft_/` - 1 archivos
+            - `de_muv2_2024_esef.meta.json` - JSON
+          - [DIR] `RWE_RWE_AG/` - 1 archivos
+            - `de_rwe_2024_esef.meta.json` - JSON
+          - [DIR] `SAP_SAP_SE/` - 2 archivos
+            - `de_sap_2024_esef.meta.json` - JSON
+            - `sap_2024_cuentas_anuales_auditadas.htm` - HTML
+          - [DIR] `SIE_Siemens_AG/` - 1 archivos
+            - `de_sie_2024_esef.meta.json` - JSON
+          - [DIR] `VOW3_Volkswagen_AG/` - 1 archivos
+            - `de_vow3_2024_esef.meta.json` - JSON
+        - [DIR] `2025/` - 16 archivos
+          - [DIR] `ADS_Adidas_AG/` - 1 archivos
+            - `de_ads_2025_esef.meta.json` - JSON
+          - [DIR] `ALV_Allianz_SE/` - 1 archivos
+            - `de_alv_2025_esef.meta.json` - JSON
+          - [DIR] `BAS_BASF_SE/` - 1 archivos
+            - `de_bas_2025_esef.meta.json` - JSON
+          - [DIR] `BAYN_Bayer_AG/` - 1 archivos
+            - `de_bayn_2025_esef.meta.json` - JSON
+          - [DIR] `BMW_Bayerische_Motoren_Werke_AG_/` - 1 archivos
+            - `de_bmw_2025_esef.meta.json` - JSON
+          - [DIR] `DBK_Deutsche_Bank_AG/` - 2 archivos
+            - `db_2025_cuentas_anuales_auditadas.htm` - HTML
+            - `de_dbk_2025_esef.meta.json` - JSON
+          - [DIR] `DHL_Deutsche_Post_AG_/` - 1 archivos
+            - `de_dhl_2025_esef.meta.json` - JSON
+          - [DIR] `DTE_Deutsche_Telekom_AG/` - 1 archivos
+            - `de_dte_2025_esef.meta.json` - JSON
+          - [DIR] `IFX_Infineon_Technologies_AG/` - 1 archivos
+            - `de_ifx_2025_esef.meta.json` - JSON
+          - [DIR] `MBG_Mercedes-Benz_Group_AG/` - 1 archivos
+            - `de_mbg_2025_esef.meta.json` - JSON
+          - [DIR] `RWE_RWE_AG/` - 1 archivos
+            - `de_rwe_2025_esef.meta.json` - JSON
+          - [DIR] `SAP_SAP_SE/` - 2 archivos
+            - `de_sap_2025_esef.meta.json` - JSON
+            - `sap_2025_cuentas_anuales_auditadas.htm` - HTML
+          - [DIR] `SIE_Siemens_AG/` - 1 archivos
+            - `de_sie_2025_esef.meta.json` - JSON
+          - [DIR] `VOW3_Volkswagen_AG/` - 1 archivos
+            - `de_vow3_2025_esef.meta.json` - JSON
+        - `MANIFEST_BAFIN_2023.json` - JSON
+      - [DIR] `ES_CNMV/` - 3949 archivos (resumen: .xml:2447, .json:615, .xsd:413, .xhtml:298, .html:80, .zip:79)
+        - [DIR] `2024/` - 40 archivos (no desglosado, profundidad)
+        - [DIR] `_AUDIT_REPORTS/` - 481 archivos (no desglosado, profundidad)
+        - [DIR] `INFORMES_ANUALES_COMPLETOS/` - 2249 archivos (no desglosado, profundidad)
+        - [DIR] `INFORMES_PERIODICOS_INTERMEDIOS/` - 106 archivos (no desglosado, profundidad)
+        - [DIR] `INUTILES/` - 1066 archivos (no desglosado, profundidad)
+        - `FORENSIC_AUDIT_REPORT_20260827_174019.json` - JSON
+        - `FORENSIC_AUDIT_REPORT_20260827_174716.json` - JSON
+        - `FORENSIC_AUDIT_REPORT_20260827_174941.json` - JSON
+        - `FORENSIC_AUDIT_SUMMARY.md` - Markdown
+        - `FORENSIC_AUDIT_SUMMARY_20260827_174019.md` - Markdown
+        - `FORENSIC_AUDIT_SUMMARY_20260827_174941.md` - Markdown
+        - `ORGANIZED_INVENTORY_SHA256.json` - JSON
+      - [DIR] `FR_AMF/` - 111 archivos (resumen: .json:105, .htm:6)
+        - [DIR] `2019/` - 15 archivos
+          - [DIR] `AI_Air_Liquide_SA/` - 1 archivos
+            - `fr_ai_2019_esef.meta.json` - JSON
+          - [DIR] `AIR_Airbus_SE/` - 1 archivos
+            - `fr_air_2019_esef.meta.json` - JSON
+          - [DIR] `BNP_BNP_Paribas_SA/` - 1 archivos
+            - `fr_bnp_2019_esef.meta.json` - JSON
+          - [DIR] `CAP_Capgemini_SE/` - 1 archivos
+            - `fr_cap_2019_esef.meta.json` - JSON
+          - [DIR] `CS_AXA_SA/` - 1 archivos
+            - `fr_cs_2019_esef.meta.json` - JSON
+          - [DIR] `DG_Vinci_SA/` - 1 archivos
+            - `fr_dg_2019_esef.meta.json` - JSON
+          - [DIR] `EL_EssilorLuxottica_SA/` - 1 archivos
+            - `fr_el_2019_esef.meta.json` - JSON
+          - [DIR] `ENGI_Engie_SA/` - 1 archivos
+            - `fr_engi_2019_esef.meta.json` - JSON
+          - [DIR] `MC_LVMH_Moët_Hennessy_Louis_Vuitton_SE/` - 1 archivos
+            - `fr_mc_2019_esef.meta.json` - JSON
+          - [DIR] `OR_L'Oréal_SA/` - 1 archivos
+            - `fr_or_2019_esef.meta.json` - JSON
+          - [DIR] `RMS_Hermès_International_SCA/` - 1 archivos
+            - `fr_rms_2019_esef.meta.json` - JSON
+          - [DIR] `SAF_Safran_SA/` - 1 archivos
+            - `fr_saf_2019_esef.meta.json` - JSON
+          - [DIR] `SAN_Sanofi_SA/` - 1 archivos
+            - `fr_san_2019_esef.meta.json` - JSON
+          - [DIR] `SU_Schneider_Electric_SE/` - 1 archivos
+            - `fr_su_2019_esef.meta.json` - JSON
+          - [DIR] `TTE_TotalEnergies_SE/` - 1 archivos
+            - `fr_tte_2019_esef.meta.json` - JSON
+        - [DIR] `2020/` - 15 archivos
+          - [DIR] `AI_Air_Liquide_SA/` - 1 archivos
+            - `fr_ai_2020_esef.meta.json` - JSON
+          - [DIR] `AIR_Airbus_SE/` - 1 archivos
+            - `fr_air_2020_esef.meta.json` - JSON
+          - [DIR] `BNP_BNP_Paribas_SA/` - 1 archivos
+            - `fr_bnp_2020_esef.meta.json` - JSON
+          - [DIR] `CAP_Capgemini_SE/` - 1 archivos
+            - `fr_cap_2020_esef.meta.json` - JSON
+          - [DIR] `CS_AXA_SA/` - 1 archivos
+            - `fr_cs_2020_esef.meta.json` - JSON
+          - [DIR] `DG_Vinci_SA/` - 1 archivos
+            - `fr_dg_2020_esef.meta.json` - JSON
+          - [DIR] `EL_EssilorLuxottica_SA/` - 1 archivos
+            - `fr_el_2020_esef.meta.json` - JSON
+          - [DIR] `ENGI_Engie_SA/` - 1 archivos
+            - `fr_engi_2020_esef.meta.json` - JSON
+          - [DIR] `MC_LVMH_Moët_Hennessy_Louis_Vuitton_SE/` - 1 archivos
+            - `fr_mc_2020_esef.meta.json` - JSON
+          - [DIR] `OR_L'Oréal_SA/` - 1 archivos
+            - `fr_or_2020_esef.meta.json` - JSON
+          - [DIR] `RMS_Hermès_International_SCA/` - 1 archivos
+            - `fr_rms_2020_esef.meta.json` - JSON
+          - [DIR] `SAF_Safran_SA/` - 1 archivos
+            - `fr_saf_2020_esef.meta.json` - JSON
+          - [DIR] `SAN_Sanofi_SA/` - 1 archivos
+            - `fr_san_2020_esef.meta.json` - JSON
+          - [DIR] `SU_Schneider_Electric_SE/` - 1 archivos
+            - `fr_su_2020_esef.meta.json` - JSON
+          - [DIR] `TTE_TotalEnergies_SE/` - 1 archivos
+            - `fr_tte_2020_esef.meta.json` - JSON
+        - [DIR] `2021/` - 15 archivos
+          - [DIR] `AI_Air_Liquide_SA/` - 1 archivos
+            - `fr_ai_2021_esef.meta.json` - JSON
+          - [DIR] `AIR_Airbus_SE/` - 1 archivos
+            - `fr_air_2021_esef.meta.json` - JSON
+          - [DIR] `BNP_BNP_Paribas_SA/` - 1 archivos
+            - `fr_bnp_2021_esef.meta.json` - JSON
+          - [DIR] `CAP_Capgemini_SE/` - 1 archivos
+            - `fr_cap_2021_esef.meta.json` - JSON
+          - [DIR] `CS_AXA_SA/` - 1 archivos
+            - `fr_cs_2021_esef.meta.json` - JSON
+          - [DIR] `DG_Vinci_SA/` - 1 archivos
+            - `fr_dg_2021_esef.meta.json` - JSON
+          - [DIR] `EL_EssilorLuxottica_SA/` - 1 archivos
+            - `fr_el_2021_esef.meta.json` - JSON
+          - [DIR] `ENGI_Engie_SA/` - 1 archivos
+            - `fr_engi_2021_esef.meta.json` - JSON
+          - [DIR] `MC_LVMH_Moët_Hennessy_Louis_Vuitton_SE/` - 1 archivos
+            - `fr_mc_2021_esef.meta.json` - JSON
+          - [DIR] `OR_L'Oréal_SA/` - 1 archivos
+            - `fr_or_2021_esef.meta.json` - JSON
+          - [DIR] `RMS_Hermès_International_SCA/` - 1 archivos
+            - `fr_rms_2021_esef.meta.json` - JSON
+          - [DIR] `SAF_Safran_SA/` - 1 archivos
+            - `fr_saf_2021_esef.meta.json` - JSON
+          - [DIR] `SAN_Sanofi_SA/` - 1 archivos
+            - `fr_san_2021_esef.meta.json` - JSON
+          - [DIR] `SU_Schneider_Electric_SE/` - 1 archivos
+            - `fr_su_2021_esef.meta.json` - JSON
+          - [DIR] `TTE_TotalEnergies_SE/` - 1 archivos
+            - `fr_tte_2021_esef.meta.json` - JSON
+        - [DIR] `2022/` - 15 archivos
+          - [DIR] `AI_Air_Liquide_SA/` - 1 archivos
+            - `fr_ai_2022_esef.meta.json` - JSON
+          - [DIR] `AIR_Airbus_SE/` - 1 archivos
+            - `fr_air_2022_esef.meta.json` - JSON
+          - [DIR] `BNP_BNP_Paribas_SA/` - 1 archivos
+            - `fr_bnp_2022_esef.meta.json` - JSON
+          - [DIR] `CAP_Capgemini_SE/` - 1 archivos
+            - `fr_cap_2022_esef.meta.json` - JSON
+          - [DIR] `CS_AXA_SA/` - 1 archivos
+            - `fr_cs_2022_esef.meta.json` - JSON
+          - [DIR] `DG_Vinci_SA/` - 1 archivos
+            - `fr_dg_2022_esef.meta.json` - JSON
+          - [DIR] `EL_EssilorLuxottica_SA/` - 1 archivos
+            - `fr_el_2022_esef.meta.json` - JSON
+          - [DIR] `ENGI_Engie_SA/` - 1 archivos
+            - `fr_engi_2022_esef.meta.json` - JSON
+          - [DIR] `MC_LVMH_Moët_Hennessy_Louis_Vuitton_SE/` - 1 archivos
+            - `fr_mc_2022_esef.meta.json` - JSON
+          - [DIR] `OR_L'Oréal_SA/` - 1 archivos
+            - `fr_or_2022_esef.meta.json` - JSON
+          - [DIR] `RMS_Hermès_International_SCA/` - 1 archivos
+            - `fr_rms_2022_esef.meta.json` - JSON
+          - [DIR] `SAF_Safran_SA/` - 1 archivos
+            - `fr_saf_2022_esef.meta.json` - JSON
+          - [DIR] `SAN_Sanofi_SA/` - 1 archivos
+            - `fr_san_2022_esef.meta.json` - JSON
+          - [DIR] `SU_Schneider_Electric_SE/` - 1 archivos
+            - `fr_su_2022_esef.meta.json` - JSON
+          - [DIR] `TTE_TotalEnergies_SE/` - 1 archivos
+            - `fr_tte_2022_esef.meta.json` - JSON
+        - [DIR] `2023/` - 17 archivos
+          - [DIR] `AI_Air_Liquide_SA/` - 1 archivos
+            - `fr_ai_2023_esef.meta.json` - JSON
+          - [DIR] `AIR_Airbus_SE/` - 1 archivos
+            - `fr_air_2023_esef.meta.json` - JSON
+          - [DIR] `BNP_BNP_Paribas_SA/` - 1 archivos
+            - `fr_bnp_2023_esef.meta.json` - JSON
+          - [DIR] `CAP_Capgemini_SE/` - 1 archivos
+            - `fr_cap_2023_esef.meta.json` - JSON
+          - [DIR] `CS_AXA_SA/` - 1 archivos
+            - `fr_cs_2023_esef.meta.json` - JSON
+          - [DIR] `DG_Vinci_SA/` - 1 archivos
+            - `fr_dg_2023_esef.meta.json` - JSON
+          - [DIR] `EL_EssilorLuxottica_SA/` - 1 archivos
+            - `fr_el_2023_esef.meta.json` - JSON
+          - [DIR] `ENGI_Engie_SA/` - 1 archivos
+            - `fr_engi_2023_esef.meta.json` - JSON
+          - [DIR] `MC_LVMH_Moët_Hennessy_Louis_Vuitton_SE/` - 1 archivos
+            - `fr_mc_2023_esef.meta.json` - JSON
+          - [DIR] `OR_L'Oréal_SA/` - 1 archivos
+            - `fr_or_2023_esef.meta.json` - JSON
+          - [DIR] `RMS_Hermès_International_SCA/` - 1 archivos
+            - `fr_rms_2023_esef.meta.json` - JSON
+          - [DIR] `SAF_Safran_SA/` - 1 archivos
+            - `fr_saf_2023_esef.meta.json` - JSON
+          - [DIR] `SAN_Sanofi_SA/` - 2 archivos
+            - `fr_san_2023_esef.meta.json` - JSON
+            - `sny_2023_cuentas_anuales_auditadas.htm` - HTML
+          - [DIR] `SU_Schneider_Electric_SE/` - 1 archivos
+            - `fr_su_2023_esef.meta.json` - JSON
+          - [DIR] `TTE_TotalEnergies_SE/` - 2 archivos
+            - `fr_tte_2023_esef.meta.json` - JSON
+            - `tte_2023_cuentas_anuales_auditadas.htm` - HTML
+        - [DIR] `2024/` - 17 archivos
+          - [DIR] `AI_Air_Liquide_SA/` - 1 archivos
+            - `fr_ai_2024_esef.meta.json` - JSON
+          - [DIR] `AIR_Airbus_SE/` - 1 archivos
+            - `fr_air_2024_esef.meta.json` - JSON
+          - [DIR] `BNP_BNP_Paribas_SA/` - 1 archivos
+            - `fr_bnp_2024_esef.meta.json` - JSON
+          - [DIR] `CAP_Capgemini_SE/` - 1 archivos
+            - `fr_cap_2024_esef.meta.json` - JSON
+          - [DIR] `CS_AXA_SA/` - 1 archivos
+            - `fr_cs_2024_esef.meta.json` - JSON
+          - [DIR] `DG_Vinci_SA/` - 1 archivos
+            - `fr_dg_2024_esef.meta.json` - JSON
+          - [DIR] `EL_EssilorLuxottica_SA/` - 1 archivos
+            - `fr_el_2024_esef.meta.json` - JSON
+          - [DIR] `ENGI_Engie_SA/` - 1 archivos
+            - `fr_engi_2024_esef.meta.json` - JSON
+          - [DIR] `MC_LVMH_Moët_Hennessy_Louis_Vuitton_SE/` - 1 archivos
+            - `fr_mc_2024_esef.meta.json` - JSON
+          - [DIR] `OR_L'Oréal_SA/` - 1 archivos
+            - `fr_or_2024_esef.meta.json` - JSON
+          - [DIR] `RMS_Hermès_International_SCA/` - 1 archivos
+            - `fr_rms_2024_esef.meta.json` - JSON
+          - [DIR] `SAF_Safran_SA/` - 1 archivos
+            - `fr_saf_2024_esef.meta.json` - JSON
+          - [DIR] `SAN_Sanofi_SA/` - 2 archivos
+            - `fr_san_2024_esef.meta.json` - JSON
+            - `sny_2024_cuentas_anuales_auditadas.htm` - HTML
+          - [DIR] `SU_Schneider_Electric_SE/` - 1 archivos
+            - `fr_su_2024_esef.meta.json` - JSON
+          - [DIR] `TTE_TotalEnergies_SE/` - 2 archivos
+            - `fr_tte_2024_esef.meta.json` - JSON
+            - `tte_2024_cuentas_anuales_auditadas.htm` - HTML
+        - [DIR] `2025/` - 17 archivos
+          - [DIR] `AI_Air_Liquide_SA/` - 1 archivos
+            - `fr_ai_2025_esef.meta.json` - JSON
+          - [DIR] `AIR_Airbus_SE/` - 1 archivos
+            - `fr_air_2025_esef.meta.json` - JSON
+          - [DIR] `BNP_BNP_Paribas_SA/` - 1 archivos
+            - `fr_bnp_2025_esef.meta.json` - JSON
+          - [DIR] `CAP_Capgemini_SE/` - 1 archivos
+            - `fr_cap_2025_esef.meta.json` - JSON
+          - [DIR] `CS_AXA_SA/` - 1 archivos
+            - `fr_cs_2025_esef.meta.json` - JSON
+          - [DIR] `DG_Vinci_SA/` - 1 archivos
+            - `fr_dg_2025_esef.meta.json` - JSON
+          - [DIR] `EL_EssilorLuxottica_SA/` - 1 archivos
+            - `fr_el_2025_esef.meta.json` - JSON
+          - [DIR] `ENGI_Engie_SA/` - 1 archivos
+            - `fr_engi_2025_esef.meta.json` - JSON
+          - [DIR] `MC_LVMH_Moët_Hennessy_Louis_Vuitton_SE/` - 1 archivos
+            - `fr_mc_2025_esef.meta.json` - JSON
+          - [DIR] `OR_L'Oréal_SA/` - 1 archivos
+            - `fr_or_2025_esef.meta.json` - JSON
+          - [DIR] `RMS_Hermès_International_SCA/` - 1 archivos
+            - `fr_rms_2025_esef.meta.json` - JSON
+          - [DIR] `SAF_Safran_SA/` - 1 archivos
+            - `fr_saf_2025_esef.meta.json` - JSON
+          - [DIR] `SAN_Sanofi_SA/` - 2 archivos
+            - `fr_san_2025_esef.meta.json` - JSON
+            - `sny_2025_cuentas_anuales_auditadas.htm` - HTML
+          - [DIR] `SU_Schneider_Electric_SE/` - 1 archivos
+            - `fr_su_2025_esef.meta.json` - JSON
+          - [DIR] `TTE_TotalEnergies_SE/` - 2 archivos
+            - `fr_tte_2025_esef.meta.json` - JSON
+            - `tte_2025_cuentas_anuales_auditadas.htm` - HTML
+      - [DIR] `IT_CONSOB/` - 84 archivos (resumen: .json:84)
+        - [DIR] `2019/` - 12 archivos
+          - [DIR] `CPR_Davide_Campari-Milano_NV/` - 1 archivos
+            - `it_cpr_2019_esef.meta.json` - JSON
+          - [DIR] `ENEL_Enel_SpA/` - 1 archivos
+            - `it_enel_2019_esef.meta.json` - JSON
+          - [DIR] `ENI_Eni_SpA/` - 1 archivos
+            - `it_eni_2019_esef.meta.json` - JSON
+          - [DIR] `G_Assicurazioni_Generali_SpA/` - 1 archivos
+            - `it_g_2019_esef.meta.json` - JSON
+          - [DIR] `ISP_Intesa_Sanpaolo_SpA/` - 1 archivos
+            - `it_isp_2019_esef.meta.json` - JSON
+          - [DIR] `LDO_Leonardo_SpA/` - 1 archivos
+            - `it_ldo_2019_esef.meta.json` - JSON
+          - [DIR] `MONC_Moncler_SpA/` - 1 archivos
+            - `it_monc_2019_esef.meta.json` - JSON
+          - [DIR] `PRY_Prysmian_SpA/` - 1 archivos
+            - `it_pry_2019_esef.meta.json` - JSON
+          - [DIR] `RACE_Ferrari_NV/` - 1 archivos
+            - `it_race_2019_esef.meta.json` - JSON
+          - [DIR] `SRG_Snam_SpA/` - 1 archivos
+            - `it_srg_2019_esef.meta.json` - JSON
+          - [DIR] `TRN_Terna_SpA/` - 1 archivos
+            - `it_trn_2019_esef.meta.json` - JSON
+          - [DIR] `UCG_UniCredit_SpA/` - 1 archivos
+            - `it_ucg_2019_esef.meta.json` - JSON
+        - [DIR] `2020/` - 12 archivos
+          - [DIR] `CPR_Davide_Campari-Milano_NV/` - 1 archivos
+            - `it_cpr_2020_esef.meta.json` - JSON
+          - [DIR] `ENEL_Enel_SpA/` - 1 archivos
+            - `it_enel_2020_esef.meta.json` - JSON
+          - [DIR] `ENI_Eni_SpA/` - 1 archivos
+            - `it_eni_2020_esef.meta.json` - JSON
+          - [DIR] `G_Assicurazioni_Generali_SpA/` - 1 archivos
+            - `it_g_2020_esef.meta.json` - JSON
+          - [DIR] `ISP_Intesa_Sanpaolo_SpA/` - 1 archivos
+            - `it_isp_2020_esef.meta.json` - JSON
+          - [DIR] `LDO_Leonardo_SpA/` - 1 archivos
+            - `it_ldo_2020_esef.meta.json` - JSON
+          - [DIR] `MONC_Moncler_SpA/` - 1 archivos
+            - `it_monc_2020_esef.meta.json` - JSON
+          - [DIR] `PRY_Prysmian_SpA/` - 1 archivos
+            - `it_pry_2020_esef.meta.json` - JSON
+          - [DIR] `RACE_Ferrari_NV/` - 1 archivos
+            - `it_race_2020_esef.meta.json` - JSON
+          - [DIR] `SRG_Snam_SpA/` - 1 archivos
+            - `it_srg_2020_esef.meta.json` - JSON
+          - [DIR] `TRN_Terna_SpA/` - 1 archivos
+            - `it_trn_2020_esef.meta.json` - JSON
+          - [DIR] `UCG_UniCredit_SpA/` - 1 archivos
+            - `it_ucg_2020_esef.meta.json` - JSON
+        - [DIR] `2021/` - 12 archivos
+          - [DIR] `CPR_Davide_Campari-Milano_NV/` - 1 archivos
+            - `it_cpr_2021_esef.meta.json` - JSON
+          - [DIR] `ENEL_Enel_SpA/` - 1 archivos
+            - `it_enel_2021_esef.meta.json` - JSON
+          - [DIR] `ENI_Eni_SpA/` - 1 archivos
+            - `it_eni_2021_esef.meta.json` - JSON
+          - [DIR] `G_Assicurazioni_Generali_SpA/` - 1 archivos
+            - `it_g_2021_esef.meta.json` - JSON
+          - [DIR] `ISP_Intesa_Sanpaolo_SpA/` - 1 archivos
+            - `it_isp_2021_esef.meta.json` - JSON
+          - [DIR] `LDO_Leonardo_SpA/` - 1 archivos
+            - `it_ldo_2021_esef.meta.json` - JSON
+          - [DIR] `MONC_Moncler_SpA/` - 1 archivos
+            - `it_monc_2021_esef.meta.json` - JSON
+          - [DIR] `PRY_Prysmian_SpA/` - 1 archivos
+            - `it_pry_2021_esef.meta.json` - JSON
+          - [DIR] `RACE_Ferrari_NV/` - 1 archivos
+            - `it_race_2021_esef.meta.json` - JSON
+          - [DIR] `SRG_Snam_SpA/` - 1 archivos
+            - `it_srg_2021_esef.meta.json` - JSON
+          - [DIR] `TRN_Terna_SpA/` - 1 archivos
+            - `it_trn_2021_esef.meta.json` - JSON
+          - [DIR] `UCG_UniCredit_SpA/` - 1 archivos
+            - `it_ucg_2021_esef.meta.json` - JSON
+        - [DIR] `2022/` - 12 archivos
+          - [DIR] `CPR_Davide_Campari-Milano_NV/` - 1 archivos
+            - `it_cpr_2022_esef.meta.json` - JSON
+          - [DIR] `ENEL_Enel_SpA/` - 1 archivos
+            - `it_enel_2022_esef.meta.json` - JSON
+          - [DIR] `ENI_Eni_SpA/` - 1 archivos
+            - `it_eni_2022_esef.meta.json` - JSON
+          - [DIR] `G_Assicurazioni_Generali_SpA/` - 1 archivos
+            - `it_g_2022_esef.meta.json` - JSON
+          - [DIR] `ISP_Intesa_Sanpaolo_SpA/` - 1 archivos
+            - `it_isp_2022_esef.meta.json` - JSON
+          - [DIR] `LDO_Leonardo_SpA/` - 1 archivos
+            - `it_ldo_2022_esef.meta.json` - JSON
+          - [DIR] `MONC_Moncler_SpA/` - 1 archivos
+            - `it_monc_2022_esef.meta.json` - JSON
+          - [DIR] `PRY_Prysmian_SpA/` - 1 archivos
+            - `it_pry_2022_esef.meta.json` - JSON
+          - [DIR] `RACE_Ferrari_NV/` - 1 archivos
+            - `it_race_2022_esef.meta.json` - JSON
+          - [DIR] `SRG_Snam_SpA/` - 1 archivos
+            - `it_srg_2022_esef.meta.json` - JSON
+          - [DIR] `TRN_Terna_SpA/` - 1 archivos
+            - `it_trn_2022_esef.meta.json` - JSON
+          - [DIR] `UCG_UniCredit_SpA/` - 1 archivos
+            - `it_ucg_2022_esef.meta.json` - JSON
+        - [DIR] `2023/` - 12 archivos
+          - [DIR] `CPR_Davide_Campari-Milano_NV/` - 1 archivos
+            - `it_cpr_2023_esef.meta.json` - JSON
+          - [DIR] `ENEL_Enel_SpA/` - 1 archivos
+            - `it_enel_2023_esef.meta.json` - JSON
+          - [DIR] `ENI_Eni_SpA/` - 1 archivos
+            - `it_eni_2023_esef.meta.json` - JSON
+          - [DIR] `G_Assicurazioni_Generali_SpA/` - 1 archivos
+            - `it_g_2023_esef.meta.json` - JSON
+          - [DIR] `ISP_Intesa_Sanpaolo_SpA/` - 1 archivos
+            - `it_isp_2023_esef.meta.json` - JSON
+          - [DIR] `LDO_Leonardo_SpA/` - 1 archivos
+            - `it_ldo_2023_esef.meta.json` - JSON
+          - [DIR] `MONC_Moncler_SpA/` - 1 archivos
+            - `it_monc_2023_esef.meta.json` - JSON
+          - [DIR] `PRY_Prysmian_SpA/` - 1 archivos
+            - `it_pry_2023_esef.meta.json` - JSON
+          - [DIR] `RACE_Ferrari_NV/` - 1 archivos
+            - `it_race_2023_esef.meta.json` - JSON
+          - [DIR] `SRG_Snam_SpA/` - 1 archivos
+            - `it_srg_2023_esef.meta.json` - JSON
+          - [DIR] `TRN_Terna_SpA/` - 1 archivos
+            - `it_trn_2023_esef.meta.json` - JSON
+          - [DIR] `UCG_UniCredit_SpA/` - 1 archivos
+            - `it_ucg_2023_esef.meta.json` - JSON
+        - [DIR] `2024/` - 12 archivos
+          - [DIR] `CPR_Davide_Campari-Milano_NV/` - 1 archivos
+            - `it_cpr_2024_esef.meta.json` - JSON
+          - [DIR] `ENEL_Enel_SpA/` - 1 archivos
+            - `it_enel_2024_esef.meta.json` - JSON
+          - [DIR] `ENI_Eni_SpA/` - 1 archivos
+            - `it_eni_2024_esef.meta.json` - JSON
+          - [DIR] `G_Assicurazioni_Generali_SpA/` - 1 archivos
+            - `it_g_2024_esef.meta.json` - JSON
+          - [DIR] `ISP_Intesa_Sanpaolo_SpA/` - 1 archivos
+            - `it_isp_2024_esef.meta.json` - JSON
+          - [DIR] `LDO_Leonardo_SpA/` - 1 archivos
+            - `it_ldo_2024_esef.meta.json` - JSON
+          - [DIR] `MONC_Moncler_SpA/` - 1 archivos
+            - `it_monc_2024_esef.meta.json` - JSON
+          - [DIR] `PRY_Prysmian_SpA/` - 1 archivos
+            - `it_pry_2024_esef.meta.json` - JSON
+          - [DIR] `RACE_Ferrari_NV/` - 1 archivos
+            - `it_race_2024_esef.meta.json` - JSON
+          - [DIR] `SRG_Snam_SpA/` - 1 archivos
+            - `it_srg_2024_esef.meta.json` - JSON
+          - [DIR] `TRN_Terna_SpA/` - 1 archivos
+            - `it_trn_2024_esef.meta.json` - JSON
+          - [DIR] `UCG_UniCredit_SpA/` - 1 archivos
+            - `it_ucg_2024_esef.meta.json` - JSON
+        - [DIR] `2025/` - 12 archivos
+          - [DIR] `CPR_Davide_Campari-Milano_NV/` - 1 archivos
+            - `it_cpr_2025_esef.meta.json` - JSON
+          - [DIR] `ENEL_Enel_SpA/` - 1 archivos
+            - `it_enel_2025_esef.meta.json` - JSON
+          - [DIR] `ENI_Eni_SpA/` - 1 archivos
+            - `it_eni_2025_esef.meta.json` - JSON
+          - [DIR] `G_Assicurazioni_Generali_SpA/` - 1 archivos
+            - `it_g_2025_esef.meta.json` - JSON
+          - [DIR] `ISP_Intesa_Sanpaolo_SpA/` - 1 archivos
+            - `it_isp_2025_esef.meta.json` - JSON
+          - [DIR] `LDO_Leonardo_SpA/` - 1 archivos
+            - `it_ldo_2025_esef.meta.json` - JSON
+          - [DIR] `MONC_Moncler_SpA/` - 1 archivos
+            - `it_monc_2025_esef.meta.json` - JSON
+          - [DIR] `PRY_Prysmian_SpA/` - 1 archivos
+            - `it_pry_2025_esef.meta.json` - JSON
+          - [DIR] `RACE_Ferrari_NV/` - 1 archivos
+            - `it_race_2025_esef.meta.json` - JSON
+          - [DIR] `SRG_Snam_SpA/` - 1 archivos
+            - `it_srg_2025_esef.meta.json` - JSON
+          - [DIR] `TRN_Terna_SpA/` - 1 archivos
+            - `it_trn_2025_esef.meta.json` - JSON
+          - [DIR] `UCG_UniCredit_SpA/` - 1 archivos
+            - `it_ucg_2025_esef.meta.json` - JSON
+      - [DIR] `landing_raw/` - 926 archivos (resumen: .zip:466, .json:460)
+        - [DIR] `2020/` - 84 archivos (no desglosado, profundidad)
+        - [DIR] `2021/` - 214 archivos (no desglosado, profundidad)
+        - [DIR] `2022/` - 208 archivos (no desglosado, profundidad)
+        - [DIR] `2023/` - 208 archivos (no desglosado, profundidad)
+        - [DIR] `2024/` - 202 archivos (no desglosado, profundidad)
+        - [DIR] `2025/` - 1 archivos
+          - [DIR] `EDR/` - 1 archivos
+            - `edr_2025_esef_bundle.zip` - ZIP
+        - [DIR] `BME_GROWTH/` - 7 archivos
+          - [DIR] `2020/` - 1 archivos
+            - [DIR] `SOLT/` - 1 archivos
+              - `solt_2020_growth_bundle.zip` - ZIP
+          - [DIR] `2021/` - 2 archivos
+            - [DIR] `ATRS/` - 1 archivos
+              - `atrs_2021_growth_bundle.zip` - ZIP
+            - [DIR] `SOLT/` - 1 archivos
+              - `solt_2021_growth_bundle.zip` - ZIP
+          - [DIR] `2022/` - 2 archivos
+            - [DIR] `ATRS/` - 1 archivos
+              - `atrs_2022_growth_bundle.zip` - ZIP
+            - [DIR] `SOLT/` - 1 archivos
+              - `solt_2022_growth_bundle.zip` - ZIP
+          - [DIR] `2023/` - 1 archivos
+            - [DIR] `ATRS/` - 0 archivos
+            - [DIR] `SOLT/` - 1 archivos
+              - `solt_2023_growth_bundle.zip` - ZIP
+          - [DIR] `2024/` - 1 archivos
+            - [DIR] `ATRS/` - 1 archivos
+              - `atrs_2024_growth_bundle.zip` - ZIP
+        - `batch_summary_20260825_154922.json` - JSON
+        - `batch_summary_20260825_165718.json` - JSON
+      - [DIR] `NL_AFM/` - 73 archivos (resumen: .json:70, .htm:3)
+        - [DIR] `2019/` - 10 archivos
+          - [DIR] `AD_Koninklijke_Ahold_Delhaize_NV/` - 1 archivos
+            - `nl_ad_2019_esef.meta.json` - JSON
+          - [DIR] `ASML_ASML_Holding_NV/` - 1 archivos
+            - `nl_asml_2019_esef.meta.json` - JSON
+          - [DIR] `HEIA_Heineken_NV/` - 1 archivos
+            - `nl_heia_2019_esef.meta.json` - JSON
+          - [DIR] `INGA_ING_Groep_NV/` - 1 archivos
+            - `nl_inga_2019_esef.meta.json` - JSON
+          - [DIR] `PHIA_Koninklijke_Philips_NV/` - 1 archivos
+            - `nl_phia_2019_esef.meta.json` - JSON
+          - [DIR] `PROX_Prosus_NV/` - 1 archivos
+            - `nl_prox_2019_esef.meta.json` - JSON
+          - [DIR] `RAND_Randstad_NV/` - 1 archivos
+            - `nl_rand_2019_esef.meta.json` - JSON
+          - [DIR] `RELX_RELX_NV/` - 1 archivos
+            - `nl_relx_2019_esef.meta.json` - JSON
+          - [DIR] `UNA_Unilever_PLC_/` - 1 archivos
+            - [DIR] `_NV/` - 1 archivos
+              - `nl_una_2019_esef.meta.json` - JSON
+          - [DIR] `WKL_Wolters_Kluwer_NV/` - 1 archivos
+            - `nl_wkl_2019_esef.meta.json` - JSON
+        - [DIR] `2020/` - 10 archivos
+          - [DIR] `AD_Koninklijke_Ahold_Delhaize_NV/` - 1 archivos
+            - `nl_ad_2020_esef.meta.json` - JSON
+          - [DIR] `ASML_ASML_Holding_NV/` - 1 archivos
+            - `nl_asml_2020_esef.meta.json` - JSON
+          - [DIR] `HEIA_Heineken_NV/` - 1 archivos
+            - `nl_heia_2020_esef.meta.json` - JSON
+          - [DIR] `INGA_ING_Groep_NV/` - 1 archivos
+            - `nl_inga_2020_esef.meta.json` - JSON
+          - [DIR] `PHIA_Koninklijke_Philips_NV/` - 1 archivos
+            - `nl_phia_2020_esef.meta.json` - JSON
+          - [DIR] `PROX_Prosus_NV/` - 1 archivos
+            - `nl_prox_2020_esef.meta.json` - JSON
+          - [DIR] `RAND_Randstad_NV/` - 1 archivos
+            - `nl_rand_2020_esef.meta.json` - JSON
+          - [DIR] `RELX_RELX_NV/` - 1 archivos
+            - `nl_relx_2020_esef.meta.json` - JSON
+          - [DIR] `UNA_Unilever_PLC_/` - 1 archivos
+            - [DIR] `_NV/` - 1 archivos
+              - `nl_una_2020_esef.meta.json` - JSON
+          - [DIR] `WKL_Wolters_Kluwer_NV/` - 1 archivos
+            - `nl_wkl_2020_esef.meta.json` - JSON
+        - [DIR] `2021/` - 10 archivos
+          - [DIR] `AD_Koninklijke_Ahold_Delhaize_NV/` - 1 archivos
+            - `nl_ad_2021_esef.meta.json` - JSON
+          - [DIR] `ASML_ASML_Holding_NV/` - 1 archivos
+            - `nl_asml_2021_esef.meta.json` - JSON
+          - [DIR] `HEIA_Heineken_NV/` - 1 archivos
+            - `nl_heia_2021_esef.meta.json` - JSON
+          - [DIR] `INGA_ING_Groep_NV/` - 1 archivos
+            - `nl_inga_2021_esef.meta.json` - JSON
+          - [DIR] `PHIA_Koninklijke_Philips_NV/` - 1 archivos
+            - `nl_phia_2021_esef.meta.json` - JSON
+          - [DIR] `PROX_Prosus_NV/` - 1 archivos
+            - `nl_prox_2021_esef.meta.json` - JSON
+          - [DIR] `RAND_Randstad_NV/` - 1 archivos
+            - `nl_rand_2021_esef.meta.json` - JSON
+          - [DIR] `RELX_RELX_NV/` - 1 archivos
+            - `nl_relx_2021_esef.meta.json` - JSON
+          - [DIR] `UNA_Unilever_PLC_/` - 1 archivos
+            - [DIR] `_NV/` - 1 archivos
+              - `nl_una_2021_esef.meta.json` - JSON
+          - [DIR] `WKL_Wolters_Kluwer_NV/` - 1 archivos
+            - `nl_wkl_2021_esef.meta.json` - JSON
+        - [DIR] `2022/` - 10 archivos
+          - [DIR] `AD_Koninklijke_Ahold_Delhaize_NV/` - 1 archivos
+            - `nl_ad_2022_esef.meta.json` - JSON
+          - [DIR] `ASML_ASML_Holding_NV/` - 1 archivos
+            - `nl_asml_2022_esef.meta.json` - JSON
+          - [DIR] `HEIA_Heineken_NV/` - 1 archivos
+            - `nl_heia_2022_esef.meta.json` - JSON
+          - [DIR] `INGA_ING_Groep_NV/` - 1 archivos
+            - `nl_inga_2022_esef.meta.json` - JSON
+          - [DIR] `PHIA_Koninklijke_Philips_NV/` - 1 archivos
+            - `nl_phia_2022_esef.meta.json` - JSON
+          - [DIR] `PROX_Prosus_NV/` - 1 archivos
+            - `nl_prox_2022_esef.meta.json` - JSON
+          - [DIR] `RAND_Randstad_NV/` - 1 archivos
+            - `nl_rand_2022_esef.meta.json` - JSON
+          - [DIR] `RELX_RELX_NV/` - 1 archivos
+            - `nl_relx_2022_esef.meta.json` - JSON
+          - [DIR] `UNA_Unilever_PLC_/` - 1 archivos
+            - [DIR] `_NV/` - 1 archivos
+              - `nl_una_2022_esef.meta.json` - JSON
+          - [DIR] `WKL_Wolters_Kluwer_NV/` - 1 archivos
+            - `nl_wkl_2022_esef.meta.json` - JSON
+        - [DIR] `2023/` - 11 archivos
+          - [DIR] `AD_Koninklijke_Ahold_Delhaize_NV/` - 1 archivos
+            - `nl_ad_2023_esef.meta.json` - JSON
+          - [DIR] `ASML_ASML_Holding_NV/` - 2 archivos
+            - `asml_2023_cuentas_anuales_auditadas.htm` - HTML
+            - `nl_asml_2023_esef.meta.json` - JSON
+          - [DIR] `HEIA_Heineken_NV/` - 1 archivos
+            - `nl_heia_2023_esef.meta.json` - JSON
+          - [DIR] `INGA_ING_Groep_NV/` - 1 archivos
+            - `nl_inga_2023_esef.meta.json` - JSON
+          - [DIR] `PHIA_Koninklijke_Philips_NV/` - 1 archivos
+            - `nl_phia_2023_esef.meta.json` - JSON
+          - [DIR] `PROX_Prosus_NV/` - 1 archivos
+            - `nl_prox_2023_esef.meta.json` - JSON
+          - [DIR] `RAND_Randstad_NV/` - 1 archivos
+            - `nl_rand_2023_esef.meta.json` - JSON
+          - [DIR] `RELX_RELX_NV/` - 1 archivos
+            - `nl_relx_2023_esef.meta.json` - JSON
+          - [DIR] `UNA_Unilever_PLC_/` - 1 archivos
+            - [DIR] `_NV/` - 1 archivos
+              - `nl_una_2023_esef.meta.json` - JSON
+          - [DIR] `WKL_Wolters_Kluwer_NV/` - 1 archivos
+            - `nl_wkl_2023_esef.meta.json` - JSON
+        - [DIR] `2024/` - 11 archivos
+          - [DIR] `AD_Koninklijke_Ahold_Delhaize_NV/` - 1 archivos
+            - `nl_ad_2024_esef.meta.json` - JSON
+          - [DIR] `ASML_ASML_Holding_NV/` - 2 archivos
+            - `asml_2024_cuentas_anuales_auditadas.htm` - HTML
+            - `nl_asml_2024_esef.meta.json` - JSON
+          - [DIR] `HEIA_Heineken_NV/` - 1 archivos
+            - `nl_heia_2024_esef.meta.json` - JSON
+          - [DIR] `INGA_ING_Groep_NV/` - 1 archivos
+            - `nl_inga_2024_esef.meta.json` - JSON
+          - [DIR] `PHIA_Koninklijke_Philips_NV/` - 1 archivos
+            - `nl_phia_2024_esef.meta.json` - JSON
+          - [DIR] `PROX_Prosus_NV/` - 1 archivos
+            - `nl_prox_2024_esef.meta.json` - JSON
+          - [DIR] `RAND_Randstad_NV/` - 1 archivos
+            - `nl_rand_2024_esef.meta.json` - JSON
+          - [DIR] `RELX_RELX_NV/` - 1 archivos
+            - `nl_relx_2024_esef.meta.json` - JSON
+          - [DIR] `UNA_Unilever_PLC_/` - 1 archivos
+            - [DIR] `_NV/` - 1 archivos
+              - `nl_una_2024_esef.meta.json` - JSON
+          - [DIR] `WKL_Wolters_Kluwer_NV/` - 1 archivos
+            - `nl_wkl_2024_esef.meta.json` - JSON
+        - [DIR] `2025/` - 11 archivos
+          - [DIR] `AD_Koninklijke_Ahold_Delhaize_NV/` - 1 archivos
+            - `nl_ad_2025_esef.meta.json` - JSON
+          - [DIR] `ASML_ASML_Holding_NV/` - 2 archivos
+            - `asml_2025_cuentas_anuales_auditadas.htm` - HTML
+            - `nl_asml_2025_esef.meta.json` - JSON
+          - [DIR] `HEIA_Heineken_NV/` - 1 archivos
+            - `nl_heia_2025_esef.meta.json` - JSON
+          - [DIR] `INGA_ING_Groep_NV/` - 1 archivos
+            - `nl_inga_2025_esef.meta.json` - JSON
+          - [DIR] `PHIA_Koninklijke_Philips_NV/` - 1 archivos
+            - `nl_phia_2025_esef.meta.json` - JSON
+          - [DIR] `PROX_Prosus_NV/` - 1 archivos
+            - `nl_prox_2025_esef.meta.json` - JSON
+          - [DIR] `RAND_Randstad_NV/` - 1 archivos
+            - `nl_rand_2025_esef.meta.json` - JSON
+          - [DIR] `RELX_RELX_NV/` - 1 archivos
+            - `nl_relx_2025_esef.meta.json` - JSON
+          - [DIR] `UNA_Unilever_PLC_/` - 1 archivos
+            - [DIR] `_NV/` - 1 archivos
+              - `nl_una_2025_esef.meta.json` - JSON
+          - [DIR] `WKL_Wolters_Kluwer_NV/` - 1 archivos
+            - `nl_wkl_2025_esef.meta.json` - JSON
+      - [DIR] `oam_de_bafin/` - 1 archivos
+        - `.gitkeep` - Sin extension
+      - [DIR] `oam_es_cnmv/` - 1 archivos
+        - `.gitkeep` - Sin extension
+      - [DIR] `oam_fr_amf/` - 1 archivos
+        - `.gitkeep` - Sin extension
+      - [DIR] `oam_it_consob/` - 1 archivos
+        - `.gitkeep` - Sin extension
+      - [DIR] `oam_nl_afm/` - 1 archivos
+        - `.gitkeep` - Sin extension
+      - [DIR] `sec_edgar/` - 267 archivos (resumen: .htm:265, (sin ext):1, .txt:1)
+        - [DIR] `2005/` - 4 archivos
+          - [DIR] `AAPL/` - 1 archivos
+            - `10-K_0001104659-05-058421_a05-20674_110k.htm` - HTML
+          - [DIR] `JNJ/` - 1 archivos
+            - `10-K_0000950123-05-003140_y06203e10vk.txt` - Texto
+          - [DIR] `JPM/` - 0 archivos
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001193125-05-174825_d10k.htm` - HTML
+          - [DIR] `XOM/` - 1 archivos
+            - `10-K_0001193125-06-040951_d10k.htm` - HTML
+        - [DIR] `2006/` - 5 archivos
+          - [DIR] `AAPL/` - 1 archivos
+            - `10-K_0001104659-06-084288_a06-25759_210k.htm` - HTML
+          - [DIR] `JNJ/` - 2 archivos
+            - `10-K_0000950123-06-003129_y17887e10vk.htm` - HTML
+            - `10-K_0000950123-07-002542_y29901e10vk.htm` - HTML
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001193125-06-180008_d10k.htm` - HTML
+          - [DIR] `XOM/` - 1 archivos
+            - `10-K_0001193125-07-042435_d10k.htm` - HTML
+        - [DIR] `2007/` - 4 archivos
+          - [DIR] `AAPL/` - 1 archivos
+            - `10-K_0001047469-07-009340_a2181030z10-k.htm` - HTML
+          - [DIR] `JNJ/` - 1 archivos
+            - `10-K_0000950123-08-002130_y47910e10vk.htm` - HTML
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001193125-07-170817_d10k.htm` - HTML
+          - [DIR] `XOM/` - 1 archivos
+            - `10-K_0001193125-08-041781_d10k.htm` - HTML
+        - [DIR] `2008/` - 4 archivos
+          - [DIR] `AAPL/` - 1 archivos
+            - `10-K_0001193125-08-224958_d10k.htm` - HTML
+          - [DIR] `JNJ/` - 1 archivos
+            - `10-K_0000950123-09-003187_y74152e10vk.htm` - HTML
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001193125-08-162768_d10k.htm` - HTML
+          - [DIR] `XOM/` - 1 archivos
+            - `10-K_0001193125-09-040966_d10k.htm` - HTML
+        - [DIR] `2009/` - 2 archivos
+          - [DIR] `AAPL/` - 0 archivos
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001193125-09-158735_d10k.htm` - HTML
+          - [DIR] `XOM/` - 1 archivos
+            - `10-K_0001193125-10-042929_d10k.htm` - HTML
+        - [DIR] `2010/` - 2 archivos
+          - [DIR] `JNJ/` - 1 archivos
+            - `10-K_0000950123-10-019392_y80744e10vk.htm` - HTML
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001193125-10-171791_d10k.htm` - HTML
+          - [DIR] `XOM/` - 0 archivos
+        - [DIR] `2011/` - 2 archivos
+          - [DIR] `JNJ/` - 1 archivos
+            - `10-K_0000950123-11-018128_y86310ke10vk.htm` - HTML
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001193125-11-200680_d10k.htm` - HTML
+        - [DIR] `2012/` - 3 archivos
+          - [DIR] `JNJ/` - 2 archivos
+            - `10-K_0000200406-13-000038_a2012123010-k.htm` - HTML
+            - `10-K_0001193125-12-075565_d281803d10k.htm` - HTML
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001193125-12-316848_d347676d10k.htm` - HTML
+        - [DIR] `2013/` - 2 archivos
+          - [DIR] `JNJ/` - 1 archivos
+            - `10-K_0000200406-14-000033_a2013122910-k.htm` - HTML
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001193125-13-310206_d527745d10k.htm` - HTML
+        - [DIR] `2014/` - 2 archivos
+          - [DIR] `JNJ/` - 1 archivos
+            - `10-K_0000200406-15-000004_a2014122810-k.htm` - HTML
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001193125-14-289961_d722626d10k.htm` - HTML
+        - [DIR] `2015/` - 1 archivos
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001193125-15-272806_d918813d10k.htm` - HTML
+        - [DIR] `2016/` - 2 archivos
+          - [DIR] `JNJ/` - 1 archivos
+            - `10-K_0000200406-16-000071_form10-k20160103.htm` - HTML
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001193125-16-662209_d187868d10k.htm` - HTML
+        - [DIR] `2017/` - 3 archivos
+          - [DIR] `JNJ/` - 2 archivos
+            - `10-K_0000200406-17-000006_form10-k20170101.htm` - HTML
+            - `10-K_0000200406-18-000005_form10-k20171231.htm` - HTML
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001564590-17-014900_msft-10k_20170630.htm` - HTML
+        - [DIR] `2018/` - 2 archivos
+          - [DIR] `JNJ/` - 1 archivos
+            - `10-K_0000200406-19-000009_form10-k20181230.htm` - HTML
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001564590-18-019062_msft-10k_20180630.htm` - HTML
+        - [DIR] `2019/` - 20 archivos
+          - [DIR] `AAPL/` - 1 archivos
+            - `10-K_0000320193-19-000119_a10-k20199282019.htm` - HTML
+          - [DIR] `ABBV/` - 1 archivos
+            - `10-K_0001551152-20-000007_abbv-20191231x10k.htm` - HTML
+          - [DIR] `AVGO/` - 1 archivos
+            - `10-K_0001730168-19-000144_avgo-11032019x10k.htm` - HTML
+          - [DIR] `BBVA/` - 1 archivos
+            - `6-K_0001193125-20-316810_d58136d6k.htm` - HTML
+          - [DIR] `COST/` - 1 archivos
+            - `10-K_0000909832-19-000019_cost10k9119.htm` - HTML
+          - [DIR] `CVX/` - 1 archivos
+            - `10-K_0000093410-20-000010_cvx12312019-10kdoc.htm` - HTML
+          - [DIR] `HD/` - 1 archivos
+            - `10-K_0000354950-19-000010_hd_10kx02032019.htm` - HTML
+          - [DIR] `IBM/` - 1 archivos
+            - `10-K_0001558370-20-001334_ibm-20191231x10k2af531.htm` - HTML
+          - [DIR] `JNJ/` - 1 archivos
+            - `10-K_0000200406-20-000010_form10-k20191229.htm` - HTML
+          - [DIR] `KO/` - 1 archivos
+            - `10-K_0000021344-20-000006_a2019123110-k.htm` - HTML
+          - [DIR] `LIN/` - 1 archivos
+            - `10-K_0001707925-20-000015_lin201910-k.htm` - HTML
+          - [DIR] `MA/` - 1 archivos
+            - `10-K_0001141391-20-000032_ma12312019-10xk.htm` - HTML
+          - [DIR] `MCD/` - 1 archivos
+            - `10-K_0000063908-20-000022_mcd-12312019x10k.htm` - HTML
+          - [DIR] `MRK/` - 1 archivos
+            - `10-K_0000310158-20-000005_mrk1231201910k.htm` - HTML
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001564590-19-027952_msft-10k_20190630.htm` - HTML
+          - [DIR] `PEP/` - 1 archivos
+            - `10-K_0000077476-20-000015_pepsico201910-k.htm` - HTML
+          - [DIR] `SAN/` - 2 archivos
+            - `20-F_0000891478-20-000017_a20-f2019.htm` - HTML
+            - `6-K_0000950103-20-024594_dp143270_6k.htm` - HTML
+          - [DIR] `TSLA/` - 0 archivos
+          - [DIR] `V/` - 1 archivos
+            - `10-K_0001403161-19-000050_v093019form10k.htm` - HTML
+          - [DIR] `XOM/` - 1 archivos
+            - `10-K_0000034088-20-000016_xom10k2019.htm` - HTML
+        - [DIR] `2020/` - 23 archivos
+          - [DIR] `AAPL/` - 1 archivos
+            - `10-K_0000320193-20-000096_aapl-20200926.htm` - HTML
+          - [DIR] `ABBV/` - 1 archivos
+            - `10-K_0001551152-21-000008_abbv-20201231.htm` - HTML
+          - [DIR] `AMZN/` - 1 archivos
+            - `10-K_0001018724-21-000004_amzn-20201231.htm` - HTML
+          - [DIR] `AVGO/` - 1 archivos
+            - `10-K_0001730168-20-000226_avgo-20201101.htm` - HTML
+          - [DIR] `BBVA/` - 1 archivos
+            - `6-K_0001193125-21-366684_d275882d6k.htm` - HTML
+          - [DIR] `COST/` - 1 archivos
+            - `10-K_0000909832-20-000017_cost-20200830.htm` - HTML
+          - [DIR] `CSCO/` - 1 archivos
+            - `10-K_0000858877-20-000010_csco-2020725x10k.htm` - HTML
+          - [DIR] `CVX/` - 1 archivos
+            - `10-K_0000093410-21-000009_cvx-20201231.htm` - HTML
+          - [DIR] `DIS/` - 1 archivos
+            - `10-K_0001744489-20-000197_dis-20201003.htm` - HTML
+          - [DIR] `HD/` - 1 archivos
+            - `10-K_0000354950-20-000015_hd10k02022020.htm` - HTML
+          - [DIR] `IBM/` - 1 archivos
+            - `10-K_0001558370-21-001489_ibm-20201231x10k.htm` - HTML
+          - [DIR] `KO/` - 1 archivos
+            - `10-K_0000021344-21-000008_ko-20201231.htm` - HTML
+          - [DIR] `LIN/` - 1 archivos
+            - `10-K_0001628280-21-003574_lin-20201231.htm` - HTML
+          - [DIR] `MA/` - 1 archivos
+            - `10-K_0001141391-21-000018_ma-20201231.htm` - HTML
+          - [DIR] `MCD/` - 1 archivos
+            - `10-K_0000063908-21-000013_mcd-20201231.htm` - HTML
+          - [DIR] `MRK/` - 1 archivos
+            - `10-K_0000310158-21-000004_mrk-20201231.htm` - HTML
+          - [DIR] `MSFT/` - 1 archivos
+            - `10-K_0001564590-20-034944_msft-10k_20200630.htm` - HTML
+          - [DIR] `PEP/` - 1 archivos
+            - `10-K_0000077476-21-000007_pep-20201226.htm` - HTML
+          - [DIR] `SAN/` - 2 archivos
+            - `20-F_0000891478-21-000041_san-20201231.htm` - HTML
+            - `6-K_0000950103-21-019878_dp163813_6k.htm` - HTML
+          - [DIR] `UNH/` - 1 archivos
+            - `10-K_0000731766-21-000013_unh-20201231.htm` - HTML
+          - [DIR] `V/` - 1 archivos
+            - `10-K_0001403161-20-000070_v-20200930.htm` - HTML
+          - [DIR] `XOM/` - 1 archivos
+            - `10-K_0000034088-21-000012_xom-20201231.htm` - HTML
+        - [DIR] `2021/` - 26 archivos (no desglosado, profundidad)
+        - [DIR] `2022/` - 26 archivos (no desglosado, profundidad)
+        - [DIR] `2023/` - 33 archivos (no desglosado, profundidad)
+        - [DIR] `2024/` - 66 archivos (no desglosado, profundidad)
+        - [DIR] `2025/` - 34 archivos (no desglosado, profundidad)
+        - `.gitkeep` - Sin extension
+      - `esef_filings_index_fr.json` - JSON
+    - [DIR] `staging/` - 2 archivos
+      - [DIR] `tmp_download/` - 2 archivos
+        - [DIR] `SAN_2024/` - 1 archivos
+          - `san_2024_esef_bundle.zip` - ZIP
+        - `tmp_2020_NTGY_NTGY_2020_esef.zip` - ZIP
+  - [DIR] `descarga/` - 333 archivos (resumen: (sin ext):199, .py:63, .old:22, .md:13, .log:11, .json:8)
+    - [DIR] `de_germany/` - 283 archivos (resumen: (sin ext):199, .py:22, .old:22, .log:11, .md:8, .json:4)
+      - [DIR] `__pycache__/` - omitido (cache)
+      - [DIR] `bafin_browser_session/` - 251 archivos (resumen: (sin ext):199, .old:22, .log:11, .db:4, .db-journal:3, .tmp:3)
+        - [DIR] `component_crx_cache/` - 1 archivos
+          - `metadata.json` - JSON
+        - [DIR] `Crashpad/` - 1 archivos
+          - [DIR] `attachments/` - 0 archivos
+          - [DIR] `reports/` - 0 archivos
+          - `settings.dat` - Otro (.dat)
+        - [DIR] `Default/` - 222 archivos (no desglosado, profundidad)
+        - [DIR] `extensions_crx_cache/` - 1 archivos
+          - `metadata.json` - JSON
+        - [DIR] `GPUPersistentCache/` - 3 archivos
+          - [DIR] `DawnGraphiteCache/` - 3 archivos
+            - [DIR] `MEWXC45O3P3R4TOUNO3XIW6SYETDRVMU/` - 3 archivos
+              - `cache.db` - Otro (.db)
+              - `cache.db-wal` - Otro (.db-wal)
+              - `cache.journal` - Otro (.journal)
+        - [DIR] `GrShaderCache/` - 9 archivos
+          - `data_0` - Sin extension
+          - `data_1` - Sin extension
+          - `data_2` - Sin extension
+          - `data_3` - Sin extension
+          - `f_000001` - Sin extension
+          - `f_000002` - Sin extension
+          - `f_000003` - Sin extension
+          - `f_000004` - Sin extension
+          - `index` - Sin extension
+        - [DIR] `OptimizationGuideModelsManifest/` - 0 archivos
+        - [DIR] `Safe Browsing/` - 0 archivos
+        - [DIR] `segmentation_platform/` - 2 archivos
+          - `ukm_db` - Sin extension
+          - `ukm_db-wal` - Sin extension
+        - [DIR] `ShaderCache/` - 5 archivos
+          - `data_0` - Sin extension
+          - `data_1` - Sin extension
+          - `data_2` - Sin extension
+          - `data_3` - Sin extension
+          - `index` - Sin extension
+        - `BrowserMetrics-spare.pma` - Otro (.pma)
+        - `first_party_sets.db` - Otro (.db)
+        - `first_party_sets.db-journal` - Otro (.db-journal)
+        - `Last Browser` - Sin extension
+        - `Last Version` - Sin extension
+        - `Local State` - Sin extension
+        - `Variations` - Sin extension
+      - (32 archivos directos: Script Python:22, Markdown:8, JSON:2)
+    - [DIR] `es_spain/` - 32 archivos (resumen: .py:30, .json:1, .md:1)
+      - [DIR] `__pycache__/` - omitido (cache)
+      - (32 archivos directos: Script Python:30, JSON:1, Markdown:1)
+    - [DIR] `fr_france/` - 8 archivos
+      - `audit_download_fr.py` - Script Python
+      - `build_universe_fr.py` - Script Python
+      - `config_fr.json` - JSON
+      - `crawler_amf_bdif.py` - Script Python
+      - `downloader_amf.py` - Script Python
+      - `downloader_france_v3.py` - Script Python
+      - `localizador_fr_mejorado.py` - Script Python
+      - `README.md` - Markdown
+    - [DIR] `it_italy/` - 4 archivos
+      - `audit_download_it.py` - Script Python
+      - `config_it.json` - JSON
+      - `downloader_consob.py` - Script Python
+      - `README.md` - Markdown
+    - [DIR] `nl_netherlands/` - 5 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - `audit_download_nl.py` - Script Python
+      - `config_nl.json` - JSON
+      - `downloader_afm.py` - Script Python
+      - `downloader_netherlands_v3.py` - Script Python
+      - `README.md` - Markdown
+    - `README.md` - Markdown
+  - [DIR] `docs/` - 4 archivos
+    - [DIR] `architecture/` - 1 archivos
+      - `ADR_001_duckdb_vs_postgres.md` - Markdown
+    - [DIR] `decisions/` - 2 archivos
+      - `.gitkeep` - Sin extension
+      - `ADR_002_ollama_vs_azure.md` - Markdown
+    - [DIR] `intelligence/` - 1 archivos
+      - `.gitkeep` - Sin extension
+  - [DIR] `extraccion_interpretacion/` - 16 archivos
+    - [DIR] `de_germany/` - 3 archivos
+      - `extractor_de.py` - Script Python
+      - `forensic_audit_de.py` - Script Python
+      - `README.md` - Markdown
+    - [DIR] `es_spain/` - 3 archivos
+      - `extractor_es.py` - Script Python
+      - `forensic_audit_es.py` - Script Python
+      - `README.md` - Markdown
+    - [DIR] `fr_france/` - 3 archivos
+      - `extractor_fr.py` - Script Python
+      - `forensic_audit_fr.py` - Script Python
+      - `README.md` - Markdown
+    - [DIR] `it_italy/` - 3 archivos
+      - `extractor_it.py` - Script Python
+      - `forensic_audit_it.py` - Script Python
+      - `README.md` - Markdown
+    - [DIR] `nl_netherlands/` - 3 archivos
+      - `extractor_nl.py` - Script Python
+      - `forensic_audit_nl.py` - Script Python
+      - `README.md` - Markdown
+    - `README.md` - Markdown
+  - [DIR] `infra/` - 5 archivos
+    - [DIR] `azure/` - 2 archivos
+      - `blob_storage_config.yaml` - Config YAML
+      - `openai_deployment.yaml` - Config YAML
+    - [DIR] `github_actions/` - 1 archivos
+      - `ci_pipeline.yml` - Config YAML
+    - [DIR] `local_dev/` - 2 archivos
+      - `dev_setup.sh` - Script Shell
+      - `setup_ollama.md` - Markdown
+  - [DIR] `intelligence_training/` - 6 archivos
+    - [DIR] `benchmarks/` - 1 archivos
+      - `.gitkeep` - Sin extension
+    - [DIR] `cartero/` - 1 archivos
+      - `.gitkeep` - Sin extension
+    - [DIR] `detective/` - 1 archivos
+      - `.gitkeep` - Sin extension
+    - [DIR] `mecanico/` - 1 archivos
+      - `.gitkeep` - Sin extension
+    - [DIR] `medico/` - 1 archivos
+      - `.gitkeep` - Sin extension
+    - [DIR] `models/` - 1 archivos
+      - `.gitkeep` - Sin extension
+  - [DIR] `ipp_extract/` - 433 archivos (resumen: .xml:270, .xsd:86, .txt:23, .xbrl:16, .py:15, .doc:10)
+    - [DIR] `__pycache__/` - omitido (cache)
+    - [DIR] `ipp_2005/` - 104 archivos (resumen: .xml:78, .xsd:22, .doc:3, .xls:1)
+      - [DIR] `2005-06-30/` - 104 archivos (resumen: .xml:78, .xsd:22, .doc:3, .xls:1)
+        - (104 archivos directos: XML:78, Otro (.xsd):22, Otro (.doc):3, Otro (.xls):1)
+    - [DIR] `ipp_2005-06-30_v1.22/` - 104 archivos (resumen: .xml:78, .xsd:22, .doc:3, .xls:1)
+      - [DIR] `2005-06-30/` - 104 archivos (resumen: .xml:78, .xsd:22, .doc:3, .xls:1)
+        - (104 archivos directos: XML:78, Otro (.xsd):22, Otro (.doc):3, Otro (.xls):1)
+    - [DIR] `ipp_2008/` - 70 archivos (resumen: .xml:45, .xsd:15, .xbrl:5, .pdf:3, .doc:2)
+      - (70 archivos directos: XML:45, Otro (.xsd):15, Otro (.xbrl):5, PDF:3, Otro (.doc):2)
+    - [DIR] `ipp_2008-01-01/` - 70 archivos (resumen: .xml:45, .xsd:15, .xbrl:5, .pdf:3, .doc:2)
+      - (70 archivos directos: XML:45, Otro (.xsd):15, Otro (.xbrl):5, PDF:3, Otro (.doc):2)
+    - [DIR] `ipp_2016/` - 21 archivos
+      - (21 archivos directos: XML:12, Otro (.xsd):6, Otro (.xbrl):3)
+    - [DIR] `ipp_2016-06-01/` - 21 archivos
+      - (21 archivos directos: XML:12, Otro (.xsd):6, Otro (.xbrl):3)
+    - (43 archivos directos: Texto:23, Script Python:15, HTML:4, JSON:1)
+  - [DIR] `logs/` - 7 archivos
+    - `stater_motor_20260824.json` - JSON
+    - `stater_motor_20260825.json` - JSON
+    - `stater_motor_20260827.json` - JSON
+    - `stater_motor_20260828.json` - JSON
+    - `stater_motor_20260907.json` - JSON
+    - `stater_motor_20260908.json` - JSON
+    - `stater_motor_20260909.json` - JSON
+  - [DIR] `mod_01_ingestion/` - 57 archivos (resumen: .py:52, .duckdb:2, .yaml:1, .md:1, .parquet:1)
+    - [DIR] `__pycache__/` - omitido (cache)
+    - [DIR] `config/` - 1 archivos
+      - `sources.yaml` - Config YAML
+    - [DIR] `data/` - 0 archivos
+      - [DIR] `raw/` - 0 archivos
+    - [DIR] `src/` - 37 archivos (resumen: .py:37)
+      - [DIR] `__pycache__/` - omitido (cache)
+      - (37 archivos directos: Script Python:37)
+    - [DIR] `telemetry/` - 3 archivos
+      - [DIR] `models/` - 0 archivos
+      - `label_review_queue.duckdb` - DuckDB
+      - `labeled_dataset.parquet` - Otro (.parquet)
+      - `remediation_queue.duckdb` - DuckDB
+    - [DIR] `tests/` - 14 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - [DIR] `fixtures/` - 1 archivos
+        - [DIR] `__pycache__/` - omitido (cache)
+        - `synthetic_fixture_templates.py` - Script Python
+      - `test_ai_pre_validation_guard.py` - Script Python
+      - `test_cnmv_forensic_ingestion.py` - Script Python
+      - `test_edgar_client.py` - Script Python
+      - `test_entity_resolver_regression.py` - Script Python
+      - `test_esef_countries.py` - Script Python
+      - `test_forensic_dataset_auditor.py` - Script Python
+      - `test_hitl_and_ml_engine.py` - Script Python
+      - `test_ingest_runner.py` - Script Python
+      - `test_master_universe_fr.py` - Script Python
+      - `test_regulatory_ingestion.py` - Script Python
+      - `test_remediation_runner.py` - Script Python
+      - `test_sha256_sealer.py` - Script Python
+      - `test_universe_gap_filler.py` - Script Python
+    - `__init__.py` - Script Python
+    - `README.md` - Markdown
+  - [DIR] `mod_02_parser/` - 13 archivos
+    - [DIR] `__pycache__/` - omitido (cache)
+    - [DIR] `config/` - 1 archivos
+      - `taxonomy_dict.yaml` - Config YAML
+    - [DIR] `schemas/` - 2 archivos
+      - `financial_facts_raw.json` - JSON
+      - `financial_panel.json` - JSON
+    - [DIR] `src/` - 5 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - `__init__.py` - Script Python
+      - `balance_validator.py` - Script Python
+      - `taxonomy_mapper.py` - Script Python
+      - `usgaap_parser.py` - Script Python
+      - `xbrl_parser.py` - Script Python
+    - [DIR] `tests/` - 3 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - `test_balance_validator.py` - Script Python
+      - `test_taxonomy_mapper.py` - Script Python
+      - `test_xbrl_parser.py` - Script Python
+    - `__init__.py` - Script Python
+    - `README.md` - Markdown
+  - [DIR] `mod_03_nlp_audit/` - 12 archivos
+    - [DIR] `__pycache__/` - omitido (cache)
+    - [DIR] `config/` - 1 archivos
+      - `nlp_config.yaml` - Config YAML
+    - [DIR] `prompts/` - 2 archivos
+      - `csrd_scoring_prompt.txt` - Texto
+      - `kam_extraction_prompt.txt` - Texto
+    - [DIR] `src/` - 6 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - `__init__.py` - Script Python
+      - `agent_client.py` - Script Python
+      - `csrd_mapper.py` - Script Python
+      - `greenwashing_detector.py` - Script Python
+      - `iagc_extractor.py` - Script Python
+      - `kam_extractor.py` - Script Python
+    - [DIR] `tests/` - 1 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - `test_nlp_components.py` - Script Python
+    - `__init__.py` - Script Python
+    - `README.md` - Markdown
+  - [DIR] `mod_04_data_lake/` - 15 archivos
+    - [DIR] `__pycache__/` - omitido (cache)
+    - [DIR] `config/` - 1 archivos
+      - `lake_config.yaml` - Config YAML
+    - [DIR] `migrations/` - 1 archivos
+      - `v001_initial_schema.sql` - SQL
+    - [DIR] `schemas/` - 6 archivos
+      - `audit_kams.sql` - SQL
+      - `documents_raw.sql` - SQL
+      - `esg_kpis.sql` - SQL
+      - `financial_facts_raw.sql` - SQL
+      - `financial_panel.sql` - SQL
+      - `init_schema.sql` - SQL
+    - [DIR] `src/` - 4 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - `__init__.py` - Script Python
+      - `lake_manager.py` - Script Python
+      - `parquet_writer.py` - Script Python
+      - `snapshot_manager.py` - Script Python
+    - [DIR] `tests/` - 1 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - `test_lake_integrity.py` - Script Python
+    - `__init__.py` - Script Python
+    - `README.md` - Markdown
+  - [DIR] `mod_05_quant_sfi/` - 43 archivos (resumen: .csv:23, .py:12, .md:6, .yaml:1, .json:1)
+    - [DIR] `__pycache__/` - omitido (cache)
+    - [DIR] `config/` - 1 archivos
+      - `formulas.yaml` - Config YAML
+    - [DIR] `notebooks/` - 0 archivos
+    - [DIR] `output_estudio_pericial_europa/` - 17 archivos
+      - (17 archivos directos: CSV:14, Markdown:2, JSON:1)
+    - [DIR] `output_estudio_pericial_usa/` - 5 archivos
+      - `04_matriz_historica_multianual_6bolsas_x_cams_usa.csv` - CSV
+      - `06_empresas_2026_evolucion_precios_usa.csv` - CSV
+      - `07_matriz_rentabilidad_y_poblacion_2026_usa.csv` - CSV
+      - `08_matriz_conteo_poblacion_2026_usa.csv` - CSV
+      - `INFORME_EMPRESAS_2026_PRECIOS_Y_CAMS_USA.md` - Markdown
+    - [DIR] `output_estudios_avanzados/` - 7 archivos
+      - `00_universo_global_europa_usa_180cotizadas.csv` - CSV
+      - `01_resumen_estudio_1_calidad_x_cams_global.csv` - CSV
+      - `02_series_historicas_pb_usa_2019_2026.csv` - CSV
+      - `03_matriz_transicion_estados_auditoria.csv` - CSV
+      - `04_analisis_sectores_y_regimenes_macro_pb.csv` - CSV
+      - `INFORME_ESTUDIO_1_TRANSICION_INFORMES_LIMPIOS_Y_CRECIMIENTO.md` - Markdown
+      - `INFORME_ESTUDIO_2_DINAMICA_PB_EEUU_PATRONES_Y_REGIMENES_MACRO.md` - Markdown
+    - [DIR] `src/` - 6 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - `__init__.py` - Script Python
+      - `backtest_runner.py` - Script Python
+      - `dcf_engine.py` - Script Python
+      - `factor_builder.py` - Script Python
+      - `ratio_engine.py` - Script Python
+      - `scoring_engine.py` - Script Python
+    - [DIR] `tests/` - 2 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - `test_dcf_engine.py` - Script Python
+      - `test_ratio_engine.py` - Script Python
+    - `__init__.py` - Script Python
+    - `analisis_informes_2025_europa.py` - Script Python
+    - `pericial_cam_crash_analyzer.py` - Script Python
+    - `pipeline_europa_completo.py` - Script Python
+    - `README.md` - Markdown
+  - [DIR] `mod_06_api_gateway/` - 12 archivos
+    - [DIR] `__pycache__/` - omitido (cache)
+    - [DIR] `config/` - 1 archivos
+      - `api_config.yaml` - Config YAML
+    - [DIR] `openapi/` - 0 archivos
+    - [DIR] `src/` - 8 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - [DIR] `auth/` - 1 archivos
+        - `api_key_auth.py` - Script Python
+      - [DIR] `models/` - 2 archivos
+        - [DIR] `__pycache__/` - omitido (cache)
+        - `__init__.py` - Script Python
+        - `schemas.py` - Script Python
+      - [DIR] `routers/` - 3 archivos
+        - `companies.py` - Script Python
+        - `datasets.py` - Script Python
+        - `sectors.py` - Script Python
+      - `__init__.py` - Script Python
+      - `main.py` - Script Python
+    - [DIR] `tests/` - 1 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - `test_api_endpoints.py` - Script Python
+    - `__init__.py` - Script Python
+    - `README.md` - Markdown
+  - [DIR] `mod_07_ai_agents/` - 12 archivos
+    - [DIR] `__pycache__/` - omitido (cache)
+    - [DIR] `agents/` - 2 archivos
+      - `csrd_analyst_agent.py` - Script Python
+      - `kam_analyst_agent.py` - Script Python
+    - [DIR] `config/` - 1 archivos
+      - `agents_config.yaml` - Config YAML
+    - [DIR] `modelfiles/` - 1 archivos
+      - `Modelfile.argos-audit` - Otro (.argos-audit)
+    - [DIR] `src/` - 5 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - `__init__.py` - Script Python
+      - `agent_router.py` - Script Python
+      - `azure_openai_agent.py` - Script Python
+      - `ollama_agent.py` - Script Python
+      - `task_dispatcher.py` - Script Python
+    - [DIR] `tests/` - 1 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - `test_agent_router.py` - Script Python
+    - `__init__.py` - Script Python
+    - `README.md` - Markdown
+  - [DIR] `mod_08_monitor/` - 8 archivos
+    - [DIR] `__pycache__/` - omitido (cache)
+    - [DIR] `config/` - 1 archivos
+      - `monitor_config.env` - Otro (.env)
+    - [DIR] `dashboards/` - 0 archivos
+    - [DIR] `src/` - 4 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - `__init__.py` - Script Python
+      - `data_quality_checker.py` - Script Python
+      - `logger.py` - Script Python
+      - `metrics.py` - Script Python
+    - [DIR] `tests/` - 1 archivos
+      - [DIR] `__pycache__/` - omitido (cache)
+      - `test_monitor.py` - Script Python
+    - `__init__.py` - Script Python
+    - `README.md` - Markdown
+  - [DIR] `monitoring/` - 2 archivos
+    - [DIR] `dashboards/` - 1 archivos
+      - `.gitkeep` - Sin extension
+    - [DIR] `logs/` - 1 archivos
+      - `.gitkeep` - Sin extension
+  - (29 archivos directos: Markdown:19, ZIP:3, Sin extension:2, Script Python:2, Plantilla config:1)
+- [DIR] `ARGOS_PROMPTS/` - 11 archivos
+  - `INFORME_MOD_01_INGESTION.md` - Markdown
+  - `INFORME_MOD_02_PARSER.md` - Markdown
+  - `INFORME_MOD_03_NLP_AUDIT.md` - Markdown
+  - `INFORME_MOD_04_DATA_LAKE.md` - Markdown
+  - `INFORME_MOD_05_QUANT_SFI.md` - Markdown
+  - `INFORME_MOD_06_API_GATEWAY.md` - Markdown
+  - `INFORME_MOD_07_AI_AGENTS.md` - Markdown
+  - `INFORME_MOD_08_MONITOR.md` - Markdown
+  - `PROMPT_OH_CRAWLER_FR_BDIF.md` - Markdown
+  - `PROMPT_OH_SANEAR_DESCARGAR_ESPANA.md` - Markdown
+  - `README.md` - Markdown
+- [DIR] `audits/` - 16 archivos
+  - [DIR] `manifests/` - 14 archivos
+    - `MANIFEST_BAFIN_2012.json` - JSON
+    - `MANIFEST_BAFIN_2013.json` - JSON
+    - `MANIFEST_BAFIN_2014.json` - JSON
+    - `MANIFEST_BAFIN_2015.json` - JSON
+    - `MANIFEST_BAFIN_2016.json` - JSON
+    - `MANIFEST_BAFIN_2017.json` - JSON
+    - `MANIFEST_BAFIN_2018.json` - JSON
+    - `MANIFEST_BAFIN_2019.json` - JSON
+    - `MANIFEST_BAFIN_2020.json` - JSON
+    - `MANIFEST_BAFIN_2021.json` - JSON
+    - `MANIFEST_BAFIN_2022.json` - JSON
+    - `MANIFEST_BAFIN_2023.json` - JSON
+    - `MANIFEST_BAFIN_2024.json` - JSON
+    - `MANIFEST_BAFIN_2025.json` - JSON
+  - [DIR] `snapshots/` - 1 archivos
+    - `forensic_inference_status.json` - JSON
+  - `DATA_ROOT_MANIFEST_2022.json` - JSON
+- [DIR] `config/` - 6 archivos
+  - [DIR] `argos/` - 1 archivos
+    - `.gitkeep` - Sin extension
+  - [DIR] `history/` - 2 archivos
+    - `master_universe_es_v3.0.0_20260909_211042.json` - JSON
+    - `master_universe_es_v3.1.0_20260909_211042.json` - JSON
+  - `master_universe_es.json` - JSON
+  - `master_universe_es_EXCLUDED_SOCIMIS.json` - JSON
+  - `master_universe_es_PENDING_REVIEW.json` - JSON
+- [DIR] `data/` - 8 archivos
+  - [DIR] `lake/` - 0 archivos
+    - [DIR] `duckdb/` - 0 archivos
+  - [DIR] `raw/` - 8 archivos
+    - [DIR] `DE_BAFIN/` - 0 archivos
+    - [DIR] `ES_CNMV/` - 8 archivos
+      - [DIR] `2024/` - 8 archivos
+        - [DIR] `SAN_Banco_Santander_SA/` - 8 archivos
+          - [DIR] `san_2024_cuentas_anuales_consolidadas_auditadas_extracted/` - 2 archivos
+            - `san_2024_cor.xsd` - Otro (.xsd)
+            - `san_2024_report.xhtml` - XHTML
+          - `san_2024_cnmv_package_manifest.json` - JSON
+          - `san_2024_cuentas_anuales_consolidadas_auditadas.zip` - ZIP
+          - `san_2024_estado_informacion_no_financiera_csrd.xhtml` - XHTML
+          - `san_2024_informe_anual_gobierno_corporativo_IAGC.xhtml` - XHTML
+          - `san_2024_informe_anual_remuneraciones_IARC.xhtml` - XHTML
+          - `san_2024_informe_de_gestion_consolidado.xhtml` - XHTML
+    - [DIR] `FR_AMF/` - 0 archivos
+    - [DIR] `IT_CONSOB/` - 0 archivos
+    - [DIR] `NL_AFM/` - 0 archivos
+    - [DIR] `SEC_EDGAR/` - 0 archivos
+- [DIR] `docs/` - 2 archivos
+  - [DIR] `argos/` - 2 archivos
+    - `INTEGRATION.md` - Markdown
+    - `README.md` - Markdown
+- [DIR] `logs/` - 5 archivos
+  - `crawler_bundesanzeiger.log` - Log
+  - `descarga_alemania.log` - Log
+  - `stater_motor_20260824.json` - JSON
+  - `stater_motor_20260825.json` - JSON
+  - `stater_motor_20260909.json` - JSON
+- [DIR] `mod_01_ingestion/` - 0 archivos
+  - [DIR] `telemetry/` - 0 archivos
+    - [DIR] `models/` - 0 archivos
+- [DIR] `scratch/` - 1467 archivos (resumen: .json:1346, .py:107, .log:7, .csv:3, .txt:2, .html:1)
+  - [DIR] `__pycache__/` - omitido (cache)
+  - [DIR] `germany_sandbox/` - 4 archivos
+    - `build_universe.log` - Log
+    - `xetra.csv` - CSV
+    - `xetra2.csv` - CSV
+    - `xetra3.csv` - CSV
+  - [DIR] `oh_conv_today/` - 207 archivos (resumen: .json:207)
+    - (207 archivos directos: JSON:207)
+  - [DIR] `oh_latest_conv/` - 1129 archivos (resumen: .json:1129)
+    - (1129 archivos directos: JSON:1129)
+  - [DIR] `quarantine_es/` - 0 archivos
+  - [DIR] `staging/` - 0 archivos
+    - [DIR] `tmp_download/` - 0 archivos
+  - [DIR] `test_es_2015/` - 0 archivos
+  - (127 archivos directos: Script Python:107, JSON:10, Log:6, Texto:2, HTML:1)
+- [DIR] `tools/` - 403 archivos (resumen: .md:251, .rst:91, .py:31, .js:8, .yml:5, (sin ext):5)
+  - [DIR] `deutschland/` - 384 archivos (resumen: .md:248, .rst:91, .py:28, .yml:5, (sin ext):3, .html:2)
+    - [DIR] `.git/` - omitido (cache)
+    - [DIR] `.github/` - 5 archivos
+      - [DIR] `workflows/` - 4 archivos
+        - `black.yml` - Config YAML
+        - `doc.yml` - Config YAML
+        - `publish.yml` - Config YAML
+        - `runtests.yml` - Config YAML
+      - `dependabot.yml` - Config YAML
+    - [DIR] `docs/` - 245 archivos (resumen: .md:245)
+      - [DIR] `autobahn/` - 27 archivos (resumen: .md:27)
+        - [DIR] `docs/` - 26 archivos (no desglosado, profundidad)
+        - `README.md` - Markdown
+      - [DIR] `bundesrat/` - 2 archivos
+        - [DIR] `docs/` - 1 archivos
+          - `DefaultApi.md` - Markdown
+        - `README.md` - Markdown
+      - [DIR] `bundestag/` - 2 archivos
+        - [DIR] `docs/` - 1 archivos
+          - `DefaultApi.md` - Markdown
+        - `README.md` - Markdown
+      - [DIR] `destatis/` - 2 archivos
+        - [DIR] `docs/` - 1 archivos
+          - `DefaultApi.md` - Markdown
+        - `README.md` - Markdown
+      - [DIR] `dwd/` - 21 archivos
+        - [DIR] `docs/` - 20 archivos
+          - (20 archivos directos: Markdown:20)
+        - `README.md` - Markdown
+      - [DIR] `interpol/` - 20 archivos
+        - [DIR] `docs/` - 19 archivos
+          - (19 archivos directos: Markdown:19)
+        - `README.md` - Markdown
+      - [DIR] `jobsuche/` - 42 archivos (resumen: .md:42)
+        - [DIR] `docs/` - 41 archivos (no desglosado, profundidad)
+        - `README.md` - Markdown
+      - [DIR] `ladestationen/` - 11 archivos
+        - [DIR] `docs/` - 10 archivos
+          - `DefaultApi.md` - Markdown
+          - `Geometry.md` - Markdown
+          - `QuantizationParameter.md` - Markdown
+          - `StationOverview.md` - Markdown
+          - `StationOverviewAttributes.md` - Markdown
+          - `StationOverviewFeatures.md` - Markdown
+          - `StationOverviewFields.md` - Markdown
+          - `StationOverviewSpatialReference.md` - Markdown
+          - `StationOverviewTransform.md` - Markdown
+          - `StationOverviewUniqueIdField.md` - Markdown
+        - `README.md` - Markdown
+      - [DIR] `lebensmittelwarnung/` - 9 archivos
+        - [DIR] `docs/` - 8 archivos
+          - `DefaultApi.md` - Markdown
+          - `InlineObject.md` - Markdown
+          - `RequestOptions.md` - Markdown
+          - `Response.md` - Markdown
+          - `ResponseDocs.md` - Markdown
+          - `ResponseProduct.md` - Markdown
+          - `ResponseRapexInformation.md` - Markdown
+          - `ResponseSafetyInformation.md` - Markdown
+        - `README.md` - Markdown
+      - [DIR] `mudab/` - 22 archivos
+        - [DIR] `docs/` - 21 archivos
+          - (21 archivos directos: Markdown:21)
+        - `README.md` - Markdown
+      - [DIR] `nina/` - 17 archivos
+        - [DIR] `docs/` - 16 archivos
+          - (16 archivos directos: Markdown:16)
+        - `README.md` - Markdown
+      - [DIR] `polizei_brandenburg/` - 12 archivos
+        - [DIR] `docs/` - 11 archivos
+          - `DefaultApi.md` - Markdown
+          - `News.md` - Markdown
+          - `NewsData.md` - Markdown
+          - `Pegel.md` - Markdown
+          - `PegelData.md` - Markdown
+          - `Reviere.md` - Markdown
+          - `ReviereData.md` - Markdown
+          - `Verkehr.md` - Markdown
+          - `VerkehrData.md` - Markdown
+          - `Waldbrand.md` - Markdown
+          - `WaldbrandData.md` - Markdown
+        - `README.md` - Markdown
+      - [DIR] `risikogebiete/` - 3 archivos
+        - [DIR] `docs/` - 2 archivos
+          - `DefaultApi.md` - Markdown
+          - `RiskCountries.md` - Markdown
+        - `README.md` - Markdown
+      - [DIR] `smard/` - 5 archivos
+        - [DIR] `docs/` - 4 archivos
+          - `DefaultApi.md` - Markdown
+          - `Indices.md` - Markdown
+          - `TimeSeries.md` - Markdown
+          - `TimeSeriesMetaData.md` - Markdown
+        - `README.md` - Markdown
+      - [DIR] `strahlenschutz/` - 13 archivos
+        - [DIR] `docs/` - 12 archivos
+          - `BasicTimeSeries.md` - Markdown
+          - `CosmicTimeSeries.md` - Markdown
+          - `DefaultApi.md` - Markdown
+          - `ExtendedTimeSeries.md` - Markdown
+          - `InlineResponse200.md` - Markdown
+          - `InlineResponse2001.md` - Markdown
+          - `InlineResponse2002.md` - Markdown
+          - `Station.md` - Markdown
+          - `Statistics.md` - Markdown
+          - `StatisticsMwavg.md` - Markdown
+          - `StatisticsMwmax.md` - Markdown
+          - `StatisticsMwmin.md` - Markdown
+        - `README.md` - Markdown
+      - [DIR] `travelwarning/` - 18 archivos
+        - [DIR] `docs/` - 17 archivos
+          - (17 archivos directos: Markdown:17)
+        - `README.md` - Markdown
+      - [DIR] `zoll/` - 19 archivos
+        - [DIR] `docs/` - 18 archivos
+          - (18 archivos directos: Markdown:18)
+        - `README.md` - Markdown
+    - [DIR] `docs-sphinx/` - 95 archivos (resumen: .rst:91, .py:1, .bat:1, (sin ext):1, .md:1)
+      - [DIR] `source/` - 91 archivos (resumen: .rst:90, .md:1)
+        - (91 archivos directos: Otro (.rst):90, Markdown:1)
+      - `conf.py` - Script Python
+      - `index.rst` - Otro (.rst)
+      - `make.bat` - Script Batch
+      - `Makefile` - Sin extension
+    - [DIR] `src/` - 17 archivos
+      - [DIR] `deutschland/` - 17 archivos
+        - [DIR] `__pycache__/` - omitido (cache)
+        - [DIR] `bundesanzeiger/` - 4 archivos
+          - [DIR] `__pycache__/` - omitido (cache)
+          - [DIR] `assets/` - 1 archivos
+            - `model.onnx` - Otro (.onnx)
+          - `__init__.py` - Script Python
+          - `bundesanzeiger.py` - Script Python
+          - `model.py` - Script Python
+        - [DIR] `bundesnetzagentur/` - 2 archivos
+          - `__init__.py` - Script Python
+          - `rufzeichen.py` - Script Python
+        - [DIR] `bundeswahlleiter/` - 2 archivos
+          - `__init__.py` - Script Python
+          - `bundeswahlleiter.py` - Script Python
+        - [DIR] `lebensmittelwarnung/` - 2 archivos
+          - `__init__.py` - Script Python
+          - `lebensmittelwarnung.py` - Script Python
+        - [DIR] `verena/` - 5 archivos
+          - `__init__.py` - Script Python
+          - `example.md` - Markdown
+          - `verena.py` - Script Python
+          - `verenadownloader.py` - Script Python
+          - `verenaextractor.py` - Script Python
+        - `config.py` - Script Python
+        - `geo.py` - Script Python
+    - [DIR] `tests/` - 16 archivos
+      - [DIR] `bundesanzeiger/` - 6 archivos
+        - `captcha.png` - Otro (.png)
+        - `response.html` - HTML
+        - `test_connection.py` - Script Python
+        - `test_model.py` - Script Python
+        - `test_parsing.py` - Script Python
+        - `test_results.py` - Script Python
+      - [DIR] `verena/` - 5 archivos
+        - `ausschreibung_correct_result.json` - JSON
+        - `ausschreibung_test_input.html` - HTML
+        - `test_verena.py` - Script Python
+        - `test_verenadownloader.py` - Script Python
+        - `test_verenaextractor.py` - Script Python
+      - `autobahn_test.py` - Script Python
+      - `geo_test.py` - Script Python
+      - `import_test.py` - Script Python
+      - `integration_test.py` - Script Python
+      - `lebensmittelwarnung_test.py` - Script Python
+    - `.gitignore` - Sin extension
+    - `.pre-commit-config.yaml` - Config YAML
+    - `LICENSE` - Sin extension
+    - `poetry.lock` - Otro (.lock)
+    - `pyproject.toml` - Config TOML
+    - `README.md` - Markdown
+  - [DIR] `european-company-registers/` - 19 archivos
+    - [DIR] `.git/` - omitido (cache)
+    - [DIR] `config/` - 1 archivos
+      - `keys.example.json` - JSON
+    - [DIR] `examples/` - 2 archivos
+      - `de-search-pergolux.json` - JSON
+      - `fr-analyze-carrefour.json` - JSON
+    - [DIR] `scripts/` - 11 archivos
+      - `de-bundesanzeiger.js` - Otro (.js)
+      - `de-combined.js` - Otro (.js)
+      - `de-handelsregister.js` - Otro (.js)
+      - `de-unternehmensregister.js` - Otro (.js)
+      - `fr-inpi.js` - Otro (.js)
+      - `gb-companies-house.js` - Otro (.js)
+      - `hr-browser.py` - Script Python
+      - `pl-browser.py` - Script Python
+      - `pl-krs.js` - Otro (.js)
+      - `search.js` - Otro (.js)
+      - `ur_fetch_document.py` - Script Python
+    - `.gitignore` - Sin extension
+    - `LICENSE` - Sin extension
+    - `README.md` - Markdown
+    - `ROADMAP.md` - Markdown
+    - `SKILL.md` - Markdown
+- `.env.example` - Plantilla config
+- `.gitignore` - Sin extension
+- `_baseline_2026-09-07.json` - JSON
+- `_baseline_2026-09-09.json` - JSON
+- `AGENTS.md` - Markdown
+- `argos.py` - Script Python
+- `audit_batch_it.json` - JSON
+- `audit_batch_nl.json` - JSON
+- `audit_batch_us.json` - JSON
+- `AUDIT_ESPANNA_UNIVERSAL_SANEADO.md` - Markdown
+- `clean_and_rebuild_all_institutional.py` - Script Python
+- `descarga_2020.log` - Log
+- `descarga_2021.log` - Log
+- `descarga_2023.log` - Log
+- `descarga_2023_err.log` - Log
+- `ejecutar_descarga_2021_en_vivo.bat` - Script Batch
+- `ejecutar_descarga_2022_en_vivo.bat` - Script Batch
+- `ejecutar_descarga_2023_en_vivo.bat` - Script Batch
+- `ejecutar_descarga_2024_en_vivo.bat` - Script Batch
+- `ejecutar_descarga_2025_en_vivo.bat` - Script Batch
+- `ejecutar_descarga_alemania.bat` - Script Batch
+- `ejecutar_descarga_espana.bat` - Script Batch
+- `ejecutar_descarga_espana_total.bat` - Script Batch
+- `entregables_planificacion.zip` - ZIP
+- `generate_audit_report.py` - Script Python
+- `generate_forensic_report.py` - Script Python
+- `iniciar_openhands.bat` - Script Batch
+- `inventario disco local 08-10-2026.md` - Markdown
+- `LICENSE` - Sin extension
+- `MATRIZ_RIESGOS.md` - Markdown
+- `MATRIZ_RIESGOS_v2.md` - Markdown
+- `MEMORIA_UMUEMPRENDE_2026_INTERACTIVA.md` - Markdown
+- `PLAN_MAESTRO_ARGOS_v1.md` - Markdown
+- `PLAN_MAESTRO_ARGOS_v2.md` - Markdown
+- `pyproject.toml` - Config TOML
+- `README.md` - Markdown
+- `requirements.txt` - Texto
+- `run_spain_download.py` - Script Python
+- `sec_panel_us_summary.json` - JSON
+- `setup.sh` - Script Shell
+- `sincronizar_azure_datalake.bat` - Script Batch
+- `SPEC_API_INSTITUCIONAL.md` - Markdown
+- `SPEC_API_INSTITUCIONAL_v2.md` - Markdown
+- `SPEC_DATA_LAKE_MULTI_PAIS.md` - Markdown
+- `SPEC_DATA_LAKE_MULTI_PAIS_v2.md` - Markdown
+- `SPEC_INFRA_OBSERVABILIDAD.md` - Markdown
+- `SPEC_INGESTA_DE.md` - Markdown
+- `SPEC_INGESTA_ES.md` - Markdown
+- `SPEC_INGESTA_ES_v2.md` - Markdown
+- `SPEC_INGESTA_FR.md` - Markdown
+- `SPEC_INGESTA_IT.md` - Markdown
+- `SPEC_INGESTA_NL.md` - Markdown
+- `SPEC_INGESTA_US_SEC.md` - Markdown
+- `SPEC_WEB_CORPORATIVA.md` - Markdown
+- `STATER_DOSSIER_TALENTO_UMUEMPRENDE_2026.docx` - Word
+- `UNIVERSE_COMPLETION_REPORT_20260909_211042.md` - Markdown
+- `workspace.tar` - TAR

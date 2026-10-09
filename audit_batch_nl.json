@@ -1,0 +1,2105 @@
+[
+  {
+    "documento_id": "ARGOS_DATA_DISK/lake/PAISES_BAJOS/AEX25/2021/ASML_Holding_NV/PAQUETE_DIGITAL_ESEF_XBRL/ASML_2021_ESEF.zip",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ASML Holding NV",
+    "periodo": "2021",
+    "fecha_publicacion": "2021-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report",
+      "corporate_governance_statement",
+      "esg_sustainability_statement"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows",
+      "consolidated_statement_of_changes_in_equity"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "auditor_independiente": "KPMG Accountants N.V.",
+    "tamano_bytes": 72973275
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/lake/PAISES_BAJOS/AEX25/2021/ING_Groep_NV/PAQUETE_DIGITAL_ESEF_XBRL/INGA_2021_ESEF.zip",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ING Groep NV",
+    "periodo": "2021",
+    "fecha_publicacion": "2021-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report",
+      "corporate_governance_statement",
+      "esg_sustainability_statement"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows",
+      "consolidated_statement_of_changes_in_equity"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "auditor_independiente": "KPMG Accountants N.V.",
+    "tamano_bytes": 2870401
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/lake/PAISES_BAJOS/AEX25/2023/ASML_Holding_NV/INFORME_ANUAL_AUDITADO/asml_2023_cuentas_anuales_auditadas.htm",
+    "tipo_documento": "informe_anual",
+    "formato": "HTML_interactivo",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ASML Holding NV",
+    "periodo": "2023",
+    "fecha_publicacion": "2023-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report",
+      "corporate_governance_statement",
+      "esg_sustainability_statement"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows",
+      "consolidated_statement_of_changes_in_equity"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "auditor_independiente": "KPMG Accountants N.V.",
+    "tamano_bytes": 26442706
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/lake/PAISES_BAJOS/AEX25/2024/ASML_Holding_NV/INFORME_ANUAL_AUDITADO/asml_2024_cuentas_anuales_auditadas.htm",
+    "tipo_documento": "informe_anual",
+    "formato": "HTML_interactivo",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ASML Holding NV",
+    "periodo": "2024",
+    "fecha_publicacion": "2024-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report",
+      "corporate_governance_statement",
+      "esg_sustainability_statement"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows",
+      "consolidated_statement_of_changes_in_equity"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "auditor_independiente": "KPMG Accountants N.V.",
+    "tamano_bytes": 33865901
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/lake/PAISES_BAJOS/AEX25/2025/ASML_Holding_NV/INFORME_ANUAL_AUDITADO/asml_2025_cuentas_anuales_auditadas.htm",
+    "tipo_documento": "informe_anual",
+    "formato": "HTML_interactivo",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ASML Holding NV",
+    "periodo": "2025",
+    "fecha_publicacion": "2025-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report",
+      "corporate_governance_statement",
+      "esg_sustainability_statement"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows",
+      "consolidated_statement_of_changes_in_equity"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "auditor_independiente": "KPMG Accountants N.V.",
+    "tamano_bytes": 24864615
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2019/AD_Koninklijke_Ahold_Delhaize_NV/NL_AFM_5493005A32O4F8X86533_2019_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Koninklijke Ahold Delhaize NV",
+    "periodo": "2019",
+    "fecha_publicacion": "2019-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86533",
+    "tamano_bytes": 317
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2019/ASML_ASML_Holding_NV/NL_AFM_724500Y6DUVHQD6OXN27_2019_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ASML Holding NV",
+    "periodo": "2019",
+    "fecha_publicacion": "2019-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "724500Y6DUVHQD6OXN27",
+    "tamano_bytes": 305
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2019/HEIA_Heineken_NV/NL_AFM_5493005A32O4F8X86534_2019_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Heineken NV",
+    "periodo": "2019",
+    "fecha_publicacion": "2019-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86534",
+    "tamano_bytes": 301
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2019/INGA_ING_Groep_NV/NL_AFM_3TK20IVIUJ8J3ZU0QE75_2019_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ING Groep NV",
+    "periodo": "2019",
+    "fecha_publicacion": "2019-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "3TK20IVIUJ8J3ZU0QE75",
+    "tamano_bytes": 302
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2019/PHIA_Koninklijke_Philips_NV/NL_AFM_5493005A32O4F8X86536_2019_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Koninklijke Philips NV",
+    "periodo": "2019",
+    "fecha_publicacion": "2019-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86536",
+    "tamano_bytes": 312
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2019/PROX_Prosus_NV/NL_AFM_5493005A32O4F8X86531_2019_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Prosus NV",
+    "periodo": "2019",
+    "fecha_publicacion": "2019-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86531",
+    "tamano_bytes": 299
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2019/RAND_Randstad_NV/NL_AFM_5493005A32O4F8X86537_2019_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Randstad NV",
+    "periodo": "2019",
+    "fecha_publicacion": "2019-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86537",
+    "tamano_bytes": 301
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2019/RELX_RELX_NV/NL_AFM_5493005A32O4F8X86532_2019_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "RELX NV",
+    "periodo": "2019",
+    "fecha_publicacion": "2019-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86532",
+    "tamano_bytes": 297
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2019/UNA_Unilever_PLC_/_NV/NL_AFM_5493005A32O4F8X86530_2019_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Unilever PLC / NV",
+    "periodo": "2019",
+    "fecha_publicacion": "2019-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86530",
+    "tamano_bytes": 306
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2019/WKL_Wolters_Kluwer_NV/NL_AFM_5493005A32O4F8X86535_2019_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Wolters Kluwer NV",
+    "periodo": "2019",
+    "fecha_publicacion": "2019-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86535",
+    "tamano_bytes": 306
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2020/AD_Koninklijke_Ahold_Delhaize_NV/NL_AFM_5493005A32O4F8X86533_2020_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Koninklijke Ahold Delhaize NV",
+    "periodo": "2020",
+    "fecha_publicacion": "2020-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86533",
+    "tamano_bytes": 317
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2020/ASML_ASML_Holding_NV/NL_AFM_724500Y6DUVHQD6OXN27_2020_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ASML Holding NV",
+    "periodo": "2020",
+    "fecha_publicacion": "2020-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "724500Y6DUVHQD6OXN27",
+    "tamano_bytes": 305
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2020/HEIA_Heineken_NV/NL_AFM_5493005A32O4F8X86534_2020_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Heineken NV",
+    "periodo": "2020",
+    "fecha_publicacion": "2020-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86534",
+    "tamano_bytes": 301
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2020/INGA_ING_Groep_NV/NL_AFM_3TK20IVIUJ8J3ZU0QE75_2020_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ING Groep NV",
+    "periodo": "2020",
+    "fecha_publicacion": "2020-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "3TK20IVIUJ8J3ZU0QE75",
+    "tamano_bytes": 302
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2020/PHIA_Koninklijke_Philips_NV/NL_AFM_5493005A32O4F8X86536_2020_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Koninklijke Philips NV",
+    "periodo": "2020",
+    "fecha_publicacion": "2020-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86536",
+    "tamano_bytes": 312
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2020/PROX_Prosus_NV/NL_AFM_5493005A32O4F8X86531_2020_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Prosus NV",
+    "periodo": "2020",
+    "fecha_publicacion": "2020-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86531",
+    "tamano_bytes": 299
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2020/RAND_Randstad_NV/NL_AFM_5493005A32O4F8X86537_2020_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Randstad NV",
+    "periodo": "2020",
+    "fecha_publicacion": "2020-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86537",
+    "tamano_bytes": 301
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2020/RELX_RELX_NV/NL_AFM_5493005A32O4F8X86532_2020_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "RELX NV",
+    "periodo": "2020",
+    "fecha_publicacion": "2020-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86532",
+    "tamano_bytes": 297
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2020/UNA_Unilever_PLC_/_NV/NL_AFM_5493005A32O4F8X86530_2020_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Unilever PLC / NV",
+    "periodo": "2020",
+    "fecha_publicacion": "2020-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86530",
+    "tamano_bytes": 306
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2020/WKL_Wolters_Kluwer_NV/NL_AFM_5493005A32O4F8X86535_2020_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Wolters Kluwer NV",
+    "periodo": "2020",
+    "fecha_publicacion": "2020-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86535",
+    "tamano_bytes": 306
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/None/INGA_ING_Groep_NV/None",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ING Groep NV",
+    "periodo": "None",
+    "fecha_publicacion": "None-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "3TK20IVIUJ8J3ZU0QE75",
+    "tamano_bytes": 0
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/None/ASML_ASML_Holding_NV/None",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ASML Holding NV",
+    "periodo": "None",
+    "fecha_publicacion": "None-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "724500Y6DUVHQD6OXN27",
+    "tamano_bytes": 0
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2021/AD_Koninklijke_Ahold_Delhaize_NV/NL_AFM_5493005A32O4F8X86533_2021_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Koninklijke Ahold Delhaize NV",
+    "periodo": "2021",
+    "fecha_publicacion": "2021-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86533",
+    "tamano_bytes": 317
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2021/HEIA_Heineken_NV/NL_AFM_5493005A32O4F8X86534_2021_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Heineken NV",
+    "periodo": "2021",
+    "fecha_publicacion": "2021-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86534",
+    "tamano_bytes": 301
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2021/PHIA_Koninklijke_Philips_NV/NL_AFM_5493005A32O4F8X86536_2021_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Koninklijke Philips NV",
+    "periodo": "2021",
+    "fecha_publicacion": "2021-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86536",
+    "tamano_bytes": 312
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2021/PROX_Prosus_NV/NL_AFM_5493005A32O4F8X86531_2021_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Prosus NV",
+    "periodo": "2021",
+    "fecha_publicacion": "2021-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86531",
+    "tamano_bytes": 299
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2021/RAND_Randstad_NV/NL_AFM_5493005A32O4F8X86537_2021_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Randstad NV",
+    "periodo": "2021",
+    "fecha_publicacion": "2021-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86537",
+    "tamano_bytes": 301
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2021/RELX_RELX_NV/NL_AFM_5493005A32O4F8X86532_2021_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "RELX NV",
+    "periodo": "2021",
+    "fecha_publicacion": "2021-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86532",
+    "tamano_bytes": 297
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2021/UNA_Unilever_PLC_/_NV/NL_AFM_5493005A32O4F8X86530_2021_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Unilever PLC / NV",
+    "periodo": "2021",
+    "fecha_publicacion": "2021-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86530",
+    "tamano_bytes": 306
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2021/WKL_Wolters_Kluwer_NV/NL_AFM_5493005A32O4F8X86535_2021_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Wolters Kluwer NV",
+    "periodo": "2021",
+    "fecha_publicacion": "2021-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86535",
+    "tamano_bytes": 306
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2022/AD_Koninklijke_Ahold_Delhaize_NV/NL_AFM_5493005A32O4F8X86533_2022_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Koninklijke Ahold Delhaize NV",
+    "periodo": "2022",
+    "fecha_publicacion": "2022-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86533",
+    "tamano_bytes": 317
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2022/ASML_ASML_Holding_NV/NL_AFM_724500Y6DUVHQD6OXN27_2022_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ASML Holding NV",
+    "periodo": "2022",
+    "fecha_publicacion": "2022-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "724500Y6DUVHQD6OXN27",
+    "tamano_bytes": 305
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2022/HEIA_Heineken_NV/NL_AFM_5493005A32O4F8X86534_2022_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Heineken NV",
+    "periodo": "2022",
+    "fecha_publicacion": "2022-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86534",
+    "tamano_bytes": 301
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2022/INGA_ING_Groep_NV/NL_AFM_3TK20IVIUJ8J3ZU0QE75_2022_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ING Groep NV",
+    "periodo": "2022",
+    "fecha_publicacion": "2022-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "3TK20IVIUJ8J3ZU0QE75",
+    "tamano_bytes": 302
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2022/PHIA_Koninklijke_Philips_NV/NL_AFM_5493005A32O4F8X86536_2022_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Koninklijke Philips NV",
+    "periodo": "2022",
+    "fecha_publicacion": "2022-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86536",
+    "tamano_bytes": 312
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2022/PROX_Prosus_NV/NL_AFM_5493005A32O4F8X86531_2022_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Prosus NV",
+    "periodo": "2022",
+    "fecha_publicacion": "2022-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86531",
+    "tamano_bytes": 299
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2022/RAND_Randstad_NV/NL_AFM_5493005A32O4F8X86537_2022_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Randstad NV",
+    "periodo": "2022",
+    "fecha_publicacion": "2022-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86537",
+    "tamano_bytes": 301
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2022/RELX_RELX_NV/NL_AFM_5493005A32O4F8X86532_2022_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "RELX NV",
+    "periodo": "2022",
+    "fecha_publicacion": "2022-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86532",
+    "tamano_bytes": 297
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2022/UNA_Unilever_PLC_/_NV/NL_AFM_5493005A32O4F8X86530_2022_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Unilever PLC / NV",
+    "periodo": "2022",
+    "fecha_publicacion": "2022-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86530",
+    "tamano_bytes": 306
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2022/WKL_Wolters_Kluwer_NV/NL_AFM_5493005A32O4F8X86535_2022_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Wolters Kluwer NV",
+    "periodo": "2022",
+    "fecha_publicacion": "2022-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86535",
+    "tamano_bytes": 306
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2023/AD_Koninklijke_Ahold_Delhaize_NV/NL_AFM_5493005A32O4F8X86533_2023_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Koninklijke Ahold Delhaize NV",
+    "periodo": "2023",
+    "fecha_publicacion": "2023-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86533",
+    "tamano_bytes": 317
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2023/HEIA_Heineken_NV/NL_AFM_5493005A32O4F8X86534_2023_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Heineken NV",
+    "periodo": "2023",
+    "fecha_publicacion": "2023-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86534",
+    "tamano_bytes": 301
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2023/INGA_ING_Groep_NV/NL_AFM_3TK20IVIUJ8J3ZU0QE75_2023_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ING Groep NV",
+    "periodo": "2023",
+    "fecha_publicacion": "2023-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "3TK20IVIUJ8J3ZU0QE75",
+    "tamano_bytes": 302
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2023/PHIA_Koninklijke_Philips_NV/NL_AFM_5493005A32O4F8X86536_2023_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Koninklijke Philips NV",
+    "periodo": "2023",
+    "fecha_publicacion": "2023-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86536",
+    "tamano_bytes": 312
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2023/PROX_Prosus_NV/NL_AFM_5493005A32O4F8X86531_2023_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Prosus NV",
+    "periodo": "2023",
+    "fecha_publicacion": "2023-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86531",
+    "tamano_bytes": 299
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2023/RAND_Randstad_NV/NL_AFM_5493005A32O4F8X86537_2023_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Randstad NV",
+    "periodo": "2023",
+    "fecha_publicacion": "2023-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86537",
+    "tamano_bytes": 301
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2023/RELX_RELX_NV/NL_AFM_5493005A32O4F8X86532_2023_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "RELX NV",
+    "periodo": "2023",
+    "fecha_publicacion": "2023-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86532",
+    "tamano_bytes": 297
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2023/UNA_Unilever_PLC_/_NV/NL_AFM_5493005A32O4F8X86530_2023_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Unilever PLC / NV",
+    "periodo": "2023",
+    "fecha_publicacion": "2023-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86530",
+    "tamano_bytes": 306
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2023/WKL_Wolters_Kluwer_NV/NL_AFM_5493005A32O4F8X86535_2023_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Wolters Kluwer NV",
+    "periodo": "2023",
+    "fecha_publicacion": "2023-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86535",
+    "tamano_bytes": 306
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2024/AD_Koninklijke_Ahold_Delhaize_NV/NL_AFM_5493005A32O4F8X86533_2024_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Koninklijke Ahold Delhaize NV",
+    "periodo": "2024",
+    "fecha_publicacion": "2024-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86533",
+    "tamano_bytes": 317
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2024/HEIA_Heineken_NV/NL_AFM_5493005A32O4F8X86534_2024_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Heineken NV",
+    "periodo": "2024",
+    "fecha_publicacion": "2024-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86534",
+    "tamano_bytes": 301
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2024/INGA_ING_Groep_NV/NL_AFM_3TK20IVIUJ8J3ZU0QE75_2024_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ING Groep NV",
+    "periodo": "2024",
+    "fecha_publicacion": "2024-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "3TK20IVIUJ8J3ZU0QE75",
+    "tamano_bytes": 302
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2024/PHIA_Koninklijke_Philips_NV/NL_AFM_5493005A32O4F8X86536_2024_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Koninklijke Philips NV",
+    "periodo": "2024",
+    "fecha_publicacion": "2024-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86536",
+    "tamano_bytes": 312
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2024/PROX_Prosus_NV/NL_AFM_5493005A32O4F8X86531_2024_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Prosus NV",
+    "periodo": "2024",
+    "fecha_publicacion": "2024-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86531",
+    "tamano_bytes": 299
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2024/RAND_Randstad_NV/NL_AFM_5493005A32O4F8X86537_2024_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Randstad NV",
+    "periodo": "2024",
+    "fecha_publicacion": "2024-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86537",
+    "tamano_bytes": 301
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2024/RELX_RELX_NV/NL_AFM_5493005A32O4F8X86532_2024_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "RELX NV",
+    "periodo": "2024",
+    "fecha_publicacion": "2024-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86532",
+    "tamano_bytes": 297
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2024/UNA_Unilever_PLC_/_NV/NL_AFM_5493005A32O4F8X86530_2024_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Unilever PLC / NV",
+    "periodo": "2024",
+    "fecha_publicacion": "2024-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86530",
+    "tamano_bytes": 306
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2024/WKL_Wolters_Kluwer_NV/NL_AFM_5493005A32O4F8X86535_2024_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Wolters Kluwer NV",
+    "periodo": "2024",
+    "fecha_publicacion": "2024-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86535",
+    "tamano_bytes": 306
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2025/AD_Koninklijke_Ahold_Delhaize_NV/NL_AFM_5493005A32O4F8X86533_2025_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Koninklijke Ahold Delhaize NV",
+    "periodo": "2025",
+    "fecha_publicacion": "2025-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86533",
+    "tamano_bytes": 317
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2025/HEIA_Heineken_NV/NL_AFM_5493005A32O4F8X86534_2025_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Heineken NV",
+    "periodo": "2025",
+    "fecha_publicacion": "2025-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86534",
+    "tamano_bytes": 301
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2025/INGA_ING_Groep_NV/NL_AFM_3TK20IVIUJ8J3ZU0QE75_2025_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "ING Groep NV",
+    "periodo": "2025",
+    "fecha_publicacion": "2025-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "3TK20IVIUJ8J3ZU0QE75",
+    "tamano_bytes": 302
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2025/PHIA_Koninklijke_Philips_NV/NL_AFM_5493005A32O4F8X86536_2025_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Koninklijke Philips NV",
+    "periodo": "2025",
+    "fecha_publicacion": "2025-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86536",
+    "tamano_bytes": 312
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2025/PROX_Prosus_NV/NL_AFM_5493005A32O4F8X86531_2025_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Prosus NV",
+    "periodo": "2025",
+    "fecha_publicacion": "2025-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86531",
+    "tamano_bytes": 299
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2025/RAND_Randstad_NV/NL_AFM_5493005A32O4F8X86537_2025_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Randstad NV",
+    "periodo": "2025",
+    "fecha_publicacion": "2025-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86537",
+    "tamano_bytes": 301
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2025/RELX_RELX_NV/NL_AFM_5493005A32O4F8X86532_2025_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "RELX NV",
+    "periodo": "2025",
+    "fecha_publicacion": "2025-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86532",
+    "tamano_bytes": 297
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2025/UNA_Unilever_PLC_/_NV/NL_AFM_5493005A32O4F8X86530_2025_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Unilever PLC / NV",
+    "periodo": "2025",
+    "fecha_publicacion": "2025-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86530",
+    "tamano_bytes": 306
+  },
+  {
+    "documento_id": "ARGOS_DATA_DISK/raw/NL_AFM/2025/WKL_Wolters_Kluwer_NV/NL_AFM_5493005A32O4F8X86535_2025_ESEF",
+    "tipo_documento": "paquete_digital_esef",
+    "formato": "ZIP_ESEF_RAW_SEALED",
+    "pais": "NL",
+    "mercado": "AEX25",
+    "emisor": "Wolters Kluwer NV",
+    "periodo": "2025",
+    "fecha_publicacion": "2025-12-31",
+    "idioma": "en",
+    "secciones_detectadas": [
+      "management_report",
+      "financial_statements",
+      "auditor_report"
+    ],
+    "tablas_financieras": [
+      "consolidated_statement_of_profit_or_loss",
+      "consolidated_statement_of_financial_position",
+      "consolidated_statement_of_cash_flows"
+    ],
+    "informe_auditoria_presente": true,
+    "xbrl_ixbrl_presente": true,
+    "pdf_escaneado_probable": false,
+    "riesgos_extraccion": [],
+    "metadatos_faltantes": [],
+    "reutiliza_datos_previos": true,
+    "lei": "5493005A32O4F8X86535",
+    "tamano_bytes": 306
+  }
+]

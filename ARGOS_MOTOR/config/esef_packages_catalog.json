@@ -1,0 +1,2760 @@
+{
+  "generated_at": "2026-10-01T07:41:57.759121+00:00",
+  "total": 306,
+  "items": [
+    {
+      "ticker": "LUFT",
+      "year": "2020",
+      "lei": "529900PH63HYJ86ASW55",
+      "legal_name": "Lufthansa Aviation GmbH",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900PH63HYJ86ASW55/2020-12-31/ESEF/DE/0/DeutscheLufthansa-2020-12-31.zip",
+      "filename": "DE_BAFIN_LUFT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ADID",
+      "year": "2020",
+      "lei": "549300JSX0Z4CW0V5023",
+      "legal_name": "adidas AG",
+      "isin": "DE000A1EWWW0",
+      "url": "https://filings.xbrl.org/549300JSX0Z4CW0V5023/2020-12-31/ESEF/DE/0/adidasAG-2020-12-31.zip",
+      "filename": "DE_BAFIN_ADID_2020_ESEF.zip"
+    },
+    {
+      "ticker": "AIRB",
+      "year": "2021",
+      "lei": "MINO79WLOO247M1IL051",
+      "legal_name": "Airbus Dachfonds",
+      "isin": "NL0000235190",
+      "url": "https://filings.xbrl.org/MINO79WLOO247M1IL051/2021-12-31/ESEF/NL/0/airbus-2021-12-31-en.zip",
+      "filename": "DE_BAFIN_AIRB_2021_ESEF.zip"
+    },
+    {
+      "ticker": "NOKI",
+      "year": "2021",
+      "lei": "549300A0JPRWG1KI7U06",
+      "legal_name": "Nokia",
+      "isin": "FI0009000681",
+      "url": "https://filings.xbrl.org/549300A0JPRWG1KI7U06/2021-12-31/ESEF/FI/0/549300A0JPRWG1KI7U06-2021-12-31-fi.zip",
+      "filename": "DE_BAFIN_NOKI_2021_ESEF.zip"
+    },
+    {
+      "ticker": "NOKI",
+      "year": "2020",
+      "lei": "549300A0JPRWG1KI7U06",
+      "legal_name": "Nokia",
+      "isin": "FI0009000681",
+      "url": "https://filings.xbrl.org/549300A0JPRWG1KI7U06/2020-12-31/ESEF/FI/0/nok-2020-12-31_iXBRL.zip",
+      "filename": "DE_BAFIN_NOKI_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DEUT",
+      "year": "2020",
+      "lei": "549300V9QSIG4WX4GJ96",
+      "legal_name": "DEUTSCHE TELEKOM AG",
+      "isin": "DE0005557508",
+      "url": "https://filings.xbrl.org/549300V9QSIG4WX4GJ96/2020-12-31/ESEF/DE/0/deutschetelekomag.zip",
+      "filename": "DE_BAFIN_DEUT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "STRA",
+      "year": "2020",
+      "lei": "529900ZZJWANAFSPGV30",
+      "legal_name": "STRATEC SE",
+      "isin": "DE0007289001",
+      "url": "https://filings.xbrl.org/529900ZZJWANAFSPGV30/2020-12-31/ESEF/DE/0/stratecse-2020-12-31.zip",
+      "filename": "DE_BAFIN_STRA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "UNIP",
+      "year": "2020",
+      "lei": "549300UXRTWGIBZQ4J67",
+      "legal_name": "UNIPER SE",
+      "isin": "DE000UNSE018",
+      "url": "https://filings.xbrl.org/549300UXRTWGIBZQ4J67/2020-12-31/ESEF/DE/0/uniperse-2020-12-31.zip",
+      "filename": "DE_BAFIN_UNIP_2020_ESEF.zip"
+    },
+    {
+      "ticker": "UNIP_2",
+      "year": "2020",
+      "lei": "549300UXRTWGIBZQ4J67",
+      "legal_name": "UNIPER SE",
+      "isin": "DE000UNSE026",
+      "url": "https://filings.xbrl.org/549300UXRTWGIBZQ4J67/2020-12-31/ESEF/DE/0/uniperse-2020-12-31.zip",
+      "filename": "DE_BAFIN_UNIP_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "UNIP_3",
+      "year": "2020",
+      "lei": "549300UXRTWGIBZQ4J67",
+      "legal_name": "UNIPER SE",
+      "isin": "DE000UNSE2N1",
+      "url": "https://filings.xbrl.org/549300UXRTWGIBZQ4J67/2020-12-31/ESEF/DE/0/uniperse-2020-12-31.zip",
+      "filename": "DE_BAFIN_UNIP_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HENS",
+      "year": "2020",
+      "lei": "894500686FYLLZD3M624",
+      "legal_name": "HENSOLDT AG",
+      "isin": "DE000HAG0005",
+      "url": "https://filings.xbrl.org/894500686FYLLZD3M624/2020-12-31/ESEF/DE/0/hensoldtag-2020-12-31.zip",
+      "filename": "DE_BAFIN_HENS_2020_ESEF.zip"
+    },
+    {
+      "ticker": "MERC",
+      "year": "2020",
+      "lei": "529900R27DL06UVNT076",
+      "legal_name": "Mercedes-Benz Group AG",
+      "isin": "DE0007100000",
+      "url": "https://filings.xbrl.org/529900R27DL06UVNT076/2020-12-31/ESEF/DE/0/daimlerag.zip",
+      "filename": "DE_BAFIN_MERC_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DEUT_2",
+      "year": "2020",
+      "lei": "7LTWFZYICNSX8D621K86",
+      "legal_name": "DEUTSCHE BANK AKTIENGESELLSCHAFT",
+      "isin": "DE0005140008",
+      "url": "https://filings.xbrl.org/7LTWFZYICNSX8D621K86/2020-12-31/ESEF/DE/0/deutschebankag-2020-12-31.zip",
+      "filename": "DE_BAFIN_DEUT_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "FYBE",
+      "year": "2020",
+      "lei": "894500D5B6A8E1W0VL50",
+      "legal_name": "Fyber N.V. Zweigniederlassung Berlin",
+      "isin": "",
+      "url": "https://filings.xbrl.org/894500D5B6A8E1W0VL50/2020-12-31/ESEF/NL/0/Fyber-2021-04-30.zip",
+      "filename": "DE_BAFIN_FYBE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "BEFE",
+      "year": "2020",
+      "lei": "222100VXGA8L6J4ZWG61",
+      "legal_name": "Befesa Zinc Germany GmbH",
+      "isin": "LU1704650164",
+      "url": "https://filings.xbrl.org/222100VXGA8L6J4ZWG61/2020-12-31/ESEF/DE/0/222100VXGA8L6J4ZWG61-2020-12-31.zip",
+      "filename": "DE_BAFIN_BEFE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VANT",
+      "year": "2021",
+      "lei": "213800BBQO965UPQ7J59",
+      "legal_name": "VANTAGE TOWERS AG",
+      "isin": "DE000A3H3LL2",
+      "url": "https://filings.xbrl.org/213800BBQO965UPQ7J59/2021-03-31/ESEF/DE/0/vantagetowers.zip",
+      "filename": "DE_BAFIN_VANT_2021_ESEF.zip"
+    },
+    {
+      "ticker": "LUFT_2",
+      "year": "2020",
+      "lei": "529900PH63HYJ86ASW55",
+      "legal_name": "Deutsche Lufthansa Aktiengesellschaft",
+      "isin": "DE0008232125",
+      "url": "https://filings.xbrl.org/529900PH63HYJ86ASW55/2020-12-31/ESEF/DE/0/DeutscheLufthansa-2020-12-31.zip",
+      "filename": "DE_BAFIN_LUFT_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "REDC",
+      "year": "2021",
+      "lei": "529900JK6UXHY1YKZ082",
+      "legal_name": "Redcare Pharmacy",
+      "isin": "NL0012044747",
+      "url": "https://filings.xbrl.org/529900JK6UXHY1YKZ082/2021-12-31/ESEF/NL/0/shop-apotheke-europe.zip",
+      "filename": "DE_BAFIN_REDC_2021_ESEF.zip"
+    },
+    {
+      "ticker": "REDC",
+      "year": "2020",
+      "lei": "529900JK6UXHY1YKZ082",
+      "legal_name": "Redcare Pharmacy",
+      "isin": "NL0012044747",
+      "url": "https://filings.xbrl.org/529900JK6UXHY1YKZ082/2020-12-31/ESEF/NL/0/shop-apotheke-europe.zip",
+      "filename": "DE_BAFIN_REDC_2020_ESEF.zip"
+    },
+    {
+      "ticker": "TRAT",
+      "year": "2020",
+      "lei": "529900UIMQRKPFN6SV80",
+      "legal_name": "TRATON SE",
+      "isin": "DE000TRAT0N7",
+      "url": "https://filings.xbrl.org/529900UIMQRKPFN6SV80/2020-12-31/ESEF/DE/0/traton.zip",
+      "filename": "DE_BAFIN_TRAT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "CPIP",
+      "year": "2021",
+      "lei": "222100CO2ZOTEPGJO223",
+      "legal_name": "CPI Property Group",
+      "isin": "LU0251710041",
+      "url": "https://filings.xbrl.org/222100CO2ZOTEPGJO223/2021-12-31/ESEF/LU/0/CPI_PROPERTY_GROUP_20220331.zip",
+      "filename": "DE_BAFIN_CPIP_2021_ESEF.zip"
+    },
+    {
+      "ticker": "AUTO",
+      "year": "2020",
+      "lei": "391200S2LPXG5ZD5G304",
+      "legal_name": "AUTO1 Group SE",
+      "isin": "DE000A2LQ884",
+      "url": "https://filings.xbrl.org/391200S2LPXG5ZD5G304/2020-12-31/ESEF/DE/0/auto1-group.zip",
+      "filename": "DE_BAFIN_AUTO_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DELI",
+      "year": "2020",
+      "lei": "529900C3EX1FZGE48X78",
+      "legal_name": "Delivery Hero SE",
+      "isin": "DE000A2E4K43",
+      "url": "https://filings.xbrl.org/529900C3EX1FZGE48X78/2020-12-31/ESEF/DE/0/529900C3EX1FZGE48X78-2020-12-31.zip",
+      "filename": "DE_BAFIN_DELI_2020_ESEF.zip"
+    },
+    {
+      "ticker": "MTUA",
+      "year": "2020",
+      "lei": "529900807L67JY81RD65",
+      "legal_name": "MTU Aero Engines AG",
+      "isin": "DE000A0D9PT0",
+      "url": "https://filings.xbrl.org/529900807L67JY81RD65/2020-12-31/ESEF/DE/0/mtu-2020-12-31.zip",
+      "filename": "DE_BAFIN_MTUA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SAMS",
+      "year": "2021",
+      "lei": "9884007ER46L6N7EI764",
+      "legal_name": "SAMSUNG ELECTRONICS GMBH",
+      "isin": "KR7005930003",
+      "url": "https://filings.xbrl.org/9884007ER46L6N7EI764/2021-12-31/ESEF/GB/0/9884007ER46L6N7EI764-2021-12-31.zip",
+      "filename": "DE_BAFIN_SAMS_2021_ESEF.zip"
+    },
+    {
+      "ticker": "SAMS",
+      "year": "2021",
+      "lei": "9884007ER46L6N7EI764",
+      "legal_name": "SAMSUNG ELECTRONICS GMBH",
+      "isin": "KR7005930003",
+      "url": "https://filings.xbrl.org/9884007ER46L6N7EI764/2021-12-31/ESEF/LU/0/9884007ER46L6N7EI764-2021-12-31-en.zip",
+      "filename": "DE_BAFIN_SAMS_2021_ESEF.zip"
+    },
+    {
+      "ticker": "VOLK",
+      "year": "2020",
+      "lei": "529900NNUPAGGOMPXZ31",
+      "legal_name": "VOLKSWAGEN AKTIENGESELLSCHAFT",
+      "isin": "DE0007664005",
+      "url": "https://filings.xbrl.org/529900NNUPAGGOMPXZ31/2020-12-31/ESEF/DE/0/volkswagenag.zip",
+      "filename": "DE_BAFIN_VOLK_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VOLK_2",
+      "year": "2020",
+      "lei": "529900NNUPAGGOMPXZ31",
+      "legal_name": "VOLKSWAGEN AKTIENGESELLSCHAFT",
+      "isin": "DE0007664039",
+      "url": "https://filings.xbrl.org/529900NNUPAGGOMPXZ31/2020-12-31/ESEF/DE/0/volkswagenag.zip",
+      "filename": "DE_BAFIN_VOLK_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DE_BP",
+      "year": "2021",
+      "lei": "213800LH1BZH3DI6G760",
+      "legal_name": "BP InvCons GmbH",
+      "isin": "DE0008618737",
+      "url": "https://filings.xbrl.org/213800LH1BZH3DI6G760/2021-12-31/ESEF/GB/0/213800LH1BZH3DI6G760-2021-12-31.zip",
+      "filename": "DE_BAFIN_DE_BP_2021_ESEF.zip"
+    },
+    {
+      "ticker": "DE_BP_2",
+      "year": "2021",
+      "lei": "213800LH1BZH3DI6G760",
+      "legal_name": "BP InvCons GmbH",
+      "isin": "GB0007980591",
+      "url": "https://filings.xbrl.org/213800LH1BZH3DI6G760/2021-12-31/ESEF/GB/0/213800LH1BZH3DI6G760-2021-12-31.zip",
+      "filename": "DE_BAFIN_DE_BP_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "DE_DAX",
+      "year": "2020",
+      "lei": "529900G3SW56SHYNPR95",
+      "legal_name": "Deutsche Börse Aktiengesellschaft",
+      "isin": "DE0008467440",
+      "url": "https://filings.xbrl.org/529900G3SW56SHYNPR95/2020-12-31/ESEF/DE/0/deutschebrseag.zip",
+      "filename": "DE_BAFIN_DE_DAX_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DE_DAX_2",
+      "year": "2020",
+      "lei": "529900G3SW56SHYNPR95",
+      "legal_name": "Deutsche Börse Aktiengesellschaft",
+      "isin": "DE0008469008",
+      "url": "https://filings.xbrl.org/529900G3SW56SHYNPR95/2020-12-31/ESEF/DE/0/deutschebrseag.zip",
+      "filename": "DE_BAFIN_DE_DAX_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HOCH",
+      "year": "2020",
+      "lei": "529900Y25S8NZIYTT924",
+      "legal_name": "HOCHTIEF Aktiengesellschaft",
+      "isin": "DE0006070006",
+      "url": "https://filings.xbrl.org/529900Y25S8NZIYTT924/2020-12-31/ESEF/DE/0/hochtief-2020-12-31.zip",
+      "filename": "DE_BAFIN_HOCH_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ZALA",
+      "year": "2020",
+      "lei": "529900YRFFGH5AXU4S86",
+      "legal_name": "Zalando SE",
+      "isin": "DE000ZAL1111",
+      "url": "https://filings.xbrl.org/529900YRFFGH5AXU4S86/2020-12-31/ESEF/DE/0/zalando-2020-12-31.zip",
+      "filename": "DE_BAFIN_ZALA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "MERC_2",
+      "year": "2020",
+      "lei": "529900OAREIS0MOPTW25",
+      "legal_name": "MERCK Kommanditgesellschaft auf Aktien",
+      "isin": "DE0006599905",
+      "url": "https://filings.xbrl.org/529900OAREIS0MOPTW25/2020-12-31/ESEF/DE/0/529900OAREIS0MOPTW25-2020-12-31.zip",
+      "filename": "DE_BAFIN_MERC_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "COMM",
+      "year": "2020",
+      "lei": "851WYGNLUQLFZBSYGB56",
+      "legal_name": "COMMERZBANK Aktiengesellschaft",
+      "isin": "DE000CBK1001",
+      "url": "https://filings.xbrl.org/851WYGNLUQLFZBSYGB56/2020-12-31/ESEF/DE/0/commerzbankag-2020-12-31.zip",
+      "filename": "DE_BAFIN_COMM_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DEUT_3",
+      "year": "2020",
+      "lei": "529900G3SW56SHYNPR95",
+      "legal_name": "Deutsche Börse Aktiengesellschaft",
+      "isin": "DE0005810055",
+      "url": "https://filings.xbrl.org/529900G3SW56SHYNPR95/2020-12-31/ESEF/DE/0/deutschebrseag.zip",
+      "filename": "DE_BAFIN_DEUT_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "BAYE_3",
+      "year": "2020",
+      "lei": "549300J4U55H3WP1XT59",
+      "legal_name": "Bayer Aktiengesellschaft",
+      "isin": "DE000BAY0017",
+      "url": "https://filings.xbrl.org/549300J4U55H3WP1XT59/2020-12-31/ESEF/DE/0/549300J4U55H3WP1XT59-2020-12-31.zip",
+      "filename": "DE_BAFIN_BAYE_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "RHEI",
+      "year": "2020",
+      "lei": "5299001OU9CSE29O6S05",
+      "legal_name": "Rheinmetall Aktiengesellschaft",
+      "isin": "DE0007030009",
+      "url": "https://filings.xbrl.org/5299001OU9CSE29O6S05/2020-12-31/ESEF/DE/0/5299001OU9CSE29O6S05-2020-12-31.zip",
+      "filename": "DE_BAFIN_RHEI_2020_ESEF.zip"
+    },
+    {
+      "ticker": "BEIE",
+      "year": "2020",
+      "lei": "L47NHHI0Z9X22DV46U41",
+      "legal_name": "Beiersdorf Aktiengesellschaft",
+      "isin": "DE0005200000",
+      "url": "https://filings.xbrl.org/L47NHHI0Z9X22DV46U41/2020-12-31/ESEF/DE/0/L47NHHI0Z9X22DV46U41-2020-12-31.zip",
+      "filename": "DE_BAFIN_BEIE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "MUNI",
+      "year": "2020",
+      "lei": "529900MUF4C20K50JS49",
+      "legal_name": "Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München",
+      "isin": "DE0008430026",
+      "url": "https://filings.xbrl.org/529900MUF4C20K50JS49/2020-12-31/ESEF/DE/0/munichre.zip",
+      "filename": "DE_BAFIN_MUNI_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SART",
+      "year": "2020",
+      "lei": "529900EQV2DY4FOAMU38",
+      "legal_name": "Sartorius Aktiengesellschaft",
+      "isin": "DE0007165607",
+      "url": "https://filings.xbrl.org/529900EQV2DY4FOAMU38/2020-12-31/ESEF/DE/0/sartoriusag.zip",
+      "filename": "DE_BAFIN_SART_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SART_2",
+      "year": "2020",
+      "lei": "529900EQV2DY4FOAMU38",
+      "legal_name": "Sartorius Aktiengesellschaft",
+      "isin": "DE0007165631",
+      "url": "https://filings.xbrl.org/529900EQV2DY4FOAMU38/2020-12-31/ESEF/DE/0/sartoriusag.zip",
+      "filename": "DE_BAFIN_SART_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "LUKO",
+      "year": "2021",
+      "lei": "549300LCJ1UJXHYBWI24",
+      "legal_name": "LUKOIL Hamburg GmbH",
+      "isin": "RU0009024277",
+      "url": "https://filings.xbrl.org/549300LCJ1UJXHYBWI24/2021-12-31/ESEF/GB/0/549300LCJ1UJXHYBWI24-2021-12-31.zip",
+      "filename": "DE_BAFIN_LUKO_2021_ESEF.zip"
+    },
+    {
+      "ticker": "LUKO",
+      "year": "2020",
+      "lei": "549300LCJ1UJXHYBWI24",
+      "legal_name": "LUKOIL Hamburg GmbH",
+      "isin": "RU0009024277",
+      "url": "https://filings.xbrl.org/549300LCJ1UJXHYBWI24/2020-12-31/ESEF/GB/0/549300LCJ1UJXHYBWI24-2020-12-31.zip",
+      "filename": "DE_BAFIN_LUKO_2020_ESEF.zip"
+    },
+    {
+      "ticker": "LUKO_2",
+      "year": "2021",
+      "lei": "549300LCJ1UJXHYBWI24",
+      "legal_name": "LUKOIL Hamburg GmbH",
+      "isin": "US6778621044",
+      "url": "https://filings.xbrl.org/549300LCJ1UJXHYBWI24/2021-12-31/ESEF/GB/0/549300LCJ1UJXHYBWI24-2021-12-31.zip",
+      "filename": "DE_BAFIN_LUKO_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "LUKO_2",
+      "year": "2020",
+      "lei": "549300LCJ1UJXHYBWI24",
+      "legal_name": "LUKOIL Hamburg GmbH",
+      "isin": "US6778621044",
+      "url": "https://filings.xbrl.org/549300LCJ1UJXHYBWI24/2020-12-31/ESEF/GB/0/549300LCJ1UJXHYBWI24-2020-12-31.zip",
+      "filename": "DE_BAFIN_LUKO_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "FIEL",
+      "year": "2020",
+      "lei": "529900BU5B7N9GE4XU15",
+      "legal_name": "Fielmann Group AG",
+      "isin": "DE0005772206",
+      "url": "https://filings.xbrl.org/529900BU5B7N9GE4XU15/2020-12-31/ESEF/DE/0/529900BU5B7N9GE4XU15-2020-12-31.zip",
+      "filename": "DE_BAFIN_FIEL_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HENK",
+      "year": "2020",
+      "lei": "549300VZCL1HTH4O4Y49",
+      "legal_name": "Henkel AG & Co. KGaA",
+      "isin": "DE0006048408",
+      "url": "https://filings.xbrl.org/549300VZCL1HTH4O4Y49/2020-12-31/ESEF/DE/0/henkel.zip",
+      "filename": "DE_BAFIN_HENK_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HENK_2",
+      "year": "2020",
+      "lei": "549300VZCL1HTH4O4Y49",
+      "legal_name": "Henkel AG & Co. KGaA",
+      "isin": "DE0006048432",
+      "url": "https://filings.xbrl.org/549300VZCL1HTH4O4Y49/2020-12-31/ESEF/DE/0/henkel.zip",
+      "filename": "DE_BAFIN_HENK_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HHLA",
+      "year": "2020",
+      "lei": "52990003RXKZ9J9ERW70",
+      "legal_name": "Hamburger Hafen und Logistik Aktiengesellschaft",
+      "isin": "DE000A0S8488",
+      "url": "https://filings.xbrl.org/52990003RXKZ9J9ERW70/2020-12-31/ESEF/DE/0/hhla.zip",
+      "filename": "DE_BAFIN_HHLA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "QIAG",
+      "year": "2021",
+      "lei": "54930036WK3GMCN17Z57",
+      "legal_name": "QIAGEN GMBH",
+      "isin": "NL0000240000",
+      "url": "https://filings.xbrl.org/54930036WK3GMCN17Z57/2021-12-31/ESEF/NL/0/qgen-2021-12-31-en.zip",
+      "filename": "DE_BAFIN_QIAG_2021_ESEF.zip"
+    },
+    {
+      "ticker": "QIAG",
+      "year": "2020",
+      "lei": "54930036WK3GMCN17Z57",
+      "legal_name": "QIAGEN GMBH",
+      "isin": "NL0000240000",
+      "url": "https://filings.xbrl.org/54930036WK3GMCN17Z57/2020-12-31/ESEF/NL/0/qgen-2020-12-31.zip",
+      "filename": "DE_BAFIN_QIAG_2020_ESEF.zip"
+    },
+    {
+      "ticker": "WACK",
+      "year": "2020",
+      "lei": "0NURKC5Q3CJYZPPK5046",
+      "legal_name": "Wacker Chemie AG",
+      "isin": "DE000WCH8881",
+      "url": "https://filings.xbrl.org/0NURKC5Q3CJYZPPK5046/2020-12-31/ESEF/DE/0/0NURKC5Q3CJYZPPK5046-2020-12-31.zip",
+      "filename": "DE_BAFIN_WACK_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ALLI",
+      "year": "2020",
+      "lei": "529900K9B0N5BT694847",
+      "legal_name": "Allianz SE",
+      "isin": "DE0008404005",
+      "url": "https://filings.xbrl.org/529900K9B0N5BT694847/2020-12-31/ESEF/DE/0/allianz-2020-12-31.zip",
+      "filename": "DE_BAFIN_ALLI_2020_ESEF.zip"
+    },
+    {
+      "ticker": "MDAX",
+      "year": "2020",
+      "lei": "529900G3SW56SHYNPR95",
+      "legal_name": "Deutsche Börse Aktiengesellschaft",
+      "isin": "DE0008467416",
+      "url": "https://filings.xbrl.org/529900G3SW56SHYNPR95/2020-12-31/ESEF/DE/0/deutschebrseag.zip",
+      "filename": "DE_BAFIN_MDAX_2020_ESEF.zip"
+    },
+    {
+      "ticker": "MDAX_2",
+      "year": "2020",
+      "lei": "529900G3SW56SHYNPR95",
+      "legal_name": "Deutsche Börse Aktiengesellschaft",
+      "isin": "DE0008467531",
+      "url": "https://filings.xbrl.org/529900G3SW56SHYNPR95/2020-12-31/ESEF/DE/0/deutschebrseag.zip",
+      "filename": "DE_BAFIN_MDAX_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VART",
+      "year": "2020",
+      "lei": "529900E7KB95KOXBWP63",
+      "legal_name": "VARTA AKTIENGESELLSCHAFT",
+      "isin": "DE000A0TGJ55",
+      "url": "https://filings.xbrl.org/529900E7KB95KOXBWP63/2020-12-31/ESEF/DE/0/varta-ag-2020-12-31.zip",
+      "filename": "DE_BAFIN_VART_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DELT",
+      "year": "2020",
+      "lei": "529900F3EU2GVHVCLR26",
+      "legal_name": "Delticom AG",
+      "isin": "DE0005146807",
+      "url": "https://filings.xbrl.org/529900F3EU2GVHVCLR26/2020-12-31/ESEF/DE/0/delti.zip",
+      "filename": "DE_BAFIN_DELT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VONO",
+      "year": "2020",
+      "lei": "5299005A2ZEP6AP7KM81",
+      "legal_name": "Vonovia SE",
+      "isin": "DE000A1ML7J1",
+      "url": "https://filings.xbrl.org/5299005A2ZEP6AP7KM81/2020-12-31/ESEF/DE/0/vonovia-2020-12-31.zip",
+      "filename": "DE_BAFIN_VONO_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DE_SAP",
+      "year": "2020",
+      "lei": "529900D6BF99LW9R2E68",
+      "legal_name": "SAP SE",
+      "isin": "DE0007164600",
+      "url": "https://filings.xbrl.org/529900D6BF99LW9R2E68/2020-12-31/ESEF/DE/0/sap-2020-12-31AR.zip",
+      "filename": "DE_BAFIN_DE_SAP_2020_ESEF.zip"
+    },
+    {
+      "ticker": "TATN",
+      "year": "2021",
+      "lei": "253400PAT768SVJMV121",
+      "legal_name": "Tatneft",
+      "isin": "RU0006944147",
+      "url": "https://filings.xbrl.org/253400PAT768SVJMV121/2021-12-31/ESEF/GB/0/253400PAT768SVJMV121-2021-12-31.zip",
+      "filename": "DE_BAFIN_TATN_2021_ESEF.zip"
+    },
+    {
+      "ticker": "TATN_2",
+      "year": "2021",
+      "lei": "253400PAT768SVJMV121",
+      "legal_name": "Tatneft",
+      "isin": "RU0009033591",
+      "url": "https://filings.xbrl.org/253400PAT768SVJMV121/2021-12-31/ESEF/GB/0/253400PAT768SVJMV121-2021-12-31.zip",
+      "filename": "DE_BAFIN_TATN_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "TATN_3",
+      "year": "2021",
+      "lei": "253400PAT768SVJMV121",
+      "legal_name": "Tatneft",
+      "isin": "US8766292051",
+      "url": "https://filings.xbrl.org/253400PAT768SVJMV121/2021-12-31/ESEF/GB/0/253400PAT768SVJMV121-2021-12-31.zip",
+      "filename": "DE_BAFIN_TATN_3_2021_ESEF.zip"
+    },
+    {
+      "ticker": "MAND",
+      "year": "2021",
+      "lei": "213800KQ1UMKZ1JXJR80",
+      "legal_name": "Mandarin Oriental",
+      "isin": "BMG578481068",
+      "url": "https://filings.xbrl.org/213800KQ1UMKZ1JXJR80/2021-12-31/ESEF/GB/0/213800KQ1UMKZ1JXJR80-2021-12-31.zip",
+      "filename": "DE_BAFIN_MAND_2021_ESEF.zip"
+    },
+    {
+      "ticker": "FLAT",
+      "year": "2020",
+      "lei": "529900IRBZTADXJB6757",
+      "legal_name": "flatexDEGIRO SE",
+      "isin": "DE000FTG1111",
+      "url": "https://filings.xbrl.org/529900IRBZTADXJB6757/2020-12-31/ESEF/DE/0/flatexDEGIROAG-2020-12-31.zip",
+      "filename": "DE_BAFIN_FLAT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "KNAU",
+      "year": "2020",
+      "lei": "391200V57NOSGK8UVW09",
+      "legal_name": "Knaus Tabbert AG",
+      "isin": "DE000A2YN504",
+      "url": "https://filings.xbrl.org/391200V57NOSGK8UVW09/2020-12-31/ESEF/DE/0/391200V57NOSGK8UVW09-2020-12-31.zip",
+      "filename": "DE_BAFIN_KNAU_2020_ESEF.zip"
+    },
+    {
+      "ticker": "LEGI",
+      "year": "2020",
+      "lei": "391200SO40AKONBO0Z96",
+      "legal_name": "LEG Immobilien SE",
+      "isin": "DE000LEG1110",
+      "url": "https://filings.xbrl.org/391200SO40AKONBO0Z96/2020-12-31/ESEF/DE/0/legimmobilienag.zip",
+      "filename": "DE_BAFIN_LEGI_2020_ESEF.zip"
+    },
+    {
+      "ticker": "TUIG",
+      "year": "2022",
+      "lei": "529900SL2WSPV293B552",
+      "legal_name": "TUI AG",
+      "isin": "DE000TUAG000",
+      "url": "https://filings.xbrl.org/529900SL2WSPV293B552/2022-09-30/ESEF/GB/0/529900SL2WSPV293B552-2022-09-30-en.zip",
+      "filename": "DE_BAFIN_TUIG_2022_ESEF.zip"
+    },
+    {
+      "ticker": "TUIG_2",
+      "year": "2022",
+      "lei": "529900SL2WSPV293B552",
+      "legal_name": "TUI AG",
+      "isin": "DE000TUAG505",
+      "url": "https://filings.xbrl.org/529900SL2WSPV293B552/2022-09-30/ESEF/GB/0/529900SL2WSPV293B552-2022-09-30-en.zip",
+      "filename": "DE_BAFIN_TUIG_2_2022_ESEF.zip"
+    },
+    {
+      "ticker": "COVE",
+      "year": "2020",
+      "lei": "3912005AWHKLQ1CPLV11",
+      "legal_name": "Covestro AG",
+      "isin": "DE0006062144",
+      "url": "https://filings.xbrl.org/3912005AWHKLQ1CPLV11/2020-12-31/ESEF/DE/0/covestroag-2020-12-31.zip",
+      "filename": "DE_BAFIN_COVE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HANN",
+      "year": "2020",
+      "lei": "529900KIN5BE45V5KB18",
+      "legal_name": "Hannover Rück SE",
+      "isin": "DE0008402215",
+      "url": "https://filings.xbrl.org/529900KIN5BE45V5KB18/2020-12-31/ESEF/DE/0/hannover-rueck.zip",
+      "filename": "DE_BAFIN_HANN_2020_ESEF.zip"
+    },
+    {
+      "ticker": "FRES_2",
+      "year": "2020",
+      "lei": "549300CP8NY40UP89Q40",
+      "legal_name": "Fresenius Medical Care AG",
+      "isin": "DE0005785802",
+      "url": "https://filings.xbrl.org/549300CP8NY40UP89Q40/2020-12-31/ESEF/DE/0/fms-2020-12-31_iXBRL.zip",
+      "filename": "DE_BAFIN_FRES_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DE_KS",
+      "year": "2020",
+      "lei": "529900YURAYD4IJX2J91",
+      "legal_name": "K+S Aktiengesellschaft",
+      "isin": "DE000KSAG888",
+      "url": "https://filings.xbrl.org/529900YURAYD4IJX2J91/2020-12-31/ESEF/DE/0/kpluss.zip",
+      "filename": "DE_BAFIN_DE_KS_2020_ESEF.zip"
+    },
+    {
+      "ticker": "CTSE",
+      "year": "2020",
+      "lei": "529900FDHSN08UBJII80",
+      "legal_name": "CTS Eventim AG & Co. KGaA",
+      "isin": "DE0005470306",
+      "url": "https://filings.xbrl.org/529900FDHSN08UBJII80/2020-12-31/ESEF/DE/0/ctseventimkgaa-2020-12-31.zip",
+      "filename": "DE_BAFIN_CTSE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "CEWE",
+      "year": "2020",
+      "lei": "529900IDFHN9MQ3WUD64",
+      "legal_name": "CEWE Stiftung & Co. KGaA",
+      "isin": "DE0005403901",
+      "url": "https://filings.xbrl.org/529900IDFHN9MQ3WUD64/2020-12-31/ESEF/DE/0/companycewe.zip",
+      "filename": "DE_BAFIN_CEWE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "RTLG",
+      "year": "2021",
+      "lei": "5493000C8J3C3SZYS040",
+      "legal_name": "RTL GROUP VERMÖGENSVERWALTUNG GMBH",
+      "isin": "LU0061462528",
+      "url": "https://filings.xbrl.org/5493000C8J3C3SZYS040/2021-12-31/ESEF/LU/0/RTLGroup.zip",
+      "filename": "DE_BAFIN_RTLG_2021_ESEF.zip"
+    },
+    {
+      "ticker": "DE_11",
+      "year": "2020",
+      "lei": "5299003VKVDCUPSS5X23",
+      "legal_name": "1&1 AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299003VKVDCUPSS5X23/2020-12-31/ESEF/DE/0/5299003VKVDCUPSS5X23-2020-12-31.zip",
+      "filename": "DE_BAFIN_DE_11_2020_ESEF.zip"
+    },
+    {
+      "ticker": "3UHO",
+      "year": "2020",
+      "lei": "529900VVQ4470YJ67K26",
+      "legal_name": "3U Holding AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900VVQ4470YJ67K26/2020-12-31/ESEF/DE/0/UUUHolding_AG_KA_KLB_ESEF-2020-12-31.zip",
+      "filename": "DE_BAFIN_3UHO_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ASCR",
+      "year": "2020",
+      "lei": "529900GEUFGNGXF5Q548",
+      "legal_name": "A.S. Création Tapeten AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900GEUFGNGXF5Q548/2020-12-31/ESEF/DE/0/asc_AG_KA_KLB_ESEF-2020-12-31.zip",
+      "filename": "DE_BAFIN_ASCR_2020_ESEF.zip"
+    },
+    {
+      "ticker": "AARE",
+      "year": "2020",
+      "lei": "EZKODONU5TYHW4PP1R34",
+      "legal_name": "Aareal Bank AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/EZKODONU5TYHW4PP1R34/2020-12-31/ESEF/DE/0/aarealbankag-2020-12-31.zip",
+      "filename": "DE_BAFIN_AARE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ACCE",
+      "year": "2020",
+      "lei": "391200VKLY50XNAFCM46",
+      "legal_name": "Accentro Real Estate AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200VKLY50XNAFCM46/2020-12-31/ESEF/DE/0/accentro.zip",
+      "filename": "DE_BAFIN_ACCE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ALLG_2",
+      "year": "2020",
+      "lei": "529900IQAYRZIGKOJL63",
+      "legal_name": "Allgeier SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900IQAYRZIGKOJL63/2020-12-31/ESEF/DE/0/529900IQAYRZIGKOJL63-2020-12-31.zip",
+      "filename": "DE_BAFIN_ALLG_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ALZC",
+      "year": "2020",
+      "lei": "8945004EL7WZK3ERG181",
+      "legal_name": "Alzchem Group AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/8945004EL7WZK3ERG181/2020-12-31/ESEF/DE/0/alzchemgroupag-2020-12-31.zip",
+      "filename": "DE_BAFIN_ALZC_2020_ESEF.zip"
+    },
+    {
+      "ticker": "AMAD",
+      "year": "2020",
+      "lei": "391200TJJ820ZDHNFJ33",
+      "legal_name": "AMADEUS FIRE AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200TJJ820ZDHNFJ33/2020-12-31/ESEF/DE/0/391200TJJ820ZDHNFJ33-2020-12-31.zip",
+      "filename": "DE_BAFIN_AMAD_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ARTN",
+      "year": "2020",
+      "lei": "391200SHGPEDTRIC0X31",
+      "legal_name": "artnet AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200SHGPEDTRIC0X31/2020-12-31/ESEF/DE/0/artnet.zip",
+      "filename": "DE_BAFIN_ARTN_2020_ESEF.zip"
+    },
+    {
+      "ticker": "AUMA",
+      "year": "2020",
+      "lei": "529900GLI93PGU71F690",
+      "legal_name": "Aumann AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900GLI93PGU71F690/2020-12-31/ESEF/DE/0/aumann-2020-12-31.zip",
+      "filename": "DE_BAFIN_AUMA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "AURU",
+      "year": "2021",
+      "lei": "5299005SHIN9ZK7GW242",
+      "legal_name": "Aurubis AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299005SHIN9ZK7GW242/2021-09-30/ESEF/DE/0/Aurubis_AG_KAuKLB_ESEF-2021-09-30.zip",
+      "filename": "DE_BAFIN_AURU_2021_ESEF.zip"
+    },
+    {
+      "ticker": "BSBA",
+      "year": "2021",
+      "lei": "5299007PZPBNXDDWHC04",
+      "legal_name": "B+S Banksysteme Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299007PZPBNXDDWHC04/2021-06-30/ESEF/DE/0/5299007PZPBNXDDWHC04-2021-06-30-de.zip",
+      "filename": "DE_BAFIN_BSBA_2021_ESEF.zip"
+    },
+    {
+      "ticker": "BASL",
+      "year": "2020",
+      "lei": "5299006OKY4JQTOWH448",
+      "legal_name": "Basler Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299006OKY4JQTOWH448/2020-12-31/ESEF/DE/0/5299006OKY4JQTOWH448-2020-12-31.zip",
+      "filename": "DE_BAFIN_BASL_2020_ESEF.zip"
+    },
+    {
+      "ticker": "BASL",
+      "year": "2020",
+      "lei": "5299006OKY4JQTOWH448",
+      "legal_name": "Basler Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299006OKY4JQTOWH448/2020-12-31/ESEF/DE/0/5299006OKY4JQTOWH448-2020-12-31.zip",
+      "filename": "DE_BAFIN_BASL_2020_ESEF.zip"
+    },
+    {
+      "ticker": "BAST",
+      "year": "2021",
+      "lei": "529900F1RRY8J20M2I79",
+      "legal_name": "Bastei Lübbe AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900F1RRY8J20M2I79/2021-03-31/ESEF/DE/0/luebbe.zip",
+      "filename": "DE_BAFIN_BAST_2021_ESEF.zip"
+    },
+    {
+      "ticker": "BAYE_4",
+      "year": "2020",
+      "lei": "549300J4U55H3WP1XT59",
+      "legal_name": "Bayer Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/549300J4U55H3WP1XT59/2020-12-31/ESEF/DE/0/549300J4U55H3WP1XT59-2020-12-31.zip",
+      "filename": "DE_BAFIN_BAYE_4_2020_ESEF.zip"
+    },
+    {
+      "ticker": "BECH",
+      "year": "2020",
+      "lei": "529900HA2QT774RUXW59",
+      "legal_name": "Bechtle Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900HA2QT774RUXW59/2020-12-31/ESEF/DE/0/529900HA2QT774RUXW59-2020-12-31.zip",
+      "filename": "DE_BAFIN_BECH_2020_ESEF.zip"
+    },
+    {
+      "ticker": "BEIE_2",
+      "year": "2020",
+      "lei": "L47NHHI0Z9X22DV46U41",
+      "legal_name": "Beiersdorf Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/L47NHHI0Z9X22DV46U41/2020-12-31/ESEF/DE/0/L47NHHI0Z9X22DV46U41-2020-12-31.zip",
+      "filename": "DE_BAFIN_BEIE_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "BERT",
+      "year": "2021",
+      "lei": "529900DRBK1K538NYX30",
+      "legal_name": "Bertrandt Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900DRBK1K538NYX30/2021-09-30/ESEF/DE/0/529900DRBK1K538NYX30-2021-09-30.zip",
+      "filename": "DE_BAFIN_BERT_2021_ESEF.zip"
+    },
+    {
+      "ticker": "BETA",
+      "year": "2020",
+      "lei": "3912001C5KDIBFOBIM91",
+      "legal_name": "bet-at-home.com AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/3912001C5KDIBFOBIM91/2020-12-31/ESEF/DE/0/bet-at-home.zip",
+      "filename": "DE_BAFIN_BETA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "BILF",
+      "year": "2020",
+      "lei": "529900H0HULEN2BZ4604",
+      "legal_name": "Bilfinger SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900H0HULEN2BZ4604/2020-12-31/ESEF/DE/0/bilfingerse.zip",
+      "filename": "DE_BAFIN_BILF_2020_ESEF.zip"
+    },
+    {
+      "ticker": "BIOF",
+      "year": "2020",
+      "lei": "391200D6GFSVFGFQTL13",
+      "legal_name": "Biofrontera AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200D6GFSVFGFQTL13/2020-12-31/ESEF/DE/0/biofronteraag-2020-12-31.zip",
+      "filename": "DE_BAFIN_BIOF_2020_ESEF.zip"
+    },
+    {
+      "ticker": "BIOT",
+      "year": "2020",
+      "lei": "529900JVX7RPXBLYUD89",
+      "legal_name": "Biotest Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900JVX7RPXBLYUD89/2020-12-31/ESEF/DE/0/biotestag-2020-12-31.zip",
+      "filename": "DE_BAFIN_BIOT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "BORU",
+      "year": "2021",
+      "lei": "529900XO0YTOOKCLQB44",
+      "legal_name": "Borussia Dortmund GmbH & Co. Kommanditgesellschaft auf Aktien",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900XO0YTOOKCLQB44/2021-06-30/ESEF/DE/0/529900XO0YTOOKCLQB44-2021-06-30.zip",
+      "filename": "DE_BAFIN_BORU_2021_ESEF.zip"
+    },
+    {
+      "ticker": "CANC",
+      "year": "2020",
+      "lei": "391200T4AUN1BPBXAO14",
+      "legal_name": "CANCOM SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200T4AUN1BPBXAO14/2020-12-31/ESEF/DE/0/391200T4AUN1BPBXAO14-2020-12-31.zip",
+      "filename": "DE_BAFIN_CANC_2020_ESEF.zip"
+    },
+    {
+      "ticker": "CAPS",
+      "year": "2020",
+      "lei": "529900LYIH9JX5XUZL96",
+      "legal_name": "capsensixx AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900LYIH9JX5XUZL96/2020-12-31/ESEF/DE/0/capsensixx.zip",
+      "filename": "DE_BAFIN_CAPS_2020_ESEF.zip"
+    },
+    {
+      "ticker": "CENI",
+      "year": "2020",
+      "lei": "391200KYFPOLFJNEWL98",
+      "legal_name": "CENIT Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200KYFPOLFJNEWL98/2020-12-31/ESEF/DE/0/cenit.zip",
+      "filename": "DE_BAFIN_CENI_2020_ESEF.zip"
+    },
+    {
+      "ticker": "CEWE_2",
+      "year": "2020",
+      "lei": "529900IDFHN9MQ3WUD64",
+      "legal_name": "CEWE Stiftung & Co. KGaA",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900IDFHN9MQ3WUD64/2020-12-31/ESEF/DE/0/companycewe.zip",
+      "filename": "DE_BAFIN_CEWE_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "COMM_2",
+      "year": "2020",
+      "lei": "851WYGNLUQLFZBSYGB56",
+      "legal_name": "COMMERZBANK Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/851WYGNLUQLFZBSYGB56/2020-12-31/ESEF/DE/0/commerzbankag-2020-12-31.zip",
+      "filename": "DE_BAFIN_COMM_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "COMP_3",
+      "year": "2020",
+      "lei": "529900CUXZGOCJZR7O57",
+      "legal_name": "CompuGroup Medical SE & Co. KGaA",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900CUXZGOCJZR7O57/2020-12-31/ESEF/DE/0/529900CUXZGOCJZR7O57-2020-12-31.zip",
+      "filename": "DE_BAFIN_COMP_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "COVE_2",
+      "year": "2020",
+      "lei": "3912005AWHKLQ1CPLV11",
+      "legal_name": "Covestro AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/3912005AWHKLQ1CPLV11/2020-12-31/ESEF/DE/0/covestroag-2020-12-31.zip",
+      "filename": "DE_BAFIN_COVE_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "CTSE_2",
+      "year": "2020",
+      "lei": "529900FDHSN08UBJII80",
+      "legal_name": "CTS Eventim AG & Co. KGaA",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900FDHSN08UBJII80/2020-12-31/ESEF/DE/0/ctseventimkgaa-2020-12-31.zip",
+      "filename": "DE_BAFIN_CTSE_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DATA",
+      "year": "2020",
+      "lei": "529900TID8A3AEWPG697",
+      "legal_name": "DATA MODUL Aktiengesellschaft Produktion und Vertrieb von elektronischen Systemen",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900TID8A3AEWPG697/2020-12-31/ESEF/DE/0/data-modul.zip",
+      "filename": "DE_BAFIN_DATA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DELI_3",
+      "year": "2020",
+      "lei": "529900C3EX1FZGE48X78",
+      "legal_name": "Delivery Hero SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900C3EX1FZGE48X78/2020-12-31/ESEF/DE/0/529900C3EX1FZGE48X78-2020-12-31.zip",
+      "filename": "DE_BAFIN_DELI_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DEMI",
+      "year": "2020",
+      "lei": "391200FHEFGXUKL2BO93",
+      "legal_name": "DEMIRE Deutsche Mittelstand Real Estate AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200FHEFGXUKL2BO93/2020-12-31/ESEF/DE/0/demire-2020-12-31.zip",
+      "filename": "DE_BAFIN_DEMI_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DEUT_9",
+      "year": "2020",
+      "lei": "529900Y9QTEFHFEKQ736",
+      "legal_name": "Deutsche EuroShop SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900Y9QTEFHFEKQ736/2020-12-31/ESEF/DE/0/deutsche-euroshop.zip",
+      "filename": "DE_BAFIN_DEUT_9_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DEUT_13",
+      "year": "2020",
+      "lei": "529900PH63HYJ86ASW55",
+      "legal_name": "Deutsche Lufthansa Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900PH63HYJ86ASW55/2020-12-31/ESEF/DE/0/DeutscheLufthansa-2020-12-31.zip",
+      "filename": "DE_BAFIN_DEUT_13_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DEUT_14",
+      "year": "2020",
+      "lei": "DZZ47B9A52ZJ6LT6VV95",
+      "legal_name": "DEUTSCHE PFANDBRIEFBANK AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/DZZ47B9A52ZJ6LT6VV95/2020-12-31/ESEF/DE/0/dtpfandbriefbankag-2020-12-31.zip",
+      "filename": "DE_BAFIN_DEUT_14_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DEUT_19",
+      "year": "2020",
+      "lei": "549300V9QSIG4WX4GJ96",
+      "legal_name": "DEUTSCHE TELEKOM AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/549300V9QSIG4WX4GJ96/2020-12-31/ESEF/DE/0/deutschetelekomag.zip",
+      "filename": "DE_BAFIN_DEUT_19_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DEUT_20",
+      "year": "2020",
+      "lei": "529900QE24Q67I3FWZ10",
+      "legal_name": "Deutsche Wohnen SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900QE24Q67I3FWZ10/2020-12-31/ESEF/DE/0/deutschewohnense-2020-12-31.zip",
+      "filename": "DE_BAFIN_DEUT_20_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DFDE",
+      "year": "2020",
+      "lei": "529900CY6JKIFT9GH610",
+      "legal_name": "DF Deutsche Forfait Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900CY6JKIFT9GH610/2020-12-31/ESEF/DE/0/dfag.zip",
+      "filename": "DE_BAFIN_DFDE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DFVD",
+      "year": "2020",
+      "lei": "391200ANZU0I8BNOGO03",
+      "legal_name": "DFV Deutsche Familienversicherung AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200ANZU0I8BNOGO03/2020-12-31/ESEF/DE/0/deutsche-familienversicherung.zip",
+      "filename": "DE_BAFIN_DFVD_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DICA",
+      "year": "2020",
+      "lei": "52990044JL2ZPWONU738",
+      "legal_name": "DIC Asset AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/52990044JL2ZPWONU738/2020-12-31/ESEF/DE/0/dic-asset-2020-12-31.zip",
+      "filename": "DE_BAFIN_DICA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DMGM",
+      "year": "2020",
+      "lei": "529900HXE4EQIHJY8518",
+      "legal_name": "DMG MORI AKTIENGESELLSCHAFT",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900HXE4EQIHJY8518/2020-12-31/ESEF/DE/0/529900HXE4EQIHJY8518-2020-12-31.zip",
+      "filename": "DE_BAFIN_DMGM_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DRGE",
+      "year": "2020",
+      "lei": "5493005UFVHY0PPNKD75",
+      "legal_name": "Drägerwerk AG & Co. KGaA",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5493005UFVHY0PPNKD75/2020-12-31/ESEF/DE/0/5493005UFVHY0PPNKD75-2020-12-31.zip",
+      "filename": "DE_BAFIN_DRGE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ECKE",
+      "year": "2020",
+      "lei": "391200EUDABLUKXCKG48",
+      "legal_name": "Eckert & Ziegler Strahlen- und Medizintechnik AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200EUDABLUKXCKG48/2020-12-31/ESEF/DE/0/ezag-2020-12-31.zip",
+      "filename": "DE_BAFIN_ECKE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ECOT",
+      "year": "2020",
+      "lei": "391200GSXYBP2TJE6J38",
+      "legal_name": "ecotel communication ag",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200GSXYBP2TJE6J38/2020-12-31/ESEF/DE/0/ecotel.zip",
+      "filename": "DE_BAFIN_ECOT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "EINH",
+      "year": "2020",
+      "lei": "529900WKT7CENGR4UW29",
+      "legal_name": "Einhell Germany AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900WKT7CENGR4UW29/2020-12-31/ESEF/DE/0/EinhellGermanyAG_KA_KLB-2020-12-31.zip",
+      "filename": "DE_BAFIN_EINH_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ELMO",
+      "year": "2020",
+      "lei": "529900UMKKDCAP4P4H63",
+      "legal_name": "Elmos Semiconductor SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900UMKKDCAP4P4H63/2020-12-31/ESEF/DE/0/elmos.zip",
+      "filename": "DE_BAFIN_ELMO_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ELRI",
+      "year": "2020",
+      "lei": "529900QDISXXZ2D1Q489",
+      "legal_name": "ElringKlinger AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900QDISXXZ2D1Q489/2020-12-31/ESEF/DE/0/529900QDISXXZ2D1Q489-2020-12-31.zip",
+      "filename": "DE_BAFIN_ELRI_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ELUM",
+      "year": "2020",
+      "lei": "391200KOQF8RGMZ3XK74",
+      "legal_name": "elumeo SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200KOQF8RGMZ3XK74/2020-12-31/ESEF/DE/0/elumeo.zip",
+      "filename": "DE_BAFIN_ELUM_2020_ESEF.zip"
+    },
+    {
+      "ticker": "EPIG",
+      "year": "2020",
+      "lei": "549300X1C4U862NDLN97",
+      "legal_name": "Epigenomics AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/549300X1C4U862NDLN97/2020-12-31/ESEF/DE/0/epigenomics.zip",
+      "filename": "DE_BAFIN_EPIG_2020_ESEF.zip"
+    },
+    {
+      "ticker": "EVON",
+      "year": "2020",
+      "lei": "41GUOJQTALQHLF39XJ34",
+      "legal_name": "Evonik Industries AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/41GUOJQTALQHLF39XJ34/2020-12-31/ESEF/DE/0/evonikindustriesag-2020-12-31.zip",
+      "filename": "DE_BAFIN_EVON_2020_ESEF.zip"
+    },
+    {
+      "ticker": "EVOT",
+      "year": "2020",
+      "lei": "529900F9KI6OYITO9B12",
+      "legal_name": "Evotec SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900F9KI6OYITO9B12/2020-12-31/ESEF/DE/0/529900F9KI6OYITO9B12-2020-12-31.zip",
+      "filename": "DE_BAFIN_EVOT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "FAIR",
+      "year": "2020",
+      "lei": "52990084DFVKX2FRR033",
+      "legal_name": "Fair Value REIT-AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/52990084DFVKX2FRR033/2020-12-31/ESEF/DE/0/fairvalue-2020-12-31.zip",
+      "filename": "DE_BAFIN_FAIR_2020_ESEF.zip"
+    },
+    {
+      "ticker": "FIEL_2",
+      "year": "2020",
+      "lei": "529900BU5B7N9GE4XU15",
+      "legal_name": "Fielmann Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900BU5B7N9GE4XU15/2020-12-31/ESEF/DE/0/529900BU5B7N9GE4XU15-2020-12-31.zip",
+      "filename": "DE_BAFIN_FIEL_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "FIRS",
+      "year": "2020",
+      "lei": "52990036Z3X91Z60TZ27",
+      "legal_name": "First Sensor AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/52990036Z3X91Z60TZ27/2020-12-31/ESEF/DE/0/52990036Z3X91Z60TZ27-2020-12-31.zip",
+      "filename": "DE_BAFIN_FIRS_2020_ESEF.zip"
+    },
+    {
+      "ticker": "FORT",
+      "year": "2021",
+      "lei": "529900NG5C03XEKUA646",
+      "legal_name": "FORTEC Elektronik Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900NG5C03XEKUA646/2021-06-30/ESEF/DE/0/529900NG5C03XEKUA646-2021-06-30.zip",
+      "filename": "DE_BAFIN_FORT_2021_ESEF.zip"
+    },
+    {
+      "ticker": "FRES_4",
+      "year": "2020",
+      "lei": "549300CP8NY40UP89Q40",
+      "legal_name": "Fresenius Medical Care AG & Co. KGaA",
+      "isin": "",
+      "url": "https://filings.xbrl.org/549300CP8NY40UP89Q40/2020-12-31/ESEF/DE/0/fms-2020-12-31_iXBRL.zip",
+      "filename": "DE_BAFIN_FRES_4_2020_ESEF.zip"
+    },
+    {
+      "ticker": "GATE",
+      "year": "2020",
+      "lei": "529900419S8ZX9H95G64",
+      "legal_name": "Gateway Real Estate AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900419S8ZX9H95G64/2020-12-31/ESEF/DE/0/529900419S8ZX9H95G64-2020-12-31.zip",
+      "filename": "DE_BAFIN_GATE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "GERA",
+      "year": "2020",
+      "lei": "391200RRY20H0XD6QC53",
+      "legal_name": "Geratherm Medical AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200RRY20H0XD6QC53/2020-12-31/ESEF/DE/0/geratherm.zip",
+      "filename": "DE_BAFIN_GERA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "GESC",
+      "year": "2020",
+      "lei": "529900OE7WBEDX7PVB49",
+      "legal_name": "GESCO Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900OE7WBEDX7PVB49/2020-12-31/ESEF/DE/0/gesco.zip",
+      "filename": "DE_BAFIN_GESC_2020_ESEF.zip"
+    },
+    {
+      "ticker": "GFTT",
+      "year": "2020",
+      "lei": "5299002FNBSGW23ULF72",
+      "legal_name": "GFT Technologies SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299002FNBSGW23ULF72/2020-12-31/ESEF/DE/0/gft.zip",
+      "filename": "DE_BAFIN_GFTT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "GRAM",
+      "year": "2020",
+      "lei": "529900VJD4H4GZ0KGA70",
+      "legal_name": "GRAMMER Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900VJD4H4GZ0KGA70/2020-12-31/ESEF/DE/0/grammer.zip",
+      "filename": "DE_BAFIN_GRAM_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HAMB_3",
+      "year": "2020",
+      "lei": "52990003RXKZ9J9ERW70",
+      "legal_name": "Hamburger Hafen und Logistik Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/52990003RXKZ9J9ERW70/2020-12-31/ESEF/DE/0/hhla.zip",
+      "filename": "DE_BAFIN_HAMB_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HAPA",
+      "year": "2020",
+      "lei": "HD52L5PJVBXJUUX8I539",
+      "legal_name": "Hapag-Lloyd Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/HD52L5PJVBXJUUX8I539/2020-12-31/ESEF/DE/0/hapaglloydag-2020-12-31.zip",
+      "filename": "DE_BAFIN_HAPA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HAWE",
+      "year": "2020",
+      "lei": "52990061BHKV91FGSB18",
+      "legal_name": "HAWESKO Holding Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/52990061BHKV91FGSB18/2020-12-31/ESEF/DE/0/HWH-2020-12-31.zip",
+      "filename": "DE_BAFIN_HAWE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HELL_3",
+      "year": "2020",
+      "lei": "391200ZAF4V6XD2M9G57",
+      "legal_name": "HelloFresh SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200ZAF4V6XD2M9G57/2020-12-31/ESEF/DE/0/hel-2020-12-31.zip",
+      "filename": "DE_BAFIN_HELL_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HENK_3",
+      "year": "2020",
+      "lei": "549300VZCL1HTH4O4Y49",
+      "legal_name": "Henkel AG & Co. KGaA",
+      "isin": "",
+      "url": "https://filings.xbrl.org/549300VZCL1HTH4O4Y49/2020-12-31/ESEF/DE/0/henkel.zip",
+      "filename": "DE_BAFIN_HENK_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HENS_2",
+      "year": "2020",
+      "lei": "894500686FYLLZD3M624",
+      "legal_name": "HENSOLDT AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/894500686FYLLZD3M624/2020-12-31/ESEF/DE/0/hensoldtag-2020-12-31.zip",
+      "filename": "DE_BAFIN_HENS_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HOCH_2",
+      "year": "2020",
+      "lei": "529900Y25S8NZIYTT924",
+      "legal_name": "HOCHTIEF Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900Y25S8NZIYTT924/2020-12-31/ESEF/DE/0/hochtief-2020-12-31.zip",
+      "filename": "DE_BAFIN_HOCH_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HORN",
+      "year": "2021",
+      "lei": "5299008WW53GLXRORN29",
+      "legal_name": "HORNBACH Baumarkt AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299008WW53GLXRORN29/2021-02-28/ESEF/DE/0/HH_KA_KLB.zip",
+      "filename": "DE_BAFIN_HORN_2021_ESEF.zip"
+    },
+    {
+      "ticker": "HORN_2",
+      "year": "2021",
+      "lei": "529900EGQZ79V21LBL44",
+      "legal_name": "HORNBACH Holding AG & Co. KGaA",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900EGQZ79V21LBL44/2021-02-28/ESEF/DE/0/529900EGQZ79V21LBL44-2021-02-28.zip",
+      "filename": "DE_BAFIN_HORN_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "HUGO",
+      "year": "2020",
+      "lei": "529900LFVU534EBRXD13",
+      "legal_name": "HUGO BOSS AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900LFVU534EBRXD13/2020-12-31/ESEF/DE/0/hugobossag-2020-12-31.zip",
+      "filename": "DE_BAFIN_HUGO_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HYPO",
+      "year": "2020",
+      "lei": "391200GNIFXXP6KRYQ46",
+      "legal_name": "Hypoport SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200GNIFXXP6KRYQ46/2020-12-31/ESEF/DE/0/hypoportse-2020-12-31 - ERS.zip",
+      "filename": "DE_BAFIN_HYPO_2020_ESEF.zip"
+    },
+    {
+      "ticker": "INDU",
+      "year": "2020",
+      "lei": "529900GE4O7ZOMRWR939",
+      "legal_name": "INDUS Holding Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900GE4O7ZOMRWR939/2020-12-31/ESEF/DE/0/529900GE4O7ZOMRWR939-2020-12-31.zip",
+      "filename": "DE_BAFIN_INDU_2020_ESEF.zip"
+    },
+    {
+      "ticker": "INIT",
+      "year": "2020",
+      "lei": "391200ZOAI9BOLGC1D37",
+      "legal_name": "init innovation in traffic systems SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200ZOAI9BOLGC1D37/2020-12-31/ESEF/DE/0/initse.zip",
+      "filename": "DE_BAFIN_INIT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "INTE_3",
+      "year": "2020",
+      "lei": "5299009E3J3ZK6P0GX20",
+      "legal_name": "INTERSHOP Communications Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299009E3J3ZK6P0GX20/2020-12-31/ESEF/DE/0/5299009E3J3ZK6P0GX20-2020-12-31.zip",
+      "filename": "DE_BAFIN_INTE_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "INTI",
+      "year": "2020",
+      "lei": "391200OHW2F5WI2XCQ46",
+      "legal_name": "InTiCa Systems AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200OHW2F5WI2XCQ46/2020-12-31/ESEF/DE/0/391200OHW2F5WI2XCQ46-2020-12-31.zip",
+      "filename": "DE_BAFIN_INTI_2020_ESEF.zip"
+    },
+    {
+      "ticker": "IVUT",
+      "year": "2020",
+      "lei": "3912003JRJW9PA9BPQ22",
+      "legal_name": "IVU Traffic Technologies AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/3912003JRJW9PA9BPQ22/2020-12-31/ESEF/DE/0/ivuag-2020-12-31.zip",
+      "filename": "DE_BAFIN_IVUT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "JENO",
+      "year": "2020",
+      "lei": "529900P34GDHGXK6VB37",
+      "legal_name": "JENOPTIK Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900P34GDHGXK6VB37/2020-12-31/ESEF/DE/0/jenoptik.zip",
+      "filename": "DE_BAFIN_JENO_2020_ESEF.zip"
+    },
+    {
+      "ticker": "JOST_2",
+      "year": "2020",
+      "lei": "529900G977BSS7DATK68",
+      "legal_name": "JOST Werke AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900G977BSS7DATK68/2020-12-31/ESEF/DE/0/529900G977BSS7DATK68-2020-12-31_de.zip",
+      "filename": "DE_BAFIN_JOST_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "KSAK",
+      "year": "2020",
+      "lei": "529900YURAYD4IJX2J91",
+      "legal_name": "K+S Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900YURAYD4IJX2J91/2020-12-31/ESEF/DE/0/kpluss.zip",
+      "filename": "DE_BAFIN_KSAK_2020_ESEF.zip"
+    },
+    {
+      "ticker": "KION",
+      "year": "2020",
+      "lei": "5299005KY91C4C6U9H17",
+      "legal_name": "KION GROUP AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299005KY91C4C6U9H17/2020-12-31/ESEF/DE/0/5299005KY91C4C6U9H17-2020-12-31.zip",
+      "filename": "DE_BAFIN_KION_2020_ESEF.zip"
+    },
+    {
+      "ticker": "KLCK",
+      "year": "2020",
+      "lei": "529900CQ31CN6GV5LL52",
+      "legal_name": "Klöckner & Co SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900CQ31CN6GV5LL52/2020-12-31/ESEF/DE/0/kloecknercose.zip",
+      "filename": "DE_BAFIN_KLCK_2020_ESEF.zip"
+    },
+    {
+      "ticker": "KNAU_2",
+      "year": "2020",
+      "lei": "391200V57NOSGK8UVW09",
+      "legal_name": "Knaus Tabbert AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200V57NOSGK8UVW09/2020-12-31/ESEF/DE/0/391200V57NOSGK8UVW09-2020-12-31.zip",
+      "filename": "DE_BAFIN_KNAU_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "KROM",
+      "year": "2021",
+      "lei": "529900L3GACMYY4MMX62",
+      "legal_name": "KROMI Logistik AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900L3GACMYY4MMX62/2021-06-30/ESEF/DE/0/kromi.zip",
+      "filename": "DE_BAFIN_KROM_2021_ESEF.zip"
+    },
+    {
+      "ticker": "KRON",
+      "year": "2020",
+      "lei": "529900NY2GSZWWUBW049",
+      "legal_name": "KRONES Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900NY2GSZWWUBW049/2020-12-31/ESEF/DE/0/krones.zip",
+      "filename": "DE_BAFIN_KRON_2020_ESEF.zip"
+    },
+    {
+      "ticker": "KWSS",
+      "year": "2021",
+      "lei": "529900FR2K4P9L9XLV21",
+      "legal_name": "KWS SAAT SE & Co. KGaA",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900FR2K4P9L9XLV21/2021-06-30/ESEF/DE/0/kws.zip",
+      "filename": "DE_BAFIN_KWSS_2021_ESEF.zip"
+    },
+    {
+      "ticker": "LANX",
+      "year": "2020",
+      "lei": "529900PTLRE72EMYIJ77",
+      "legal_name": "LANXESS Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900PTLRE72EMYIJ77/2020-12-31/ESEF/DE/0/lanxess.zip",
+      "filename": "DE_BAFIN_LANX_2020_ESEF.zip"
+    },
+    {
+      "ticker": "LEIF",
+      "year": "2020",
+      "lei": "529900DBX574P554QO57",
+      "legal_name": "Leifheit Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900DBX574P554QO57/2020-12-31/ESEF/DE/0/leifheit.zip",
+      "filename": "DE_BAFIN_LEIF_2020_ESEF.zip"
+    },
+    {
+      "ticker": "LEON",
+      "year": "2020",
+      "lei": "5299002HNCMIUBHOMK35",
+      "legal_name": "LEONI AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299002HNCMIUBHOMK35/2020-12-31/ESEF/DE/0/leoni-2020-12-31.zip",
+      "filename": "DE_BAFIN_LEON_2020_ESEF.zip"
+    },
+    {
+      "ticker": "LPKF",
+      "year": "2020",
+      "lei": "529900BCQXUJL7J96G45",
+      "legal_name": "LPKF Laser & Electronics SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900BCQXUJL7J96G45/2020-12-31/ESEF/DE/0/529900BCQXUJL7J96G45-2020-12-31.zip",
+      "filename": "DE_BAFIN_LPKF_2020_ESEF.zip"
+    },
+    {
+      "ticker": "LUDW",
+      "year": "2020",
+      "lei": "5299008RI8NGQL3F3J12",
+      "legal_name": "Ludwig Beck am Rathauseck -Textilhaus Feldmeier Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299008RI8NGQL3F3J12/2020-12-31/ESEF/DE/0/ludwigbeck.zip",
+      "filename": "DE_BAFIN_LUDW_2020_ESEF.zip"
+    },
+    {
+      "ticker": "MANZ",
+      "year": "2020",
+      "lei": "529900B635NV0KEEOR57",
+      "legal_name": "Manz AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900B635NV0KEEOR57/2020-12-31/ESEF/DE/0/manz.zip",
+      "filename": "DE_BAFIN_MANZ_2020_ESEF.zip"
+    },
+    {
+      "ticker": "MBBS",
+      "year": "2020",
+      "lei": "967600M9R4EFYLPNWR50",
+      "legal_name": "MBB SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/967600M9R4EFYLPNWR50/2020-12-31/ESEF/DE/0/mbbse-2020-12-31.zip",
+      "filename": "DE_BAFIN_MBBS_2020_ESEF.zip"
+    },
+    {
+      "ticker": "MEDI_2",
+      "year": "2020",
+      "lei": "5299007ZHUSGAJRMWH73",
+      "legal_name": "MEDICLIN Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299007ZHUSGAJRMWH73/2020-12-31/ESEF/DE/0/5299007ZHUSGAJRMWH73-2020-12-31.zip",
+      "filename": "DE_BAFIN_MEDI_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "MERC_3",
+      "year": "2020",
+      "lei": "529900OAREIS0MOPTW25",
+      "legal_name": "MERCK Kommanditgesellschaft auf Aktien",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900OAREIS0MOPTW25/2020-12-31/ESEF/DE/0/529900OAREIS0MOPTW25-2020-12-31.zip",
+      "filename": "DE_BAFIN_MERC_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "MTUA_2",
+      "year": "2020",
+      "lei": "529900807L67JY81RD65",
+      "legal_name": "MTU Aero Engines AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900807L67JY81RD65/2020-12-31/ESEF/DE/0/mtu-2020-12-31.zip",
+      "filename": "DE_BAFIN_MTUA_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "NAKI",
+      "year": "2020",
+      "lei": "391200QX3JB9AM3VJG21",
+      "legal_name": "NAKIKI SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200QX3JB9AM3VJG21/2020-12-31/ESEF/DE/0/windelnde-2020-12-31.zip",
+      "filename": "DE_BAFIN_NAKI_2020_ESEF.zip"
+    },
+    {
+      "ticker": "NEXU",
+      "year": "2020",
+      "lei": "529900IBXKVGR2ZZGT64",
+      "legal_name": "Nexus AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900IBXKVGR2ZZGT64/2020-12-31/ESEF/DE/0/nexusag-2020-12-31.zip",
+      "filename": "DE_BAFIN_NEXU_2020_ESEF.zip"
+    },
+    {
+      "ticker": "NFON",
+      "year": "2020",
+      "lei": "391200FZ5TRMIHIK0S97",
+      "legal_name": "NFON AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200FZ5TRMIHIK0S97/2020-12-31/ESEF/DE/0/nfonag-2020-12-31.zip",
+      "filename": "DE_BAFIN_NFON_2020_ESEF.zip"
+    },
+    {
+      "ticker": "NORM",
+      "year": "2020",
+      "lei": "5299000LM9HC76W5XD46",
+      "legal_name": "NORMA Group SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299000LM9HC76W5XD46/2020-12-31/ESEF/DE/0/normagroup-2020-12-31.zip",
+      "filename": "DE_BAFIN_NORM_2020_ESEF.zip"
+    },
+    {
+      "ticker": "PARA",
+      "year": "2020",
+      "lei": "5299003KK8544RT71R38",
+      "legal_name": "paragon GmbH & Co. KGaA",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299003KK8544RT71R38/2020-12-31/ESEF/DE/0/paragon.zip",
+      "filename": "DE_BAFIN_PARA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "PATR_2",
+      "year": "2020",
+      "lei": "5299002NZCMF1NIHZ018",
+      "legal_name": "PATRIZIA AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299002NZCMF1NIHZ018/2020-12-31/ESEF/DE/0/5299002NZCMF1NIHZ018-2020-12-31.zip",
+      "filename": "DE_BAFIN_PATR_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "PFEI",
+      "year": "2020",
+      "lei": "8945004AW6QK8JHNQP69",
+      "legal_name": "Pfeiffer Vacuum Technology AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/8945004AW6QK8JHNQP69/2020-12-31/ESEF/DE/0/8945004AW6QK8JHNQP69-2020-12-31.zip",
+      "filename": "DE_BAFIN_PFEI_2020_ESEF.zip"
+    },
+    {
+      "ticker": "PROC",
+      "year": "2020",
+      "lei": "529900LIN8L1K9MLTR09",
+      "legal_name": "ProCredit Holding AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900LIN8L1K9MLTR09/2020-12-31/ESEF/DE/0/529900LIN8L1K9MLTR09-2020-12-31.zip",
+      "filename": "DE_BAFIN_PROC_2020_ESEF.zip"
+    },
+    {
+      "ticker": "PROG",
+      "year": "2020",
+      "lei": "5299006TWTYFNXLFV488",
+      "legal_name": "Progress-Werk Oberkirch Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299006TWTYFNXLFV488/2020-12-31/ESEF/DE/0/5299006TWTYFNXLFV488-2020-12-31.zip",
+      "filename": "DE_BAFIN_PROG_2020_ESEF.zip"
+    },
+    {
+      "ticker": "PROS",
+      "year": "2020",
+      "lei": "529900NY0WWQUKOMWQ37",
+      "legal_name": "ProSiebenSat.1 Media SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900NY0WWQUKOMWQ37/2020-12-31/ESEF/DE/0/prosiebensat1.zip",
+      "filename": "DE_BAFIN_PROS_2020_ESEF.zip"
+    },
+    {
+      "ticker": "PUMA",
+      "year": "2020",
+      "lei": "529900GRZ2BQY5ZM9N49",
+      "legal_name": "PUMA SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900GRZ2BQY5ZM9N49/2020-12-31/ESEF/DE/0/pumase.zip",
+      "filename": "DE_BAFIN_PUMA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "PVAT",
+      "year": "2020",
+      "lei": "5299002Y7DARXV2Y4R82",
+      "legal_name": "PVA TePla AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299002Y7DARXV2Y4R82/2020-12-31/ESEF/DE/0/5299002Y7DARXV2Y4R82-2020-12-31.zip",
+      "filename": "DE_BAFIN_PVAT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "RSTA",
+      "year": "2020",
+      "lei": "5299001GNOTPZ0J9QN67",
+      "legal_name": "R. Stahl Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299001GNOTPZ0J9QN67/2020-12-31/ESEF/DE/0/r-stahl.zip",
+      "filename": "DE_BAFIN_RSTA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "RATI",
+      "year": "2020",
+      "lei": "529900K139N6UFJ1A758",
+      "legal_name": "RATIONAL Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900K139N6UFJ1A758/2020-12-31/ESEF/DE/0/rationalag-2020-12-31.zip",
+      "filename": "DE_BAFIN_RATI_2020_ESEF.zip"
+    },
+    {
+      "ticker": "RHEI_3",
+      "year": "2020",
+      "lei": "5299001OU9CSE29O6S05",
+      "legal_name": "Rheinmetall Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299001OU9CSE29O6S05/2020-12-31/ESEF/DE/0/5299001OU9CSE29O6S05-2020-12-31.zip",
+      "filename": "DE_BAFIN_RHEI_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "RHNK",
+      "year": "2020",
+      "lei": "529900MVGMIVUDQY9E20",
+      "legal_name": "RHÖN-KLINIKUM Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900MVGMIVUDQY9E20/2020-12-31/ESEF/DE/0/RhoenKlinikumAG-2020-12-31.zip",
+      "filename": "DE_BAFIN_RHNK_2020_ESEF.zip"
+    },
+    {
+      "ticker": "RIBS",
+      "year": "2020",
+      "lei": "549300TXKMFBJ0ECRO90",
+      "legal_name": "RIB Software SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/549300TXKMFBJ0ECRO90/2020-12-31/ESEF/DE/0/rib-software.zip",
+      "filename": "DE_BAFIN_RIBS_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SAPS",
+      "year": "2020",
+      "lei": "529900D6BF99LW9R2E68",
+      "legal_name": "SAP SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900D6BF99LW9R2E68/2020-12-31/ESEF/DE/0/sap-2020-12-31AR.zip",
+      "filename": "DE_BAFIN_SAPS_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SART_3",
+      "year": "2020",
+      "lei": "529900EQV2DY4FOAMU38",
+      "legal_name": "Sartorius Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900EQV2DY4FOAMU38/2020-12-31/ESEF/DE/0/sartoriusag.zip",
+      "filename": "DE_BAFIN_SART_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SCHA",
+      "year": "2020",
+      "lei": "549300Q7E782X7GC1P43",
+      "legal_name": "Schaeffler AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/549300Q7E782X7GC1P43/2020-12-31/ESEF/DE/0/549300Q7E782X7GC1P43-2020-12-31.zip",
+      "filename": "DE_BAFIN_SCHA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SCHA_2",
+      "year": "2020",
+      "lei": "52990099LIMD4VYT3175",
+      "legal_name": "Schaltbau Holding AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/52990099LIMD4VYT3175/2020-12-31/ESEF/DE/0/52990099LIMD4VYT3175-2020-12-31.zip",
+      "filename": "DE_BAFIN_SCHA_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SCOU",
+      "year": "2020",
+      "lei": "5493007EIKM2ENQS7U66",
+      "legal_name": "Scout24 AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5493007EIKM2ENQS7U66/2020-12-31/ESEF/DE/0/scout24.zip",
+      "filename": "DE_BAFIN_SCOU_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SGLC",
+      "year": "2020",
+      "lei": "52990038IB31TYK07X63",
+      "legal_name": "SGL Carbon SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/52990038IB31TYK07X63/2020-12-31/ESEF/DE/0/2020_SGL_Carbon_FINAL_PREPARATION_DO_NOT_TOUCH.zip",
+      "filename": "DE_BAFIN_SGLC_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SILT",
+      "year": "2020",
+      "lei": "5299003NKV26NNGHHR90",
+      "legal_name": "Siltronic AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299003NKV26NNGHHR90/2020-12-31/ESEF/DE/0/siltronic.zip",
+      "filename": "DE_BAFIN_SILT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SIXT",
+      "year": "2020",
+      "lei": "5299004ZME6CSBR7WP07",
+      "legal_name": "Sixt SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299004ZME6CSBR7WP07/2020-12-31/ESEF/DE/0/sixt.zip",
+      "filename": "DE_BAFIN_SIXT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SIXT_2",
+      "year": "2020",
+      "lei": "529900CBIWZ57I62HZ92",
+      "legal_name": "Sixt Leasing SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900CBIWZ57I62HZ92/2020-12-31/ESEF/DE/0/sixtleasingse.zip",
+      "filename": "DE_BAFIN_SIXT_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SMAS",
+      "year": "2020",
+      "lei": "529900Q6JQHI8X451Q21",
+      "legal_name": "SMA Solar Technology AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900Q6JQHI8X451Q21/2020-12-31/ESEF/DE/0/529900Q6JQHI8X451Q21-2020-12-31.zip",
+      "filename": "DE_BAFIN_SMAS_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SNPS",
+      "year": "2020",
+      "lei": "529900VKQHIQKPDF7811",
+      "legal_name": "SNP Schneider-Neureither & Partner SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900VKQHIQKPDF7811/2020-12-31/ESEF/DE/0/snpgroup.zip",
+      "filename": "DE_BAFIN_SNPS_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SOFT",
+      "year": "2020",
+      "lei": "529900S2ZKWINY4ZNU39",
+      "legal_name": "Softing AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900S2ZKWINY4ZNU39/2020-12-31/ESEF/DE/0/companysofting.zip",
+      "filename": "DE_BAFIN_SOFT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SOFT_4",
+      "year": "2020",
+      "lei": "529900M1LIO0SLOBAS50",
+      "legal_name": "Software Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900M1LIO0SLOBAS50/2020-12-31/ESEF/DE/0/softwareag-2020-12-31.zip",
+      "filename": "DE_BAFIN_SOFT_4_2020_ESEF.zip"
+    },
+    {
+      "ticker": "STRE",
+      "year": "2020",
+      "lei": "529900MBF3N1ATE55378",
+      "legal_name": "Ströer SE & Co. KGaA",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900MBF3N1ATE55378/2020-12-31/ESEF/DE/0/stroeer.zip",
+      "filename": "DE_BAFIN_STRE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SSSM",
+      "year": "2020",
+      "lei": "529900C3KRUTSYDK7N87",
+      "legal_name": "SUSS MicroTec SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900C3KRUTSYDK7N87/2020-12-31/ESEF/DE/0/529900C3KRUTSYDK7N87-2020-12-31.zip",
+      "filename": "DE_BAFIN_SSSM_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SYZY",
+      "year": "2020",
+      "lei": "391200XUREIZNGEH1A97",
+      "legal_name": "Syzygy AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200XUREIZNGEH1A97/2020-12-31/ESEF/DE/0/SYZYGY_KA20_ESEF.zip",
+      "filename": "DE_BAFIN_SYZY_2020_ESEF.zip"
+    },
+    {
+      "ticker": "TAKK",
+      "year": "2020",
+      "lei": "549300AZ0JTVTW3IZY37",
+      "legal_name": "TAKKT AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/549300AZ0JTVTW3IZY37/2020-12-31/ESEF/DE/0/takktag-2020-12-31.zip",
+      "filename": "DE_BAFIN_TAKK_2020_ESEF.zip"
+    },
+    {
+      "ticker": "TALA",
+      "year": "2020",
+      "lei": "5299006ZIILJ6VJVSJ32",
+      "legal_name": "Talanx Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299006ZIILJ6VJVSJ32/2020-12-31/ESEF/DE/0/5299006ZIILJ6VJVSJ32-2020-12-31.zip",
+      "filename": "DE_BAFIN_TALA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "TECH",
+      "year": "2020",
+      "lei": "5299003IANGEF3R55G44",
+      "legal_name": "technotrans SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299003IANGEF3R55G44/2020-12-31/ESEF/DE/0/technotransse-2020-12-31.zip",
+      "filename": "DE_BAFIN_TECH_2020_ESEF.zip"
+    },
+    {
+      "ticker": "TELE_2",
+      "year": "2020",
+      "lei": "391200ECRPJ3SWQJUM30",
+      "legal_name": "Telefónica Deutschland Holding AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200ECRPJ3SWQJUM30/2020-12-31/ESEF/DE/0/TelefonicaDE-2020-12-31.zip",
+      "filename": "DE_BAFIN_TELE_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "TUIA",
+      "year": "2022",
+      "lei": "529900SL2WSPV293B552",
+      "legal_name": "TUI AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900SL2WSPV293B552/2022-09-30/ESEF/GB/0/529900SL2WSPV293B552-2022-09-30-en.zip",
+      "filename": "DE_BAFIN_TUIA_2022_ESEF.zip"
+    },
+    {
+      "ticker": "UNIP_4",
+      "year": "2020",
+      "lei": "549300UXRTWGIBZQ4J67",
+      "legal_name": "UNIPER SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/549300UXRTWGIBZQ4J67/2020-12-31/ESEF/DE/0/uniperse-2020-12-31.zip",
+      "filename": "DE_BAFIN_UNIP_4_2020_ESEF.zip"
+    },
+    {
+      "ticker": "UNIT_2",
+      "year": "2020",
+      "lei": "5299000WCG41FM5SV917",
+      "legal_name": "United Labels Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299000WCG41FM5SV917/2020-12-31/ESEF/DE/0/5299000WCG41FM5SV917-2020-12-31.zip",
+      "filename": "DE_BAFIN_UNIT_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "USUS",
+      "year": "2020",
+      "lei": "391200W2QBWCAZN4SR55",
+      "legal_name": "USU Software AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200W2QBWCAZN4SR55/2020-12-31/ESEF/DE/0/391200W2QBWCAZN4SR55-2020-12-31.zip",
+      "filename": "DE_BAFIN_USUS_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VERB",
+      "year": "2021",
+      "lei": "529900W51PINCFFALS96",
+      "legal_name": "Verbio SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900W51PINCFFALS96/2021-06-30/ESEF/DE/0/529900W51PINCFFALS96-2021-06-30-de.zip",
+      "filename": "DE_BAFIN_VERB_2021_ESEF.zip"
+    },
+    {
+      "ticker": "VILL",
+      "year": "2020",
+      "lei": "529900NK4WP5QSWI8X50",
+      "legal_name": "Villeroy & Boch Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900NK4WP5QSWI8X50/2020-12-31/ESEF/DE/0/villeroy-bochco.zip",
+      "filename": "DE_BAFIN_VILL_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VOLT",
+      "year": "2020",
+      "lei": "52990067LXA0GDUGW094",
+      "legal_name": "Voltabox AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/52990067LXA0GDUGW094/2020-12-31/ESEF/DE/0/voltabox.zip",
+      "filename": "DE_BAFIN_VOLT_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VOSS",
+      "year": "2020",
+      "lei": "5299003HAEOUVX3HWX43",
+      "legal_name": "Vossloh Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299003HAEOUVX3HWX43/2020-12-31/ESEF/DE/0/vosslohag-2020-12-31.zip",
+      "filename": "DE_BAFIN_VOSS_2020_ESEF.zip"
+    },
+    {
+      "ticker": "WACK_2",
+      "year": "2020",
+      "lei": "529900RJL86244E1I652",
+      "legal_name": "Wacker Neuson SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900RJL86244E1I652/2020-12-31/ESEF/DE/0/529900RJL86244E1I652-2020-12-31.zip",
+      "filename": "DE_BAFIN_WACK_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "XFAB",
+      "year": "2021",
+      "lei": "5493003UDPENPUQBJH65",
+      "legal_name": "X-Fab Silicon Foundries",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5493003UDPENPUQBJH65/2021-12-31/ESEF/BE/0/xfab-2021-12-31-nl.zip",
+      "filename": "DE_BAFIN_XFAB_2021_ESEF.zip"
+    },
+    {
+      "ticker": "XFAB",
+      "year": "2021",
+      "lei": "5493003UDPENPUQBJH65",
+      "legal_name": "X-Fab Silicon Foundries",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5493003UDPENPUQBJH65/2021-12-31/ESEF/BE/0/xfab-2021-12-31-en.zip",
+      "filename": "DE_BAFIN_XFAB_2021_ESEF.zip"
+    },
+    {
+      "ticker": "DE_YOC",
+      "year": "2020",
+      "lei": "391200YTK6VMV8JTZV90",
+      "legal_name": "YOC AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200YTK6VMV8JTZV90/2020-12-31/ESEF/DE/0/yoc.zip",
+      "filename": "DE_BAFIN_DE_YOC_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DEUT_22",
+      "year": "2020",
+      "lei": "DZZ47B9A52ZJ6LT6VV95",
+      "legal_name": "Deutsche Pfandbriefbank AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/DZZ47B9A52ZJ6LT6VV95/2020-12-31/ESEF/DE/0/dtpfandbriefbankag-2020-12-31.zip",
+      "filename": "DE_BAFIN_DEUT_22_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ADID_2",
+      "year": "2020",
+      "lei": "549300JSX0Z4CW0V5023",
+      "legal_name": "adidas AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/549300JSX0Z4CW0V5023/2020-12-31/ESEF/DE/0/adidasAG-2020-12-31.zip",
+      "filename": "DE_BAFIN_ADID_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "LPKF_2",
+      "year": "2020",
+      "lei": "529900BCQXUJL7J96G45",
+      "legal_name": "LPKF Laser & Electronics Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900BCQXUJL7J96G45/2020-12-31/ESEF/DE/0/529900BCQXUJL7J96G45-2020-12-31.zip",
+      "filename": "DE_BAFIN_LPKF_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "BEFE_2",
+      "year": "2020",
+      "lei": "222100VXGA8L6J4ZWG61",
+      "legal_name": "Befesa S.A.",
+      "isin": "",
+      "url": "https://filings.xbrl.org/222100VXGA8L6J4ZWG61/2020-12-31/ESEF/DE/0/222100VXGA8L6J4ZWG61-2020-12-31.zip",
+      "filename": "DE_BAFIN_BEFE_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "WEST_2",
+      "year": "2020",
+      "lei": "529900BN8B4KAHILIX84",
+      "legal_name": "Westwing Group AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900BN8B4KAHILIX84/2020-12-31/ESEF/DE/0/529900BN8B4KAHILIX84-2020-12-31.zip",
+      "filename": "DE_BAFIN_WEST_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "PROC_2",
+      "year": "2020",
+      "lei": "529900LIN8L1K9MLTR09",
+      "legal_name": "ProCredit Holding AG & Co.KGaA",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900LIN8L1K9MLTR09/2020-12-31/ESEF/DE/0/529900LIN8L1K9MLTR09-2020-12-31.zip",
+      "filename": "DE_BAFIN_PROC_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "BAYW_2",
+      "year": "2020",
+      "lei": "529900SM0FDLLYATXU36",
+      "legal_name": "BayWa Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900SM0FDLLYATXU36/2020-12-31/ESEF/DE/0/baywa-2020-12-31.zip",
+      "filename": "DE_BAFIN_BAYW_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "PNEA",
+      "year": "2020",
+      "lei": "391200KEHI6OQSGGN373",
+      "legal_name": "PNE AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200KEHI6OQSGGN373/2020-12-31/ESEF/DE/0/pne-ag.zip",
+      "filename": "DE_BAFIN_PNEA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "FLAT_3",
+      "year": "2020",
+      "lei": "529900IRBZTADXJB6757",
+      "legal_name": "flatexDEGIRO AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900IRBZTADXJB6757/2020-12-31/ESEF/DE/0/flatexDEGIROAG-2020-12-31.zip",
+      "filename": "DE_BAFIN_FLAT_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HOME",
+      "year": "2020",
+      "lei": "5299002T3WE6IWG0E854",
+      "legal_name": "home24 SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299002T3WE6IWG0E854/2020-12-31/ESEF/DE/0/home24 Annual Report 2020.zip",
+      "filename": "DE_BAFIN_HOME_2020_ESEF.zip"
+    },
+    {
+      "ticker": "AUTO_3",
+      "year": "2020",
+      "lei": "391200S2LPXG5ZD5G304",
+      "legal_name": "AUTO1 Group SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200S2LPXG5ZD5G304/2020-12-31/ESEF/DE/0/auto1-group.zip",
+      "filename": "DE_BAFIN_AUTO_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VERB_2",
+      "year": "2021",
+      "lei": "529900W51PINCFFALS96",
+      "legal_name": "VERBIO Vereinigte BioEnergie AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900W51PINCFFALS96/2021-06-30/ESEF/DE/0/529900W51PINCFFALS96-2021-06-30-de.zip",
+      "filename": "DE_BAFIN_VERB_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "11DR",
+      "year": "2020",
+      "lei": "5299003VKVDCUPSS5X23",
+      "legal_name": "1&1 Drillisch Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299003VKVDCUPSS5X23/2020-12-31/ESEF/DE/0/5299003VKVDCUPSS5X23-2020-12-31.zip",
+      "filename": "DE_BAFIN_11DR_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SGLC_2",
+      "year": "2020",
+      "lei": "52990038IB31TYK07X63",
+      "legal_name": "SGL Carbon SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/52990038IB31TYK07X63/2020-12-31/ESEF/DE/0/2020_SGL_Carbon_FINAL_PREPARATION_DO_NOT_TOUCH.zip",
+      "filename": "DE_BAFIN_SGLC_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HEID_4",
+      "year": "2021",
+      "lei": "529900ZM98OISTG16932",
+      "legal_name": "Heidelberger Druckmaschinen Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900ZM98OISTG16932/2021-03-31/ESEF/DE/0/529900ZM98OISTG16932-2021-03-31.zip",
+      "filename": "DE_BAFIN_HEID_4_2021_ESEF.zip"
+    },
+    {
+      "ticker": "BROC",
+      "year": "2020",
+      "lei": "5299007DQ4OLATJQIX97",
+      "legal_name": "Brockhaus Capital Management AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299007DQ4OLATJQIX97/2020-12-31/ESEF/DE/0/bcm-ag.zip",
+      "filename": "DE_BAFIN_BROC_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ZEAL",
+      "year": "2020",
+      "lei": "391200EIRBXU4TUMMQ46",
+      "legal_name": "ZEAL Network SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200EIRBXU4TUMMQ46/2020-12-31/ESEF/DE/0/zealnetwork.zip",
+      "filename": "DE_BAFIN_ZEAL_2020_ESEF.zip"
+    },
+    {
+      "ticker": "LANX_2",
+      "year": "2020",
+      "lei": "529900PTLRE72EMYIJ77",
+      "legal_name": "LANXESS Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900PTLRE72EMYIJ77/2020-12-31/ESEF/DE/0/lanxess.zip",
+      "filename": "DE_BAFIN_LANX_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HELL_4",
+      "year": "2020",
+      "lei": "391200ZAF4V6XD2M9G57",
+      "legal_name": "HelloFresh SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200ZAF4V6XD2M9G57/2020-12-31/ESEF/DE/0/hel-2020-12-31.zip",
+      "filename": "DE_BAFIN_HELL_4_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DELI_4",
+      "year": "2020",
+      "lei": "529900C3EX1FZGE48X78",
+      "legal_name": "Delivery Hero SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900C3EX1FZGE48X78/2020-12-31/ESEF/DE/0/529900C3EX1FZGE48X78-2020-12-31.zip",
+      "filename": "DE_BAFIN_DELI_4_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VAQT_2",
+      "year": "2020",
+      "lei": "529900MHY0HTHX71DO39",
+      "legal_name": "va-Q-tec AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900MHY0HTHX71DO39/2020-12-31/ESEF/DE/0/va-q-tec.zip",
+      "filename": "DE_BAFIN_VAQT_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ZALA_2",
+      "year": "2020",
+      "lei": "529900YRFFGH5AXU4S86",
+      "legal_name": "Zalando SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900YRFFGH5AXU4S86/2020-12-31/ESEF/DE/0/zalando-2020-12-31.zip",
+      "filename": "DE_BAFIN_ZALA_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VART_2",
+      "year": "2020",
+      "lei": "529900E7KB95KOXBWP63",
+      "legal_name": "VARTA AKTIENGESELLSCHAFT",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900E7KB95KOXBWP63/2020-12-31/ESEF/DE/0/varta-ag-2020-12-31.zip",
+      "filename": "DE_BAFIN_VART_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "PSIS",
+      "year": "2020",
+      "lei": "529900OS5AIRXC3T2J37",
+      "legal_name": "PSI Software AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900OS5AIRXC3T2J37/2020-12-31/ESEF/DE/0/psi.zip",
+      "filename": "DE_BAFIN_PSIS_2020_ESEF.zip"
+    },
+    {
+      "ticker": "INTE_5",
+      "year": "2020",
+      "lei": "5299009E3J3ZK6P0GX20",
+      "legal_name": "INTERSHOP Communications Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299009E3J3ZK6P0GX20/2020-12-31/ESEF/DE/0/5299009E3J3ZK6P0GX20-2020-12-31.zip",
+      "filename": "DE_BAFIN_INTE_5_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ALZC_2",
+      "year": "2020",
+      "lei": "8945004EL7WZK3ERG181",
+      "legal_name": "AlzChem Group AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/8945004EL7WZK3ERG181/2020-12-31/ESEF/DE/0/alzchemgroupag-2020-12-31.zip",
+      "filename": "DE_BAFIN_ALZC_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "PFEI_2",
+      "year": "2020",
+      "lei": "8945004AW6QK8JHNQP69",
+      "legal_name": "Pfeiffer Vacuum Technlogy AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/8945004AW6QK8JHNQP69/2020-12-31/ESEF/DE/0/8945004AW6QK8JHNQP69-2020-12-31.zip",
+      "filename": "DE_BAFIN_PFEI_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VILL_2",
+      "year": "2020",
+      "lei": "529900NK4WP5QSWI8X50",
+      "legal_name": "Villeroy & Boch Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900NK4WP5QSWI8X50/2020-12-31/ESEF/DE/0/villeroy-bochco.zip",
+      "filename": "DE_BAFIN_VILL_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "MERC_4",
+      "year": "2020",
+      "lei": "529900OAREIS0MOPTW25",
+      "legal_name": "MERCK Kommanditgesellschaft auf Aktien",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900OAREIS0MOPTW25/2020-12-31/ESEF/DE/0/529900OAREIS0MOPTW25-2020-12-31.zip",
+      "filename": "DE_BAFIN_MERC_4_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DEUT_23",
+      "year": "2020",
+      "lei": "529900Y9QTEFHFEKQ736",
+      "legal_name": "Deutsche EuroShop AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900Y9QTEFHFEKQ736/2020-12-31/ESEF/DE/0/deutsche-euroshop.zip",
+      "filename": "DE_BAFIN_DEUT_23_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DEUT_24",
+      "year": "2020",
+      "lei": "7LTWFZYICNSX8D621K86",
+      "legal_name": "DEUTSCHE BANK AKTIENGESELLSCHAFT",
+      "isin": "",
+      "url": "https://filings.xbrl.org/7LTWFZYICNSX8D621K86/2020-12-31/ESEF/DE/0/deutschebankag-2020-12-31.zip",
+      "filename": "DE_BAFIN_DEUT_24_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VOLK_3",
+      "year": "2020",
+      "lei": "529900NNUPAGGOMPXZ31",
+      "legal_name": "VOLKSWAGEN AKTIENGESELLSCHAFT",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900NNUPAGGOMPXZ31/2020-12-31/ESEF/DE/0/volkswagenag.zip",
+      "filename": "DE_BAFIN_VOLK_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "INDU_2",
+      "year": "2020",
+      "lei": "529900GE4O7ZOMRWR939",
+      "legal_name": "INDUS Holding Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900GE4O7ZOMRWR939/2020-12-31/ESEF/DE/0/529900GE4O7ZOMRWR939-2020-12-31.zip",
+      "filename": "DE_BAFIN_INDU_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "TECH_2",
+      "year": "2020",
+      "lei": "5299003IANGEF3R55G44",
+      "legal_name": "technotrans SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299003IANGEF3R55G44/2020-12-31/ESEF/DE/0/technotransse-2020-12-31.zip",
+      "filename": "DE_BAFIN_TECH_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DEUT_25",
+      "year": "2020",
+      "lei": "529900PH63HYJ86ASW55",
+      "legal_name": "Deutsche Lufthansa Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900PH63HYJ86ASW55/2020-12-31/ESEF/DE/0/DeutscheLufthansa-2020-12-31.zip",
+      "filename": "DE_BAFIN_DEUT_25_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SNPS_2",
+      "year": "2020",
+      "lei": "529900VKQHIQKPDF7811",
+      "legal_name": "SNP Schneider-Neureither & Partner SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900VKQHIQKPDF7811/2020-12-31/ESEF/DE/0/snpgroup.zip",
+      "filename": "DE_BAFIN_SNPS_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SIXT_3",
+      "year": "2020",
+      "lei": "5299004ZME6CSBR7WP07",
+      "legal_name": "Sixt SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299004ZME6CSBR7WP07/2020-12-31/ESEF/DE/0/sixt.zip",
+      "filename": "DE_BAFIN_SIXT_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "AURU_2",
+      "year": "2021",
+      "lei": "5299005SHIN9ZK7GW242",
+      "legal_name": "Aurubis AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299005SHIN9ZK7GW242/2021-09-30/ESEF/DE/0/Aurubis_AG_KAuKLB_ESEF-2021-09-30.zip",
+      "filename": "DE_BAFIN_AURU_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "3UHO_2",
+      "year": "2020",
+      "lei": "529900VVQ4470YJ67K26",
+      "legal_name": "3U Holding AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900VVQ4470YJ67K26/2020-12-31/ESEF/DE/0/UUUHolding_AG_KA_KLB_ESEF-2020-12-31.zip",
+      "filename": "DE_BAFIN_3UHO_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "AKAS",
+      "year": "2020",
+      "lei": "529900ZMVBM4A9UBTH42",
+      "legal_name": "AKASOL AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900ZMVBM4A9UBTH42/2020-12-31/ESEF/DE/0/akasol.zip",
+      "filename": "DE_BAFIN_AKAS_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VONO_2",
+      "year": "2020",
+      "lei": "5299005A2ZEP6AP7KM81",
+      "legal_name": "Vonovia SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299005A2ZEP6AP7KM81/2020-12-31/ESEF/DE/0/vonovia-2020-12-31.zip",
+      "filename": "DE_BAFIN_VONO_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "CRED",
+      "year": "2020",
+      "lei": "5299003LVPXHGHTWP936",
+      "legal_name": "creditshelf Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299003LVPXHGHTWP936/2020-12-31/ESEF/DE/0/creditshelfaktiengesellschaft-2020-12-31.zip",
+      "filename": "DE_BAFIN_CRED_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SLMS",
+      "year": "2020",
+      "lei": "5299004VIBQF63906C97",
+      "legal_name": "SLM Solutions Group AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299004VIBQF63906C97/2020-12-31/ESEF/DE/0/slm-solutions.zip",
+      "filename": "DE_BAFIN_SLMS_2020_ESEF.zip"
+    },
+    {
+      "ticker": "PHAR",
+      "year": "2020",
+      "lei": "3912005CZ12PVVCIPT91",
+      "legal_name": "PharmaSGP Holding SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/3912005CZ12PVVCIPT91/2020-12-31/ESEF/DE/0/3912005CZ12PVVCIPT91-2020-12-31.zip",
+      "filename": "DE_BAFIN_PHAR_2020_ESEF.zip"
+    },
+    {
+      "ticker": "NAGA",
+      "year": "2020",
+      "lei": "9845008396BA67DA9B37",
+      "legal_name": "Nagarro SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/9845008396BA67DA9B37/2020-12-31/ESEF/DE/0/nagarrose-2020-12-31.zip",
+      "filename": "DE_BAFIN_NAGA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "TEAM_2",
+      "year": "2020",
+      "lei": "529900H0PCNFHOO96547",
+      "legal_name": "TeamViewer Germany GmbH",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900H0PCNFHOO96547/2020-12-31/ESEF/DE/0/teamviewer-2020-12-31.zip",
+      "filename": "DE_BAFIN_TEAM_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "BAUE_2",
+      "year": "2020",
+      "lei": "529900XMQYET3NBF2363",
+      "legal_name": "BAUER Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900XMQYET3NBF2363/2020-12-31/ESEF/DE/0/529900XMQYET3NBF2363-2020-12-31.zip",
+      "filename": "DE_BAFIN_BAUE_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "LUDW_2",
+      "year": "2020",
+      "lei": "5299008RI8NGQL3F3J12",
+      "legal_name": "Ludwig Beck am Rathauseck -Textilhaus Feldmeier Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299008RI8NGQL3F3J12/2020-12-31/ESEF/DE/0/ludwigbeck.zip",
+      "filename": "DE_BAFIN_LUDW_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DWSG",
+      "year": "2020",
+      "lei": "529900VM3464806ERS69",
+      "legal_name": "DWS Group GmbH & Co. KGaA",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900VM3464806ERS69/2020-12-31/ESEF/DE/0/DWSGroup-2020-12-31.zip",
+      "filename": "DE_BAFIN_DWSG_2020_ESEF.zip"
+    },
+    {
+      "ticker": "MNCH_2",
+      "year": "2020",
+      "lei": "529900MUF4C20K50JS49",
+      "legal_name": "Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900MUF4C20K50JS49/2020-12-31/ESEF/DE/0/munichre.zip",
+      "filename": "DE_BAFIN_MNCH_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "STRA_4",
+      "year": "2020",
+      "lei": "529900ZZJWANAFSPGV30",
+      "legal_name": "STRATEC SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900ZZJWANAFSPGV30/2020-12-31/ESEF/DE/0/stratecse-2020-12-31.zip",
+      "filename": "DE_BAFIN_STRA_4_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DEMI_2",
+      "year": "2020",
+      "lei": "391200FHEFGXUKL2BO93",
+      "legal_name": "DEMIRE Deutsche Mittelstand Real Estate AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200FHEFGXUKL2BO93/2020-12-31/ESEF/DE/0/demire-2020-12-31.zip",
+      "filename": "DE_BAFIN_DEMI_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "FRIE",
+      "year": "2020",
+      "lei": "529900NBM89YAM5ENI18",
+      "legal_name": "Friedrich Vorwerk Group SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900NBM89YAM5ENI18/2020-12-31/ESEF/DE/0/VorwerkSE-2020-12-31.zip",
+      "filename": "DE_BAFIN_FRIE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "TRAT_2",
+      "year": "2020",
+      "lei": "529900UIMQRKPFN6SV80",
+      "legal_name": "TRATON SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900UIMQRKPFN6SV80/2020-12-31/ESEF/DE/0/traton.zip",
+      "filename": "DE_BAFIN_TRAT_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "GRAM_2",
+      "year": "2020",
+      "lei": "529900VJD4H4GZ0KGA70",
+      "legal_name": "GRAMMER Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900VJD4H4GZ0KGA70/2020-12-31/ESEF/DE/0/grammer.zip",
+      "filename": "DE_BAFIN_GRAM_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "SSSM_2",
+      "year": "2020",
+      "lei": "529900C3KRUTSYDK7N87",
+      "legal_name": "SÜSS MicroTec SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900C3KRUTSYDK7N87/2020-12-31/ESEF/DE/0/529900C3KRUTSYDK7N87-2020-12-31.zip",
+      "filename": "DE_BAFIN_SSSM_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DERM_2",
+      "year": "2020",
+      "lei": "529900BTFP18OVB3JT02",
+      "legal_name": "Dermapharm Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900BTFP18OVB3JT02/2020-12-31/ESEF/DE/0/529900BTFP18OVB3JT02-2020-12-31.zip",
+      "filename": "DE_BAFIN_DERM_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "EVOT_2",
+      "year": "2020",
+      "lei": "529900F9KI6OYITO9B12",
+      "legal_name": "Evotec SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900F9KI6OYITO9B12/2020-12-31/ESEF/DE/0/529900F9KI6OYITO9B12-2020-12-31.zip",
+      "filename": "DE_BAFIN_EVOT_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ALST_2",
+      "year": "2020",
+      "lei": "529900QIJIGPI0DRL085",
+      "legal_name": "alstria office REIT-AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900QIJIGPI0DRL085/2020-12-31/ESEF/DE/0/alstriaofficereitag-2020-12-31.zip",
+      "filename": "DE_BAFIN_ALST_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "WACK_3",
+      "year": "2020",
+      "lei": "529900RJL86244E1I652",
+      "legal_name": "Wacker Neuson SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900RJL86244E1I652/2020-12-31/ESEF/DE/0/529900RJL86244E1I652-2020-12-31.zip",
+      "filename": "DE_BAFIN_WACK_3_2020_ESEF.zip"
+    },
+    {
+      "ticker": "LEIF_2",
+      "year": "2020",
+      "lei": "529900DBX574P554QO57",
+      "legal_name": "Leifheit Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900DBX574P554QO57/2020-12-31/ESEF/DE/0/leifheit.zip",
+      "filename": "DE_BAFIN_LEIF_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "AMAD_2",
+      "year": "2020",
+      "lei": "391200TJJ820ZDHNFJ33",
+      "legal_name": "AMADEUS FIRE AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200TJJ820ZDHNFJ33/2020-12-31/ESEF/DE/0/391200TJJ820ZDHNFJ33-2020-12-31.zip",
+      "filename": "DE_BAFIN_AMAD_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VOSS_2",
+      "year": "2020",
+      "lei": "5299003HAEOUVX3HWX43",
+      "legal_name": "Vossloh Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299003HAEOUVX3HWX43/2020-12-31/ESEF/DE/0/vosslohag-2020-12-31.zip",
+      "filename": "DE_BAFIN_VOSS_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "FAIR_2",
+      "year": "2020",
+      "lei": "52990084DFVKX2FRR033",
+      "legal_name": "Fair Value REIT-AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/52990084DFVKX2FRR033/2020-12-31/ESEF/DE/0/fairvalue-2020-12-31.zip",
+      "filename": "DE_BAFIN_FAIR_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "HYPO_2",
+      "year": "2020",
+      "lei": "391200GNIFXXP6KRYQ46",
+      "legal_name": "HYPOPORT SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200GNIFXXP6KRYQ46/2020-12-31/ESEF/DE/0/hypoportse-2020-12-31 - ERS.zip",
+      "filename": "DE_BAFIN_HYPO_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VANT_2",
+      "year": "2021",
+      "lei": "213800BBQO965UPQ7J59",
+      "legal_name": "VANTAGE TOWERS AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/213800BBQO965UPQ7J59/2021-03-31/ESEF/DE/0/vantagetowers.zip",
+      "filename": "DE_BAFIN_VANT_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "ADLE_2",
+      "year": "2020",
+      "lei": "529900Y6QFNN3D363B76",
+      "legal_name": "ADLER Real Estate Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900Y6QFNN3D363B76/2020-12-31/ESEF/DE/0/adler-ag - Konzern -2020-12-31.zip",
+      "filename": "DE_BAFIN_ADLE_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "YOCA",
+      "year": "2020",
+      "lei": "391200YTK6VMV8JTZV90",
+      "legal_name": "YOC AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200YTK6VMV8JTZV90/2020-12-31/ESEF/DE/0/yoc.zip",
+      "filename": "DE_BAFIN_YOCA_2020_ESEF.zip"
+    },
+    {
+      "ticker": "LEGI_2",
+      "year": "2020",
+      "lei": "391200SO40AKONBO0Z96",
+      "legal_name": "LEG Immobilien SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200SO40AKONBO0Z96/2020-12-31/ESEF/DE/0/legimmobilienag.zip",
+      "filename": "DE_BAFIN_LEGI_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "WIND",
+      "year": "2020",
+      "lei": "391200QX3JB9AM3VJG21",
+      "legal_name": "windeln.de SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200QX3JB9AM3VJG21/2020-12-31/ESEF/DE/0/windelnde-2020-12-31.zip",
+      "filename": "DE_BAFIN_WIND_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DELT_2",
+      "year": "2020",
+      "lei": "529900F3EU2GVHVCLR26",
+      "legal_name": "Delticom AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900F3EU2GVHVCLR26/2020-12-31/ESEF/DE/0/delti.zip",
+      "filename": "DE_BAFIN_DELT_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DRGE_2",
+      "year": "2020",
+      "lei": "5493005UFVHY0PPNKD75",
+      "legal_name": "Drägerwerk AG & Co. KGaA",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5493005UFVHY0PPNKD75/2020-12-31/ESEF/DE/0/5493005UFVHY0PPNKD75-2020-12-31.zip",
+      "filename": "DE_BAFIN_DRGE_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "DEUT_26",
+      "year": "2020",
+      "lei": "529900G3SW56SHYNPR95",
+      "legal_name": "Deutsche Börse Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900G3SW56SHYNPR95/2020-12-31/ESEF/DE/0/deutschebrseag.zip",
+      "filename": "DE_BAFIN_DEUT_26_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ABOU_2",
+      "year": "2021",
+      "lei": "894500A85A8VDRIGZ723",
+      "legal_name": "ABOUT YOU GmbH & Co. KG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/894500A85A8VDRIGZ723/2021-02-28/ESEF/DE/0/894500A85A8VDRIGZ723-2021-02-28.zip",
+      "filename": "DE_BAFIN_ABOU_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "INIT_2",
+      "year": "2020",
+      "lei": "391200ZOAI9BOLGC1D37",
+      "legal_name": "init innovation in traffic systems SE",
+      "isin": "",
+      "url": "https://filings.xbrl.org/391200ZOAI9BOLGC1D37/2020-12-31/ESEF/DE/0/initse.zip",
+      "filename": "DE_BAFIN_INIT_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "ERWE",
+      "year": "2020",
+      "lei": "39120014ZQ1I2RXEE848",
+      "legal_name": "ERWE Immobilien AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/39120014ZQ1I2RXEE848/2020-12-31/ESEF/DE/0/39120014ZQ1I2RXEE848-2020-12-31.zip",
+      "filename": "DE_BAFIN_ERWE_2020_ESEF.zip"
+    },
+    {
+      "ticker": "VITA_2",
+      "year": "2020",
+      "lei": "529900OEWA4GSZEZ4P40",
+      "legal_name": "Vita 34 AG",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900OEWA4GSZEZ4P40/2020-12-31/ESEF/DE/0/vita34ag-2020-12-31.zip",
+      "filename": "DE_BAFIN_VITA_2_2020_ESEF.zip"
+    },
+    {
+      "ticker": "COMP_4",
+      "year": "2020",
+      "lei": "529900CUXZGOCJZR7O57",
+      "legal_name": "CompuGroup Medical SE & Co. KGaA",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900CUXZGOCJZR7O57/2020-12-31/ESEF/DE/0/529900CUXZGOCJZR7O57-2020-12-31.zip",
+      "filename": "DE_BAFIN_COMP_4_2020_ESEF.zip"
+    },
+    {
+      "ticker": "KWSS_2",
+      "year": "2021",
+      "lei": "529900FR2K4P9L9XLV21",
+      "legal_name": "KWS SAAT SE & Co. KGaA",
+      "isin": "",
+      "url": "https://filings.xbrl.org/529900FR2K4P9L9XLV21/2021-06-30/ESEF/DE/0/kws.zip",
+      "filename": "DE_BAFIN_KWSS_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "BSBA_2",
+      "year": "2021",
+      "lei": "5299007PZPBNXDDWHC04",
+      "legal_name": "B+S Banksysteme Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299007PZPBNXDDWHC04/2021-06-30/ESEF/DE/0/5299007PZPBNXDDWHC04-2021-06-30-de.zip",
+      "filename": "DE_BAFIN_BSBA_2_2021_ESEF.zip"
+    },
+    {
+      "ticker": "RSTA_2",
+      "year": "2020",
+      "lei": "5299001GNOTPZ0J9QN67",
+      "legal_name": "R. Stahl Aktiengesellschaft",
+      "isin": "",
+      "url": "https://filings.xbrl.org/5299001GNOTPZ0J9QN67/2020-12-31/ESEF/DE/0/r-stahl.zip",
+      "filename": "DE_BAFIN_RSTA_2_2020_ESEF.zip"
+    }
+  ]
+}

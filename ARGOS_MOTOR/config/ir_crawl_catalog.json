@@ -1,0 +1,1266 @@
+{
+  "generated_at": "2026-09-27T11:44:28.128334Z",
+  "total": 140,
+  "items": [
+    {
+      "ticker": "DEUT",
+      "isin": "DE0005557508",
+      "year": 2025,
+      "url": "https://bericht.telekom.com/geschaeftsbericht-2025/",
+      "title": "Annual Report 2025",
+      "source": "ir_website",
+      "ir_base": "https://www.telekom.com/en/investor-relations/publications/financial-results"
+    },
+    {
+      "ticker": "DEUT",
+      "isin": "DE0005557508",
+      "year": 2025,
+      "url": "https://report.telekom.com/annual-report-2025/",
+      "title": "Annual Report 2025",
+      "source": "ir_website",
+      "ir_base": "https://www.telekom.com/en/investor-relations/publications/financial-results"
+    },
+    {
+      "ticker": "CONT",
+      "isin": "DE0005439004",
+      "year": 2025,
+      "url": "https://www.continental.com/en/investors/events/results/results-fy-2025/",
+      "title": "Results FY 2025",
+      "source": "ir_website",
+      "ir_base": "https://www.continental.com/en/investors/reports-presentations/financial-reports/"
+    },
+    {
+      "ticker": "CONT",
+      "isin": "DE0005439004",
+      "year": 2025,
+      "url": "https://annualreport.continental.com/en/index.php",
+      "title": "Annual Report 2025 (Full HTML version)Explore the full interactive version of the annual report.Go to the interactive version",
+      "source": "ir_website",
+      "ir_base": "https://www.continental.com/en/investors/reports-presentations/financial-reports/"
+    },
+    {
+      "ticker": "CONT",
+      "isin": "DE0005439004",
+      "year": 2025,
+      "url": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/hubpages/30_20investors/30_20reports/annual_20reports/downloads/annual-report-2025.pdf",
+      "title": "Annual Report 2025 (PDF)Charting New Paths.Download Annual Report  - PDF (6.4 MB)",
+      "source": "ir_website",
+      "ir_base": "https://www.continental.com/en/investors/reports-presentations/financial-reports/"
+    },
+    {
+      "ticker": "CONT",
+      "isin": "DE0005439004",
+      "year": 2025,
+      "url": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/hubpages/30_20investors/30_20reports/ag_20reports/downloads/ag-report-2025.pdf",
+      "title": "2025 Report of Continental Aktiengesellschaft (PDF)Download Report Continental AG - PDF (1.2 MB)",
+      "source": "ir_website",
+      "ir_base": "https://www.continental.com/en/investors/reports-presentations/financial-reports/"
+    },
+    {
+      "ticker": "CONT",
+      "isin": "DE0005439004",
+      "year": 2025,
+      "url": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/hubpages/30_20investors/30_20reports/remuneration_reports/continental_remuneration_report_2025.pdf",
+      "title": "Remuneration Report 2025 (PDF)Download Remuneration Report - PDF (1.8 MB)",
+      "source": "ir_website",
+      "ir_base": "https://www.continental.com/en/investors/reports-presentations/financial-reports/"
+    },
+    {
+      "ticker": "CONT",
+      "isin": "DE0005439004",
+      "year": 2024,
+      "url": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/hubpages/30_20investors/30_20reports/annual_20reports/downloads/annual-report-2024.pdf",
+      "title": "Annual Report 2024 (PDF)Unlocking New Strengths.Download Annual Report  - PDF (9.1 MB)",
+      "source": "ir_website",
+      "ir_base": "https://www.continental.com/en/investors/reports-presentations/financial-reports/"
+    },
+    {
+      "ticker": "CONT",
+      "isin": "DE0005439004",
+      "year": 2024,
+      "url": "https://annualreport.continental.com/2024/en/overview.php",
+      "title": "Annual Report 2024 (short HTML version)Explore the interactive version of the annual report.Go to the interactive version",
+      "source": "ir_website",
+      "ir_base": "https://www.continental.com/en/investors/reports-presentations/financial-reports/"
+    },
+    {
+      "ticker": "CONT",
+      "isin": "DE0005439004",
+      "year": 2024,
+      "url": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/hubpages/30_20investors/30_20reports/remuneration_reports/continental_remuneration_report_2024.pdf",
+      "title": "Remuneration Report 2024 (PDF)Download Remuneration Report - PDF (1.3 MB)",
+      "source": "ir_website",
+      "ir_base": "https://www.continental.com/en/investors/reports-presentations/financial-reports/"
+    },
+    {
+      "ticker": "CONT",
+      "isin": "DE0005439004",
+      "year": 2024,
+      "url": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/hubpages/30_20investors/30_20reports/ag_20reports/downloads/ag-report-2024.pdf",
+      "title": "2024 Report of Continental Aktiengesellschaft (PDF)Download Report Continental AG - PDF (1.3 MB)",
+      "source": "ir_website",
+      "ir_base": "https://www.continental.com/en/investors/reports-presentations/financial-reports/"
+    },
+    {
+      "ticker": "CONT",
+      "isin": "DE0005439004",
+      "year": 2023,
+      "url": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/hubpages/30_20investors/30_20reports/annual_20reports/downloads/annual_report_2023.pdf",
+      "title": "Annual Report 2023 (PDF)On the move.Download Annual Report  - PDF (7.5 MB)",
+      "source": "ir_website",
+      "ir_base": "https://www.continental.com/en/investors/reports-presentations/financial-reports/"
+    },
+    {
+      "ticker": "CONT",
+      "isin": "DE0005439004",
+      "year": 2023,
+      "url": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/hubpages/30_20investors/30_20reports/remuneration_reports/remuneration_report_2023.pdf",
+      "title": "Remuneration Report 2023 (PDF)Download Remuneration Report - PDF (3.8 MB)",
+      "source": "ir_website",
+      "ir_base": "https://www.continental.com/en/investors/reports-presentations/financial-reports/"
+    },
+    {
+      "ticker": "CONT",
+      "isin": "DE0005439004",
+      "year": 2023,
+      "url": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/hubpages/30_20investors/30_20reports/ag_20reports/downloads/ag_report_2023_continental.pdf",
+      "title": "2023 Report of Continental Aktiengesellschaft (PDF)Download Report Continental AG - PDF (3.7 MB)",
+      "source": "ir_website",
+      "ir_base": "https://www.continental.com/en/investors/reports-presentations/financial-reports/"
+    },
+    {
+      "ticker": "NEME",
+      "isin": "",
+      "year": 2025,
+      "url": "https://ir.nemetschek.com/geschaeftsbericht-2025",
+      "title": "Geschäftsbericht 2025",
+      "source": "ir_website",
+      "ir_base": "https://www.nemetschek.com/investor-relations/publications/annual-reports/"
+    },
+    {
+      "ticker": "HEID",
+      "isin": "DE0006047004",
+      "year": 2020,
+      "url": "https://www.heidelbergmaterials.com/system/files/2026-08/Heidelberg%20Materials_Capital%20Market%20Slides_H1%202026.pdf",
+      "title": "Capital Market Slides – H1 20267.59 MB",
+      "source": "ir_website",
+      "ir_base": "https://www.heidelbergmaterials.com/en/reports-and-presentations"
+    },
+    {
+      "ticker": "HEID",
+      "isin": "DE0006047004",
+      "year": 2025,
+      "url": "https://www.heidelbergmaterials.com/system/files/2026-04/Heidelberg_Materials_Capital_Market_Slides_FY_2025.pdf",
+      "title": "Capital Market Slides – FY 20258.36 MB",
+      "source": "ir_website",
+      "ir_base": "https://www.heidelbergmaterials.com/en/reports-and-presentations"
+    },
+    {
+      "ticker": "HEID",
+      "isin": "DE0006047004",
+      "year": 2025,
+      "url": "https://www.heidelbergmaterials.com/system/files/2026-03/HM_Annual_Financial_Statements_2025.pdf",
+      "title": "Annual financial statements 2025756.15 KB",
+      "source": "ir_website",
+      "ir_base": "https://www.heidelbergmaterials.com/en/reports-and-presentations"
+    },
+    {
+      "ticker": "HEID",
+      "isin": "DE0006047004",
+      "year": 2025,
+      "url": "https://www.heidelbergmaterials.com/system/files/2026-06/HM%20AG%20-%20Group%20Payment%20Report%202025.pdf",
+      "title": "Group Report on Payments for the financial year 2025618.24 KB",
+      "source": "ir_website",
+      "ir_base": "https://www.heidelbergmaterials.com/en/reports-and-presentations"
+    },
+    {
+      "ticker": "HEID",
+      "isin": "DE0006047004",
+      "year": 2025,
+      "url": "https://www.heidelbergmaterials.com/system/files/2025-07/Heidelberg_Materials_Business_Figures_Jan-Jun_2025.pdf",
+      "title": "Business figures January to June 2025292.57 KB",
+      "source": "ir_website",
+      "ir_base": "https://www.heidelbergmaterials.com/en/reports-and-presentations"
+    },
+    {
+      "ticker": "HEID",
+      "isin": "DE0006047004",
+      "year": 2024,
+      "url": "https://www.heidelbergmaterials.com/sites/default/files/2025-03/HM_Annual_Financial_Statements_2024.pdf",
+      "title": "Annual financial statements 2024802.04 KB",
+      "source": "ir_website",
+      "ir_base": "https://www.heidelbergmaterials.com/en/reports-and-presentations"
+    },
+    {
+      "ticker": "HEID",
+      "isin": "DE0006047004",
+      "year": 2024,
+      "url": "https://www.heidelbergmaterials.com/system/files/2025-06/Group%20Payment%20Report%202024_engl.pdf",
+      "title": "Group Report on Payments for the financial year 2024422.49 KB",
+      "source": "ir_website",
+      "ir_base": "https://www.heidelbergmaterials.com/en/reports-and-presentations"
+    },
+    {
+      "ticker": "HEID",
+      "isin": "DE0006047004",
+      "year": 2024,
+      "url": "https://www.heidelbergmaterials.com/sites/default/files/2024-07/Heidelberg_Materials_Business_Figures_Jan-Jun_2024.pdf",
+      "title": "Business figures January to June 20241.56 MB",
+      "source": "ir_website",
+      "ir_base": "https://www.heidelbergmaterials.com/en/reports-and-presentations"
+    },
+    {
+      "ticker": "HENK",
+      "isin": "DE0006048408",
+      "year": 2025,
+      "url": "https://www.henkel.com/resource/blob/2147522/8941c6fb4e08be9facee9fd4ee20ae64/data/sustainable-impact-report-2025-en.pdf",
+      "title": "Sustainable Impact Report 2025‏(17.1 MB)",
+      "source": "ir_website",
+      "ir_base": "https://www.henkel.com/investors-and-analysts/financial-reports"
+    },
+    {
+      "ticker": "HENK",
+      "isin": "DE0006048408",
+      "year": 2025,
+      "url": "https://www.henkel.com/resource/blob/2131544/eae43b38b5da9c89268a532af1dfbe4f/data/2025-annual-report.pdf",
+      "title": "Annual Report 2025‏(8.42 MB)",
+      "source": "ir_website",
+      "ir_base": "https://www.henkel.com/investors-and-analysts/financial-reports"
+    },
+    {
+      "ticker": "HENK",
+      "isin": "DE0006048408",
+      "year": 2025,
+      "url": "https://www.henkel.com/resource/blob/2131548/8c6e389730fc7e8d560e664022eaa9b9/data/2025-geschaeftsbericht.pdf",
+      "title": "Geschäfts­bericht 2025‏(8.55 MB)",
+      "source": "ir_website",
+      "ir_base": "https://www.henkel.com/investors-and-analysts/financial-reports"
+    },
+    {
+      "ticker": "HENK",
+      "isin": "DE0006048408",
+      "year": 2025,
+      "url": "https://www.henkel.com/resource/blob/2147524/b51ba24dfdd05ce247f4c8f60cbb26b1/data/sustainable-impact-report-de.pdf",
+      "title": "Sustainable Impact Report 2025‏(17.22 MB)",
+      "source": "ir_website",
+      "ir_base": "https://www.henkel.com/investors-and-analysts/financial-reports"
+    },
+    {
+      "ticker": "VOLK",
+      "isin": "DE0007664005",
+      "year": 2025,
+      "url": "https://www.volkswagen-group.com/en/annual-report-and-full-year-results-2025-20174",
+      "title": "Error: Your browser does not support the HTML video element and/or MP4 videos. Please upgrade to a recent browser to view this content.Annual Report & Full Year Results 2025",
+      "source": "ir_website",
+      "ir_base": "https://www.volkswagen-group.com/en/investors-15766"
+    },
+    {
+      "ticker": "VOLK",
+      "isin": "DE0007664005",
+      "year": 2025,
+      "url": "https://annualreport2025.volkswagen-group.com/",
+      "title": "Open Online Annual Report 2025",
+      "source": "ir_website",
+      "ir_base": "https://www.volkswagen-group.com/en/investors-15766"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2025,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2025/puma-annual-report-2025-en_1.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2025,
+      "url": "https://annual-report.puma.com/2025/en/",
+      "title": "DIGITAL ANNUAL REPORT 2025",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2025,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2025/puma-jahresabschluss-2025-en-final.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2024,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2024/2025-1-22-pressrelease-en.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2024,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2024/puma-annual-report-2024-en-final_0.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2024,
+      "url": "https://annual-report.puma.com/2024/en/",
+      "title": "DIGITAL ANNUAL REPORT 2024",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2024,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2024/puma-jahresabschluss-2024-en-final_0.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2023,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2023/puma-annual-report-2023.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2023,
+      "url": "https://annual-report.puma.com/2023/en/",
+      "title": "DIGITAL ANNUAL REPORT 2023",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2023,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2023/puma-se-financial-statement-german-gaap-2023-2.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2022,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2022/puma-annual-report-2022-1.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2022,
+      "url": "https://annual-report.puma.com/2022/en/index.html",
+      "title": "DIGITAL ANNUAL REPORT 2022",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2021,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2021/puma-annual-report-2021.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2021,
+      "url": "https://annual-report.puma.com/2021/en/index.html",
+      "title": "DIGITAL ANNUAL REPORT 2021",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2020,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2020/puma-annual-report-2020.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2020,
+      "url": "https://annual-report.puma.com/2020/en/index.html",
+      "title": "DIGITAL ANNUAL REPORT 2020",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2019,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2019/puma-ar-2019-annual-report.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2019,
+      "url": "https://annual-report.puma.com/2019/en/index.html",
+      "title": "DIGITAL ANNUAL REPORT 2019",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2018,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2018/annual-report-2018-en.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2018,
+      "url": "https://annual-report.puma.com/2018/en/index.html",
+      "title": "DIGITAL ANNUAL REPORT 2018",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2017,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2017/ar-2017.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2017,
+      "url": "https://annual-report.puma.com/2017/en/index.html",
+      "title": "DIGITAL ANNUAL REPORT 2017",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2016,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2016/ar-2016.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2015,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2015/ar-2015.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2014,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2014/ar-2014.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2013,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2013/ar-2013.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "PUMA",
+      "isin": "",
+      "year": 2012,
+      "url": "https://about.puma.com/sites/default/files/financial-report/2012/ar-2012-en.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://about.puma.com/en/investor-relations/financial-publications"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2025,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2025/List-of-Shareholdings-2025.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2024,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2024/Recommendations-of-the-Task-Force-on-Climate-related-Financial-Disclosures-Index-2024.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2024,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2024/In-house-ecology-update-2024.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2024,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2024/Shareholdings-2024.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2024,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2024/Annual-Report-2023.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2024,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2024/Annual-Financial-Statements-of-Deutsche-Bank-AG-2023.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2024,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2024/Non-Financial-Report-2023.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2024,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2024/Shareholdings-2023.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2023,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2023/Annual-Report-2022.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2023,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2023/Annual-Financial-Statements-of-Deutsche-Bank-AG-2022.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2022,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2022/Non-Financial-Report-2022.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2023,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2023/Human-Capital-Report-2022.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2023,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2023/Shareholdings-2022.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2022,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2022/Annual_Report_2021.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2022,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2022/Annual_Financial_Statements_of_Deutsche_Bank_AG_2021.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2022,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2022/Non-Financial_Report_2021.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2022,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2022/HR_Report_2021.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2022,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2022/Shareholdings_2021.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2020,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Annual_Report_2020.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2020,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Annual_Financial_Statements_of_Deutsche_Bank_AG_2020.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2020,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Non-Financial_Report_2020.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2020,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Shareholdings_2020.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2020,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/2020_Climate_Statement_12_08_2020.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2019,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Annual_Report_2019.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2019,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Annual_Financial_Statements_of_Deutsche_Bank_AG_2019.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2019,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Non-Financial_Report_2019.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2019,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Focused_Non-Financial_Report_2019.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2019,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_HR_Report_2019_eng.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2019,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/List_of_Shareholdings_2019.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2018,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Annual_Report_2018.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2018,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Annual_Financial_Statements_and_Management_Report_of_Deutsche_Bank_AG_2018.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2018,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Non-Financial_Report_2018.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2018,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Human_Resources_Report_2018.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2018,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/List_of_Shareholdings_2018.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2018,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Release_IFRS_FDS_19042018.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2017,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/DB_Annual_Report_2017.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2017,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Annual_Financial_Statements_and_Management_Report_of_Deutsche_Bank_AG_2017.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2017,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Non-Financial_Report_2017.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2017,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_GRI_Content_Index_Non-Financial_Report_2017.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2017,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Human_Resources_Report_2017.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2017,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/List_of_Shareholdings_2017.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2016,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Annual_Report_2016.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2016,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Annual_Financial_Statements_and_Management_Report_Deutsche_Bank_AG_2016.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2016,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_CR_Report_2016.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2016,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Human_Resources_Report_2016.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2016,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Anteilsbesitz_Shareholdings_2016.pdf?language_id=3",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2015,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Annual_Report_2015.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2015,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Annual_Financial_Statements_and_Management_Report_Deutsche_Bank_AG_2015.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2015,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_CR_Report_2015_eng.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2015,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Human_Resources_Report_2015.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2015,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Anteilsbesitz_Shareholdings_2015.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2014,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Annual_Report_2014_entire.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2014,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Annual_Review_2014.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2014,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Financial_Report_2014.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2014,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/deutsche_Bank_Supplementary_Information_Cons_Fin_and_Annual_Fin_Statements_2014.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2014,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Annual_Financial_Statements_and_Management_Report_Deutsche_Bank_AG_2014.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2014,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_CR_Report_2014.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2014,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Human_Resources_Report_2014.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2014,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Anteilsbesitz_Shareholdings_2014.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2013,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Annual_Report_2013_entire.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2013,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Annual_Review_2013.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2013,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Financial_Report_2013.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2013,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_CbCR_Disclosure_2013.pdf?language_id=3",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2013,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Annual_Financial_Statements_and_Management_Report_Deutsche_Bank_AG_2013.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2013,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_CR_Report_2013.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2013,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Human_Resources_Report_2013.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2013,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Anteilsbesitz_Shareholdings_2013.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2012,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Annual_Report_2012_entire.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2012,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Annual_Review_2012.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2012,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Deutsche_Bank_Financial_Report_2012.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2012,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Annual_Financial_Statements_and_Management_Report_Deutsche_Bank_AG_2012.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2012,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/CR_Report_2012.pdf?language_id=1",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "DEUT_2",
+      "isin": "DE0005140008",
+      "year": 2012,
+      "url": "https://investor-relations.db.com/files/documents/annual-reports/Anteilsbesitz_Shareholdings_2012.pdf?language_id=3",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://investor-relations.db.com/reports-and-events/annual-reports/"
+    },
+    {
+      "ticker": "ZALA",
+      "isin": "DE000ZAL1111",
+      "year": 2025,
+      "url": "https://corporate.zalando.com/en/investor-relations/zalando-full-year-2025-results",
+      "title": "",
+      "source": "ir_website",
+      "ir_base": "https://corporate.zalando.com/en/investor-relations"
+    },
+    {
+      "ticker": "DE_SAP",
+      "isin": "DE0007164600",
+      "year": 2025,
+      "url": "https://www.sap.com/docs/download/investors/2025/sap-2025-integrated-report.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://www.sap.com/investors/en/reports.html"
+    },
+    {
+      "ticker": "DE_SAP",
+      "isin": "DE0007164600",
+      "year": 2024,
+      "url": "https://www.sap.com/docs/download/investors/2024/sap-2024-integrated-report.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://www.sap.com/investors/en/reports.html"
+    },
+    {
+      "ticker": "DE_SAP",
+      "isin": "DE0007164600",
+      "year": 2023,
+      "url": "https://www.sap.com/docs/download/investors/2023/sap-2023-integrated-report.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://www.sap.com/investors/en/reports.html"
+    },
+    {
+      "ticker": "DE_SAP",
+      "isin": "DE0007164600",
+      "year": 2025,
+      "url": "https://www.sap.com/docs/download/investors/2025/sap-2025-annual-report-form-20f.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://www.sap.com/investors/en/reports.html"
+    },
+    {
+      "ticker": "DE_SAP",
+      "isin": "DE0007164600",
+      "year": 2024,
+      "url": "https://www.sap.com/docs/download/investors/2024/sap-2024-annual-report-form-20f.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://www.sap.com/investors/en/reports.html"
+    },
+    {
+      "ticker": "DE_SAP",
+      "isin": "DE0007164600",
+      "year": 2023,
+      "url": "https://www.sap.com/docs/download/investors/2023/sap-2023-annual-report-form-20f.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://www.sap.com/investors/en/reports.html"
+    },
+    {
+      "ticker": "DE_SAP",
+      "isin": "DE0007164600",
+      "year": 2025,
+      "url": "https://www.sap.com/docs/download/investors/2025/sap-2025-compensation-report.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://www.sap.com/investors/en/reports.html"
+    },
+    {
+      "ticker": "DE_SAP",
+      "isin": "DE0007164600",
+      "year": 2024,
+      "url": "https://www.sap.com/docs/download/investors/2024/sap-2024-compensation-report.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://www.sap.com/investors/en/reports.html"
+    },
+    {
+      "ticker": "DE_SAP",
+      "isin": "DE0007164600",
+      "year": 2023,
+      "url": "https://www.sap.com/docs/download/investors/2023/sap-2023-compensation-report.pdf",
+      "title": "PDF",
+      "source": "ir_website",
+      "ir_base": "https://www.sap.com/investors/en/reports.html"
+    },
+    {
+      "ticker": "RTLG",
+      "isin": "LU0061462528",
+      "year": 2025,
+      "url": "https://company.rtl.com/en/media/overview/press-releases-and-news/rtl-group-full-year-results-2025/",
+      "title": "RTL Group full-year results 2025",
+      "source": "ir_website",
+      "ir_base": "https://www.rtlgroup.com/en/investor-relations/publications/annual-reports.html"
+    }
+  ]
+}

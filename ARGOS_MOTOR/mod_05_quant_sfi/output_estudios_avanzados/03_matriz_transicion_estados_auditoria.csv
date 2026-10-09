@@ -1,0 +1,4 @@
+Estado_Año_t,P(CAM_Leve_t+1),P(CAM_Media_t+1),P(CAM_Severa_t+1)
+CAM Leve (Limpio),88.2%,8.6%,3.2%
+CAM Media (Moderada),22.5%,65.0%,12.5%
+CAM Severa (Crítica),12.5%,25.0%,62.5%
