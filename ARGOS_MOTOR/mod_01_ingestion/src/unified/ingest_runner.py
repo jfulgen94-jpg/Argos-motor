@@ -118,6 +118,12 @@ class UnifiedIngestRunner:
 
     # ------------------------------------------------------------------------------
     def _process_locked(self, adapter: SourceAdapter, cand: DocumentCandidate, job: JobContext) -> JobOutcome:
+        # Doble comprobación (Fase 6): otro proceso pudo completar el documento mientras esperábamos el lock.
+        prior = self.manifests.get(cand.authority, cand.fiscal_year, cand.document_id)
+        if prior and self.cas.verify(prior["sha256"], Path(prior["raw_path"])):
+            self._state(job, JobState.SKIPPED_DUPLICATE, sha256=prior["sha256"], after_lock=True)
+            return JobOutcome(job.job_id, job.document_id, JobState.SKIPPED_DUPLICATE.value,
+                              raw_path=prior["raw_path"], sha256=prior["sha256"])
         self._state(job, JobState.QUEUED)
         meta = adapter.fetch_metadata(cand)
         build = getattr(adapter, "build_download_request", None)

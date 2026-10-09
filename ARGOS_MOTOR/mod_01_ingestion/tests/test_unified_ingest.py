@@ -477,3 +477,16 @@ def test_ut25_http_response_telemetry_logged(tmp_path):
     run_both(runner)
     ev = [e for e in runner.telemetry.read_all() if e["event"] == "http_response"]
     assert len(ev) == 2 and all(e["job_id"] and e["status"] == 200 for e in ev)
+
+
+def test_ut26_recheck_manifest_after_lock_no_double_download(tmp_path):
+    """Fase 6: si otro proceso completó el documento mientras esperábamos el lock, no se vuelve a descargar."""
+    site = base_site()
+    runner, layout, _ = make_runner(tmp_path, site)
+    ad = runner.adapters["CNMV"]
+    cand = ad.discover(DiscoveryRequest(authority="CNMV"))[0]
+    assert runner.process_candidate(ad, cand).state == JobState.COMPLETED.value
+    n = len(site.calls)
+    job = __import__("mod_01_ingestion.src.unified.models", fromlist=["JobContext"]).JobContext.for_candidate(runner.run, 99, cand)
+    out = runner._process_locked(ad, cand, job)      # equivale a entrar tras esperar el lock
+    assert out.state == JobState.SKIPPED_DUPLICATE.value and len(site.calls) == n

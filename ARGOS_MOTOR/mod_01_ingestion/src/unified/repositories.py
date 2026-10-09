@@ -90,12 +90,21 @@ class CatalogRepository:
         self._exec(self.DDL)
 
     def _exec(self, sql: str, params: Iterable[Any] = ()):
+        import time
         import duckdb
-        con = duckdb.connect(str(self.db_path))
-        try:
-            return con.execute(sql, list(params)).fetchall()
-        finally:
-            con.close()
+        last = None
+        for _ in range(100):          # Fase 6: DuckDB admite un único escritor entre procesos; reintento corto
+            try:
+                con = duckdb.connect(str(self.db_path))
+            except duckdb.IOException as ex:   # lock de archivo tomado por otro proceso
+                last = ex
+                time.sleep(0.05)
+                continue
+            try:
+                return con.execute(sql, list(params)).fetchall()
+            finally:
+                con.close()
+        raise last
 
     def upsert(self, rec: CatalogRecord) -> None:
         d = asdict(rec)
