@@ -15,6 +15,7 @@ import shutil
 from pathlib import Path
 from typing import Optional, Tuple
 
+from mod_01_ingestion.src.unified.domain.models import validate_sha256
 from mod_01_ingestion.src.unified.config import DataLayout
 from mod_01_ingestion.src.unified.lock_manager import LockManager
 from mod_01_ingestion.src.unified.models import PromotionResult
@@ -47,6 +48,7 @@ class ContentAddressedRawStore:
 
     def promote(self, staged_path: Path, sha256: str, raw_relpath: Path) -> PromotionResult:
         """Inserta el blob (si no existe) y crea la vista raw. Mantiene ``staged_path`` intacto."""
+        validate_sha256(sha256, "sha256", required=True)      # U2: sin hash válido no se toca el filesystem
         staged_path = Path(staged_path)
         blob = self.blob_path(sha256)
         raw_path = self.layout.assert_inside(self.layout.raw / raw_relpath)

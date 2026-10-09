@@ -10,6 +10,7 @@ from __future__ import annotations
 
 from typing import Callable, Dict, Iterable, List
 
+from mod_01_ingestion.src.unified.domain.enums import SourceType
 from mod_01_ingestion.src.unified.models import DiscoveryRequest, DocumentCandidate, SourceMetadata
 from mod_01_ingestion.src.unified.source_adapter import BaseSourceAdapter, register_adapter
 
@@ -27,6 +28,12 @@ DOC_SLUGS = {  # mismo mapa que CNMVClient.REQUIRED_ANNUAL_DOCS
 class CNMVAdapter(BaseSourceAdapter):
     authority = "CNMV"
     country_code = "ES"
+    # Contrato canónico (U2). Dominios demostrados por el código existente (es_cnmv_client.BASE_URL, motor v5).
+    # ALLOWED_DOMAIN_REVIEW_REQUIRED: filings.xbrl.org aparece en el código ESEF pero no se ha demostrado que sirva
+    # enlaces de este adapter, por lo que NO se incluye. Declarativo: aún no se aplica a las descargas (U3).
+    name = "CNMV"
+    allowed_domains = ("www.cnmv.es", "cnmv.es")
+    source_type = SourceType.OFFICIAL_OAM
     default_headers = {
         "Accept": "application/zip, application/xhtml+xml, application/pdf, text/html, */*",
         "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
@@ -43,7 +50,8 @@ class CNMVAdapter(BaseSourceAdapter):
                 authority=self.authority, country_code=self.country_code,
                 issuer_id=rec.get("lei") or rec["ticker"], fiscal_year=int(rec["fiscal_year"]),
                 doc_type=rec["doc_type"], source_url=rec["url"], issuer_name=rec.get("name"),
-                issuer_lei=rec.get("lei"), ticker=rec.get("ticker"), source_page_url=rec.get("page_url"))
+                issuer_lei=rec.get("lei"), ticker=rec.get("ticker"), source_page_url=rec.get("page_url"),
+                source=self.name, source_type=self.source_type)
             if self._matches(cand, request):
                 out.append(cand)
         return out[: request.limit] if request.limit else out

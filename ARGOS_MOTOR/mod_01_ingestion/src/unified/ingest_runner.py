@@ -16,12 +16,15 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 from mod_01_ingestion.src.unified.cas_store import ContentAddressedRawStore
+from mod_01_ingestion.src.unified.domain.errors import SimulatedDataRejectedError
+from mod_01_ingestion.src.unified.domain.policy import assert_manifest_allowed, assert_not_simulated
+from mod_01_ingestion.src.unified.persistence_guard import assert_persistable
 from mod_01_ingestion.src.unified.config import DataLayout
 from mod_01_ingestion.src.unified.download_service import DownloadService
 from mod_01_ingestion.src.unified.lock_manager import LockManager, LockTimeout
 from mod_01_ingestion.src.unified.models import (
     SCHEMA_VERSION, CatalogRecord, DiscoveryRequest, DocumentCandidate, ErrorClass, JobContext,
-    JobState, ManifestRecord, RunContext)
+    JobState, ManifestRecord, PipelineResult, RunContext)
 from mod_01_ingestion.src.unified.rate_limiter import DomainRateLimiter
 from mod_01_ingestion.src.unified.repositories import CatalogRepository, ManifestRepository, QuarantineService
 from mod_01_ingestion.src.unified.source_adapter import SourceAdapter
@@ -29,15 +32,7 @@ from mod_01_ingestion.src.unified.telemetry import TelemetryLogger
 from mod_01_ingestion.src.unified.validation_pipeline import ValidationPipeline
 
 
-@dataclass
-class JobOutcome:
-    job_id: str
-    document_id: str
-    state: str
-    error_class: Optional[str] = None
-    message: Optional[str] = None
-    raw_path: Optional[str] = None
-    sha256: Optional[str] = None
+JobOutcome = PipelineResult   # alias U1: mismo concepto/campos que el JobOutcome de Fase 4
 
 
 @dataclass
@@ -75,8 +70,8 @@ class UnifiedIngestRunner:
         self.validation = validation or ValidationPipeline()
         self.locks = locks or LockManager(self.layout.locks)
         self.cas = ContentAddressedRawStore(self.layout, self.locks)
-        self.manifests = manifests or ManifestRepository(self.layout)
-        self.catalog = catalog or CatalogRepository(self.layout.catalog_db)
+        self.manifests = manifests or ManifestRepository(self.layout, mode=self.run.mode)
+        self.catalog = catalog or CatalogRepository(self.layout.catalog_db, mode=self.run.mode)
         self.quarantine = QuarantineService(self.layout)
 
     # ------------------------------------------------------------------------------
@@ -101,6 +96,14 @@ class UnifiedIngestRunner:
         self._seq += 1   # job_id único y monótono dentro del run (no se reinicia entre autoridades)
         job = JobContext.for_candidate(self.run, self._seq, cand)
         self._state(job, JobState.DISCOVERED, url=cand.source_url)
+
+        # U1 guard LIVE (ADR-005): ningún candidato simulado/fixture avanza fuera de TEST/SANDBOX.
+        try:
+            assert_not_simulated(cand, self.run.mode)
+        except SimulatedDataRejectedError as ex:
+            self._state(job, JobState.FAILED, error_class=ErrorClass.VALIDATION_REJECTED.value, message=str(ex))
+            return JobOutcome(job.job_id, job.document_id, JobState.FAILED.value,
+                              ErrorClass.VALIDATION_REJECTED.value, str(ex))
 
         # Idempotencia: manifiesto ya comprometido y raw íntegro => no se vuelve a descargar.
         prior = self.manifests.get(cand.authority, cand.fiscal_year, cand.document_id)
@@ -148,6 +151,17 @@ class UnifiedIngestRunner:
             return JobOutcome(job.job_id, job.document_id, JobState.QUARANTINED.value, q.error_class,
                               "; ".join(val.reasons), sha256=dl.sha256)
 
+        # U2: la política de persistencia se evalúa ANTES de promover raw o enlazar el CAS.
+        try:
+            assert_persistable({"document_id": job.document_id, "doc_type": cand.doc_type, "sha256": dl.sha256,
+                                "status": "RAW_VALIDATED", "extra": cand.extra,
+                                "source_type": cand.source_type}, self.run.mode, self.layout.root)
+        except SimulatedDataRejectedError as ex:
+            self._state(job, JobState.FAILED, error_class=ErrorClass.VALIDATION_REJECTED.value, message=str(ex))
+            Path(dl.staged_path).unlink(missing_ok=True)
+            return JobOutcome(job.job_id, job.document_id, JobState.FAILED.value,
+                              ErrorClass.VALIDATION_REJECTED.value, str(ex))
+
         self._state(job, JobState.PROMOTING)
         rel = Path(f"{cand.country_code}_{cand.authority}") / str(cand.fiscal_year) / _safe(cand.issuer_id) / meta.file_name
         promo = self.cas.promote(Path(dl.staged_path), dl.sha256, rel)
@@ -167,6 +181,7 @@ class UnifiedIngestRunner:
                 source_page_url=cand.source_page_url, resumed=dl.resumed, retries_taken=dl.retries_taken,
                 deduplicated=promo.deduplicated)
             try:
+                assert_manifest_allowed(record, self.run.mode)
                 pending = self.manifests.stage(record)
             except Exception as ex:
                 raise _PhaseError(ErrorClass.MANIFEST_FAILED, ex)

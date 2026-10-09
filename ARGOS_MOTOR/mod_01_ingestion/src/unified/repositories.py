@@ -12,11 +12,14 @@ from __future__ import annotations
 import json
 import os
 import shutil
+import warnings
 from dataclasses import asdict
 from pathlib import Path
 from typing import Any, Dict, Iterable, Optional
 
 from mod_01_ingestion.src.unified.config import DataLayout
+from mod_01_ingestion.src.unified.domain.enums import ExecutionMode
+from mod_01_ingestion.src.unified.persistence_guard import assert_persistable
 from mod_01_ingestion.src.unified.models import (
     CatalogRecord, JobContext, ManifestRecord, QuarantineRecord, SCHEMA_VERSION)
 
@@ -31,6 +34,20 @@ class ManifestValidationError(Exception):
     pass
 
 
+_MODE_UNSET = object()
+
+
+def _resolve_mode(mode, owner: str) -> ExecutionMode:
+    """U2: el modo debe inyectarse. Transición explícita para callers de Fases 4-6: si se omite se aplica el
+    valor MÁS restrictivo (LIVE) y se avisa; nunca se asume SANDBOX/TEST."""
+    if mode is _MODE_UNSET:
+        warnings.warn(f"{owner} creado sin ExecutionMode explícito: se aplica LIVE (el más restrictivo). "
+                      "Pase mode=ExecutionMode.<...> (obligatorio en una versión futura).",
+                      DeprecationWarning, stacklevel=3)
+        return ExecutionMode.LIVE
+    return ExecutionMode(mode)
+
+
 def validate_manifest_dict(data: Dict[str, Any]) -> None:
     missing = [k for k in _MANIFEST_MANDATORY if data.get(k) in (None, "")]
     if missing:
@@ -40,8 +57,10 @@ def validate_manifest_dict(data: Dict[str, Any]) -> None:
 
 
 class ManifestRepository:
-    def __init__(self, layout: DataLayout):
+    def __init__(self, layout: DataLayout, mode=_MODE_UNSET, authorized_sandbox_roots=()):
         self.layout = layout
+        self.mode = _resolve_mode(mode, "ManifestRepository")
+        self.authorized_sandbox_roots = tuple(authorized_sandbox_roots)
 
     def path_for(self, authority: str, fiscal_year: int, document_id: str) -> Path:
         return self.layout.manifests / authority / str(fiscal_year) / f"{document_id}.json"
@@ -54,6 +73,9 @@ class ManifestRepository:
             return json.load(f)
 
     def stage(self, rec: ManifestRecord) -> Path:
+        # U2: la política se valida ANTES de crear ningún fichero (ADR-005).
+        assert_persistable(rec, self.mode, self.layout.manifests,
+                           authorized_sandbox_roots=self.authorized_sandbox_roots)
         data = rec.to_dict()
         validate_manifest_dict(data)
         final = self.path_for(rec.authority, rec.fiscal_year, rec.document_id)
@@ -67,6 +89,10 @@ class ManifestRepository:
 
     def commit(self, pending: Path) -> Path:
         pending = Path(pending)
+        # U2: un .pending forjado o alterado tras el stage no puede promocionarse a manifiesto definitivo.
+        with open(pending, "r", encoding="utf-8") as f:
+            assert_persistable(json.load(f), self.mode, self.layout.manifests,
+                               authorized_sandbox_roots=self.authorized_sandbox_roots)
         final = pending.with_name(pending.name[:-len(".pending")])
         os.replace(pending, final)
         return final
@@ -84,8 +110,10 @@ class CatalogRepository:
         sha256 VARCHAR, raw_path VARCHAR, manifest_path VARCHAR, status VARCHAR,
         size_bytes BIGINT, cataloged_at VARCHAR)"""
 
-    def __init__(self, db_path: Path):
+    def __init__(self, db_path: Path, mode=_MODE_UNSET, authorized_sandbox_roots=()):
         self.db_path = Path(db_path)
+        self.mode = _resolve_mode(mode, "CatalogRepository")
+        self.authorized_sandbox_roots = tuple(authorized_sandbox_roots)
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         self._exec(self.DDL)
 
@@ -107,6 +135,8 @@ class CatalogRepository:
         raise last
 
     def upsert(self, rec: CatalogRecord) -> None:
+        # U2: validar antes de abrir DuckDB.
+        assert_persistable(rec, self.mode, self.db_path, authorized_sandbox_roots=self.authorized_sandbox_roots)
         d = asdict(rec)
         cols = list(d.keys())
         self._exec(

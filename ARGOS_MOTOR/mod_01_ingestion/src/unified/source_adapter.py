@@ -8,20 +8,19 @@ HTTP de bajo nivel, hash, promoción, manifiesto, cuarentena o telemetría en lo
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Callable, Dict, List, Optional, Protocol, runtime_checkable
+from typing import Callable, Dict, List, Optional
 from urllib.parse import urlparse, unquote
 
+from mod_01_ingestion.src.unified.domain.enums import SourceType
+from mod_01_ingestion.src.unified.domain.protocols import SourceAdapter  # noqa: F401  (contrato CANÓNICO, U2)
 from mod_01_ingestion.src.unified.models import (
     DiscoveryRequest, DocumentCandidate, DownloadRequest, SourceMetadata)
 
-
-@runtime_checkable
-class SourceAdapter(Protocol):
-    authority: str
-    country_code: str
-
-    def discover(self, request: DiscoveryRequest) -> List[DocumentCandidate]: ...
-    def fetch_metadata(self, candidate: DocumentCandidate) -> SourceMetadata: ...
+# DEPRECADO (U2): el Protocol ``SourceAdapter`` de Fase 4 (``authority``/``country_code``, ``discover`` -> List)
+# se sustituye por el canónico ``unified.domain.protocols.SourceAdapter`` (``name``/``allowed_domains``,
+# ``discover`` -> Iterable). Este nombre es un REEXPORT para no romper imports. Diferencia semántica: el v1
+# exigía ``authority``/``country_code``; el runner nunca los leía del adapter (usa los del candidato), así que
+# basta el contrato v2. ``BaseSourceAdapter`` conserva ``authority``/``country_code`` por compatibilidad.
 
 
 class BaseSourceAdapter:
@@ -30,6 +29,10 @@ class BaseSourceAdapter:
     authority = "UNKNOWN"
     country_code = "XX"
     default_headers: Dict[str, str] = {}
+    # Contrato canónico (U2). Cada adapter concreto DEBE declararlos; los valores por defecto son inválidos a propósito.
+    name: str = ""
+    allowed_domains: tuple = ()
+    source_type: Optional[SourceType] = None
 
     @staticmethod
     def extension_from_url(url: str) -> str:

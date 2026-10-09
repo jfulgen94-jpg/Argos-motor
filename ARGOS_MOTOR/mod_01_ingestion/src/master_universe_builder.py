@@ -9,7 +9,9 @@ estrictamente SOCIMIs pasivas y fondos de inversión).
 
 import sys
 import os
+import copy
 import json
+import re
 from pathlib import Path
 from datetime import datetime, timezone
 from typing import Dict, List, Any, Optional
@@ -2064,10 +2066,111 @@ def build_master_universe() -> Dict[str, Any]:
     return master_payload
 
 
+# --- U2: política SOCIMI (las SOCIMIs pertenecen al universo operativo) ---------------------------
+_SOCIMI_SUFFIX_RE = re.compile(r"_?SOCIMI(_EXCLUDED)?$")
+_LEGAL_FORM_RE = re.compile(r"\b(S\.?A\.?|S\.?L\.?|SOCIMI)\b")
+
+
+def canonical_entity_key(company: Dict[str, Any]) -> str:
+    """Identidad canónica de una entidad del catálogo: el ticker (clave única del catálogo), nunca el nombre.
+    Los identificadores secundarios (CIF/LEI) se auditan con ``find_identity_conflicts``."""
+    return str(company["ticker"]).strip().upper()
+
+
+def _norm_id(value: Optional[str]) -> str:
+    return re.sub(r"[^A-Z0-9]", "", str(value or "").upper())
+
+
+def _norm_name(value: Optional[str]) -> str:
+    return re.sub(r"[^A-Z0-9]", "", _LEGAL_FORM_RE.sub("", str(value or "").upper()))
+
+
+def summarize_universe(companies: Dict[str, Dict[str, Any]]) -> Dict[str, Any]:
+    """Resumen DERIVADO de los registros: entidades únicas por clave canónica, independiente del orden."""
+    seen: Dict[str, Dict[str, Any]] = {}
+    for c in companies.values():
+        seen.setdefault(canonical_entity_key(c), c)
+    socimis = sorted(k for k, c in seen.items() if c.get("is_socimi"))
+    by_segment: Dict[str, int] = {}
+    for c in seen.values():
+        by_segment[c["segment"]] = by_segment.get(c["segment"], 0) + 1
+    return {"total_entities": len(seen), "socimis_count": len(socimis), "non_socimis_count": len(seen) - len(socimis),
+            "socimi_tickers": socimis, "by_segment": dict(sorted(by_segment.items()))}
+
+
+def find_identity_conflicts(companies: Dict[str, Dict[str, Any]]) -> Dict[str, Dict[str, List[str]]]:
+    """Identificadores secundarios (CIF/LEI) compartidos por más de un ticker. Solo informa; no corrige."""
+    out: Dict[str, Dict[str, List[str]]] = {"cif_nif": {}, "lei": {}}
+    for field_name in out:
+        groups: Dict[str, List[str]] = {}
+        for c in companies.values():
+            v = _norm_id(c.get(field_name))
+            if v:
+                groups.setdefault(v, []).append(canonical_entity_key(c))
+        out[field_name] = {k: sorted(v) for k, v in sorted(groups.items()) if len(v) > 1}
+    return out
+
+
+def find_name_collisions(companies: Dict[str, Dict[str, Any]]) -> Dict[str, List[str]]:
+    """Tickers distintos con la misma razón social normalizada: posibles duplicados a revisar (no se fusionan)."""
+    groups: Dict[str, List[str]] = {}
+    for c in companies.values():
+        n = _norm_name(c.get("name_legal"))
+        if n:
+            groups.setdefault(n, []).append(canonical_entity_key(c))
+    return {k: sorted(v) for k, v in sorted(groups.items()) if len(v) > 1}
+
+
+def _normalize_gap_candidate(cand: Dict[str, Any]) -> Dict[str, Any]:
+    """Un candidato SOCIMI conserva su condición como atributo ``is_socimi``; el sufijo legado ``_EXCLUDED`` se descarta."""
+    seg = cand["segment"]
+    is_socimi = bool(cand.get("is_socimi")) or "SOCIMI" in seg.upper() or "SOCIMI" in cand["name_legal"].upper()
+    base = _SOCIMI_SUFFIX_RE.sub("", seg) or seg
+    if is_socimi and base == "BME_GROWTH":
+        base = "BME_GROWTH_SOCIMI"      # convención del catálogo v4.0.0
+    return {**cand, "segment": base, "is_socimi": is_socimi}
+
+
+def _breakdown_key(segment: str, keys) -> str:
+    if segment in keys:
+        return segment
+    if segment == "BME_GROWTH" and "BME_GROWTH_EMPRESA" in keys:
+        return "BME_GROWTH_EMPRESA"
+    return segment
+
+
+def _derived_fields(payload: Dict[str, Any]) -> Dict[str, Any]:
+    """Recalcula campos derivados SIN introducir claves que el catálogo de entrada no tuviera."""
+    companies = payload["companies"]
+    stats = summarize_universe(companies)
+    out = dict(payload)
+    out["total_entities"] = stats["total_entities"]
+    if "segments_breakdown" in payload:
+        keys = set(payload["segments_breakdown"])
+        counts = {k: 0 for k in payload["segments_breakdown"]}
+        for c in {canonical_entity_key(c): c for c in companies.values()}.values():
+            k = _breakdown_key(c["segment"], keys)
+            counts[k] = counts.get(k, 0) + 1
+        out["segments_breakdown"] = counts
+    if "socimis_count" in payload:
+        out["socimis_count"] = stats["socimis_count"]
+    if isinstance(payload.get("socimis_summary"), dict):
+        out["socimis_summary"] = {**payload["socimis_summary"], "total_socimis_active": stats["socimis_count"]}
+    return out
+
+
+def _semantic(payload: Dict[str, Any]) -> str:
+    return json.dumps({k: v for k, v in payload.items() if k not in ("version", "generated_at")},
+                      sort_keys=True, ensure_ascii=False)
+
+
 def fill_universe_gaps(target_segment: Optional[str] = None) -> Dict[str, Any]:
     """
-    Extiende el catálogo maestro completando de forma incremental e idempotente
-    los huecos en Mercado Continuo y BME Growth con verificación estricta GLEIF/CIF.
+    Extiende el catálogo maestro completando huecos con verificación estricta GLEIF/CIF.
+
+    Contrato (U2): idempotente — ``fill(fill(x)) == fill(x)``. Solo escribe (y sube versión) cuando el contenido
+    semántico cambia; no muta el catálogo de entrada; las SOCIMIs pertenecen al universo operativo (se conserva
+    ``is_socimi``); los campos derivados (totales, desglose, recuento de SOCIMIs) se calculan de los registros.
     """
     if not MASTER_UNIVERSE_PATH.exists():
         build_master_universe()
@@ -2075,51 +2178,37 @@ def fill_universe_gaps(target_segment: Optional[str] = None) -> Dict[str, Any]:
     with open(MASTER_UNIVERSE_PATH, "r", encoding="utf-8") as f:
         current_data = json.load(f)
 
-    # 1. Crear backup versionado en config/history/
-    history_dir = Path("config/history")
-    history_dir.mkdir(parents=True, exist_ok=True)
     prev_version = current_data.get("version", "3.0.0")
-    ts_str = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
-    history_backup_path = history_dir / f"master_universe_es_v{prev_version}_{ts_str}.json"
-    with open(history_backup_path, "w", encoding="utf-8") as f:
-        json.dump(current_data, f, indent=2, ensure_ascii=False)
-    print(f"✓ Backup de versión previa guardado en: {history_backup_path}")
+    companies = copy.deepcopy(current_data.get("companies", {}))
+    pending_review: List[Dict[str, Any]] = []
+    duplicates: List[Dict[str, Any]] = []
+    added_entities: List[Dict[str, Any]] = []
 
-    companies = current_data.get("companies", {})
-    pending_review = []
-    excluded_socimis = []
-    added_entities = []
+    print(f"\nINICIANDO CIERRE DE HUECOS (GAP-FILLING) [Segmento: {target_segment or 'TODOS'}]")
+    print(f"  - Entidades actuales: {len(companies)}")
 
-    print(f"\n🔍 INICIANDO CIERRE DE HUECOS (GAP-FILLING) [Segmento: {target_segment or 'TODOS'}]")
-    print(f"  • Entidades actuales: {len(companies)}")
-
-    for cand in GAP_CANDIDATES:
+    for raw_cand in GAP_CANDIDATES:
+        cand = _normalize_gap_candidate(raw_cand)
         cand_ticker = cand["ticker"].upper()
         cand_seg = cand["segment"]
 
-        # Filtrar si se especificó un segmento objetivo
-        if target_segment and target_segment.upper() not in (cand_seg.upper(), "ALL"):
+        if target_segment and target_segment.upper() not in (cand_seg.upper(), raw_cand["segment"].upper(), "ALL"):
             continue
 
-        # Criterio estricto de exclusión de SOCIMIs
-        if cand.get("is_socimi") or "SOCIMI" in cand_seg.upper() or "SOCIMI" in cand["name_legal"].upper():
-            excluded_socimis.append({
-                "ticker": cand_ticker,
-                "name_legal": cand["name_legal"],
-                "cif_nif": cand["cif_nif"],
-                "lei": cand.get("lei"),
-                "reason": "Excluida por régimen especial SOCIMI (Art. 9 Ley 11/2009)"
-            })
+        if cand_ticker in companies:     # ya existe: se conserva la versión existente (idempotente)
             continue
 
-        # Si ya existe en el catálogo oficial, conservar la versión existente (idempotente)
-        if cand_ticker in companies:
-            continue
-
-        # Verificación estricta de LEI y CIF
         cif = cand.get("cif_nif", "")
         lei = cand.get("lei")
         name_legal = cand["name_legal"]
+
+        # Identidad: mismo CIF y misma razón social bajo otro ticker => es la misma entidad, no se duplica.
+        twin = next((k for k, c in companies.items()
+                     if _norm_id(cif) and _norm_id(c.get("cif_nif")) == _norm_id(cif)
+                     and _norm_name(c.get("name_legal")) == _norm_name(name_legal)), None)
+        if twin:
+            duplicates.append({"ticker": cand_ticker, "duplicate_of": twin, "name_legal": name_legal})
+            continue
 
         score = 1.0 if (cif and len(cif) >= 8 and lei) else 0.80
 
@@ -2131,15 +2220,14 @@ def fill_universe_gaps(target_segment: Optional[str] = None) -> Dict[str, Any]:
                 "name_legal": name_legal,
                 "segment": cand_seg,
                 "sector": cand.get("sector", "General"),
-                "is_socimi": False,
+                "is_socimi": cand["is_socimi"],
                 "fiscal_year_end": cand.get("fiscal_year_end", "12-31"),
                 "historical_name_changes": cand.get("historical_name_changes", []),
                 "resolution_score": round(score, 2),
-                "resolved_at": datetime.now(timezone.utc).isoformat()
             }
             companies[cand_ticker] = new_entry
             added_entities.append(new_entry)
-            print(f"  [+] Añadida ({cand_seg}): {cand_ticker} - {name_legal} (LEI: {lei})")
+            print(f"  [+] Anadida ({cand_seg}{', SOCIMI' if cand['is_socimi'] else ''}): {cand_ticker} - {name_legal}")
         else:
             pending_review.append({
                 "ticker": cand_ticker,
@@ -2151,87 +2239,75 @@ def fill_universe_gaps(target_segment: Optional[str] = None) -> Dict[str, Any]:
             })
             print(f"  [?] Enviada a PENDING_REVIEW: {cand_ticker} - {name_legal} (Score: {score})")
 
-    # 2. Incrementar versión semver
-    major, minor, patch = prev_version.split(".")
-    new_version = f"{major}.{int(minor)+1}.0"
+    candidate_payload = _derived_fields({**copy.deepcopy(current_data), "companies": companies})
+    catalog_changed = _semantic(candidate_payload) != _semantic(current_data)
 
-    updated_payload = {
-        "version": new_version,
-        "jurisdiction": "ES",
-        "supervisor": "CNMV / BME",
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "total_entities": len(companies),
-        "segments_breakdown": {
-            "IBEX35": sum(1 for c in companies.values() if c["segment"] == "IBEX35"),
-            "MERCADO_CONTINUO": sum(1 for c in companies.values() if c["segment"] == "MERCADO_CONTINUO"),
-            "BME_GROWTH": sum(1 for c in companies.values() if c["segment"] == "BME_GROWTH")
-        },
-        "socimis_count": sum(1 for c in companies.values() if c["is_socimi"]),
-        "companies": companies
-    }
+    if catalog_changed:
+        major, minor, patch = prev_version.split(".")
+        updated_payload = {**candidate_payload, "version": f"{major}.{int(minor)+1}.0",
+                           "generated_at": datetime.now(timezone.utc).isoformat()}
+        history_dir = Path("config/history")
+        history_dir.mkdir(parents=True, exist_ok=True)
+        ts_str = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+        history_backup_path = history_dir / f"master_universe_es_v{prev_version}_{ts_str}.json"
+        with open(history_backup_path, "w", encoding="utf-8") as f:
+            json.dump(current_data, f, indent=2, ensure_ascii=False)
+        print(f"  - Backup de versión previa guardado en: {history_backup_path}")
+        with open(MASTER_UNIVERSE_PATH, "w", encoding="utf-8") as f:
+            json.dump(updated_payload, f, indent=2, ensure_ascii=False)
+    else:
+        updated_payload = current_data      # punto fijo: no se reescribe nada
 
-    # Guardar catálogo actualizado
-    with open(MASTER_UNIVERSE_PATH, "w", encoding="utf-8") as f:
-        json.dump(updated_payload, f, indent=2, ensure_ascii=False)
-
-    # Guardar PENDING_REVIEW
+    # PENDING_REVIEW: solo se reescribe si cambia su contenido semántico.
     pending_path = Path("config/master_universe_es_PENDING_REVIEW.json")
-    with open(pending_path, "w", encoding="utf-8") as f:
-        json.dump({
-            "generated_at": datetime.now(timezone.utc).isoformat(),
-            "total_pending": len(pending_review),
-            "pending_entities": pending_review
-        }, f, indent=2, ensure_ascii=False)
+    prev_pending = None
+    if pending_path.exists():
+        with open(pending_path, "r", encoding="utf-8") as f:
+            prev_pending = json.load(f).get("pending_entities")
+    pending_changed = prev_pending != pending_review
+    if pending_changed:
+        with open(pending_path, "w", encoding="utf-8") as f:
+            json.dump({
+                "generated_at": datetime.now(timezone.utc).isoformat(),
+                "total_pending": len(pending_review),
+                "pending_entities": pending_review
+            }, f, indent=2, ensure_ascii=False)
 
-    # Guardar EXCLUDED_SOCIMIS
-    socimis_path = Path("config/master_universe_es_EXCLUDED_SOCIMIS.json")
-    with open(socimis_path, "w", encoding="utf-8") as f:
-        json.dump({
-            "generated_at": datetime.now(timezone.utc).isoformat(),
-            "total_excluded": len(excluded_socimis),
-            "excluded_socimis": excluded_socimis
-        }, f, indent=2, ensure_ascii=False)
+    # Informe: solo si hubo algún cambio (evita acumular informes idénticos en cada ejecución).
+    report_path = None
+    if catalog_changed or pending_changed:
+        stats = summarize_universe(updated_payload["companies"])
+        report_ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+        report_path = Path(f"UNIVERSE_COMPLETION_REPORT_{report_ts}.md")
+        with open(report_path, "w", encoding="utf-8") as f:
+            f.write("# INFORME DE COMPLETACIÓN DEL UNIVERSO ESPAÑOL (STATER MOTOR ARGOS)\n")
+            f.write(f"**Fecha**: {datetime.now(timezone.utc).isoformat()}\n")
+            f.write(f"**Versión Catálogo**: `{updated_payload.get('version')}` (anterior: `{prev_version}`)\n\n")
+            f.write("## 1. COBERTURA POR SEGMENTO (SOCIMIs incluidas en el universo operativo)\n\n")
+            f.write("| Segmento | Entidades |\n|---|---|\n")
+            for seg, n in stats["by_segment"].items():
+                f.write(f"| {seg} | {n} |\n")
+            f.write(f"| **TOTAL** | **{stats['total_entities']}** (SOCIMIs: {stats['socimis_count']}, "
+                    f"no SOCIMIs: {stats['non_socimis_count']}) |\n\n")
+            f.write("## 2. ENTIDADES AÑADIDAS\n\n| Ticker | Razón Social | Segmento | SOCIMI | CIF | LEI | Score |\n|---|---|---|---|---|---|---|\n")
+            for e in added_entities:
+                f.write(f"| `{e['ticker']}` | {e['name_legal']} | `{e['segment']}` | {e['is_socimi']} | `{e['cif_nif']}` | `{e['lei']}` | {e['resolution_score']} |\n")
+            if pending_review:
+                f.write("\n## 3. ENTIDADES EN PENDING_REVIEW (< 0.90)\n\n| Ticker | Razón Social | Segmento | Motivo |\n|---|---|---|---|\n")
+                for p in pending_review:
+                    f.write(f"| `{p['ticker']}` | {p['name_legal']} | `{p['segment']}` | {p['reason']} |\n")
+            if duplicates:
+                f.write("\n## 4. CANDIDATOS DUPLICADOS (misma entidad bajo otro ticker)\n\n| Ticker | Duplicado de |\n|---|---|\n")
+                for d in duplicates:
+                    f.write(f"| `{d['ticker']}` | `{d['duplicate_of']}` |\n")
 
-    # 3. Generar Reporte de Completación Markdown
-    report_ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
-    report_path = Path(f"UNIVERSE_COMPLETION_REPORT_{report_ts}.md")
-    with open(report_path, "w", encoding="utf-8") as f:
-        f.write(f"# INFORME DE COMPLETACIÓN DEL UNIVERSO ESPAÑOL (STATER MOTOR ARGOS)\n")
-        f.write(f"**Fecha**: {datetime.now(timezone.utc).isoformat()}\n")
-        f.write(f"**Versión Catálogo**: `{new_version}` (anterior: `{prev_version}`)\n\n")
-        f.write(f"## 1. COMPARATIVA DE COBERTURA POR SEGMENTO\n\n")
-        f.write(f"| Segmento | Antes | Añadidas | Total Actual | Estado |\n|---|---|---|---|---|\n")
-        f.write(f"| **IBEX 35** | {current_data['segments_breakdown']['IBEX35']} | 0 | {updated_payload['segments_breakdown']['IBEX35']} | 🟢 Completo |\n")
-        f.write(f"| **Mercado Continuo** | {current_data['segments_breakdown']['MERCADO_CONTINUO']} | {sum(1 for e in added_entities if e['segment'] == 'MERCADO_CONTINUO')} | {updated_payload['segments_breakdown']['MERCADO_CONTINUO']} | 🟢 Verificado |\n")
-        f.write(f"| **BME Growth** | {current_data['segments_breakdown']['BME_GROWTH']} | {sum(1 for e in added_entities if e['segment'] == 'BME_GROWTH')} | {updated_payload['segments_breakdown']['BME_GROWTH']} | 🟢 Verificado |\n")
-        f.write(f"| **TOTAL UNIVERSO OPERATIVO** | **{current_data['total_entities']}** | **{len(added_entities)}** | **{updated_payload['total_entities']}** | 🟢 **100% Auditable** |\n\n")
-        f.write(f"*(Nota: `socimis_count` en universo operativo: **0**, total SOCIMIs excluidas registradas: **{len(excluded_socimis)}**)*\n\n")
-        
-        f.write(f"## 2. ENTIDADES AÑADIDAS CON VERIFICACIÓN COMPLETA (LEI + CIF)\n\n")
-        f.write(f"| Ticker | Razón Social | Segmento | Sector | CIF | LEI | Score |\n|---|---|---|---|---|---|---|\n")
-        for e in added_entities:
-            f.write(f"| `{e['ticker']}` | {e['name_legal']} | `{e['segment']}` | {e['sector']} | `{e['cif_nif']}` | `{e['lei']}` | {e['resolution_score']} |\n")
-
-        if pending_review:
-            f.write(f"\n## 3. ENTIDADES EN PENDING_REVIEW (< 0.90)\n\n")
-            f.write(f"| Ticker | Razón Social | Segmento | Motivo |\n|---|---|---|---|\n")
-            for p in pending_review:
-                f.write(f"| `{p['ticker']}` | {p['name_legal']} | `{p['segment']}` | {p['reason']} |\n")
-
-        if excluded_socimis:
-            f.write(f"\n## 4. SOCIMIS EXCLUIDAS DEL CONTEO OPERATIVO\n\n")
-            f.write(f"| Ticker | Razón Social | CIF | Motivo |\n|---|---|---|---|\n")
-            for s in excluded_socimis:
-                f.write(f"| `{s['ticker']}` | {s['name_legal']} | `{s['cif_nif']}` | {s['reason']} |\n")
-
-    print(f"\n✅ GAP-FILLING COMPLETADO:")
-    print(f"  • Total entidades activas: {updated_payload['total_entities']}")
-    print(f"  • Mercado Continuo: {updated_payload['segments_breakdown']['MERCADO_CONTINUO']}")
-    print(f"  • BME Growth: {updated_payload['segments_breakdown']['BME_GROWTH']}")
-    print(f"  • Nuevas añadidas: {len(added_entities)}")
-    print(f"  • En PENDING_REVIEW: {len(pending_review)}")
-    print(f"  • SOCIMIs excluidas: {len(excluded_socimis)}")
-    print(f"  • Reporte generado: {report_path}")
+    stats = summarize_universe(updated_payload["companies"])
+    print("\nGAP-FILLING COMPLETADO:")
+    print(f"  - Total entidades activas: {stats['total_entities']} (SOCIMIs: {stats['socimis_count']})")
+    print(f"  - Nuevas añadidas: {len(added_entities)}")
+    print(f"  - En PENDING_REVIEW: {len(pending_review)}")
+    print(f"  - Duplicadas descartadas: {len(duplicates)}")
+    print(f"  - Catálogo modificado: {catalog_changed}; informe: {report_path}")
 
     return updated_payload
 
