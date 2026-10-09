@@ -40,41 +40,11 @@ class BaFinClient:
         doc_type: str = "ESEF"
     ) -> Dict[str, Any]:
         """
-        Descarga el informe oficial del Unternehmensregister / BaFin alemán con sellado SHA-256.
+        DEPRECATED / LEGACY_BRIDGE (Fase 4): delega en el núcleo unificado
+        (``mod_01_ingestion.src.unified``). Se conserva la firma y el dict de retorno.
+        Ya no descarga con lógica propia (antes: sin .part ni validación, DEFECT-05).
         """
-        target_dir = self.download_dir / str(fiscal_year) / entity_lei
-        target_dir.mkdir(parents=True, exist_ok=True)
-
-        url_filename = download_url.split("/")[-1].split("?")[0]
-        if not url_filename:
-            extension = ".zip" if doc_type == "ESEF" else ".pdf"
-            url_filename = f"bafin_{entity_lei}_{fiscal_year}_{doc_type.lower()}{extension}"
-
-        target_path = target_dir / url_filename
-
-        with httpx.Client(headers=self.headers, timeout=120.0, follow_redirects=True) as client:
-            with client.stream("GET", download_url) as r:
-                r.raise_for_status()
-                with open(target_path, "wb") as f:
-                    for chunk in r.iter_bytes(chunk_size=8192):
-                        f.write(chunk)
-
-        sha256_digest = seal_file(target_path)
-        file_size = target_path.stat().st_size
-
-        return {
-            "doc_id": self.build_doc_id(entity_lei, fiscal_year, doc_type),
-            "source": "BAFIN",
-            "country_code": self.COUNTRY_CODE,
-            "issuer_lei": entity_lei,
-            "issuer_isin": None,
-            "ticker": ticker,
-            "company_name": company_name,
-            "doc_type": doc_type,
-            "fiscal_year": fiscal_year,
-            "download_url": download_url,
-            "file_path": str(target_path.as_posix()),
-            "file_size_bytes": file_size,
-            "sha256_hash": sha256_digest,
-            "status": "RAW",
-        }
+        from mod_01_ingestion.src.unified.legacy_bridge import bafin_download_filing_via_unified
+        return bafin_download_filing_via_unified(
+            self.download_dir, download_url, entity_lei, fiscal_year, ticker=ticker,
+            company_name=company_name, doc_type=doc_type)

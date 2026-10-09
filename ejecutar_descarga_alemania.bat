@@ -11,6 +11,10 @@ echo Horizonte Temporal: 2012 - 2025 (Corte 2012 Institucional)
 echo Destino Canónico: D:\ARGOS_DATA\raw\DE_BAFIN
 echo =========================================================================
 echo.
+echo [DEPRECATED][LEGACY_BRIDGE][KEEP_UNTIL_MIGRATION_COMPLETE] Este lanzador usa el descargador Track A (DE/BAFIN).
+echo Ruta unificada: ejecutar_ingesta_unificada.bat ^<AUTORIDAD^> --years ... --provider ... (ver audits\FASE4_UNIFICACION_2026-10-09)
+echo El descubrimiento (crawling) de este pais aun no esta migrado; por eso sigue activo. No escribe via .part.
+echo.
 
 python -u ARGOS_MOTOR\descarga\de_germany\downloader_bafin.py %*
 

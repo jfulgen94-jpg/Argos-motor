@@ -5,6 +5,7 @@ Strictly distinguishes complete audited filings from cover pages, viewer pages,
 synthetic templates (fixtures), error responses, and partial resources.
 """
 import re
+import zlib
 import zipfile
 from pathlib import Path
 from typing import Dict, Any, List, Optional, Tuple
@@ -422,4 +423,14 @@ class DocumentCompletenessValidator:
                 "should_quarantine": True,
                 "reasons": [f"Archivo no es un ZIP válido o está dañado: {str(bz)}"],
                 "metrics": {}
+            }
+        except (zlib.error, EOFError, OSError, RuntimeError, NotImplementedError, ValueError) as ex:
+            # FASE4 / DEFECT-01: testzip() sobre datos comprimidos corruptos lanza zlib.error
+            # (no BadZipFile); se normaliza a ZIP corrupto en vez de colapsar el worker.
+            return {
+                "completeness_status": CompletenessStatus.INVALID_FORMAT.value,
+                "is_complete": False,
+                "should_quarantine": True,
+                "reasons": [f"ZIP corrupto (error de descompresión {type(ex).__name__}): {str(ex)}"],
+                "metrics": {"error_type": type(ex).__name__}
             }
