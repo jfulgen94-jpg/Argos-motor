@@ -120,6 +120,19 @@ class DownloadService:
                             status = resp.status_code
                             final_url = str(resp.url)
                             mime = resp.headers.get("content-type", "application/octet-stream").split(";")[0].strip()
+                            self._emit("http_response", job, url=str(resp.url), status=status, mime=mime,
+                                       content_length=resp.headers.get("content-length"),
+                                       redirect_chain=[str(h.url) for h in resp.history])
+                            if req.allowed_domains is not None:
+                                hosts = {(h.url.host or "").lower() for h in resp.history} | {(resp.url.host or "").lower()}
+                                bad = sorted(h for h in hosts if not _host_allowed(h, req.allowed_domains))
+                                if bad:
+                                    raise DownloadFailure(f"Redirección/host no aprobado: {bad}",
+                                                          ErrorClass.REDIRECT_NOT_ALLOWED, status)
+                            clen = resp.headers.get("content-length")
+                            if req.max_bytes and clen and clen.isdigit() and int(clen) > req.max_bytes:
+                                raise DownloadFailure(f"content-length {clen} > max_bytes {req.max_bytes}",
+                                                      ErrorClass.SIZE_EXCEEDED, status)
                             klass = classify_status(status)
                             if klass is not None:
                                 retry_after = resp.headers.get("retry-after")
@@ -135,9 +148,14 @@ class DownloadService:
                                 for block in resp.iter_bytes(chunk_size=self.chunk_size):
                                     if block:
                                         f.write(block)
+                                        if req.max_bytes and f.tell() > req.max_bytes:
+                                            raise DownloadFailure(f"descarga supera max_bytes {req.max_bytes}",
+                                                                  ErrorClass.SIZE_EXCEEDED, status)
                                 f.flush()
                                 os.fsync(f.fileno())          # DEFECT-03
                     break
+                except DownloadFailure:
+                    raise
                 except _Retryable as r:
                     last_error = DownloadFailure(
                         f"HTTP {r.status} en {req.url}", r.klass, r.status)
@@ -187,6 +205,8 @@ class DownloadService:
                        retries=attempt, resumed=resumed)
             return res
         except DownloadFailure as ex:
+            if ex.error_class in (ErrorClass.SIZE_EXCEEDED, ErrorClass.REDIRECT_NOT_ALLOWED):
+                part_path.unlink(missing_ok=True)
             res = DownloadResult(
                 ok=False, http_status=ex.status_code, final_url=final_url, retries_taken=attempt,
                 error_class=ex.error_class.value, error_message=str(ex),
@@ -197,6 +217,11 @@ class DownloadService:
         finally:
             if owns_client:
                 client.close()
+
+
+def _host_allowed(host: str, allowed) -> bool:
+    host = host.lower()
+    return any(host == a.lower() or host.endswith("." + a.lower()) for a in allowed)
 
 
 class _Retryable(Exception):

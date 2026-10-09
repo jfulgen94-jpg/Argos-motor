@@ -62,6 +62,8 @@ class ErrorClass(str, Enum):
     MANIFEST_FAILED = "MANIFEST_FAILED"
     CATALOG_FAILED = "CATALOG_FAILED"
     PATH_VIOLATION = "PATH_VIOLATION"
+    REDIRECT_NOT_ALLOWED = "REDIRECT_NOT_ALLOWED"   # Fase 5: dominio fuera de la lista aprobada
+    SIZE_EXCEEDED = "SIZE_EXCEEDED"                 # Fase 5: supera max_bytes aprobado
     UNKNOWN = "UNKNOWN"
 
 
@@ -143,6 +145,8 @@ class DownloadRequest(_Serializable):
     expected_sha256: Optional[str] = None
     headers: Dict[str, str] = field(default_factory=dict)
     allow_resume: bool = True
+    max_bytes: Optional[int] = None                      # Fase 5: tope de tamaño aprobado
+    allowed_domains: Optional[List[str]] = None          # Fase 5: dominios permitidos (origen + redirecciones)
 
 
 @dataclass

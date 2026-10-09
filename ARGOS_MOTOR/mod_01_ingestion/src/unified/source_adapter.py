@@ -53,7 +53,9 @@ class BaseSourceAdapter:
                                staging_dir: Path) -> DownloadRequest:
         return DownloadRequest(url=metadata.resolved_url, staging_dir=str(staging_dir),
                                file_name=metadata.file_name, expected_sha256=metadata.expected_sha256,
-                               headers={**self.default_headers, **metadata.headers})
+                               headers={**self.default_headers, **metadata.headers},
+                               max_bytes=metadata.authority_rules.get("max_bytes"),
+                               allowed_domains=metadata.authority_rules.get("allowed_domains"))
 
 
 AdapterFactory = Callable[[], SourceAdapter]

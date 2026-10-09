@@ -445,3 +445,35 @@ def test_ut22_legacy_robust_downloader_preserves_status_defect02(tmp_path, monke
     with pytest.raises(DownloadError) as ei:
         rd.download_to_file("https://h.test/x", tmp_path / "x.bin", client=client_for(site))
     assert ei.value.status_code == 503 and ei.value.error_type == "HTTP_503"
+
+
+# ---------------------------------------------------------------- Fase 5: controles de piloto
+def test_ut23_redirect_to_unapproved_domain_blocked(tmp_path):
+    def handler(request):
+        if request.url.host == "a.test":
+            return httpx.Response(302, headers={"location": "https://evil.test/x.pdf"})
+        return ok(make_pdf(), "application/pdf")
+    svc = DownloadService(client=httpx.Client(transport=httpx.MockTransport(handler), follow_redirects=True),
+                          sleep=lambda s: None, rate_limiter=DomainRateLimiter(min_interval_s=0, sleep=lambda s: None))
+    res = svc.download(DownloadRequest(url="https://a.test/x.pdf", staging_dir=str(tmp_path), file_name="x.pdf",
+                                       allowed_domains=["a.test"]))
+    assert not res.ok and res.error_class == "REDIRECT_NOT_ALLOWED"
+    assert not list(tmp_path.glob("x.pdf*"))
+
+
+def test_ut24_max_bytes_enforced_streaming_and_header(tmp_path):
+    big = make_pdf(2000)
+    site = FakeSite({"/big.pdf": ok(big, "application/pdf")})
+    svc = DownloadService(client=client_for(site), sleep=lambda s: None,
+                          rate_limiter=DomainRateLimiter(min_interval_s=0, sleep=lambda s: None))
+    res = svc.download(DownloadRequest(url="https://a.test/big.pdf", staging_dir=str(tmp_path), file_name="b.pdf",
+                                       max_bytes=1000))
+    assert not res.ok and res.error_class == "SIZE_EXCEEDED"
+    assert not list(tmp_path.glob("b.pdf*"))
+
+
+def test_ut25_http_response_telemetry_logged(tmp_path):
+    runner, layout, _ = make_runner(tmp_path, base_site())
+    run_both(runner)
+    ev = [e for e in runner.telemetry.read_all() if e["event"] == "http_response"]
+    assert len(ev) == 2 and all(e["job_id"] and e["status"] == 200 for e in ev)
