@@ -10,13 +10,13 @@ from __future__ import annotations
 
 from mod_01_ingestion.src.unified.domain.enums import ErrorClass, PipelineStatus as JobState
 from mod_01_ingestion.src.unified.domain.models import (  # noqa: F401
-    SCHEMA_VERSION, CatalogRecord, DiscoveryRequest, DocumentCandidate, DownloadRequest, DownloadResult,
+    SCHEMA_VERSION, CasOwnershipReceipt, CasRollbackResult, CatalogRecord, DiscoveryRequest, DocumentCandidate, DownloadRequest, DownloadResult,
     JobContext, ManifestRecord, PipelineResult, PromotionResult, QuarantineRecord, RunContext,
     SourceAttestation, SourceMetadata, ValidationResult, _Serializable, build_document_id, new_run_id,
     utc_now)
 
 __all__ = [
-    "SCHEMA_VERSION", "CatalogRecord", "DiscoveryRequest", "DocumentCandidate", "DownloadRequest",
+    "SCHEMA_VERSION", "CasOwnershipReceipt", "CasRollbackResult", "CatalogRecord", "DiscoveryRequest", "DocumentCandidate", "DownloadRequest",
     "DownloadResult", "ErrorClass", "JobContext", "JobState", "ManifestRecord", "PipelineResult",
     "PromotionResult", "QuarantineRecord", "RunContext", "SourceAttestation", "SourceMetadata",
     "ValidationResult", "build_document_id", "new_run_id", "utc_now",

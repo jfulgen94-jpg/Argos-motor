@@ -3,10 +3,10 @@ nacionales, runners de ``descarga/``, httpx, requests, duckdb ni arelle."""
 from __future__ import annotations
 
 from pathlib import Path
-from typing import ContextManager, Optional, Protocol, runtime_checkable
+from typing import Callable, ContextManager, Optional, Protocol, Tuple, runtime_checkable
 
 from mod_01_ingestion.src.unified.domain.models import (
-    CatalogRecord, DownloadRequest, DownloadResult, JobContext, ManifestRecord, PromotionResult)
+    CatalogRecord, DownloadRequest, DownloadResult, JobContext, ManifestRecord, PromotionResult, UnitOfWorkOutcome)
 
 
 @runtime_checkable
@@ -37,10 +37,18 @@ class DomainRateLimiter(Protocol):
 
 @runtime_checkable
 class ManifestCatalogUnitOfWork(Protocol):
-    """Contrato objetivo (ADR-004). Hoy el 2PC manifiesto/catálogo está inline en ``UnifiedIngestRunner``."""
+    """Contrato (ADR-004, U4): prepare manifest -> prepare catalog -> validate invariant -> commit | compensate.
+    Implementación: ``unified.unit_of_work.ManifestCatalogUnitOfWork``. Una instancia por documento."""
 
-    def stage(self, manifest: ManifestRecord, catalog: CatalogRecord) -> None: ...
+    def prepare_manifest(self, manifest: ManifestRecord) -> Optional[UnitOfWorkOutcome]: ...
 
-    def commit(self) -> None: ...
+    def prepare_catalog(self, catalog_record: CatalogRecord) -> Optional[UnitOfWorkOutcome]: ...
 
-    def rollback(self) -> None: ...
+    def validate_invariant(self) -> Tuple[str, ...]: ...
+
+    def commit(self) -> UnitOfWorkOutcome: ...
+
+    def compensate(self) -> UnitOfWorkOutcome: ...
+
+    def execute(self, manifest: ManifestRecord, catalog_record: CatalogRecord,
+                on_phase: Optional[Callable[[str], None]] = None) -> UnitOfWorkOutcome: ...

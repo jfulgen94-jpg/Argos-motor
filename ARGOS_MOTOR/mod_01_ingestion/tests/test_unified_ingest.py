@@ -17,6 +17,7 @@ from mod_01_ingestion.src.document_completeness_validator import DocumentComplet
 from mod_01_ingestion.src.unified.adapters.bafin import BaFinAdapter
 from mod_01_ingestion.src.unified.adapters.cnmv import CNMVAdapter
 from mod_01_ingestion.src.unified.config import DataLayout, PathPolicyError, resolve_layout
+from mod_01_ingestion.src.unified.domain.enums import ExecutionMode
 from mod_01_ingestion.src.unified.download_service import DownloadService
 from mod_01_ingestion.src.unified.ingest_runner import UnifiedIngestRunner
 from mod_01_ingestion.src.unified.lock_manager import LockManager, LockTimeout
@@ -300,7 +301,7 @@ def _no_orphans(layout):
 
 def test_ut13_manifest_failure_rolls_back_raw(tmp_path):
     layout = DataLayout(tmp_path / "data_root")
-    runner, _, _ = make_runner(tmp_path, base_site(), manifests=FailingManifests(layout))
+    runner, _, _ = make_runner(tmp_path, base_site(), manifests=FailingManifests(layout, mode=ExecutionMode.TEST))
     out = runner.run_discovery(DiscoveryRequest(authority="CNMV")).outcomes[0]
     assert out.state == JobState.FAILED.value and out.error_class == "MANIFEST_FAILED"
     assert _no_orphans(layout)
@@ -308,7 +309,7 @@ def test_ut13_manifest_failure_rolls_back_raw(tmp_path):
 
 def test_ut14_catalog_failure_rolls_back_raw_and_manifest(tmp_path):
     layout = DataLayout(tmp_path / "data_root")
-    cat = FailingCatalog(layout.catalog_db)
+    cat = FailingCatalog(layout.catalog_db, mode=ExecutionMode.TEST)
     runner, _, _ = make_runner(tmp_path, base_site(), catalog=cat)
     out = runner.run_discovery(DiscoveryRequest(authority="CNMV")).outcomes[0]
     assert out.state == JobState.FAILED.value and out.error_class == "CATALOG_FAILED"
@@ -365,6 +366,7 @@ def test_ut17b_raw_never_overwritten_with_different_content(tmp_path):
     site2 = base_site(zip_bytes=make_zip("OTRO"))
     runner2, _, _ = make_runner(tmp_path, site2)
     runner2.manifests.path_for("CNMV", 2023, "CNMV_LEI_ES_1_2023_ESEF_PACKAGE").unlink()
+    runner2.catalog.delete("CNMV_LEI_ES_1_2023_ESEF_PACKAGE")   # U4: sin registro previo (un registro parcial/otro hash ya no se sobrescribe)
     runner2.run_discovery(DiscoveryRequest(authority="CNMV"))
     assert raw.read_bytes() == original
     assert len(list(raw.parent.glob("*.zip"))) == 2

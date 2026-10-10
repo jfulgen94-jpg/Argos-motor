@@ -16,8 +16,8 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 from mod_01_ingestion.src.unified.cas_store import ContentAddressedRawStore
-from mod_01_ingestion.src.unified.domain.errors import SimulatedDataRejectedError
-from mod_01_ingestion.src.unified.domain.policy import assert_manifest_allowed, assert_not_simulated
+from mod_01_ingestion.src.unified.domain.errors import SimulatedDataRejectedError, sanitize_message
+from mod_01_ingestion.src.unified.domain.policy import assert_not_simulated
 from mod_01_ingestion.src.unified.persistence_guard import assert_persistable
 from mod_01_ingestion.src.unified.config import DataLayout
 from mod_01_ingestion.src.unified.download_service import DownloadService
@@ -29,6 +29,7 @@ from mod_01_ingestion.src.unified.rate_limiter import DomainRateLimiter
 from mod_01_ingestion.src.unified.repositories import CatalogRepository, ManifestRepository, QuarantineService
 from mod_01_ingestion.src.unified.source_adapter import SourceAdapter
 from mod_01_ingestion.src.unified.telemetry import TelemetryLogger
+from mod_01_ingestion.src.unified.unit_of_work import ManifestCatalogUnitOfWork
 from mod_01_ingestion.src.unified.validation_pipeline import ValidationPipeline
 
 
@@ -120,6 +121,35 @@ class UnifiedIngestRunner:
             return JobOutcome(job.job_id, job.document_id, JobState.FAILED.value, ErrorClass.LOCKED.value, str(ex))
 
     # ------------------------------------------------------------------------------
+    def _abort_promotion(self, job: JobContext, promo, klass: ErrorClass, message: str, *, failure_stage: Optional[str],
+                         uow=None) -> JobOutcome:
+        """Cierra un intento fallido DESPUÉS de promover: revierte solo lo demostrablemente propio del CAS/raw
+        (``rollback_owned``; el ``UnitOfWork`` nunca toca el CAS) y decide FAILED vs RECOVERY_REQUIRED.
+        RECOVERY_REQUIRED = la compensación del manifiesto/catálogo falló, el estado previo era parcial, o queda un
+        blob/vista raw sin propiedad demostrable (``orphaned_cas_*``): requiere reconciliación manual."""
+        rb = self.cas.rollback_owned(promo)
+        comp_errors = [sanitize_message(e) for e in (uow.compensation_errors if uow else ())]
+        recovery = bool(comp_errors) or bool(uow and uow.recovery_required) or not rb.clean
+        text = sanitize_message(message)
+        if uow and uow.recovery_reason:
+            text += f" | RECOVERY: {uow.recovery_reason}"
+        if comp_errors:
+            text += " | COMPENSACIÓN INCOMPLETA: " + "; ".join(comp_errors)
+        if not rb.clean:
+            text += f" | CAS HUÉRFANO: sha256={rb.orphaned_sha256} path={rb.orphaned_path}"
+        state = JobState.RECOVERY_REQUIRED if recovery else JobState.FAILED
+        fields = dict(error_class=klass.value, message=text, rollback=True, failure_stage=failure_stage,
+                      recovery_required=recovery, compensation_errors=comp_errors, cas_blob_state=rb.blob_state,
+                      cas_raw_view_state=rb.raw_view_state)
+        if uow:
+            fields["uow_status"] = uow.status.value
+        if not rb.clean:
+            fields.update(orphaned_cas_sha256=rb.orphaned_sha256, orphaned_cas_path=rb.orphaned_path)
+        self._state(job, state, **fields)
+        return JobOutcome(job.job_id, job.document_id, state.value, klass.value, text, needs_manual_review=recovery,
+                          failure_stage=failure_stage, orphaned_cas_sha256=rb.orphaned_sha256,
+                          orphaned_cas_path=rb.orphaned_path)
+
     def _process_locked(self, adapter: SourceAdapter, cand: DocumentCandidate, job: JobContext) -> JobOutcome:
         # Doble comprobación (Fase 6): otro proceso pudo completar el documento mientras esperábamos el lock.
         prior = self.manifests.get(cand.authority, cand.fiscal_year, cand.document_id)
@@ -166,10 +196,8 @@ class UnifiedIngestRunner:
         rel = Path(f"{cand.country_code}_{cand.authority}") / str(cand.fiscal_year) / _safe(cand.issuer_id) / meta.file_name
         promo = self.cas.promote(Path(dl.staged_path), dl.sha256, rel)
 
-        pending = None
-        cataloged = False
+        # U4: manifiesto + catálogo se hacen consistentes en UNA unidad de trabajo; el raw/CAS lo compensa este método.
         try:
-            self._state(job, JobState.MANIFESTING)
             record = ManifestRecord(
                 manifest_version=SCHEMA_VERSION, document_id=job.document_id, run_id=job.run_id, job_id=job.job_id,
                 authority=cand.authority, country_code=cand.country_code, issuer_id=cand.issuer_id,
@@ -180,46 +208,23 @@ class UnifiedIngestRunner:
                 issuer_name=cand.issuer_name, issuer_lei=cand.issuer_lei, ticker=cand.ticker,
                 source_page_url=cand.source_page_url, resumed=dl.resumed, retries_taken=dl.retries_taken,
                 deduplicated=promo.deduplicated)
-            try:
-                assert_manifest_allowed(record, self.run.mode)
-                pending = self.manifests.stage(record)
-            except Exception as ex:
-                raise _PhaseError(ErrorClass.MANIFEST_FAILED, ex)
+        except Exception as ex:      # modelo inválido: antes se propagaba dejando el raw promovido sin registro
+            return self._abort_promotion(job, promo, ErrorClass.MANIFEST_FAILED, str(ex), failure_stage="MANIFEST")
 
-            self._state(job, JobState.CATALOGING)
-            final_manifest = self.manifests.path_for(cand.authority, cand.fiscal_year, cand.document_id)
-            try:
-                self.catalog.upsert(CatalogRecord(
-                    document_id=job.document_id, run_id=job.run_id, job_id=job.job_id, authority=cand.authority,
-                    country_code=cand.country_code, issuer_id=cand.issuer_id, fiscal_year=cand.fiscal_year,
-                    doc_type=cand.doc_type, sha256=dl.sha256, raw_path=promo.raw_path,
-                    manifest_path=str(final_manifest), status=record.status, size_bytes=dl.size_bytes))
-                cataloged = True
-                self.manifests.commit(pending)
-            except Exception as ex:
-                raise _PhaseError(ErrorClass.CATALOG_FAILED, ex)
-        except _PhaseError as pe:
-            if cataloged:
-                try:
-                    self.catalog.delete(job.document_id)
-                except Exception:
-                    pass
-            if pending is not None:
-                self.manifests.abort(pending)
-            self.cas.rollback(promo)
-            self._state(job, JobState.FAILED, error_class=pe.klass.value, message=str(pe.cause), rollback=True)
-            return JobOutcome(job.job_id, job.document_id, JobState.FAILED.value, pe.klass.value, str(pe.cause))
+        uow = ManifestCatalogUnitOfWork(self.manifests, self.catalog, mode=self.run.mode)
+        catalog_record = CatalogRecord(
+            document_id=job.document_id, run_id=job.run_id, job_id=job.job_id, authority=cand.authority,
+            country_code=cand.country_code, issuer_id=cand.issuer_id, fiscal_year=cand.fiscal_year,
+            doc_type=cand.doc_type, sha256=dl.sha256, raw_path=promo.raw_path,
+            manifest_path=str(uow.final_manifest_path(record)), status=record.status, size_bytes=dl.size_bytes)
+        result = uow.execute(record, catalog_record, on_phase=lambda p: self._state(job, JobState[p]))
+        if not result.ok:
+            return self._abort_promotion(job, promo, ErrorClass(result.error_class or ErrorClass.UNKNOWN.value),
+                                         result.message or "", failure_stage=result.failure_stage, uow=result)
 
         Path(dl.staged_path).unlink(missing_ok=True)
         self._state(job, JobState.COMPLETED, sha256=dl.sha256, raw_path=promo.raw_path, deduplicated=promo.deduplicated)
         return JobOutcome(job.job_id, job.document_id, JobState.COMPLETED.value, raw_path=promo.raw_path, sha256=dl.sha256)
-
-
-class _PhaseError(Exception):
-    def __init__(self, klass: ErrorClass, cause: Exception):
-        super().__init__(str(cause))
-        self.klass = klass
-        self.cause = cause
 
 
 def _safe(s: str) -> str:

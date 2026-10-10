@@ -39,6 +39,8 @@ class PipelineStatus(str, Enum):
     VALIDATED = "VALIDATED"
     ATTESTED = "ATTESTED"
     PROMOTED = "PROMOTED"
+    # U4: el fallo dejó estado parcial (manifiesto/catálogo/CAS) que no se pudo restaurar: reconciliación manual.
+    RECOVERY_REQUIRED = "RECOVERY_REQUIRED"
     NOT_PUBLISHED = "NOT_PUBLISHED"
     NOT_APPLICABLE = "NOT_APPLICABLE"
 
@@ -99,12 +101,13 @@ class ErrorClass(str, Enum):
     PATH_VIOLATION = "PATH_VIOLATION"
     REDIRECT_NOT_ALLOWED = "REDIRECT_NOT_ALLOWED"
     SIZE_EXCEEDED = "SIZE_EXCEEDED"
+    INVARIANT_VIOLATION = "INVARIANT_VIOLATION"     # U4: manifiesto y catálogo no coinciden
     UNKNOWN = "UNKNOWN"
 
 
 # --- Transiciones permitidas ---------------------------------------------------------------------
 _S = PipelineStatus
-_TERMINAL = frozenset({_S.COMPLETED, _S.QUARANTINED, _S.FAILED, _S.SKIPPED_DUPLICATE,
+_TERMINAL = frozenset({_S.COMPLETED, _S.QUARANTINED, _S.FAILED, _S.RECOVERY_REQUIRED, _S.SKIPPED_DUPLICATE,
                        _S.SKIPPED_ALREADY_PRESENT, _S.NOT_PUBLISHED, _S.NOT_APPLICABLE})
 
 ALLOWED_TRANSITIONS = {
@@ -115,9 +118,9 @@ ALLOWED_TRANSITIONS = {
     _S.DOWNLOADING: frozenset({_S.VERIFYING, _S.VALIDATING, _S.FAILED}),
     _S.VERIFYING: frozenset({_S.VALIDATING, _S.FAILED, _S.QUARANTINED}),
     _S.VALIDATING: frozenset({_S.PROMOTING, _S.QUARANTINED, _S.FAILED}),
-    _S.PROMOTING: frozenset({_S.MANIFESTING, _S.FAILED}),
-    _S.MANIFESTING: frozenset({_S.CATALOGING, _S.FAILED}),
-    _S.CATALOGING: frozenset({_S.COMPLETED, _S.FAILED}),
+    _S.PROMOTING: frozenset({_S.MANIFESTING, _S.FAILED, _S.RECOVERY_REQUIRED}),
+    _S.MANIFESTING: frozenset({_S.CATALOGING, _S.FAILED, _S.RECOVERY_REQUIRED}),
+    _S.CATALOGING: frozenset({_S.COMPLETED, _S.FAILED, _S.RECOVERY_REQUIRED}),
     # flujo objetivo (aún no emitido por el runner)
     _S.DOWNLOAD_STARTED: frozenset({_S.DOWNLOADED_TO_STAGING, _S.FAILED}),
     _S.DOWNLOADED_TO_STAGING: frozenset({_S.VALIDATED, _S.QUARANTINED, _S.FAILED}),
@@ -127,6 +130,17 @@ ALLOWED_TRANSITIONS = {
     **{t: frozenset() for t in _TERMINAL},
 }
 TERMINAL_STATES = _TERMINAL
+
+
+class UnitOfWorkStatus(str, Enum):
+    """Resultado tipado de ``ManifestCatalogUnitOfWork`` (U4)."""
+    COMMITTED = "COMMITTED"
+    FAILED_MANIFEST = "FAILED_MANIFEST"        # no se pudo preparar el manifiesto (incluye rechazo del guard)
+    FAILED_CATALOG = "FAILED_CATALOG"          # no se pudo preparar el catálogo
+    FAILED_INVARIANT = "FAILED_INVARIANT"      # manifiesto y catálogo preparados pero inconsistentes
+    FAILED_COMMIT = "FAILED_COMMIT"            # fallo al promover el manifiesto pendiente a definitivo
+    # Compensación incompleta o estado parcial no restaurable automáticamente: requiere revisión manual.
+    RECOVERY_REQUIRED = "RECOVERY_REQUIRED"
 
 
 # --- Identidad de emisores e instrumentos (U3) ----------------------------------------------------

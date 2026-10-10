@@ -15,7 +15,7 @@ from typing import Any, Dict, List, Optional
 from urllib.parse import urlparse
 
 from mod_01_ingestion.src.unified.domain.enums import (
-    AttestationLevel, AttestationScope, ExecutionMode, SourceType)
+    AttestationLevel, AttestationScope, ExecutionMode, SourceType, UnitOfWorkStatus)
 from mod_01_ingestion.src.unified.domain.errors import (
     DomainValidationError, InvalidCandidateError, InvalidSourceMetadataError, UnsupportedExecutionModeError)
 
@@ -279,6 +279,18 @@ class ValidationResult(_Serializable):
     metrics: Dict[str, Any] = field(default_factory=dict)
 
 
+@dataclass(frozen=True)
+class CasOwnershipReceipt:
+    """Recibo emitido por ``promote`` SOLO cuando este intento creó físicamente el blob (bajo el lock del hash).
+    Es la única evidencia con la que se admite borrar un blob del CAS (ver ``rollback_owned``)."""
+    created_blob: bool
+    blob_dev: int
+    blob_ino: int
+    blob_size: int
+    blob_mtime_ns: int
+    staged_path: str
+
+
 @dataclass
 class PromotionResult(_Serializable):
     raw_path: str
@@ -287,6 +299,21 @@ class PromotionResult(_Serializable):
     size_bytes: int
     deduplicated: bool            # el blob ya existía en el CAS
     link_mode: str                # hardlink | copy
+    receipt: Optional[CasOwnershipReceipt] = None   # U4: None => este intento NO es propietario demostrable del blob
+
+
+@dataclass
+class CasRollbackResult(_Serializable):
+    """Resultado de revertir una promoción. ``blob_state``: REMOVED | PREEXISTING_LEFT | SHARED_LEFT | UNPROVEN_ORPHAN.
+    ``raw_view_state``: REMOVED | ABSENT | EXISTING_LEFT | UNPROVEN_LEFT. Solo ``UNPROVEN_*`` exige reconciliación."""
+    blob_state: str
+    raw_view_state: str
+    orphaned_sha256: Optional[str] = None
+    orphaned_path: Optional[str] = None      # relativa al data root (sin rutas personales absolutas)
+
+    @property
+    def clean(self) -> bool:
+        return self.blob_state != "UNPROVEN_ORPHAN" and self.raw_view_state != "UNPROVEN_LEFT"
 
 
 @dataclass
@@ -372,3 +399,59 @@ class PipelineResult(_Serializable):
     raw_path: Optional[str] = None
     sha256: Optional[str] = None
     attestation_level: Optional[str] = None   # U1: reservado; el runner aún no atestigua
+    needs_manual_review: bool = False         # U4: True con state=RECOVERY_REQUIRED
+    failure_stage: Optional[str] = None       # U4: MANIFEST | CATALOG | INVARIANT | COMMIT | CAS
+    orphaned_cas_sha256: Optional[str] = None
+    orphaned_cas_path: Optional[str] = None
+
+
+@dataclass
+class UnitOfWorkOutcome(_Serializable):
+    """Resultado tipado de la unidad de trabajo manifiesto + catálogo (U4).
+
+    Invariantes (se validan al construir):
+    - ``compensation_errors`` no vacío  =>  ``status == RECOVERY_REQUIRED``;
+    - ``RECOVERY_REQUIRED``  =>  ``needs_manual_review`` y NO ``committed``; conserva ``failure_stage`` o ``error_class``;
+    - ``COMMITTED`` no lleva errores, violaciones ni ``error_class``.
+    ``error_class`` conserva la clasificación histórica del runner (``MANIFEST_FAILED`` / ``CATALOG_FAILED``; un fallo al
+    promover el manifiesto sigue etiquetándose ``CATALOG_FAILED`` por compatibilidad). ``failure_stage`` dice DÓNDE falló
+    aunque la compensación también haya fallado.
+    """
+    status: UnitOfWorkStatus
+    document_id: str
+    error_class: Optional[str] = None
+    message: Optional[str] = None
+    manifest_path: Optional[str] = None
+    compensated: bool = False
+    compensation_errors: tuple = ()
+    invariant_violations: tuple = ()
+    failure_stage: Optional[str] = None
+    idempotent: bool = False                 # COMMITTED sin escribir: ambos lados ya contenían el mismo registro
+    recovery_reason: Optional[str] = None
+    orphaned_cas_sha256: Optional[str] = None
+    orphaned_cas_path: Optional[str] = None
+
+    def __post_init__(self):
+        if self.compensation_errors and self.status is not UnitOfWorkStatus.RECOVERY_REQUIRED:
+            raise DomainValidationError("compensation_errors no vacío exige status RECOVERY_REQUIRED")
+        if self.status is UnitOfWorkStatus.RECOVERY_REQUIRED and not (self.failure_stage or self.error_class):
+            raise DomainValidationError("RECOVERY_REQUIRED debe conservar failure_stage o error_class")
+        if self.status is UnitOfWorkStatus.COMMITTED and (self.error_class or self.compensation_errors
+                                                          or self.invariant_violations):
+            raise DomainValidationError("COMMITTED no admite error_class, errores de compensación ni violaciones")
+
+    @property
+    def ok(self) -> bool:
+        return self.status is UnitOfWorkStatus.COMMITTED
+
+    @property
+    def committed(self) -> bool:
+        return self.status is UnitOfWorkStatus.COMMITTED
+
+    @property
+    def recovery_required(self) -> bool:
+        return self.status is UnitOfWorkStatus.RECOVERY_REQUIRED
+
+    @property
+    def needs_manual_review(self) -> bool:
+        return self.recovery_required or bool(self.compensation_errors) or bool(self.orphaned_cas_sha256)
