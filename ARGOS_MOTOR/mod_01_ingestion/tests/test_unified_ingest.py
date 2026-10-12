@@ -150,16 +150,21 @@ def test_ut04_same_manifest_and_telemetry_schema(tmp_path):
 
 
 # ---------------------------------------------------------------- UT-05 idempotencia
-def test_ut05_idempotence_no_redownload(tmp_path):
+def test_ut05_without_remote_validator_second_run_downloads_again_and_unit_of_work_keeps_effects_single(tmp_path):
+    """U5A: sin expected_sha256 ni validador fuerte NO hay skip (document_id + raw íntegro no prueba la versión remota).
+    La segunda ejecución descarga de nuevo; el UoW/CAS evitan efectos duplicados."""
     site = base_site()
     runner, layout, _ = make_runner(tmp_path, site)
     run_both(runner)
     n_calls = len(site.calls)
+    manifests_before = sorted(p.read_bytes() for p in layout.manifests.rglob("*.json"))
     a, b = run_both(runner)
-    assert a.outcomes[0].state == JobState.SKIPPED_DUPLICATE.value
-    assert b.outcomes[0].state == JobState.SKIPPED_DUPLICATE.value
-    assert len(site.calls) == n_calls
-    assert len([p for p in layout.raw.rglob("*") if p.is_file()]) == 2
+    assert a.outcomes[0].state == JobState.COMPLETED.value and b.outcomes[0].state == JobState.COMPLETED.value
+    assert JobState.SKIPPED_DUPLICATE.value not in {o.state for r in (a, b) for o in r.outcomes}
+    assert len(site.calls) == n_calls * 2                                    # volvió a descargar
+    assert len([p for p in layout.raw.rglob("*") if p.is_file()]) == 2       # sin raw duplicado
+    assert len(list(layout.manifests.rglob("*.json"))) == 2                  # sin manifiesto duplicado
+    assert sorted(p.read_bytes() for p in layout.manifests.rglob("*.json")) == manifests_before
 
 
 # ---------------------------------------------------------------- UT-06/07 ZIP corrupto, HTML disfrazado
@@ -481,14 +486,20 @@ def test_ut25_http_response_telemetry_logged(tmp_path):
     assert len(ev) == 2 and all(e["job_id"] and e["status"] == 200 for e in ev)
 
 
-def test_ut26_recheck_manifest_after_lock_no_double_download(tmp_path):
-    """Fase 6: si otro proceso completó el documento mientras esperábamos el lock, no se vuelve a descargar."""
+def test_ut26_recheck_after_lock_is_decided_only_by_preflight(tmp_path):
+    """Fase 6 / U5A: tras esperar el lock se re-evalúa el preflight (única autoridad). Con hash esperado coincidente
+    se omite; sin validador remoto se descarga de nuevo (el UoW resuelve la idempotencia final)."""
+    import dataclasses
     site = base_site()
     runner, layout, _ = make_runner(tmp_path, site)
     ad = runner.adapters["CNMV"]
     cand = ad.discover(DiscoveryRequest(authority="CNMV"))[0]
-    assert runner.process_candidate(ad, cand).state == JobState.COMPLETED.value
+    first = runner.process_candidate(ad, cand)
+    assert first.state == JobState.COMPLETED.value
     n = len(site.calls)
-    job = __import__("mod_01_ingestion.src.unified.models", fromlist=["JobContext"]).JobContext.for_candidate(runner.run, 99, cand)
-    out = runner._process_locked(ad, cand, job)      # equivale a entrar tras esperar el lock
-    assert out.state == JobState.SKIPPED_DUPLICATE.value and len(site.calls) == n
+    JobContext = __import__("mod_01_ingestion.src.unified.models", fromlist=["JobContext"]).JobContext
+    with_hash = dataclasses.replace(cand, expected_sha256=first.sha256)
+    out = runner._process_locked(ad, with_hash, JobContext.for_candidate(runner.run, 98, with_hash))
+    assert out.state == JobState.SKIPPED_ALREADY_PRESENT.value and len(site.calls) == n
+    out = runner._process_locked(ad, cand, JobContext.for_candidate(runner.run, 99, cand))   # sin validador remoto
+    assert out.state == JobState.COMPLETED.value and len(site.calls) == n + 1

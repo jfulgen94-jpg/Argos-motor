@@ -30,7 +30,7 @@ def bafin_download_filing_via_unified(
     adapter = BaFinAdapter([lambda req: [record]])
     runner = (runner_factory or UnifiedIngestRunner)(layout, {"BAFIN": adapter})
     out = runner.run_discovery(DiscoveryRequest(authority="BAFIN")).outcomes[0]
-    if out.state not in ("COMPLETED", "SKIPPED_DUPLICATE"):
+    if out.state not in ("COMPLETED", "SKIPPED_ALREADY_PRESENT", "SKIPPED_DUPLICATE") or not out.raw_path:
         raise RuntimeError(f"Descarga unificada {out.state}: {out.error_class} {out.message}")
     size = Path(out.raw_path).stat().st_size
     return {"doc_id": f"DE_BAFIN_{entity_lei}_{fiscal_year}_{doc_type}", "source": "BAFIN", "country_code": "DE",

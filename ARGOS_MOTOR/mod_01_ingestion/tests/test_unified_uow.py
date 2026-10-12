@@ -385,9 +385,11 @@ def test_runner_partial_state_reports_recovery_required_and_clean_failures_stay_
     runner.run_discovery(DiscoveryRequest(authority="CNMV"))
     doc = "CNMV_LEI_ES_1_2023_ESEF_PACKAGE"
     runner.manifests.path_for("CNMV", 2023, doc).unlink()                  # queda solo el catálogo
-    runner2, _, _ = make_runner(tmp_path, base_site(zip_bytes=payload))
+    site2 = base_site(zip_bytes=payload)
+    runner2, _, _ = make_runner(tmp_path, site2)
     out = runner2.run_discovery(DiscoveryRequest(authority="CNMV")).outcomes[0]
-    assert out.state == "RECOVERY_REQUIRED" and out.needs_manual_review and out.failure_stage == "INSPECT"
+    assert out.state == "RECOVERY_REQUIRED" and out.needs_manual_review and out.failure_stage == "PREFLIGHT"
+    assert site2.calls == []                           # U5A: el preflight lo detecta ANTES de abrir ninguna conexión
     assert runner.catalog.get(doc) is not None                              # no se tocó el catálogo existente
 
 

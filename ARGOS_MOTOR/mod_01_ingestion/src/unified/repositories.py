@@ -151,6 +151,38 @@ class CatalogRepository:
                           [document_id])
         return rows[0] if rows else None
 
+    # --- U5A: consultas de SOLO LECTURA (conexión read_only; no crean el archivo ni toman el lock de escritura) ---
+    def _query_ro(self, sql: str, params: Iterable[Any] = ()):
+        import time
+        import duckdb
+        if not self.db_path.exists():
+            return [], []
+        last = None
+        for _ in range(100):
+            try:
+                con = duckdb.connect(str(self.db_path), read_only=True)
+            except duckdb.IOException as ex:      # otro proceso escribe: reintento corto
+                last = ex
+                time.sleep(0.05)
+                continue
+            try:
+                cur = con.execute(sql, list(params))
+                return [d[0] for d in cur.description], cur.fetchall()
+            finally:
+                con.close()
+        raise last
+
+    def get_record(self, document_id: str):
+        """Fila completa del catálogo como dict (o None). Solo lectura."""
+        cols, rows = self._query_ro("SELECT * FROM unified_catalog WHERE document_id = ?", [document_id])
+        return dict(zip(cols, rows[0])) if rows else None
+
+    def find_by_sha256(self, sha256: str):
+        """Filas del catálogo con ese SHA-256 (orden determinista por document_id). Solo lectura."""
+        cols, rows = self._query_ro("SELECT * FROM unified_catalog WHERE lower(sha256) = ? ORDER BY document_id",
+                                    [str(sha256).lower()])
+        return [dict(zip(cols, r)) for r in rows]
+
     def count(self) -> int:
         return self._exec("SELECT count(*) FROM unified_catalog")[0][0]
 

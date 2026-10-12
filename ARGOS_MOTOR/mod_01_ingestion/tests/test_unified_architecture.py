@@ -100,11 +100,79 @@ def test_at04_domain_imports_only_stdlib_and_domain():
                 assert mod.split(".")[0] in sys.stdlib_module_names, f"{f.name}: import no estándar {mod}"
 
 
+APP_PKG = "mod_01_ingestion.src.unified.application"
+DOMAIN_PKG = "mod_01_ingestion.src.unified.domain"
+# Excepción ESTRECHA (U5A): el caso de uso preflight consume únicamente el puerto de lookup. Ningún otro módulo de
+# application puede importar application.*; todo lo demás sale solo hacia domain.
+APP_INTERNAL_EXCEPTIONS = {"preflight.py": {f"{APP_PKG}.ports"}}
+
+
 def test_at04_application_depends_only_on_domain():
     for f in _py("application"):
+        allowed_app = APP_INTERNAL_EXCEPTIONS.get(f.name, set())
         for mod in _imports(f):
             if mod.split(".")[0] == "mod_01_ingestion":
-                assert mod.startswith("mod_01_ingestion.src.unified.domain"), f"{f.name}: {mod}"
+                assert mod.startswith(DOMAIN_PKG) or mod in allowed_app, f"{f.name}: {mod}"
+
+
+def test_at04_preflight_use_case_has_no_infrastructure_or_io_imports():
+    mods = set(_imports(UNIFIED / "application" / "preflight.py"))
+    assert not {m for m in mods if m.split(".")[0] in FORBIDDEN_INFRA + ("pathlib", "os", "shutil", "socket", "sqlite3")}
+    infra = {"cas_store", "repositories", "ingest_runner", "preflight_lookup", "unit_of_work", "telemetry", "download_service"}
+    assert not {m for m in mods if m.rsplit(".", 1)[-1] in infra}
+
+
+def test_at04_ports_are_free_of_duckdb_and_concrete_filesystem_access():
+    tree = ast.parse((UNIFIED / "application" / "ports.py").read_text(encoding="utf-8"))
+    calls = {n.func.id for n in ast.walk(tree) if isinstance(n, ast.Call) and isinstance(n.func, ast.Name)}
+    assert "open" not in calls
+    assert not {m.split(".")[0] for m in _imports(UNIFIED / "application" / "ports.py")} & {"duckdb", "os", "shutil", "sqlite3"}
+    names = {m.rsplit(".", 1)[-1] for m in _imports(UNIFIED / "application" / "ports.py")}
+    assert not names & {"repositories", "cas_store", "ingest_runner", "preflight_lookup"}
+
+
+def test_at04_preflight_lookup_is_infrastructure_adapter_outside_inner_layers():
+    assert (UNIFIED / "preflight_lookup.py").is_file()
+    assert not (UNIFIED / "application" / "preflight_lookup.py").exists()
+    assert not (UNIFIED / "domain" / "preflight_lookup.py").exists()
+    mods = set(_imports(UNIFIED / "preflight_lookup.py"))
+    assert {"mod_01_ingestion.src.unified.cas_store", "mod_01_ingestion.src.unified.repositories"} <= mods
+
+
+def test_at04_domain_never_imports_application_or_infrastructure():
+    for f in _py("domain"):
+        for mod in _imports(f):
+            assert not mod.startswith(APP_PKG), f"{f.name}: dominio importa application ({mod})"
+
+
+def test_at04_runner_may_depend_on_preflight_use_case_but_not_the_reverse():
+    runner_mods = set(_imports(UNIFIED / "ingest_runner.py"))
+    assert f"{APP_PKG}.preflight" in runner_mods
+    for f in _py("application"):
+        assert "mod_01_ingestion.src.unified.ingest_runner" not in set(_imports(f))
+
+
+def test_at04_no_import_cycles_inside_unified():
+    graph = {}
+    for f in UNIFIED.rglob("*.py"):
+        rel = f.relative_to(UNIFIED.parent.parent.parent).with_suffix("")
+        name = ".".join(rel.parts)
+        name = name[:-9] if name.endswith(".__init__") else name
+        graph[name] = {m for m in _imports(f) if m.startswith("mod_01_ingestion.src.unified")}
+    graph = {k: {d for d in v if d in graph} for k, v in graph.items()}
+    state = {}
+
+    def visit(n, stack):
+        state[n] = 1
+        for d in graph[n]:
+            if state.get(d) == 1:
+                raise AssertionError(f"ciclo: {' -> '.join(stack + [n, d])}")
+            if d not in state:
+                visit(d, stack + [n])
+        state[n] = 2
+    for n in graph:
+        if n not in state:
+            visit(n, [])
 
 
 LEGACY_RUNNERS = ("ingest_runner", "robust_downloader", "cnmv_engine", "cnmv_real_downloader", "gap_fill_downloader")

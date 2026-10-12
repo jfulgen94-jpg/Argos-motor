@@ -28,8 +28,10 @@ class PipelineStatus(str, Enum):
     COMPLETED = "COMPLETED"
     QUARANTINED = "QUARANTINED"
     FAILED = "FAILED"
-    # SKIPPED_DUPLICATE: duplicado detectado DURANTE o DESPUÉS del procesamiento
-    # (incluye la segunda comprobación bajo lock). El runner actual solo emite este.
+    # LEGACY_COMPATIBILITY_ALIAS: SKIPPED_DUPLICATE ya NO lo emite el runner (U5A). Se conserva solo para que el
+    # vocabulario serializado de Fases 4-6 siga resolviendo. Único skip emitible: SKIPPED_ALREADY_PRESENT, y solo tras
+    # PreflightStatus.SKIPPED_ALREADY_PRESENT (evidencia fuerte). Retirada prevista: U5B/U6, cuando no queden
+    # consumidores externos (cli, legacy_bridge ya aceptan el nuevo estado).
     SKIPPED_DUPLICATE = "SKIPPED_DUPLICATE"
     # --- añadidos en U1 (aún no emitidos por el runner) ---
     # SKIPPED_ALREADY_PRESENT: preflight positivo ANTES de adquirir lock o descargar.
@@ -41,6 +43,9 @@ class PipelineStatus(str, Enum):
     PROMOTED = "PROMOTED"
     # U4: el fallo dejó estado parcial (manifiesto/catálogo/CAS) que no se pudo restaurar: reconciliación manual.
     RECOVERY_REQUIRED = "RECOVERY_REQUIRED"
+    # U5A: resultados terminales del KnownDocumentPreflight (antes de cualquier descarga)
+    CONFLICT = "CONFLICT"
+    MANUAL_REVIEW = "MANUAL_REVIEW"
     NOT_PUBLISHED = "NOT_PUBLISHED"
     NOT_APPLICABLE = "NOT_APPLICABLE"
 
@@ -107,12 +112,14 @@ class ErrorClass(str, Enum):
 
 # --- Transiciones permitidas ---------------------------------------------------------------------
 _S = PipelineStatus
-_TERMINAL = frozenset({_S.COMPLETED, _S.QUARANTINED, _S.FAILED, _S.RECOVERY_REQUIRED, _S.SKIPPED_DUPLICATE,
+_TERMINAL = frozenset({_S.COMPLETED, _S.QUARANTINED, _S.FAILED, _S.RECOVERY_REQUIRED, _S.CONFLICT, _S.MANUAL_REVIEW,
+                       _S.SKIPPED_DUPLICATE,
                        _S.SKIPPED_ALREADY_PRESENT, _S.NOT_PUBLISHED, _S.NOT_APPLICABLE})
 
 ALLOWED_TRANSITIONS = {
     _S.DISCOVERED: frozenset({_S.QUEUED, _S.SKIPPED_ALREADY_PRESENT, _S.SKIPPED_DUPLICATE,
-                              _S.NOT_PUBLISHED, _S.NOT_APPLICABLE, _S.FAILED}),
+                              _S.NOT_PUBLISHED, _S.NOT_APPLICABLE, _S.FAILED,
+                              _S.RECOVERY_REQUIRED, _S.CONFLICT, _S.MANUAL_REVIEW}),
     _S.QUEUED: frozenset({_S.DOWNLOADING, _S.DOWNLOAD_STARTED, _S.NOT_PUBLISHED, _S.NOT_APPLICABLE, _S.FAILED}),
     # flujo observado en el runner actual
     _S.DOWNLOADING: frozenset({_S.VERIFYING, _S.VALIDATING, _S.FAILED}),
@@ -179,3 +186,24 @@ class DuplicateRelation(str, Enum):
     IDENTIFIER_CONFLICT = "IDENTIFIER_CONFLICT"
     NOT_DUPLICATE = "NOT_DUPLICATE"
     UNRESOLVED = "UNRESOLVED"
+
+
+class PreflightStatus(str, Enum):
+    """Resultado de ``KnownDocumentPreflight`` (U5A). Solo ``SKIPPED_ALREADY_PRESENT`` evita la descarga con éxito."""
+    SKIPPED_ALREADY_PRESENT = "SKIPPED_ALREADY_PRESENT"
+    PROCEED_DOWNLOAD = "PROCEED_DOWNLOAD"
+    POSSIBLE_REPUBLICATION = "POSSIBLE_REPUBLICATION"
+    RECOVERY_REQUIRED = "RECOVERY_REQUIRED"
+    CONFLICT = "CONFLICT"
+    MANUAL_REVIEW = "MANUAL_REVIEW"
+
+
+class PreflightMatch(str, Enum):
+    """Evidencia por la que se tomó la decisión (de más a menos fuerte; URL y nombre nunca bastan para un skip)."""
+    SHA256 = "SHA256"
+    SOURCE_DOCUMENT_ID = "SOURCE_DOCUMENT_ID"
+    DOCUMENT_ID = "DOCUMENT_ID"
+    MANIFEST_AND_CATALOG = "MANIFEST_AND_CATALOG"
+    SOURCE_URL = "SOURCE_URL"
+    COMPOSITE_IDENTITY = "COMPOSITE_IDENTITY"
+    NONE = "NONE"

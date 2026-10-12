@@ -3,7 +3,7 @@ FASE 4 — UnifiedIngestRunner: ÚNICO orquestador de ingesta para todas las aut
 
 Pipeline por documento (máquina de estados de Fase 3):
 DISCOVERED -> QUEUED -> DOWNLOADING -> VERIFYING/VALIDATING -> PROMOTING -> MANIFESTING ->
-CATALOGING -> COMPLETED | QUARANTINED | FAILED | SKIPPED_DUPLICATE
+CATALOGING -> COMPLETED | QUARANTINED | FAILED   (skip solo vía preflight: SKIPPED_ALREADY_PRESENT)
 
 Protocolo de dos fases (DEFECT-06): la promoción a raw se deshace (rollback) si falla el
 manifiesto o el catálogo, de modo que nunca queda un raw sin su registro.
@@ -15,16 +15,20 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, List, Optional
 
+from mod_01_ingestion.src.unified.application.preflight import KnownDocumentPreflight
 from mod_01_ingestion.src.unified.cas_store import ContentAddressedRawStore
+from mod_01_ingestion.src.unified.domain.enums import PreflightStatus
 from mod_01_ingestion.src.unified.domain.errors import SimulatedDataRejectedError, sanitize_message
 from mod_01_ingestion.src.unified.domain.policy import assert_not_simulated
 from mod_01_ingestion.src.unified.persistence_guard import assert_persistable
+from mod_01_ingestion.src.unified.preflight_lookup import RepositoryKnownDocumentLookup
 from mod_01_ingestion.src.unified.config import DataLayout
 from mod_01_ingestion.src.unified.download_service import DownloadService
 from mod_01_ingestion.src.unified.lock_manager import LockManager, LockTimeout
 from mod_01_ingestion.src.unified.models import (
     SCHEMA_VERSION, CatalogRecord, DiscoveryRequest, DocumentCandidate, ErrorClass, JobContext,
     JobState, ManifestRecord, PipelineResult, RunContext)
+from mod_01_ingestion.src.unified.domain.models import PreflightOutcome
 from mod_01_ingestion.src.unified.rate_limiter import DomainRateLimiter
 from mod_01_ingestion.src.unified.repositories import CatalogRepository, ManifestRepository, QuarantineService
 from mod_01_ingestion.src.unified.source_adapter import SourceAdapter
@@ -58,6 +62,7 @@ class UnifiedIngestRunner:
         run: Optional[RunContext] = None,
         rate_limiter: Optional[DomainRateLimiter] = None,
         lock_timeout_s: float = 30.0,
+        preflight: Optional[KnownDocumentPreflight] = None,
     ):
         self.lock_timeout_s = lock_timeout_s
         self._seq = 0
@@ -74,6 +79,9 @@ class UnifiedIngestRunner:
         self.manifests = manifests or ManifestRepository(self.layout, mode=self.run.mode)
         self.catalog = catalog or CatalogRepository(self.layout.catalog_db, mode=self.run.mode)
         self.quarantine = QuarantineService(self.layout)
+        # U5A: lectura previa de lo ya registrado; el UoW sigue siendo la autoridad final antes del commit.
+        self.preflight = preflight or KnownDocumentPreflight(
+            RepositoryKnownDocumentLookup(self.manifests, self.catalog, self.cas))
 
     # ------------------------------------------------------------------------------
     def run_discovery(self, request: DiscoveryRequest) -> RunReport:
@@ -87,7 +95,7 @@ class UnifiedIngestRunner:
         self.telemetry.emit("run_finished", None, "ingest_runner", authority=request.authority,
                             completed=report.count(JobState.COMPLETED), failed=report.count(JobState.FAILED),
                             quarantined=report.count(JobState.QUARANTINED),
-                            skipped=report.count(JobState.SKIPPED_DUPLICATE))
+                            skipped=report.count(JobState.SKIPPED_ALREADY_PRESENT))
         return report
 
     def _state(self, job: JobContext, state: JobState, **kw):
@@ -106,12 +114,12 @@ class UnifiedIngestRunner:
             return JobOutcome(job.job_id, job.document_id, JobState.FAILED.value,
                               ErrorClass.VALIDATION_REJECTED.value, str(ex))
 
-        # Idempotencia: manifiesto ya comprometido y raw íntegro => no se vuelve a descargar.
-        prior = self.manifests.get(cand.authority, cand.fiscal_year, cand.document_id)
-        if prior and self.cas.verify(prior["sha256"], Path(prior["raw_path"])):
-            self._state(job, JobState.SKIPPED_DUPLICATE, sha256=prior["sha256"])
-            return JobOutcome(job.job_id, job.document_id, JobState.SKIPPED_DUPLICATE.value,
-                              raw_path=prior["raw_path"], sha256=prior["sha256"])
+        # U5A: preflight de SOLO LECTURA antes de cualquier lock, rate limiter, conexión, .part o CAS.
+        pf = self._run_preflight(job, cand)
+        if not pf.may_download:
+            return self._preflight_terminal(job, pf)
+        # ÚNICA autoridad de skip: KnownDocumentPreflight. No existe idempotencia por document_id + integridad local
+        # (no prueba que la representación remota no haya cambiado); sin validador remoto se descarga y el UoW decide.
 
         try:
             with self.locks.acquire(f"doc-{cand.document_id}", timeout_s=self.lock_timeout_s):
@@ -121,6 +129,41 @@ class UnifiedIngestRunner:
             return JobOutcome(job.job_id, job.document_id, JobState.FAILED.value, ErrorClass.LOCKED.value, str(ex))
 
     # ------------------------------------------------------------------------------
+    _PREFLIGHT_EVENT = {
+        PreflightStatus.SKIPPED_ALREADY_PRESENT: "PREFLIGHT_SKIPPED", PreflightStatus.PROCEED_DOWNLOAD: "PREFLIGHT_PROCEED",
+        PreflightStatus.POSSIBLE_REPUBLICATION: "PREFLIGHT_REPUBLICATION",
+        PreflightStatus.RECOVERY_REQUIRED: "PREFLIGHT_RECOVERY_REQUIRED", PreflightStatus.CONFLICT: "PREFLIGHT_CONFLICT",
+        PreflightStatus.MANUAL_REVIEW: "PREFLIGHT_MANUAL_REVIEW"}
+    _PREFLIGHT_STATE = {
+        PreflightStatus.SKIPPED_ALREADY_PRESENT: JobState.SKIPPED_ALREADY_PRESENT,
+        PreflightStatus.RECOVERY_REQUIRED: JobState.RECOVERY_REQUIRED, PreflightStatus.CONFLICT: JobState.CONFLICT,
+        PreflightStatus.MANUAL_REVIEW: JobState.MANUAL_REVIEW}
+
+    def _run_preflight(self, job: JobContext, cand: DocumentCandidate) -> PreflightOutcome:
+        """Ejecuta el preflight y registra sus eventos (solo códigos: sin URLs completas, tokens ni contenido).
+        Fail-closed: si la consulta de registros falla no se descarga a ciegas; pasa a revisión manual."""
+        self.telemetry.emit("PREFLIGHT_STARTED", job, "preflight")
+        try:
+            pf = self.preflight.evaluate(cand, self.run)
+        except Exception as ex:
+            pf = PreflightOutcome(
+                status=PreflightStatus.MANUAL_REVIEW, reason_code=f"PREFLIGHT_LOOKUP_ERROR:{type(ex).__name__}",
+                document_id=cand.document_id, discovered_at=self.run.started_at, needs_manual_review=True,
+                safe_message=sanitize_message(f"no se pudieron consultar los registros existentes: {type(ex).__name__}"))
+        self.telemetry.emit(self._PREFLIGHT_EVENT[pf.status], job, "preflight", status=pf.status.value,
+                            matched_by=pf.matched_by.value, reason_code=pf.reason_code)
+        return pf
+
+    def _preflight_terminal(self, job: JobContext, pf: PreflightOutcome) -> JobOutcome:
+        state = self._PREFLIGHT_STATE[pf.status]
+        klass = None if pf.status in (PreflightStatus.SKIPPED_ALREADY_PRESENT, PreflightStatus.MANUAL_REVIEW) \
+            else ErrorClass.INVARIANT_VIOLATION.value
+        self._state(job, state, reason_code=pf.reason_code, matched_by=pf.matched_by.value, preflight=True,
+                    sha256=pf.existing_sha256)
+        return JobOutcome(job.job_id, job.document_id, state.value, klass, pf.safe_message, sha256=pf.existing_sha256,
+                          needs_manual_review=pf.needs_manual_review,
+                          failure_stage=None if pf.skips_download else "PREFLIGHT")
+
     def _abort_promotion(self, job: JobContext, promo, klass: ErrorClass, message: str, *, failure_stage: Optional[str],
                          uow=None) -> JobOutcome:
         """Cierra un intento fallido DESPUÉS de promover: revierte solo lo demostrablemente propio del CAS/raw
@@ -151,12 +194,11 @@ class UnifiedIngestRunner:
                           orphaned_cas_path=rb.orphaned_path)
 
     def _process_locked(self, adapter: SourceAdapter, cand: DocumentCandidate, job: JobContext) -> JobOutcome:
-        # Doble comprobación (Fase 6): otro proceso pudo completar el documento mientras esperábamos el lock.
-        prior = self.manifests.get(cand.authority, cand.fiscal_year, cand.document_id)
-        if prior and self.cas.verify(prior["sha256"], Path(prior["raw_path"])):
-            self._state(job, JobState.SKIPPED_DUPLICATE, sha256=prior["sha256"], after_lock=True)
-            return JobOutcome(job.job_id, job.document_id, JobState.SKIPPED_DUPLICATE.value,
-                              raw_path=prior["raw_path"], sha256=prior["sha256"])
+        # Re-evaluación tras el lock (Fase 6): otro proceso pudo registrar el documento mientras esperábamos. La decisión
+        # sigue siendo EXCLUSIVAMENTE del preflight; aquí solo se traduce su resultado.
+        pf = self._run_preflight(job, cand)
+        if not pf.may_download:
+            return self._preflight_terminal(job, pf)
         self._state(job, JobState.QUEUED)
         meta = adapter.fetch_metadata(cand)
         build = getattr(adapter, "build_download_request", None)

@@ -8,11 +8,23 @@ import json
 import os
 import threading
 from pathlib import Path
+from urllib.parse import urlsplit, urlunsplit
 from typing import Any, Dict, List, Optional
 
 from mod_01_ingestion.src.unified.models import SCHEMA_VERSION, JobContext, RunContext, utc_now
 
 REQUIRED_FIELDS = ("schema_version", "ts", "event", "run_id", "job_id", "document_id", "authority", "component")
+
+
+def _redact_url(value: str) -> str:
+    """U5A: en telemetría las URLs viajan sin query, fragmento ni credenciales (pueden llevar tokens o firmas)."""
+    try:
+        p = urlsplit(value)
+    except ValueError:
+        return value
+    if p.scheme not in ("http", "https") or not p.hostname:
+        return value
+    return urlunsplit((p.scheme, p.hostname + (f":{p.port}" if p.port else ""), p.path, "", ""))
 
 
 class TelemetryLogger:
@@ -33,7 +45,7 @@ class TelemetryLogger:
             "authority": job.authority if job else None,
             "component": component,
         }
-        record.update(fields)
+        record.update({k: (_redact_url(v) if k.endswith("url") and isinstance(v, str) else v) for k, v in fields.items()})
         line = json.dumps(record, ensure_ascii=False, default=str)
         with self._lock:
             with open(self.path, "a", encoding="utf-8") as f:

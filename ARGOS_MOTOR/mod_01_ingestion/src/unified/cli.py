@@ -75,7 +75,7 @@ def main(argv=None) -> int:
     report = runner.run_discovery(req)
     print(json.dumps({"run_id": report.run_id, "outcomes": [o.__dict__ for o in report.outcomes]},
                      ensure_ascii=False, indent=2))
-    return 0 if all(o.state in ("COMPLETED", "SKIPPED_DUPLICATE") for o in report.outcomes) else 2
+    return 0 if all(o.state in ("COMPLETED", "SKIPPED_ALREADY_PRESENT", "SKIPPED_DUPLICATE") for o in report.outcomes) else 2
 
 
 if __name__ == "__main__":

@@ -15,7 +15,7 @@ from typing import Any, Dict, List, Optional
 from urllib.parse import urlparse
 
 from mod_01_ingestion.src.unified.domain.enums import (
-    AttestationLevel, AttestationScope, ExecutionMode, SourceType, UnitOfWorkStatus)
+    AttestationLevel, AttestationScope, ExecutionMode, PreflightMatch, PreflightStatus, SourceType, UnitOfWorkStatus)
 from mod_01_ingestion.src.unified.domain.errors import (
     DomainValidationError, InvalidCandidateError, InvalidSourceMetadataError, UnsupportedExecutionModeError)
 
@@ -153,8 +153,15 @@ class DocumentCandidate(_Serializable):
     source: Optional[str] = None
     source_type: Optional[SourceType] = None
     expected_sha256: Optional[str] = None
+    # U5A: evidencia opcional para el KnownDocumentPreflight (ninguna se persiste todavía).
+    entity_id: Optional[str] = None                 # entity:… de la capa de identidad (U3)
+    instrument_id: Optional[str] = None             # instrument:… (U3)
+    source_document_id: Optional[str] = None        # identificador estable publicado por la fuente
+    source_id_is_version_stable: bool = False       # el adapter ATESTIGUA que ese id identifica UNA versión concreta
 
     def __post_init__(self):
+        if self.source_id_is_version_stable and not self.source_document_id:
+            raise InvalidCandidateError("source_id_is_version_stable exige source_document_id")
         for name in ("authority", "issuer_id", "doc_type"):
             _require(getattr(self, name), name, InvalidCandidateError)
         _require(self.country_code, "country_code", InvalidCandidateError)
@@ -455,3 +462,46 @@ class UnitOfWorkOutcome(_Serializable):
     @property
     def needs_manual_review(self) -> bool:
         return self.recovery_required or bool(self.compensation_errors) or bool(self.orphaned_cas_sha256)
+
+
+@dataclass(frozen=True)
+class PreflightOutcome:
+    """Resultado de solo lectura del preflight. Nunca lleva URLs completas, cookies, tokens ni contenido documental.
+
+    ``existing_manifest`` / ``existing_catalog`` son resúmenes mínimos (sin rutas absolutas ni URLs).
+    Para ``POSSIBLE_REPUBLICATION`` conserva lo necesario para U5B: ``existing_sha256`` (hash previo),
+    ``expected_sha256`` (nuevo), ``source_document_id``, ``fiscal_year``, ``discovered_at`` y la causa (``reason_code``).
+    """
+    status: PreflightStatus
+    reason_code: str
+    document_id: str
+    matched_by: PreflightMatch = PreflightMatch.NONE
+    source_document_id: Optional[str] = None
+    expected_sha256: Optional[str] = None
+    existing_sha256: Optional[str] = None
+    entity_id: Optional[str] = None
+    instrument_id: Optional[str] = None
+    existing_manifest: Optional[Dict[str, Any]] = None
+    existing_catalog: Optional[Dict[str, Any]] = None
+    fiscal_year: Optional[int] = None
+    discovered_at: Optional[str] = None
+    needs_manual_review: bool = False
+    safe_message: str = ""
+
+    def __post_init__(self):
+        if self.status in (PreflightStatus.RECOVERY_REQUIRED, PreflightStatus.CONFLICT, PreflightStatus.MANUAL_REVIEW)                 and not self.needs_manual_review:
+            raise DomainValidationError(f"{self.status.value} exige needs_manual_review=True")
+        if self.status is PreflightStatus.SKIPPED_ALREADY_PRESENT and self.matched_by not in (
+                PreflightMatch.SHA256, PreflightMatch.SOURCE_DOCUMENT_ID):
+            raise DomainValidationError("un skip exige evidencia fuerte: SHA256 o SOURCE_DOCUMENT_ID (nunca solo document_id, URL o nombre)")
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
+
+    @property
+    def skips_download(self) -> bool:
+        return self.status is PreflightStatus.SKIPPED_ALREADY_PRESENT
+
+    @property
+    def may_download(self) -> bool:
+        return self.status in (PreflightStatus.PROCEED_DOWNLOAD, PreflightStatus.POSSIBLE_REPUBLICATION)

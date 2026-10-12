@@ -3,7 +3,7 @@ nacionales, runners de ``descarga/``, httpx, requests, duckdb ni arelle."""
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Callable, ContextManager, Optional, Protocol, Tuple, runtime_checkable
+from typing import Any, Callable, ContextManager, Mapping, Optional, Protocol, Sequence, Tuple, runtime_checkable
 
 from mod_01_ingestion.src.unified.domain.models import (
     CatalogRecord, DownloadRequest, DownloadResult, JobContext, ManifestRecord, PromotionResult, UnitOfWorkOutcome)
@@ -52,3 +52,23 @@ class ManifestCatalogUnitOfWork(Protocol):
 
     def execute(self, manifest: ManifestRecord, catalog_record: CatalogRecord,
                 on_phase: Optional[Callable[[str], None]] = None) -> UnitOfWorkOutcome: ...
+
+
+@runtime_checkable
+class KnownDocumentLookup(Protocol):
+    """U5A — Consultas de SOLO LECTURA sobre lo ya registrado. Sin escritura, sin red, sin crear directorios.
+    Cada método devuelve mapeos mínimos con las claves que existan (``document_id``, ``sha256``, ``status``,
+    ``authority``, ``fiscal_year``, ``doc_type``, ``issuer_id``, ``issuer_lei``, ``entity_id``, ``instrument_id``...)."""
+
+    def get_manifest(self, authority: str, fiscal_year: int, document_id: str) -> Optional[Mapping[str, Any]]: ...
+
+    def get_catalog(self, document_id: str) -> Optional[Mapping[str, Any]]: ...
+
+    def find_by_sha256(self, sha256: str) -> Sequence[Mapping[str, Any]]:
+        """Registros de catálogo cuyo contenido tiene ese SHA-256."""
+
+    def find_by_source_document_id(self, authority: str, source_document_id: str) -> Sequence[Mapping[str, Any]]:
+        """Registros asociados a un identificador estable de la fuente. ``[]`` si la persistencia no lo almacena."""
+
+    def content_is_intact(self, record: Mapping[str, Any]) -> bool:
+        """Verificación de solo lectura de que el contenido registrado existe y coincide con su hash."""
