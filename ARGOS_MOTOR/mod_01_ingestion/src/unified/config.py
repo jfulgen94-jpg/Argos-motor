@@ -39,6 +39,9 @@ class DataLayout:
     @property
     def catalog_db(self) -> Path: return self.root / "catalog" / "unified_catalog.duckdb"
 
+    @property
+    def versions(self) -> Path: return self.root / "versions"      # U5B: sidecars de versiones (fuera de ``manifests/``)
+
     def ensure(self) -> "DataLayout":
         for p in (self.raw, self.cas, self.staging, self.quarantine, self.manifests,
                   self.telemetry, self.locks, self.catalog_db.parent):

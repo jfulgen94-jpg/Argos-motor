@@ -18,7 +18,8 @@ class DownloadServicePort(Protocol):
 class ContentAddressedStore(Protocol):
     def blob_path(self, sha256: str) -> Path: ...
 
-    def promote(self, staged_path: Path, sha256: str, raw_relpath: Path) -> PromotionResult: ...
+    def promote(self, staged_path: Path, sha256: str, raw_relpath: Optional[Path],
+                create_view: bool = True) -> PromotionResult: ...
 
     def rollback(self, promo: PromotionResult) -> None: ...
 
@@ -67,8 +68,19 @@ class KnownDocumentLookup(Protocol):
     def find_by_sha256(self, sha256: str) -> Sequence[Mapping[str, Any]]:
         """Registros de catálogo cuyo contenido tiene ese SHA-256."""
 
-    def find_by_source_document_id(self, authority: str, source_document_id: str) -> Sequence[Mapping[str, Any]]:
-        """Registros asociados a un identificador estable de la fuente. ``[]`` si la persistencia no lo almacena."""
-
     def content_is_intact(self, record: Mapping[str, Any]) -> bool:
         """Verificación de solo lectura de que el contenido registrado existe y coincide con su hash."""
+
+
+@runtime_checkable
+class VersionedDocumentLookup(KnownDocumentLookup, Protocol):
+    """U5B — Consultas de SOLO LECTURA sobre versiones de contenido (identidad lógica / slot). Cada entrada trae
+    ``identity_key, sha256, status, version_ref, revision, document_id, contract_id, contract_version, normalizer_version``
+    y banderas de consistencia ``table_present / sidecar_present / facts_match``."""
+
+    def find_versions(self, identity_key: str) -> Sequence[Mapping[str, Any]]: ...
+
+    def find_versions_by_sha256(self, sha256: str) -> Sequence[Mapping[str, Any]]: ...
+
+    def blob_is_intact(self, sha256: str) -> bool:
+        """El blob del CAS existe y su contenido coincide con el hash (sin depender de ninguna vista raw)."""

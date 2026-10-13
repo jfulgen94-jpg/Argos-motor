@@ -12,7 +12,7 @@ from mod_01_ingestion.src.unified.application.preflight import KnownDocumentPref
 from mod_01_ingestion.src.unified.application import ports
 from mod_01_ingestion.src.unified.config import DataLayout
 from mod_01_ingestion.src.unified.domain.enums import ExecutionMode, PreflightMatch as M, PreflightStatus as S
-from mod_01_ingestion.src.unified.domain.errors import DomainValidationError, InvalidCandidateError
+from mod_01_ingestion.src.unified.domain.errors import DomainValidationError
 from mod_01_ingestion.src.unified.domain.models import (
     CatalogRecord, DocumentCandidate, ManifestRecord, PreflightOutcome, RunContext, SourceMetadata)
 from mod_01_ingestion.src.unified.models import DiscoveryRequest
@@ -46,10 +46,10 @@ def rec(c=None, sha=SHA, **over):
 class FakeLookup:
     """Solo lectura por construcción: no expone ningún método de escritura."""
 
-    def __init__(self, manifests=(), catalogs=(), by_sha=(), by_source=(), intact=True):
+    def __init__(self, manifests=(), catalogs=(), by_sha=(), intact=True):
         self.manifests = {(r["authority"], r["fiscal_year"], r["document_id"]): r for r in manifests}
         self.catalogs = {r["document_id"]: r for r in catalogs}
-        self.by_sha, self.by_source, self.intact = list(by_sha), list(by_source), intact
+        self.by_sha, self.intact = list(by_sha), intact
         self.calls = []
 
     def get_manifest(self, authority, fiscal_year, document_id):
@@ -63,10 +63,6 @@ class FakeLookup:
     def find_by_sha256(self, sha256):
         self.calls.append("find_by_sha256")
         return [r for r in self.by_sha if r["sha256"] == sha256]
-
-    def find_by_source_document_id(self, authority, source_document_id):
-        self.calls.append("find_by_source_document_id")
-        return list(self.by_source)
 
     def content_is_intact(self, record):
         self.calls.append("content_is_intact")
@@ -194,18 +190,14 @@ def test_pf14_document_type_incompatible_is_conflict():
     assert out2.status is S.CONFLICT and "authority" in out2.reason_code
 
 
-def test_pf15_stable_source_document_id_allows_skip_only_when_attested():
-    c = cand(source_document_id="SRC-1", source_id_is_version_stable=True)
+def test_pf15_source_document_id_without_a_source_contract_has_no_authority():
+    """U5B: el booleano ``source_id_is_version_stable`` se retiró; un id sin contrato de la fuente nunca autoriza un skip."""
+    c = cand(source_document_id="SRC-1")
     r = rec(c)
-    out = run(FakeLookup([r], [r], by_source=[r]), c)
-    assert out.status is S.SKIPPED_ALREADY_PRESENT and out.matched_by is M.SOURCE_DOCUMENT_ID
-    unattested = cand(source_document_id="SRC-1", source_id_is_version_stable=False)
-    out2 = run(FakeLookup([r], [r], by_source=[r]), unattested)
-    assert out2.status is S.PROCEED_DOWNLOAD                         # sin atestación de estabilidad no hay skip
-    with pytest.raises(InvalidCandidateError):
-        cand(source_id_is_version_stable=True)                       # exige source_document_id
-    moved = rec(c, document_id="CNMV_OTHER_2023_ESEF_PACKAGE")       # mismo id de fuente bajo otro document_id
-    assert run(FakeLookup(by_source=[moved]), c).status is S.MANUAL_REVIEW
+    out = run(FakeLookup([r], [r]), c)
+    assert out.status is S.PROCEED_DOWNLOAD and out.reason_code == "NO_VERIFIABLE_HASH_DOCUMENT_ID_MATCH"
+    with pytest.raises(TypeError):
+        cand(source_id_is_version_stable=True)                       # el campo ya no existe
 
 
 def test_preflight_is_deterministic_and_lookup_is_read_only():
@@ -410,7 +402,7 @@ def test_runner_possible_republication_downloads_but_unit_of_work_refuses_to_ove
 @pytest.mark.parametrize("label,lookup_kw,cand_kw", [
     ("A_same_document_id_no_hash", dict(), {}),
     ("D_intact_raw_no_remote_validator", dict(intact=True), {}),
-    ("C_stable_flag_without_persisted_source_id", dict(), dict(source_document_id="SRC-1", source_id_is_version_stable=True)),
+    ("C_source_id_without_contract", dict(), dict(source_document_id="SRC-1")),
 ])
 def test_no_remote_validator_proceeds_even_with_matching_manifest_catalog_and_intact_raw(label, lookup_kw, cand_kw):
     c = cand(**cand_kw)

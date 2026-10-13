@@ -125,7 +125,7 @@ ALLOWED_TRANSITIONS = {
     _S.DOWNLOADING: frozenset({_S.VERIFYING, _S.VALIDATING, _S.FAILED}),
     _S.VERIFYING: frozenset({_S.VALIDATING, _S.FAILED, _S.QUARANTINED}),
     _S.VALIDATING: frozenset({_S.PROMOTING, _S.QUARANTINED, _S.FAILED}),
-    _S.PROMOTING: frozenset({_S.MANIFESTING, _S.FAILED, _S.RECOVERY_REQUIRED}),
+    _S.PROMOTING: frozenset({_S.MANIFESTING, _S.FAILED, _S.RECOVERY_REQUIRED, _S.MANUAL_REVIEW}),  # U5B: UNCONFIRMED
     _S.MANIFESTING: frozenset({_S.CATALOGING, _S.FAILED, _S.RECOVERY_REQUIRED}),
     _S.CATALOGING: frozenset({_S.COMPLETED, _S.FAILED, _S.RECOVERY_REQUIRED}),
     # flujo objetivo (aún no emitido por el runner)
@@ -193,6 +193,10 @@ class PreflightStatus(str, Enum):
     SKIPPED_ALREADY_PRESENT = "SKIPPED_ALREADY_PRESENT"
     PROCEED_DOWNLOAD = "PROCEED_DOWNLOAD"
     POSSIBLE_REPUBLICATION = "POSSIBLE_REPUBLICATION"
+    # U5B: republicación respaldada por evidencia válida según el contrato de la fuente (puede descargar).
+    REPUBLICATION_CONFIRMED = "REPUBLICATION_CONFIRMED"
+    # U5B: mismo contenido ya en el CAS bajo OTRA identidad y hash esperado autoritativo: se registra sin transporte.
+    REUSE_EXISTING_CONTENT = "REUSE_EXISTING_CONTENT"
     RECOVERY_REQUIRED = "RECOVERY_REQUIRED"
     CONFLICT = "CONFLICT"
     MANUAL_REVIEW = "MANUAL_REVIEW"
@@ -206,4 +210,5 @@ class PreflightMatch(str, Enum):
     MANIFEST_AND_CATALOG = "MANIFEST_AND_CATALOG"
     SOURCE_URL = "SOURCE_URL"
     COMPOSITE_IDENTITY = "COMPOSITE_IDENTITY"
+    VERSION_EVIDENCE = "VERSION_EVIDENCE"      # U5B: evidencia de republicación validada por contrato
     NONE = "NONE"

@@ -18,6 +18,7 @@ from mod_01_ingestion.src.unified.domain.enums import (
     AttestationLevel, AttestationScope, ExecutionMode, PreflightMatch, PreflightStatus, SourceType, UnitOfWorkStatus)
 from mod_01_ingestion.src.unified.domain.errors import (
     DomainValidationError, InvalidCandidateError, InvalidSourceMetadataError, UnsupportedExecutionModeError)
+from mod_01_ingestion.src.unified.domain.versions import RepublicationEvidence, SourceIdentityContract
 
 SCHEMA_VERSION = "1.0.0"
 
@@ -156,12 +157,17 @@ class DocumentCandidate(_Serializable):
     # U5A: evidencia opcional para el KnownDocumentPreflight (ninguna se persiste todavía).
     entity_id: Optional[str] = None                 # entity:… de la capa de identidad (U3)
     instrument_id: Optional[str] = None             # instrument:… (U3)
-    source_document_id: Optional[str] = None        # identificador estable publicado por la fuente
-    source_id_is_version_stable: bool = False       # el adapter ATESTIGUA que ese id identifica UNA versión concreta
+    source_document_id: Optional[str] = None        # identificador publicado por la fuente (sin contrato NO tiene autoridad)
+    # U5B: el id solo adquiere significado con un contrato de la fuente (id_scope, namespace, evidencias admitidas).
+    identity_contract: Optional[SourceIdentityContract] = None
+    republication_evidence: Optional[RepublicationEvidence] = None
+    source_revision: Optional[int] = None           # revisión publicada por la fuente (si su contrato la define)
 
     def __post_init__(self):
-        if self.source_id_is_version_stable and not self.source_document_id:
-            raise InvalidCandidateError("source_id_is_version_stable exige source_document_id")
+        if self.identity_contract is not None and not isinstance(self.identity_contract, SourceIdentityContract):
+            raise InvalidCandidateError("identity_contract debe ser un SourceIdentityContract")
+        if self.republication_evidence is not None and not isinstance(self.republication_evidence, RepublicationEvidence):
+            raise InvalidCandidateError("republication_evidence debe ser un RepublicationEvidence")
         for name in ("authority", "issuer_id", "doc_type"):
             _require(getattr(self, name), name, InvalidCandidateError)
         _require(self.country_code, "country_code", InvalidCandidateError)
@@ -296,23 +302,27 @@ class CasOwnershipReceipt:
     blob_size: int
     blob_mtime_ns: int
     staged_path: str
+    blob_link_mode: str = ""      # U5B: cómo se creó el blob (hardlink | copy); prueba de exclusividad sin vista raw
 
 
 @dataclass
 class PromotionResult(_Serializable):
-    raw_path: str
+    raw_path: Optional[str]       # None cuando link_mode == "none" (U5B): nunca una ruta vacía como centinela
     cas_path: str
     sha256: str
     size_bytes: int
     deduplicated: bool            # el blob ya existía en el CAS
-    link_mode: str                # hardlink | copy
+    link_mode: str                # hardlink | copy | existing | none (U5B: "none" = sin vista raw; raw_path es None)
     receipt: Optional[CasOwnershipReceipt] = None   # U4: None => este intento NO es propietario demostrable del blob
+    # U5B.1: referencia durable de una versión SIN vista raw (enlace duro en ``<root>/cas_pins/<sha>/<pin_key>``).
+    pin_path: Optional[str] = None
+    pin_created: bool = False     # True => este intento creó el pin (y solo entonces ``rollback_owned`` puede retirarlo)
 
 
 @dataclass
 class CasRollbackResult(_Serializable):
     """Resultado de revertir una promoción. ``blob_state``: REMOVED | PREEXISTING_LEFT | SHARED_LEFT | UNPROVEN_ORPHAN.
-    ``raw_view_state``: REMOVED | ABSENT | EXISTING_LEFT | UNPROVEN_LEFT. Solo ``UNPROVEN_*`` exige reconciliación."""
+    ``raw_view_state``: REMOVED | ABSENT | NO_VIEW | EXISTING_LEFT | UNPROVEN_LEFT. Solo ``UNPROVEN_*`` exige reconciliación."""
     blob_state: str
     raw_view_state: str
     orphaned_sha256: Optional[str] = None
@@ -410,6 +420,7 @@ class PipelineResult(_Serializable):
     failure_stage: Optional[str] = None       # U4: MANIFEST | CATALOG | INVARIANT | COMMIT | CAS
     orphaned_cas_sha256: Optional[str] = None
     orphaned_cas_path: Optional[str] = None
+    version_status: Optional[str] = None      # U5B: CURRENT | UNCONFIRMED | SUPERSEDED (solo flujo con contrato)
 
 
 @dataclass
@@ -483,6 +494,9 @@ class PreflightOutcome:
     instrument_id: Optional[str] = None
     existing_manifest: Optional[Dict[str, Any]] = None
     existing_catalog: Optional[Dict[str, Any]] = None
+    identity_key: Optional[str] = None           # U5B
+    version_ref: Optional[str] = None            # U5B
+    reuse_sha256: Optional[str] = None           # U5B: contenido a reutilizar desde el CAS (REUSE_EXISTING_CONTENT)
     fiscal_year: Optional[int] = None
     discovered_at: Optional[str] = None
     needs_manual_review: bool = False
@@ -494,6 +508,11 @@ class PreflightOutcome:
         if self.status is PreflightStatus.SKIPPED_ALREADY_PRESENT and self.matched_by not in (
                 PreflightMatch.SHA256, PreflightMatch.SOURCE_DOCUMENT_ID):
             raise DomainValidationError("un skip exige evidencia fuerte: SHA256 o SOURCE_DOCUMENT_ID (nunca solo document_id, URL o nombre)")
+        if self.status is PreflightStatus.REUSE_EXISTING_CONTENT and not (
+                self.matched_by is PreflightMatch.SHA256 and self.reuse_sha256 and self.reuse_sha256 == self.expected_sha256):
+            raise DomainValidationError("reutilizar contenido exige coincidencia SHA256 exacta con expected_sha256")
+        if self.status is PreflightStatus.REPUBLICATION_CONFIRMED and self.matched_by is not PreflightMatch.VERSION_EVIDENCE:
+            raise DomainValidationError("REPUBLICATION_CONFIRMED exige evidencia validada por contrato")
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
@@ -504,4 +523,9 @@ class PreflightOutcome:
 
     @property
     def may_download(self) -> bool:
-        return self.status in (PreflightStatus.PROCEED_DOWNLOAD, PreflightStatus.POSSIBLE_REPUBLICATION)
+        return self.status in (PreflightStatus.PROCEED_DOWNLOAD, PreflightStatus.POSSIBLE_REPUBLICATION,
+                               PreflightStatus.REPUBLICATION_CONFIRMED)
+
+    @property
+    def reuses_content(self) -> bool:
+        return self.status is PreflightStatus.REUSE_EXISTING_CONTENT
