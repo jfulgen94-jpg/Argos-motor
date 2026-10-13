@@ -100,7 +100,12 @@ class UnifiedIngestRunner:
     def run_discovery(self, request: DiscoveryRequest) -> RunReport:
         adapter = self.adapters[request.authority.upper()]
         report = RunReport(run_id=self.run.run_id)
-        candidates = adapter.discover(request)
+        try:
+            candidates = adapter.discover(request)
+        except Exception as ex:      # U4: sin candidatos no se persiste nada; el fallo queda en la telemetría y se propaga
+            self.telemetry.emit("adapter_discovery_failed", None, "ingest_runner", authority=request.authority,
+                                error=sanitize_message(f"{type(ex).__name__}: {ex}"))
+            raise
         self.telemetry.emit("run_started", None, "ingest_runner", authority=request.authority,
                             candidates=len(candidates))
         for cand in candidates:
@@ -217,6 +222,12 @@ class UnifiedIngestRunner:
                           needs_manual_review=pf.needs_manual_review,
                           failure_stage=None if pf.skips_download else "PREFLIGHT")
 
+    def _adapter_failure(self, job: JobContext, ex: BaseException) -> JobOutcome:
+        text = sanitize_message(f"fallo del adapter: {type(ex).__name__}: {ex}")
+        self._state(job, JobState.FAILED, error_class=ErrorClass.UNKNOWN.value, message=text, failure_stage="ADAPTER")
+        return JobOutcome(job.job_id, job.document_id, JobState.FAILED.value, ErrorClass.UNKNOWN.value, text,
+                          failure_stage="ADAPTER")
+
     def _blob_referenced(self, sha256: str) -> bool:
         """¿Alguna versión (de cualquier identidad) usa este blob? Falla cerrado: ante la duda, el blob se conserva."""
         try:
@@ -262,7 +273,10 @@ class UnifiedIngestRunner:
         if not (pf.may_download or pf.reuses_content):
             return self._preflight_terminal(job, pf)
         self._state(job, JobState.QUEUED)
-        meta = adapter.fetch_metadata(cand)
+        try:
+            meta = adapter.fetch_metadata(cand)
+        except Exception as ex:      # U4: un adapter defectuoso no tumba el run; aún no se ha tocado CAS/manifiesto/catálogo
+            return self._adapter_failure(job, ex)
         staging = self.layout.staging / job.run_id / job.document_id
         if reuse:
             # U5B: mismo contenido ya en el CAS (hash esperado autoritativo y blob íntegro): sin transporte. Se copia el
@@ -275,9 +289,12 @@ class UnifiedIngestRunner:
         else:
             build = getattr(adapter, "build_download_request", None)
             from mod_01_ingestion.src.unified.models import DownloadRequest
-            dreq = build(cand, meta, staging) if build else DownloadRequest(
-                url=meta.resolved_url, staging_dir=str(staging), file_name=meta.file_name,
-                expected_sha256=meta.expected_sha256, headers=meta.headers)
+            try:
+                dreq = build(cand, meta, staging) if build else DownloadRequest(
+                    url=meta.resolved_url, staging_dir=str(staging), file_name=meta.file_name,
+                    expected_sha256=meta.expected_sha256, headers=meta.headers)
+            except Exception as ex:
+                return self._adapter_failure(job, ex)
 
             self._state(job, JobState.DOWNLOADING, url=dreq.url)
             dl = self.download.download(dreq, job)

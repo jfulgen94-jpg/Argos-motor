@@ -365,8 +365,11 @@ def test_runner_guard_blocks_simulated_before_any_io(tmp_path, mode, expect_fail
         assert rep.outcomes[0].error_class == "VALIDATION_REJECTED"
         assert not list((tmp_path / "root" / "raw").rglob("*.*"))
     else:
-        with pytest.raises(AssertionError, match="fetch_metadata"):   # SANDBOX permite avanzar hasta metadatos
-            runner.run_discovery(DiscoveryRequest(authority="CNMV"))
+        # SANDBOX permite avanzar hasta metadatos. Desde U4 un fallo del adapter se TIPIFICA (FAILED/ADAPTER) en lugar de
+        # tumbar el run: el trampolín de ``fetch_metadata`` queda en el mensaje y la descarga nunca se invoca.
+        rep = runner.run_discovery(DiscoveryRequest(authority="CNMV"))
+        assert rep.outcomes[0].state == JobState.FAILED.value and rep.outcomes[0].failure_stage == "ADAPTER"
+        assert "fetch_metadata" in (rep.outcomes[0].message or "")
     assert _data_snapshot() == before        # AT-17: ni raw ni DuckDB del árbol del proyecto cambian
 
 
