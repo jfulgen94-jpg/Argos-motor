@@ -5,6 +5,9 @@ Analiza el Bestätigungsvermerk del Wirtschaftsprüfer en los informes anuales a
 
 import os
 from pathlib import Path
+import sys
+sys.path.insert(0, str(__import__('pathlib').Path(__file__).resolve().parents[2]))
+from mod_01_ingestion.src.unified.legacy_exclusions import is_unified_reserved  # U5D
 
 BASE_DE = Path("ARGOS_MOTOR/data/raw/DE_BAFIN")
 
@@ -22,6 +25,7 @@ def run_german_audit():
     print("=== AUDITORÍA FORENSE DE INFORMES ALEMANES (BAFIN / HGB) ===")
     if not BASE_DE.exists(): return
     files = list(BASE_DE.rglob('*.htm')) + list(BASE_DE.rglob('*.xhtml')) + list(BASE_DE.rglob('*.pdf'))
+    files = [x for x in files if not is_unified_reserved(x)]  # U5D
     print(f"Total documentos de informe para auditar: {len(files)}")
     for f in files[:5]:
         print(f"  Auditando: {f.name} (Tamaño: {f.stat().st_size / 1024:.1f} KB)")

@@ -7,11 +7,14 @@ import os
 import json
 import argparse
 from pathlib import Path
+import sys
+sys.path.insert(0, str(__import__('pathlib').Path(__file__).resolve().parents[2]))
+from mod_01_ingestion.src.unified.legacy_exclusions import is_unified_reserved  # U5D
 
 BASE_FR = Path("ARGOS_MOTOR/data/raw/FR_AMF")
 
 def analyze_french_filing(comp_dir, year):
-    files = [f for f in comp_dir.rglob('*') if f.is_file()]
+    files = [f for f in comp_dir.rglob('*') if f.is_file() and not is_unified_reserved(f)]
     file_names = [f.name.lower() for f in files]
     total_size_mb = sum(f.stat().st_size for f in files) / (1024 * 1024)
 

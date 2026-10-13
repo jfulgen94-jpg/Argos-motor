@@ -41,6 +41,10 @@ class DataLayout:
 
     @property
     def versions(self) -> Path: return self.root / "versions"      # U5B: sidecars de versiones (fuera de ``manifests/``)
+    @property
+    def cas_pins(self) -> Path: return self.root / "cas_pins"      # U5B.1: pins durables (fuera de ``cas/``)
+    @property
+    def reports(self) -> Path: return self.root / "reports"        # U5D: informes (canarios, piloto)
 
     def ensure(self) -> "DataLayout":
         for p in (self.raw, self.cas, self.staging, self.quarantine, self.manifests,

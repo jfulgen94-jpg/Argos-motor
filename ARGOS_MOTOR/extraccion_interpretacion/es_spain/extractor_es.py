@@ -12,12 +12,14 @@ import json
 import zipfile
 import argparse
 from pathlib import Path
+sys.path.insert(0, str(__import__('pathlib').Path(__file__).resolve().parents[2]))
+from mod_01_ingestion.src.unified.legacy_exclusions import is_unified_reserved  # U5D
 
 BASE_CANONICAL = Path("ARGOS_MOTOR/data/raw/ES_CNMV")
 OUTPUT_LAKE = Path("ARGOS_MOTOR/data/lake/parquet")
 
 def analyze_and_extract_package(comp_dir, year):
-    files = [f for f in comp_dir.rglob('*') if f.is_file()]
+    files = [f for f in comp_dir.rglob('*') if f.is_file() and not is_unified_reserved(f)]
     file_names = [f.name.lower() for f in files]
 
     has_zip = any(f.endswith('.zip') for f in file_names)

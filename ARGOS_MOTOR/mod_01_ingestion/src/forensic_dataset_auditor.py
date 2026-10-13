@@ -33,6 +33,7 @@ from collections import defaultdict
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+from mod_01_ingestion.src.unified.legacy_exclusions import assert_not_unified, is_unified_reserved
 from mod_01_ingestion.src.entity_resolver import EntityResolver, compute_comprehensive_similarity, normalize_cif
 from mod_01_ingestion.src.ai_pre_validation_guard import AIPreValidationGuard, SYNTHETIC_SIGNATURES
 from mod_01_ingestion.src.document_completeness_validator import DocumentCompletenessValidator
@@ -80,6 +81,7 @@ class ForensicDatasetAuditor:
         all_files = [
             p for p in self.base_dir.rglob("*.*") 
             if p.is_file() and p.suffix.lower() in valid_extensions and "extracted" not in p.parts
+            and not is_unified_reserved(p)          # U5D: nunca auditar cas/, cas_pins/, versions/, catalogo unificado
         ]
         print(f"Total de documentos primarios detectados para auditoría: {len(all_files)}", flush=True)
 

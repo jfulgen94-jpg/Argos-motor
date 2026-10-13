@@ -26,7 +26,7 @@ from mod_01_ingestion.src.unified.domain.versions import SourceIdentityContract
 from mod_01_ingestion.src.unified.source_config import SourceConfig, SourceConfigSet
 
 PENDING, APPROVED, REJECTED, REVOKED = "PENDING_APPROVAL", "APPROVED", "REJECTED", "REVOKED"
-KINDS = ("SOURCE_CONFIG", "IDENTITY_CONTRACT")
+KINDS = ("SOURCE_CONFIG", "IDENTITY_CONTRACT", "PILOT_PLAN")
 DDL = (
     """CREATE TABLE IF NOT EXISTS unified_config_approvals (
         subject_id VARCHAR NOT NULL, kind VARCHAR NOT NULL, version VARCHAR NOT NULL, content_hash VARCHAR NOT NULL,
