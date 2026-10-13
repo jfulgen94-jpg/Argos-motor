@@ -114,11 +114,18 @@ class JobContext(_Serializable):
     def __post_init__(self):
         for name in ("run_id", "job_id", "document_id", "authority"):
             _require(getattr(self, name), name)
+        if isinstance(self.attempt, bool) or not isinstance(self.attempt, int) or self.attempt < 1:
+            raise DomainValidationError("attempt debe ser un entero >= 1")
+
+    @property
+    def attempt_id(self) -> str:
+        """U3: identifica UN intento de procesar este job (``<job_id>#a<n>``): ``run_id`` > ``job_id`` > ``attempt_id``."""
+        return f"{self.job_id}#a{self.attempt}"
 
     @classmethod
-    def for_candidate(cls, run: RunContext, seq: int, candidate: "DocumentCandidate") -> "JobContext":
+    def for_candidate(cls, run: RunContext, seq: int, candidate: "DocumentCandidate", attempt: int = 1) -> "JobContext":
         return cls(run_id=run.run_id, job_id=f"{run.run_id}:{seq:06d}",
-                   document_id=candidate.document_id, authority=candidate.authority)
+                   document_id=candidate.document_id, authority=candidate.authority, attempt=attempt)
 
 
 @dataclass
@@ -421,6 +428,7 @@ class PipelineResult(_Serializable):
     orphaned_cas_sha256: Optional[str] = None
     orphaned_cas_path: Optional[str] = None
     version_status: Optional[str] = None      # U5B: CURRENT | UNCONFIRMED | SUPERSEDED (solo flujo con contrato)
+    attempt_id: Optional[str] = None          # U3: ``<job_id>#a<n>`` del intento que produjo este resultado
 
 
 @dataclass

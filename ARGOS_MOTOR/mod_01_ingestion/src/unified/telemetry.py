@@ -44,6 +44,8 @@ class TelemetryLogger:
             "document_id": job.document_id if job else None,
             "authority": job.authority if job else None,
             "component": component,
+            "attempt": job.attempt if job else None,           # U3: run_id > job_id > attempt_id en cada evento
+            "attempt_id": job.attempt_id if job else None,
         }
         record.update({k: (_redact_url(v) if k.endswith("url") and isinstance(v, str) else v) for k, v in fields.items()})
         line = json.dumps(record, ensure_ascii=False, default=str)

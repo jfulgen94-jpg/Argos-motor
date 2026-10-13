@@ -36,7 +36,9 @@ class LockManager:
     def _try_create(self, path: Path) -> bool:
         try:
             fd = os.open(str(path), os.O_CREAT | os.O_EXCL | os.O_WRONLY)
-        except FileExistsError:
+        except (FileExistsError, PermissionError):
+            # Windows: crear con O_EXCL un archivo cuyo borrado está pendiente (otro hilo/proceso lo está soltando) da
+            # PermissionError, no FileExistsError. Es "ocupado": se reintenta en el siguiente sondeo.
             return False
         with os.fdopen(fd, "w", encoding="utf-8") as f:
             json.dump({"pid": os.getpid(), "acquired_at": self._clock()}, f)
@@ -45,7 +47,7 @@ class LockManager:
     def _is_stale(self, path: Path) -> bool:
         try:
             return (self._clock() - path.stat().st_mtime) > self.stale_after_s
-        except FileNotFoundError:
+        except OSError:
             return False
 
     @contextmanager
@@ -56,7 +58,7 @@ class LockManager:
             if self._is_stale(path):
                 try:
                     path.unlink()
-                except FileNotFoundError:
+                except (FileNotFoundError, PermissionError):
                     pass
                 continue
             if self._clock() >= deadline:
@@ -65,7 +67,11 @@ class LockManager:
         try:
             yield path
         finally:
-            try:
-                path.unlink()
-            except FileNotFoundError:
-                pass
+            for _ in range(50):          # Windows: otro hilo puede tener el archivo abierto un instante
+                try:
+                    path.unlink()
+                    break
+                except FileNotFoundError:
+                    break
+                except PermissionError:
+                    time.sleep(0.01)

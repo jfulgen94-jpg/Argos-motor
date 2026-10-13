@@ -13,6 +13,7 @@ from __future__ import annotations
 import hashlib
 import json
 import shutil
+import threading
 import time
 from contextlib import ExitStack
 from dataclasses import dataclass, field
@@ -74,6 +75,8 @@ class UnifiedIngestRunner:
     ):
         self.lock_timeout_s = lock_timeout_s
         self._seq = 0
+        self._attempts: Dict[str, int] = {}
+        self._counter_lock = threading.Lock()      # U3: job_id y attempt únicos también con hilos
         self.layout = layout.ensure()
         self.run = run or RunContext(data_root=str(layout.root))
         self.adapters = {k.upper(): v for k, v in adapters.items()}
@@ -112,8 +115,16 @@ class UnifiedIngestRunner:
         self.telemetry.emit("state_transition", job, "ingest_runner", state=state.value, **kw)
 
     def process_candidate(self, adapter: SourceAdapter, cand: DocumentCandidate) -> JobOutcome:
-        self._seq += 1   # job_id único y monótono dentro del run (no se reinicia entre autoridades)
-        job = JobContext.for_candidate(self.run, self._seq, cand)
+        with self._counter_lock:
+            self._seq += 1   # job_id único y monótono dentro del run (no se reinicia entre autoridades)
+            seq = self._seq
+            self._attempts[cand.document_id] = attempt = self._attempts.get(cand.document_id, 0) + 1
+        job = JobContext.for_candidate(self.run, seq, cand, attempt=attempt)   # attempt = nº de intento de ESTE documento en el run
+        out = self._process_job(adapter, cand, job)
+        out.attempt_id = job.attempt_id
+        return out
+
+    def _process_job(self, adapter: SourceAdapter, cand: DocumentCandidate, job: JobContext) -> JobOutcome:
         self._state(job, JobState.DISCOVERED, url=cand.source_url)
 
         # U1 guard LIVE (ADR-005): ningún candidato simulado/fixture avanza fuera de TEST/SANDBOX.

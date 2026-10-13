@@ -48,10 +48,21 @@ class DataLayout:
             p.mkdir(parents=True, exist_ok=True)
         return self
 
+    @staticmethod
+    def _plain(p: Path) -> Path:
+        """``Path.resolve()`` en Windows puede devolver, de forma intermitente (carreras de creación/borrado), la ruta con el
+        prefijo de ruta extendida: se normaliza antes de comparar."""
+        s = str(p)
+        if s.startswith("\\\\?\\UNC\\"):
+            return Path("\\\\" + s[8:])
+        if s.startswith("\\\\?\\"):
+            return Path(s[4:])
+        return p
+
     def assert_inside(self, path: Path) -> Path:
         """Garantiza que ``path`` resida dentro del data root (cero escrituras externas)."""
-        resolved = Path(path).resolve()
-        root = self.root.resolve()
+        resolved = self._plain(Path(path).resolve())
+        root = self._plain(self.root.resolve())
         if resolved != root and root not in resolved.parents:
             raise PathPolicyError(f"Ruta fuera del data root: {resolved} (root={root})")
         return resolved

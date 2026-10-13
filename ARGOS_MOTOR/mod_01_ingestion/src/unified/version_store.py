@@ -35,6 +35,7 @@ from mod_01_ingestion.src.unified.domain.models import utc_now
 from mod_01_ingestion.src.unified.domain.versions import (
     DocumentVersion, Observation, VersionStatus, diff_facts)
 from mod_01_ingestion.src.unified.persistence_guard import assert_persistable
+from mod_01_ingestion.src.unified.repositories import db_mutex
 
 DDL = (
     """CREATE TABLE IF NOT EXISTS unified_document_versions (
@@ -101,6 +102,12 @@ class VersionRepository:
     # ------------------------------------------------------------------ conexión
     @contextmanager
     def _connect(self, read_only: bool = False) -> Iterator[Any]:
+        with db_mutex(self.db_path):                       # U3: un hilo por archivo DuckDB a la vez (ver ``db_mutex``)
+            with self._connect_unlocked(read_only) as con:
+                yield con
+
+    @contextmanager
+    def _connect_unlocked(self, read_only: bool = False) -> Iterator[Any]:
         import duckdb
         last = None
         con = None
@@ -198,6 +205,24 @@ class VersionRepository:
     def current_version(self, identity_key: str) -> Optional[Dict[str, Any]]:
         cur = [r for r in self.list_versions(identity_key) if r.get("status") == VersionStatus.CURRENT.value]
         return cur[0] if cur else None
+
+    def list_all_versions(self) -> List[Dict[str, Any]]:
+        """U3: todas las versiones (tabla + sidecars) con banderas de consistencia. SOLO LECTURA."""
+        keys = [r["identity_key"] for r in self._read("SELECT DISTINCT identity_key FROM unified_document_versions "
+                                                      "ORDER BY identity_key")]
+        out: List[Dict[str, Any]] = []
+        known_dirs = set()
+        for k in keys:
+            known_dirs.add(sidecar_dir_name(k))
+            out.extend(self.list_versions(k))
+        if self.sidecar_root.is_dir():
+            for d in sorted(p for p in self.sidecar_root.iterdir() if p.is_dir() and p.name not in known_dirs):
+                for p in sorted(d.glob("*.json")):          # sidecars de identidades que ya no tienen NINGUNA fila
+                    side = json.loads(p.read_text(encoding="utf-8"))
+                    row = dict(side.get("facts", {}))
+                    row.update(status=None, table_present=False, sidecar_present=True, facts_match=True, sha256=p.stem)
+                    out.append(row)
+        return out
 
     def get_observation(self, run_id: str, job_id: str) -> Optional[Dict[str, Any]]:
         rows = self._read("SELECT * FROM unified_document_observations WHERE run_id = ? AND job_id = ?", [run_id, job_id])

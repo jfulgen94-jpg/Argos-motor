@@ -12,6 +12,7 @@ from __future__ import annotations
 import json
 import os
 import shutil
+import threading
 import warnings
 from dataclasses import asdict
 from pathlib import Path
@@ -30,8 +31,25 @@ _MANIFEST_MANDATORY = (
     "completeness_status")
 
 
+_DB_MUTEXES: Dict[str, "threading.RLock"] = {}
+_DB_MUTEXES_GUARD = threading.Lock()
+
+
+def db_mutex(path) -> "threading.RLock":
+    """U3: exclusión mutua EN PROCESO por archivo DuckDB. Abrir ``duckdb.connect`` sobre el mismo archivo desde varios hilos a la
+    vez da ``BinderError: Unique file handle conflict`` (no es ``IOException``). Entre PROCESOS sigue valiendo el reintento
+    ante ``IOException``; esta función NO da ninguna garantía multiproceso."""
+    key = os.path.normcase(os.path.abspath(str(path)))
+    with _DB_MUTEXES_GUARD:
+        return _DB_MUTEXES.setdefault(key, threading.RLock())
+
+
 class ManifestValidationError(Exception):
     pass
+
+
+class HistoricalOverwriteError(ManifestValidationError):
+    """U3: un registro histórico (mismo document_id) NUNCA se sobrescribe con otro contenido (otro sha256)."""
 
 
 _MODE_UNSET = object()
@@ -79,6 +97,7 @@ class ManifestRepository:
         data = rec.to_dict()
         validate_manifest_dict(data)
         final = self.path_for(rec.authority, rec.fiscal_year, rec.document_id)
+        self._assert_no_overwrite(final, str(data["sha256"]))          # U3: antes de crear ningún fichero
         final.parent.mkdir(parents=True, exist_ok=True)
         pending = final.with_name(final.name + ".pending")
         with open(pending, "w", encoding="utf-8") as f:
@@ -87,13 +106,24 @@ class ManifestRepository:
             os.fsync(f.fileno())
         return pending
 
+    @staticmethod
+    def _assert_no_overwrite(final: Path, sha256: str) -> None:
+        if final.exists():
+            with open(final, "r", encoding="utf-8") as f:
+                prev = json.load(f)
+            if str(prev.get("sha256")) != sha256:
+                raise HistoricalOverwriteError(
+                    f"el manifiesto histórico {final.name} existe con otro sha256: no se sobrescribe")
+
     def commit(self, pending: Path) -> Path:
         pending = Path(pending)
         # U2: un .pending forjado o alterado tras el stage no puede promocionarse a manifiesto definitivo.
         with open(pending, "r", encoding="utf-8") as f:
-            assert_persistable(json.load(f), self.mode, self.layout.manifests,
-                               authorized_sandbox_roots=self.authorized_sandbox_roots)
+            pending_data = json.load(f)
+        assert_persistable(pending_data, self.mode, self.layout.manifests,
+                           authorized_sandbox_roots=self.authorized_sandbox_roots)
         final = pending.with_name(pending.name[:-len(".pending")])
+        self._assert_no_overwrite(final, str(pending_data.get("sha256")))      # U3: también en el commit (TOCTOU/forjado)
         os.replace(pending, final)
         return final
 
@@ -118,6 +148,10 @@ class CatalogRepository:
         self._exec(self.DDL)
 
     def _exec(self, sql: str, params: Iterable[Any] = ()):
+        with db_mutex(self.db_path):
+            return self._exec_unlocked(sql, params)
+
+    def _exec_unlocked(self, sql: str, params: Iterable[Any] = ()):
         import time
         import duckdb
         last = None
@@ -137,6 +171,9 @@ class CatalogRepository:
     def upsert(self, rec: CatalogRecord) -> None:
         # U2: validar antes de abrir DuckDB.
         assert_persistable(rec, self.mode, self.db_path, authorized_sandbox_roots=self.authorized_sandbox_roots)
+        prev = self._exec("SELECT sha256 FROM unified_catalog WHERE document_id = ?", [rec.document_id])
+        if prev and str(prev[0][0]) != str(rec.sha256):             # U3: INSERT OR REPLACE no puede pisar historia
+            raise HistoricalOverwriteError(f"el registro de catálogo {rec.document_id} existe con otro sha256: no se sobrescribe")
         d = asdict(rec)
         cols = list(d.keys())
         self._exec(
@@ -153,6 +190,10 @@ class CatalogRepository:
 
     # --- U5A: consultas de SOLO LECTURA (conexión read_only; no crean el archivo ni toman el lock de escritura) ---
     def _query_ro(self, sql: str, params: Iterable[Any] = ()):
+        with db_mutex(self.db_path):
+            return self._query_ro_unlocked(sql, params)
+
+    def _query_ro_unlocked(self, sql: str, params: Iterable[Any] = ()):
         import time
         import duckdb
         if not self.db_path.exists():
@@ -181,6 +222,11 @@ class CatalogRepository:
         """Filas del catálogo con ese SHA-256 (orden determinista por document_id). Solo lectura."""
         cols, rows = self._query_ro("SELECT * FROM unified_catalog WHERE lower(sha256) = ? ORDER BY document_id",
                                     [str(sha256).lower()])
+        return [dict(zip(cols, r)) for r in rows]
+
+    def list_records(self):
+        """U3: todas las filas del catálogo como dicts (SOLO LECTURA; vacío si no existe el archivo)."""
+        cols, rows = self._query_ro("SELECT * FROM unified_catalog ORDER BY document_id")
         return [dict(zip(cols, r)) for r in rows]
 
     def count(self) -> int:
