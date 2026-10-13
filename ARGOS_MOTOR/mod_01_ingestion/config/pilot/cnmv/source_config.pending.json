@@ -1,0 +1,22 @@
+{
+  "artifact": "CNMV_SOURCE_CONFIG",
+  "status": "PENDING_APPROVAL",
+  "schema_version": "1",
+  "config_version": "cnmv-pilot-1-pending",
+  "official_evidence_ref": "REQUIRES_OFFICIAL_EVIDENCE",
+  "source": {
+    "source_id": "cnmv_pilot",
+    "authority": "CNMV",
+    "country_code": "ES",
+    "allowed_domains": ["www.cnmv.es"],
+    "allowed_domains_evidence": "REQUIRES_OFFICIAL_EVIDENCE",
+    "user_agent": "PENDING_APPROVAL:NOT_ACTIVATABLE",
+    "contact": "PENDING_APPROVAL:NOT_ACTIVATABLE",
+    "rate": {"min_interval_s": 5, "max_concurrent": 1},
+    "timeout_s": 60,
+    "max_total_s": 300,
+    "max_bytes": 67108864,
+    "retries": {"max_retries": 1, "retry_statuses": [429, 503]},
+    "http_403_policy": "PERMANENT_NO_RETRY"
+  }
+}
