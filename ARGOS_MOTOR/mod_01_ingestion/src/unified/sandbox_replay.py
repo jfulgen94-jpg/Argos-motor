@@ -43,6 +43,7 @@ class ReplayHttp:
         self._routes: Dict[str, List[httpx.Response]] = {}
         self.calls: List[str] = []            # URL sin query, en orden de llegada
         self.misses: List[str] = []
+        self.requests: List[Dict] = []        # {"url", "headers", "timeout"} de cada petición (para verificar la política)
 
     @staticmethod
     def _key(url: str) -> str:
@@ -58,6 +59,8 @@ class ReplayHttp:
     def _handle(self, request: httpx.Request) -> httpx.Response:
         key = self._key(str(request.url))
         self.calls.append(key)
+        self.requests.append({"url": key, "headers": dict(request.headers),
+                              "timeout": dict(request.extensions.get("timeout", {}))})
         if not is_host_allowed(request.url.host or "", self.allowed_hosts) or key not in self._routes:
             self.misses.append(key)
             raise ReplayMiss(f"replay sin respuesta registrada para {key}", request=request)
@@ -80,9 +83,10 @@ def make_sandbox_runner(root: Union[str, Path], router: SourceRouter, replay: Re
     if is_operational_location(root):
         raise SandboxViolation("el sandbox no puede trabajar sobre una ubicación operativa")
     layout = DataLayout(Path(root))
+    limiter = runner_kw.pop("rate_limiter", None) or DomainRateLimiter(min_interval_s=0, sleep=lambda s: None)
     download = DownloadService(client=httpx.Client(transport=replay.transport(), follow_redirects=True),
                                sleep=lambda s: None, initial_backoff_s=0.0, max_retries=runner_kw.pop("max_retries", 1),
-                               rate_limiter=DomainRateLimiter(min_interval_s=0, sleep=lambda s: None))
+                               rate_limiter=limiter)
     run = runner_kw.pop("run", None) or RunContext(data_root=str(root), mode=mode)
     if ExecutionMode(run.mode) not in SANDBOX_MODES:
         raise SandboxViolation("el RunContext del sandbox debe ser SANDBOX o TEST")

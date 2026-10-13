@@ -121,7 +121,11 @@ class DownloadService:
         meta_path = final_path.with_name(final_path.name + ".part.meta")
         url_sha = hashlib.sha256(req.url.encode("utf-8")).hexdigest()[:32]    # sin guardar la URL (puede llevar tokens)
         limit = req.max_bytes or self.default_max_bytes
-        deadline = started + self.max_total_s
+        total_s = req.max_total_s or self.max_total_s
+        deadline = started + total_s
+        timeout_s = req.timeout_s or self.timeout_s
+        max_retries = self.max_retries if req.max_retries is None else req.max_retries
+        extra_retry = self.extra_retryable_statuses | frozenset(req.retry_statuses or ())
 
         client = self._client or httpx.Client(headers=DEFAULT_HEADERS, timeout=self.timeout_s, follow_redirects=True)
         owns_client = self._client is None
@@ -149,7 +153,7 @@ class DownloadService:
                         meta_path.unlink(missing_ok=True)
                     self._emit("download_attempt", job, url=req.url, attempt=attempt, resume_from=existing)
                     with self.rate_limiter.slot(req.url):
-                        with client.stream("GET", req.url, headers=headers, timeout=self.timeout_s) as resp:
+                        with client.stream("GET", req.url, headers=headers, timeout=timeout_s) as resp:
                             status = resp.status_code
                             final_url = str(resp.url)
                             mime = resp.headers.get("content-type", "application/octet-stream").split(";")[0].strip()
@@ -166,7 +170,7 @@ class DownloadService:
                             if limit and clen and clen.isdigit() and int(clen) > limit:
                                 raise DownloadFailure(f"content-length {clen} > max_bytes {limit}",
                                                       ErrorClass.SIZE_EXCEEDED, status)
-                            klass = classify_status(status, self.extra_retryable_statuses)
+                            klass = classify_status(status, extra_retry)
                             if klass is not None:
                                 retry_after = resp.headers.get("retry-after")
                                 raise _Retryable(status, klass, retry_after)
@@ -194,7 +198,7 @@ class DownloadService:
                                                                       ErrorClass.SIZE_EXCEEDED, status)
                                             if self._monotonic() > deadline:
                                                 raise DownloadFailure(
-                                                    f"plazo total de descarga agotado ({self.max_total_s}s)",
+                                                    f"plazo total de descarga agotado ({total_s}s)",
                                                     ErrorClass.TIMEOUT, status)
                                 except BaseException:
                                     try:                      # lo escrito hasta aquí queda DURABLE: el .part es reanudable
@@ -213,7 +217,7 @@ class DownloadService:
                         f"HTTP {r.status} en {req.url}", r.klass, r.status)
                     if r.klass is ErrorClass.HTTP_PERMANENT:
                         raise last_error  # 4xx no reintentable: 1 solo intento
-                    if attempt >= self.max_retries:
+                    if attempt >= max_retries:
                         raise last_error   # DEFECT-02: conserva status + clase reales
                     wait = 0.0 if r.immediate else self.backoff(attempt)
                     ra = _parse_retry_after(r.retry_after, self._clock)       # segundos o fecha HTTP
@@ -227,14 +231,14 @@ class DownloadService:
                     attempt += 1
                 except httpx.TimeoutException as ex:
                     last_error = DownloadFailure(f"Timeout en {req.url}: {ex}", ErrorClass.TIMEOUT, status)
-                    if attempt >= self.max_retries:
+                    if attempt >= max_retries:
                         raise last_error
                     self._emit("download_retry", job, status=None, error="timeout", attempt=attempt)
                     self._sleep(self.backoff(attempt))
                     attempt += 1
                 except httpx.RequestError as ex:
                     last_error = DownloadFailure(f"Red caída en {req.url}: {ex}", ErrorClass.NETWORK, status)
-                    if attempt >= self.max_retries:
+                    if attempt >= max_retries:
                         raise last_error
                     self._emit("download_retry", job, status=None, error="network", attempt=attempt)
                     self._sleep(self.backoff(attempt))

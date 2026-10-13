@@ -265,11 +265,26 @@ class DownloadRequest(_Serializable):
     allow_resume: bool = True
     max_bytes: Optional[int] = None                      # Fase 5: tope de tamaño aprobado
     allowed_domains: Optional[List[str]] = None          # Fase 5: dominios permitidos (origen + redirecciones)
+    # U4: política por fuente (None => valores por defecto del DownloadService)
+    timeout_s: Optional[float] = None
+    max_total_s: Optional[float] = None
+    max_retries: Optional[int] = None
+    retry_statuses: Optional[List[int]] = None           # estados HTTP adicionales tratados como reintentables
 
     def __post_init__(self):
         _require(self.url, "url")
         _require(self.file_name, "file_name")
         validate_sha256(self.expected_sha256, "expected_sha256")
+        for name in ("timeout_s", "max_total_s"):
+            v = getattr(self, name)
+            if v is not None and (isinstance(v, bool) or not isinstance(v, (int, float)) or v <= 0):
+                raise DomainValidationError(f"{name} debe ser un número positivo")
+        if self.max_retries is not None and (isinstance(self.max_retries, bool) or not isinstance(self.max_retries, int)
+                                             or self.max_retries < 0):
+            raise DomainValidationError("max_retries debe ser un entero >= 0")
+        if self.retry_statuses is not None and any(isinstance(s, bool) or not isinstance(s, int) or not 400 <= s <= 599
+                                                   for s in self.retry_statuses):
+            raise DomainValidationError("retry_statuses debe contener códigos HTTP 400-599")
 
 
 @dataclass
