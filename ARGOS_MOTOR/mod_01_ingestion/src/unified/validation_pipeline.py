@@ -8,13 +8,66 @@ validadores por país.
 """
 from __future__ import annotations
 
+import re
+import stat
+import zipfile
 from pathlib import Path
-from typing import Optional
+from typing import List, Optional
 
 from mod_01_ingestion.src.document_completeness_validator import DocumentCompletenessValidator
 from mod_01_ingestion.src.unified.models import ErrorClass, SourceMetadata, ValidationResult
 
 HTMLISH = (b"<html", b"<!doctype html", b"<?xml", b"<head", b"<body", b"<!doctype")
+
+
+# Límites por defecto frente a bombas de descompresión (sobrescribibles con ``authority_rules``)
+DEFAULT_MAX_MEMBERS = 20000
+DEFAULT_MAX_UNCOMPRESSED = 4 * 1024 ** 3
+DEFAULT_MAX_RATIO = 1000
+_DRIVE_RE = re.compile(r"^[A-Za-z]:")
+
+
+def unsafe_zip_member_reason(name: str, external_attr: int = 0) -> Optional[str]:
+    """Zip Slip: nombre absoluto, con ``..``, unidad, NUL, ADS de NTFS o enlace simbólico. Nunca se extrae nada aquí."""
+    if "\x00" in name:
+        return f"nombre con NUL: {name!r}"
+    norm = name.replace("\\", "/")
+    if norm.startswith("/") or _DRIVE_RE.match(norm) or norm.startswith("//"):
+        return f"ruta absoluta: {name!r}"
+    if any(part == ".." for part in norm.split("/")):
+        return f"salida del directorio con '..': {name!r}"
+    if ":" in norm:
+        return f"flujo alterno/unidad en el nombre: {name!r}"
+    if stat.S_ISLNK((external_attr >> 16) & 0xFFFF):
+        return f"enlace simbólico dentro del ZIP: {name!r}"
+    return None
+
+
+def inspect_zip_safety(path: Path, rules: dict) -> List[str]:
+    """Razones por las que un ZIP es inseguro (vacío = seguro o ilegible: lo ilegible lo rechaza el validador de completitud)."""
+    try:
+        with zipfile.ZipFile(path) as zf:
+            infos = zf.infolist()
+    except (zipfile.BadZipFile, OSError, ValueError, NotImplementedError, EOFError):
+        return []
+    reasons: List[str] = []
+    for info in infos:
+        why = unsafe_zip_member_reason(info.filename, info.external_attr)
+        if why:
+            reasons.append("ZIP_SLIP: " + why)
+    max_members = int(rules.get("max_members", DEFAULT_MAX_MEMBERS))
+    if len(infos) > max_members:
+        reasons.append(f"ZIP_BOMB: {len(infos)} miembros > {max_members}")
+    total = sum(i.file_size for i in infos)
+    max_total = int(rules.get("max_uncompressed_bytes", DEFAULT_MAX_UNCOMPRESSED))
+    if total > max_total:
+        reasons.append(f"ZIP_BOMB: {total} bytes descomprimidos > {max_total}")
+    max_ratio = int(rules.get("max_compression_ratio", DEFAULT_MAX_RATIO))
+    for i in infos:
+        if i.file_size > (1 << 20) and i.file_size / max(1, i.compress_size) > max_ratio:
+            reasons.append(f"ZIP_BOMB: ratio de compresión anómalo en {i.filename!r}")
+            break
+    return reasons
 
 
 def sniff_kind(header: bytes) -> str:
@@ -58,6 +111,11 @@ class ValidationPipeline:
         if expected in ("ZIP", "PDF") and kind != expected:
             return self._reject("INVALID_FORMAT", kind, ErrorClass.VALIDATION_REJECTED,
                                 [f"Firma mágica {kind} no coincide con lo esperado {expected}."])
+
+        if kind == "ZIP":
+            unsafe = inspect_zip_safety(path, rules)
+            if unsafe:     # se rechaza ANTES de cualquier validación de contenido y de cualquier promoción
+                return self._reject("UNSAFE_ARCHIVE", kind, ErrorClass.VALIDATION_REJECTED, unsafe[:20])
 
         try:
             res = self.completeness.validate_document(path, expected_doc_type=doc_type)
