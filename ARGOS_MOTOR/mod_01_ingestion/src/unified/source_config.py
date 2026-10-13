@@ -96,7 +96,8 @@ def _num(d: Mapping, key: str, where: str, lo: float, hi: float, default, intege
 
 
 def _build_contract(d: Mapping, authority: str, where: str):
-    """Devuelve ``(contrato | None, estado)``; solo se ACTIVA con aprobación explícita."""
+    """Devuelve ``(contrato DECLARADO, aprobado_en_el_archivo)``. Quien decide si se ACTIVA es el llamador: con la aprobación
+    declarada en el propio archivo (``SourceConfig.contract``) o, mejor, con el registro auditado de ``approvals``."""
     _keys(d, _CONTRACT, where)
     for req in ("contract_id", "contract_version", "namespace", "id_scope"):
         if not str(d.get(req) or "").strip():
@@ -116,7 +117,7 @@ def _build_contract(d: Mapping, authority: str, where: str):
         raise ConfigError(f"{where}: contrato inválido: {ex}") from ex
     if not isinstance(d.get("expected_sha256_authority", False), bool):
         _err(f"{where}.expected_sha256_authority", "debe ser booleano")
-    return (contract, "ACTIVE") if approved else (None, "PENDING_APPROVAL")
+    return contract, approved
 
 
 @dataclass(frozen=True)
@@ -136,6 +137,7 @@ class SourceConfig:
     retry_statuses: Tuple[int, ...] = ()
     contract: Optional[SourceIdentityContract] = None       # SOLO si está aprobado
     contract_status: str = "NONE"                            # NONE | PENDING_APPROVAL | ACTIVE
+    declared_contract: Optional[SourceIdentityContract] = None   # U5C: el contrato declarado, aprobado o no
 
     @property
     def effective_user_agent(self) -> str:
@@ -194,9 +196,10 @@ def _parse_source(d: Mapping, where: str) -> SourceConfig:
     if (not isinstance(statuses, (list, tuple)) or any(isinstance(s, bool) or not isinstance(s, int) or not 400 <= s <= 599
                                                        for s in statuses)):
         _err(f"{where}.retries.retry_statuses", "lista de códigos HTTP 400-599")
-    contract, status = None, "NONE"
+    contract, status, declared = None, "NONE", None
     if d.get("identity_contract") is not None:
-        contract, status = _build_contract(d["identity_contract"], authority, f"{where}.identity_contract")
+        declared, approved = _build_contract(d["identity_contract"], authority, f"{where}.identity_contract")
+        contract, status = (declared, "ACTIVE") if approved else (None, "PENDING_APPROVAL")
     return SourceConfig(
         source_id=sid, authority=authority, country_code=country, allowed_domains=tuple(domains), user_agent=ua,
         contact=contact, min_interval_s=float(_num(rate, "min_interval_s", f"{where}.rate", 0, 3600, 0.5)),
@@ -205,7 +208,7 @@ def _parse_source(d: Mapping, where: str) -> SourceConfig:
         max_bytes=int(_num(d, "max_bytes", where, 1, 4 * 1024 ** 3, 256 * 1024 * 1024, integer=True)),
         max_total_s=float(_num(d, "max_total_s", where, 1, 86400, 3600)),
         max_retries=int(_num(retries, "max_retries", f"{where}.retries", 0, 10, 4, integer=True)),
-        retry_statuses=tuple(sorted(set(statuses))), contract=contract, contract_status=status)
+        retry_statuses=tuple(sorted(set(statuses))), contract=contract, contract_status=status, declared_contract=declared)
 
 
 def parse_source_configs(data: Mapping[str, Any]) -> SourceConfigSet:
