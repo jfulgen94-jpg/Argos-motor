@@ -21,10 +21,10 @@ from datetime import datetime, timezone
 from enum import Enum
 from typing import Any, Callable, Dict, Iterable, Iterator, List, Mapping, Optional, Sequence, Tuple
 
-from mod_01_ingestion.src.unified.adapters.common import sanitize_source_url
 from mod_01_ingestion.src.unified.domain.enums import ExecutionMode
 from mod_01_ingestion.src.unified.domain.errors import DomainValidationError, sanitize_message
 from mod_01_ingestion.src.unified.domain.models import utc_now
+from mod_01_ingestion.src.unified.domain.transport import assert_no_secret, strip_url
 from mod_01_ingestion.src.unified.repositories import db_mutex
 
 
@@ -171,8 +171,9 @@ def _clean_evidence(ev: Optional[Mapping[str, Any]]) -> Optional[Dict[str, Any]]
     out: Dict[str, Any] = {}
     for k, v in ev.items():
         if isinstance(v, str):
-            v = sanitize_source_url(v) if v.startswith(("http://", "https://")) else sanitize_message(v)
+            v = strip_url(v) if v.startswith(("http://", "https://")) else sanitize_message(v)      # CNMV-U4: sin query ni fragmento
         out[str(k)] = v
+    assert_no_secret(out, "ledger.evidence")
     return out
 
 
@@ -287,6 +288,7 @@ class CoverageLedger:
         """Registra un estado para ``key``. Las claves no esperadas se registran con ``expected=False`` (hallazgo inesperado)."""
         status = LedgerStatus(status)
         ev = _clean_evidence(evidence)
+        assert_no_secret({"reason": reason, "document_id": document_id}, "ledger")
         if status is LedgerStatus.NOT_PUBLISHED:
             if not ev or not str(ev.get("method") or "").strip() or not str(ev.get("ref") or "").strip():
                 raise LedgerError("NOT_PUBLISHED exige evidencia con 'method' y 'ref'")

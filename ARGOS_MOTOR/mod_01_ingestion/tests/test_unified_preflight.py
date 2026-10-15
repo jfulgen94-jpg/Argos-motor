@@ -483,13 +483,18 @@ def test_runner_has_no_independent_skip_decision():
     assert src.count("JobState.SKIPPED_ALREADY_PRESENT") == 2        # mapa de traducción + conteo de la telemetría
 
 
-def test_telemetry_url_loses_query_but_manifest_keeps_source_url_contract(tmp_path):
+def test_telemetry_url_loses_query_and_the_manifest_only_accepts_the_stable_reference(tmp_path):
     secret = "https://example.test/a.zip?token=SECRETTOKEN&sig=abc123#frag"
     c = DocumentCandidate(authority="CNMV", country_code="ES", issuer_id="LEI1", fiscal_year=2023,
                           doc_type="ESEF_PACKAGE", source_url=secret)
-    assert c.source_url == secret                                               # el candidato no se altera
-    m, _ = _records(ManifestRepository(DataLayout(tmp_path / "r"), mode=ExecutionMode.TEST), SHA, source_url=secret)
-    assert m.source_url == secret                                               # el manifiesto conserva su contrato vigente
+    assert c.source_url == "https://example.test/a.zip"                         # CNMV-U4: el candidato solo conserva la referencia estable
+    assert c.transport_url is not None and "SECRETTOKEN" not in repr(c) + str(c.to_dict())      # la URL completa vive solo en memoria
+    from mod_01_ingestion.src.unified.domain.transport import SecretLeakError
+    with pytest.raises(SecretLeakError):                                         # un manifiesto con query/token se rechaza (fail-closed)
+        ManifestRepository(DataLayout(tmp_path / "r0"), mode=ExecutionMode.TEST).stage(
+            _records(ManifestRepository(DataLayout(tmp_path / "r0"), mode=ExecutionMode.TEST), SHA, source_url=secret)[0])
+    m, _ = _records(ManifestRepository(DataLayout(tmp_path / "r"), mode=ExecutionMode.TEST), SHA, source_url=c.source_url)
+    assert m.source_url == "https://example.test/a.zip"
     runner, *_ = committed_runner(tmp_path / "t")
     runner.telemetry.emit("probe", None, "test", url=secret, final_url=secret, other="x")
     ev = [e for e in runner.telemetry.read_all() if e["event"] == "probe"][0]

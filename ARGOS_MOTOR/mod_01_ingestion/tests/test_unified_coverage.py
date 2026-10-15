@@ -123,7 +123,7 @@ def test_not_published_requires_evidence_and_a_check_date_and_is_queryable(tmp_p
                                  "2026-10-13T10:30:00+02:00")
     assert r.status is L.NOT_PUBLISHED and r.applied
     rec = led.get(k)
-    assert rec.evidence["ref"] == "https://www.afm.nl/buscar?q=x" and "SECRETO" not in json.dumps(rec.evidence)
+    assert rec.evidence["ref"] == "https://www.afm.nl/buscar" and "SECRETO" not in json.dumps(rec.evidence)      # CNMV-U4: la query se elimina por completo
     assert led.last_non_publication_check(k) == "2026-10-13T08:30:00+00:00"                  # normalizada a UTC
     again = led.record_not_published(k, {"method": "portal-search", "ref": "https://www.afm.nl/buscar?token=OTRO&q=x#f"},
                                      "2026-10-14T08:00:00+00:00")

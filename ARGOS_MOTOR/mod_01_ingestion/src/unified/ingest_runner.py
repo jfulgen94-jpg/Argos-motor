@@ -10,6 +10,7 @@ manifiesto o el catálogo, de modo que nunca queda un raw sin su registro.
 """
 from __future__ import annotations
 
+import dataclasses
 import hashlib
 import json
 import shutil
@@ -24,6 +25,8 @@ from mod_01_ingestion.src.unified.application.preflight import KnownDocumentPref
 from mod_01_ingestion.src.unified.cas_store import ContentAddressedRawStore
 from mod_01_ingestion.src.unified.domain.enums import PreflightStatus
 from mod_01_ingestion.src.unified.domain.errors import DomainValidationError, SimulatedDataRejectedError, sanitize_message
+from mod_01_ingestion.src.unified.domain.republication import POSSIBLE_REPUBLICATION
+from mod_01_ingestion.src.unified.domain.transport import strip_url
 from mod_01_ingestion.src.unified.domain.versions import (
     DocumentVersion, IdentityKind, IdScope, InitialVersionPolicy, Observation, ResolvedIdentity, VersionStatus,
     resolve_identity)
@@ -139,6 +142,13 @@ class UnifiedIngestRunner:
             self._state(job, JobState.FAILED, error_class=ErrorClass.VALIDATION_REJECTED.value, message=str(ex))
             return JobOutcome(job.job_id, job.document_id, JobState.FAILED.value,
                               ErrorClass.VALIDATION_REJECTED.value, str(ex))
+
+        # CNMV-U4: una señal oficial de sustitución/rectificación NO se resuelve sola: revisión manual, sin descarga ni reemplazo.
+        if any(getattr(s, "kind", None) == POSSIBLE_REPUBLICATION for s in cand.replacement_signals):
+            self._state(job, JobState.MANUAL_REVIEW, error_class=POSSIBLE_REPUBLICATION)
+            return JobOutcome(job.job_id, job.document_id, JobState.MANUAL_REVIEW.value, POSSIBLE_REPUBLICATION,
+                              "la fuente indica una posible sustitución del documento: revisión manual (sin descarga ni reemplazo)",
+                              needs_manual_review=True)
 
         # U5A: preflight de SOLO LECTURA antes de cualquier lock, rate limiter, conexión, .part o CAS.
         pf = self._run_preflight(job, cand)
@@ -296,6 +306,9 @@ class UnifiedIngestRunner:
             except Exception as ex:
                 return self._adapter_failure(job, ex)
 
+            if (cand.transport_url is not None and dreq.transport_url is None
+                    and strip_url(dreq.url) == strip_url(cand.source_url)):
+                dreq = dataclasses.replace(dreq, transport_url=cand.transport_url)      # CNMV-U4: solo en memoria
             self._state(job, JobState.DOWNLOADING, url=dreq.url)
             dl = self.download.download(dreq, job)
             if not dl.ok:
@@ -357,7 +370,8 @@ class UnifiedIngestRunner:
                 completeness_status=val.completeness_status, validation_reasons=val.reasons,
                 issuer_name=cand.issuer_name, issuer_lei=cand.issuer_lei, ticker=cand.ticker,
                 source_page_url=cand.source_page_url, resumed=dl.resumed, retries_taken=dl.retries_taken,
-                deduplicated=promo.deduplicated)
+                deduplicated=promo.deduplicated, registration_number=cand.registration_number,
+                declared_resource_kind=cand.declared_resource_kind)
         except Exception as ex:      # modelo inválido: antes se propagaba dejando el raw promovido sin registro
             return self._abort_promotion(job, promo, ErrorClass.MANIFEST_FAILED, str(ex), failure_stage="MANIFEST"), promo
 

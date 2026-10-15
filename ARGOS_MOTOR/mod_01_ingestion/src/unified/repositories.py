@@ -247,6 +247,8 @@ class QuarantineService:
         rec = QuarantineRecord(document_id=job.document_id, run_id=job.run_id, job_id=job.job_id,
                                quarantine_path=str(target), error_class=error_class,
                                reasons=list(reasons), sha256=sha256)
+        from mod_01_ingestion.src.unified.domain.transport import assert_no_secret
+        assert_no_secret(rec.to_dict(), "cuarentena")
         with open(target.with_name(target.name + ".quarantine_reason.json"), "w", encoding="utf-8") as f:
             json.dump(rec.to_dict(), f, indent=2, ensure_ascii=False)
         return rec

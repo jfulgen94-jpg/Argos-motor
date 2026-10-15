@@ -11,6 +11,7 @@ from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 from typing import Any, Dict, List, Optional
 
+from mod_01_ingestion.src.unified.domain.transport import assert_no_secret, sanitize_payload
 from mod_01_ingestion.src.unified.models import SCHEMA_VERSION, JobContext, RunContext, utc_now
 
 REQUIRED_FIELDS = ("schema_version", "ts", "event", "run_id", "job_id", "document_id", "authority", "component")
@@ -47,7 +48,9 @@ class TelemetryLogger:
             "attempt": job.attempt if job else None,           # U3: run_id > job_id > attempt_id en cada evento
             "attempt_id": job.attempt_id if job else None,
         }
-        record.update({k: (_redact_url(v) if k.endswith("url") and isinstance(v, str) else v) for k, v in fields.items()})
+        record.update({k: sanitize_payload(_redact_url(v) if k.endswith("url") and isinstance(v, str) else v)
+                       for k, v in fields.items()})
+        assert_no_secret(record, f"telemetria:{event}")         # CNMV-U4: fail-closed ante cualquier token/query/cookie
         line = json.dumps(record, ensure_ascii=False, default=str)
         with self._lock:
             with open(self.path, "a", encoding="utf-8") as f:

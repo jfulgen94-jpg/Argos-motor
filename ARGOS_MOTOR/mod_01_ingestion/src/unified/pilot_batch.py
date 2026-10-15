@@ -218,6 +218,8 @@ def run_batch(phrase: str, *, root_path: Path = Path("D:/ARGOS_DATA/unified_pilo
 
 
 def _write(root: UnifiedDataRoot, report: Dict[str, Any]) -> Dict[str, Any]:
+    from mod_01_ingestion.src.unified.domain.transport import assert_no_secret
+    assert_no_secret(report, "informe")
     d = root.layout.reports / "pilot"
     d.mkdir(parents=True, exist_ok=True)
     (d / f"batch_{report['reference']}.json").write_text(json.dumps(report, indent=2, sort_keys=True, default=str, ensure_ascii=False),

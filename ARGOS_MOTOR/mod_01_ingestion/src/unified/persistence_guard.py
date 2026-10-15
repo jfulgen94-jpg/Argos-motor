@@ -25,6 +25,7 @@ from mod_01_ingestion.src.unified.domain.enums import ExecutionMode
 from mod_01_ingestion.src.unified.domain.errors import DomainValidationError, SimulatedDataRejectedError
 from mod_01_ingestion.src.unified.domain.models import validate_sha256
 from mod_01_ingestion.src.unified.domain.policy import manifest_simulation_markers
+from mod_01_ingestion.src.unified.domain.transport import assert_no_secret
 
 _ARGOS_MOTOR = Path(__file__).resolve().parents[3]
 
@@ -74,6 +75,7 @@ def assert_persistable(record, mode, location, *, authorized_sandbox_roots: Iter
     except ValueError:
         from mod_01_ingestion.src.unified.domain.errors import UnsupportedExecutionModeError
         raise UnsupportedExecutionModeError(f"modo de ejecución no soportado: {mode!r}")
+    assert_no_secret(record, "registro")        # CNMV-U4: ningún token/query/cookie/credencial/URL de transporte llega a disco
     get = record.get if hasattr(record, "get") else (lambda k, d=None: getattr(record, k, d))
     ident = get("document_id") or get("ticker") or "?"
 

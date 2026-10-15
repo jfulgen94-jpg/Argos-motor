@@ -51,6 +51,7 @@ class CNMVAdapter(BaseSourceAdapter):
                 issuer_id=rec.get("lei") or rec["ticker"], fiscal_year=int(rec["fiscal_year"]),
                 doc_type=rec["doc_type"], source_url=rec["url"], issuer_name=rec.get("name"),
                 issuer_lei=rec.get("lei"), ticker=rec.get("ticker"), source_page_url=rec.get("page_url"),
+                registration_number=rec.get("registration_number"), declared_resource_kind=rec.get("declared_resource_kind"),
                 source=self.name, source_type=self.source_type)
             if self._matches(cand, request):
                 out.append(cand)

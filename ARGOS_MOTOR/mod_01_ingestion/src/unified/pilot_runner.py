@@ -277,6 +277,8 @@ def run_pilot(auth: PilotAuthorization, *, root_path: Path = DEFAULT_PILOT_ROOT,
 
 
 def _write_report(root: UnifiedDataRoot, report: Dict[str, Any]) -> Dict[str, Any]:
+    from mod_01_ingestion.src.unified.domain.transport import assert_no_secret
+    assert_no_secret(report, "informe")
     d = root.layout.reports / "pilot"
     d.mkdir(parents=True, exist_ok=True)
     (d / f"pilot_run_{report['reference']}.json").write_text(json.dumps(report, indent=2, sort_keys=True, default=str),

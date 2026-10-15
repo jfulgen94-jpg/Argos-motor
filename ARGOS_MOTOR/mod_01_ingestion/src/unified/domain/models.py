@@ -7,17 +7,21 @@ validación en ``__post_init__`` y campos nuevos OPCIONALES al final (``mode``, 
 """
 from __future__ import annotations
 
+import dataclasses
 import re
 import uuid
 from dataclasses import dataclass, field, asdict
 from datetime import datetime, timezone
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 from urllib.parse import urlparse
 
 from mod_01_ingestion.src.unified.domain.enums import (
     AttestationLevel, AttestationScope, ExecutionMode, PreflightMatch, PreflightStatus, SourceType, UnitOfWorkStatus)
 from mod_01_ingestion.src.unified.domain.errors import (
     DomainValidationError, InvalidCandidateError, InvalidSourceMetadataError, UnsupportedExecutionModeError)
+from mod_01_ingestion.src.unified.domain.republication import ReplacementSignal
+from mod_01_ingestion.src.unified.domain.transport import (
+    StableReference, TransportUrl, split_url, strip_url, url_needs_transport)
 from mod_01_ingestion.src.unified.domain.versions import RepublicationEvidence, SourceIdentityContract
 
 SCHEMA_VERSION = "1.0.0"
@@ -169,8 +173,26 @@ class DocumentCandidate(_Serializable):
     identity_contract: Optional[SourceIdentityContract] = None
     republication_evidence: Optional[RepublicationEvidence] = None
     source_revision: Optional[int] = None           # revisión publicada por la fuente (si su contrato la define)
+    # CNMV-U4: ``source_url`` es SIEMPRE la referencia estable (sin query/fragmento/credenciales). La URL completa de transporte, si hace falta,
+    # vive solo en ``transport_url`` (efímera, no serializable, no persistible).
+    transport_url: Optional[TransportUrl] = field(default=None, repr=False, compare=False)
+    registration_number: Optional[str] = None       # nº de registro oficial de la autoridad (p. ej. CNMV); metadato, NO identidad
+    declared_resource_kind: Optional[str] = None    # recurso declarado por la fuente (PDF, xHTML, ZIP/XBRL…); sin verificar
+    replacement_signals: Tuple[ReplacementSignal, ...] = ()
 
     def __post_init__(self):
+        if isinstance(self.source_url, str):
+            if self.transport_url is None:
+                self.source_url, self.transport_url = split_url(self.source_url)
+            elif url_needs_transport(self.source_url):
+                self.source_url = strip_url(self.source_url)
+        if isinstance(self.source_page_url, str):
+            self.source_page_url = strip_url(self.source_page_url)
+        if self.transport_url is not None and not isinstance(self.transport_url, TransportUrl):
+            raise InvalidCandidateError("transport_url debe ser un TransportUrl")
+        self.replacement_signals = tuple(self.replacement_signals or ())
+        if any(not isinstance(s, ReplacementSignal) for s in self.replacement_signals):
+            raise InvalidCandidateError("replacement_signals debe contener ReplacementSignal")
         if self.identity_contract is not None and not isinstance(self.identity_contract, SourceIdentityContract):
             raise InvalidCandidateError("identity_contract debe ser un SourceIdentityContract")
         if self.republication_evidence is not None and not isinstance(self.republication_evidence, RepublicationEvidence):
@@ -195,6 +217,17 @@ class DocumentCandidate(_Serializable):
     @property
     def document_id(self) -> str:
         return build_document_id(self.authority, self.issuer_id, self.fiscal_year, self.doc_type)
+
+    def stable_reference(self, observed_at: Optional[str] = None) -> StableReference:
+        """Referencia documental persistible (sin query/token): registro, tipo declarado, host y path estables."""
+        return StableReference.from_url(self.source_url, authority=self.authority, issuer_id=self.issuer_id,
+                                        fiscal_year=self.fiscal_year, registration_number=self.registration_number,
+                                        document_family=self.doc_type, declared_resource_kind=self.declared_resource_kind,
+                                        observed_at=observed_at or utc_now())
+
+    def to_dict(self) -> Dict[str, Any]:
+        """Serialización SIN la URL de transporte (nunca sale de memoria)."""
+        return asdict(dataclasses.replace(self, transport_url=None))
 
 
 _PROVENANCE_VALUES = frozenset({"VERIFIED", "INFERRED"})
@@ -270,8 +303,17 @@ class DownloadRequest(_Serializable):
     max_total_s: Optional[float] = None
     max_retries: Optional[int] = None
     retry_statuses: Optional[List[int]] = None           # estados HTTP adicionales tratados como reintentables
+    # CNMV-U4: ``url`` es la referencia estable; la URL completa (con token) viaja solo aquí, en memoria.
+    transport_url: Optional[TransportUrl] = field(default=None, repr=False, compare=False)
 
     def __post_init__(self):
+        if isinstance(self.url, str):
+            if self.transport_url is None:
+                self.url, self.transport_url = split_url(self.url)
+            elif url_needs_transport(self.url):
+                self.url = strip_url(self.url)
+        if self.transport_url is not None and not isinstance(self.transport_url, TransportUrl):
+            raise DomainValidationError("transport_url debe ser un TransportUrl")
         _require(self.url, "url")
         _require(self.file_name, "file_name")
         validate_sha256(self.expected_sha256, "expected_sha256")
@@ -285,6 +327,9 @@ class DownloadRequest(_Serializable):
         if self.retry_statuses is not None and any(isinstance(s, bool) or not isinstance(s, int) or not 400 <= s <= 599
                                                    for s in self.retry_statuses):
             raise DomainValidationError("retry_statuses debe contener códigos HTTP 400-599")
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(dataclasses.replace(self, transport_url=None))
 
 
 @dataclass
@@ -402,6 +447,9 @@ class ManifestRecord(_Serializable):
     resumed: bool = False
     retries_taken: int = 0
     deduplicated: bool = False
+    # CNMV-U4: referencia estable (aditivos; los manifiestos previos no los tienen)
+    registration_number: Optional[str] = None
+    declared_resource_kind: Optional[str] = None
 
     def __post_init__(self):
         for name in ("document_id", "run_id", "job_id", "authority", "doc_type", "raw_path"):

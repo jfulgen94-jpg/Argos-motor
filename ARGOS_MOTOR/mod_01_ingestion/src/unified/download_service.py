@@ -20,9 +20,13 @@ import time
 from datetime import timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+import logging
+import secrets as _secrets
 from typing import Callable, Dict, FrozenSet, Optional
 
 import httpx
+
+from mod_01_ingestion.src.unified.domain.transport import authorized_transport, redact_text, strip_url
 
 from mod_01_ingestion.src.unified.models import (
     DownloadRequest, DownloadResult, ErrorClass, JobContext)
@@ -33,9 +37,28 @@ RETRYABLE_STATUS = {429, 500, 502, 503, 504}
 DEFAULT_HEADERS = {"User-Agent": "STATER Regulatory Engine/2.0 (dev@stater.es)"}
 
 
+class _RedactingFilter(logging.Filter):
+    """httpx/httpcore registran la URL completa de cada petición: se redacta (sin query ni credenciales) antes de emitirse."""
+
+    def filter(self, record: logging.LogRecord) -> bool:
+        try:
+            record.msg = redact_text(record.getMessage())
+            record.args = ()
+        except Exception:
+            return False
+        return True
+
+
+def _install_log_redaction() -> None:
+    for name in ("httpx", "httpcore"):
+        lg = logging.getLogger(name)
+        if not any(isinstance(f, _RedactingFilter) for f in lg.filters):
+            lg.addFilter(_RedactingFilter())
+
+
 class DownloadFailure(Exception):
     def __init__(self, message: str, error_class: ErrorClass, status_code: Optional[int] = None):
-        super().__init__(message)
+        super().__init__(redact_text(message))
         self.error_class = error_class
         self.status_code = status_code
 
@@ -88,6 +111,7 @@ class DownloadService:
         self.max_total_s = max_total_s                 # plazo TOTAL de una descarga (cubre goteo lento sin timeout de lectura)
         self._clock = clock
         self._monotonic = monotonic
+        _install_log_redaction()
 
     # -- utilidades -----------------------------------------------------------------
     def backoff(self, attempt: int) -> float:
@@ -117,8 +141,17 @@ class DownloadService:
         staging = Path(req.staging_dir)
         staging.mkdir(parents=True, exist_ok=True)
         final_path = staging / req.file_name
+        # CNMV-U4 FINAL: con un transporte efímero (URL con query/token) NO hay reanudación: cada intento escribe en un parcial PROPIO de nombre
+        # único (creación exclusiva), sin ``.part.meta`` y sin Range/If-Range; un parcial cuyo origen solo se identifica por host/path no se
+        # reutiliza jamás. Las URL directas sin query conservan su reanudación segura.
+        ephemeral = req.transport_url is not None
         part_path = final_path.with_name(final_path.name + ".part")
-        meta_path = final_path.with_name(final_path.name + ".part.meta")
+        meta_path: Optional[Path] = None if ephemeral else final_path.with_name(final_path.name + ".part.meta")
+        own_parts: list = []
+
+        def _rm_meta() -> None:
+            if meta_path is not None:
+                Path.unlink(meta_path, missing_ok=True)
         url_sha = hashlib.sha256(req.url.encode("utf-8")).hexdigest()[:32]    # sin guardar la URL (puede llevar tokens)
         limit = req.max_bytes or self.default_max_bytes
         total_s = req.max_total_s or self.max_total_s
@@ -126,6 +159,12 @@ class DownloadService:
         timeout_s = req.timeout_s or self.timeout_s
         max_retries = self.max_retries if req.max_retries is None else req.max_retries
         extra_retry = self.extra_retryable_statuses | frozenset(req.retry_statuses or ())
+        # CNMV-U4: la URL real (con token) solo se obtiene aquí, dentro de una operación autorizada, y solo vive en esta variable local.
+        fetch_url = req.url
+        if req.transport_url is not None:
+            with authorized_transport():
+                fetch_url = req.transport_url.reveal()
+        secrets = (fetch_url,) if fetch_url != req.url else ()
 
         client = self._client or httpx.Client(headers=DEFAULT_HEADERS, timeout=self.timeout_s, follow_redirects=True)
         owns_client = self._client is None
@@ -139,8 +178,15 @@ class DownloadService:
             while True:
                 try:
                     headers = {**DEFAULT_HEADERS, **req.headers}
-                    existing = part_path.stat().st_size if (req.allow_resume and part_path.exists()) else 0
-                    meta = _read_part_meta(meta_path)
+                    if ephemeral:
+                        for p in own_parts:                         # el parcial del intento anterior es nuestro: se descarta
+                            p.unlink(missing_ok=True)
+                        own_parts.clear()
+                        part_path = final_path.with_name(f"{final_path.name}.{_secrets.token_hex(8)}.part")
+                        own_parts.append(part_path)
+                        headers = {k: v for k, v in headers.items() if k.lower() not in ("range", "if-range")}
+                    existing = (part_path.stat().st_size if (req.allow_resume and not ephemeral and part_path.exists()) else 0)
+                    meta = None if ephemeral else _read_part_meta(meta_path)
                     if existing > 0 and meta is not None and meta.get("url_sha") != url_sha:
                         existing = 0                   # el .part es de otra URL: no se reanuda sobre otro contenido
                     if existing > 0:
@@ -148,18 +194,18 @@ class DownloadService:
                         validator = _if_range_validator(meta)
                         if validator:
                             headers["If-Range"] = validator    # si el recurso cambió, el servidor responde 200 y se reinicia
-                    elif part_path.exists():
+                    elif part_path.exists() and not ephemeral:
                         part_path.unlink()
-                        meta_path.unlink(missing_ok=True)
+                        _rm_meta()
                     self._emit("download_attempt", job, url=req.url, attempt=attempt, resume_from=existing)
                     with self.rate_limiter.slot(req.url):
-                        with client.stream("GET", req.url, headers=headers, timeout=timeout_s) as resp:
+                        with client.stream("GET", fetch_url, headers=headers, timeout=timeout_s) as resp:
                             status = resp.status_code
-                            final_url = str(resp.url)
+                            final_url = strip_url(str(resp.url))
                             mime = resp.headers.get("content-type", "application/octet-stream").split(";")[0].strip()
-                            self._emit("http_response", job, url=str(resp.url), status=status, mime=mime,
+                            self._emit("http_response", job, url=final_url, status=status, mime=mime,
                                        content_length=resp.headers.get("content-length"),
-                                       redirect_chain=[str(h.url) for h in resp.history])
+                                       redirect_chain=[strip_url(str(h.url)) for h in resp.history])
                             if req.allowed_domains is not None:
                                 hosts = {(h.url.host or "").lower() for h in resp.history} | {(resp.url.host or "").lower()}
                                 bad = sorted(h for h in hosts if not _host_allowed(h, req.allowed_domains))
@@ -181,14 +227,14 @@ class DownloadService:
                                 if not _content_range_starts_at(resp.headers.get("content-range"), existing):
                                     # el servidor no continúa donde quedó el .part: se descarta y se empieza limpio
                                     part_path.unlink(missing_ok=True)
-                                    meta_path.unlink(missing_ok=True)
+                                    _rm_meta()
                                     raise _Retryable(status, ErrorClass.NETWORK, None, immediate=True)
                                 mode, resumed = "ab", True
                             else:
                                 mode, resumed = "wb", False
-                            if mode == "wb":
+                            if mode == "wb" and meta_path is not None:
                                 _write_part_meta(meta_path, url_sha, resp.headers)
-                            with open(part_path, mode) as f:
+                            with open(part_path, "xb" if ephemeral else mode) as f:
                                 try:
                                     for block in resp.iter_bytes(chunk_size=self.chunk_size):
                                         if block:
@@ -216,9 +262,9 @@ class DownloadService:
                     last_error = DownloadFailure(
                         f"HTTP {r.status} en {req.url}", r.klass, r.status)
                     if r.klass is ErrorClass.HTTP_PERMANENT:
-                        raise last_error  # 4xx no reintentable: 1 solo intento
+                        raise last_error from None  # 4xx no reintentable: 1 solo intento
                     if attempt >= max_retries:
-                        raise last_error   # DEFECT-02: conserva status + clase reales
+                        raise last_error from None   # DEFECT-02: conserva status + clase reales
                     wait = 0.0 if r.immediate else self.backoff(attempt)
                     ra = _parse_retry_after(r.retry_after, self._clock)       # segundos o fecha HTTP
                     if ra is not None:
@@ -230,34 +276,34 @@ class DownloadService:
                         self._sleep(wait)
                     attempt += 1
                 except httpx.TimeoutException as ex:
-                    last_error = DownloadFailure(f"Timeout en {req.url}: {ex}", ErrorClass.TIMEOUT, status)
+                    last_error = DownloadFailure(f"Timeout en {req.url}: {redact_text(ex, secrets)}", ErrorClass.TIMEOUT, status)
                     if attempt >= max_retries:
-                        raise last_error
+                        raise last_error from None
                     self._emit("download_retry", job, status=None, error="timeout", attempt=attempt)
                     self._sleep(self.backoff(attempt))
                     attempt += 1
                 except httpx.RequestError as ex:
-                    last_error = DownloadFailure(f"Red caída en {req.url}: {ex}", ErrorClass.NETWORK, status)
+                    last_error = DownloadFailure(f"Red caída en {req.url}: {redact_text(ex, secrets)}", ErrorClass.NETWORK, status)
                     if attempt >= max_retries:
-                        raise last_error
+                        raise last_error from None
                     self._emit("download_retry", job, status=None, error="network", attempt=attempt)
                     self._sleep(self.backoff(attempt))
                     attempt += 1
 
             if not part_path.exists() or part_path.stat().st_size == 0:
                 part_path.unlink(missing_ok=True)
-                meta_path.unlink(missing_ok=True)
+                _rm_meta()
                 raise DownloadFailure(f"Descarga vacía: {req.url}", ErrorClass.EMPTY_FILE, status)
 
             digest = self._hash_file(part_path, self.chunk_size).hexdigest()
             if req.expected_sha256 and req.expected_sha256.lower() != digest:
                 part_path.unlink(missing_ok=True)
-                meta_path.unlink(missing_ok=True)
+                _rm_meta()
                 raise DownloadFailure(
                     f"SHA-256 esperado {req.expected_sha256} != obtenido {digest}", ErrorClass.CHECKSUM_MISMATCH, status)
 
             os.replace(part_path, final_path)   # rename atómico .part -> staged (nunca se escribe el nombre final directamente)
-            meta_path.unlink(missing_ok=True)
+            _rm_meta()
             _fsync_dir(final_path.parent)       # durabilidad del rename (POSIX; en Windows no aplica)
             size = final_path.stat().st_size
             res = DownloadResult(
@@ -270,7 +316,7 @@ class DownloadService:
         except DownloadFailure as ex:
             if ex.error_class in (ErrorClass.SIZE_EXCEEDED, ErrorClass.REDIRECT_NOT_ALLOWED):
                 part_path.unlink(missing_ok=True)
-                meta_path.unlink(missing_ok=True)
+                _rm_meta()
             res = DownloadResult(
                 ok=False, http_status=ex.status_code, final_url=final_url, retries_taken=attempt,
                 error_class=ex.error_class.value, error_message=str(ex),
@@ -278,7 +324,15 @@ class DownloadService:
             self._emit("download_failed", job, status=ex.status_code, error_class=ex.error_class.value,
                        message=str(ex), retries=attempt)
             return res
+        except (httpx.HTTPError, httpx.InvalidURL) as ex:      # nunca se propaga un mensaje que contenga la URL real
+            msg = f"{type(ex).__name__}: {redact_text(ex, secrets)}"
+            res = DownloadResult(ok=False, final_url=final_url, retries_taken=attempt, error_class=ErrorClass.NETWORK.value,
+                                 error_message=msg, duration_s=round(self._monotonic() - started, 4))
+            self._emit("download_failed", job, status=None, error_class=ErrorClass.NETWORK.value, message=msg, retries=attempt)
+            return res
         finally:
+            for p in own_parts:                                      # parciales propios que no llegaron a promoverse
+                p.unlink(missing_ok=True)
             if owns_client:
                 client.close()
 

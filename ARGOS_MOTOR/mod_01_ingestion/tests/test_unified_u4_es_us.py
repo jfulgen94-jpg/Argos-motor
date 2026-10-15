@@ -83,7 +83,8 @@ def test_es_adapter_produces_the_common_candidate_from_a_replay_fixture(tmp_path
     (c,) = router.discover(DiscoveryRequest(authority="CNMV"))
     assert (c.authority, c.country_code, c.source, c.source_type) == ("CNMV", "ES", "CNMV", SourceType.OFFICIAL_OAM)
     assert (c.issuer_id, c.issuer_lei, c.fiscal_year, c.doc_type) == ("LEI_ES_1", "LEI_ES_1", 2023, "ESEF_PACKAGE")
-    assert c.source_url == ES_URL and "token" not in c.source_url and "#" not in c.source_url   # URL saneada
+    assert c.source_url == ES_URL.split("?")[0] and "?" not in c.source_url and "#" not in c.source_url   # CNMV-U4: referencia estable
+    assert c.transport_url is not None and "?year=2023" not in repr(c)                              # la URL completa solo vive en memoria
     assert c.source_page_url == "https://www.cnmv.es/ficha"
     assert c.identity_contract is None and c.source_document_id is None                          # sin identidad inventada
     assert_common_candidate(c, authority="CNMV", country_code="ES", allowed_domains=es.allowed_domains)
@@ -200,7 +201,7 @@ def test_candidates_travel_preflight_runner_cas_manifest_catalog_uow_and_telemet
     assert len([p for p in layout.cas.rglob("*") if p.is_file()]) == 2
     mans = {json.loads(p.read_text(encoding="utf-8"))["authority"]: json.loads(p.read_text(encoding="utf-8"))
             for p in layout.manifests.rglob("*.json")}
-    assert mans["CNMV"]["source_url"] == ES_URL and mans["SEC"]["source_url"] == US_URL        # el manifiesto guarda la URL saneada
+    assert mans["CNMV"]["source_url"] == ES_URL.split("?")[0] and mans["SEC"]["source_url"] == US_URL     # el manifiesto guarda la referencia estable
     assert mans["SEC"]["country_code"] == "US" and mans["CNMV"]["country_code"] == "ES"
     events = runner.telemetry.read_all()
     names = {e["event"] for e in events}
