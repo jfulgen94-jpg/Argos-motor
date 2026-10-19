@@ -18,6 +18,7 @@ LinkProvider = Callable[[DiscoveryRequest], Iterable[Dict]]
 
 DOC_SLUGS = {  # mismo mapa que CNMVClient.REQUIRED_ANNUAL_DOCS
     "ESEF_PACKAGE": "cuentas_anuales_consolidadas_auditadas",
+    "CNMV_IFA_ZIP_XBRL": "ifa_fichero_zip_xbrl",
     "INFORME_GESTION": "informe_de_gestion_consolidado",
     "EINF_CSRD": "estado_informacion_no_financiera_csrd",
     "IAGC": "informe_anual_gobierno_corporativo_IAGC",
@@ -52,6 +53,7 @@ class CNMVAdapter(BaseSourceAdapter):
                 doc_type=rec["doc_type"], source_url=rec["url"], issuer_name=rec.get("name"),
                 issuer_lei=rec.get("lei"), ticker=rec.get("ticker"), source_page_url=rec.get("page_url"),
                 registration_number=rec.get("registration_number"), declared_resource_kind=rec.get("declared_resource_kind"),
+                transport_url=rec.get("transport_url"),
                 source=self.name, source_type=self.source_type)
             if self._matches(cand, request):
                 out.append(cand)
@@ -60,7 +62,7 @@ class CNMVAdapter(BaseSourceAdapter):
     def fetch_metadata(self, candidate: DocumentCandidate) -> SourceMetadata:
         ext = self.extension_from_url(candidate.source_url)
         if not ext:
-            ext = ".zip" if candidate.doc_type == "ESEF_PACKAGE" else ".pdf"
+            ext = ".zip" if candidate.doc_type in ("ESEF_PACKAGE", "CNMV_IFA_ZIP_XBRL") else ".pdf"
         slug = DOC_SLUGS.get(candidate.doc_type, candidate.doc_type.lower())
         prefix = (candidate.ticker or candidate.issuer_id).lower()
         return SourceMetadata(
