@@ -7,6 +7,9 @@ y audita la consistencia de los componentes del paquete anual.
 import os
 import re
 from pathlib import Path
+import sys
+sys.path.insert(0, str(__import__('pathlib').Path(__file__).resolve().parents[2]))
+from mod_01_ingestion.src.unified.legacy_exclusions import is_unified_reserved  # U5D
 
 BASE_CANONICAL = Path("ARGOS_MOTOR/data/raw/ES_CNMV/INFORMES_ANUALES_COMPLETOS")
 
@@ -40,6 +43,7 @@ def run_forensic_audit():
 
             # Buscar textos de auditoría o xhtml
             xhtml_files = list(c_dir.rglob('*.xhtml')) + list(c_dir.rglob('*.html'))
+            xhtml_files = [x for x in xhtml_files if not is_unified_reserved(x)]  # U5D
             opinion = "FAVORABLE_ESTANDAR_ESEF"
             has_emphasis = False
 

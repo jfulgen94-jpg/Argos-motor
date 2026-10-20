@@ -1,0 +1,34 @@
+{
+  "artifact": "CNMV_PILOT_PLAN",
+  "status": "PENDING_APPROVAL",
+  "plan_version": "1-pending",
+  "authority": "CNMV",
+  "single_source": true,
+  "control_document": {
+    "issuer_name": "Telefónica, S.A.",
+    "ticker": "TEF",
+    "nif": "A28015865",
+    "fiscal_year": 2019,
+    "year_semantics": "REQUIRES_OFFICIAL_EVIDENCE",
+    "document_family": "ANNUAL_REPORT_PDF",
+    "candidate_url": "https://www.cnmv.es/AUDITA/2019/18290.pdf",
+    "url_status": "REQUIRES_OFFICIAL_EVIDENCE",
+    "local_control_sha256": "bbe7660da39e5926c68356c673e88f3e7173a247351b8a7809dd5bbfd28ab242",
+    "local_control_size_bytes": 23864356,
+    "local_control_origin": "CHECKOUT_MANIFEST_MANIFEST_CNMV_2019",
+    "control_status": "REQUIRES_OFFICIAL_EVIDENCE"
+  },
+  "limits": {
+    "max_documents": 1,
+    "max_concurrent": 1,
+    "min_interval_s": 5,
+    "request_timeout_s": 60,
+    "max_total_s": 300,
+    "max_bytes_per_document": 67108864,
+    "max_total_bytes": 67108864,
+    "allowed_domains": ["www.cnmv.es"]
+  },
+  "destination_root": "D:/ARGOS_DATA/unified_pilot",
+  "destination_status": "NOT_CREATED",
+  "gates": {"canary_sandbox_ok_required": true, "four_eyes_required": true, "max_canary_age_s": 86400}
+}

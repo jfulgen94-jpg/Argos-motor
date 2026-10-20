@@ -123,6 +123,15 @@ class AzureDataLakeSynchronizer:
                     return {"status": "error", "file": local_path.name, "size": local_size, "blob": relative_blob_name, "error": str(e)}
                 time.sleep(1.5 * (attempt + 1))
 
+    def sync_unified(self, unified_root: Path, dry_run: bool = False, verify_hashes: bool = False) -> dict:
+        """U5D: sube cas/, cas_pins/, versions/, manifests/, catalogo y reports/ del raiz unificado bajo el prefijo 'unified/'."""
+        sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+        from mod_01_ingestion.src.unified.cloud_sync import UnifiedSynchronizer
+        res = UnifiedSynchronizer(self.container_client).sync(unified_root, dry_run=dry_run, verify_hashes=verify_hashes)
+        print(f"[UNIFIED] planificados={res['planned']} subidos={res['uploaded']} ya_en_azure={res['skipped_exists']} "
+              f"conflictos={len(res['conflicts'])} errores={len(res['errors'])} omitidos={len(res['skipped'])} dry_run={dry_run}")
+        return res
+
     def sync(self, source_dir: Path, subfolder: str = None, year_filter: list = None, dry_run: bool = False):
         if not source_dir.exists():
             print(f"[ERROR] Directorio origen local no encontrado: {source_dir}")
@@ -256,6 +265,8 @@ if __name__ == '__main__':
     parser.add_argument("--years", type=str, default=None, help="Años a sincronizar separados por coma (ej: 2024,2025)")
     parser.add_argument("--max-workers", type=int, default=DEFAULT_WORKERS, help="Hilos paralelos de subida")
     parser.add_argument("--dry-run", action="store_true", help="Simulación sin realizar subidas")
+    parser.add_argument("--unified-root", type=str, default=None,
+                        help="U5D: raiz de datos UNIFICADA (cas, cas_pins, versions, manifests, catalog, reports) a subir a 'unified/'")
 
     args = parser.parse_args()
 
@@ -269,6 +280,9 @@ if __name__ == '__main__':
     years = [y.strip() for y in args.years.split(',')] if args.years else None
 
     sync_tool = AzureDataLakeSynchronizer(conn_str=conn_str, container_name=container, max_workers=args.max_workers)
+    if args.unified_root:
+        sync_tool.sync_unified(Path(args.unified_root), dry_run=args.dry_run)
+        sys.exit(0)
     sync_tool.sync(
         source_dir=Path(args.source_dir),
         subfolder=args.subfolder,

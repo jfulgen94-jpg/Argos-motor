@@ -1,0 +1,82 @@
+"""
+FASE 4 / DEFECT-10 — Resolución de rutas sin hardcodeo relativo.
+
+Orden: argumento explícito > ``ARGOS_DATA_ROOT`` > error. No existe default silencioso
+al CWD: un flujo migrado nunca escribe en ``data/raw`` relativo.
+"""
+from __future__ import annotations
+
+import os
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Optional
+
+from mod_01_ingestion.src.unified.models import ErrorClass
+
+
+class PathPolicyError(Exception):
+    error_class = ErrorClass.PATH_VIOLATION.value
+
+
+@dataclass(frozen=True)
+class DataLayout:
+    root: Path
+
+    @property
+    def raw(self) -> Path: return self.root / "raw"
+    @property
+    def cas(self) -> Path: return self.root / "cas"
+    @property
+    def staging(self) -> Path: return self.root / "staging" / "unified"
+    @property
+    def quarantine(self) -> Path: return self.root / "quarantine_unified"
+    @property
+    def manifests(self) -> Path: return self.root / "manifests"
+    @property
+    def telemetry(self) -> Path: return self.root / "telemetry"
+    @property
+    def locks(self) -> Path: return self.root / "locks"
+    @property
+    def catalog_db(self) -> Path: return self.root / "catalog" / "unified_catalog.duckdb"
+
+    @property
+    def versions(self) -> Path: return self.root / "versions"      # U5B: sidecars de versiones (fuera de ``manifests/``)
+    @property
+    def cas_pins(self) -> Path: return self.root / "cas_pins"      # U5B.1: pins durables (fuera de ``cas/``)
+    @property
+    def reports(self) -> Path: return self.root / "reports"        # U5D: informes (canarios, piloto)
+
+    def ensure(self) -> "DataLayout":
+        for p in (self.raw, self.cas, self.staging, self.quarantine, self.manifests,
+                  self.telemetry, self.locks, self.catalog_db.parent):
+            p.mkdir(parents=True, exist_ok=True)
+        return self
+
+    @staticmethod
+    def _plain(p: Path) -> Path:
+        """``Path.resolve()`` en Windows puede devolver, de forma intermitente (carreras de creación/borrado), la ruta con el
+        prefijo de ruta extendida: se normaliza antes de comparar."""
+        s = str(p)
+        if s.startswith("\\\\?\\UNC\\"):
+            return Path("\\\\" + s[8:])
+        if s.startswith("\\\\?\\"):
+            return Path(s[4:])
+        return p
+
+    def assert_inside(self, path: Path) -> Path:
+        """Garantiza que ``path`` resida dentro del data root (cero escrituras externas)."""
+        resolved = self._plain(Path(path).resolve())
+        root = self._plain(self.root.resolve())
+        if resolved != root and root not in resolved.parents:
+            raise PathPolicyError(f"Ruta fuera del data root: {resolved} (root={root})")
+        return resolved
+
+
+def resolve_layout(data_root: Optional[os.PathLike] = None) -> DataLayout:
+    value = data_root or os.environ.get("ARGOS_DATA_ROOT")
+    if not value:
+        raise PathPolicyError("ARGOS_DATA_ROOT no definido y no se indicó data_root explícito.")
+    path = Path(value)
+    if not path.is_absolute():
+        raise PathPolicyError(f"data_root debe ser absoluto: {path}")
+    return DataLayout(path)

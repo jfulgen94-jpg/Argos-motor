@@ -10,6 +10,10 @@ echo Universo Maestro: 378 Sociedades Cotizadas (IBEX 35 / Continuo / Growth / S
 echo Destino Canónico: D:\ARGOS_DATA\raw\ES_CNMV
 echo =========================================================================
 echo.
+echo [DEPRECATED][LEGACY_BRIDGE][KEEP_UNTIL_MIGRATION_COMPLETE] Este lanzador usa el descargador Track A (ES/CNMV).
+echo Ruta unificada: ejecutar_ingesta_unificada.bat ^<AUTORIDAD^> --years ... --provider ... (ver audits\FASE4_UNIFICACION_2026-10-09)
+echo El descubrimiento (crawling) de este pais aun no esta migrado; por eso sigue activo. No escribe via .part.
+echo.
 
 python ARGOS_MOTOR\descarga\es_spain\run_download_spain.py %*
 

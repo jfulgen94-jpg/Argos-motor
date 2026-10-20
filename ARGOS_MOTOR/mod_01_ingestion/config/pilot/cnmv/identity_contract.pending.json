@@ -1,0 +1,15 @@
+{
+  "artifact": "CNMV_IDENTITY_CONTRACT",
+  "status": "PENDING_APPROVAL",
+  "contract_id": "cnmv-pilot-identity",
+  "contract_version": "0-pending",
+  "authority": "CNMV",
+  "normalizer_version": "v1",
+  "initial_version_policy": "NONE",
+  "expected_sha256_authority": false,
+  "namespace": "REQUIRES_OFFICIAL_EVIDENCE",
+  "id_scope": "REQUIRES_OFFICIAL_EVIDENCE",
+  "source_document_id_field": "REQUIRES_OFFICIAL_EVIDENCE",
+  "allowed_evidence_kinds": "REQUIRES_OFFICIAL_EVIDENCE",
+  "republication_evidence": "REQUIRES_OFFICIAL_EVIDENCE"
+}

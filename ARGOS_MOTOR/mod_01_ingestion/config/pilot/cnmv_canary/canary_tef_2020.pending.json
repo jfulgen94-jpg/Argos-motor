@@ -1,0 +1,53 @@
+{
+  "artifact": "CNMV_CANARY_PLAN",
+  "authorization": {
+    "four_eyes": false,
+    "granted_by": null,
+    "note": "no reutiliza la autorización 2019; no se atribuye aprobación a terceros",
+    "required_phrase": "AUTORIZO CANARIO CNMV TEF 2020 ZIP"
+  },
+  "compare_with_historical_copy": false,
+  "destination_root": "D:/ARGOS_DATA/unified_pilot",
+  "limits": {
+    "allowed_domains": [
+      "www.cnmv.es"
+    ],
+    "http_403": "STOP_NEEDS_REVIEW",
+    "max_concurrent": 1,
+    "max_documents": 1,
+    "max_requests": 5,
+    "max_retries": 1,
+    "max_total_bytes": 268435456,
+    "max_total_s": 600.0,
+    "min_interval_s": 5.0,
+    "range_if_range_resume": "NEVER",
+    "redirects_outside_domain": "NEVER",
+    "request_timeout_s": 60.0,
+    "retry_statuses": [
+      429,
+      503
+    ]
+  },
+  "local_hash_is_official": false,
+  "reference": "CNMV-CANARY-TEF-2020-001",
+  "scope": {
+    "authority": "CNMV",
+    "document_type": "CNMV_IFA_ZIP_XBRL",
+    "fiscal_year": 2020,
+    "identity": "SLOT_ONLY",
+    "issuer": "TEF",
+    "nif": "A28015865",
+    "registration_number": "18760",
+    "republication_confirmed": false,
+    "resource": "enlace de la columna ZIP/XBRL de esa fila de la ficha oficial"
+  },
+  "sequence": [
+    "GET ficha IFA del NIF (1 solicitud, 2.ª solo si la grafía del NIF no devuelve datos)",
+    "selección exacta de la fila 18760/2020 y de su único enlace ZIP/XBRL",
+    "GET del recurso con URL de transporte solo en memoria (sin Range/If-Range)",
+    "validación acotada del ZIP sin extraer",
+    "registro en CAS/manifiesto/catálogo/ledger sin tokens"
+  ],
+  "status": "PENDING_OWNER_AUTHORIZATION",
+  "user_agent": "Stater-ARGOS-MOTOR/1.0 j.fulgen94@gmail.com"
+}

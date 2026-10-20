@@ -145,6 +145,8 @@ class RobustDownloader:
                             for chunk in response.iter_bytes(chunk_size=self.chunk_size):
                                 if chunk:
                                     f.write(chunk)
+                            f.flush()
+                            os.fsync(f.fileno())  # FASE4 / DEFECT-03
 
                         # Descarga completada exitosamente sin excepciones de streaming
                         break
@@ -154,6 +156,9 @@ class RobustDownloader:
                         raise ex
                     
                     if attempt == self.max_retries:
+                        # FASE4 / DEFECT-02: conservar el status/tipo HTTP real (429/5xx) al agotar reintentos.
+                        if isinstance(ex, DownloadError):
+                            raise ex
                         raise DownloadError(
                             f"Fallo de conexión irrecuperable tras {attempt} reintentos: {str(ex)}",
                             error_type="CONNECTION_DROPPED"

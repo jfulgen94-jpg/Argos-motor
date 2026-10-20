@@ -12,10 +12,25 @@ Verifica que el auditor clasifica cada uno exactamente según su taxonomía.
 
 import json
 import hashlib
+import shutil
 import pytest
 from pathlib import Path
 from mod_01_ingestion.src.forensic_dataset_auditor import ForensicDatasetAuditor
 from mod_01_ingestion.tests.fixtures.synthetic_fixture_templates import get_sample_synthetic_html
+
+
+_ARGOS_MOTOR = Path(__file__).resolve().parents[2]
+
+
+@pytest.fixture(autouse=True)
+def _isolated_cwd(tmp_path, monkeypatch):
+    """U3: el auditor resuelve el universo maestro por ruta relativa (config/master_universe_es.json) y, si falta,
+    lo RECONSTRUYE escribiéndolo en el cwd. Se ejecuta en un cwd temporal con una copia de solo lectura del catálogo,
+    de modo que nunca depende ni escribe en el árbol del proyecto (``config/``, ``data/``)."""
+    (tmp_path / "config").mkdir()
+    shutil.copy2(_ARGOS_MOTOR / "config" / "master_universe_es.json", tmp_path / "config" / "master_universe_es.json")
+    monkeypatch.chdir(tmp_path)
+    yield
 
 
 def test_forensic_auditor_on_mock_dataset(tmp_path):

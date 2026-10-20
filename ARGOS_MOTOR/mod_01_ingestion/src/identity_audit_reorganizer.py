@@ -26,6 +26,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, Optional, Tuple
 
+from mod_01_ingestion.src.unified.legacy_exclusions import assert_not_unified, is_unified_reserved
+
 RAW_ROOT = Path("data/raw/ES_CNMV")
 CATALOG_PATH = Path("config/master_universe_es.json")
 REPORT_DIR = Path("data/raw/ES_CNMV/_AUDIT_REPORTS")
@@ -115,6 +117,8 @@ def audit_tree(companies, by_lei) -> dict:
 
     for file_path in RAW_ROOT.rglob("*"):
         if not file_path.is_file():
+            continue
+        if is_unified_reserved(file_path):       # U5D: nunca tocar cas/, cas_pins/, versions/, catalogo unificado
             continue
         if "_AUDIT_REPORTS" in file_path.parts or "quarantine" in str(file_path).lower():
             continue
@@ -214,6 +218,7 @@ def audit_tree(companies, by_lei) -> dict:
 
 def apply_moves(report: dict, keep_duplicates: bool = False) -> dict:
     """Ejecuta físicamente las reubicaciones y purga de duplicados detectados."""
+    assert_not_unified(RAW_ROOT, tool="identity_audit_reorganizer --apply")       # U5D
     moved = []
     move_errors = []
     for item in report["needs_move"]:

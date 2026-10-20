@@ -5,6 +5,9 @@ Analiza la Relazione della Società di Revisione en los filings italianos.
 
 import os
 from pathlib import Path
+import sys
+sys.path.insert(0, str(__import__('pathlib').Path(__file__).resolve().parents[2]))
+from mod_01_ingestion.src.unified.legacy_exclusions import is_unified_reserved  # U5D
 
 BASE_IT = Path("ARGOS_MOTOR/data/raw/IT_CONSOB")
 
@@ -24,6 +27,7 @@ def run_italian_audit():
     print("=== AUDITORÍA FORENSE DE INFORMES ITALIANOS (CONSOB) ===")
     if not BASE_IT.exists(): return
     files = list(BASE_IT.rglob('*.htm')) + list(BASE_IT.rglob('*.xhtml')) + list(BASE_IT.rglob('*.pdf'))
+    files = [x for x in files if not is_unified_reserved(x)]  # U5D
     print(f"Total documentos de informe para auditar: {len(files)}")
     for f in files[:5]:
         print(f"  Auditando: {f.name} (Tamaño: {f.stat().st_size / 1024:.1f} KB)")

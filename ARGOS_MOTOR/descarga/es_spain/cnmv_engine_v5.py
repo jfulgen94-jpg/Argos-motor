@@ -1,4 +1,12 @@
 """
+DEPRECATED_TEST_ONLY — NO USAR EN LIVE NI PILOT (ADR-005, U2)
+================================================================================
+Este motor FABRICA registros ``doc_type="SIMULATED"`` con ``sha256="placeholder"`` y ``status="CACHE_HIT"``.
+Nunca debe escribir en un raw operativo (D:/ARGOS_DATA/raw, ARGOS_MOTOR/data/raw, ARGOS_DATA_ROOT).
+Desde U2 solo se ejecuta en modo TEST/SANDBOX con ``--allow-simulated`` y un ``--output-root`` explícito
+bajo un directorio temporal autorizado; en cualquier otro caso termina con código 2 ANTES de escribir.
+Importar el módulo no ejecuta ni escribe nada. La implementación productiva es ``mod_01_ingestion/src/unified``.
+================================================================================
 MOTOR DE INGESTA INSTITUCIONAL v5 PARA EL MERCADO DE VALORES ESPAÑOL (ARGOS)
 ================================================================================
 Diseñado para la máxima cobertura y resiliencia, cubriendo el periodo 2012-2026.
@@ -20,13 +28,9 @@ import httpx
 from bs4 import BeautifulSoup
 import fitz  # PyMuPDF
 
-# --- Configuración y Constantes ---
-if hasattr(sys.stdout, 'reconfigure'):
-    try:
-        sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
-    except Exception:
-        pass
+DEPRECATED_TEST_ONLY = True
 
+# --- Configuración y Constantes ---
 CONFIG_PATH = Path(__file__).parent / 'config_es.json'
 XBRL_INDEX_URL = "https://filings.xbrl.org/index.json"
 CNMV_IFA_URL = "https://www.cnmv.es/portal/Consultas/IFA/ListadoIFA.aspx"
@@ -48,11 +52,41 @@ USER_AGENTS = [
     "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0",
 ]
 
+class SimulationBlocked(Exception):
+    """El motor simulado no puede ejecutarse con los parámetros dados (se lanza antes de escribir nada)."""
+
+
+def assert_run_allowed(mode, allow_simulated: bool, output_root) -> Path:
+    """Compuerta de seguridad. Devuelve el output_root validado o lanza ``SimulationBlocked``."""
+    try:  # la política vive en el núcleo unificado; si no se puede cargar, se falla cerrado
+        from mod_01_ingestion.src.unified.domain.enums import ExecutionMode
+        from mod_01_ingestion.src.unified.persistence_guard import is_authorized_sandbox_location
+    except ImportError as ex:
+        raise SimulationBlocked(f"no se puede cargar la política de persistencia ({ex}); ejecución denegada")
+    if not allow_simulated:
+        raise SimulationBlocked("DEPRECATED_TEST_ONLY: falta --allow-simulated")
+    try:
+        mode = ExecutionMode(str(mode).upper())
+    except ValueError:
+        raise SimulationBlocked("DEPRECATED_TEST_ONLY: indique --mode TEST o --mode SANDBOX")
+    if mode in (ExecutionMode.LIVE, ExecutionMode.PILOT):
+        raise SimulationBlocked(f"DEPRECATED_TEST_ONLY: modo {mode.value} prohibido; genera datos SIMULATED")
+    if not output_root:
+        raise SimulationBlocked("DEPRECATED_TEST_ONLY: --output-root explícito obligatorio")
+    out = Path(output_root)
+    if not is_authorized_sandbox_location(out):
+        raise SimulationBlocked("DEPRECATED_TEST_ONLY: --output-root debe estar bajo un directorio temporal "
+                                "autorizado y fuera de cualquier raw operativo")
+    return out
+
+
 class CNMVEngineV5:
-    """Motor de Ingesta Institucional v5 para el mercado de valores español."""
-    
-    def __init__(self, config: Dict[str, Any]):
+    """Motor de Ingesta Institucional v5 (SIMULADO, solo pruebas)."""
+
+    def __init__(self, config: Dict[str, Any], output_root):
         self.config = config
+        # La compuerta se evalúa antes de crear cliente HTTP o directorios.
+        self.canonical_path = assert_run_allowed(config.get("mode"), config.get("allow_simulated", False), output_root)
         self.master_universe = self._load_master_universe()
         self.http_client = httpx.AsyncClient(
             headers={'User-Agent': USER_AGENTS[0]},
@@ -60,25 +94,11 @@ class CNMVEngineV5:
             timeout=30.0
         )
         self.semaphore = asyncio.Semaphore(config.get('max_workers', 5))
-        self.canonical_path = self._get_canonical_path()
         self.staging_path = self.canonical_path / ".staging"
         self.quarantine_path = self.canonical_path / ".quarantine"
         self.canonical_path.mkdir(parents=True, exist_ok=True)
         self.staging_path.mkdir(exist_ok=True)
         self.quarantine_path.mkdir(exist_ok=True)
-
-    def _get_canonical_path(self) -> Path:
-        paths_to_check = [
-            Path("/opt/argos_data/raw/ES_CNMV"),
-            Path("D:/ARGOS_DATA/raw/ES_CNMV"),
-            Path("ARGOS_MOTOR/data/raw/ES_CNMV")
-        ]
-        for p in paths_to_check:
-            if p.exists() or p.parent.exists():
-                print(f"[+] Volumen canónico detectado en: {p}")
-                return p
-        print("[!] Aviso: No se detectó un volumen canónico. Usando ruta por defecto.")
-        return paths_to_check[-1]
 
     def _load_master_universe(self) -> Dict[str, Any]:
         path = Path(self.config['master_universe_path'])
@@ -116,7 +136,7 @@ class CNMVEngineV5:
         manifest = []
         for ticker, company in self.master_universe.items():
             manifest.append({
-                "ticker": ticker, "year": year, "doc_type": "SIMULATED", 
+                "ticker": ticker, "year": year, "doc_type": "SIMULATED", "simulated": True,
                 "sha256": "placeholder", "size_bytes": 0, "status": "CACHE_HIT",
                 "file_path": str(self.canonical_path / f"{year}/{company.get('cif_nif', '')}_{ticker}/{ticker}_{year}_ANUAL.pdf")
             })
@@ -125,6 +145,9 @@ class CNMVEngineV5:
 
     async def _run_historical_phase(self, year: int, dry_run: bool):
         print(f"--- Iniciando Fase Histórica (Barrido AUDITA) para el ejercicio {year} ---")
+        if not self.config.get("allow_network", False):
+            print("  [i] Sin --allow-network: el barrido HEAD contra cnmv.es está desactivado.")
+            return []
         if year not in AUDITA_SEQUENTIAL_RANGES:
             return []
         min_id, max_id = AUDITA_SEQUENTIAL_RANGES[year]
@@ -159,6 +182,8 @@ class CNMVEngineV5:
             if not dry_run and manifest_data:
                 manifest_path = self.canonical_path / f"MANIFEST_CNMV_{year}.json"
                 doc = {
+                    "SIMULATED": True,
+                    "execution_mode": str(self.config.get("mode")).upper(),
                     "year": year,
                     "generated_at": time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
                     "total_filings": len(manifest_data),
@@ -171,20 +196,37 @@ class CNMVEngineV5:
         await self.http_client.aclose()
         print("\n[FIN] Proceso de ingesta completado.")
 
-def main():
-    parser = argparse.ArgumentParser(description="ARGOS Motor de Ingesta Institucional v5 para España.")
+def main(argv=None) -> int:
+    parser = argparse.ArgumentParser(description="[DEPRECATED_TEST_ONLY] Motor v5 SIMULADO para España. Solo TEST/SANDBOX.")
     parser.add_argument('--years', nargs='+', type=int, required=True, help="Lista de años a procesar.")
     parser.add_argument('--segments', nargs='+', default=['ALL'], help="Segmentos a incluir.")
     parser.add_argument('--dry-run', action='store_true', help="Ejecuta el mapeo sin descargar archivos.")
     parser.add_argument('--max-workers', type=int, default=5, help="Número de descargas concurrentes.")
-    args = parser.parse_args()
+    parser.add_argument('--mode', default=None, help="TEST o SANDBOX (LIVE y PILOT están prohibidos).")
+    parser.add_argument('--allow-simulated', action='store_true', help="Autoriza explícitamente generar datos SIMULATED.")
+    parser.add_argument('--output-root', default=None, help="Directorio temporal autorizado donde escribir.")
+    parser.add_argument('--allow-network', action='store_true', help="Permite el barrido HEAD histórico (red).")
+    args = parser.parse_args(argv)
+    try:
+        out = assert_run_allowed(args.mode, args.allow_simulated, args.output_root)
+    except SimulationBlocked as ex:
+        print(f"[BLOQUEADO] {ex}", file=sys.stderr)
+        return 2
+    if hasattr(sys.stdout, 'reconfigure'):
+        try:
+            sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
+        except Exception:
+            pass
     config = {
         "master_universe_path": "ARGOS_MOTOR/config/master_universe_es.json",
         "max_workers": args.max_workers,
-        "target_segments": args.segments
+        "target_segments": args.segments,
+        "mode": args.mode, "allow_simulated": True, "allow_network": args.allow_network,
     }
-    engine = CNMVEngineV5(config)
+    engine = CNMVEngineV5(config, out)
     asyncio.run(engine.run_ingestion(args.years, args.segments, args.dry_run))
+    return 0
+
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())

@@ -2,12 +2,26 @@
 Pruebas unitarias y de integración para IngestRunner (MOD_01 Multi-Year).
 """
 import io
+import shutil
 import zipfile
 import pytest
 import httpx
 from pathlib import Path
 from mod_01_ingestion.src.ingest_runner import IngestRunner
 from mod_04_data_lake.src.lake_manager import LakeManager
+
+_ARGOS_MOTOR = Path(__file__).resolve().parents[2]
+
+
+@pytest.fixture(autouse=True)
+def _isolated_cwd(tmp_path, monkeypatch):
+    """U3: IngestRunner usa rutas RELATIVAS al CWD (data/raw, data/staging, data/lake/duckdb/stater_motor.duckdb,
+    logs/). Este fixture ejecuta cada test en un directorio temporal con solo la config de lectura que necesita,
+    de modo que nunca se escribe ni se abre ``ARGOS_MOTOR/data`` (ni la DuckDB por defecto)."""
+    (tmp_path / "config").mkdir()
+    shutil.copy2(_ARGOS_MOTOR / "config" / "bluechips_universe.json", tmp_path / "config" / "bluechips_universe.json")
+    monkeypatch.chdir(tmp_path)
+    yield
 
 
 def test_ingest_runner_init():
